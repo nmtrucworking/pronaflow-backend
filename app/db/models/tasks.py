@@ -206,7 +206,7 @@ class Task(Base, AuditMixin):
     # Task Status
     status: Mapped[TaskStatus] = mapped_column(
         SQLEnum(TaskStatus),
-        default=TaskStatus.NOT_STARTED,
+        default=TaskStatus.TO_DO,
         nullable=False,
         index=True,
         comment="Task status"

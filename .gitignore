@@ -1,0 +1,67 @@
+--- General ---
+
+.DS_Store
+Thumbs.db
+.log
+.env
+.env.local
+.env..local
+
+--- IDEs ---
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+--- Python (Backend & AI) ---
+
+pycache/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+Jupyter Notebooks
+
+.ipynb_checkpoints
+
+--- Node.js (Frontend & Electron) ---
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+dist-electron/
+release/
+
+--- Model Artifacts (AI) ---
+
+Không commit file model nặng lên git, dùng Git LFS nếu cần
+
+ai-serving/app/ml_engine/artifacts/.pkl
+ai-serving/app/ml_engine/artifacts/.h5
+ai-serving/app/ml_engine/artifacts/.onnx
+ai-serving/app/ml_engine/artifacts/.joblib
+
+--- Database ---
+
+# *.sqlite
+# *.db
+# infrastructure/data/ # Dữ liệu DB nếu mount volume docker
+
+# Loại trừ dữ liệu người dùng tải lên
+# storage/uploads/*
+# storage/temp/*
+
+# Không loại trừ các file tài liệu tĩnh của hệ thống
+# !frontend/public/assets/docs/
+# !frontend/public/downloads/
