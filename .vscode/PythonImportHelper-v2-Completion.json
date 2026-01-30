@@ -665,6 +665,14 @@
         "documentation": {}
     },
     {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "String",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -962,6 +970,22 @@
         "documentation": {}
     },
     {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "app.db.declarative_base",
         "description": "app.db.declarative_base",
@@ -1194,6 +1218,22 @@
         "documentation": {}
     },
     {
+        "label": "Base",
+        "importPath": "app.db.base",
+        "description": "app.db.base",
+        "isExtraImport": true,
+        "detail": "app.db.base",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Any",
         "importPath": "typing",
         "description": "typing",
@@ -1219,6 +1259,14 @@
     },
     {
         "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -1259,6 +1307,14 @@
     },
     {
         "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -1650,6 +1706,94 @@
         "documentation": {}
     },
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "List",
         "importPath": "typing",
         "description": "typing",
@@ -1703,6 +1847,135 @@
         "description": "typing",
         "isExtraImport": true,
         "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Header",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
         "documentation": {}
     },
     {
@@ -1794,52 +2067,51 @@
         "documentation": {}
     },
     {
-        "label": "reference_loader",
-        "importPath": "backend.app.core.referencer_loader",
-        "description": "backend.app.core.referencer_loader",
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "backend.app.core.referencer_loader",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
-        "label": "uuid",
-        "kind": 6,
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "importPath": "uuid",
-        "description": "uuid",
-        "detail": "uuid",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "uuid",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "uuid",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
         "isExtraImport": true,
-        "detail": "uuid",
+        "detail": "fastapi",
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
         "isExtraImport": true,
-        "detail": "uuid",
+        "detail": "sqlalchemy.orm",
         "documentation": {}
     },
     {
@@ -2203,6 +2475,38 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
         "label": "get_db",
         "importPath": "app.db.session",
         "description": "app.db.session",
@@ -2227,7 +2531,111 @@
         "documentation": {}
     },
     {
+        "label": "engine",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
         "label": "get_current_user",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_active_user",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "validate_password_strength",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "validate_email",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "validate_username",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_access_token",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "record_login_attempt",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "check_brute_force",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
         "importPath": "app.core.security",
         "description": "app.core.security",
         "isExtraImport": true,
@@ -2259,11 +2667,283 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "LoginAttempt",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
         "label": "User",
         "importPath": "app.db.models.users",
         "description": "app.db.models.users",
         "isExtraImport": true,
         "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordResetToken",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "EmailVerificationToken",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "MFAConfig",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "MFABackupCode",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "AuthService",
+        "importPath": "app.services.auth",
+        "description": "app.services.auth",
+        "isExtraImport": true,
+        "detail": "app.services.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFAService",
+        "importPath": "app.services.mfa",
+        "description": "app.services.mfa",
+        "isExtraImport": true,
+        "detail": "app.services.mfa",
+        "documentation": {}
+    },
+    {
+        "label": "SessionService",
+        "importPath": "app.services.session",
+        "description": "app.services.session",
+        "isExtraImport": true,
+        "detail": "app.services.session",
+        "documentation": {}
+    },
+    {
+        "label": "EmailService",
+        "importPath": "app.services.email",
+        "description": "app.services.email",
+        "isExtraImport": true,
+        "detail": "app.services.email",
+        "documentation": {}
+    },
+    {
+        "label": "EmailService",
+        "importPath": "app.services.email",
+        "description": "app.services.email",
+        "isExtraImport": true,
+        "detail": "app.services.email",
+        "documentation": {}
+    },
+    {
+        "label": "UserRegisterRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "UserResponse",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "LoginRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "SessionResponse",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "EmailVerifyRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "ResendVerificationRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFAEnableResponse",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFAConfirmRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFALoginRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFADisableRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordResetRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordResetConfirmRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordChangeRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "SessionInfo",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "SessionListResponse",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "RevokeSessionRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "BackupCodesResponse",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "reference_loader",
+        "importPath": "app.core.referencer_loader",
+        "description": "app.core.referencer_loader",
+        "isExtraImport": true,
+        "detail": "app.core.referencer_loader",
         "documentation": {}
     },
     {
@@ -2563,15 +3243,7 @@
         "documentation": {}
     },
     {
-        "label": "references",
-        "importPath": "app.api.v1.endpoints",
-        "description": "app.api.v1.endpoints",
-        "isExtraImport": true,
-        "detail": "app.api.v1.endpoints",
-        "documentation": {}
-    },
-    {
-        "label": "workspaces",
+        "label": "auth",
         "importPath": "app.api.v1.endpoints",
         "description": "app.api.v1.endpoints",
         "isExtraImport": true,
@@ -2628,6 +3300,22 @@
         "importPath": "yaml",
         "description": "yaml",
         "detail": "yaml",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -2743,6 +3431,14 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "timedelta",
         "importPath": "datetime",
         "description": "datetime",
@@ -2751,251 +3447,85 @@
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "detail": "datetime",
         "documentation": {}
     },
     {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "detail": "datetime",
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "detail": "datetime",
         "documentation": {}
     },
     {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "detail": "datetime",
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "detail": "datetime",
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "detail": "datetime",
         "documentation": {}
     },
     {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "CryptContext",
+        "importPath": "passlib.context",
+        "description": "passlib.context",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "detail": "passlib.context",
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "jwt",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "importPath": "jwt",
+        "description": "jwt",
+        "detail": "jwt",
         "documentation": {}
     },
     {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "re",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "UserStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "TimestampMixin",
-        "importPath": "app.db.mixins",
-        "description": "app.db.mixins",
-        "isExtraImport": true,
-        "detail": "app.db.mixins",
-        "documentation": {}
-    },
-    {
-        "label": "TimestampMixin",
-        "importPath": "app.db.mixins",
-        "description": "app.db.mixins",
-        "isExtraImport": true,
-        "detail": "app.db.mixins",
-        "documentation": {}
-    },
-    {
-        "label": "TimestampMixin",
-        "importPath": "app.db.mixins",
-        "description": "app.db.mixins",
-        "isExtraImport": true,
-        "detail": "app.db.mixins",
-        "documentation": {}
-    },
-    {
-        "label": "SoftDeleteMixin",
-        "importPath": "app.db.mixins",
-        "description": "app.db.mixins",
-        "isExtraImport": true,
-        "detail": "app.db.mixins",
-        "documentation": {}
-    },
-    {
-        "label": "TimestampMixin",
-        "importPath": "app.db.mixins",
-        "description": "app.db.mixins",
-        "isExtraImport": true,
-        "detail": "app.db.mixins",
-        "documentation": {}
-    },
-    {
-        "label": "AuditMixin",
-        "importPath": "app.db.mixins",
-        "description": "app.db.mixins",
-        "isExtraImport": true,
-        "detail": "app.db.mixins",
-        "documentation": {}
-    },
-    {
-        "label": "TimestampMixin",
-        "importPath": "app.db.mixins",
-        "description": "app.db.mixins",
-        "isExtraImport": true,
-        "detail": "app.db.mixins",
-        "documentation": {}
-    },
-    {
-        "label": "TimestampMixin",
-        "importPath": "app.db.mixins",
-        "description": "app.db.mixins",
-        "isExtraImport": true,
-        "detail": "app.db.mixins",
-        "documentation": {}
-    },
-    {
-        "label": "TimestampMixin",
-        "importPath": "app.db.mixins",
-        "description": "app.db.mixins",
-        "isExtraImport": true,
-        "detail": "app.db.mixins",
-        "documentation": {}
-    },
-    {
-        "label": "AuditMixin",
-        "importPath": "app.db.mixins",
-        "description": "app.db.mixins",
-        "isExtraImport": true,
-        "detail": "app.db.mixins",
-        "documentation": {}
-    },
-    {
-        "label": "TimestampMixin",
-        "importPath": "app.db.mixins",
-        "description": "app.db.mixins",
-        "isExtraImport": true,
-        "detail": "app.db.mixins",
-        "documentation": {}
-    },
-    {
-        "label": "SoftDeleteMixin",
-        "importPath": "app.db.mixins",
-        "description": "app.db.mixins",
-        "isExtraImport": true,
-        "detail": "app.db.mixins",
-        "documentation": {}
-    },
-    {
-        "label": "TimestampMixin",
-        "importPath": "app.db.mixins",
-        "description": "app.db.mixins",
-        "isExtraImport": true,
-        "detail": "app.db.mixins",
-        "documentation": {}
-    },
-    {
-        "label": "SoftDeleteMixin",
-        "importPath": "app.db.mixins",
-        "description": "app.db.mixins",
-        "isExtraImport": true,
-        "detail": "app.db.mixins",
+        "detail": "app.db.enums",
         "documentation": {}
     },
     {
@@ -3055,7 +3585,23 @@
         "documentation": {}
     },
     {
+        "label": "AuthProvider",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "UserStatus",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -3076,6 +3622,254 @@
         "description": "app.db.enums",
         "isExtraImport": true,
         "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "TimestampMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "TimestampMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "TimestampMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "SoftDeleteMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "TimestampMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "AuditMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "TimestampMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "TimestampMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "TimestampMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "AuditMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "TimestampMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "SoftDeleteMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "TimestampMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "SoftDeleteMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
         "documentation": {}
     },
     {
@@ -3199,15 +3993,6 @@
         "documentation": {}
     },
     {
-        "label": "re",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "re",
-        "description": "re",
-        "detail": "re",
-        "documentation": {}
-    },
-    {
         "label": "Enum",
         "importPath": "enum",
         "description": "enum",
@@ -3229,6 +4014,30 @@
         "description": "sqlalchemy.sql",
         "isExtraImport": true,
         "detail": "sqlalchemy.sql",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
         "documentation": {}
     },
     {
@@ -3297,6 +4106,82 @@
         "documentation": {}
     },
     {
+        "label": "qrcode",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "qrcode",
+        "description": "qrcode",
+        "detail": "qrcode",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "pyotp",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyotp",
+        "description": "pyotp",
+        "detail": "pyotp",
+        "documentation": {}
+    },
+    {
+        "label": "radians",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "cos",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sin",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "asin",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
         "label": "IntegrityError",
         "importPath": "sqlalchemy.exc",
         "description": "sqlalchemy.exc",
@@ -3342,6 +4227,22 @@
         "description": "app.db.models.workspaces",
         "isExtraImport": true,
         "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "api_router",
+        "importPath": "app.api.v1.router",
+        "description": "app.api.v1.router",
+        "isExtraImport": true,
+        "detail": "app.api.v1.router",
         "documentation": {}
     },
     {
@@ -3473,6 +4374,15 @@
         "description": "app.alembic.env",
         "peekOfCode": "target_metadata = Base.metadata\ndef run_migrations_offline() -> None:\n    \"\"\"\n    Run migrations in 'offline' mode.\n    This configures the context with just a URL and not an Engine,\n    though an Engine is acceptable here as well. By skipping the Engine\n    creation we don't even need a DBAPI to be available.\n    Calls to context.execute() here emit the given string to the script output.\n    \"\"\"\n    url = config.get_main_option(\"sqlalchemy.url\")",
         "detail": "app.alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.v1.endpoints.auth",
+        "description": "app.api.v1.endpoints.auth",
+        "peekOfCode": "router = APIRouter(prefix=\"/api/v1/auth\", tags=[\"Authentication\"])\n# ============= User Registration =============\n@router.post(\n    \"/register\",\n    response_model=UserResponse,\n    status_code=status.HTTP_201_CREATED,\n    summary=\"User Registration\",\n    description=\"Register a new user account with email verification\"\n)\nasync def register(",
+        "detail": "app.api.v1.endpoints.auth",
         "documentation": {}
     },
     {
@@ -3660,7 +4570,7 @@
         "kind": 5,
         "importPath": "app.api.v1.router",
         "description": "app.api.v1.router",
-        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(references.router)\napi_router.include_router(workspaces.router)",
+        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(auth.router)",
         "detail": "app.api.v1.router",
         "documentation": {}
     },
@@ -3707,6 +4617,96 @@
         "description": "app.core.referencer_loader",
         "peekOfCode": "reference_loader = ReferenceDataLoader()",
         "detail": "app.core.referencer_loader",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "kind": 2,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "def hash_password(password: str) -> str:\n    \"\"\"\n    Hash a password using bcrypt.\n    Args:\n        password: Plain text password\n    Returns:\n        Hashed password\n    \"\"\"\n    return pwd_context.hash(password)\ndef verify_password(plain_password: str, hashed_password: str) -> bool:",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "kind": 2,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "def verify_password(plain_password: str, hashed_password: str) -> bool:\n    \"\"\"\n    Verify a password against its hash.\n    Args:\n        plain_password: Plain text password\n        hashed_password: Hashed password from database\n    Returns:\n        True if password matches, False otherwise\n    \"\"\"\n    return pwd_context.verify(plain_password, hashed_password)",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "validate_password_strength",
+        "kind": 2,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "def validate_password_strength(password: str) -> Tuple[bool, Optional[str]]:\n    \"\"\"\n    Validate password strength according to requirements:\n    - Minimum 12 characters\n    - At least one uppercase letter\n    - At least one lowercase letter\n    - At least one digit\n    - At least one special character\n    Args:\n        password: Password to validate",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "validate_email",
+        "kind": 2,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "def validate_email(email: str) -> Tuple[bool, Optional[str]]:\n    \"\"\"\n    Validate email format.\n    Args:\n        email: Email to validate\n    Returns:\n        Tuple of (is_valid, error_message)\n    \"\"\"\n    pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'\n    if not re.match(pattern, email):",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "validate_username",
+        "kind": 2,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "def validate_username(username: str) -> Tuple[bool, Optional[str]]:\n    \"\"\"\n    Validate username according to requirements:\n    - Only letters, numbers, underscores\n    - No whitespace\n    - 3-30 characters\n    Args:\n        username: Username to validate\n    Returns:\n        Tuple of (is_valid, error_message)",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_access_token",
+        "kind": 2,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "def create_access_token(\n    user_id: UUID,\n    session_id: UUID,\n    expires_delta: Optional[timedelta] = None\n) -> str:\n    \"\"\"\n    Create a JWT access token.\n    Args:\n        user_id: User ID to encode in token\n        session_id: Session ID to encode in token",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "verify_token",
+        "kind": 2,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "def verify_token(token: str) -> Tuple[bool, Optional[dict], Optional[str]]:\n    \"\"\"\n    Verify and decode a JWT token.\n    Args:\n        token: JWT token to verify\n    Returns:\n        Tuple of (is_valid, payload, error_message)\n    \"\"\"\n    try:\n        payload = jwt.decode(",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "check_brute_force",
+        "kind": 2,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "def check_brute_force(\n    email: str,\n    db: Session,\n    max_attempts: int = 5,\n    lockout_minutes: int = 15\n) -> Tuple[bool, Optional[str]]:\n    \"\"\"\n    Check if user account should be locked due to failed login attempts.\n    Args:\n        email: User email",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "record_login_attempt",
+        "kind": 2,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "def record_login_attempt(\n    email: str,\n    ip_address: Optional[str],\n    user_agent: Optional[str],\n    success: bool,\n    reason: Optional[str],\n    db: Session\n) -> LoginAttempt:\n    \"\"\"\n    Record a login attempt in the database.",
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "pwd_context",
+        "kind": 5,
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "peekOfCode": "pwd_context = CryptContext(\n    schemes=[\"bcrypt\"],\n    deprecated=\"auto\",\n    bcrypt__rounds=12  # Strong hashing\n)\n# ============= Password & Validation Functions =============\ndef hash_password(password: str) -> str:\n    \"\"\"\n    Hash a password using bcrypt.\n    Args:",
+        "detail": "app.core.security",
         "documentation": {}
     },
     {
@@ -4106,15 +5106,6 @@
         "documentation": {}
     },
     {
-        "label": "AuthProvider",
-        "kind": 6,
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
-        "peekOfCode": "class AuthProvider(Base, TimestampMixin):\n    \"\"\"\n    Supported Authentication Providers.\n    Ref: Entities/AuthProvider.md\n    \"\"\"\n    __tablename__ = \"auth_providers\"\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True), \n        primary_key=True, \n        default=uuid.uuid4",
-        "detail": "app.db.models.users",
-        "documentation": {}
-    },
-    {
         "label": "AuditLog",
         "kind": 6,
         "importPath": "app.db.models.users",
@@ -4128,7 +5119,43 @@
         "kind": 6,
         "importPath": "app.db.models.users",
         "description": "app.db.models.users",
-        "peekOfCode": "class Session(Base, TimestampMixin):\n    \"\"\"\n    Session Model - Login Sessions for Users.\n    Ref: Entities/Session.md\n    \"\"\"\n    __tablename__ = \"sessions\"\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True), \n        primary_key=True, \n        default=uuid.uuid4",
+        "peekOfCode": "class Session(Base, TimestampMixin):\n    \"\"\"\n    Session Model - Login Sessions for Users.\n    Tracks user sessions with device info, IP, location, and revocation status.\n    Ref: Entities/Session.md\n    \"\"\"\n    __tablename__ = \"sessions\"\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True), \n        primary_key=True, ",
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "LoginAttempt",
+        "kind": 6,
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "peekOfCode": "class LoginAttempt(Base, TimestampMixin):\n    \"\"\"\n    Track login attempts for brute-force protection.\n    Stores failed login attempts per user/email.\n    \"\"\"\n    __tablename__ = \"login_attempts\"\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True),\n        primary_key=True,\n        default=uuid.uuid4",
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordResetToken",
+        "kind": 6,
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "peekOfCode": "class PasswordResetToken(Base, TimestampMixin):\n    \"\"\"\n    One-time password reset tokens with expiration.\n    \"\"\"\n    __tablename__ = \"password_reset_tokens\"\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True),\n        primary_key=True,\n        default=uuid.uuid4\n    )",
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "EmailVerificationToken",
+        "kind": 6,
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "peekOfCode": "class EmailVerificationToken(Base, TimestampMixin):\n    \"\"\"\n    One-time email verification tokens with expiration.\n    \"\"\"\n    __tablename__ = \"email_verification_tokens\"\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True),\n        primary_key=True,\n        default=uuid.uuid4\n    )",
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "AuthProvider",
+        "kind": 6,
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "peekOfCode": "class AuthProvider(Base, TimestampMixin):\n    \"\"\"\n    OAuth2 Provider Configuration and User Linked Accounts.\n    Tracks which OAuth providers are configured and which accounts users have linked.\n    \"\"\"\n    __tablename__ = \"oauth_providers\"\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True),\n        primary_key=True,\n        default=uuid.uuid4",
         "detail": "app.db.models.users",
         "documentation": {}
     },
@@ -4529,6 +5556,204 @@
         "documentation": {}
     },
     {
+        "label": "UserRegisterRequest",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class UserRegisterRequest(BaseModel):\n    \"\"\"User registration request\"\"\"\n    email: EmailStr = Field(..., description=\"User email\")\n    username: str = Field(..., min_length=3, max_length=30, description=\"Username\")\n    password: str = Field(..., min_length=12, description=\"Password\")\n    full_name: Optional[str] = Field(None, description=\"User full name\")\n    class Config:\n        json_schema_extra = {\n            \"example\": {\n                \"email\": \"user@example.com\",",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "UserResponse",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class UserResponse(BaseModel):\n    \"\"\"User response\"\"\"\n    id: UUID\n    email: str\n    username: str\n    full_name: Optional[str]\n    status: str\n    email_verified_at: Optional[datetime]\n    created_at: datetime\n    class Config:",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "EmailVerifyRequest",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class EmailVerifyRequest(BaseModel):\n    \"\"\"Email verification request\"\"\"\n    user_id: UUID = Field(..., description=\"User ID\")\n    token: str = Field(..., description=\"Verification token from email\")\n    class Config:\n        json_schema_extra = {\n            \"example\": {\n                \"user_id\": \"123e4567-e89b-12d3-a456-426614174000\",\n                \"token\": \"verification_token_from_email\"\n            }",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "ResendVerificationRequest",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class ResendVerificationRequest(BaseModel):\n    \"\"\"Resend email verification request\"\"\"\n    user_id: UUID = Field(..., description=\"User ID\")\n# ============= Login =============\nclass LoginRequest(BaseModel):\n    \"\"\"Login request\"\"\"\n    email: EmailStr = Field(..., description=\"User email\")\n    password: str = Field(..., description=\"User password\")\n    class Config:\n        json_schema_extra = {",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "LoginRequest",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class LoginRequest(BaseModel):\n    \"\"\"Login request\"\"\"\n    email: EmailStr = Field(..., description=\"User email\")\n    password: str = Field(..., description=\"User password\")\n    class Config:\n        json_schema_extra = {\n            \"example\": {\n                \"email\": \"user@example.com\",\n                \"password\": \"SecurePass123!\"\n            }",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "SessionResponse",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class SessionResponse(BaseModel):\n    \"\"\"Login response - session data\"\"\"\n    user_id: str\n    session_id: str\n    token: str\n    expires_in: int  # seconds\n    user: UserResponse\n    class Config:\n        from_attributes = True\n        json_schema_extra = {",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFARequiredResponse",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class MFARequiredResponse(BaseModel):\n    \"\"\"MFA required response - returned when MFA is enabled\"\"\"\n    session_id: str\n    requires_mfa: bool = True\n    token: str  # Temporary token for MFA verification\n    expires_in: int\n    message: str = \"Please provide 2FA code to complete login\"\n# ============= MFA =============\nclass MFAEnableResponse(BaseModel):\n    \"\"\"MFA enable response\"\"\"",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFAEnableResponse",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class MFAEnableResponse(BaseModel):\n    \"\"\"MFA enable response\"\"\"\n    secret_key: str = Field(..., description=\"TOTP secret key\")\n    qr_code: str = Field(..., description=\"QR code as data URL\")\n    backup_codes: List[str] = Field(..., description=\"Backup codes\")\n    class Config:\n        json_schema_extra = {\n            \"example\": {\n                \"secret_key\": \"JBSWY3DPEBLW64TMMQ======\",\n                \"qr_code\": \"data:image/png;base64,iVBORw0KGgo...\",",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFAConfirmRequest",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class MFAConfirmRequest(BaseModel):\n    \"\"\"MFA confirmation request\"\"\"\n    otp_code: str = Field(..., pattern=r'^\\d{6}$', description=\"6-digit OTP code\")\nclass MFALoginRequest(BaseModel):\n    \"\"\"MFA login request\"\"\"\n    session_id: str = Field(..., description=\"Session ID from login attempt\")\n    otp_code: Optional[str] = Field(None, pattern=r'^\\d{6}$', description=\"6-digit OTP code\")\n    backup_code: Optional[str] = Field(None, description=\"Backup code (if OTP unavailable)\")\nclass MFADisableRequest(BaseModel):\n    \"\"\"MFA disable request\"\"\"",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFALoginRequest",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class MFALoginRequest(BaseModel):\n    \"\"\"MFA login request\"\"\"\n    session_id: str = Field(..., description=\"Session ID from login attempt\")\n    otp_code: Optional[str] = Field(None, pattern=r'^\\d{6}$', description=\"6-digit OTP code\")\n    backup_code: Optional[str] = Field(None, description=\"Backup code (if OTP unavailable)\")\nclass MFADisableRequest(BaseModel):\n    \"\"\"MFA disable request\"\"\"\n    password: str = Field(..., description=\"User password for confirmation\")\nclass BackupCodesResponse(BaseModel):\n    \"\"\"Backup codes response\"\"\"",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFADisableRequest",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class MFADisableRequest(BaseModel):\n    \"\"\"MFA disable request\"\"\"\n    password: str = Field(..., description=\"User password for confirmation\")\nclass BackupCodesResponse(BaseModel):\n    \"\"\"Backup codes response\"\"\"\n    backup_codes: List[str]\n# ============= Password Management =============\nclass PasswordResetRequest(BaseModel):\n    \"\"\"Password reset request\"\"\"\n    email: EmailStr = Field(..., description=\"User email\")",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "BackupCodesResponse",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class BackupCodesResponse(BaseModel):\n    \"\"\"Backup codes response\"\"\"\n    backup_codes: List[str]\n# ============= Password Management =============\nclass PasswordResetRequest(BaseModel):\n    \"\"\"Password reset request\"\"\"\n    email: EmailStr = Field(..., description=\"User email\")\nclass PasswordResetConfirmRequest(BaseModel):\n    \"\"\"Password reset confirmation request\"\"\"\n    user_id: UUID = Field(..., description=\"User ID\")",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordResetRequest",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class PasswordResetRequest(BaseModel):\n    \"\"\"Password reset request\"\"\"\n    email: EmailStr = Field(..., description=\"User email\")\nclass PasswordResetConfirmRequest(BaseModel):\n    \"\"\"Password reset confirmation request\"\"\"\n    user_id: UUID = Field(..., description=\"User ID\")\n    token: str = Field(..., description=\"Reset token from email\")\n    new_password: str = Field(..., min_length=12, description=\"New password\")\nclass PasswordChangeRequest(BaseModel):\n    \"\"\"Password change request for authenticated users\"\"\"",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordResetConfirmRequest",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class PasswordResetConfirmRequest(BaseModel):\n    \"\"\"Password reset confirmation request\"\"\"\n    user_id: UUID = Field(..., description=\"User ID\")\n    token: str = Field(..., description=\"Reset token from email\")\n    new_password: str = Field(..., min_length=12, description=\"New password\")\nclass PasswordChangeRequest(BaseModel):\n    \"\"\"Password change request for authenticated users\"\"\"\n    current_password: str = Field(..., description=\"Current password\")\n    new_password: str = Field(..., min_length=12, description=\"New password\")\n# ============= Session Management =============",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordChangeRequest",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class PasswordChangeRequest(BaseModel):\n    \"\"\"Password change request for authenticated users\"\"\"\n    current_password: str = Field(..., description=\"Current password\")\n    new_password: str = Field(..., min_length=12, description=\"New password\")\n# ============= Session Management =============\nclass SessionInfo(BaseModel):\n    \"\"\"Session information\"\"\"\n    session_id: str\n    device_info: str\n    ip_address: Optional[str]",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "SessionInfo",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class SessionInfo(BaseModel):\n    \"\"\"Session information\"\"\"\n    session_id: str\n    device_info: str\n    ip_address: Optional[str]\n    geo_location: Optional[str]\n    last_active_at: datetime\n    created_at: datetime\n    is_current: bool\nclass SessionListResponse(BaseModel):",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "SessionListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class SessionListResponse(BaseModel):\n    \"\"\"List of sessions response\"\"\"\n    sessions: List[SessionInfo]\n    total: int\nclass RevokeSessionRequest(BaseModel):\n    \"\"\"Revoke session request\"\"\"\n    session_id: UUID = Field(..., description=\"Session ID to revoke\")\n# ============= OAuth2 =============\nclass OAuthLoginRequest(BaseModel):\n    \"\"\"OAuth2 login request\"\"\"",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "RevokeSessionRequest",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class RevokeSessionRequest(BaseModel):\n    \"\"\"Revoke session request\"\"\"\n    session_id: UUID = Field(..., description=\"Session ID to revoke\")\n# ============= OAuth2 =============\nclass OAuthLoginRequest(BaseModel):\n    \"\"\"OAuth2 login request\"\"\"\n    provider: str = Field(..., description=\"OAuth provider (google, github)\")\n    code: str = Field(..., description=\"Authorization code from provider\")\n    redirect_uri: str = Field(..., description=\"Redirect URI used in authorization request\")\nclass OAuthCallbackResponse(BaseModel):",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthLoginRequest",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class OAuthLoginRequest(BaseModel):\n    \"\"\"OAuth2 login request\"\"\"\n    provider: str = Field(..., description=\"OAuth provider (google, github)\")\n    code: str = Field(..., description=\"Authorization code from provider\")\n    redirect_uri: str = Field(..., description=\"Redirect URI used in authorization request\")\nclass OAuthCallbackResponse(BaseModel):\n    \"\"\"OAuth2 callback response\"\"\"\n    authorization_url: str\n# ============= Error Responses =============\nclass ErrorResponse(BaseModel):",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthCallbackResponse",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class OAuthCallbackResponse(BaseModel):\n    \"\"\"OAuth2 callback response\"\"\"\n    authorization_url: str\n# ============= Error Responses =============\nclass ErrorResponse(BaseModel):\n    \"\"\"Standard error response\"\"\"\n    detail: str\n    error_code: Optional[str] = None\n    class Config:\n        json_schema_extra = {",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "ErrorResponse",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class ErrorResponse(BaseModel):\n    \"\"\"Standard error response\"\"\"\n    detail: str\n    error_code: Optional[str] = None\n    class Config:\n        json_schema_extra = {\n            \"example\": {\n                \"detail\": \"Email already registered\",\n                \"error_code\": \"EMAIL_ALREADY_EXISTS\"\n            }",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationErrorResponse",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class ValidationErrorResponse(BaseModel):\n    \"\"\"Validation error response\"\"\"\n    detail: List[dict]",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
         "label": "UserBase",
         "kind": 6,
         "importPath": "app.schemas.user",
@@ -4754,6 +5979,51 @@
         "documentation": {}
     },
     {
+        "label": "AuthService",
+        "kind": 6,
+        "importPath": "app.services.auth",
+        "description": "app.services.auth",
+        "peekOfCode": "class AuthService:\n    \"\"\"\n    Service for authentication operations.\n    Handles registration, login, password management, and email verification.\n    \"\"\"\n    def __init__(self, db: Session, email_service: Optional[EmailService] = None):\n        self.db = db\n        self.email_service = email_service or EmailService()\n    # ============= User Registration =============\n    def register_user(",
+        "detail": "app.services.auth",
+        "documentation": {}
+    },
+    {
+        "label": "EmailService",
+        "kind": 6,
+        "importPath": "app.services.email",
+        "description": "app.services.email",
+        "peekOfCode": "class EmailService:\n    \"\"\"\n    Service for sending emails.\n    Currently a stub implementation - should be integrated with an email provider\n    (SendGrid, Mailgun, AWS SES, etc.)\n    \"\"\"\n    def __init__(\n        self,\n        smtp_host: Optional[str] = None,\n        smtp_port: Optional[int] = None,",
+        "detail": "app.services.email",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "app.services.email",
+        "description": "app.services.email",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass EmailService:\n    \"\"\"\n    Service for sending emails.\n    Currently a stub implementation - should be integrated with an email provider\n    (SendGrid, Mailgun, AWS SES, etc.)\n    \"\"\"\n    def __init__(\n        self,\n        smtp_host: Optional[str] = None,",
+        "detail": "app.services.email",
+        "documentation": {}
+    },
+    {
+        "label": "MFAService",
+        "kind": 6,
+        "importPath": "app.services.mfa",
+        "description": "app.services.mfa",
+        "peekOfCode": "class MFAService:\n    \"\"\"\n    Service for Multi-Factor Authentication (MFA) operations.\n    Implements TOTP (Time-based One-Time Password) and backup codes.\n    \"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n        self.BACKUP_CODES_COUNT = 10\n        self.BACKUP_CODE_LENGTH = 8\n    # ============= MFA Setup =============",
+        "detail": "app.services.mfa",
+        "documentation": {}
+    },
+    {
+        "label": "SessionService",
+        "kind": 6,
+        "importPath": "app.services.session",
+        "description": "app.services.session",
+        "peekOfCode": "class SessionService:\n    \"\"\"\n    Service for session management operations.\n    Handles session tracking, concurrent device limits, and security alerts.\n    \"\"\"\n    def __init__(self, db: DBSession):\n        self.db = db\n        self.MAX_CONCURRENT_SESSIONS = 5\n        self.IMPOSSIBLE_TRAVEL_THRESHOLD_KMH = 900  # ~900 km/h (fastest commercial flight)\n        self.IMPOSSIBLE_TRAVEL_TIME_MINUTES = 60",
+        "detail": "app.services.session",
+        "documentation": {}
+    },
+    {
         "label": "WorkspaceService",
         "kind": 6,
         "importPath": "app.services.workspace",
@@ -4931,6 +6201,15 @@
         "description": "app.services.workspace_examples",
         "peekOfCode": "def example_complete_workflow(db: Session, owner_user_id: uuid.UUID):\n    \"\"\"Complete workflow: Create workspace, add members, configure settings.\"\"\"\n    print(\"\\n\" + \"=\"*60)\n    print(\"COMPLETE WORKFLOW EXAMPLE: Setting up new team\")\n    print(\"=\"*60)\n    # Step 1: Create workspace\n    print(\"\\n[1/5] Creating workspace...\")\n    workspace_data = WorkspaceCreate(\n        name=\"Design Team 2024\",\n        description=\"Design team workspace for 2024 projects\"",
         "detail": "app.services.workspace_examples",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.main",
+        "description": "app.main",
+        "peekOfCode": "app = FastAPI(\n    title=settings.APP_NAME,\n    version=settings.APP_VERSION,\n    description=\"PronaFlow Project Management Platform - Backend API\",\n    debug=settings.DEBUG\n)\n# CORS middleware\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=settings.ALLOWED_ORIGINS,",
+        "detail": "app.main",
         "documentation": {}
     },
     {

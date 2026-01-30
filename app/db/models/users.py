@@ -7,13 +7,13 @@ import uuid
 from typing import Optional, List, TYPE_CHECKING
 from datetime import datetime
 
-from sqlalchemy import String, Integer, DateTime, ForeignKey, Index, Table, Column, Boolean
+from sqlalchemy import String, Integer, DateTime, ForeignKey, Index, Table, Column, Boolean, Text
 from sqlalchemy.dialects.postgresql import UUID, JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.declarative_base import Base
 from app.db.mixins import TimestampMixin, SoftDeleteMixin
-from app.db.enums import UserStatus
+from app.db.enums import UserStatus, AuthProvider
 
 if TYPE_CHECKING:
     from app.db.models.workspaces import Workspace, WorkspaceMember
@@ -71,6 +71,11 @@ class User(Base, TimestampMixin, SoftDeleteMixin):
         String(255),
         nullable=True, 
         comment="Hashed password for local authentication."
+    )
+    full_name: Mapped[Optional[str]] = mapped_column(
+        String(255),
+        nullable=True,
+        comment="User's full name."
     )
 
     status: Mapped[UserStatus] = mapped_column(
@@ -161,19 +166,6 @@ class MFABackupCode(Base):
     code_hash: Mapped[str] = mapped_column(String(255), nullable=False)
     used_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), nullable=True)
 
-class AuthProvider(Base, TimestampMixin):
-    """
-    Supported Authentication Providers.
-    Ref: Entities/AuthProvider.md
-    """
-    __tablename__ = "auth_providers"
-    id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), 
-        primary_key=True, 
-        default=uuid.uuid4
-    )
-    name: Mapped[str] = mapped_column(String(50), unique=True, nullable=False)
-    description: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
 
 class AuditLog(Base, TimestampMixin):
     """
@@ -199,6 +191,7 @@ class AuditLog(Base, TimestampMixin):
 class Session(Base, TimestampMixin):
     """
     Session Model - Login Sessions for Users.
+    Tracks user sessions with device info, IP, location, and revocation status.
     Ref: Entities/Session.md
     """
     __tablename__ = "sessions"
@@ -211,14 +204,223 @@ class Session(Base, TimestampMixin):
     user_id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True), 
         ForeignKey('users.id'), 
-        nullable=False
+        nullable=False,
+        index=True
     )
-    device_info: Mapped[Optional[str]] = mapped_column(String(255), nullable=True)
-    ip_address: Mapped[Optional[str]] = mapped_column(String(45), nullable=True)
-    geo_location: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
-    last_active_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
-    is_current: Mapped[bool] = mapped_column(default=True)
-    revoked_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), nullable=True)
+    token: Mapped[str] = mapped_column(
+        String(500),
+        unique=True,
+        nullable=False,
+        comment="JWT token for this session"
+    )
+    device_info: Mapped[Optional[str]] = mapped_column(
+        String(255), 
+        nullable=True,
+        comment="Browser/device info (e.g., Chrome on Windows 10)"
+    )
+    ip_address: Mapped[Optional[str]] = mapped_column(
+        String(45), 
+        nullable=True,
+        comment="Client IP address"
+    )
+    geo_location: Mapped[Optional[str]] = mapped_column(
+        String(100), 
+        nullable=True,
+        comment="Estimated geographic location (city, country)"
+    )
+    user_agent: Mapped[Optional[str]] = mapped_column(
+        Text, 
+        nullable=True,
+        comment="Full user agent string for device identification"
+    )
+    last_active_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), 
+        nullable=False,
+        default=datetime.utcnow,
+        comment="Last time this session was active"
+    )
+    revoked_at: Mapped[Optional[datetime]] = mapped_column(
+        DateTime(timezone=True), 
+        nullable=True,
+        comment="Timestamp when session was revoked/logged out"
+    )
     
     # Relationships
-    user: Mapped["User"] = relationship(foreign_keys=[user_id])
+    user: Mapped["User"] = relationship("User", foreign_keys=[user_id])
+
+
+class LoginAttempt(Base, TimestampMixin):
+    """
+    Track login attempts for brute-force protection.
+    Stores failed login attempts per user/email.
+    """
+    __tablename__ = "login_attempts"
+    
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        primary_key=True,
+        default=uuid.uuid4
+    )
+    email: Mapped[str] = mapped_column(
+        String(255),
+        index=True,
+        nullable=False,
+        comment="Email attempted to login"
+    )
+    ip_address: Mapped[Optional[str]] = mapped_column(
+        String(45),
+        nullable=True,
+        comment="IP address of login attempt"
+    )
+    user_agent: Mapped[Optional[str]] = mapped_column(
+        Text,
+        nullable=True,
+        comment="User agent of login attempt"
+    )
+    success: Mapped[bool] = mapped_column(
+        default=False,
+        comment="Whether login attempt was successful"
+    )
+    reason: Mapped[Optional[str]] = mapped_column(
+        String(255),
+        nullable=True,
+        comment="Reason for failed attempt (e.g., 'Invalid password', 'Account locked')"
+    )
+
+
+class PasswordResetToken(Base, TimestampMixin):
+    """
+    One-time password reset tokens with expiration.
+    """
+    __tablename__ = "password_reset_tokens"
+    
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        primary_key=True,
+        default=uuid.uuid4
+    )
+    user_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey('users.id'),
+        nullable=False,
+        index=True
+    )
+    token: Mapped[str] = mapped_column(
+        String(500),
+        unique=True,
+        nullable=False,
+        comment="One-time reset token (hashed)"
+    )
+    expires_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True),
+        nullable=False,
+        comment="Token expiration time (default: 15 minutes)"
+    )
+    used_at: Mapped[Optional[datetime]] = mapped_column(
+        DateTime(timezone=True),
+        nullable=True,
+        comment="When token was used"
+    )
+    
+    # Relationships
+    user: Mapped["User"] = relationship("User", foreign_keys=[user_id])
+
+
+class EmailVerificationToken(Base, TimestampMixin):
+    """
+    One-time email verification tokens with expiration.
+    """
+    __tablename__ = "email_verification_tokens"
+    
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        primary_key=True,
+        default=uuid.uuid4
+    )
+    user_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey('users.id'),
+        nullable=False,
+        index=True
+    )
+    email: Mapped[str] = mapped_column(
+        String(255),
+        nullable=False,
+        comment="Email to be verified"
+    )
+    token: Mapped[str] = mapped_column(
+        String(500),
+        unique=True,
+        nullable=False,
+        comment="One-time verification token (hashed)"
+    )
+    expires_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True),
+        nullable=False,
+        comment="Token expiration time (default: 24 hours)"
+    )
+    verified_at: Mapped[Optional[datetime]] = mapped_column(
+        DateTime(timezone=True),
+        nullable=True,
+        comment="When email was verified"
+    )
+    
+    # Relationships
+    user: Mapped["User"] = relationship("User", foreign_keys=[user_id])
+
+
+class AuthProvider(Base, TimestampMixin):
+    """
+    OAuth2 Provider Configuration and User Linked Accounts.
+    Tracks which OAuth providers are configured and which accounts users have linked.
+    """
+    __tablename__ = "oauth_providers"
+    
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        primary_key=True,
+        default=uuid.uuid4
+    )
+    user_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey('users.id'),
+        nullable=False,
+        index=True
+    )
+    provider: Mapped[str] = mapped_column(
+        String(50),
+        nullable=False,
+        comment="OAuth provider name (google, github, etc.)"
+    )
+    provider_user_id: Mapped[str] = mapped_column(
+        String(255),
+        nullable=False,
+        comment="User ID from OAuth provider"
+    )
+    provider_email: Mapped[str] = mapped_column(
+        String(255),
+        nullable=False,
+        comment="Email from OAuth provider"
+    )
+    access_token: Mapped[Optional[str]] = mapped_column(
+        Text,
+        nullable=True,
+        comment="OAuth access token (encrypted)"
+    )
+    refresh_token: Mapped[Optional[str]] = mapped_column(
+        Text,
+        nullable=True,
+        comment="OAuth refresh token (encrypted)"
+    )
+    expires_at: Mapped[Optional[datetime]] = mapped_column(
+        DateTime(timezone=True),
+        nullable=True,
+        comment="Token expiration time"
+    )
+    
+    # Relationships
+    user: Mapped["User"] = relationship("User", foreign_keys=[user_id])
+    
+    __table_args__ = (
+        Index('idx_oauth_provider_user', 'provider', 'provider_user_id', unique=True),
+    )

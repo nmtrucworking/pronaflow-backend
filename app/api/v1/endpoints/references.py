@@ -1,6 +1,6 @@
 from typing import Any, List
 from fastapi import APIRouter, HTTPException
-from backend.app.core.referencer_loader import reference_loader
+from app.core.referencer_loader import reference_loader
 
 router = APIRouter()
 
