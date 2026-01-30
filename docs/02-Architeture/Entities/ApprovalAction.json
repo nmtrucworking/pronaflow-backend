@@ -1,0 +1,129 @@
+{
+    "meta": {
+        "tableName": "approval_actions",
+        "entityName": "ApprovalAction",
+        "module": "unified-collaboration-hub",
+        "description": "Lưu trữ lịch sử thao tác duyệt/từ chối kèm chữ ký số (Audit Trail).",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "action_id",
+            "label": "Mã hành động",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "approval_id",
+            "label": "Mã yêu cầu phê duyệt",
+            "description": "Liên kết với yêu cầu phê duyệt",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "ApprovalRequest",
+                    "field": "approval_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "action",
+            "label": "Hành động",
+            "description": "Quyết định của người duyệt",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 20,
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["APPROVE", "REJECT", "COMMENT"],
+                "persistAsDbEnum": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "actor_id",
+            "label": "Người thực hiện",
+            "description": "Người thực hiện hành động duyệt/từ chối",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "User",
+                    "field": "user_id",
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "checksum",
+            "label": "Chữ ký số",
+            "description": "Mã checksum xác thực hành động (Digital Signature)",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 255,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "action_at",
+            "label": "Thời điểm thực hiện",
+            "description": "Thời gian hành động diễn ra",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

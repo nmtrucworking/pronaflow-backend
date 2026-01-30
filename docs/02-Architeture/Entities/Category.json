@@ -1,0 +1,130 @@
+{
+    "meta": {
+        "tableName": "categories",
+        "entityName": "Category",
+        "module": "help-center",
+        "description": "Phân loại các bài viết trong Help Center thành cấu trúc cây thư mục.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "category_id",
+            "label": "Mã danh mục",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "parent_id",
+            "label": "Danh mục cha",
+            "description": "ID của danh mục cha (đệ quy)",
+            "logicalType": "uuid",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": true
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "Category",
+                    "field": "category_id",
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "name",
+            "label": "Tên danh mục",
+            "description": "Tên hiển thị của danh mục",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 100,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "slug",
+            "label": "Đường dẫn",
+            "description": "URL slug cho danh mục",
+            "logicalType": "string",
+            "required": true,
+            "generated": "computed",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 150,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "description",
+            "label": "Mô tả",
+            "description": "Mô tả ngắn về danh mục",
+            "logicalType": "string",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TEXT",
+                "nullable": true
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "position",
+            "label": "Thứ tự",
+            "description": "Thứ tự sắp xếp hiển thị",
+            "logicalType": "integer",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "INTEGER",
+                "defaultValue": "0",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_category_parent",
+            "fields": ["parent_id"],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": true,
+        "softDelete": false,
+        "fields": {
+            "createdAt": "created_at",
+            "updatedAt": "updated_at"
+        }
+    }
+}

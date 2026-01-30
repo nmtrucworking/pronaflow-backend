@@ -1,0 +1,169 @@
+{
+    "meta": {
+        "tableName": "change_requests",
+        "entityName": "ChangeRequest",
+        "module": "project-lifecycle",
+        "description": "Quản lý các yêu cầu thay đổi phạm vi, thời gian hoặc chi phí của dự án.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "request_id",
+            "label": "Mã yêu cầu",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "project_id",
+            "label": "Mã dự án",
+            "description": "Dự án liên quan",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "Project",
+                    "field": "project_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "requester_id",
+            "label": "Người yêu cầu",
+            "description": "Người tạo yêu cầu thay đổi",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "User",
+                    "field": "user_id",
+                    "onDelete": "NO ACTION",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "title",
+            "label": "Tiêu đề",
+            "description": "Tóm tắt yêu cầu thay đổi",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 200,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "description",
+            "label": "Chi tiết thay đổi",
+            "description": "Mô tả chi tiết nội dung cần thay đổi",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TEXT",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "status",
+            "label": "Trạng thái",
+            "description": "Trạng thái phê duyệt (SUBMITTED, APPROVED, REJECTED)",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 20,
+                "defaultValue": "'SUBMITTED'",
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["SUBMITTED", "IN_REVIEW", "APPROVED", "REJECTED"],
+                "persistAsDbEnum": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "impact_analysis",
+            "label": "Phân tích tác động",
+            "description": "Đánh giá ảnh hưởng đến tiến độ, chi phí",
+            "logicalType": "string",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TEXT",
+                "nullable": true
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "created_at",
+            "label": "Ngày tạo",
+            "description": "Thời điểm tạo yêu cầu",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_change_request_project",
+            "fields": ["project_id"],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": true,
+        "softDelete": false,
+        "fields": {
+            "updatedAt": "updated_at"
+        }
+    }
+}

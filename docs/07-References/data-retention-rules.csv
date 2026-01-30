@@ -1,0 +1,8 @@
+Data Type,Retention Period,Action After Expiration,Business Rationale,Source Module
+Deleted Items (Trash Bin),30 days,Hard Delete,Hỗ trợ khôi phục lỗi thao tác (User Error) trong thời gian ngắn.,Module 8
+Soft Deleted Workspaces,30 days,Hard Delete,Thời gian ân hạn để khôi phục tổ chức trước khi xóa vĩnh viễn.,Module 2
+System Logs (Audit/Activity),90 days,Archive to Cold Storage,Phục vụ kiểm toán (Audit) và điều tra sự cố (Debug).,Module 8
+Closed Projects (Inactive),180 days,Archive (Read-only),Giảm tải cho Database chính (Hot Data) để tối ưu hiệu năng truy vấn.,Module 8
+User Uploads (Temp Files),24 hours,Hard Delete,Dọn dẹp các file rác do quá trình upload bị gián đoạn hoặc không gắn vào Task.,Module 6
+Refresh Tokens (Session),30 days,Revoke/Delete,Bảo mật phiên đăng nhập và ép buộc xác thực lại định kỳ.,Module 1
+Project Export Links,24 hours,Expire/Delete,Bảo mật dữ liệu xuất ra (Data Portability), ngăn chặn truy cập trái phép.,Module 8

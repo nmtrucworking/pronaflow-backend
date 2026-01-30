@@ -1,0 +1,113 @@
+{
+    "meta": {
+        "tableName": "article_translations",
+        "entityName": "ArticleTranslation",
+        "module": "help-center",
+        "description": "Lưu trữ nội dung bài viết theo các ngôn ngữ khác nhau (Mapping với Module 9).",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "translation_id",
+            "label": "Mã bản dịch",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "version_id",
+            "label": "Mã phiên bản",
+            "description": "Liên kết đến phiên bản nội dung cụ thể",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "ArticleVersion",
+                    "field": "version_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "locale",
+            "label": "Ngôn ngữ",
+            "description": "Mã ngôn ngữ (VD: en-US, vi-VN)",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 10,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "translated_content",
+            "label": "Nội dung dịch",
+            "description": "Nội dung đã được dịch (Rich Text)",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TEXT",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "is_default",
+            "label": "Mặc định",
+            "description": "Là ngôn ngữ mặc định của bài viết",
+            "logicalType": "boolean",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "BOOLEAN",
+                "defaultValue": "false",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_article_trans_version_locale",
+            "fields": ["version_id", "locale"],
+            "unique": true,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": true,
+        "softDelete": false,
+        "fields": {
+            "createdAt": "created_at",
+            "updatedAt": "updated_at"
+        }
+    }
+}

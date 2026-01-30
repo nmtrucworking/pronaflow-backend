@@ -1,0 +1,43 @@
+{
+	"nodes":[
+		{"id":"5a8816cbb699f355","x":-40,"y":880,"width":400,"height":50,"type":"file","file":"01-Requirements/Functional-Modules/6 - Unified Collaboration Hub.md"},
+		{"id":"00754ae0d7017fcf","x":-40,"y":980,"width":500,"height":50,"type":"file","file":"01-Requirements/Functional-Modules/7 - Even-Driven Notification System.md"},
+		{"id":"89634f0857e5ce73","x":-40,"y":1080,"width":560,"height":50,"type":"file","file":"01-Requirements/Functional-Modules/9 - User Experience Personalization.md"},
+		{"id":"b3ac1a6263aa2bd8","x":-40,"y":1180,"width":520,"height":50,"type":"file","file":"01-Requirements/Functional-Modules/15 - Help Center and Knowledge Base.md"},
+		{"id":"bc857db2a594d77d","x":-40,"y":1280,"width":480,"height":50,"type":"file","file":"01-Requirements/Functional-Modules/16 - User Onboarding and Adoption.md"},
+		{"id":"5f56b7496aaf7643","x":-460,"y":1075,"width":280,"height":60,"color":"4","type":"text","text":"Nhóm 3: Cộng tác & Trải nghiệm"},
+		{"id":"5b65370920fe9c0b","x":-460,"y":630,"width":250,"height":60,"color":"4","type":"text","text":"Nhóm 2: Cốt lõi Quản lý Dự án"},
+		{"id":"97210abe4b59e21c","x":-40,"y":640,"width":480,"height":50,"type":"file","file":"01-Requirements/Functional-Modules/4 - Task Execution and Orchestration.md"},
+		{"id":"4e2250b163fc7ea7","x":-40,"y":746,"width":500,"height":50,"type":"file","file":"01-Requirements/Functional-Modules/5 - Temporal Planning and Scheduling.md"},
+		{"id":"86df41a46b827384","x":-40,"y":540,"width":460,"height":50,"type":"file","file":"01-Requirements/Functional-Modules/3 - Project Lifecycle Management.md"},
+		{"id":"ee7070616932ba91","type":"file","file":"01-Requirements/Functional-Modules/14 - System Administration.md","x":-35,"y":400,"width":400,"height":50},
+		{"id":"c21e71b1fc9b7b3b","type":"file","file":"01-Requirements/Functional-Modules/8 - Data Archiving and Compliance.md","x":-35,"y":310,"width":500,"height":50},
+		{"id":"cb2034811e65e633","type":"file","file":"01-Requirements/Functional-Modules/2 - Multi-tenancy Workspace Governance.md","x":-35,"y":210,"width":520,"height":50},
+		{"id":"383f0ab5ccfe037e","type":"file","file":"01-Requirements/Functional-Modules/1 - Identity and Access Management.md","x":-35,"y":120,"width":460,"height":50},
+		{"id":"b3bebcb3819e805d","type":"text","text":"Nhóm 1: Nền tảng & Quản trị","x":-455,"y":250,"width":260,"height":60,"color":"4"},
+		{"id":"0e93b0b4d24dde55","x":-35,"y":1400,"width":520,"height":50,"type":"file","file":"01-Requirements/Functional-Modules/10 - Intelligent Decision Support System.md"},
+		{"id":"00597492c0bdbf2e","x":-35,"y":1500,"width":509,"height":50,"type":"file","file":"01-Requirements/Functional-Modules/11 - Advanced Analytics and Reporting.md"},
+		{"id":"0c1b028ab8726881","x":-455,"y":1440,"width":250,"height":60,"color":"4","type":"text","text":"Nhóm 4: Dữ liệu & AI"},
+		{"id":"59109faaba19f584","x":-880,"y":820,"width":160,"height":60,"color":"5","type":"text","text":"PronaFlow"}
+	],
+	"edges":[
+		{"id":"3591636b49402b46","fromNode":"b3bebcb3819e805d","fromSide":"right","toNode":"383f0ab5ccfe037e","toSide":"left"},
+		{"id":"51274b2263038f32","fromNode":"b3bebcb3819e805d","fromSide":"right","toNode":"cb2034811e65e633","toSide":"left"},
+		{"id":"a45d188afd806051","fromNode":"b3bebcb3819e805d","fromSide":"right","toNode":"c21e71b1fc9b7b3b","toSide":"left"},
+		{"id":"a9a0cbf159f59b54","fromNode":"b3bebcb3819e805d","fromSide":"right","toNode":"ee7070616932ba91","toSide":"left"},
+		{"id":"06b1868ace9dcd85","fromNode":"5b65370920fe9c0b","fromSide":"right","toNode":"86df41a46b827384","toSide":"left"},
+		{"id":"4a836ec3fd6c4a81","fromNode":"5b65370920fe9c0b","fromSide":"right","toNode":"97210abe4b59e21c","toSide":"left"},
+		{"id":"e206a6252e622d3e","fromNode":"5b65370920fe9c0b","fromSide":"right","toNode":"4e2250b163fc7ea7","toSide":"left"},
+		{"id":"fb9dd19f847d1cc6","fromNode":"5f56b7496aaf7643","fromSide":"right","toNode":"5a8816cbb699f355","toSide":"left"},
+		{"id":"14e197ef8eeef37b","fromNode":"5f56b7496aaf7643","fromSide":"right","toNode":"00754ae0d7017fcf","toSide":"left"},
+		{"id":"d285491833b792e1","fromNode":"5f56b7496aaf7643","fromSide":"right","toNode":"89634f0857e5ce73","toSide":"left"},
+		{"id":"39f5507c5345e70e","fromNode":"5f56b7496aaf7643","fromSide":"right","toNode":"b3ac1a6263aa2bd8","toSide":"left"},
+		{"id":"cd36725186ed5e6a","fromNode":"5f56b7496aaf7643","fromSide":"right","toNode":"bc857db2a594d77d","toSide":"left"},
+		{"id":"0ad567540b9846bc","fromNode":"0c1b028ab8726881","fromSide":"right","toNode":"0e93b0b4d24dde55","toSide":"left"},
+		{"id":"f8d57487c30c530d","fromNode":"0c1b028ab8726881","fromSide":"right","toNode":"00597492c0bdbf2e","toSide":"left"},
+		{"id":"05f2c5d2ace4c3b4","fromNode":"59109faaba19f584","fromSide":"right","toNode":"b3bebcb3819e805d","toSide":"left"},
+		{"id":"8e136922685edf2a","fromNode":"59109faaba19f584","fromSide":"right","toNode":"5b65370920fe9c0b","toSide":"left"},
+		{"id":"17b465226a9fcaef","fromNode":"59109faaba19f584","fromSide":"right","toNode":"5f56b7496aaf7643","toSide":"left"},
+		{"id":"3ab247bd844ca880","fromNode":"59109faaba19f584","fromSide":"right","toNode":"0c1b028ab8726881","toSide":"left"}
+	]
+}

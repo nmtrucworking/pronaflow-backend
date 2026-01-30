@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "code": "FS",
+    "name_en": "Finish-to-Start",
+    "name_vi": "Kết thúc - Bắt đầu",
+    "notation": "A -> B",
+    "is_default": true,
+    "description": "Task B cannot start until Task A finishes."
+  },
+  {
+    "id": 2,
+    "code": "SS",
+    "name_en": "Start-to-Start",
+    "name_vi": "Cùng bắt đầu",
+    "notation": "Start A -> Start B",
+    "is_default": false,
+    "description": "Task B cannot start until Task A starts."
+  },
+  {
+    "id": 3,
+    "code": "FF",
+    "name_en": "Finish-to-Finish",
+    "name_vi": "Cùng kết thúc",
+    "notation": "End A -> End B",
+    "is_default": false,
+    "description": "Task B cannot finish until Task A finishes."
+  }
+]

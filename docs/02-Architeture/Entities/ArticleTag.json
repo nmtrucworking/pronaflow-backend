@@ -1,0 +1,66 @@
+{
+    "meta": {
+        "tableName": "article_tags",
+        "entityName": "ArticleTag",
+        "module": "help-center",
+        "description": "Bảng trung gian liên kết bài viết và thẻ (Many-to-Many).",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "article_id",
+            "label": "Mã bài viết",
+            "description": "Khóa ngoại đến bảng articles",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "Article",
+                    "field": "article_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "tag_id",
+            "label": "Mã thẻ",
+            "description": "Khóa ngoại đến bảng tags",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "Tag",
+                    "field": "tag_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "pk_article_tags",
+            "fields": ["article_id", "tag_id"],
+            "unique": true,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

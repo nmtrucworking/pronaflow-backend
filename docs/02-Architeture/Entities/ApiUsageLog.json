@@ -1,0 +1,126 @@
+{
+    "meta": {
+        "tableName": "api_usage_logs",
+        "entityName": "ApiUsageLog",
+        "module": "integration-ecosystem",
+        "description": "Ghi nhật ký sử dụng API phục vụ Audit và Rate Limit.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "log_id",
+            "label": "Mã nhật ký",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "token_id",
+            "label": "Mã Token",
+            "description": "Token được sử dụng (nếu có)",
+            "logicalType": "uuid",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "nullable": true
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "ApiToken",
+                    "field": "token_id",
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "endpoint",
+            "label": "Đường dẫn",
+            "description": "API Endpoint được gọi",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 255,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "http_method",
+            "label": "Phương thức HTTP",
+            "description": "GET, POST, PUT, DELETE, etc.",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 10,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "status_code",
+            "label": "Mã trạng thái",
+            "description": "HTTP Status Code trả về (200, 400, 500...)",
+            "logicalType": "integer",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "INTEGER",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "request_at",
+            "label": "Thời gian yêu cầu",
+            "description": "Thời điểm nhận request",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_api_usage_token_time",
+            "fields": ["token_id", "request_at"],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

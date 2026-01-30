@@ -1,0 +1,135 @@
+{
+    "meta": {
+        "tableName": "approval_requests",
+        "entityName": "ApprovalRequest",
+        "module": "unified-collaboration-hub",
+        "description": "Quản lý các yêu cầu phê duyệt trong hệ thống.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "approval_id",
+            "label": "Mã phê duyệt",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "target_type",
+            "label": "Loại đối tượng",
+            "description": "Loại đối tượng cần phê duyệt (TASK, TIMESHEET, PROJECT)",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 50,
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["TASK", "TIMESHEET", "PROJECT", "DOCUMENT"],
+                "persistAsDbEnum": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "target_id",
+            "label": "Mã đối tượng",
+            "description": "ID của đối tượng cần phê duyệt",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "status",
+            "label": "Trạng thái",
+            "description": "Trạng thái của yêu cầu phê duyệt",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 20,
+                "defaultValue": "'PENDING'",
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["PENDING", "APPROVED", "REJECTED", "CANCELLED"],
+                "persistAsDbEnum": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "requested_by",
+            "label": "Người yêu cầu",
+            "description": "Người tạo yêu cầu phê duyệt",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "User",
+                    "field": "user_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "requested_at",
+            "label": "Thời điểm yêu cầu",
+            "description": "Thời gian tạo yêu cầu",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_approval_target",
+            "fields": ["target_type", "target_id"],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

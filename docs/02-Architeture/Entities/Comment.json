@@ -1,0 +1,164 @@
+{
+    "meta": {
+        "tableName": "comments",
+        "entityName": "Comment",
+        "module": "unified-collaboration-hub",
+        "description": "Hệ thống bình luận đa hình (Polymorphic Comment System) áp dụng cho Task, Project, Document.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "comment_id",
+            "label": "Mã bình luận",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "user_id",
+            "label": "Người bình luận",
+            "description": "Người tạo bình luận",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "User",
+                    "field": "user_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "entity_type",
+            "label": "Loại thực thể",
+            "description": "Loại đối tượng được bình luận (TASK, PROJECT, FILE)",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 50,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "entity_id",
+            "label": "Mã thực thể",
+            "description": "ID của đối tượng được bình luận",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "parent_id",
+            "label": "Bình luận cha",
+            "description": "Hỗ trợ bình luận lồng nhau (Threaded Comments)",
+            "logicalType": "uuid",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": true
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "Comment",
+                    "field": "comment_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "content",
+            "label": "Nội dung",
+            "description": "Nội dung bình luận (Rich Text/Markdown)",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TEXT",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "created_at",
+            "label": "Ngày tạo",
+            "description": "Thời điểm tạo bình luận",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "updated_at",
+            "label": "Ngày cập nhật",
+            "description": "Thời điểm chỉnh sửa cuối cùng",
+            "logicalType": "datetime",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "nullable": true
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_comment_entity",
+            "fields": ["entity_type", "entity_id", "created_at"],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": true,
+        "softDelete": true,
+        "fields": {
+            "deletedAt": "deleted_at"
+        }
+    }
+}

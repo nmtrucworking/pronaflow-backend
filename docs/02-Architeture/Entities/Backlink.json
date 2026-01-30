@@ -1,0 +1,109 @@
+{
+    "meta": {
+        "tableName": "backlinks",
+        "entityName": "Backlink",
+        "module": "unified-collaboration-hub",
+        "description": "Lưu trữ mối quan hệ liên kết hai chiều giữa các ghi chú (Notes) hoặc tài liệu.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "source_id",
+            "label": "Nguồn liên kết",
+            "description": "ID của thực thể chứa liên kết (VD: Note A)",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "Note",
+                    "field": "note_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "target_id",
+            "label": "Đích liên kết",
+            "description": "ID của thực thể được liên kết đến (VD: Note B)",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "Note",
+                    "field": "note_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "bl_type",
+            "label": "Loại liên kết",
+            "description": "Loại liên kết (EXPLICIT: chèn link trực tiếp, IMPLICIT: nhắc đến tên)",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 20,
+                "defaultValue": "'EXPLICIT'",
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["EXPLICIT", "IMPLICIT"],
+                "persistAsDbEnum": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "created_at",
+            "label": "Ngày tạo",
+            "description": "Thời điểm liên kết được tạo",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "pk_backlinks",
+            "fields": ["source_id", "target_id"],
+            "unique": true,
+            "method": "btree"
+        },
+        {
+            "name": "idx_backlinks_target",
+            "fields": ["target_id"],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

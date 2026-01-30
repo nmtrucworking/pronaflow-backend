@@ -1,0 +1,66 @@
+{
+    "meta": {
+        "tableName": "api_token_scopes",
+        "entityName": "ApiTokenScope",
+        "module": "integration-ecosystem",
+        "description": "Bảng trung gian ánh xạ quan hệ N-N giữa Token và Scope.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "token_id",
+            "label": "Mã Token",
+            "description": "Khóa ngoại đến bảng api_tokens",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "ApiToken",
+                    "field": "token_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "scope_id",
+            "label": "Mã Phạm vi",
+            "description": "Khóa ngoại đến bảng api_scopes",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "ApiScope",
+                    "field": "scope_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "pk_api_token_scopes",
+            "fields": ["token_id", "scope_id"],
+            "unique": true,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

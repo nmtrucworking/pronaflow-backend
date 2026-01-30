@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"f44eaa76a9100798","type":"text","text":"PronaFlow","x":-320,"y":-180,"width":250,"height":60,"color":"5"},
+		{"id":"2f7eb16491ab059e","type":"text","text":"Backend","x":56,"y":-180,"width":250,"height":60,"color":"2"},
+		{"id":"93945f9fa0638d81","type":"text","text":"frontend","x":64,"y":-32,"width":250,"height":60,"color":"4"},
+		{"id":"ea17515601f8b289","type":"text","text":"electron","x":80,"y":80,"width":250,"height":60,"color":"6"},
+		{"id":"06a8bd37f5d8ff0c","type":"text","text":"`\\app`","x":440,"y":-400,"width":250,"height":60},
+		{"id":"bca2a908c58608ea","type":"text","text":"`requirement.txt`: Danh sách thư viện Python","x":431,"y":124,"width":389,"height":60},
+		{"id":"e0a7fb9f888cf352","type":"text","text":"`main.py`: File khởi chợi Server","x":440,"y":0,"width":286,"height":60},
+		{"id":"9366c295b462207c","type":"text","text":"`\\api`","x":809,"y":-640,"width":250,"height":60},
+		{"id":"4d285fdd7c9a57db","type":"text","text":"`\\core`","x":809,"y":-540,"width":250,"height":60},
+		{"id":"dc225c18256bad8f","type":"text","text":"`\\db`","x":809,"y":-450,"width":250,"height":60},
+		{"id":"5b130d17ed19f153","x":820,"y":-340,"width":250,"height":60,"type":"text","text":"`\\schemas`"},
+		{"id":"022c068c33fc8a34","type":"text","text":"`\\services`","x":809,"y":-260,"width":250,"height":60},
+		{"id":"44ddf3307a93e81e","type":"text","text":"`\\ml_engien`","x":809,"y":-166,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"dc1439955f392251","fromNode":"f44eaa76a9100798","fromSide":"right","toNode":"2f7eb16491ab059e","toSide":"left"},
+		{"id":"9ad8567470307228","fromNode":"f44eaa76a9100798","fromSide":"right","toNode":"ea17515601f8b289","toSide":"left"},
+		{"id":"3be28bdcd64bcb78","fromNode":"2f7eb16491ab059e","fromSide":"right","toNode":"06a8bd37f5d8ff0c","toSide":"left"},
+		{"id":"4398fe3cb39c114f","fromNode":"2f7eb16491ab059e","fromSide":"right","toNode":"e0a7fb9f888cf352","toSide":"left"},
+		{"id":"f1fe521a5d0a0698","fromNode":"2f7eb16491ab059e","fromSide":"right","toNode":"bca2a908c58608ea","toSide":"left"},
+		{"id":"d8bb2c191eff1914","fromNode":"f44eaa76a9100798","fromSide":"right","toNode":"93945f9fa0638d81","toSide":"left"},
+		{"id":"f0132da9a62c6fbc","fromNode":"06a8bd37f5d8ff0c","fromSide":"right","toNode":"9366c295b462207c","toSide":"left"},
+		{"id":"81775ebe3dea5e80","fromNode":"06a8bd37f5d8ff0c","fromSide":"right","toNode":"4d285fdd7c9a57db","toSide":"left"},
+		{"id":"7d1921d32ba842fb","fromNode":"06a8bd37f5d8ff0c","fromSide":"right","toNode":"dc225c18256bad8f","toSide":"left"},
+		{"id":"171c8e7f9e406a4a","fromNode":"06a8bd37f5d8ff0c","fromSide":"right","toNode":"5b130d17ed19f153","toSide":"left"}
+	]
+}

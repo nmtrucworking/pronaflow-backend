@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "code": "LOW",
+    "name_en": "Low",
+    "name_vi": "Thấp",
+    "description_en": "Tasks can be addressed when time permits.",
+    "description_vi": "Có thể thực hiện khi có thời gian, không gấp.",
+    "color": "#94a3b8",
+    "urgency_level": 1,
+    "order": 1
+  },
+  {
+    "id": 2,
+    "code": "MEDIUM",
+    "name_en": "Medium",
+    "name_vi": "Trung bình",
+    "description_en": "Standard priority, should be addressed in normal workflow.",
+    "description_vi": "Ưu tiên tiêu chuẩn, cần thực hiện theo luồng công việc bình thường.",
+    "color": "#3b82f6",
+    "urgency_level": 2,
+    "order": 2
+  },
+  {
+    "id": 3,
+    "code": "HIGH",
+    "name_en": "High",
+    "name_vi": "Cao",
+    "description_en": "Important tasks that impact project timelines.",
+    "description_vi": "Quan trọng, ảnh hưởng đến tiến độ dự án.",
+    "color": "#f97316",
+    "urgency_level": 3,
+    "order": 3
+  },
+  {
+    "id": 4,
+    "code": "CRITICAL",
+    "name_en": "Critical",
+    "name_vi": "Khẩn cấp",
+    "description_en": "Must be addressed immediately to prevent project failure.",
+    "description_vi": "Phải xử lý ngay lập tức để tránh rủi ro cho dự án.",
+    "color": "#dc2626",
+    "urgency_level": 4,
+    "order": 4
+  }
+]

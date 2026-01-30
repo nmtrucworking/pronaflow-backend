@@ -1,0 +1,131 @@
+{
+    "meta": {
+        "tableName": "archive_policies",
+        "entityName": "ArchivePolicy",
+        "module": "data-archiving-and-compliance",
+        "description": "Cấu hình chính sách tự động lưu trữ dữ liệu.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "policy_id",
+            "label": "Mã chính sách",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "entity_type",
+            "label": "Loại thực thể",
+            "description": "Loại dữ liệu áp dụng (PROJECT, TASK)",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 50,
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["PROJECT", "TASK"],
+                "persistAsDbEnum": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "trigger_status",
+            "label": "Trạng thái kích hoạt",
+            "description": "Trạng thái của entity để kích hoạt lưu trữ (VD: DONE)",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 50,
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["DONE", "CANCELLED", "CLOSED"],
+                "persistAsDbEnum": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "inactive_days",
+            "label": "Số ngày không hoạt động",
+            "description": "Số ngày chờ sau khi đạt trạng thái kích hoạt (mặc định 180)",
+            "logicalType": "integer",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "INTEGER",
+                "defaultValue": "180",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "target_tier",
+            "label": "Tầng lưu trữ đích",
+            "description": "Nơi dữ liệu sẽ được chuyển đến (COLD, GLACIER)",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 20,
+                "defaultValue": "'COLD'",
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["COLD", "GLACIER"],
+                "persistAsDbEnum": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "is_active",
+            "label": "Kích hoạt",
+            "description": "Trạng thái bật/tắt của chính sách",
+            "logicalType": "boolean",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "BOOLEAN",
+                "defaultValue": "true",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [],
+    "audit": {
+        "enabled": true,
+        "softDelete": false,
+        "fields": {
+            "createdAt": "created_at",
+            "updatedAt": "updated_at"
+        }
+    }
+}

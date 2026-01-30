@@ -1,0 +1,130 @@
+{
+    "meta": {
+        "tableName": "admin_audit_logs",
+        "entityName": "AdminAuditLog",
+        "module": "system-administration",
+        "description": "Nhật ký ghi lại các hành động của quản trị viên hệ thống.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "log_id",
+            "label": "Mã nhật ký",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": { "type": "PK" }
+        },
+        {
+            "name": "actor_admin_id",
+            "label": "Người thực hiện",
+            "description": "Mã quản trị viên thực hiện hành động",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "AdminUser",
+                    "field": "admin_id",
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "action",
+            "label": "Hành động",
+            "description": "Tên hành động được thực hiện (VD: CREATE_USER, DELETE_PROJECT)",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 100,
+                "nullable": false
+            },
+            "key": { "type": "NONE" }
+        },
+        {
+            "name": "target_resource",
+            "label": "Tài nguyên đích",
+            "description": "Loại tài nguyên bị tác động (VD: User, Project, Setting)",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 100,
+                "nullable": false
+            },
+            "key": { "type": "NONE" }
+        },
+        {
+            "name": "target_id",
+            "label": "Mã đối tượng đích",
+            "description": "UUID của đối tượng bị tác động",
+            "logicalType": "uuid",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": true
+            },
+            "key": { "type": "NONE" }
+        },
+        {
+            "name": "ip_address",
+            "label": "Địa chỉ IP",
+            "description": "IP của người thực hiện hành động",
+            "logicalType": "string",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 45,
+                "nullable": true
+            },
+            "key": { "type": "NONE" }
+        },
+        {
+            "name": "created_at",
+            "label": "Thời gian tạo",
+            "description": "Thời điểm ghi log",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": { "type": "NONE" }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_admin_audit_created_at",
+            "fields": ["created_at"],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

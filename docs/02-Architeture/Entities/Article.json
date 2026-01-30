@@ -1,0 +1,142 @@
+{
+    "meta": {
+        "tableName": "articles",
+        "entityName": "Article",
+        "module": "help-center",
+        "description": "Thực thể chính quản lý các bài viết trong trung tâm trợ giúp/Knowledge Base.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "article_id",
+            "label": "Mã bài viết",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "slug",
+            "label": "Đường dẫn định danh",
+            "description": "SEO-friendly URL slug",
+            "logicalType": "string",
+            "required": true,
+            "generated": "computed",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 255,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "status",
+            "label": "Trạng thái",
+            "description": "Trạng thái xuất bản của bài viết",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 20,
+                "defaultValue": "'DRAFT'",
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["DRAFT", "PUBLISHED", "ARCHIVED"],
+                "persistAsDbEnum": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "visibility",
+            "label": "Phạm vi hiển thị",
+            "description": "Công khai hay nội bộ",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 20,
+                "defaultValue": "'PRIVATE'",
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["PUBLIC", "PRIVATE"],
+                "persistAsDbEnum": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "created_by",
+            "label": "Người tạo",
+            "description": "Admin quản lý nội dung",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "User",
+                    "field": "user_id",
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "created_at",
+            "label": "Ngày tạo",
+            "description": "Thời điểm tạo bài viết",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_article_slug",
+            "fields": ["slug"],
+            "unique": true,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": true,
+        "softDelete": true,
+        "fields": {
+            "createdAt": "created_at",
+            "updatedAt": "updated_at",
+            "deletedAt": "deleted_at"
+        }
+    }
+}

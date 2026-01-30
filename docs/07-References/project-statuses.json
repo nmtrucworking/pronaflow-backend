@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "code": "ON_HOLD",
+    "name_en": "On-Hold",
+    "name_vi": "Tạm dừng",
+    "description": "The project is currently paused or frozen.",
+    "color_hex": ""
+  },
+  {
+    "id": 1,
+    "code": "NOT_STARTED",
+    "name_en": "Not-Started",
+    "name_vi": "Chưa bắt đầu",
+    "description": "New project, execution has not started yet (Default status).",
+    "color_hex": ""
+  },
+  {
+    "id": 2,
+    "code": "IN_PROGRESS",
+    "name_en": "In-Progress",
+    "name_vi": "Đang thực hiện",
+    "description": "The project is currently being executed.",
+    "color_hex": ""
+  },
+  {
+    "id": 3,
+    "code": "IN_REVIEW",
+    "name_en": "In-Review",
+    "name_vi": "Đang đánh giá",
+    "description": "The project is awaiting final acceptance or review.",
+    "color_hex": ""
+  },
+  {
+    "id": 4,
+    "code": "DONE",
+    "name_en": "Done",
+    "name_vi": "Hoàn thành",
+    "description": "The project has been fully completed.",
+    "color_hex": ""
+  }
+]

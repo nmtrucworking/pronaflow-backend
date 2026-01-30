@@ -1,0 +1,84 @@
+{
+    "meta": {
+        "tableName": "admin_roles",
+        "entityName": "AdminRole",
+        "module": "system-administration",
+        "description": "Định nghĩa các vai trò quản trị trong hệ thống.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "role_id",
+            "label": "Mã vai trò",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": { "type": "PK" }
+        },
+        {
+            "name": "role_code",
+            "label": "Mã định danh vai trò",
+            "description": "Mã duy nhất (VD: SECURITY_ADMIN, SUPER_ADMIN)",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 50,
+                "unique": true,
+                "nullable": false
+            },
+            "key": { "type": "NONE" }
+        },
+        {
+            "name": "role_group",
+            "label": "Nhóm vai trò",
+            "description": "Phân loại vai trò quản trị",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 20,
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["SECURITY", "OPS", "AUDIT", "SUPPORT"],
+                "persistAsDbEnum": false
+            },
+            "key": { "type": "NONE" }
+        },
+        {
+            "name": "description",
+            "label": "Mô tả",
+            "description": "Mô tả chi tiết về vai trò",
+            "logicalType": "string",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TEXT",
+                "nullable": true
+            },
+            "key": { "type": "NONE" }
+        }
+    ],
+    "indexes": [],
+    "audit": {
+        "enabled": true,
+        "softDelete": false,
+        "fields": {
+            "createdAt": "created_at",
+            "createdBy": "created_by",
+            "updatedAt": "updated_at",
+            "updatedBy": "updated_by"
+        }
+    }
+}

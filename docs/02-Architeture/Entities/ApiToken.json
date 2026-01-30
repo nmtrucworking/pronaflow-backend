@@ -1,0 +1,141 @@
+{
+    "meta": {
+        "tableName": "api_tokens",
+        "entityName": "ApiToken",
+        "module": "integration-ecosystem",
+        "description": "Quản lý các Token truy cập API được cấp cho người dùng hoặc bot.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "token_id",
+            "label": "Mã Token",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "user_id",
+            "label": "Người sở hữu",
+            "description": "Người dùng tạo và sở hữu token này",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "User",
+                    "field": "user_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "name",
+            "label": "Tên Token",
+            "description": "Tên gợi nhớ (VD: CI Bot, Mobile App)",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 100,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "token_hash",
+            "label": "Mã băm Token",
+            "description": "Lưu trữ dạng hash, không lưu plain text",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 255,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "expires_at",
+            "label": "Ngày hết hạn",
+            "description": "Thời điểm token hết hiệu lực",
+            "logicalType": "datetime",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "nullable": true
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "revoked_at",
+            "label": "Ngày thu hồi",
+            "description": "Thời điểm token bị hủy bỏ",
+            "logicalType": "datetime",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "nullable": true
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "created_at",
+            "label": "Ngày tạo",
+            "description": "Thời điểm tạo token",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_api_token_user",
+            "fields": ["user_id"],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "meta": {
+        "tableName": "article_feedbacks",
+        "entityName": "ArticleFeedback",
+        "module": "help-center",
+        "description": "Lưu trữ phản hồi của người dùng về tính hữu ích của bài viết.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "feedback_id",
+            "label": "Mã phản hồi",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "article_id",
+            "label": "Mã bài viết",
+            "description": "Bài viết được phản hồi",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "Article",
+                    "field": "article_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "user_id",
+            "label": "Người dùng",
+            "description": "Người gửi phản hồi (có thể null nếu ẩn danh)",
+            "logicalType": "uuid",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": true
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "User",
+                    "field": "user_id",
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "is_helpful",
+            "label": "Có hữu ích không",
+            "description": "Đánh giá tích cực hay tiêu cực",
+            "logicalType": "boolean",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "BOOLEAN",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "comment",
+            "label": "Bình luận",
+            "description": "Nội dung phản hồi chi tiết",
+            "logicalType": "string",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TEXT",
+                "nullable": true
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "submitted_at",
+            "label": "Thời điểm gửi",
+            "description": "Thời gian phản hồi được ghi nhận",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_feedback_article",
+            "fields": ["article_id"],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "meta": {
+        "tableName": "admin_permissions",
+        "entityName": "AdminPermission",
+        "module": "system-administration",
+        "description": "Danh sách các quyền hạn cụ thể trong hệ thống quản trị.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "permission_id",
+            "label": "Mã quyền",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": { "type": "PK" }
+        },
+        {
+            "name": "resource",
+            "label": "Tài nguyên",
+            "description": "Tài nguyên hệ thống (VD: users, system_settings)",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 100,
+                "nullable": false
+            },
+            "key": { "type": "NONE" }
+        },
+        {
+            "name": "action",
+            "label": "Hành động",
+            "description": "Hành động cho phép (READ, WRITE, DELETE, MANAGE)",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 50,
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["READ", "WRITE", "DELETE", "MANAGE", "EXPORT"],
+                "persistAsDbEnum": false
+            },
+            "key": { "type": "NONE" }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_admin_permission_resource_action",
+            "fields": ["resource", "action"],
+            "unique": true,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

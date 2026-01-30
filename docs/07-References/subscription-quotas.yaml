@@ -1,0 +1,52 @@
+# Định nghĩa hạn mức tài nguyên cho từng gói dịch vụ (Service Tiers)
+# Đơn vị:
+# - storage_gb: Gigabytes
+# - max_projects, max_members: Số lượng (Integer)
+# - features: Danh sách tính năng nâng cao (Boolean flag)
+
+tiers:
+  - id: "FREE"
+    name: "Free Plan"
+    price_monthly: 0
+    quotas:
+      max_projects: 3
+      max_members_per_workspace: 5
+      storage_limit_gb: 1
+      upload_size_limit_mb: 10
+    features:
+      unlimited_history: false
+      advanced_reports: false
+      custom_fields: false
+      sso_login: false
+      audit_logs: false
+
+  - id: "PRO"
+    name: "Pro Plan"
+    price_monthly: 10  # Dự kiến $10/user/month
+    quotas:
+      max_projects: -1 # -1 đại diện cho Unlimited
+      max_members_per_workspace: 100
+      storage_limit_gb: 50
+      upload_size_limit_mb: 250
+    features:
+      unlimited_history: true
+      advanced_reports: true
+      custom_fields: true
+      sso_login: false
+      audit_logs: false
+
+  - id: "ENTERPRISE"
+    name: "Enterprise Plan"
+    price_monthly: -1 # Contact Sales
+    quotas:
+      max_projects: -1
+      max_members_per_workspace: -1
+      storage_limit_gb: 1024 # 1TB hoặc Custom
+      upload_size_limit_mb: 1024
+    features:
+      unlimited_history: true
+      advanced_reports: true
+      custom_fields: true
+      sso_login: true
+      audit_logs: true
+      dedicated_support: true

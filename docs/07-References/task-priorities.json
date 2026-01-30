@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "code": "LOW",
+    "name_en": "Low",
+    "name_vi": "Thấp",
+    "sla_hours": null,
+    "description": "Best effort, no strict deadline.",
+    "color_hex": "#808080"
+  },
+  {
+    "id": 2,
+    "code": "MEDIUM",
+    "name_en": "Medium",
+    "name_vi": "Trung bình",
+    "sla_hours": 24,
+    "description": "Standard priority. SLA: 3 working days.",
+    "color_hex": "#00BFFF"
+  },
+  {
+    "id": 3,
+    "code": "HIGH",
+    "name_en": "High",
+    "name_vi": "Cao",
+    "sla_hours": 8,
+    "description": "Important task. SLA: 1 working day (8 hours).",
+    "color_hex": "#FFA500"
+  },
+  {
+    "id": 4,
+    "code": "URGENT",
+    "name_en": "Urgent",
+    "name_vi": "Khẩn cấp",
+    "sla_hours": 4,
+    "description": "Critical issue requiring immediate attention. SLA: 4 working hours.",
+    "color_hex": "#FF0000"
+  }
+]

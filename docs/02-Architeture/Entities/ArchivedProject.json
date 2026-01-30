@@ -1,0 +1,114 @@
+{
+    "meta": {
+        "tableName": "archived_projects",
+        "entityName": "ArchivedProject",
+        "module": "data-archiving-and-compliance",
+        "description": "Lưu trữ metadata và trạng thái của các dự án đã được lưu trữ (Archived).",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "project_id",
+            "label": "Mã dự án",
+            "description": "Khóa chính và khóa ngoại tham chiếu đến bảng projects",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK",
+                "relationship": {
+                    "entity": "Project",
+                    "field": "project_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "archived_at",
+            "label": "Thời điểm lưu trữ",
+            "description": "Thời gian dự án được đưa vào kho lưu trữ",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "archived_by",
+            "label": "Người lưu trữ",
+            "description": "Người thực hiện hoặc System Bot",
+            "logicalType": "uuid",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": true
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "User",
+                    "field": "user_id",
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "data_tier",
+            "label": "Tầng dữ liệu",
+            "description": "Vị trí lưu trữ hiện tại (HOT, COLD, GLACIER)",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 20,
+                "defaultValue": "'COLD'",
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["HOT", "COLD", "GLACIER"],
+                "persistAsDbEnum": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "is_read_only",
+            "label": "Chỉ đọc",
+            "description": "Cờ đánh dấu dự án ở trạng thái chỉ đọc",
+            "logicalType": "boolean",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "BOOLEAN",
+                "defaultValue": "true",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

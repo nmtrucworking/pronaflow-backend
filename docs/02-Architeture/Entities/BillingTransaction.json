@@ -1,0 +1,164 @@
+{
+    "meta": {
+        "tableName": "billing_transactions",
+        "entityName": "BillingTransaction",
+        "module": "subscription-billing",
+        "description": "Lưu trữ lịch sử giao dịch thanh toán cho các gói đăng ký.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "transaction_id",
+            "label": "Mã giao dịch",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "subscription_id",
+            "label": "Mã đăng ký",
+            "description": "Liên kết đến gói đăng ký",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "Subscription",
+                    "field": "subscription_id",
+                    "onDelete": "NO ACTION",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "amount",
+            "label": "Số tiền",
+            "description": "Giá trị giao dịch",
+            "logicalType": "decimal",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "DECIMAL",
+                "precision": 15,
+                "scale": 2,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "currency",
+            "label": "Tiền tệ",
+            "description": "Mã tiền tệ (USD, VND)",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 3,
+                "defaultValue": "'USD'",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "status",
+            "label": "Trạng thái",
+            "description": "Trạng thái thanh toán (SUCCESS, FAILED, PENDING)",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 20,
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["PENDING", "SUCCESS", "FAILED", "REFUNDED"],
+                "persistAsDbEnum": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "payment_method",
+            "label": "Phương thức thanh toán",
+            "description": "Cổng thanh toán (STRIPE, PAYPAL)",
+            "logicalType": "string",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 50,
+                "nullable": true
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "external_ref",
+            "label": "Mã tham chiếu ngoài",
+            "description": "ID giao dịch từ cổng thanh toán",
+            "logicalType": "string",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 255,
+                "nullable": true
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "transaction_date",
+            "label": "Ngày giao dịch",
+            "description": "Thời điểm thực hiện giao dịch",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_billing_txn_sub",
+            "fields": ["subscription_id"],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

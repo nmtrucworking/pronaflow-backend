@@ -1,0 +1,86 @@
+{
+    "meta": {
+        "tableName": "article_visibilities",
+        "entityName": "ArticleVisibility",
+        "module": "help-center",
+        "description": "Cấu hình chi tiết về quyền truy cập bài viết cho các nhóm người dùng.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "visibility_id",
+            "label": "Mã hiển thị",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "article_id",
+            "label": "Mã bài viết",
+            "description": "Bài viết được cấu hình",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "Article",
+                    "field": "article_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "access_scope",
+            "label": "Phạm vi truy cập",
+            "description": "Nhóm đối tượng được phép xem (TEAM, ORG, ROLE_BASED)",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 50,
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["TEAM", "ORGANIZATION", "ROLE_BASED", "SPECIFIC_USERS"],
+                "persistAsDbEnum": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_visibility_article",
+            "fields": ["article_id"],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": true,
+        "softDelete": false,
+        "fields": {
+            "createdAt": "created_at",
+            "updatedAt": "updated_at"
+        }
+    }
+}

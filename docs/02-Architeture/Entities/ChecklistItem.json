@@ -1,0 +1,132 @@
+{
+    "meta": {
+        "tableName": "checklist_items",
+        "entityName": "ChecklistItem",
+        "module": "task-execution",
+        "description": "Các mục kiểm tra nhỏ trong một công việc (Task).",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "item_id",
+            "label": "Mã mục kiểm tra",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "task_id",
+            "label": "Mã công việc",
+            "description": "Công việc chứa checklist này",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "Task",
+                    "field": "task_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "content",
+            "label": "Nội dung",
+            "description": "Nội dung công việc cần làm",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 255,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "is_completed",
+            "label": "Đã hoàn thành",
+            "description": "Trạng thái hoàn thành",
+            "logicalType": "boolean",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "BOOLEAN",
+                "defaultValue": "false",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "assignee_id",
+            "label": "Người được giao",
+            "description": "Người chịu trách nhiệm mục này (tùy chọn)",
+            "logicalType": "uuid",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": true
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "User",
+                    "field": "user_id",
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "position",
+            "label": "Vị trí",
+            "description": "Thứ tự sắp xếp trong danh sách",
+            "logicalType": "integer",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "INTEGER",
+                "defaultValue": "0",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_checklist_task_position",
+            "fields": ["task_id", "position"],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

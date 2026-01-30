@@ -1,0 +1,148 @@
+{
+    "meta": {
+        "tableName": "audit_logs",
+        "entityName": "AuditLog",
+        "module": "identity-access-management",
+        "description": "Lưu vết toàn bộ hoạt động quan trọng trong hệ thống (AAA - Auditing).",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "audit_id",
+            "label": "Mã kiểm toán",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "user_id",
+            "label": "Người thực hiện",
+            "description": "Người dùng thực hiện hành động",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "User",
+                    "field": "user_id",
+                    "onDelete": "NO ACTION",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "action",
+            "label": "Hành động",
+            "description": "Loại tác động (CREATE, UPDATE, DELETE, ANONYMIZE)",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 50,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "entity_type",
+            "label": "Loại thực thể",
+            "description": "Tên bảng hoặc đối tượng bị tác động (TASK, PROJECT, NOTE)",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 100,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "entity_id",
+            "label": "Mã thực thể",
+            "description": "ID của bản ghi bị tác động",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "ip_address",
+            "label": "Địa chỉ IP",
+            "description": "Địa chỉ IP nguồn của request",
+            "logicalType": "string",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 45,
+                "nullable": true
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "created_at",
+            "label": "Thời điểm",
+            "description": "Thời gian ghi nhận nhật ký",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_audit_log_user_time",
+            "fields": ["user_id", "created_at"],
+            "unique": false,
+            "method": "btree"
+        },
+        {
+            "name": "idx_audit_log_entity",
+            "fields": ["entity_type", "entity_id"],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

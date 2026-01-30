@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "version": "1.0",
+    "last_updated": "2025-12-31",
+    "supported_languages": ["en-US", "vi-VN"]
+  },
+  "templates": [
+    {
+      "code": "TASK_ASSIGNED",
+      "category": "WORK",
+      "priority": "MEDIUM",
+      "channels": ["IN_APP", "PUSH", "EMAIL"],
+      "content": {
+        "en-US": {
+          "title": "New Task Assigned",
+          "body": "Hello {{user_name}}, you have been assigned to task '{{task_title}}' in project {{project_name}}.",
+          "action_label": "View Task"
+        },
+        "vi-VN": {
+          "title": "Phân công công việc mới",
+          "body": "Xin chào {{user_name}}, bạn vừa được giao nhiệm vụ '{{task_title}}' trong dự án {{project_name}}.",
+          "action_label": "Xem công việc"
+        }
+      }
+    },
+    {
+      "code": "TASK_DUE_SOON",
+      "category": "REMINDER",
+      "priority": "HIGH",
+      "channels": ["IN_APP", "PUSH", "EMAIL"],
+      "content": {
+        "en-US": {
+          "title": "Task Due Soon",
+          "body": "Reminder: Task '{{task_title}}' is due in {{hours}} hours. Please update your progress.",
+          "action_label": "Update Status"
+        },
+        "vi-VN": {
+          "title": "Sắp đến hạn chót",
+          "body": "Nhắc nhở: Công việc '{{task_title}}' sẽ hết hạn trong {{hours}} giờ nữa. Vui lòng cập nhật tiến độ.",
+          "action_label": "Cập nhật trạng thái"
+        }
+      }
+    },
+    {
+      "code": "AUTH_VERIFY_EMAIL",
+      "category": "SYSTEM",
+      "priority": "CRITICAL",
+      "channels": ["EMAIL"],
+      "content": {
+        "en-US": {
+          "title": "Verify your email address - PronaFlow",
+          "body": "Welcome to PronaFlow! Please click the link below to verify your email address: {{verification_link}}",
+          "action_label": "Verify Email"
+        },
+        "vi-VN": {
+          "title": "Xác thực địa chỉ email - PronaFlow",
+          "body": "Chào mừng bạn đến với PronaFlow! Vui lòng nhấp vào liên kết bên dưới để xác thực email của bạn: {{verification_link}}",
+          "action_label": "Xác thực Email"
+        }
+      }
+    },
+    {
+      "code": "AUTH_RESET_PASSWORD",
+      "category": "SYSTEM",
+      "priority": "CRITICAL",
+      "channels": ["EMAIL"],
+      "content": {
+        "en-US": {
+          "title": "Password Reset Request",
+          "body": "We received a request to reset your password. Click the link to proceed: {{reset_link}}. This link expires in 15 minutes.",
+          "action_label": "Reset Password"
+        },
+        "vi-VN": {
+          "title": "Yêu cầu đặt lại mật khẩu",
+          "body": "Chúng tôi nhận được yêu cầu đặt lại mật khẩu của bạn. Nhấn vào liên kết để tiếp tục: {{reset_link}}. Liên kết này có hiệu lực trong 15 phút.",
+          "action_label": "Đặt lại mật khẩu"
+        }
+      }
+    },
+    {
+      "code": "MENTIONED_IN_COMMENT",
+      "category": "COLLABORATION",
+      "priority": "MEDIUM",
+      "channels": ["IN_APP", "PUSH"],
+      "content": {
+        "en-US": {
+          "title": "You were mentioned",
+          "body": "{{actor_name}} mentioned you in a comment on '{{task_title}}': \"{{comment_snippet}}\"",
+          "action_label": "Reply"
+        },
+        "vi-VN": {
+          "title": "Bạn được nhắc đến",
+          "body": "{{actor_name}} đã nhắc đến bạn trong một bình luận tại '{{task_title}}': \"{{comment_snippet}}\"",
+          "action_label": "Phản hồi"
+        }
+      }
+    },
+    {
+      "code": "INVOICE_PAYMENT_SUCCESS",
+      "category": "BILLING",
+      "priority": "HIGH",
+      "channels": ["EMAIL", "IN_APP"],
+      "content": {
+        "en-US": {
+          "title": "Payment Successful",
+          "body": "Your payment of {{amount}} for Invoice #{{invoice_id}} was successful. Thank you for using PronaFlow Pro!",
+          "action_label": "Download Invoice"
+        },
+        "vi-VN": {
+          "title": "Thanh toán thành công",
+          "body": "Giao dịch thanh toán {{amount}} cho Hóa đơn #{{invoice_id}} đã thành công. Cảm ơn bạn đã sử dụng PronaFlow Pro!",
+          "action_label": "Tải hóa đơn"
+        }
+      }
+    }
+  ]
+}

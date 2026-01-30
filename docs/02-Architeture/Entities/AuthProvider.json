@@ -1,0 +1,71 @@
+{
+    "meta": {
+        "tableName": "auth_providers",
+        "entityName": "AuthProvider",
+        "module": "identity-access-management",
+        "description": "Danh sách các nhà cung cấp dịch vụ xác thực (SSO, Local).",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "provider_id",
+            "label": "Mã nhà cung cấp",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "name",
+            "label": "Tên nhà cung cấp",
+            "description": "Tên định danh (Local, Google, Github)",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 50,
+                "unique": true,
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["Local", "Google", "Github", "Microsoft", "GitLab"],
+                "persistAsDbEnum": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "created_at",
+            "label": "Ngày tạo",
+            "description": "Thời điểm khởi tạo nhà cung cấp",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

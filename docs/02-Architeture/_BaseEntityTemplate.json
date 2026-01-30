@@ -1,0 +1,87 @@
+{
+    "meta": {
+        "tableName": "table-name-in-database",
+        "entityName": "ClassName (PascalCase)",
+        "module": "module-name (kebab-case)",
+        "description": "Descibe base business entity: its purpose and main characterristics",
+        "version": "1.0.0",
+        "status": "active | deprecated"
+    },
+    "fields": [
+        {
+            "name": "tên_trường (snake_case)",
+            "label": "Tên hiển thị trên UI (Tiếng Việt)",
+            "description": "Giải thích ý nghĩa của trường dữ liệu này.",
+            "logicalType": "string | integer | boolean | datetime | decimal | uuid | json",
+            "required": true,
+            "//_note_required": "True -> DB NOT NULL & API Required. False -> DB NULL & API Optional",
+
+            "generated": "uuid_v4 | sequence | computed | null",
+
+            "sqlSpecifics": {
+                "columnType": "VARCHAR | TEXT | INTEGER | BIGINT | DECIMAL | TIMESTAMP WITH TIME ZONE | UUID",
+                "length": 255, 
+                "precision": 10,
+                "scale": 2,
+                "isIndex": false,
+                "unique": false,
+                "nullable": true,
+                "defaultValue": "CURRENT_TIMESTAMP | 0 | 'string' | null"
+            },
+            
+            "key": {
+                "type": "PK | FK | NONE",
+                "reference": {
+                    "entity": "target_entity",
+                    "field": "id",
+                    "onDelete": "CASCADE | SET NULL | RESTRICT | NO ACTION",
+                    "onUpdate": "CASCADE | NO ACTION"
+                }
+            },
+
+            "enumValues": {
+                "values": [
+                    "OPTION_1",
+                    "OPTION_2"
+                ],
+                "persistAsDbEnum": true
+            },
+
+            
+            
+            "validation": {
+                "format": "email | phone | regex_pattern",
+                "minLength": 0,
+                "maxLength": 255,
+                "min": 0,
+                "max": 100
+            },
+            "businessRules": [
+                "Quy tắc nghiệp vụ 1: Ví dụ - Không được sửa khi trạng thái là Done",
+                "Quy tắc nghiệp vụ 2: Ví dụ - Chỉ Admin mới nhìn thấy trường này"
+            ]
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_tên_index",
+            "fields": [
+                "col_a",
+                "col_b"
+            ],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": true,
+        "softDelete": true,
+        "fields": {
+            "createdAt": "created_at",
+            "createdBy": "created_by",
+            "updatedAt": "updated_at",
+            "updatedBy": "updated_by",
+            "deletedAt": "deleted_at"
+        }
+    }
+}

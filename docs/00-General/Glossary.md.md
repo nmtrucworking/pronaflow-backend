@@ -1,0 +1,5 @@
+
+|     |                               |                                                                                                                                                                                                                   | tag  |
+| --- | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| MFA | Multi-Factor Authentication   | Xác thực đa yếu tố, một cơ chế bảo mật yêu cầu người dùng cung cấp nhiều hơn 1 yếu tố xác thực khi đăng nhập. Tron ghệ thống IAM của PronaFlow, MFA được thiết kế để bảo vệ tài khoản ngay ccảkhi mật khẩu bị lộ. | #MFA |
+| ADR | Architectural Decision Record |                                                                                                                                                                                                                   | #DR  |

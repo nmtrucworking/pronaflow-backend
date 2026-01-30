@@ -1,0 +1,80 @@
+{
+    "meta": {
+        "tableName": "admin_user_roles",
+        "entityName": "AdminUserRole",
+        "module": "system-administration",
+        "description": "Phân công vai trò quản trị cho người dùng (Many-to-Many).",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "admin_id",
+            "label": "Mã quản trị viên",
+            "description": "Khóa ngoại liên kết tới bảng admin_users",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "AdminUser",
+                    "field": "admin_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "role_id",
+            "label": "Mã vai trò",
+            "description": "Khóa ngoại liên kết tới bảng admin_roles",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "AdminRole",
+                    "field": "role_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "assigned_at",
+            "label": "Ngày phân quyền",
+            "description": "Thời điểm vai trò được gán",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": { "type": "NONE" }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "pk_admin_user_roles",
+            "fields": ["admin_id", "role_id"],
+            "unique": true,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

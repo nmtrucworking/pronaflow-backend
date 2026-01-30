@@ -1,0 +1,109 @@
+{
+    "meta": {
+        "tableName": "access_reviews",
+        "entityName": "AccessReview",
+        "module": "system-administration",
+        "description": "Lưu trữ kết quả đánh giá quyền truy cập của quản trị viên.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "review_id",
+            "label": "Mã đánh giá",
+            "description": "Khóa chính của bảng",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "admin_id",
+            "label": "Mã quản trị viên",
+            "description": "Quản trị viên được đánh giá",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "AdminUser",
+                    "field": "admin_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "reviewer_id",
+            "label": "Mã người đánh giá",
+            "description": "Người thực hiện đánh giá",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "AdminUser",
+                    "field": "admin_id",
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "review_result",
+            "label": "Kết quả đánh giá",
+            "description": "Quyết định giữ lại hay thu hồi quyền",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 20,
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["KEEP", "REVOKE"],
+                "persistAsDbEnum": false
+            },
+            "key": { "type": "NONE" }
+        },
+        {
+            "name": "reviewed_at",
+            "label": "Thời điểm đánh giá",
+            "description": "Thời gian thực hiện đánh giá",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": { "type": "NONE" }
+        }
+    ],
+    "indexes": [],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

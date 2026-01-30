@@ -1,0 +1,47 @@
+{
+  "reference_name": "User Status Definitions",
+  "version": "1.0.0",
+  "last_updated": "2024-05-22",
+  "statuses": [
+    {
+      "id": 1,
+      "code": "PENDING",
+      "display_name": {
+        "vi": "Chờ kích hoạt",
+        "en": "Pending"
+      },
+      "allow_login": false,
+      "description": "Tài khoản mới đăng ký, cần xác thực email hoặc phê duyệt từ hệ thống."
+    },
+    {
+      "id": 2,
+      "code": "ACTIVE",
+      "display_name": {
+        "vi": "Đang hoạt động",
+        "en": "Active"
+      },
+      "allow_login": true,
+      "description": "Tài khoản đang hoạt động bình thường và có quyền truy cập hệ thống."
+    },
+    {
+      "id": 3,
+      "code": "SUSPENDED",
+      "display_name": {
+        "vi": "Tạm khóa",
+        "en": "Suspended"
+      },
+      "allow_login": false,
+      "description": "Tài khoản bị tạm dừng do vi phạm chính sách hoặc quản trị viên chủ động khóa."
+    },
+    {
+      "id": 4,
+      "code": "DELETED",
+      "display_name": {
+        "vi": "Đã xóa",
+        "en": "Deleted"
+      },
+      "allow_login": false,
+      "description": "Tài khoản đã bị xóa khỏi hệ thống (Soft Delete), thông tin chỉ lưu trữ cho mục đích đối soát."
+    }
+  ]
+}

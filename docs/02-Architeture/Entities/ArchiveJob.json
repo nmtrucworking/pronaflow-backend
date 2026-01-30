@@ -1,0 +1,128 @@
+{
+    "meta": {
+        "tableName": "archive_jobs",
+        "entityName": "ArchiveJob",
+        "module": "data-archiving-and-compliance",
+        "description": "Quản lý các Job (Cron) thực hiện việc lưu trữ dữ liệu.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "job_id",
+            "label": "Mã Job",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "policy_id",
+            "label": "Mã chính sách",
+            "description": "Chính sách áp dụng cho Job này",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "ArchivePolicy",
+                    "field": "policy_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "entity_id",
+            "label": "Mã thực thể",
+            "description": "ID của đối tượng được xử lý trong Job này",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "status",
+            "label": "Trạng thái Job",
+            "description": "Kết quả thực thi (SUCCESS, FAILED)",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 20,
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["PENDING", "RUNNING", "SUCCESS", "FAILED"],
+                "persistAsDbEnum": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "executed_at",
+            "label": "Thời gian thực thi",
+            "description": "Thời điểm Job chạy",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "error_log",
+            "label": "Nhật ký lỗi",
+            "description": "Chi tiết lỗi nếu Job thất bại",
+            "logicalType": "string",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TEXT",
+                "nullable": true
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_archive_job_status",
+            "fields": ["status"],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "meta": {
+        "tableName": "admin_role_permissions",
+        "entityName": "AdminRolePermission",
+        "module": "system-administration",
+        "description": "Bảng trung gian liên kết vai trò quản trị và quyền hạn (Many-to-Many).",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "role_id",
+            "label": "Mã vai trò",
+            "description": "Khóa ngoại liên kết tới bảng admin_roles",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "AdminRole",
+                    "field": "role_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "permission_id",
+            "label": "Mã quyền",
+            "description": "Khóa ngoại liên kết tới bảng admin_permissions",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "AdminPermission",
+                    "field": "permission_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "pk_admin_role_permissions",
+            "fields": ["role_id", "permission_id"],
+            "unique": true,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}

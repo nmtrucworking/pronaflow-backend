@@ -1,0 +1,134 @@
+{
+    "meta": {
+        "tableName": "clients",
+        "entityName": "Client",
+        "module": "project-lifecycle",
+        "description": "Thông tin khách hàng hoặc đối tác liên quan đến dự án.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "client_id",
+            "label": "Mã khách hàng",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "workspace_id",
+            "label": "Mã không gian làm việc",
+            "description": "Client thuộc về workspace nào",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "Workspace",
+                    "field": "workspace_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "name",
+            "label": "Tên khách hàng",
+            "description": "Tên công ty hoặc cá nhân",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 150,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "contact_email",
+            "label": "Email liên hệ",
+            "description": "Email chính để liên lạc",
+            "logicalType": "string",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 150,
+                "nullable": true
+            },
+            "validation": {
+                "format": "email"
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "phone_number",
+            "label": "Số điện thoại",
+            "description": "SĐT liên hệ",
+            "logicalType": "string",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 20,
+                "nullable": true
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "address",
+            "label": "Địa chỉ",
+            "description": "Địa chỉ trụ sở",
+            "logicalType": "string",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TEXT",
+                "nullable": true
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [
+        {
+            "name": "idx_client_workspace",
+            "fields": ["workspace_id"],
+            "unique": false,
+            "method": "btree"
+        }
+    ],
+    "audit": {
+        "enabled": true,
+        "softDelete": true,
+        "fields": {
+            "createdAt": "created_at",
+            "updatedAt": "updated_at",
+            "deletedAt": "deleted_at"
+        }
+    }
+}

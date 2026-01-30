@@ -1,0 +1,91 @@
+{
+    "meta": {
+        "tableName": "admin_users",
+        "entityName": "AdminUser",
+        "module": "system-administration",
+        "description": "Mở rộng thực thể User để cấp quyền quản trị hệ thống.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "admin_id",
+            "label": "Mã quản trị",
+            "description": "Khóa chính riêng cho bảng quản trị viên",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": { "type": "PK" }
+        },
+        {
+            "name": "user_id",
+            "label": "Mã người dùng",
+            "description": "Khóa ngoại liên kết với bảng Users gốc",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "FK",
+                "relationship": {
+                    "entity": "User",
+                    "field": "user_id",
+                    "onDelete": "CASCADE",
+                    "onUpdate": "CASCADE"
+                }
+            }
+        },
+        {
+            "name": "admin_status",
+            "label": "Trạng thái quản trị",
+            "description": "Trạng thái hoạt động của tài khoản quản trị",
+            "logicalType": "enum",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 20,
+                "defaultValue": "'ACTIVE'",
+                "nullable": false
+            },
+            "enumValues": {
+                "values": ["ACTIVE", "SUSPENDED", "INACTIVE"],
+                "persistAsDbEnum": false
+            },
+            "key": { "type": "NONE" }
+        },
+        {
+            "name": "created_at",
+            "label": "Ngày bổ nhiệm",
+            "description": "Thời điểm người dùng được cấp quyền quản trị",
+            "logicalType": "datetime",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TIMESTAMP WITH TIME ZONE",
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "nullable": false
+            },
+            "key": { "type": "NONE" }
+        }
+    ],
+    "indexes": [],
+    "audit": {
+        "enabled": true,
+        "softDelete": true,
+        "fields": {
+            "updatedAt": "updated_at",
+            "deletedAt": "deleted_at"
+        }
+    }
+}

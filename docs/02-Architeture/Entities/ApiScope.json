@@ -1,0 +1,66 @@
+{
+    "meta": {
+        "tableName": "api_scopes",
+        "entityName": "ApiScope",
+        "module": "integration-ecosystem",
+        "description": "Định nghĩa các phạm vi quyền hạn (scopes) mà API Token có thể truy cập.",
+        "version": "1.0.0",
+        "status": "active"
+    },
+    "fields": [
+        {
+            "name": "scope_id",
+            "label": "Mã phạm vi",
+            "description": "Khóa chính",
+            "logicalType": "uuid",
+            "required": true,
+            "generated": "uuid_v4",
+            "sqlSpecifics": {
+                "columnType": "UUID",
+                "isIndex": true,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "PK"
+            }
+        },
+        {
+            "name": "code",
+            "label": "Mã code",
+            "description": "Mã định danh phạm vi (VD: read:projects, write:tasks)",
+            "logicalType": "string",
+            "required": true,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "VARCHAR",
+                "length": 100,
+                "unique": true,
+                "nullable": false
+            },
+            "key": {
+                "type": "NONE"
+            }
+        },
+        {
+            "name": "description",
+            "label": "Mô tả",
+            "description": "Mô tả chi tiết về quyền hạn của phạm vi này",
+            "logicalType": "string",
+            "required": false,
+            "generated": "null",
+            "sqlSpecifics": {
+                "columnType": "TEXT",
+                "nullable": true
+            },
+            "key": {
+                "type": "NONE"
+            }
+        }
+    ],
+    "indexes": [],
+    "audit": {
+        "enabled": false,
+        "softDelete": false
+    }
+}
