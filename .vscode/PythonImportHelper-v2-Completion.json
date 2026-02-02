@@ -24,6 +24,14 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -1089,6 +1097,38 @@
         "documentation": {}
     },
     {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "text",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -1507,6 +1547,14 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -2090,6 +2138,22 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Tuple",
         "importPath": "typing",
         "description": "typing",
@@ -2163,6 +2227,38 @@
     },
     {
         "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Set",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -2287,6 +2383,14 @@
         "isExtraImport": true,
         "importPath": "uuid",
         "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
         "detail": "uuid",
         "documentation": {}
     },
@@ -2603,6 +2707,14 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "timedelta",
         "importPath": "datetime",
         "description": "datetime",
@@ -2620,6 +2732,22 @@
     },
     {
         "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -2867,6 +2995,46 @@
         "documentation": {}
     },
     {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "UploadFile",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -3003,6 +3171,22 @@
         "documentation": {}
     },
     {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "HTTPException",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -3032,6 +3216,14 @@
         "description": "fastapi",
         "isExtraImport": true,
         "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
         "documentation": {}
     },
     {
@@ -3491,6 +3683,22 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
         "label": "get_db",
         "importPath": "app.db.session",
         "description": "app.db.session",
@@ -3603,6 +3811,14 @@
         "documentation": {}
     },
     {
+        "label": "get_current_user",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
         "label": "hash_password",
         "importPath": "app.core.security",
         "description": "app.core.security",
@@ -3680,6 +3896,14 @@
         "description": "app.core.security",
         "isExtraImport": true,
         "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
         "documentation": {}
     },
     {
@@ -4539,6 +4763,62 @@
         "documentation": {}
     },
     {
+        "label": "PlanStateEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "DependencyTypeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "SLAStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalExceptionType",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ZoomLevel",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceLevelingStrategy",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "TaskStatus",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
@@ -4604,6 +4884,46 @@
     },
     {
         "label": "ProjectHealthStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "PlanStateEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "SLAStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatus",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -4971,6 +5291,358 @@
         "documentation": {}
     },
     {
+        "label": "PlanStateResponse",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBaselineCreate",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBaselineResponse",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingModeCreate",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingModeResponse",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLAPolicyCreate",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLAPolicyResponse",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLATrackerResponse",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "WorkingHoursPolicyCreate",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "WorkingHoursPolicyResponse",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "HolidayCalendarCreate",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "HolidayCalendarResponse",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalExceptionCreate",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalExceptionResponse",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningScopeCreate",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningScopeResponse",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SimulationSessionStart",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SimulationSessionResponse",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "CrossProjectDependencyCreate",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "CrossProjectDependencyResponse",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "GanttChartFilter",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "CriticalPathAnalysisResponse",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "ImpactAnalysisResponse",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceLevelingRequest",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceLevelingResponse",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBaselineCreate",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingModeCreate",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLAPolicyCreate",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "WorkingHoursPolicyCreate",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "HolidayCalendarCreate",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalExceptionCreate",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningScopeCreate",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SimulationSessionStart",
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "isExtraImport": true,
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanStateService",
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "isExtraImport": true,
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBaselineService",
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "isExtraImport": true,
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingModeService",
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "isExtraImport": true,
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLAPolicyService",
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "isExtraImport": true,
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLATrackerService",
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "isExtraImport": true,
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "WorkingHoursService",
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "isExtraImport": true,
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalExceptionService",
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "isExtraImport": true,
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningScopeService",
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "isExtraImport": true,
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SimulationService",
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "isExtraImport": true,
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "CriticalPathService",
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "isExtraImport": true,
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningAuditService",
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "isExtraImport": true,
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
         "label": "# TaskList schemas\r\n    TaskListCreate",
         "importPath": "app.schemas.task",
         "description": "app.schemas.task",
@@ -5300,6 +5972,14 @@
     },
     {
         "label": "tasks",
+        "importPath": "app.api.v1.endpoints",
+        "description": "app.api.v1.endpoints",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints",
+        "documentation": {}
+    },
+    {
+        "label": "scheduling",
         "importPath": "app.api.v1.endpoints",
         "description": "app.api.v1.endpoints",
         "isExtraImport": true,
@@ -5745,6 +6425,22 @@
         "documentation": {}
     },
     {
+        "label": "Task",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependency",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
         "label": "TaskList",
         "importPath": "app.db.models.tasks",
         "description": "app.db.models.tasks",
@@ -6025,6 +6721,30 @@
         "documentation": {}
     },
     {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "field_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "EmailStr",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -6150,6 +6870,14 @@
         "documentation": {}
     },
     {
+        "label": "Project",
+        "importPath": "app.db.models.projects",
+        "description": "app.db.models.projects",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects",
+        "documentation": {}
+    },
+    {
         "label": "ProjectMember",
         "importPath": "app.db.models.projects_extended",
         "description": "app.db.models.projects_extended",
@@ -6195,6 +6923,126 @@
         "description": "app.db.models.projects_extended",
         "isExtraImport": true,
         "detail": "app.db.models.projects_extended",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMember",
+        "importPath": "app.db.models.projects_extended",
+        "description": "app.db.models.projects_extended",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects_extended",
+        "documentation": {}
+    },
+    {
+        "label": "PlanState",
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBaseline",
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependencySchedule",
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingMode",
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLAPolicy",
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLATracker",
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "WorkingHoursPolicy",
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "HolidayCalendar",
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalException",
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningScope",
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceHistogram",
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SimulationSession",
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "CrossProjectDependency",
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningAuditLog",
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.db.models.scheduling",
         "documentation": {}
     },
     {
@@ -6354,6 +7202,60 @@
         "description": "app.alembic.versions.37d437544626_initial_migration_create_all_database_",
         "peekOfCode": "depends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('api_scopes',\n    sa.Column('id', sa.UUID(), nullable=False, comment='Global unique UUID for API scope'),\n    sa.Column('scope', sa.String(length=100), nullable=False, comment=\"Scope identifier (e.g., 'tasks:read', 'tasks:write', 'projects:read')\"),\n    sa.Column('description', sa.Text(), nullable=True, comment='Scope description'),\n    sa.Column('created_at', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=False, comment='Timestamp when the record was created'),\n    sa.Column('updated_at', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=False, comment='Timestamp when the record was last updated'),\n    sa.PrimaryKeyConstraint('id', name=op.f('pk_api_scopes'))",
         "detail": "app.alembic.versions.37d437544626_initial_migration_create_all_database_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "description": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "peekOfCode": "def upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('holiday_calendars',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('workspace_id', sa.UUID(), nullable=False),\n    sa.Column('holiday_date', sa.DateTime(timezone=True), nullable=False, comment='Date of holiday'),\n    sa.Column('name', sa.String(length=255), nullable=False, comment=\"Holiday name (e.g., 'Christmas', 'Tet')\"),\n    sa.Column('is_recurring', sa.Boolean(), nullable=False, comment='Does it recur every year?'),\n    sa.Column('created_by', sa.UUID(), nullable=False),\n    sa.Column('created_at', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=False, comment='Timestamp when the record was created'),",
+        "detail": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "description": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "peekOfCode": "def downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_index('ix_workspace_invitations_token_hash', table_name='workspace_invitations')\n    op.create_index('ix_workspace_invitations_token_hash', 'workspace_invitations', ['token_hash'], unique=True)\n    op.drop_index('ix_task_dependency_schedules_dependency_id', table_name='task_dependency_schedules')\n    op.drop_table('task_dependency_schedules')\n    op.drop_index('ix_task_baselines_task_id', table_name='task_baselines')\n    op.drop_index('ix_task_baselines_baseline_version', table_name='task_baselines')\n    op.drop_table('task_baselines')\n    op.drop_index('ix_sla_trackers_task_id', table_name='sla_trackers')",
+        "detail": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "description": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "peekOfCode": "revision = '53b8339a4b35'\ndown_revision = 'b65d6dfc8da8'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('holiday_calendars',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('workspace_id', sa.UUID(), nullable=False),\n    sa.Column('holiday_date', sa.DateTime(timezone=True), nullable=False, comment='Date of holiday'),",
+        "detail": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "down_revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "description": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "peekOfCode": "down_revision = 'b65d6dfc8da8'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('holiday_calendars',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('workspace_id', sa.UUID(), nullable=False),\n    sa.Column('holiday_date', sa.DateTime(timezone=True), nullable=False, comment='Date of holiday'),\n    sa.Column('name', sa.String(length=255), nullable=False, comment=\"Holiday name (e.g., 'Christmas', 'Tet')\"),",
+        "detail": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "branch_labels",
+        "kind": 5,
+        "importPath": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "description": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "peekOfCode": "branch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('holiday_calendars',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('workspace_id', sa.UUID(), nullable=False),\n    sa.Column('holiday_date', sa.DateTime(timezone=True), nullable=False, comment='Date of holiday'),\n    sa.Column('name', sa.String(length=255), nullable=False, comment=\"Holiday name (e.g., 'Christmas', 'Tet')\"),\n    sa.Column('is_recurring', sa.Boolean(), nullable=False, comment='Does it recur every year?'),",
+        "detail": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "depends_on",
+        "kind": 5,
+        "importPath": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "description": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
+        "peekOfCode": "depends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('holiday_calendars',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('workspace_id', sa.UUID(), nullable=False),\n    sa.Column('holiday_date', sa.DateTime(timezone=True), nullable=False, comment='Date of holiday'),\n    sa.Column('name', sa.String(length=255), nullable=False, comment=\"Holiday name (e.g., 'Christmas', 'Tet')\"),\n    sa.Column('is_recurring', sa.Boolean(), nullable=False, comment='Does it recur every year?'),\n    sa.Column('created_by', sa.UUID(), nullable=False),",
+        "detail": "app.alembic.versions.53b8339a4b35_add_module5_temporal_planning_scheduling",
         "documentation": {}
     },
     {
@@ -6780,6 +7682,213 @@
         "documentation": {}
     },
     {
+        "label": "get_plan_state",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def get_plan_state(\n    project_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get plan state for project\"\"\"\n    plan_state = PlanStateService.get_or_create_plan_state(db, project_id)\n    return plan_state\n@router.post(\"/plans/{project_id}/submit\", response_model=PlanStateResponse)\ndef submit_plan(",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "submit_plan",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def submit_plan(\n    project_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Submit plan for approval\"\"\"\n    plan_state = PlanStateService.submit_plan(db, project_id, current_user.id)\n    return plan_state\n@router.post(\"/plans/{project_id}/approve\", response_model=PlanStateResponse)\ndef approve_plan(",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "approve_plan",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def approve_plan(\n    project_id: uuid.UUID,\n    notes: Optional[str] = Query(None, description=\"Approval notes\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Approve plan and create baseline\"\"\"\n    plan_state = PlanStateService.approve_plan(db, project_id, current_user.id, notes)\n    return plan_state\n@router.post(\"/plans/{project_id}/lock\", response_model=PlanStateResponse)",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "lock_plan",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def lock_plan(\n    project_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Lock plan to prevent direct changes\"\"\"\n    plan_state = PlanStateService.lock_plan(db, project_id, current_user.id)\n    return plan_state\n# ===== Baseline Endpoints =====\n@router.post(\"/baselines\", response_model=TaskBaselineResponse, status_code=status.HTTP_201_CREATED)",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "create_task_baseline",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def create_task_baseline(\n    baseline_data: TaskBaselineCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Create baseline snapshot of task schedule.\n    Ref: Module 5 - Feature 2.4 - AC 1\n    \"\"\"\n    baseline = TaskBaselineService.create_baseline(db, baseline_data, current_user.id)",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "get_latest_baseline",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def get_latest_baseline(\n    task_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get latest baseline for task\"\"\"\n    baseline = TaskBaselineService.get_latest_baseline(db, task_id)\n    if not baseline:\n        raise HTTPException(\n            status_code=status.HTTP_404_NOT_FOUND,",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "set_scheduling_mode",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def set_scheduling_mode(\n    mode_data: SchedulingModeCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Set scheduling mode for task.\n    Ref: Module 5 - Feature 2.2 - AC 3\n    \"\"\"\n    mode = SchedulingModeService.set_scheduling_mode(db, mode_data, current_user.id)",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "create_sla_policy",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def create_sla_policy(\n    policy_data: SLAPolicyCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Create SLA policy.\n    Ref: Module 5 - Feature 2.7 - AC 1\n    \"\"\"\n    policy = SLAPolicyService.create_sla_policy(db, policy_data, current_user.id)",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "get_sla_tracker",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def get_sla_tracker(\n    task_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get SLA tracker for task\"\"\"\n    from sqlalchemy import select\n    from app.db.models.scheduling import SLATracker\n    tracker = db.scalar(select(SLATracker).where(SLATracker.task_id == task_id))\n    if not tracker:",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "pause_sla_timer",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def pause_sla_timer(\n    task_id: uuid.UUID,\n    reason: str = Query(..., description=\"Pause reason\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Pause SLA timer.\n    Ref: Module 5 - Feature 2.7 - AC 4\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "resume_sla_timer",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def resume_sla_timer(\n    task_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Resume paused SLA timer\"\"\"\n    tracker = SLATrackerService.resume_sla_timer(db, task_id)\n    return tracker\n# ===== Working Hours Policy Endpoints =====\n@router.post(\"/working-hours-policies\", response_model=WorkingHoursPolicyResponse, status_code=status.HTTP_201_CREATED)",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "create_working_hours_policy",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def create_working_hours_policy(\n    policy_data: WorkingHoursPolicyCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create working hours policy\"\"\"\n    policy = WorkingHoursService.create_working_hours_policy(db, policy_data)\n    return policy\n# ===== Holiday Calendar Endpoints =====\n@router.post(\"/holidays\", response_model=HolidayCalendarResponse, status_code=status.HTTP_201_CREATED)",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "add_holiday",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def add_holiday(\n    holiday_data: HolidayCalendarCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Add holiday to workspace calendar\"\"\"\n    holiday = WorkingHoursService.add_holiday(db, holiday_data, current_user.id)\n    return holiday\n# ===== Personal Exception Endpoints =====\n@router.post(\"/personal-exceptions\", response_model=PersonalExceptionResponse, status_code=status.HTTP_201_CREATED)",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "add_personal_exception",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def add_personal_exception(\n    exception_data: PersonalExceptionCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Add personal exception (leave, vacation).\n    Ref: Module 5 - Feature 2.19 - AC 1\n    \"\"\"\n    exception = PersonalExceptionService.add_personal_exception(db, exception_data)",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "set_planning_scope",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def set_planning_scope(\n    scope_data: PlanningScopeCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Set planning scope for task.\n    Ref: Module 5 - Feature 2.9 - AC 1\n    \"\"\"\n    scope = PlanningScopeService.set_planning_scope(db, scope_data)",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "start_simulation",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def start_simulation(\n    sim_data: SimulationSessionStart,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Start simulation mode for What-If analysis.\n    Ref: Module 5 - Feature 2.10 - AC 1\n    \"\"\"\n    simulation = SimulationService.start_simulation(db, sim_data, current_user.id)",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "apply_simulation",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def apply_simulation(\n    simulation_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Apply simulation changes to database.\n    Ref: Module 5 - Feature 2.10 - AC 4\n    \"\"\"\n    simulation = SimulationService.end_simulation(db, simulation_id, apply_changes=True)",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "discard_simulation",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def discard_simulation(\n    simulation_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Discard simulation changes\"\"\"\n    simulation = SimulationService.end_simulation(db, simulation_id, apply_changes=False)\n    return simulation\n# ===== Gantt Chart Endpoints =====\n@router.get(\"/gantt\", response_model=dict)",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "get_gantt_chart",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def get_gantt_chart(\n    filter: GanttChartFilter = Depends(),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Get Gantt chart data for project.\n    Ref: Module 5 - Feature 2.1\n    \"\"\"\n    # TODO: Implement Gantt chart data fetching",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_critical_path",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def analyze_critical_path(\n    project_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Analyze critical path for project.\n    Ref: Module 5 - Feature 2.3\n    \"\"\"\n    critical_tasks = CriticalPathService.calculate_critical_path(db, project_id)",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_change_impact",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def analyze_change_impact(\n    task_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Analyze impact of task changes.\n    Ref: Module 5 - Feature 2.12\n    \"\"\"\n    # TODO: Implement impact analysis",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "level_resources",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "def level_resources(\n    request: ResourceLevelingRequest,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Apply resource leveling to project.\n    Ref: Module 5 - Feature 2.17\n    \"\"\"\n    # TODO: Implement resource leveling algorithm",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.v1.endpoints.scheduling",
+        "description": "app.api.v1.endpoints.scheduling",
+        "peekOfCode": "router = APIRouter(prefix=\"/v1/scheduling\", tags=[\"scheduling\"])\n# ===== Plan State Endpoints =====\n@router.get(\"/plans/{project_id}/state\", response_model=PlanStateResponse)\ndef get_plan_state(\n    project_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get plan state for project\"\"\"\n    plan_state = PlanStateService.get_or_create_plan_state(db, project_id)",
+        "detail": "app.api.v1.endpoints.scheduling",
+        "documentation": {}
+    },
+    {
         "label": "create_task_list",
         "kind": 2,
         "importPath": "app.api.v1.endpoints.tasks",
@@ -7144,7 +8253,7 @@
         "kind": 5,
         "importPath": "app.api.v1.router",
         "description": "app.api.v1.router",
-        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(auth.router)\napi_router.include_router(workspaces.router)\napi_router.include_router(projects.router)\napi_router.include_router(tasks.router)\napi_router.include_router(admin.router)",
+        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(auth.router)\napi_router.include_router(workspaces.router)\napi_router.include_router(projects.router)\napi_router.include_router(tasks.router)\napi_router.include_router(scheduling.router)\napi_router.include_router(admin.router)",
         "detail": "app.api.v1.router",
         "documentation": {}
     },
@@ -8868,6 +9977,339 @@
         "documentation": {}
     },
     {
+        "label": "PlanStateBase",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class PlanStateBase(BaseModel):\n    \"\"\"Base schema for plan state\"\"\"\n    state: PlanStateEnum = Field(default=PlanStateEnum.DRAFT, description=\"Plan state\")\nclass PlanStateResponse(PlanStateBase):\n    \"\"\"Response schema for plan state\"\"\"\n    id: UUID\n    project_id: UUID\n    submitted_by: Optional[UUID]\n    submitted_at: Optional[datetime]\n    approved_by: Optional[UUID]",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanStateResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class PlanStateResponse(PlanStateBase):\n    \"\"\"Response schema for plan state\"\"\"\n    id: UUID\n    project_id: UUID\n    submitted_by: Optional[UUID]\n    submitted_at: Optional[datetime]\n    approved_by: Optional[UUID]\n    approved_at: Optional[datetime]\n    locked_by: Optional[UUID]\n    locked_at: Optional[datetime]",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBaselineCreate",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class TaskBaselineCreate(BaseModel):\n    \"\"\"\n    Schema for creating task baseline.\n    Ref: Module 5 - Feature 2.4 - AC 1 - Create Snapshot\n    \"\"\"\n    task_id: UUID = Field(..., description=\"Task ID\")\n    baseline_version: int = Field(default=1, ge=1, description=\"Baseline version\")\nclass TaskBaselineResponse(BaseModel):\n    \"\"\"Response schema for task baseline\"\"\"\n    id: UUID",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBaselineResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class TaskBaselineResponse(BaseModel):\n    \"\"\"Response schema for task baseline\"\"\"\n    id: UUID\n    task_id: UUID\n    baseline_version: int\n    baseline_start: datetime\n    baseline_end: datetime\n    baseline_duration_hours: float\n    actual_start: Optional[datetime]\n    actual_end: Optional[datetime]",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingModeCreate",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class SchedulingModeCreate(BaseModel):\n    \"\"\"\n    Schema for setting task scheduling mode.\n    Ref: Module 5 - Feature 2.2 - AC 3 - Scheduling Mode\n    \"\"\"\n    task_id: UUID = Field(..., description=\"Task ID\")\n    mode: SchedulingModeEnum = Field(default=SchedulingModeEnum.AUTO, description=\"AUTO or MANUAL\")\n    is_pinned: bool = Field(default=False, description=\"Pinned (manually scheduled)?\")\nclass SchedulingModeUpdate(BaseModel):\n    \"\"\"Schema for updating scheduling mode\"\"\"",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingModeUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class SchedulingModeUpdate(BaseModel):\n    \"\"\"Schema for updating scheduling mode\"\"\"\n    mode: Optional[SchedulingModeEnum]\n    is_pinned: Optional[bool]\nclass SchedulingModeResponse(BaseModel):\n    \"\"\"Response schema for scheduling mode\"\"\"\n    id: UUID\n    task_id: UUID\n    mode: SchedulingModeEnum\n    is_pinned: bool",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingModeResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class SchedulingModeResponse(BaseModel):\n    \"\"\"Response schema for scheduling mode\"\"\"\n    id: UUID\n    task_id: UUID\n    mode: SchedulingModeEnum\n    is_pinned: bool\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependencyScheduleCreate",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class TaskDependencyScheduleCreate(BaseModel):\n    \"\"\"\n    Schema for configuring lag/lead time on dependencies.\n    Ref: Module 5 - Feature 2.2 - AC 4 - Lag & Lead Time\n    \"\"\"\n    dependency_id: UUID = Field(..., description=\"Task dependency ID\")\n    lag_days: int = Field(default=0, description=\"Lag (positive) or lead (negative) time in days\")\nclass TaskDependencyScheduleUpdate(BaseModel):\n    \"\"\"Schema for updating dependency schedule\"\"\"\n    lag_days: Optional[int]",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependencyScheduleUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class TaskDependencyScheduleUpdate(BaseModel):\n    \"\"\"Schema for updating dependency schedule\"\"\"\n    lag_days: Optional[int]\n    is_auto_scheduled: Optional[bool]\n    is_pinned: Optional[bool]\nclass TaskDependencyScheduleResponse(BaseModel):\n    \"\"\"Response schema for dependency schedule\"\"\"\n    id: UUID\n    dependency_id: UUID\n    lag_days: int",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependencyScheduleResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class TaskDependencyScheduleResponse(BaseModel):\n    \"\"\"Response schema for dependency schedule\"\"\"\n    id: UUID\n    dependency_id: UUID\n    lag_days: int\n    is_auto_scheduled: bool\n    is_pinned: bool\n    created_at: datetime\n    updated_at: datetime\n    class Config:",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLAPolicyCreate",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class SLAPolicyCreate(BaseModel):\n    \"\"\"\n    Schema for creating SLA policy.\n    Ref: Module 5 - Feature 2.7 - AC 1 - SLA Definition\n    \"\"\"\n    project_id: UUID = Field(..., description=\"Project ID\")\n    priority: str = Field(..., description=\"CRITICAL, HIGH, MEDIUM, LOW\")\n    sla_hours: int = Field(..., ge=1, description=\"SLA target in working hours\")\n    warning_threshold_percent: int = Field(default=75, ge=1, le=100, description=\"Warning threshold (%)\")\n    enable_escalation: bool = Field(default=True, description=\"Enable escalation?\")",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLAPolicyUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class SLAPolicyUpdate(BaseModel):\n    \"\"\"Schema for updating SLA policy\"\"\"\n    sla_hours: Optional[int]\n    warning_threshold_percent: Optional[int]\n    enable_escalation: Optional[bool]\n    escalation_level_1_hours: Optional[int]\n    escalation_level_2_hours: Optional[int]\nclass SLAPolicyResponse(BaseModel):\n    \"\"\"Response schema for SLA policy\"\"\"\n    id: UUID",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLAPolicyResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class SLAPolicyResponse(BaseModel):\n    \"\"\"Response schema for SLA policy\"\"\"\n    id: UUID\n    project_id: UUID\n    priority: str\n    sla_hours: int\n    warning_threshold_percent: int\n    enable_escalation: bool\n    escalation_level_1_hours: Optional[int]\n    escalation_level_2_hours: Optional[int]",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLATrackerResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class SLATrackerResponse(BaseModel):\n    \"\"\"Response schema for SLA tracker\"\"\"\n    id: UUID\n    task_id: UUID\n    status: SLAStatusEnum\n    sla_start_time: datetime\n    sla_breach_time: Optional[datetime]\n    sla_deadline: datetime\n    elapsed_business_seconds: int\n    paused_business_seconds: int",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "WorkingHoursPolicyCreate",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class WorkingHoursPolicyCreate(BaseModel):\n    \"\"\"\n    Schema for creating working hours policy.\n    Ref: Module 5 - Business Rule 3.2\n    \"\"\"\n    workspace_id: UUID = Field(..., description=\"Workspace ID\")\n    working_days_mask: int = Field(default=0b0111110, description=\"Bitmask: 0=Mon...6=Sun\")\n    work_start_time: str = Field(default=\"09:00\", description=\"HH:MM format\")\n    work_end_time: str = Field(default=\"18:00\", description=\"HH:MM format\")\n    lunch_start_time: Optional[str] = Field(None, description=\"Lunch break start\")",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "WorkingHoursPolicyUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class WorkingHoursPolicyUpdate(BaseModel):\n    \"\"\"Schema for updating working hours policy\"\"\"\n    working_days_mask: Optional[int]\n    work_start_time: Optional[str]\n    work_end_time: Optional[str]\n    lunch_start_time: Optional[str]\n    lunch_end_time: Optional[str]\n    timezone: Optional[str]\nclass WorkingHoursPolicyResponse(BaseModel):\n    \"\"\"Response schema for working hours policy\"\"\"",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "WorkingHoursPolicyResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class WorkingHoursPolicyResponse(BaseModel):\n    \"\"\"Response schema for working hours policy\"\"\"\n    id: UUID\n    workspace_id: UUID\n    working_days_mask: int\n    work_start_time: str\n    work_end_time: str\n    lunch_start_time: Optional[str]\n    lunch_end_time: Optional[str]\n    timezone: str",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "HolidayCalendarCreate",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class HolidayCalendarCreate(BaseModel):\n    \"\"\"Schema for creating holiday entry\"\"\"\n    workspace_id: UUID = Field(..., description=\"Workspace ID\")\n    holiday_date: datetime = Field(..., description=\"Date of holiday\")\n    name: str = Field(..., max_length=255, description=\"Holiday name\")\n    is_recurring: bool = Field(default=False, description=\"Recurs yearly?\")\nclass HolidayCalendarResponse(BaseModel):\n    \"\"\"Response schema for holiday calendar\"\"\"\n    id: UUID\n    workspace_id: UUID",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "HolidayCalendarResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class HolidayCalendarResponse(BaseModel):\n    \"\"\"Response schema for holiday calendar\"\"\"\n    id: UUID\n    workspace_id: UUID\n    holiday_date: datetime\n    name: str\n    is_recurring: bool\n    created_by: UUID\n    created_at: datetime\n    updated_at: datetime",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalExceptionCreate",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class PersonalExceptionCreate(BaseModel):\n    \"\"\"\n    Schema for creating personal exception.\n    Ref: Module 5 - Feature 2.19 - AC 1\n    \"\"\"\n    user_id: UUID = Field(..., description=\"User ID\")\n    project_id: UUID = Field(..., description=\"Project ID\")\n    exception_date: datetime = Field(..., description=\"Exception date\")\n    exception_type: PersonalExceptionType = Field(..., description=\"Type of exception\")\n    notes: Optional[str] = Field(None, description=\"Notes\")",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalExceptionResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class PersonalExceptionResponse(BaseModel):\n    \"\"\"Response schema for personal exception\"\"\"\n    id: UUID\n    user_id: UUID\n    project_id: UUID\n    exception_date: datetime\n    exception_type: PersonalExceptionType\n    notes: Optional[str]\n    created_at: datetime\n    updated_at: datetime",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningScopeCreate",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class PlanningScopeCreate(BaseModel):\n    \"\"\"\n    Schema for setting planning scope.\n    Ref: Module 5 - Feature 2.9 - AC 1\n    \"\"\"\n    task_id: UUID = Field(..., description=\"Task ID\")\n    include_in_planning: bool = Field(default=True, description=\"Include in planning scope?\")\n    override_parent: bool = Field(default=False, description=\"Override parent scope?\")\nclass PlanningScopeUpdate(BaseModel):\n    \"\"\"Schema for updating planning scope\"\"\"",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningScopeUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class PlanningScopeUpdate(BaseModel):\n    \"\"\"Schema for updating planning scope\"\"\"\n    include_in_planning: Optional[bool]\n    override_parent: Optional[bool]\nclass PlanningScopeResponse(BaseModel):\n    \"\"\"Response schema for planning scope\"\"\"\n    id: UUID\n    task_id: UUID\n    include_in_planning: bool\n    override_parent: bool",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningScopeResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class PlanningScopeResponse(BaseModel):\n    \"\"\"Response schema for planning scope\"\"\"\n    id: UUID\n    task_id: UUID\n    include_in_planning: bool\n    override_parent: bool\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceHistogramResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class ResourceHistogramResponse(BaseModel):\n    \"\"\"Response schema for resource histogram\"\"\"\n    id: UUID\n    project_id: UUID\n    user_id: UUID\n    histogram_date: datetime\n    planned_hours: float\n    is_overloaded: bool\n    overload_hours: float\n    created_at: datetime",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SimulationSessionStart",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class SimulationSessionStart(BaseModel):\n    \"\"\"Schema for starting simulation mode\"\"\"\n    project_id: UUID = Field(..., description=\"Project ID\")\n    notes: Optional[str] = Field(None, description=\"Simulation notes\")\nclass SimulationSessionUpdate(BaseModel):\n    \"\"\"Schema for updating simulation session\"\"\"\n    notes: Optional[str]\nclass SimulationSessionApply(BaseModel):\n    \"\"\"Schema for applying simulation changes\"\"\"\n    save_as_baseline: bool = Field(default=False, description=\"Save as new baseline?\")",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SimulationSessionUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class SimulationSessionUpdate(BaseModel):\n    \"\"\"Schema for updating simulation session\"\"\"\n    notes: Optional[str]\nclass SimulationSessionApply(BaseModel):\n    \"\"\"Schema for applying simulation changes\"\"\"\n    save_as_baseline: bool = Field(default=False, description=\"Save as new baseline?\")\nclass SimulationSessionResponse(BaseModel):\n    \"\"\"Response schema for simulation session\"\"\"\n    id: UUID\n    project_id: UUID",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SimulationSessionApply",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class SimulationSessionApply(BaseModel):\n    \"\"\"Schema for applying simulation changes\"\"\"\n    save_as_baseline: bool = Field(default=False, description=\"Save as new baseline?\")\nclass SimulationSessionResponse(BaseModel):\n    \"\"\"Response schema for simulation session\"\"\"\n    id: UUID\n    project_id: UUID\n    created_by: UUID\n    is_active: bool\n    delta_project_end_days: Optional[int]",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SimulationSessionResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class SimulationSessionResponse(BaseModel):\n    \"\"\"Response schema for simulation session\"\"\"\n    id: UUID\n    project_id: UUID\n    created_by: UUID\n    is_active: bool\n    delta_project_end_days: Optional[int]\n    new_critical_path_count: Optional[int]\n    sla_at_risk_count: Optional[int]\n    resource_overload_increase: Optional[int]",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "CrossProjectDependencyCreate",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class CrossProjectDependencyCreate(BaseModel):\n    \"\"\"\n    Schema for creating cross-project dependency.\n    Ref: Module 5 - Feature 2.18 - AC 1\n    \"\"\"\n    source_task_id: UUID = Field(..., description=\"Source task ID\")\n    source_project_id: UUID = Field(..., description=\"Source project ID\")\n    target_task_id: UUID = Field(..., description=\"Target task ID\")\n    target_project_id: UUID = Field(..., description=\"Target project ID\")\n    dependency_type: DependencyTypeEnum = Field(default=DependencyTypeEnum.FS, description=\"FS, SS, FF, SF\")",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "CrossProjectDependencyResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class CrossProjectDependencyResponse(BaseModel):\n    \"\"\"Response schema for cross-project dependency\"\"\"\n    id: UUID\n    source_task_id: UUID\n    source_project_id: UUID\n    target_task_id: UUID\n    target_project_id: UUID\n    dependency_type: DependencyTypeEnum\n    is_broken: bool\n    created_by: UUID",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningAuditLogResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class PlanningAuditLogResponse(BaseModel):\n    \"\"\"Response schema for planning audit log\"\"\"\n    id: UUID\n    task_id: UUID\n    change_type: str\n    old_value: Optional[str]\n    new_value: str\n    reason: Optional[str]\n    changed_by: UUID\n    created_at: datetime",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "GanttChartFilter",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class GanttChartFilter(BaseModel):\n    \"\"\"Schema for filtering Gantt chart data\"\"\"\n    project_id: UUID = Field(..., description=\"Project ID\")\n    zoom_level: ZoomLevel = Field(default=ZoomLevel.MONTH, description=\"Zoom level\")\n    start_date: Optional[datetime] = Field(None, description=\"Filter start date\")\n    end_date: Optional[datetime] = Field(None, description=\"Filter end date\")\n    include_milestones: bool = Field(default=True, description=\"Include milestones?\")\n    show_critical_path: bool = Field(default=False, description=\"Highlight critical path?\")\n    show_baseline: bool = Field(default=False, description=\"Show baseline comparison?\")\nclass CriticalPathAnalysisResponse(BaseModel):",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "CriticalPathAnalysisResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class CriticalPathAnalysisResponse(BaseModel):\n    \"\"\"Response schema for critical path analysis\"\"\"\n    total_float_hours: float = Field(..., description=\"Total float (slack) in hours\")\n    critical_task_ids: List[UUID] = Field(..., description=\"Task IDs on critical path\")\n    project_end_date: datetime = Field(..., description=\"Calculated project end date\")\n    updated_at: datetime\nclass ImpactAnalysisResponse(BaseModel):\n    \"\"\"\n    Response schema for change impact analysis.\n    Ref: Module 5 - Feature 2.12 - AC 2",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "ImpactAnalysisResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class ImpactAnalysisResponse(BaseModel):\n    \"\"\"\n    Response schema for change impact analysis.\n    Ref: Module 5 - Feature 2.12 - AC 2\n    \"\"\"\n    delta_project_end_days: int = Field(..., description=\"Project end date shift\")\n    affected_task_ids: List[UUID] = Field(..., description=\"Tasks impacted by change\")\n    new_critical_path_count: int = Field(..., description=\"Number of critical path changes\")\n    sla_at_risk_count: int = Field(..., description=\"Tasks at SLA risk\")\n    resource_overload_increase: int = Field(..., description=\"Additional resource overloads\")",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceLevelingRequest",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class ResourceLevelingRequest(BaseModel):\n    \"\"\"Schema for resource leveling request\"\"\"\n    project_id: UUID = Field(..., description=\"Project ID\")\n    strategy: ResourceLevelingStrategy = Field(default=ResourceLevelingStrategy.WITHIN_SLACK)\n    preview_only: bool = Field(default=True, description=\"Preview without applying?\")\nclass ResourceLevelingResponse(BaseModel):\n    \"\"\"Response schema for resource leveling\"\"\"\n    tasks_to_move: List[UUID] = Field(..., description=\"Tasks that will be rescheduled\")\n    conflict_reduction_percent: float = Field(..., description=\"Estimated conflict reduction (%)\")\n    project_end_date_delta_days: int = Field(..., description=\"Project end date change\")",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceLevelingResponse",
+        "kind": 6,
+        "importPath": "app.schemas.scheduling",
+        "description": "app.schemas.scheduling",
+        "peekOfCode": "class ResourceLevelingResponse(BaseModel):\n    \"\"\"Response schema for resource leveling\"\"\"\n    tasks_to_move: List[UUID] = Field(..., description=\"Tasks that will be rescheduled\")\n    conflict_reduction_percent: float = Field(..., description=\"Estimated conflict reduction (%)\")\n    project_end_date_delta_days: int = Field(..., description=\"Project end date change\")\n    affected_resources: List[UUID] = Field(..., description=\"Affected resource IDs\")",
+        "detail": "app.schemas.scheduling",
+        "documentation": {}
+    },
+    {
         "label": "TaskListBase",
         "kind": 6,
         "importPath": "app.schemas.task",
@@ -9486,6 +10928,105 @@
         "description": "app.services.project",
         "peekOfCode": "class ProjectChangeRequestService:\n    \"\"\"Service for change request management in STRICT governance mode\"\"\"\n    @staticmethod\n    def create_change_request(\n        db: Session,\n        cr_data: ChangeRequestCreate,\n        creator_id: uuid.UUID,\n    ) -> ProjectChangeRequest:\n        \"\"\"\n        Create a change request.",
         "detail": "app.services.project",
+        "documentation": {}
+    },
+    {
+        "label": "PlanStateService",
+        "kind": 6,
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "peekOfCode": "class PlanStateService:\n    \"\"\"Service for plan state management and approval workflow\"\"\"\n    @staticmethod\n    def get_or_create_plan_state(db: Session, project_id: uuid.UUID) -> PlanState:\n        \"\"\"Get or create plan state for project\"\"\"\n        plan_state = db.scalar(\n            select(PlanState).where(PlanState.project_id == project_id)\n        )\n        if not plan_state:\n            plan_state = PlanState(project_id=project_id, state=PlanStateEnum.DRAFT)",
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBaselineService",
+        "kind": 6,
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "peekOfCode": "class TaskBaselineService:\n    \"\"\"Service for task baseline management\"\"\"\n    @staticmethod\n    def create_baseline(\n        db: Session,\n        baseline_data: TaskBaselineCreate,\n        user_id: uuid.UUID,\n    ) -> TaskBaseline:\n        \"\"\"Create baseline snapshot of task schedule\"\"\"\n        task = db.scalar(select(Task).where(Task.id == baseline_data.task_id))",
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingModeService",
+        "kind": 6,
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "peekOfCode": "class SchedulingModeService:\n    \"\"\"Service for task scheduling mode\"\"\"\n    @staticmethod\n    def set_scheduling_mode(\n        db: Session,\n        mode_data: SchedulingModeCreate,\n        user_id: uuid.UUID,\n    ) -> SchedulingMode:\n        \"\"\"Set or update scheduling mode for task\"\"\"\n        # Check if task exists",
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLAPolicyService",
+        "kind": 6,
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "peekOfCode": "class SLAPolicyService:\n    \"\"\"Service for SLA policy management\"\"\"\n    @staticmethod\n    def create_sla_policy(\n        db: Session,\n        policy_data: SLAPolicyCreate,\n        user_id: uuid.UUID,\n    ) -> SLAPolicy:\n        \"\"\"Create SLA policy for project\"\"\"\n        # Check project exists",
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLATrackerService",
+        "kind": 6,
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "peekOfCode": "class SLATrackerService:\n    \"\"\"Service for SLA tracking\"\"\"\n    @staticmethod\n    def initialize_sla_tracker(\n        db: Session,\n        task_id: uuid.UUID,\n        sla_policy: SLAPolicy,\n        user_id: uuid.UUID,\n    ) -> SLATracker:\n        \"\"\"",
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "WorkingHoursService",
+        "kind": 6,
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "peekOfCode": "class WorkingHoursService:\n    \"\"\"Service for working hours and calendar management\"\"\"\n    @staticmethod\n    def create_working_hours_policy(\n        db: Session,\n        policy_data: WorkingHoursPolicyCreate,\n    ) -> WorkingHoursPolicy:\n        \"\"\"Create working hours policy\"\"\"\n        policy = WorkingHoursPolicy(\n            workspace_id=policy_data.workspace_id,",
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalExceptionService",
+        "kind": 6,
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "peekOfCode": "class PersonalExceptionService:\n    \"\"\"Service for personal exceptions (leave, vacation)\"\"\"\n    @staticmethod\n    def add_personal_exception(\n        db: Session,\n        exception_data: PersonalExceptionCreate,\n    ) -> PersonalException:\n        \"\"\"\n        Add personal exception for team member.\n        Ref: Module 5 - Feature 2.19 - AC 1",
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningScopeService",
+        "kind": 6,
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "peekOfCode": "class PlanningScopeService:\n    \"\"\"Service for planning scope control\"\"\"\n    @staticmethod\n    def set_planning_scope(\n        db: Session,\n        scope_data: PlanningScopeCreate,\n    ) -> PlanningScope:\n        \"\"\"\n        Set planning scope for task.\n        Ref: Module 5 - Feature 2.9 - AC 1",
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SimulationService",
+        "kind": 6,
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "peekOfCode": "class SimulationService:\n    \"\"\"Service for What-If simulation mode\"\"\"\n    @staticmethod\n    def start_simulation(\n        db: Session,\n        sim_data: SimulationSessionStart,\n        user_id: uuid.UUID,\n    ) -> SimulationSession:\n        \"\"\"\n        Start simulation mode for planning.",
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "CriticalPathService",
+        "kind": 6,
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "peekOfCode": "class CriticalPathService:\n    \"\"\"Service for critical path analysis\"\"\"\n    @staticmethod\n    def calculate_critical_path(db: Session, project_id: uuid.UUID) -> Set[uuid.UUID]:\n        \"\"\"\n        Calculate critical path for project using CPM.\n        Ref: Module 5 - Algorithm 4.1 - Critical Path Method\n        \"\"\"\n        # TODO: Implement forward and backward pass algorithms\n        # Get all tasks in project",
+        "detail": "app.services.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningAuditService",
+        "kind": 6,
+        "importPath": "app.services.scheduling",
+        "description": "app.services.scheduling",
+        "peekOfCode": "class PlanningAuditService:\n    \"\"\"Service for planning audit trail\"\"\"\n    @staticmethod\n    def log_change(\n        db: Session,\n        task_id: uuid.UUID,\n        change_type: str,\n        old_value: Optional[str],\n        new_value: str,\n        changed_by: uuid.UUID,",
+        "detail": "app.services.scheduling",
         "documentation": {}
     },
     {
