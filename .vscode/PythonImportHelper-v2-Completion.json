@@ -64,6 +64,14 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -106,6 +114,110 @@
     },
     {
         "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "JSON",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Index",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DECIMAL",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -1329,6 +1441,30 @@
         "documentation": {}
     },
     {
+        "label": "desc",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "select",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -1537,6 +1673,14 @@
         "documentation": {}
     },
     {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
+        "documentation": {}
+    },
+    {
         "label": "fileConfig",
         "importPath": "logging.config",
         "description": "logging.config",
@@ -1599,6 +1743,14 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
         "documentation": {}
     },
     {
@@ -1938,6 +2090,22 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -2115,6 +2283,30 @@
     },
     {
         "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -2554,6 +2746,38 @@
         "documentation": {}
     },
     {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -2731,6 +2955,38 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -3147,7 +3403,39 @@
         "documentation": {}
     },
     {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
         "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
         "importPath": "uuid",
         "description": "uuid",
         "isExtraImport": true,
@@ -3275,6 +3563,22 @@
         "documentation": {}
     },
     {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -3284,6 +3588,14 @@
     },
     {
         "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -3451,6 +3763,30 @@
         "documentation": {}
     },
     {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -3524,6 +3860,30 @@
     },
     {
         "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -3732,6 +4092,46 @@
     },
     {
         "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "BackgroundTasks",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -4379,6 +4779,22 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "relationship",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -4756,6 +5172,14 @@
     },
     {
         "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -5611,6 +6035,38 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.api.dependencies",
+        "description": "app.api.dependencies",
+        "isExtraImport": true,
+        "detail": "app.api.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.api.dependencies",
+        "description": "app.api.dependencies",
+        "isExtraImport": true,
+        "detail": "app.api.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.api.dependencies",
+        "description": "app.api.dependencies",
+        "isExtraImport": true,
+        "detail": "app.api.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.api.dependencies",
+        "description": "app.api.dependencies",
+        "isExtraImport": true,
+        "detail": "app.api.dependencies",
+        "documentation": {}
+    },
+    {
         "label": "User",
         "importPath": "app.db.models.user",
         "description": "app.db.models.user",
@@ -5624,6 +6080,510 @@
         "description": "app.db.models.user",
         "isExtraImport": true,
         "detail": "app.db.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.user",
+        "description": "app.db.models.user",
+        "isExtraImport": true,
+        "detail": "app.db.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "SprintMetricCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "SprintMetricRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "SprintMetricUpdate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "VelocityMetricCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "VelocityMetricRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceAllocationCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceAllocationRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceHeatmapRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimeEntryCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimeEntryRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimeEntryUpdate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimerControlRequest",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetSubmit",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetApprove",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetReject",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "CustomReportCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "CustomReportRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "CustomReportUpdate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportExecuteRequest",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportExecuteResponse",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportScheduleCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportScheduleRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportScheduleUpdate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "BurndownChartData",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "VelocityChartData",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "AnalyticsOverviewRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "MetricSnapshotCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "MetricSnapshotRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "KPICreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "KPIRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetApprovalCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetApprovalRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportPermissionCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportPermissionRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "SprintMetricCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "SprintMetricUpdate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "SprintMetricRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "VelocityMetricCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "VelocityMetricRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimeEntryCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimeEntryUpdate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimeEntryRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "CustomReportCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "CustomReportRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportScheduleCreate",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportScheduleRead",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "BurndownChartData",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "VelocityChartData",
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "isExtraImport": true,
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "SprintMetricsService",
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "isExtraImport": true,
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "VelocityService",
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "isExtraImport": true,
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceUtilizationService",
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "isExtraImport": true,
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimeTrackingService",
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "isExtraImport": true,
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetApprovalService",
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "isExtraImport": true,
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "CustomReportService",
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "isExtraImport": true,
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportSchedulingService",
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "isExtraImport": true,
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "MetricSnapshotService",
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "isExtraImport": true,
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "KPIService",
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "isExtraImport": true,
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportPermissionService",
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "isExtraImport": true,
+        "detail": "app.services.analytics",
         "documentation": {}
     },
     {
@@ -6795,6 +7755,46 @@
         "documentation": {}
     },
     {
+        "label": "AnalyticsTypeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ReportFormatEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "BillableStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ReportScheduleFrequencyEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "ApprovalStatusEnum",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
@@ -6996,6 +7996,46 @@
     },
     {
         "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "AnalyticsTypeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ReportFormatEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "BillableStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ReportScheduleFrequencyEnum",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -7268,6 +8308,22 @@
     },
     {
         "label": "TaskPriority",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "BillableStatusEnum",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -7626,22 +8682,6 @@
         "importPath": "logging",
         "description": "logging",
         "detail": "logging",
-        "documentation": {}
-    },
-    {
-        "label": "get_current_user",
-        "importPath": "app.api.dependencies",
-        "description": "app.api.dependencies",
-        "isExtraImport": true,
-        "detail": "app.api.dependencies",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "importPath": "app.api.dependencies",
-        "description": "app.api.dependencies",
-        "isExtraImport": true,
-        "detail": "app.api.dependencies",
         "documentation": {}
     },
     {
@@ -9085,6 +10125,14 @@
         "documentation": {}
     },
     {
+        "label": "analytics",
+        "importPath": "app.api.v1.endpoints",
+        "description": "app.api.v1.endpoints",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints",
+        "documentation": {}
+    },
+    {
         "label": "BaseSettings",
         "importPath": "pydantic_settings",
         "description": "pydantic_settings",
@@ -9178,6 +10226,30 @@
         "documentation": {}
     },
     {
+        "label": "Base",
+        "importPath": "app.db.base_class",
+        "description": "app.db.base_class",
+        "isExtraImport": true,
+        "detail": "app.db.base_class",
+        "documentation": {}
+    },
+    {
+        "label": "TimestampMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "UUIDPrimaryKeyMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
         "label": "TimestampMixin",
         "importPath": "app.db.mixins",
         "description": "app.db.mixins",
@@ -9479,6 +10551,22 @@
         "description": "sqlalchemy.dialects.postgresql",
         "isExtraImport": true,
         "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
         "documentation": {}
     },
     {
@@ -9802,6 +10890,38 @@
         "documentation": {}
     },
     {
+        "label": "validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "root_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "BaseModel",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -10026,6 +11146,118 @@
         "documentation": {}
     },
     {
+        "label": "SprintMetric",
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "VelocityMetric",
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceAllocation",
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimeEntry",
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "Timesheet",
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "CustomReport",
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportSchedule",
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "MetricSnapshot",
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "KPI",
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetApproval",
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportPermission",
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.db.models.task",
+        "description": "app.db.models.task",
+        "isExtraImport": true,
+        "detail": "app.db.models.task",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.db.models.task",
+        "description": "app.db.models.task",
+        "isExtraImport": true,
+        "detail": "app.db.models.task",
+        "documentation": {}
+    },
+    {
+        "label": "Sprint",
+        "importPath": "app.db.models.sprint",
+        "description": "app.db.models.sprint",
+        "isExtraImport": true,
+        "detail": "app.db.models.sprint",
+        "documentation": {}
+    },
+    {
         "label": "zipfile",
         "kind": 6,
         "isExtraImport": true,
@@ -10097,14 +11329,6 @@
         "description": "app.db.models.project",
         "isExtraImport": true,
         "detail": "app.db.models.project",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.db.models.task",
-        "description": "app.db.models.task",
-        "isExtraImport": true,
-        "detail": "app.db.models.task",
         "documentation": {}
     },
     {
@@ -10784,6 +12008,60 @@
     {
         "label": "upgrade",
         "kind": 2,
+        "importPath": "app.alembic.versions.module11_analytics",
+        "description": "app.alembic.versions.module11_analytics",
+        "peekOfCode": "def upgrade():\n    \"\"\"Create Module 11 tables\"\"\"\n    # sprint_metrics table\n    op.create_table(\n        'sprint_metrics',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('sprint_id', sa.String(), nullable=False),\n        sa.Column('project_id', sa.String(), nullable=False),\n        sa.Column('total_story_points', sa.Integer(), nullable=False),\n        sa.Column('initial_story_points', sa.Integer(), nullable=False),",
+        "detail": "app.alembic.versions.module11_analytics",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.module11_analytics",
+        "description": "app.alembic.versions.module11_analytics",
+        "peekOfCode": "def downgrade():\n    \"\"\"Drop Module 11 tables\"\"\"\n    op.drop_index('ix_report_schedule_next_run', table_name='report_schedules')\n    op.drop_index('ix_report_schedule_creator', table_name='report_schedules')\n    op.drop_index('ix_report_schedule_report', table_name='report_schedules')\n    op.drop_table('report_schedules')\n    op.drop_index('ix_custom_report_project', table_name='custom_reports')\n    op.drop_index('ix_custom_report_creator', table_name='custom_reports')\n    op.drop_table('custom_reports')\n    op.drop_index('ix_timesheet_user_status', table_name='timesheets')",
+        "detail": "app.alembic.versions.module11_analytics",
+        "documentation": {}
+    },
+    {
+        "label": "revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module11_analytics",
+        "description": "app.alembic.versions.module11_analytics",
+        "peekOfCode": "revision = 'module11_analytics'\ndown_revision = ('module9_personalization', 'module8_archiving')\nbranch_labels = None\ndepends_on = None\ndef upgrade():\n    \"\"\"Create Module 11 tables\"\"\"\n    # sprint_metrics table\n    op.create_table(\n        'sprint_metrics',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),",
+        "detail": "app.alembic.versions.module11_analytics",
+        "documentation": {}
+    },
+    {
+        "label": "down_revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module11_analytics",
+        "description": "app.alembic.versions.module11_analytics",
+        "peekOfCode": "down_revision = ('module9_personalization', 'module8_archiving')\nbranch_labels = None\ndepends_on = None\ndef upgrade():\n    \"\"\"Create Module 11 tables\"\"\"\n    # sprint_metrics table\n    op.create_table(\n        'sprint_metrics',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('sprint_id', sa.String(), nullable=False),",
+        "detail": "app.alembic.versions.module11_analytics",
+        "documentation": {}
+    },
+    {
+        "label": "branch_labels",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module11_analytics",
+        "description": "app.alembic.versions.module11_analytics",
+        "peekOfCode": "branch_labels = None\ndepends_on = None\ndef upgrade():\n    \"\"\"Create Module 11 tables\"\"\"\n    # sprint_metrics table\n    op.create_table(\n        'sprint_metrics',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('sprint_id', sa.String(), nullable=False),\n        sa.Column('project_id', sa.String(), nullable=False),",
+        "detail": "app.alembic.versions.module11_analytics",
+        "documentation": {}
+    },
+    {
+        "label": "depends_on",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module11_analytics",
+        "description": "app.alembic.versions.module11_analytics",
+        "peekOfCode": "depends_on = None\ndef upgrade():\n    \"\"\"Create Module 11 tables\"\"\"\n    # sprint_metrics table\n    op.create_table(\n        'sprint_metrics',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('sprint_id', sa.String(), nullable=False),\n        sa.Column('project_id', sa.String(), nullable=False),\n        sa.Column('total_story_points', sa.Integer(), nullable=False),",
+        "detail": "app.alembic.versions.module11_analytics",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
         "importPath": "app.alembic.versions.module3_enhancements_add_priority_and_type",
         "description": "app.alembic.versions.module3_enhancements_add_priority_and_type",
         "peekOfCode": "def upgrade() -> None:\n    # Create new enum types\n    op.execute(\"CREATE TYPE projectpriority AS ENUM ('CRITICAL', 'HIGH', 'MEDIUM', 'LOW')\")\n    op.execute(\"CREATE TYPE changerequesttype AS ENUM ('SCOPE', 'SCHEDULE', 'COST', 'RESOURCE')\")\n    op.execute(\"CREATE TYPE changerequeststatusv2 AS ENUM ('DRAFT', 'PENDING', 'APPROVED', 'REJECTED', 'IMPLEMENTED', 'CANCELLED')\")\n    op.execute(\"CREATE TYPE projecthealthstatus AS ENUM ('GREEN', 'AMBER', 'RED')\")\n    op.execute(\"CREATE TYPE projectrole AS ENUM ('MANAGER', 'PLANNER', 'MEMBER', 'VIEWER')\")\n    # Add priority column to projects table\n    op.add_column('projects', \n        sa.Column('priority', sa.Enum('CRITICAL', 'HIGH', 'MEDIUM', 'LOW', name='projectpriority'), ",
@@ -11094,6 +12372,438 @@
         "description": "app.api.v1.endpoints.admin",
         "peekOfCode": "router = APIRouter(prefix=\"/v1/admin\", tags=[\"admin\"])\ndef get_admin_user(current_user: User = Depends(get_current_user)) -> User:\n    \"\"\"\n    Dependency to verify user is system admin.\n    In production, check against a proper admin role or permission.\n    \"\"\"\n    # TODO: Implement proper admin role checking\n    # For now, check if user has admin flag or specific role\n    if not getattr(current_user, 'is_admin', False):\n        raise HTTPException(",
         "detail": "app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "create_sprint_metric",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def create_sprint_metric(\n    sprint_data: SprintMetricCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create sprint metric (Project Manager only)\"\"\"\n    metric = SprintMetricsService.create_sprint_metric(db, sprint_data)\n    return metric\n@router.get(\"/sprint-metrics/{sprint_id}\", response_model=SprintMetricRead)\ndef get_sprint_metric(",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_sprint_metric",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_sprint_metric(\n    sprint_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get sprint metrics\"\"\"\n    # TODO: Implement DB query\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")\n@router.patch(\"/sprint-metrics/{sprint_id}\", response_model=SprintMetricRead)\ndef update_sprint_metric(",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "update_sprint_metric",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def update_sprint_metric(\n    sprint_id: str,\n    update_data: SprintMetricUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update sprint metrics\"\"\"\n    metric = SprintMetricsService.update_metrics(db, sprint_id, update_data)\n    if not metric:\n        raise HTTPException(status_code=404, detail=\"Sprint metric not found\")",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_burndown_chart",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_burndown_chart(\n    sprint_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get burn-down chart (Real-time)\"\"\"\n    chart = SprintMetricsService.get_burndown_chart(db, sprint_id)\n    if not chart:\n        raise HTTPException(status_code=404, detail=\"Sprint not found\")\n    return chart",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_burnup_chart",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_burnup_chart(\n    sprint_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get burn-up chart with scope creep visualization\"\"\"\n    # TODO: Similar to burn-down but shows accumulated completed + scope changes\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")\n# ==================== Velocity Metrics Endpoints ====================\n@router.post(\"/velocity-metrics\", response_model=VelocityMetricRead, status_code=201)",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "create_velocity_metric",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def create_velocity_metric(\n    velocity_data: VelocityMetricCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create velocity metric for sprint\"\"\"\n    metric = VelocityService.create_velocity_metric(db, velocity_data)\n    return metric\n@router.get(\"/projects/{project_id}/velocity-chart\", response_model=VelocityChartData)\ndef get_velocity_chart(",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_velocity_chart",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_velocity_chart(\n    project_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get velocity trend chart (last 6 sprints)\"\"\"\n    chart = VelocityService.get_velocity_chart(db, project_id)\n    if not chart:\n        raise HTTPException(status_code=404, detail=\"No velocity data found\")\n    return chart",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_resource_heatmap",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_resource_heatmap(\n    project_id: str,\n    date_filter: Optional[date] = Query(None),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get resource utilization heatmap\"\"\"\n    heatmap_data = ResourceUtilizationService.get_heatmap_data(db, project_id, date_filter)\n    return ResourceHeatmapRead(\n        date=date_filter or date.today(),",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_allocations",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_user_allocations(\n    user_id: str,\n    start_date: date = Query(...),\n    end_date: date = Query(...),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get user's resource allocations for period (drill-down from heatmap)\"\"\"\n    # TODO: Query allocations with task details for this user\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "create_time_entry",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def create_time_entry(\n    entry_data: TimeEntryCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create time entry (timer or manual)\"\"\"\n    entry = TimeTrackingService.create_time_entry(db, entry_data)\n    return entry\n@router.get(\"/time-entries/{entry_id}\", response_model=TimeEntryRead)\ndef get_time_entry(",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_time_entry",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_time_entry(\n    entry_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get time entry details\"\"\"\n    # TODO: Implement DB query\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")\n@router.patch(\"/time-entries/{entry_id}\", response_model=TimeEntryRead)\ndef update_time_entry(",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "update_time_entry",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def update_time_entry(\n    entry_id: UUID,\n    update_data: TimeEntryUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update time entry (with edit history)\"\"\"\n    entry = TimeTrackingService.update_time_entry(db, entry_id, update_data)\n    if not entry:\n        raise HTTPException(status_code=404, detail=\"Time entry not found\")",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "delete_time_entry",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def delete_time_entry(\n    entry_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Delete time entry (soft delete)\"\"\"\n    # TODO: Implement soft delete with audit trail\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")\n@router.get(\"/users/{user_id}/time-entries\")\ndef get_user_time_entries(",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_time_entries",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_user_time_entries(\n    user_id: str,\n    start_date: date = Query(...),\n    end_date: date = Query(...),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get user's time entries for date range\"\"\"\n    # TODO: Query time entries with daily summaries\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "start_timer",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def start_timer(\n    request: TimerControlRequest,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Start floating timer widget\"\"\"\n    # TODO: Create active timer entry\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")\n@router.post(\"/timer/stop\", response_model=TimeEntryRead)\ndef stop_timer(",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "stop_timer",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def stop_timer(\n    request: TimerControlRequest,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Stop timer and save time entry\"\"\"\n    # TODO: Complete active timer entry\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")\n# ==================== Timesheet Endpoints ====================\n@router.post(\"/timesheets\", response_model=TimesheetRead, status_code=201)",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "create_timesheet",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def create_timesheet(\n    timesheet_data: TimesheetCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create timesheet (DRAFT status)\"\"\"\n    timesheet = TimesheetApprovalService.create_timesheet(db, timesheet_data)\n    return timesheet\n@router.get(\"/timesheets/{timesheet_id}\", response_model=TimesheetRead)\ndef get_timesheet(",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_timesheet",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_timesheet(\n    timesheet_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get timesheet details\"\"\"\n    # TODO: Implement DB query\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")\n@router.get(\"/users/{user_id}/timesheets\")\ndef get_user_timesheets(",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_timesheets",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_user_timesheets(\n    user_id: str,\n    status: Optional[str] = None,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get user's timesheets (with optional status filter)\"\"\"\n    # TODO: Query timesheets\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")\n@router.patch(\"/timesheets/{timesheet_id}/submit\", response_model=TimesheetRead)",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "submit_timesheet",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def submit_timesheet(\n    timesheet_id: UUID,\n    submit_data: TimesheetSubmit,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Submit timesheet for approval\"\"\"\n    timesheet = TimesheetApprovalService.submit_timesheet(\n        db, timesheet_id, submit_data.notes\n    )",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "approve_timesheet",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def approve_timesheet(\n    timesheet_id: UUID,\n    approve_data: TimesheetApprove,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Approve timesheet (PM/Owner only)\"\"\"\n    timesheet = TimesheetApprovalService.approve_timesheet(\n        db, timesheet_id, current_user.id, approve_data.approval_notes\n    )",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "reject_timesheet",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def reject_timesheet(\n    timesheet_id: UUID,\n    reject_data: TimesheetReject,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Reject timesheet with feedback\"\"\"\n    timesheet = TimesheetApprovalService.reject_timesheet(\n        db, timesheet_id, reject_data.rejection_reason\n    )",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "create_custom_report",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def create_custom_report(\n    report_data: CustomReportCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create custom report (drag-drop configured)\"\"\"\n    report = CustomReportService.create_custom_report(db, report_data, current_user.id)\n    return report\n@router.get(\"/custom-reports/{report_id}\", response_model=CustomReportRead)\ndef get_custom_report(",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_custom_report",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_custom_report(\n    report_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get custom report configuration\"\"\"\n    # TODO: Implement DB query\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")\n@router.get(\"/projects/{project_id}/custom-reports\")\ndef list_custom_reports(",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "list_custom_reports",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def list_custom_reports(\n    project_id: str,\n    include_templates: bool = Query(False),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"List custom reports in project\"\"\"\n    # TODO: Query reports with pagination\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")\n@router.post(\"/custom-reports/{report_id}/execute\", response_model=ReportExecuteResponse)",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "execute_custom_report",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def execute_custom_report(\n    report_id: UUID,\n    request: ReportExecuteRequest,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Execute report and return results\"\"\"\n    result = CustomReportService.execute_report(db, report_id)\n    if \"error\" in result:\n        raise HTTPException(status_code=404, detail=result[\"error\"])",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "export_custom_report",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def export_custom_report(\n    report_id: UUID,\n    export_format: str = Query(\"PDF\"),\n    background_tasks: BackgroundTasks = None,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Export report to PDF/CSV/XLSX\"\"\"\n    # TODO: Generate export file and return download URL\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "create_report_schedule",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def create_report_schedule(\n    schedule_data: ReportScheduleCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create automated report schedule\"\"\"\n    schedule = ReportSchedulingService.create_schedule(db, schedule_data, current_user.id)\n    return schedule\n@router.get(\"/report-schedules/{schedule_id}\", response_model=ReportScheduleRead)\ndef get_report_schedule(",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_report_schedule",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_report_schedule(\n    schedule_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get report schedule\"\"\"\n    # TODO: Implement DB query\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")\n@router.get(\"/custom-reports/{report_id}/schedules\")\ndef list_report_schedules(",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "list_report_schedules",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def list_report_schedules(\n    report_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"List all schedules for a report\"\"\"\n    # TODO: Query schedules\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")\n@router.patch(\"/report-schedules/{schedule_id}\", response_model=ReportScheduleRead)\ndef update_report_schedule(",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "update_report_schedule",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def update_report_schedule(\n    schedule_id: UUID,\n    update_data: ReportScheduleUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update report schedule\"\"\"\n    # TODO: Implement update\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")\n@router.delete(\"/report-schedules/{schedule_id}\", status_code=204)",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "delete_report_schedule",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def delete_report_schedule(\n    schedule_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Delete report schedule\"\"\"\n    # TODO: Implement delete\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")\n# ==================== Analytics Overview ====================\n@router.get(\"/projects/{project_id}/overview\", response_model=AnalyticsOverviewRead)",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_analytics_overview",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_analytics_overview(\n    project_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get high-level analytics dashboard overview\"\"\"\n    # TODO: Aggregate sprint health, velocity, resource utilization, time tracking\n    raise HTTPException(status_code=501, detail=\"Not yet implemented\")\n# ==================== Metric Snapshot Endpoints ====================\n@router.post(\"/metric-snapshots\", response_model=MetricSnapshotRead, status_code=201)",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "create_metric_snapshot",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def create_metric_snapshot(\n    snapshot_data: MetricSnapshotCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create EVM metric snapshot\"\"\"\n    snapshot = MetricSnapshotService.create_snapshot(\n        db=db,\n        project_id=snapshot_data.project_id,\n        sprint_id=snapshot_data.sprint_id,",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_metric_snapshot_history",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_metric_snapshot_history(\n    project_id: str,\n    days: int = Query(30, ge=1, le=365),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get EVM metric trend history\"\"\"\n    snapshots = MetricSnapshotService.get_trend(db=db, project_id=project_id, days=days)\n    return {\n        'project_id': project_id,",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "create_kpi",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def create_kpi(\n    kpi_data: KPICreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create KPI for project\"\"\"\n    kpi_obj = KPIService.create_kpi(\n        db=db,\n        project_id=kpi_data.project_id,\n        kpi_data={",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_project_kpis",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_project_kpis(\n    project_id: str,\n    status: Optional[str] = Query(None),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get all KPIs for project\"\"\"\n    from sqlalchemy import and_\n    from app.db.models.analytics import KPI\n    query = db.query(KPI).filter(KPI.project_id == project_id)",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "update_kpi_value",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def update_kpi_value(\n    kpi_id: UUID,\n    actual_value: float,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update KPI actual value\"\"\"\n    from app.db.models.analytics import KPI\n    kpi = db.query(KPI).get(kpi_id)\n    if not kpi:",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "create_timesheet_approval",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def create_timesheet_approval(\n    approval_data: TimesheetApprovalCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create timesheet approval record\"\"\"\n    approval = TimesheetApprovalService.submit_for_approval(\n        db=db,\n        timesheet_id=approval_data.timesheet_id,\n        approver_id=current_user.id",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_timesheet_approval",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_timesheet_approval(\n    approval_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get timesheet approval details\"\"\"\n    from app.db.models.analytics import TimesheetApproval\n    approval = db.query(TimesheetApproval).get(approval_id)\n    if not approval:\n        raise HTTPException(status_code=404, detail=\"Approval not found\")",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "approve_timesheet",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def approve_timesheet(\n    approval_id: UUID,\n    notes: Optional[str] = None,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Approve timesheet\"\"\"\n    approval = TimesheetApprovalService.approve(\n        db=db,\n        approval_id=approval_id,",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "reject_timesheet",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def reject_timesheet(\n    approval_id: UUID,\n    reason: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Reject timesheet\"\"\"\n    approval = TimesheetApprovalService.reject(\n        db=db,\n        approval_id=approval_id,",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "grant_report_access",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def grant_report_access(\n    permission_data: ReportPermissionCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Grant report access to user\"\"\"\n    permission = ReportPermissionService.grant_access(\n        db=db,\n        report_id=permission_data.report_id,\n        user_id=permission_data.user_id,",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_report_permission",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_report_permission(\n    permission_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get report permission details\"\"\"\n    from app.db.models.analytics import ReportPermission\n    permission = db.query(ReportPermission).get(permission_id)\n    if not permission:\n        raise HTTPException(status_code=404, detail=\"Permission not found\")",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_report_permissions",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_report_permissions(\n    report_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get all permissions for report\"\"\"\n    from app.db.models.analytics import ReportPermission\n    permissions = db.query(ReportPermission).filter(\n        ReportPermission.report_id == report_id\n    ).all()",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "revoke_report_access",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def revoke_report_access(\n    permission_id: UUID,\n    reason: Optional[str] = None,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Revoke report access\"\"\"\n    permission = ReportPermissionService.revoke_access(\n        db=db,\n        permission_id=permission_id,",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_report_permissions",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "def get_user_report_permissions(\n    user_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get all reports accessible by user\"\"\"\n    permissions = ReportPermissionService.get_user_reports(\n        db=db,\n        user_id=user_id,\n        permission_level=\"VIEW\"",
+        "detail": "app.api.v1.endpoints.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.v1.endpoints.analytics",
+        "description": "app.api.v1.endpoints.analytics",
+        "peekOfCode": "router = APIRouter(prefix=\"/api/v1/analytics\", tags=[\"analytics\"])\n# ==================== Sprint Metrics Endpoints ====================\n@router.post(\"/sprint-metrics\", response_model=SprintMetricRead, status_code=201)\ndef create_sprint_metric(\n    sprint_data: SprintMetricCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create sprint metric (Project Manager only)\"\"\"\n    metric = SprintMetricsService.create_sprint_metric(db, sprint_data)",
+        "detail": "app.api.v1.endpoints.analytics",
         "documentation": {}
     },
     {
@@ -12516,6 +14226,105 @@
         "description": "app.core.security",
         "peekOfCode": "pwd_context = CryptContext(\n    schemes=[\"bcrypt\"],\n    deprecated=\"auto\",\n    bcrypt__rounds=12  # Strong hashing\n)\n# ============= Password & Validation Functions =============\ndef hash_password(password: str) -> str:\n    \"\"\"\n    Hash a password using bcrypt.\n    Args:",
         "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "MetricSnapshot",
+        "kind": 6,
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "peekOfCode": "class MetricSnapshot(Base, UUIDPrimaryKeyMixin, TimestampMixin):\n    \"\"\"\n    Performance metrics snapshot for historical tracking.\n    Stores EVM calculations (CPI, SPI) at point-in-time for trend analysis.\n    Used for dashboards and historical reporting.\n    Ref: Module 11 - EVM Calculations, Section 4.1\n    \"\"\"\n    __tablename__ = \"metric_snapshots\"\n    # Foreign Keys\n    project_id = Column(String, ForeignKey(\"project.id\"), nullable=False)",
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "KPI",
+        "kind": 6,
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "peekOfCode": "class KPI(Base, UUIDPrimaryKeyMixin, TimestampMixin):\n    \"\"\"\n    Key Performance Indicators per project/sprint.\n    Defines target KPIs and tracks actual values.\n    Used for performance monitoring and SLA tracking.\n    Ref: Module 11 - Metrics Definition\n    \"\"\"\n    __tablename__ = \"kpis\"\n    # Foreign Keys\n    project_id = Column(String, ForeignKey(\"project.id\"), nullable=False)",
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetApproval",
+        "kind": 6,
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "peekOfCode": "class TimesheetApproval(Base, UUIDPrimaryKeyMixin, TimestampMixin):\n    \"\"\"\n    Timesheet approval workflow tracking (separate from Timesheet entity).\n    Tracks approval status, approver, and rejection reasons.\n    Provides audit trail for compliance.\n    Ref: Module 11 - Feature 2.3 AC 3 - Timesheet Approval Workflow\n    \"\"\"\n    __tablename__ = \"timesheet_approvals\"\n    # Foreign Keys\n    timesheet_id = Column(String, ForeignKey(\"timesheets.id\"), nullable=False, unique=True)",
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportPermission",
+        "kind": 6,
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "peekOfCode": "class ReportPermission(Base, UUIDPrimaryKeyMixin, TimestampMixin):\n    \"\"\"\n    Granular access control for custom reports.\n    Defines which users can VIEW, EDIT, or SHARE specific reports.\n    Implements data visibility rules and security policies.\n    Ref: Module 11 - Section 3.1 - Data Visibility & Security\n    \"\"\"\n    __tablename__ = \"report_permissions\"\n    # Foreign Keys\n    report_id = Column(String, ForeignKey(\"custom_reports.id\"), nullable=False)",
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "SprintMetric",
+        "kind": 6,
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "peekOfCode": "class SprintMetric(Base, UUIDPrimaryKeyMixin, TimestampMixin):\n    \"\"\"\n    Real-time sprint performance metrics tracking.\n    Tracks:\n    - Burn-down: Ideal vs Actual remaining work\n    - Burn-up: Completed work + scope creep\n    - Scope changes (new tasks added during sprint)\n    - Sprint progress (days elapsed)\n    Ref: Module 11 - Feature 2.1 - Agile Performance Metrics AC 1-2\n    \"\"\"",
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "VelocityMetric",
+        "kind": 6,
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "peekOfCode": "class VelocityMetric(Base, UUIDPrimaryKeyMixin, TimestampMixin):\n    \"\"\"\n    Historical sprint velocity tracking.\n    Stores:\n    - Commitment (planned story points)\n    - Completed (actual story points)\n    - Average velocity (3-sprint moving average)\n    Used for capacity planning and forecasting.\n    Ref: Module 11 - Feature 2.1 - Agile Performance Metrics AC 2\n    \"\"\"",
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceAllocation",
+        "kind": 6,
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "peekOfCode": "class ResourceAllocation(Base, UUIDPrimaryKeyMixin, TimestampMixin):\n    \"\"\"\n    Resource capacity and utilization tracking.\n    Tracks:\n    - Team member capacity (working hours/day)\n    - Assigned hours\n    - Utilization percentage (Assigned / Capacity)\n    - Overload/Underutilization status\n    Used for heatmap visualization.\n    Ref: Module 11 - Feature 2.2 - Resource Utilization Heatmap",
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimeEntry",
+        "kind": 6,
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "peekOfCode": "class TimeEntry(Base, UUIDPrimaryKeyMixin, TimestampMixin):\n    \"\"\"\n    Individual time tracking entry.\n    Features:\n    - Timer mode (Start/Stop with auto calculation)\n    - Manual entry mode (hh:mm:ss input)\n    - Edit history tracking\n    - Billable vs Non-billable classification\n    - Task/Project association\n    Validations (Business Rules):",
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "Timesheet",
+        "kind": 6,
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "peekOfCode": "class Timesheet(Base, UUIDPrimaryKeyMixin, TimestampMixin):\n    \"\"\"\n    Weekly/Monthly timesheet aggregation with approval workflow.\n    Features:\n    - Aggregates time entries for a period\n    - Approval workflow (DRAFT → SUBMITTED → APPROVED/REJECTED)\n    - Total hours, billable hours, costs\n    - Rejection reason tracking\n    Ref: Module 11 - Feature 2.3 AC 3 - Timesheet Approval Workflow\n    \"\"\"",
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "CustomReport",
+        "kind": 6,
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "peekOfCode": "class CustomReport(Base, UUIDPrimaryKeyMixin, TimestampMixin):\n    \"\"\"\n    User-defined custom report configurations.\n    Features:\n    - Drag-drop interface configuration\n    - Dimension selection (Project, Assignee, Tag, Priority, Month)\n    - Metric selection (Count, Sum, Average)\n    - Advanced filtering (AND/OR logic)\n    - Export formats (PDF, CSV, XLSX)\n    Ref: Module 11 - Feature 2.4 - Custom Report Builder AC 1-2",
+        "detail": "app.db.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportSchedule",
+        "kind": 6,
+        "importPath": "app.db.models.analytics",
+        "description": "app.db.models.analytics",
+        "peekOfCode": "class ReportSchedule(Base, UUIDPrimaryKeyMixin, TimestampMixin):\n    \"\"\"\n    Automated report generation scheduling.\n    Features:\n    - Schedule frequency (Daily, Weekly, Monthly, Quarterly, Annually)\n    - Recipient email lists\n    - Export format selection\n    - Automated email delivery\n    Ref: Module 11 - Feature 2.4 - Custom Report Builder (Scheduling)\n    \"\"\"",
+        "detail": "app.db.models.analytics",
         "documentation": {}
     },
     {
@@ -13959,6 +15768,51 @@
         "documentation": {}
     },
     {
+        "label": "AnalyticsTypeEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class AnalyticsTypeEnum(str, Enum):\n    \"\"\"\n    Types of analytics visualizations supported.\n    Ref: Module 11 - Features 2.1-2.4\n    \"\"\"\n    BURN_DOWN = \"burn_down\"          # Sprint burn-down chart\n    BURN_UP = \"burn_up\"              # Sprint burn-up chart with scope creep\n    VELOCITY = \"velocity\"            # Sprint velocity comparison\n    HEATMAP = \"heatmap\"              # Resource utilization heatmap\n    TIME_TRACKING = \"time_tracking\"  # Time entry tracking",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ReportFormatEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class ReportFormatEnum(str, Enum):\n    \"\"\"\n    Supported export formats for reports.\n    Ref: Module 11 - Feature 2.4 AC 2 - Filtering & Export\n    \"\"\"\n    PDF = \"pdf\"                      # PDF format for printing\n    CSV = \"csv\"                      # CSV for spreadsheet processing\n    XLSX = \"xlsx\"                    # Excel format\nclass TimesheetStatusEnum(str, Enum):\n    \"\"\"",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetStatusEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class TimesheetStatusEnum(str, Enum):\n    \"\"\"\n    Timesheet approval workflow status.\n    Ref: Module 11 - Feature 2.3 AC 3 - Timesheet Approval Workflow\n    \"\"\"\n    DRAFT = \"draft\"                  # Work in progress\n    SUBMITTED = \"submitted\"          # Awaiting approval\n    APPROVED = \"approved\"            # Approved by PM/Manager\n    REJECTED = \"rejected\"            # Rejected with feedback\nclass BillableStatusEnum(str, Enum):",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "BillableStatusEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class BillableStatusEnum(str, Enum):\n    \"\"\"\n    Billable status for time entries.\n    Ref: Module 11 - Feature 2.3 AC 2 - Billable vs. Non-billable\n    \"\"\"\n    BILLABLE = \"billable\"            # Hours charged to client/customer\n    NON_BILLABLE = \"non_billable\"    # Internal or overhead hours\nclass ReportScheduleFrequencyEnum(str, Enum):\n    \"\"\"\n    Frequency for automated report generation.",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ReportScheduleFrequencyEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class ReportScheduleFrequencyEnum(str, Enum):\n    \"\"\"\n    Frequency for automated report generation.\n    Ref: Module 11 - Feature 2.4 - Custom Report Builder (Scheduling)\n    \"\"\"\n    DAILY = \"daily\"                  # Generated daily\n    WEEKLY = \"weekly\"                # Generated weekly\n    MONTHLY = \"monthly\"              # Generated monthly\n    QUARTERLY = \"quarterly\"          # Generated quarterly\n    ANNUALLY = \"annually\"            # Generated annually",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "TimestampMixin",
         "kind": 6,
         "importPath": "app.db.mixins",
@@ -14010,6 +15864,339 @@
         "description": "app.db.session",
         "peekOfCode": "SessionLocal = sessionmaker(\n    autocommit=False,\n    autoflush=False,\n    bind=engine,\n)\ndef get_db() -> Generator[Session, None, None]:\n    \"\"\"\n    Dependency function for FastAPI to get database session.\n    Usage:\n        @app.get(\"/items\")",
         "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "MetricSnapshotCreate",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class MetricSnapshotCreate(BaseModel):\n    \"\"\"Create metric snapshot\"\"\"\n    project_id: str\n    sprint_id: Optional[str] = None\n    snapshot_date: datetime\n    planned_value: Decimal\n    earned_value: Decimal\n    actual_cost: Decimal\nclass MetricSnapshotRead(BaseModel):\n    \"\"\"Read metric snapshot\"\"\"",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "MetricSnapshotRead",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class MetricSnapshotRead(BaseModel):\n    \"\"\"Read metric snapshot\"\"\"\n    id: UUID\n    project_id: str\n    sprint_id: Optional[str]\n    snapshot_date: datetime\n    planned_value: Decimal\n    earned_value: Decimal\n    actual_cost: Decimal\n    cost_performance_index: float",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "KPICreate",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class KPICreate(BaseModel):\n    \"\"\"Create KPI\"\"\"\n    project_id: str\n    sprint_id: Optional[str] = None\n    name: str = Field(..., min_length=1, max_length=255)\n    description: Optional[str] = None\n    kpi_type: str\n    unit: str\n    target_value: float = Field(..., gt=0)\n    start_date: datetime",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "KPIRead",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class KPIRead(BaseModel):\n    \"\"\"Read KPI\"\"\"\n    id: UUID\n    project_id: str\n    sprint_id: Optional[str]\n    name: str\n    description: Optional[str]\n    kpi_type: str\n    unit: str\n    target_value: float",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetApprovalCreate",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class TimesheetApprovalCreate(BaseModel):\n    \"\"\"Create timesheet approval record\"\"\"\n    timesheet_id: UUID\n    validation_passed: bool = False\nclass TimesheetApprovalRead(BaseModel):\n    \"\"\"Read timesheet approval\"\"\"\n    id: UUID\n    timesheet_id: UUID\n    status: TimesheetStatusEnum\n    submitted_at: Optional[datetime]",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetApprovalRead",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class TimesheetApprovalRead(BaseModel):\n    \"\"\"Read timesheet approval\"\"\"\n    id: UUID\n    timesheet_id: UUID\n    status: TimesheetStatusEnum\n    submitted_at: Optional[datetime]\n    approved_at: Optional[datetime]\n    rejected_at: Optional[datetime]\n    approver_id: Optional[str]\n    approval_notes: Optional[str]",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportPermissionCreate",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class ReportPermissionCreate(BaseModel):\n    \"\"\"Create report permission\"\"\"\n    report_id: str\n    user_id: str\n    permission_level: str = Field(..., description=\"VIEW, EDIT, SHARE, ADMIN\")\n    scope_type: Optional[str] = None\n    scope_id: Optional[str] = None\n    grant_reason: Optional[str] = None\n    expires_at: Optional[datetime] = None\nclass ReportPermissionRead(BaseModel):",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportPermissionRead",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class ReportPermissionRead(BaseModel):\n    \"\"\"Read report permission\"\"\"\n    id: UUID\n    report_id: str\n    user_id: str\n    permission_level: str\n    scope_type: Optional[str]\n    scope_id: Optional[str]\n    is_active: bool\n    granted_at: datetime",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "SprintMetricCreate",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class SprintMetricCreate(BaseModel):\n    \"\"\"Create sprint metric from sprint data\"\"\"\n    sprint_id: str = Field(..., description=\"Sprint ID\")\n    project_id: str = Field(..., description=\"Project ID\")\n    total_story_points: int = Field(0, ge=0)\n    initial_story_points: int = Field(0, ge=0, description=\"Planned Value\")\n    sprint_start_date: datetime\n    sprint_end_date: datetime\n    total_sprint_days: int = Field(14, ge=1)\nclass SprintMetricUpdate(BaseModel):",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "SprintMetricUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class SprintMetricUpdate(BaseModel):\n    \"\"\"Update sprint metrics\"\"\"\n    completed_story_points: Optional[int] = Field(None, ge=0)\n    remaining_story_points: Optional[int] = Field(None, ge=0)\n    added_story_points: Optional[int] = Field(None, ge=0, description=\"Scope creep addition\")\n    removed_story_points: Optional[int] = Field(None, ge=0)\n    planned_value: Optional[Decimal] = Field(None, ge=0)\n    earned_value: Optional[Decimal] = Field(None, ge=0)\n    actual_cost: Optional[Decimal] = Field(None, ge=0)\n    is_on_track: Optional[bool] = None",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "SprintMetricRead",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class SprintMetricRead(BaseModel):\n    \"\"\"Read sprint metric (full DTO)\"\"\"\n    id: UUID\n    sprint_id: str\n    project_id: str\n    total_story_points: int\n    initial_story_points: int\n    completed_story_points: int\n    remaining_story_points: int\n    added_story_points: int",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "VelocityMetricCreate",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class VelocityMetricCreate(BaseModel):\n    \"\"\"Create velocity metric for sprint\"\"\"\n    sprint_id: str\n    project_id: str\n    commitment: int = Field(..., gt=0)\n    completed: int = Field(..., ge=0)\n    team_size: int = Field(..., gt=0)\n    sprint_number: int = Field(..., gt=0)\n    sprint_start_date: datetime\n    sprint_end_date: datetime",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "VelocityMetricRead",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class VelocityMetricRead(BaseModel):\n    \"\"\"Read velocity metric\"\"\"\n    id: UUID\n    sprint_id: str\n    project_id: str\n    commitment: int\n    completed: int\n    velocity: float\n    team_size: int\n    avg_velocity_3_sprints: Optional[float]",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceAllocationCreate",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class ResourceAllocationCreate(BaseModel):\n    \"\"\"Create resource allocation record\"\"\"\n    user_id: str\n    project_id: str\n    working_capacity_hours: float = Field(8.0, gt=0, description=\"Working hours per day\")\n    assigned_hours: float = Field(0, ge=0)\n    allocation_date: datetime\nclass ResourceAllocationRead(BaseModel):\n    \"\"\"Read resource allocation\"\"\"\n    id: UUID",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceAllocationRead",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class ResourceAllocationRead(BaseModel):\n    \"\"\"Read resource allocation\"\"\"\n    id: UUID\n    user_id: str\n    project_id: str\n    working_capacity_hours: float\n    assigned_hours: float\n    utilization_percentage: float\n    capacity_status: str  # GREEN, RED, GREY\n    allocation_date: datetime",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceHeatmapRead",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class ResourceHeatmapRead(BaseModel):\n    \"\"\"Heatmap view of resource utilization\"\"\"\n    date: date\n    resources: List[Dict[str, Any]] = Field(\n        ...,\n        description=\"List of {user_id, name, capacity_status, utilization_percentage, assigned_hours}\"\n    )\n# ==================== Time Entry Schemas ====================\nclass TimeEntryCreate(BaseModel):\n    \"\"\"Create time entry (timer or manual)\"\"\"",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimeEntryCreate",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class TimeEntryCreate(BaseModel):\n    \"\"\"Create time entry (timer or manual)\"\"\"\n    user_id: str\n    project_id: str\n    task_id: Optional[str] = None\n    start_time: datetime\n    end_time: datetime\n    entry_type: str = Field(\"TIMER\", description=\"TIMER or MANUAL\")\n    is_billable: bool = Field(True)\n    billable_status: BillableStatusEnum = BillableStatusEnum.NON_BILLABLE",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimeEntryUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class TimeEntryUpdate(BaseModel):\n    \"\"\"Update time entry\"\"\"\n    end_time: Optional[datetime] = None\n    is_billable: Optional[bool] = None\n    billable_status: Optional[BillableStatusEnum] = None\n    category: Optional[str] = None\n    description: Optional[str] = None\n    edit_reason: Optional[str] = None\nclass TimeEntryRead(BaseModel):\n    \"\"\"Read time entry\"\"\"",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimeEntryRead",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class TimeEntryRead(BaseModel):\n    \"\"\"Read time entry\"\"\"\n    id: UUID\n    user_id: str\n    project_id: str\n    task_id: Optional[str]\n    start_time: datetime\n    end_time: datetime\n    duration_seconds: int\n    duration_hours: float",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimerControlRequest",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class TimerControlRequest(BaseModel):\n    \"\"\"Request to start/stop timer\"\"\"\n    user_id: str\n    project_id: str\n    task_id: Optional[str] = None\n    action: str = Field(..., description=\"START or STOP\")\n    category: Optional[str] = None\n    description: Optional[str] = None\n# ==================== Timesheet Schemas ====================\nclass TimesheetCreate(BaseModel):",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetCreate",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class TimesheetCreate(BaseModel):\n    \"\"\"Create timesheet\"\"\"\n    user_id: str\n    project_id: str\n    period_start_date: datetime\n    period_end_date: datetime\n    period_type: str = Field(\"WEEKLY\", description=\"WEEKLY or MONTHLY\")\n    notes: Optional[str] = None\nclass TimesheetSubmit(BaseModel):\n    \"\"\"Submit timesheet for approval\"\"\"",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetSubmit",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class TimesheetSubmit(BaseModel):\n    \"\"\"Submit timesheet for approval\"\"\"\n    timesheet_id: UUID\n    notes: Optional[str] = None\nclass TimesheetApprove(BaseModel):\n    \"\"\"Approve timesheet\"\"\"\n    timesheet_id: UUID\n    approval_notes: Optional[str] = None\nclass TimesheetReject(BaseModel):\n    \"\"\"Reject timesheet\"\"\"",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetApprove",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class TimesheetApprove(BaseModel):\n    \"\"\"Approve timesheet\"\"\"\n    timesheet_id: UUID\n    approval_notes: Optional[str] = None\nclass TimesheetReject(BaseModel):\n    \"\"\"Reject timesheet\"\"\"\n    timesheet_id: UUID\n    rejection_reason: str = Field(..., min_length=10)\nclass TimesheetRead(BaseModel):\n    \"\"\"Read timesheet\"\"\"",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetReject",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class TimesheetReject(BaseModel):\n    \"\"\"Reject timesheet\"\"\"\n    timesheet_id: UUID\n    rejection_reason: str = Field(..., min_length=10)\nclass TimesheetRead(BaseModel):\n    \"\"\"Read timesheet\"\"\"\n    id: UUID\n    user_id: str\n    project_id: str\n    period_start_date: datetime",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetRead",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class TimesheetRead(BaseModel):\n    \"\"\"Read timesheet\"\"\"\n    id: UUID\n    user_id: str\n    project_id: str\n    period_start_date: datetime\n    period_end_date: datetime\n    period_type: str\n    total_hours: float\n    billable_hours: float",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "FilterExpression",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class FilterExpression(BaseModel):\n    \"\"\"Filter expression for custom reports\"\"\"\n    field: str = Field(..., description=\"Field name: project, assignee, tag, priority, month\")\n    operator: str = Field(..., description=\"eq, ne, gt, lt, in, contains\")\n    value: Any = Field(...)\n    logic: Optional[str] = Field(None, description=\"AND or OR connector\")\nclass CustomReportCreate(BaseModel):\n    \"\"\"Create custom report\"\"\"\n    name: str = Field(..., min_length=1, max_length=255)\n    project_id: str",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "CustomReportCreate",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class CustomReportCreate(BaseModel):\n    \"\"\"Create custom report\"\"\"\n    name: str = Field(..., min_length=1, max_length=255)\n    project_id: str\n    description: Optional[str] = None\n    dimensions: List[str] = Field(\n        ...,\n        description=\"Dimensions: project, assignee, tag, priority, month, status\"\n    )\n    metrics: List[str] = Field(",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "CustomReportUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class CustomReportUpdate(BaseModel):\n    \"\"\"Update custom report\"\"\"\n    name: Optional[str] = Field(None, min_length=1, max_length=255)\n    description: Optional[str] = None\n    dimensions: Optional[List[str]] = None\n    metrics: Optional[List[str]] = None\n    filters: Optional[List[FilterExpression]] = None\n    visualization_type: Optional[str] = None\n    is_public: Optional[bool] = None\nclass CustomReportRead(BaseModel):",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "CustomReportRead",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class CustomReportRead(BaseModel):\n    \"\"\"Read custom report\"\"\"\n    id: UUID\n    name: str\n    project_id: str\n    description: Optional[str]\n    created_by: str\n    dimensions: List[str]\n    metrics: List[str]\n    filters: Optional[List[Dict[str, Any]]]",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportExecuteRequest",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class ReportExecuteRequest(BaseModel):\n    \"\"\"Request to execute custom report\"\"\"\n    report_id: UUID\n    export_format: Optional[ReportFormatEnum] = None\nclass ReportExecuteResponse(BaseModel):\n    \"\"\"Response from report execution\"\"\"\n    report_id: UUID\n    execution_time_ms: int\n    result_count: int\n    data: Optional[List[Dict[str, Any]]] = None",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportExecuteResponse",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class ReportExecuteResponse(BaseModel):\n    \"\"\"Response from report execution\"\"\"\n    report_id: UUID\n    execution_time_ms: int\n    result_count: int\n    data: Optional[List[Dict[str, Any]]] = None\n    download_url: Optional[str] = None\n# ==================== Report Schedule Schemas ====================\nclass ReportScheduleCreate(BaseModel):\n    \"\"\"Create report schedule\"\"\"",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportScheduleCreate",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class ReportScheduleCreate(BaseModel):\n    \"\"\"Create report schedule\"\"\"\n    custom_report_id: str\n    project_id: str\n    frequency: ReportScheduleFrequencyEnum\n    start_date: datetime\n    end_date: Optional[datetime] = None\n    execution_days: Optional[List[int]] = Field(None, description=\"[1-7] for weekly\")\n    execution_time: Optional[str] = Field(None, description=\"HH:MM format\")\n    recipient_emails: List[str] = Field(..., min_items=1)",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportScheduleUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class ReportScheduleUpdate(BaseModel):\n    \"\"\"Update report schedule\"\"\"\n    frequency: Optional[ReportScheduleFrequencyEnum] = None\n    execution_days: Optional[List[int]] = None\n    execution_time: Optional[str] = None\n    recipient_emails: Optional[List[str]] = None\n    export_format: Optional[ReportFormatEnum] = None\n    include_charts: Optional[bool] = None\n    is_active: Optional[bool] = None\n    end_date: Optional[datetime] = None",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportScheduleRead",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class ReportScheduleRead(BaseModel):\n    \"\"\"Read report schedule\"\"\"\n    id: UUID\n    custom_report_id: str\n    project_id: str\n    created_by: str\n    frequency: ReportScheduleFrequencyEnum\n    is_active: bool\n    start_date: datetime\n    end_date: Optional[datetime]",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "BurndownChartData",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class BurndownChartData(BaseModel):\n    \"\"\"Burn-down chart visualization data\"\"\"\n    sprint_id: str\n    days: List[int]\n    ideal_line: List[float]\n    actual_line: List[float]\n    scope_line: Optional[List[float]] = None\n    on_track: bool\n    risk_level: str\nclass VelocityChartData(BaseModel):",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "VelocityChartData",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class VelocityChartData(BaseModel):\n    \"\"\"Velocity trend chart data\"\"\"\n    sprints: List[str]\n    commitments: List[int]\n    completed: List[int]\n    velocities: List[float]\n    avg_velocity_3: Optional[float]\n    trend: str\nclass AnalyticsOverviewRead(BaseModel):\n    \"\"\"High-level analytics overview for dashboard\"\"\"",
+        "detail": "app.schemas.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "AnalyticsOverviewRead",
+        "kind": 6,
+        "importPath": "app.schemas.analytics",
+        "description": "app.schemas.analytics",
+        "peekOfCode": "class AnalyticsOverviewRead(BaseModel):\n    \"\"\"High-level analytics overview for dashboard\"\"\"\n    sprint_health: Dict[str, Any]\n    team_velocity: Dict[str, Any]\n    resource_utilization: Dict[str, Any]\n    time_tracking_summary: Dict[str, Any]\n    pending_timesheets: int\n    overdue_approvals: int",
+        "detail": "app.schemas.analytics",
         "documentation": {}
     },
     {
@@ -16638,6 +18825,105 @@
         "description": "app.schemas.workspace",
         "peekOfCode": "class WorkspaceContextSwitch(BaseModel):\n    \"\"\"Schema for switching workspace context\"\"\"\n    workspace_id: UUID = Field(..., description=\"Workspace ID to switch to\")",
         "detail": "app.schemas.workspace",
+        "documentation": {}
+    },
+    {
+        "label": "SprintMetricsService",
+        "kind": 6,
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "peekOfCode": "class SprintMetricsService:\n    \"\"\"\n    Sprint performance metrics with Earned Value Management (EVM) calculations.\n    Calculations:\n    - CPI = Earned Value / Actual Cost (1.0 = on budget)\n    - SPI = Earned Value / Planned Value (1.0 = on schedule)\n    - Risk level determination based on metrics\n    Ref: Module 11 - Feature 2.1, Section 4.1 (EVM)\n    \"\"\"\n    @staticmethod",
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "VelocityService",
+        "kind": 6,
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "peekOfCode": "class VelocityService:\n    \"\"\"\n    Sprint velocity tracking and trend analysis.\n    Calculates:\n    - Velocity = Completed / Commitment ratio\n    - 3-sprint and 6-sprint averages for planning\n    - Trend (INCREASING, STABLE, DECREASING)\n    Ref: Module 11 - Feature 2.1 AC 2\n    \"\"\"\n    @staticmethod",
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceUtilizationService",
+        "kind": 6,
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "peekOfCode": "class ResourceUtilizationService:\n    \"\"\"\n    Resource capacity and utilization tracking.\n    Heatmap color coding:\n    - GREEN: 70-90% utilization (optimal)\n    - RED: >100% utilization (overloaded)\n    - GREY: <50% utilization (underutilized)\n    Ref: Module 11 - Feature 2.2 - Resource Utilization Heatmap\n    \"\"\"\n    @staticmethod",
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimeTrackingService",
+        "kind": 6,
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "peekOfCode": "class TimeTrackingService:\n    \"\"\"\n    Time entry tracking with timer and manual entry support.\n    Features:\n    - Timer mode (Start/Stop auto-calculation)\n    - Manual entry mode (hh:mm:ss input)\n    - Edit history tracking with validation\n    - Billable vs Non-billable classification\n    - Daily limit validation (hard limit 24h, soft warning 12h)\n    Ref: Module 11 - Feature 2.3 - Time Tracking & Timesheets",
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetApprovalService",
+        "kind": 6,
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "peekOfCode": "class TimesheetApprovalService:\n    \"\"\"\n    Timesheet aggregation and approval workflow.\n    Workflow:\n    DRAFT → SUBMITTED → APPROVED or REJECTED\n    Features:\n    - Aggregates time entries into timesheet\n    - Tracks billable vs non-billable hours\n    - Approval by Project Manager/Owner\n    - Rejection with feedback",
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "CustomReportService",
+        "kind": 6,
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "peekOfCode": "class CustomReportService:\n    \"\"\"\n    Custom report builder with drag-drop interface.\n    Features:\n    - Dimension/Metric selection\n    - Advanced filtering (AND/OR logic)\n    - Report execution and export\n    - Template support\n    Ref: Module 11 - Feature 2.4 - Custom Report Builder\n    \"\"\"",
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportSchedulingService",
+        "kind": 6,
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "peekOfCode": "class ReportSchedulingService:\n    \"\"\"\n    Automated report generation and email delivery.\n    Features:\n    - Frequency scheduling (Daily, Weekly, Monthly, etc.)\n    - Recipient management\n    - Export format selection\n    - Execution tracking\n    Ref: Module 11 - Feature 2.4 - Custom Report Builder (Scheduling)\n    \"\"\"",
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "MetricSnapshotService",
+        "kind": 6,
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "peekOfCode": "class MetricSnapshotService:\n    \"\"\"\n    Historical tracking of EVM metrics for trend analysis and dashboards.\n    Records: CPI, SPI, cost/schedule variance for performance history.\n    \"\"\"\n    @staticmethod\n    def create_snapshot(\n        db: Session,\n        project_id: str,\n        sprint_id: Optional[str],",
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "KPIService",
+        "kind": 6,
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "peekOfCode": "class KPIService:\n    \"\"\"\n    Key Performance Indicator tracking and evaluation.\n    Tracks: target vs actual, status (ON_TRACK/AT_RISK/OFF_TRACK), achievement.\n    \"\"\"\n    @staticmethod\n    def create_kpi(\n        db: Session,\n        project_id: str,\n        kpi_data: Dict[str, Any]",
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetApprovalService",
+        "kind": 6,
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "peekOfCode": "class TimesheetApprovalService:\n    \"\"\"\n    Manage timesheet approval workflow separately from Timesheet entity.\n    Implements: DRAFT → SUBMITTED → APPROVED/REJECTED workflow\n    Validates: compliance rules, escalation requirements\n    \"\"\"\n    @staticmethod\n    def submit_for_approval(\n        db: Session,\n        timesheet_id: UUID,",
+        "detail": "app.services.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportPermissionService",
+        "kind": 6,
+        "importPath": "app.services.analytics",
+        "description": "app.services.analytics",
+        "peekOfCode": "class ReportPermissionService:\n    \"\"\"\n    Granular access control for custom reports.\n    Features: time-limited access, delegation, scope hierarchy\n    \"\"\"\n    @staticmethod\n    def grant_access(\n        db: Session,\n        report_id: str,\n        user_id: str,",
+        "detail": "app.services.analytics",
         "documentation": {}
     },
     {

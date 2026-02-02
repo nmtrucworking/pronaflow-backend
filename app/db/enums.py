@@ -508,3 +508,60 @@ class NotificationEventTypeEnum(str, Enum):
     COMMENT_ADDED = "comment_added"  # Comment on task
     PROJECT_UPDATED = "project_updated"  # Project changes
     COLLABORATION_REQUEST = "collaboration_request"  # Collaboration invite
+
+
+# ============ Module 11: Advanced Analytics and Reporting ============
+
+class AnalyticsTypeEnum(str, Enum):
+    """
+    Types of analytics visualizations supported.
+    Ref: Module 11 - Features 2.1-2.4
+    """
+    BURN_DOWN = "burn_down"          # Sprint burn-down chart
+    BURN_UP = "burn_up"              # Sprint burn-up chart with scope creep
+    VELOCITY = "velocity"            # Sprint velocity comparison
+    HEATMAP = "heatmap"              # Resource utilization heatmap
+    TIME_TRACKING = "time_tracking"  # Time entry tracking
+    CUSTOM_REPORT = "custom_report"  # Custom report
+
+
+class ReportFormatEnum(str, Enum):
+    """
+    Supported export formats for reports.
+    Ref: Module 11 - Feature 2.4 AC 2 - Filtering & Export
+    """
+    PDF = "pdf"                      # PDF format for printing
+    CSV = "csv"                      # CSV for spreadsheet processing
+    XLSX = "xlsx"                    # Excel format
+
+
+class TimesheetStatusEnum(str, Enum):
+    """
+    Timesheet approval workflow status.
+    Ref: Module 11 - Feature 2.3 AC 3 - Timesheet Approval Workflow
+    """
+    DRAFT = "draft"                  # Work in progress
+    SUBMITTED = "submitted"          # Awaiting approval
+    APPROVED = "approved"            # Approved by PM/Manager
+    REJECTED = "rejected"            # Rejected with feedback
+
+
+class BillableStatusEnum(str, Enum):
+    """
+    Billable status for time entries.
+    Ref: Module 11 - Feature 2.3 AC 2 - Billable vs. Non-billable
+    """
+    BILLABLE = "billable"            # Hours charged to client/customer
+    NON_BILLABLE = "non_billable"    # Internal or overhead hours
+
+
+class ReportScheduleFrequencyEnum(str, Enum):
+    """
+    Frequency for automated report generation.
+    Ref: Module 11 - Feature 2.4 - Custom Report Builder (Scheduling)
+    """
+    DAILY = "daily"                  # Generated daily
+    WEEKLY = "weekly"                # Generated weekly
+    MONTHLY = "monthly"              # Generated monthly
+    QUARTERLY = "quarterly"          # Generated quarterly
+    ANNUALLY = "annually"            # Generated annually

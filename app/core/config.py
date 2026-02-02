@@ -84,6 +84,14 @@ class Settings(BaseSettings):
     DEFAULT_FONT_SIZE: str = "medium"  # Default font size (small, medium, large, extra_large)
     DEFAULT_INFO_DENSITY: str = "comfortable"  # Default info density (comfortable, compact)
     WCAG_COMPLIANCE_LEVEL: str = "AA"  # WCAG accessibility level
+
+    # Analytics & Reporting Settings (Module 11)
+    REPORT_DATA_FRESHNESS_MINUTES: int = 1  # Real-time <1 min for operational reports
+    TIMESHEET_APPROVAL_REQUIRED: bool = True  # Require PM approval for timesheets
+    DAILY_LOG_WARNING_HOURS: int = 12  # Soft warning if daily log exceeds this
+    DAILY_LOG_MAX_HOURS: int = 24  # Hard limit for daily time logging
+    MAX_REPORT_EXPORT_SIZE_MB: int = 100  # Max export file size for reports
+    REPORT_CACHE_TTL_SECONDS: int = 300  # Cache TTL for report results (5 minutes)
     
     class Config:
         env_file = ".env"
