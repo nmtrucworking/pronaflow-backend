@@ -105,10 +105,17 @@ from app.db.models.reports import (
 from app.db.models.integrations import (
     ApiToken,
     ApiScope,
+    ApiTokenScope,
+    ApiUsageLog,
     WebhookEndpoint,
     WebhookEvent,
     WebhookDelivery,
+    OAuthApp,
+    OAuthConnection,
     IntegrationBinding,
+    Plugin,
+    PluginInstallation,
+    ConsentGrant,
 )
 
 __all__ = [
@@ -186,8 +193,15 @@ __all__ = [
     # Module 10-12
     "ApiToken",
     "ApiScope",
+    "ApiTokenScope",
+    "ApiUsageLog",
     "WebhookEndpoint",
     "WebhookEvent",
     "WebhookDelivery",
+    "OAuthApp",
+    "OAuthConnection",
     "IntegrationBinding",
+    "Plugin",
+    "PluginInstallation",
+    "ConsentGrant",
 ]

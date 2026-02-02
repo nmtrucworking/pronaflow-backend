@@ -92,6 +92,40 @@ class Settings(BaseSettings):
     DAILY_LOG_MAX_HOURS: int = 24  # Hard limit for daily time logging
     MAX_REPORT_EXPORT_SIZE_MB: int = 100  # Max export file size for reports
     REPORT_CACHE_TTL_SECONDS: int = 300  # Cache TTL for report results (5 minutes)
+
+    # API Integration Settings (Module 12 - Feature 2.1: API Access)
+    API_TOKEN_EXPIRY_DAYS: int = 365  # Default token expiration
+    API_TOKEN_HASH_ALGORITHM: str = "sha256"  # Token hashing algorithm
+    
+    # Rate Limiting Settings (Module 12 - Feature 2.1: Rate Limiting)
+    RATE_LIMIT_TIER_FREE_REQ_PER_MIN: int = 60  # Free tier: 60 req/min
+    RATE_LIMIT_TIER_PRO_REQ_PER_MIN: int = 1000  # Pro tier: 1000 req/min
+    RATE_LIMIT_TIER_ENTERPRISE_REQ_PER_MIN: int = 5000  # Enterprise tier: 5000 req/min
+    RATE_LIMIT_WINDOW_SECONDS: int = 60  # Rate limit window in seconds
+    
+    # Webhook Settings (Module 12 - Feature 2.2: Webhooks)
+    WEBHOOK_MAX_RETRIES: int = 5  # Maximum retry attempts
+    WEBHOOK_RETRY_BACKOFF_SECONDS: int = 60  # Base backoff in seconds (exponential)
+    WEBHOOK_TIMEOUT_SECONDS: int = 30  # Webhook request timeout
+    WEBHOOK_MAX_PAYLOAD_SIZE_KB: int = 1024  # Max webhook payload size
+    WEBHOOK_DELIVERY_TTL_HOURS: int = 24  # How long to keep delivery records
+    WEBHOOK_QUEUE_MAX_SIZE: int = 10000  # Max pending webhook deliveries
+    
+    # OAuth Settings (Module 12 - Feature 3: OAuth)
+    OAUTH_TOKEN_EXPIRY_MINUTES: int = 60  # OAuth token expiration
+    OAUTH_REFRESH_TOKEN_EXPIRY_DAYS: int = 30  # Refresh token expiration
+    OAUTH_AUTHORIZATION_CODE_EXPIRY_MINUTES: int = 10  # Auth code expiration
+    OAUTH_REDIRECT_URI_BASE: str = "http://localhost:3000"  # OAuth redirect base URL
+    
+    # Plugin Settings (Module 12 - Feature 5: Plugin Marketplace)
+    PLUGIN_MAX_SIZE_MB: int = 50  # Max plugin bundle size
+    PLUGIN_MAX_INSTALLABLE_PER_WORKSPACE: int = 100  # Max plugins per workspace
+    PLUGIN_EXECUTION_TIMEOUT_SECONDS: int = 30  # Plugin execution timeout
+    PLUGIN_MANIFEST_VERSION: str = "1.0.0"  # Current plugin manifest version
+    
+    # Consent & Governance Settings (Module 12 - Feature 6: Governance)
+    CONSENT_POLICY_VERSION: int = 1  # Current consent policy version
+    CONSENT_AUDIT_LOG_RETENTION_DAYS: int = 2555  # 7 years for GDPR compliance
     
     class Config:
         env_file = ".env"

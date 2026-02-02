@@ -565,3 +565,70 @@ class ReportScheduleFrequencyEnum(str, Enum):
     MONTHLY = "monthly"              # Generated monthly
     QUARTERLY = "quarterly"          # Generated quarterly
     ANNUALLY = "annually"            # Generated annually
+
+# ========== Module 12: Integration Ecosystem Enums ==========
+
+class RetryPolicyEnum(str, Enum):
+    """
+    Retry policy for webhook deliveries.
+    Ref: Module 12 - Feature 2.2 - Webhook Reliability
+    """
+    EXPONENTIAL = "exponential"      # Exponential backoff
+    LINEAR = "linear"                # Linear backoff
+    NO_RETRY = "no_retry"            # No retries
+
+
+class WebhookDeliveryStatusEnum(str, Enum):
+    """
+    Status of webhook event delivery.
+    Ref: Module 12 - Feature 2.2 - AC 2 - Delivery Status
+    """
+    PENDING = "pending"              # Awaiting delivery
+    DELIVERED = "delivered"          # Successfully delivered
+    FAILED = "failed"                # Delivery failed
+    RETRYING = "retrying"            # Retrying delivery
+
+
+class OAuthStatusEnum(str, Enum):
+    """
+    Status of OAuth connection.
+    Ref: Module 12 - Feature 3 - OAuth Integration
+    """
+    ACTIVE = "active"                # Connection active
+    INACTIVE = "inactive"            # Connection inactive
+    EXPIRED = "expired"              # Token expired
+    REVOKED = "revoked"              # User revoked connection
+
+
+class ConsentTypeEnum(str, Enum):
+    """
+    Types of user consent for privacy compliance.
+    Ref: Module 12 - Feature 6 - Governance & Compliance
+    """
+    DATA_USAGE = "data_usage"        # Consent for data usage
+    THIRD_PARTY = "third_party"      # Third-party integration
+    ANALYTICS = "analytics"          # Analytics and tracking
+    MARKETING = "marketing"           # Marketing communications
+
+
+class IntegrationStatusEnum(str, Enum):
+    """
+    Status of external service integration.
+    Ref: Module 12 - Feature 4 - Integration Binding
+    """
+    ACTIVE = "active"                # Integration is active
+    INACTIVE = "inactive"            # Integration is inactive
+    ERROR = "error"                  # Integration has errors
+    PENDING = "pending"              # Integration pending setup
+
+
+class PluginStatusEnum(str, Enum):
+    """
+    Status of plugin installation and operation.
+    Ref: Module 12 - Feature 5 - Plugin Marketplace
+    """
+    INSTALLED = "installed"          # Plugin installed
+    ENABLED = "enabled"              # Plugin enabled
+    DISABLED = "disabled"            # Plugin disabled
+    ERROR = "error"                  # Plugin error state
+    UNINSTALLED = "uninstalled"      # Plugin uninstalled
