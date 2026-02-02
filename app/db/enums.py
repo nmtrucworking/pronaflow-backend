@@ -72,6 +72,65 @@ class ProjectVisibility(str, Enum):
     PRIVATE = "private"
 
 
+class ProjectRole(str, Enum):
+    """
+    Project-level roles.
+    Defines permission levels for project members.
+    Ref: Module 3 - AC 2.3
+    """
+    MANAGER = "manager"      # Project Manager - highest authority
+    PLANNER = "planner"      # Planner - schedule and planning authority
+    MEMBER = "member"        # Member - execution role
+    VIEWER = "viewer"        # Viewer - read-only access
+
+
+class ProjectPriority(str, Enum):
+    """
+    Project priority levels.
+    Used for resource allocation and conflict resolution.
+    Ref: Module 3 - Feature 2.20
+    """
+    CRITICAL = "critical"    # Critical - absolute priority
+    HIGH = "high"            # High - important project
+    MEDIUM = "medium"        # Medium - standard (default)
+    LOW = "low"              # Low - filler project
+
+
+class ChangeRequestStatus(str, Enum):
+    """
+    Change request workflow status.
+    Used in strict governance mode.
+    Ref: Module 3 - Feature 2.11
+    """
+    DRAFT = "draft"
+    PENDING = "pending"
+    APPROVED = "approved"
+    REJECTED = "rejected"
+    IMPLEMENTED = "implemented"
+    CANCELLED = "cancelled"
+
+
+class ChangeRequestType(str, Enum):
+    """
+    Types of change requests.
+    Ref: Module 3 - Feature 2.11 AC 1
+    """
+    SCOPE = "scope"          # Scope change
+    SCHEDULE = "schedule"    # Schedule change
+    COST = "cost"            # Cost/budget change
+    RESOURCE = "resource"    # Resource change
+
+
+class ProjectHealthStatus(str, Enum):
+    """
+    Project health indicator (traffic light).
+    Ref: Module 3 - Feature 2.10
+    """
+    GREEN = "green"          # On track
+    AMBER = "amber"          # At risk
+    RED = "red"              # Off track
+
+
 # ============ Module 4 & 15: Tag & Categorization System ============
 
 class TagEntityType(str, Enum):

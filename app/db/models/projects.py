@@ -13,7 +13,7 @@ from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.declarative_base import Base
 from app.db.mixins import TimestampMixin, SoftDeleteMixin
-from app.db.enums import ProjectStatus, ProjectGovernanceMode, ProjectVisibility
+from app.db.enums import ProjectStatus, ProjectGovernanceMode, ProjectVisibility, ProjectPriority
 
 if TYPE_CHECKING:
     from app.db.models.users import User
@@ -96,6 +96,13 @@ class Project(Base, TimestampMixin, SoftDeleteMixin):
         default=ProjectVisibility.PRIVATE,
         nullable=False,
         comment="Project visibility (PUBLIC / PRIVATE)"
+    )
+
+    priority: Mapped[ProjectPriority] = mapped_column(
+        SQLEnum(ProjectPriority),
+        default=ProjectPriority.MEDIUM,
+        nullable=False,
+        comment="Project priority (CRITICAL / HIGH / MEDIUM / LOW)"
     )
 
     # Dates

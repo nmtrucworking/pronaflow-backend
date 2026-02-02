@@ -13,6 +13,7 @@ from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.declarative_base import Base
 from app.db.mixins import TimestampMixin, AuditMixin
+from app.db.enums import ChangeRequestStatus, ChangeRequestType
 
 if TYPE_CHECKING:
     from app.db.models.users import User
@@ -252,10 +253,17 @@ class ProjectChangeRequest(Base, AuditMixin):
         comment="Detailed description of the change"
     )
 
+    # Type
+    type: Mapped[ChangeRequestType] = mapped_column(
+        SQLEnum(ChangeRequestType),
+        nullable=False,
+        comment="Type of change request"
+    )
+
     # Status
-    status: Mapped[str] = mapped_column(
-        SQLEnum('PENDING', 'APPROVED', 'REJECTED', 'IMPLEMENTED', name='change_request_status'),
-        default='PENDING',
+    status: Mapped[ChangeRequestStatus] = mapped_column(
+        SQLEnum(ChangeRequestStatus),
+        default=ChangeRequestStatus.PENDING,
         nullable=False,
         index=True,
         comment="Change request status"

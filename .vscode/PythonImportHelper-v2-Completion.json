@@ -8,6 +8,14 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -905,6 +913,38 @@
         "documentation": {}
     },
     {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "text",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -1263,6 +1303,22 @@
         "description": "app.db.base",
         "isExtraImport": true,
         "detail": "app.db.base",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -1778,6 +1834,38 @@
         "documentation": {}
     },
     {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -1835,6 +1923,46 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -1935,6 +2063,22 @@
         "isExtraImport": true,
         "importPath": "uuid",
         "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
         "detail": "uuid",
         "documentation": {}
     },
@@ -2171,6 +2315,22 @@
         "documentation": {}
     },
     {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -2204,6 +2364,22 @@
     },
     {
         "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -2347,6 +2523,46 @@
         "documentation": {}
     },
     {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -2451,6 +2667,22 @@
         "documentation": {}
     },
     {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "HTTPException",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -2464,6 +2696,14 @@
         "description": "fastapi",
         "isExtraImport": true,
         "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
         "documentation": {}
     },
     {
@@ -2883,6 +3123,22 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
         "label": "get_db",
         "importPath": "app.db.session",
         "description": "app.db.session",
@@ -2948,6 +3204,14 @@
     },
     {
         "label": "get_current_active_user",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
         "importPath": "app.core.security",
         "description": "app.core.security",
         "isExtraImport": true,
@@ -3075,6 +3339,14 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
         "label": "Session",
         "importPath": "app.db.models.users",
         "description": "app.db.models.users",
@@ -3156,6 +3428,14 @@
     },
     {
         "label": "MFABackupCode",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
         "importPath": "app.db.models.users",
         "description": "app.db.models.users",
         "isExtraImport": true,
@@ -3683,6 +3963,574 @@
         "documentation": {}
     },
     {
+        "label": "ProjectStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "UserStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectGovernanceMode",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectVisibility",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectPriority",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestType",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TagEntityType",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskPriority",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "UserStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "AuthProvider",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectGovernanceMode",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectVisibility",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectPriority",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestType",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectHealthStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "UserStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectGovernanceMode",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectHealthStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectCreate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectStatusUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectResponse",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectDetailResponse",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectListResponse",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMemberCreate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMemberUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMemberResponse",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectTemplateCreate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectTemplateUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectTemplateResponse",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectFromTemplateCreate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectBaselineCreate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectBaselineResponse",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestCreate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestApprove",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestResponse",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectClone",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectHealthUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMetricsResponse",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectCreate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectStatusUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMemberCreate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMemberUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectTemplateCreate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectTemplateUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectBaselineCreate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestCreate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestApprove",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectClone",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectHealthUpdate",
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "isExtraImport": true,
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectService",
+        "importPath": "app.services.project",
+        "description": "app.services.project",
+        "isExtraImport": true,
+        "detail": "app.services.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMemberService",
+        "importPath": "app.services.project",
+        "description": "app.services.project",
+        "isExtraImport": true,
+        "detail": "app.services.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectTemplateService",
+        "importPath": "app.services.project",
+        "description": "app.services.project",
+        "isExtraImport": true,
+        "detail": "app.services.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectChangeRequestService",
+        "importPath": "app.services.project",
+        "description": "app.services.project",
+        "isExtraImport": true,
+        "detail": "app.services.project",
+        "documentation": {}
+    },
+    {
         "label": "reference_loader",
         "importPath": "app.core.referencer_loader",
         "description": "app.core.referencer_loader",
@@ -3708,6 +4556,14 @@
     },
     {
         "label": "admin",
+        "importPath": "app.api.v1.endpoints",
+        "description": "app.api.v1.endpoints",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints",
+        "documentation": {}
+    },
+    {
+        "label": "projects",
         "importPath": "app.api.v1.endpoints",
         "description": "app.api.v1.endpoints",
         "isExtraImport": true,
@@ -3790,118 +4646,6 @@
         "importPath": "re",
         "description": "re",
         "detail": "re",
-        "documentation": {}
-    },
-    {
-        "label": "UserStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectGovernanceMode",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectVisibility",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TagEntityType",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TaskPriority",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TaskStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "UserStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "AuthProvider",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceRole",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceRole",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "UserStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceRole",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceRole",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
         "documentation": {}
     },
     {
@@ -4297,6 +5041,14 @@
         "documentation": {}
     },
     {
+        "label": "WorkspaceMember",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
         "label": "Workspace",
         "importPath": "app.db.models.workspaces",
         "description": "app.db.models.workspaces",
@@ -4409,6 +5161,30 @@
         "documentation": {}
     },
     {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "field_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "EmailStr",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -4502,6 +5278,70 @@
         "documentation": {}
     },
     {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.db.models.projects",
+        "description": "app.db.models.projects",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMember",
+        "importPath": "app.db.models.projects_extended",
+        "description": "app.db.models.projects_extended",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects_extended",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectTemplate",
+        "importPath": "app.db.models.projects_extended",
+        "description": "app.db.models.projects_extended",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects_extended",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectBaseline",
+        "importPath": "app.db.models.projects_extended",
+        "description": "app.db.models.projects_extended",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects_extended",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectChangeRequest",
+        "importPath": "app.db.models.projects_extended",
+        "description": "app.db.models.projects_extended",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects_extended",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectArchive",
+        "importPath": "app.db.models.projects_extended",
+        "description": "app.db.models.projects_extended",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects_extended",
+        "documentation": {}
+    },
+    {
         "label": "radians",
         "importPath": "math",
         "description": "math",
@@ -4539,14 +5379,6 @@
         "description": "math",
         "isExtraImport": true,
         "detail": "math",
-        "documentation": {}
-    },
-    {
-        "label": "IntegrityError",
-        "importPath": "sqlalchemy.exc",
-        "description": "sqlalchemy.exc",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.exc",
         "documentation": {}
     },
     {
@@ -4669,6 +5501,60 @@
         "documentation": {}
     },
     {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "description": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "peekOfCode": "def upgrade() -> None:\n    # Create new enum types\n    op.execute(\"CREATE TYPE projectpriority AS ENUM ('CRITICAL', 'HIGH', 'MEDIUM', 'LOW')\")\n    op.execute(\"CREATE TYPE changerequesttype AS ENUM ('SCOPE', 'SCHEDULE', 'COST', 'RESOURCE')\")\n    op.execute(\"CREATE TYPE changerequeststatusv2 AS ENUM ('DRAFT', 'PENDING', 'APPROVED', 'REJECTED', 'IMPLEMENTED', 'CANCELLED')\")\n    op.execute(\"CREATE TYPE projecthealthstatus AS ENUM ('GREEN', 'AMBER', 'RED')\")\n    op.execute(\"CREATE TYPE projectrole AS ENUM ('MANAGER', 'PLANNER', 'MEMBER', 'VIEWER')\")\n    # Add priority column to projects table\n    op.add_column('projects', \n        sa.Column('priority', sa.Enum('CRITICAL', 'HIGH', 'MEDIUM', 'LOW', name='projectpriority'), ",
+        "detail": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "description": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "peekOfCode": "def downgrade() -> None:\n    # Remove priority from projects\n    op.drop_column('projects', 'priority')\n    # Remove type from project_change_requests\n    op.drop_column('project_change_requests', 'type')\n    # Revert status enum (simplified - may need adjustment based on data)\n    op.execute(\"ALTER TABLE project_change_requests ALTER COLUMN status TYPE varchar(50)\")\n    op.execute(\"DROP TYPE change_request_status\")\n    op.execute(\"CREATE TYPE change_request_status AS ENUM ('PENDING', 'APPROVED', 'REJECTED', 'IMPLEMENTED')\")\n    op.execute(\"ALTER TABLE project_change_requests ALTER COLUMN status TYPE change_request_status USING status::change_request_status\")",
+        "detail": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "documentation": {}
+    },
+    {
+        "label": "revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "description": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "peekOfCode": "revision = 'module3_enhancements'\ndown_revision = '37d437544626'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # Create new enum types\n    op.execute(\"CREATE TYPE projectpriority AS ENUM ('CRITICAL', 'HIGH', 'MEDIUM', 'LOW')\")\n    op.execute(\"CREATE TYPE changerequesttype AS ENUM ('SCOPE', 'SCHEDULE', 'COST', 'RESOURCE')\")\n    op.execute(\"CREATE TYPE changerequeststatusv2 AS ENUM ('DRAFT', 'PENDING', 'APPROVED', 'REJECTED', 'IMPLEMENTED', 'CANCELLED')\")\n    op.execute(\"CREATE TYPE projecthealthstatus AS ENUM ('GREEN', 'AMBER', 'RED')\")",
+        "detail": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "documentation": {}
+    },
+    {
+        "label": "down_revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "description": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "peekOfCode": "down_revision = '37d437544626'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # Create new enum types\n    op.execute(\"CREATE TYPE projectpriority AS ENUM ('CRITICAL', 'HIGH', 'MEDIUM', 'LOW')\")\n    op.execute(\"CREATE TYPE changerequesttype AS ENUM ('SCOPE', 'SCHEDULE', 'COST', 'RESOURCE')\")\n    op.execute(\"CREATE TYPE changerequeststatusv2 AS ENUM ('DRAFT', 'PENDING', 'APPROVED', 'REJECTED', 'IMPLEMENTED', 'CANCELLED')\")\n    op.execute(\"CREATE TYPE projecthealthstatus AS ENUM ('GREEN', 'AMBER', 'RED')\")\n    op.execute(\"CREATE TYPE projectrole AS ENUM ('MANAGER', 'PLANNER', 'MEMBER', 'VIEWER')\")",
+        "detail": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "documentation": {}
+    },
+    {
+        "label": "branch_labels",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "description": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "peekOfCode": "branch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # Create new enum types\n    op.execute(\"CREATE TYPE projectpriority AS ENUM ('CRITICAL', 'HIGH', 'MEDIUM', 'LOW')\")\n    op.execute(\"CREATE TYPE changerequesttype AS ENUM ('SCOPE', 'SCHEDULE', 'COST', 'RESOURCE')\")\n    op.execute(\"CREATE TYPE changerequeststatusv2 AS ENUM ('DRAFT', 'PENDING', 'APPROVED', 'REJECTED', 'IMPLEMENTED', 'CANCELLED')\")\n    op.execute(\"CREATE TYPE projecthealthstatus AS ENUM ('GREEN', 'AMBER', 'RED')\")\n    op.execute(\"CREATE TYPE projectrole AS ENUM ('MANAGER', 'PLANNER', 'MEMBER', 'VIEWER')\")\n    # Add priority column to projects table",
+        "detail": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "documentation": {}
+    },
+    {
+        "label": "depends_on",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "description": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "peekOfCode": "depends_on = None\ndef upgrade() -> None:\n    # Create new enum types\n    op.execute(\"CREATE TYPE projectpriority AS ENUM ('CRITICAL', 'HIGH', 'MEDIUM', 'LOW')\")\n    op.execute(\"CREATE TYPE changerequesttype AS ENUM ('SCOPE', 'SCHEDULE', 'COST', 'RESOURCE')\")\n    op.execute(\"CREATE TYPE changerequeststatusv2 AS ENUM ('DRAFT', 'PENDING', 'APPROVED', 'REJECTED', 'IMPLEMENTED', 'CANCELLED')\")\n    op.execute(\"CREATE TYPE projecthealthstatus AS ENUM ('GREEN', 'AMBER', 'RED')\")\n    op.execute(\"CREATE TYPE projectrole AS ENUM ('MANAGER', 'PLANNER', 'MEMBER', 'VIEWER')\")\n    # Add priority column to projects table\n    op.add_column('projects', ",
+        "detail": "app.alembic.versions.module3_enhancements_add_priority_and_type",
+        "documentation": {}
+    },
+    {
         "label": "run_migrations_offline",
         "kind": 2,
         "importPath": "app.alembic.env",
@@ -4774,6 +5660,186 @@
         "description": "app.api.v1.endpoints.auth",
         "peekOfCode": "router = APIRouter(prefix=\"/api/v1/auth\", tags=[\"Authentication\"])\n# ============= User Registration =============\n@router.post(\n    \"/register\",\n    response_model=UserResponse,\n    status_code=status.HTTP_201_CREATED,\n    summary=\"User Registration\",\n    description=\"Register a new user account with email verification\"\n)\nasync def register(",
         "detail": "app.api.v1.endpoints.auth",
+        "documentation": {}
+    },
+    {
+        "label": "create_project",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def create_project(\n    project_data: ProjectCreate,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Create a new project.\n    **AC 1 - Create Project Validation:**\n    - User inputs Title (Required, Max 100 chars), Description (Optional)\n    - Start Date and End Date (End Date >= Start Date if provided)",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "list_projects",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def list_projects(\n    workspace_id: UUID = Query(..., description=\"Workspace ID\"),\n    skip: int = Query(0, ge=0),\n    limit: int = Query(10, ge=1, le=100),\n    status_filter: Optional[ProjectStatus] = Query(None, description=\"Filter by status\"),\n    archived: bool = Query(False, description=\"Include archived projects\"),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "get_project",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def get_project(\n    project_id: UUID,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Get detailed information about a specific project.\n    Returns:\n    - Project metadata\n    - Member count",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "update_project",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def update_project(\n    project_id: UUID,\n    project_data: ProjectUpdate,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Update project metadata.\n    **Permission:** Only Project Manager or Workspace Admin\n    Ref: Module 3 - Feature 2.1 - AC 2",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "update_project_status",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def update_project_status(\n    project_id: UUID,\n    status_data: ProjectStatusUpdate,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Update project status with transition validation.\n    **Valid transitions:**\n    - NOT_STARTED → IN_PROGRESS, CANCELLED",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "delete_project",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def delete_project(\n    project_id: UUID,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Move project to trash (soft delete).\n    - Project becomes invisible in active lists\n    - Hard delete after 30 days (by cronjob)\n    - Only PM or Workspace Admin can delete",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "clone_project",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def clone_project(\n    project_id: UUID,\n    clone_data: ProjectClone,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Clone an existing project.\n    **Options:**\n    - copy_structure: Copy task lists and settings",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "list_project_members",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def list_project_members(\n    project_id: UUID,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    List all members of a project.\n    Shows:\n    - User ID\n    - Role (MANAGER, PLANNER, MEMBER, VIEWER)",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "add_project_member",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def add_project_member(\n    project_id: UUID,\n    member_data: ProjectMemberCreate,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Add a member to the project.\n    **Conditions:**\n    - User must already be a workspace member",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "update_project_member",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def update_project_member(\n    project_id: UUID,\n    member_id: UUID,\n    role_data: ProjectMemberUpdate,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Update a project member's role.\n    **Permission:** Only Project Manager",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "remove_project_member",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def remove_project_member(\n    project_id: UUID,\n    member_id: UUID,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Remove a member from the project.\n    **Restrictions:**\n    - Cannot remove project owner",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "create_template",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def create_template(\n    template_data: ProjectTemplateCreate,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Create a project template.\n    Templates include:\n    - Task list structure\n    - Project settings",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "list_templates",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def list_templates(\n    workspace_id: UUID = Query(..., description=\"Workspace ID\"),\n    include_global: bool = Query(True, description=\"Include global templates\"),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    List available project templates.\n    Returns:\n    - Workspace-specific templates",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "create_project_from_template",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def create_project_from_template(\n    project_data: ProjectFromTemplateCreate,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Initialize a new project from a template.\n    **Date Remapping:**\n    - System asks for new start date\n    - Automatically shifts task dates based on relative duration",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "create_change_request",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def create_change_request(\n    project_id: UUID,\n    cr_data: ChangeRequestCreate,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Create a change request (STRICT governance mode only).\n    **Types:**\n    - SCOPE: Scope change",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "list_change_requests",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def list_change_requests(\n    project_id: UUID,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    List all change requests for a project.\n    \"\"\"\n    # TODO: Implement list_change_requests\n    raise HTTPException(",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "approve_change_request",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def approve_change_request(\n    project_id: UUID,\n    cr_id: UUID,\n    approval_data: ChangeRequestApprove,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Approve or reject a change request.\n    **Permission:** Workspace Admin or Steering Committee only",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "get_project_metrics",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def get_project_metrics(\n    project_id: UUID,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Get project health and metrics.\n    **Includes:**\n    - Task completion statistics\n    - Health indicators (schedule, resource, budget)",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "update_project_health",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "def update_project_health(\n    project_id: UUID,\n    health_data: ProjectHealthUpdate,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Manually override project health status.\n    **Constraint:** Must provide reason/justification\n    Ref: Module 3 - Feature 2.10 - AC 3",
+        "detail": "app.api.v1.endpoints.projects",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.v1.endpoints.projects",
+        "description": "app.api.v1.endpoints.projects",
+        "peekOfCode": "router = APIRouter(prefix=\"/v1/projects\", tags=[\"projects\"])\n# ===== Project CRUD Operations =====\n@router.post(\n    \"\",\n    response_model=ProjectResponse,\n    status_code=status.HTTP_201_CREATED,\n    summary=\"Create new project\",\n)\ndef create_project(\n    project_data: ProjectCreate,",
+        "detail": "app.api.v1.endpoints.projects",
         "documentation": {}
     },
     {
@@ -4979,7 +6045,7 @@
         "kind": 5,
         "importPath": "app.api.v1.router",
         "description": "app.api.v1.router",
-        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(auth.router)\napi_router.include_router(workspaces.router)\napi_router.include_router(admin.router)",
+        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(auth.router)\napi_router.include_router(workspaces.router)\napi_router.include_router(projects.router)\napi_router.include_router(admin.router)",
         "detail": "app.api.v1.router",
         "documentation": {}
     },
@@ -5879,7 +6945,52 @@
         "kind": 6,
         "importPath": "app.db.enums",
         "description": "app.db.enums",
-        "peekOfCode": "class ProjectVisibility(str, Enum):\n    \"\"\"\n    Project visibility.\n    PUBLIC: Visible to all workspace members\n    PRIVATE: Visible only to selected members\n    \"\"\"\n    PUBLIC = \"public\"\n    PRIVATE = \"private\"\n# ============ Module 4 & 15: Tag & Categorization System ============\nclass TagEntityType(str, Enum):",
+        "peekOfCode": "class ProjectVisibility(str, Enum):\n    \"\"\"\n    Project visibility.\n    PUBLIC: Visible to all workspace members\n    PRIVATE: Visible only to selected members\n    \"\"\"\n    PUBLIC = \"public\"\n    PRIVATE = \"private\"\nclass ProjectRole(str, Enum):\n    \"\"\"",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectRole",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class ProjectRole(str, Enum):\n    \"\"\"\n    Project-level roles.\n    Defines permission levels for project members.\n    Ref: Module 3 - AC 2.3\n    \"\"\"\n    MANAGER = \"manager\"      # Project Manager - highest authority\n    PLANNER = \"planner\"      # Planner - schedule and planning authority\n    MEMBER = \"member\"        # Member - execution role\n    VIEWER = \"viewer\"        # Viewer - read-only access",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectPriority",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class ProjectPriority(str, Enum):\n    \"\"\"\n    Project priority levels.\n    Used for resource allocation and conflict resolution.\n    Ref: Module 3 - Feature 2.20\n    \"\"\"\n    CRITICAL = \"critical\"    # Critical - absolute priority\n    HIGH = \"high\"            # High - important project\n    MEDIUM = \"medium\"        # Medium - standard (default)\n    LOW = \"low\"              # Low - filler project",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestStatus",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class ChangeRequestStatus(str, Enum):\n    \"\"\"\n    Change request workflow status.\n    Used in strict governance mode.\n    Ref: Module 3 - Feature 2.11\n    \"\"\"\n    DRAFT = \"draft\"\n    PENDING = \"pending\"\n    APPROVED = \"approved\"\n    REJECTED = \"rejected\"",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestType",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class ChangeRequestType(str, Enum):\n    \"\"\"\n    Types of change requests.\n    Ref: Module 3 - Feature 2.11 AC 1\n    \"\"\"\n    SCOPE = \"scope\"          # Scope change\n    SCHEDULE = \"schedule\"    # Schedule change\n    COST = \"cost\"            # Cost/budget change\n    RESOURCE = \"resource\"    # Resource change\nclass ProjectHealthStatus(str, Enum):",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectHealthStatus",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class ProjectHealthStatus(str, Enum):\n    \"\"\"\n    Project health indicator (traffic light).\n    Ref: Module 3 - Feature 2.10\n    \"\"\"\n    GREEN = \"green\"          # On track\n    AMBER = \"amber\"          # At risk\n    RED = \"red\"              # Off track\n# ============ Module 4 & 15: Tag & Categorization System ============\nclass TagEntityType(str, Enum):",
         "detail": "app.db.enums",
         "documentation": {}
     },
@@ -6208,6 +7319,267 @@
         "documentation": {}
     },
     {
+        "label": "ProjectBase",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectBase(BaseModel):\n    \"\"\"Base schema for project data\"\"\"\n    name: str = Field(..., min_length=1, max_length=100, description=\"Project name (Max 100 characters)\")\n    description: Optional[str] = Field(None, description=\"Optional project description\")\n    start_date: Optional[date] = Field(None, description=\"Project start date\")\n    end_date: Optional[date] = Field(None, description=\"Project end date\")\n    @field_validator('end_date')\n    @classmethod\n    def validate_dates(cls, v, info):\n        \"\"\"Validate that end_date >= start_date if both are provided\"\"\"",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectCreate",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectCreate(ProjectBase):\n    \"\"\"\n    Schema for creating a new project.\n    Ref: Module 3 - Feature 2.1 - AC 1\n    \"\"\"\n    workspace_id: UUID = Field(..., description=\"Workspace ID where project will be created\")\n    governance_mode: Optional[ProjectGovernanceMode] = Field(\n        default=ProjectGovernanceMode.SIMPLE,\n        description=\"Governance mode (SIMPLE or STRICT)\"\n    )",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectUpdate(BaseModel):\n    \"\"\"\n    Schema for updating project information.\n    Ref: Module 3 - Feature 2.1 - AC 2\n    \"\"\"\n    name: Optional[str] = Field(None, min_length=1, max_length=100)\n    description: Optional[str] = None\n    start_date: Optional[date] = None\n    end_date: Optional[date] = None\n    priority: Optional[ProjectPriority] = None",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectStatusUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectStatusUpdate(BaseModel):\n    \"\"\"\n    Schema for updating project status.\n    Ref: Module 3 - Feature 2.2\n    \"\"\"\n    status: ProjectStatus = Field(..., description=\"New project status\")\n    cancellation_reason: Optional[str] = Field(\n        None,\n        description=\"Required when transitioning to CANCELLED status\"\n    )",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectResponse(ProjectBase):\n    \"\"\"Response schema for project\"\"\"\n    id: UUID\n    workspace_id: UUID\n    owner_id: UUID\n    status: ProjectStatus\n    governance_mode: ProjectGovernanceMode\n    visibility: ProjectVisibility\n    priority: ProjectPriority\n    is_deleted: bool",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectDetailResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectDetailResponse(ProjectResponse):\n    \"\"\"Detailed project response with relationships\"\"\"\n    member_count: Optional[int] = Field(None, description=\"Number of project members\")\n    task_count: Optional[int] = Field(None, description=\"Number of tasks\")\n    health_status: Optional[ProjectHealthStatus] = Field(None, description=\"Project health indicator\")\nclass ProjectListResponse(BaseModel):\n    \"\"\"Paginated list of projects\"\"\"\n    total: int\n    items: List[ProjectResponse]\n# ===== Project Member Schemas =====",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectListResponse(BaseModel):\n    \"\"\"Paginated list of projects\"\"\"\n    total: int\n    items: List[ProjectResponse]\n# ===== Project Member Schemas =====\nclass ProjectMemberBase(BaseModel):\n    \"\"\"Base schema for project member\"\"\"\n    role: ProjectRole = Field(default=ProjectRole.MEMBER, description=\"Project role\")\nclass ProjectMemberCreate(ProjectMemberBase):\n    \"\"\"",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMemberBase",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectMemberBase(BaseModel):\n    \"\"\"Base schema for project member\"\"\"\n    role: ProjectRole = Field(default=ProjectRole.MEMBER, description=\"Project role\")\nclass ProjectMemberCreate(ProjectMemberBase):\n    \"\"\"\n    Schema for adding a member to project.\n    Ref: Module 3 - Feature 2.3 - AC 1\n    \"\"\"\n    user_id: UUID = Field(..., description=\"User ID to add as project member\")\nclass ProjectMemberUpdate(BaseModel):",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMemberCreate",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectMemberCreate(ProjectMemberBase):\n    \"\"\"\n    Schema for adding a member to project.\n    Ref: Module 3 - Feature 2.3 - AC 1\n    \"\"\"\n    user_id: UUID = Field(..., description=\"User ID to add as project member\")\nclass ProjectMemberUpdate(BaseModel):\n    \"\"\"Schema for updating project member role\"\"\"\n    role: ProjectRole = Field(..., description=\"New role for member\")\nclass ProjectMemberResponse(ProjectMemberBase):",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMemberUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectMemberUpdate(BaseModel):\n    \"\"\"Schema for updating project member role\"\"\"\n    role: ProjectRole = Field(..., description=\"New role for member\")\nclass ProjectMemberResponse(ProjectMemberBase):\n    \"\"\"Response schema for project member\"\"\"\n    id: UUID\n    project_id: UUID\n    user_id: UUID\n    joined_at: datetime\n    created_at: datetime",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMemberResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectMemberResponse(ProjectMemberBase):\n    \"\"\"Response schema for project member\"\"\"\n    id: UUID\n    project_id: UUID\n    user_id: UUID\n    joined_at: datetime\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectTemplateBase",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectTemplateBase(BaseModel):\n    \"\"\"Base schema for project template\"\"\"\n    name: str = Field(..., min_length=1, max_length=100, description=\"Template name\")\n    description: Optional[str] = Field(None, description=\"Template description\")\nclass ProjectTemplateCreate(ProjectTemplateBase):\n    \"\"\"\n    Schema for creating project template.\n    Ref: Module 3 - Feature 2.6 - AC 1\n    \"\"\"\n    workspace_id: UUID = Field(..., description=\"Workspace ID\")",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectTemplateCreate",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectTemplateCreate(ProjectTemplateBase):\n    \"\"\"\n    Schema for creating project template.\n    Ref: Module 3 - Feature 2.6 - AC 1\n    \"\"\"\n    workspace_id: UUID = Field(..., description=\"Workspace ID\")\n    config: Dict[str, Any] = Field(\n        default_factory=dict,\n        description=\"Template configuration (task lists, settings, etc.)\"\n    )",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectTemplateUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectTemplateUpdate(BaseModel):\n    \"\"\"Schema for updating project template\"\"\"\n    name: Optional[str] = Field(None, min_length=1, max_length=100)\n    description: Optional[str] = None\n    config: Optional[Dict[str, Any]] = None\nclass ProjectTemplateResponse(ProjectTemplateBase):\n    \"\"\"Response schema for project template\"\"\"\n    id: UUID\n    workspace_id: UUID\n    is_global: bool",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectTemplateResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectTemplateResponse(ProjectTemplateBase):\n    \"\"\"Response schema for project template\"\"\"\n    id: UUID\n    workspace_id: UUID\n    is_global: bool\n    config: Dict[str, Any]\n    created_at: datetime\n    updated_at: datetime\n    created_by: Optional[UUID]\n    class Config:",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectFromTemplateCreate",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectFromTemplateCreate(BaseModel):\n    \"\"\"\n    Schema for creating project from template.\n    Ref: Module 3 - Feature 2.6 - AC 2\n    \"\"\"\n    template_id: UUID = Field(..., description=\"Template ID to use\")\n    workspace_id: UUID = Field(..., description=\"Workspace ID\")\n    name: str = Field(..., min_length=1, max_length=100, description=\"New project name\")\n    start_date: Optional[date] = Field(None, description=\"Project start date for date remapping\")\n    copy_members: bool = Field(default=False, description=\"Copy template members to project\")",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectBaselineBase",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectBaselineBase(BaseModel):\n    \"\"\"Base schema for project baseline\"\"\"\n    version: int = Field(..., description=\"Baseline version number\")\n    snapshot_ref: str = Field(..., description=\"Reference to snapshot\")\nclass ProjectBaselineCreate(ProjectBaselineBase):\n    \"\"\"\n    Schema for creating project baseline.\n    Ref: Module 3 - Feature 2.13\n    \"\"\"\n    project_id: UUID = Field(..., description=\"Project ID\")",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectBaselineCreate",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectBaselineCreate(ProjectBaselineBase):\n    \"\"\"\n    Schema for creating project baseline.\n    Ref: Module 3 - Feature 2.13\n    \"\"\"\n    project_id: UUID = Field(..., description=\"Project ID\")\n    snapshot_data: Dict[str, Any] = Field(\n        default_factory=dict,\n        description=\"Snapshot of project state\"\n    )",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectBaselineResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectBaselineResponse(ProjectBaselineBase):\n    \"\"\"Response schema for project baseline\"\"\"\n    id: UUID\n    project_id: UUID\n    is_active: bool\n    snapshot_data: Dict[str, Any]\n    created_at: datetime\n    created_by: Optional[UUID]\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestBase",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ChangeRequestBase(BaseModel):\n    \"\"\"Base schema for change request\"\"\"\n    title: str = Field(..., min_length=1, max_length=255, description=\"Change request title\")\n    description: Optional[str] = Field(None, description=\"Detailed description\")\nclass ChangeRequestCreate(ChangeRequestBase):\n    \"\"\"\n    Schema for creating change request.\n    Ref: Module 3 - Feature 2.11 - AC 1\n    \"\"\"\n    project_id: UUID = Field(..., description=\"Project ID\")",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestCreate",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ChangeRequestCreate(ChangeRequestBase):\n    \"\"\"\n    Schema for creating change request.\n    Ref: Module 3 - Feature 2.11 - AC 1\n    \"\"\"\n    project_id: UUID = Field(..., description=\"Project ID\")\n    type: ChangeRequestType = Field(..., description=\"Type of change\")\n    impact_assessment: Optional[str] = Field(None, description=\"Impact assessment\")\nclass ChangeRequestUpdate(BaseModel):\n    \"\"\"Schema for updating change request\"\"\"",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ChangeRequestUpdate(BaseModel):\n    \"\"\"Schema for updating change request\"\"\"\n    title: Optional[str] = Field(None, min_length=1, max_length=255)\n    description: Optional[str] = None\n    impact_assessment: Optional[str] = None\nclass ChangeRequestApprove(BaseModel):\n    \"\"\"\n    Schema for approving/rejecting change request.\n    Ref: Module 3 - Feature 2.11 - AC 2\n    \"\"\"",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestApprove",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ChangeRequestApprove(BaseModel):\n    \"\"\"\n    Schema for approving/rejecting change request.\n    Ref: Module 3 - Feature 2.11 - AC 2\n    \"\"\"\n    status: ChangeRequestStatus = Field(\n        ...,\n        description=\"Approval decision (APPROVED or REJECTED)\"\n    )\n    reason: Optional[str] = Field(None, description=\"Reason for decision\")",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ChangeRequestResponse(ChangeRequestBase):\n    \"\"\"Response schema for change request\"\"\"\n    id: UUID\n    project_id: UUID\n    type: ChangeRequestType\n    status: ChangeRequestStatus\n    impact_assessment: Optional[str]\n    approved_by: Optional[UUID]\n    approved_at: Optional[datetime]\n    created_at: datetime",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectArchiveCreate",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectArchiveCreate(BaseModel):\n    \"\"\"\n    Schema for archiving project.\n    Ref: Module 3 - Feature 2.5 & 2.12\n    \"\"\"\n    project_id: UUID = Field(..., description=\"Project ID to archive\")\n    reason: Optional[str] = Field(None, description=\"Reason for archival\")\n    archive_location: Optional[str] = Field(None, description=\"Storage location\")\nclass ProjectArchiveResponse(BaseModel):\n    \"\"\"Response schema for project archive\"\"\"",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectArchiveResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectArchiveResponse(BaseModel):\n    \"\"\"Response schema for project archive\"\"\"\n    id: UUID\n    project_id: UUID\n    reason: Optional[str]\n    archive_location: Optional[str]\n    created_at: datetime\n    created_by: Optional[UUID]\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectClone",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectClone(BaseModel):\n    \"\"\"\n    Schema for cloning/duplicating project.\n    Ref: Module 3 - Feature 2.1 - AC 3\n    \"\"\"\n    name: str = Field(..., min_length=1, max_length=100, description=\"Name for cloned project\")\n    copy_structure: bool = Field(default=True, description=\"Copy task lists and settings\")\n    copy_tasks: bool = Field(default=False, description=\"Copy tasks (usually not selected)\")\n    copy_members: bool = Field(default=False, description=\"Copy project members\")\n# ===== Project Health & Metrics Schemas =====",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectHealthUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectHealthUpdate(BaseModel):\n    \"\"\"\n    Schema for updating project health (manual override).\n    Ref: Module 3 - Feature 2.10 - AC 3\n    \"\"\"\n    health_status: ProjectHealthStatus = Field(..., description=\"Health status\")\n    reason: str = Field(..., min_length=1, description=\"Reason for manual override (required)\")\nclass ProjectMetricsResponse(BaseModel):\n    \"\"\"Response schema for project metrics\"\"\"\n    project_id: UUID",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMetricsResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project",
+        "description": "app.schemas.project",
+        "peekOfCode": "class ProjectMetricsResponse(BaseModel):\n    \"\"\"Response schema for project metrics\"\"\"\n    project_id: UUID\n    total_tasks: int\n    completed_tasks: int\n    overdue_tasks: int\n    completion_percentage: float\n    health_status: ProjectHealthStatus\n    schedule_health: Optional[str]\n    resource_health: Optional[str]",
+        "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
         "label": "UserBase",
         "kind": 6,
         "importPath": "app.schemas.user",
@@ -6466,6 +7838,42 @@
         "description": "app.services.mfa",
         "peekOfCode": "class MFAService:\n    \"\"\"\n    Service for Multi-Factor Authentication (MFA) operations.\n    Implements TOTP (Time-based One-Time Password) and backup codes.\n    \"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n        self.BACKUP_CODES_COUNT = 10\n        self.BACKUP_CODE_LENGTH = 8\n    # ============= MFA Setup =============",
         "detail": "app.services.mfa",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectService",
+        "kind": 6,
+        "importPath": "app.services.project",
+        "description": "app.services.project",
+        "peekOfCode": "class ProjectService:\n    \"\"\"Service for project CRUD operations\"\"\"\n    @staticmethod\n    def create_project(\n        db: Session,\n        project_data: ProjectCreate,\n        owner_id: uuid.UUID,\n    ) -> Project:\n        \"\"\"\n        Create a new project.",
+        "detail": "app.services.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMemberService",
+        "kind": 6,
+        "importPath": "app.services.project",
+        "description": "app.services.project",
+        "peekOfCode": "class ProjectMemberService:\n    \"\"\"Service for project member management\"\"\"\n    @staticmethod\n    def add_member(\n        db: Session,\n        project_id: uuid.UUID,\n        member_data: ProjectMemberCreate,\n        current_user_id: uuid.UUID,\n    ) -> ProjectMember:\n        \"\"\"",
+        "detail": "app.services.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectTemplateService",
+        "kind": 6,
+        "importPath": "app.services.project",
+        "description": "app.services.project",
+        "peekOfCode": "class ProjectTemplateService:\n    \"\"\"Service for project template management\"\"\"\n    @staticmethod\n    def create_template(\n        db: Session,\n        template_data: ProjectTemplateCreate,\n        creator_id: uuid.UUID,\n    ) -> ProjectTemplate:\n        \"\"\"\n        Create a project template.",
+        "detail": "app.services.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectChangeRequestService",
+        "kind": 6,
+        "importPath": "app.services.project",
+        "description": "app.services.project",
+        "peekOfCode": "class ProjectChangeRequestService:\n    \"\"\"Service for change request management in STRICT governance mode\"\"\"\n    @staticmethod\n    def create_change_request(\n        db: Session,\n        cr_data: ChangeRequestCreate,\n        creator_id: uuid.UUID,\n    ) -> ProjectChangeRequest:\n        \"\"\"\n        Create a change request.",
+        "detail": "app.services.project",
         "documentation": {}
     },
     {
