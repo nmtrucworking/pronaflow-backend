@@ -18,6 +18,7 @@ from app.db.enums import ProjectStatus, ProjectGovernanceMode, ProjectVisibility
 if TYPE_CHECKING:
     from app.db.models.users import User
     from app.db.models.workspaces import Workspace
+    from app.db.models.collaboration import Note
 
 
 # ======= Association Tables =======
@@ -129,6 +130,7 @@ class Project(Base, TimestampMixin, SoftDeleteMixin):
     workspace: Mapped["Workspace"] = relationship(foreign_keys=[workspace_id])
     owner: Mapped["User"] = relationship(foreign_keys=[owner_id])
     members: Mapped[List["User"]] = relationship(secondary=project_members_association)
+    notes: Mapped[List["Note"]] = relationship(back_populates="project", cascade="all, delete-orphan")
 
     # Indexes
     __table_args__ = (

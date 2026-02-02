@@ -7,13 +7,13 @@ import uuid
 from typing import Optional, List, TYPE_CHECKING
 from datetime import datetime
 
-from sqlalchemy import String, DateTime, ForeignKey, Index, Table, Column, Date, Boolean, Text, Integer, Float, Enum as SQLEnum
+from sqlalchemy import String, DateTime, ForeignKey, Index, Table, Column, Date, Boolean, Text, Integer, Float, JSON, Enum as SQLEnum
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db.declarative_base import Base
 from app.db.mixins import TimestampMixin, AuditMixin
-from app.db.enums import TaskPriority, TaskStatus
+from app.db.enums import TaskPriority, TaskStatus, AttachmentStatusEnum, ApprovalStatusEnum
 
 if TYPE_CHECKING:
     from app.db.models.users import User
@@ -274,6 +274,7 @@ class Task(Base, AuditMixin):
     dependent_tasks: Mapped[List["TaskDependency"]] = relationship(back_populates="depends_on_task", foreign_keys="TaskDependency.depends_on_task_id")
     checklist_items: Mapped[List["ChecklistItem"]] = relationship(back_populates="task", cascade="all, delete-orphan")
     files: Mapped[List["File"]] = relationship(back_populates="task", cascade="all, delete-orphan")
+    approvals: Mapped[List["ApprovalRecord"]] = relationship(back_populates="task", cascade="all, delete-orphan")
     time_entries: Mapped[List["TimeEntry"]] = relationship(back_populates="task", cascade="all, delete-orphan")
 
     # Indexes
@@ -444,6 +445,13 @@ class Comment(Base, TimestampMixin):
         comment="Comment content (rich-text HTML/JSON)"
     )
 
+    # Smart mentions (Feature 2.1 AC 2)
+    mentioned_user_ids: Mapped[Optional[dict]] = mapped_column(
+        JSON,
+        nullable=True,
+        comment="List of mentioned user IDs"
+    )
+
     # Edit Tracking
     is_edited: Mapped[bool] = mapped_column(
         Boolean,
@@ -456,6 +464,41 @@ class Comment(Base, TimestampMixin):
         DateTime(timezone=True),
         nullable=True,
         comment="Timestamp of last edit"
+    )
+
+    original_content: Mapped[Optional[str]] = mapped_column(
+        Text,
+        nullable=True,
+        comment="Original content before edits"
+    )
+
+    edit_count: Mapped[int] = mapped_column(
+        Integer,
+        default=0,
+        nullable=False,
+        comment="Number of edits"
+    )
+
+    # Thread metadata
+    reply_count: Mapped[int] = mapped_column(
+        Integer,
+        default=0,
+        nullable=False,
+        comment="Number of replies"
+    )
+
+    is_pinned: Mapped[bool] = mapped_column(
+        Boolean,
+        default=False,
+        nullable=False,
+        comment="Whether comment is pinned"
+    )
+
+    # Reactions (emoji support)
+    reactions: Mapped[Optional[dict]] = mapped_column(
+        JSON,
+        nullable=True,
+        comment="Emoji reactions with user IDs"
     )
 
     # Relationships
@@ -550,10 +593,52 @@ class File(Base, TimestampMixin):
         comment="Path to file in storage (S3, local, etc.)"
     )
 
+    storage_provider: Mapped[str] = mapped_column(
+        String(50),
+        default="local",
+        nullable=False,
+        comment="Storage provider (local, s3, azure)"
+    )
+
+    # Status & preview (Module 6 - DAM)
+    status: Mapped[AttachmentStatusEnum] = mapped_column(
+        SQLEnum(AttachmentStatusEnum),
+        default=AttachmentStatusEnum.PENDING_SCAN,
+        nullable=False,
+        comment="Virus scan and preview status"
+    )
+
+    scan_result: Mapped[Optional[str]] = mapped_column(
+        String(50),
+        nullable=True,
+        comment="Scan result (clean, quarantined, malicious)"
+    )
+
+    preview_url: Mapped[Optional[str]] = mapped_column(
+        String(500),
+        nullable=True,
+        comment="Preview URL if generated"
+    )
+
+    preview_generated: Mapped[bool] = mapped_column(
+        Boolean,
+        default=False,
+        nullable=False,
+        comment="Whether preview was generated"
+    )
+
+    approval_status: Mapped[ApprovalStatusEnum] = mapped_column(
+        SQLEnum(ApprovalStatusEnum),
+        default=ApprovalStatusEnum.PENDING,
+        nullable=False,
+        comment="Approval status for this file"
+    )
+
     # Relationships
     task: Mapped["Task"] = relationship(back_populates="files", foreign_keys=[task_id])
     uploader: Mapped["User"] = relationship(foreign_keys=[uploaded_by])
     versions: Mapped[List["FileVersion"]] = relationship(back_populates="file", cascade="all, delete-orphan")
+    approvals: Mapped[List["ApprovalRecord"]] = relationship(back_populates="file", cascade="all, delete-orphan")
 
     # Indexes
     __table_args__ = (
@@ -603,6 +688,12 @@ class FileVersion(Base, TimestampMixin):
         Integer,
         nullable=False,
         comment="File size of this version"
+    )
+
+    checksum: Mapped[Optional[str]] = mapped_column(
+        String(64),
+        nullable=True,
+        comment="SHA256 checksum for this version"
     )
 
     # Relationships

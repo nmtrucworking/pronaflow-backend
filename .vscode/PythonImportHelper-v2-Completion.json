@@ -32,6 +32,14 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -58,6 +66,78 @@
     },
     {
         "label": "pool",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Index",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -721,6 +801,14 @@
         "documentation": {}
     },
     {
+        "label": "JSON",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "Enum",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -994,6 +1082,22 @@
     },
     {
         "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -1370,6 +1474,14 @@
         "documentation": {}
     },
     {
+        "label": "Base",
+        "importPath": "app.db.declarative_base",
+        "description": "app.db.declarative_base",
+        "isExtraImport": true,
+        "detail": "app.db.declarative_base",
+        "documentation": {}
+    },
+    {
         "label": "User",
         "importPath": "app.db.base",
         "description": "app.db.base",
@@ -1490,6 +1602,14 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.db.base",
+        "description": "app.db.base",
+        "isExtraImport": true,
+        "detail": "app.db.base",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "app.db.base",
         "description": "app.db.base",
@@ -1515,6 +1635,22 @@
     },
     {
         "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -1651,6 +1787,14 @@
     },
     {
         "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -2074,6 +2218,30 @@
         "documentation": {}
     },
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Any",
         "importPath": "typing",
         "description": "typing",
@@ -2155,6 +2323,30 @@
     },
     {
         "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -2523,7 +2715,23 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -2667,6 +2875,14 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "date",
         "importPath": "datetime",
         "description": "datetime",
@@ -2700,6 +2916,22 @@
     },
     {
         "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -2892,6 +3124,62 @@
     },
     {
         "label": "Header",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -3147,6 +3435,22 @@
         "documentation": {}
     },
     {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "HTTPException",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -3268,6 +3572,38 @@
     },
     {
         "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -3691,6 +4027,14 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "get_db",
         "importPath": "app.db.session",
         "description": "app.db.session",
@@ -3780,6 +4124,14 @@
     },
     {
         "label": "get_current_active_user",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
         "importPath": "app.core.security",
         "description": "app.core.security",
         "isExtraImport": true,
@@ -4571,6 +4923,510 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "# Module 1: Identity & Access Management IAM",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Comment",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "FileVersion",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Note",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "NoteVersion",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "SmartBacklink",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLink",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Mention",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserPresence",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalRecord",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "SearchIndex",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "CollaborationNotification",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "CommentCreate",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CommentUpdate",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CommentResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CommentThreadResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "AttachmentCreate",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "AttachmentResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "AttachmentVersionResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteCreate",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteUpdate",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteTreeResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteConvertToTaskRequest",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteVersionResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteVersionDiffRequest",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteVersionRestoreRequest",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalCreate",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalApprove",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalRequestChanges",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalReject",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalRecordResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLinkCreate",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLinkResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLinkAccessRequest",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "SmartBacklinkResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "BacklinkSuggestionResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "MentionResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "MentionSuggestion",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "UserPresenceResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "TaskPresenceResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CollaborationSearchRequest",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CollaborationSearchResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CollaborationNotificationResponse",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "MarkNotificationAsReadRequest",
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "isExtraImport": true,
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CommentService",
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "isExtraImport": true,
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "AttachmentService",
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "isExtraImport": true,
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteService",
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "isExtraImport": true,
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteVersionService",
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "isExtraImport": true,
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalService",
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "isExtraImport": true,
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLinkService",
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "isExtraImport": true,
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "SearchService",
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "isExtraImport": true,
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "SmartBacklinkService",
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "isExtraImport": true,
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "UserPresenceService",
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "isExtraImport": true,
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "MentionService",
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "isExtraImport": true,
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
         "label": "ProjectStatus",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
@@ -4588,6 +5444,30 @@
     },
     {
         "label": "UserStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NoteAccessEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLinkStatusEnum",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -4667,6 +5547,22 @@
         "documentation": {}
     },
     {
+        "label": "AttachmentStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "UserStatus",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
@@ -4692,6 +5588,38 @@
     },
     {
         "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NoteAccessEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "AttachmentStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLinkStatusEnum",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -4836,6 +5764,38 @@
     },
     {
         "label": "UserStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NoteAccessEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "AttachmentStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLinkStatusEnum",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -5987,6 +6947,14 @@
         "documentation": {}
     },
     {
+        "label": "collaboration",
+        "importPath": "app.api.v1.endpoints",
+        "description": "app.api.v1.endpoints",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints",
+        "documentation": {}
+    },
+    {
         "label": "BaseSettings",
         "importPath": "pydantic_settings",
         "description": "pydantic_settings",
@@ -6073,38 +7041,6 @@
         "documentation": {}
     },
     {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
         "label": "UUID",
         "importPath": "sqlalchemy.dialects.postgresql",
         "description": "sqlalchemy.dialects.postgresql",
@@ -6153,6 +7089,46 @@
         "documentation": {}
     },
     {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
         "label": "UUID",
         "importPath": "sqlalchemy.dialects.postgresql",
         "description": "sqlalchemy.dialects.postgresql",
@@ -6206,6 +7182,14 @@
         "description": "sqlalchemy.dialects.postgresql",
         "isExtraImport": true,
         "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "TimestampMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
         "documentation": {}
     },
     {
@@ -6601,22 +7585,6 @@
         "documentation": {}
     },
     {
-        "label": "# Module 1: Identity & Access Management IAM",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
         "label": "Enum",
         "importPath": "enum",
         "description": "enum",
@@ -6658,6 +7626,38 @@
     },
     {
         "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
         "importPath": "pydantic",
         "description": "pydantic",
         "isExtraImport": true,
@@ -6790,6 +7790,15 @@
         "description": "pydantic",
         "isExtraImport": true,
         "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
         "documentation": {}
     },
     {
@@ -7315,6 +8324,78 @@
     {
         "label": "upgrade",
         "kind": 2,
+        "importPath": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "description": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "peekOfCode": "def upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('notes',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('project_id', sa.UUID(), nullable=True),\n    sa.Column('user_id', sa.UUID(), nullable=False),\n    sa.Column('parent_note_id', sa.UUID(), nullable=True),\n    sa.Column('title', sa.String(length=255), nullable=False),\n    sa.Column('content', sa.Text(), nullable=False),\n    sa.Column('access_level', sa.Enum('PRIVATE', 'PROJECT', 'WORKSPACE', 'PUBLIC', name='noteaccessenum'), nullable=False),",
+        "detail": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "description": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "peekOfCode": "def downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_column('files', 'approval_status')\n    op.drop_column('files', 'preview_generated')\n    op.drop_column('files', 'preview_url')\n    op.drop_column('files', 'scan_result')\n    op.drop_column('files', 'status')\n    op.drop_column('files', 'storage_provider')\n    op.drop_column('file_versions', 'checksum')\n    op.drop_column('comments', 'reactions')",
+        "detail": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "attachment_status_enum",
+        "kind": 5,
+        "importPath": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "description": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "peekOfCode": "attachment_status_enum = sa.Enum(\n    'PENDING_SCAN', 'CLEAN', 'QUARANTINED', 'PROCESSING', 'READY',\n    name='attachmentstatusenum'\n)\napproval_status_enum = sa.Enum(\n    'PENDING', 'APPROVED', 'CHANGES_REQUESTED', 'REJECTED',\n    name='approvalstatusenum'\n)\n# revision identifiers, used by Alembic.\nrevision = 'cd6041d7e8ce'",
+        "detail": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "approval_status_enum",
+        "kind": 5,
+        "importPath": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "description": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "peekOfCode": "approval_status_enum = sa.Enum(\n    'PENDING', 'APPROVED', 'CHANGES_REQUESTED', 'REJECTED',\n    name='approvalstatusenum'\n)\n# revision identifiers, used by Alembic.\nrevision = 'cd6041d7e8ce'\ndown_revision = '53b8339a4b35'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:",
+        "detail": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "description": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "peekOfCode": "revision = 'cd6041d7e8ce'\ndown_revision = '53b8339a4b35'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('notes',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('project_id', sa.UUID(), nullable=True),\n    sa.Column('user_id', sa.UUID(), nullable=False),",
+        "detail": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "down_revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "description": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "peekOfCode": "down_revision = '53b8339a4b35'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('notes',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('project_id', sa.UUID(), nullable=True),\n    sa.Column('user_id', sa.UUID(), nullable=False),\n    sa.Column('parent_note_id', sa.UUID(), nullable=True),",
+        "detail": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "branch_labels",
+        "kind": 5,
+        "importPath": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "description": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "peekOfCode": "branch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('notes',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('project_id', sa.UUID(), nullable=True),\n    sa.Column('user_id', sa.UUID(), nullable=False),\n    sa.Column('parent_note_id', sa.UUID(), nullable=True),\n    sa.Column('title', sa.String(length=255), nullable=False),",
+        "detail": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "depends_on",
+        "kind": 5,
+        "importPath": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "description": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "peekOfCode": "depends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('notes',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('project_id', sa.UUID(), nullable=True),\n    sa.Column('user_id', sa.UUID(), nullable=False),\n    sa.Column('parent_note_id', sa.UUID(), nullable=True),\n    sa.Column('title', sa.String(length=255), nullable=False),\n    sa.Column('content', sa.Text(), nullable=False),",
+        "detail": "app.alembic.versions.cd6041d7e8ce_add_module6_unified_collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
         "importPath": "app.alembic.versions.module3_enhancements_add_priority_and_type",
         "description": "app.alembic.versions.module3_enhancements_add_priority_and_type",
         "peekOfCode": "def upgrade() -> None:\n    # Create new enum types\n    op.execute(\"CREATE TYPE projectpriority AS ENUM ('CRITICAL', 'HIGH', 'MEDIUM', 'LOW')\")\n    op.execute(\"CREATE TYPE changerequesttype AS ENUM ('SCOPE', 'SCHEDULE', 'COST', 'RESOURCE')\")\n    op.execute(\"CREATE TYPE changerequeststatusv2 AS ENUM ('DRAFT', 'PENDING', 'APPROVED', 'REJECTED', 'IMPLEMENTED', 'CANCELLED')\")\n    op.execute(\"CREATE TYPE projecthealthstatus AS ENUM ('GREEN', 'AMBER', 'RED')\")\n    op.execute(\"CREATE TYPE projectrole AS ENUM ('MANAGER', 'PLANNER', 'MEMBER', 'VIEWER')\")\n    # Add priority column to projects table\n    op.add_column('projects', \n        sa.Column('priority', sa.Enum('CRITICAL', 'HIGH', 'MEDIUM', 'LOW', name='projectpriority'), ",
@@ -7472,6 +8553,294 @@
         "description": "app.api.v1.endpoints.auth",
         "peekOfCode": "router = APIRouter(prefix=\"/api/v1/auth\", tags=[\"Authentication\"])\n# ============= User Registration =============\n@router.post(\n    \"/register\",\n    response_model=UserResponse,\n    status_code=status.HTTP_201_CREATED,\n    summary=\"User Registration\",\n    description=\"Register a new user account with email verification\"\n)\nasync def register(",
         "detail": "app.api.v1.endpoints.auth",
+        "documentation": {}
+    },
+    {
+        "label": "create_comment",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def create_comment(\n    request: CommentCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Create a new comment\n    Feature 2.1 AC 1-3: Rich text, mentions, threading\n    \"\"\"\n    comment = CommentService.create_comment(",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "get_comment",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def get_comment(\n    comment_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get comment details\"\"\"\n    from app.db.models import Comment\n    comment = db.query(Comment).filter(Comment.id == comment_id).first()\n    if not comment:\n        raise HTTPException(status_code=404, detail=\"Comment not found\")",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "update_comment",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def update_comment(\n    comment_id: str,\n    request: CommentUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update comment (edit tracking)\"\"\"\n    comment = CommentService.update_comment(\n        db=db,\n        comment_id=comment_id,",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "delete_comment",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def delete_comment(\n    comment_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Delete comment (soft delete with audit trail)\"\"\"\n    CommentService.delete_comment(db=db, comment_id=comment_id, user_id=current_user.id)\n    return None\n@router.get(\"/tasks/{task_id}/comments\", response_model=List[CommentThreadResponse])\ndef get_task_comments(",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "get_task_comments",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def get_task_comments(\n    task_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get all comments for a task\"\"\"\n    from app.db.models import Comment\n    comments = CommentService.get_comments_for_task(db=db, task_id=task_id)\n    return comments\n@router.post(\"/comments/{comment_id}/reactions/{emoji}\", status_code=200)",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "add_reaction",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def add_reaction(\n    comment_id: str,\n    emoji: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Add emoji reaction to comment\"\"\"\n    comment = CommentService.add_reaction(\n        db=db,\n        comment_id=comment_id,",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "upload_attachment",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def upload_attachment(\n    task_id: str = Query(...),\n    file: UploadFile = File(...),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Upload file attachment\n    Feature 2.2 AC 1: Version control (auto-versioning)\n    AC 2: Virus scanning and preview generation (async)",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "get_attachment",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def get_attachment(\n    attachment_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get attachment details\"\"\"\n    from app.db.models import File\n    attachment = db.query(File).filter(File.id == attachment_id).first()\n    if not attachment:\n        raise HTTPException(status_code=404, detail=\"Attachment not found\")",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "get_attachment_versions",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def get_attachment_versions(\n    task_id: str,\n    file_name: str = Query(...),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get all versions of a file\"\"\"\n    versions = AttachmentService.get_attachment_versions(\n        db=db,\n        task_id=task_id,",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "restore_attachment_version",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def restore_attachment_version(\n    attachment_id: str,\n    request: NoteVersionRestoreRequest,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Restore to previous attachment version\"\"\"\n    attachment = AttachmentService.restore_attachment_version(\n        db=db,\n        file_id=attachment_id,",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "create_note",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def create_note(\n    request: NoteCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Create a note\n    Feature 2.6: Project Notes (with project_id)\n    Feature 2.7: Personal Notes (without project_id)\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "get_note",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def get_note(\n    note_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get note with nested children and comments\"\"\"\n    from app.db.models import Note\n    note = db.query(Note).filter(Note.id == note_id).first()\n    if not note:\n        raise HTTPException(status_code=404, detail=\"Note not found\")",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "update_note",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def update_note(\n    note_id: str,\n    request: NoteUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update note (creates new version)\"\"\"\n    note = NoteService.update_note(\n        db=db,\n        note_id=note_id,",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "get_project_notes",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def get_project_notes(\n    project_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get all notes in a project\"\"\"\n    from app.db.models import Note\n    notes = db.query(Note).filter(\n        Note.project_id == project_id,\n        Note.parent_note_id.is_(None),  # Only top-level",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "get_personal_notes",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def get_personal_notes(\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Feature 2.7 AC 1: Get user's personal notes\n    \"\"\"\n    from app.db.models import Note\n    from app.db.enums import NoteAccessEnum\n    notes = db.query(Note).filter(",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "convert_note_to_task",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def convert_note_to_task(\n    note_id: str,\n    request: NoteConvertToTaskRequest,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Feature 2.7 AC 2: Convert personal note to task\n    \"\"\"\n    task = NoteService.convert_to_task(",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "get_note_versions",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def get_note_versions(\n    note_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get all versions of a note\"\"\"\n    versions = NoteVersionService.get_versions(db=db, note_id=note_id)\n    return versions\n@router.post(\"/notes/{note_id}/restore\", response_model=NoteResponse)\ndef restore_note_version(",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "restore_note_version",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def restore_note_version(\n    note_id: str,\n    request: NoteVersionRestoreRequest,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Restore to previous note version\"\"\"\n    note = NoteVersionService.restore_version(\n        db=db,\n        note_id=note_id,",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "create_approval_request",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def create_approval_request(\n    request: ApprovalCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Create approval request\n    Feature 2.4 AC 1: Decision State Machine (start in PENDING)\n    AC 2: Digital Signature Audit\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "approve",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def approve(\n    approval_id: str,\n    request: ApprovalApprove,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Approve (transition to APPROVED)\"\"\"\n    approval = ApprovalService.approve(\n        db=db,\n        approval_id=approval_id,",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "request_changes",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def request_changes(\n    approval_id: str,\n    request: ApprovalRequestChanges,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Request changes (transition to CHANGES_REQUESTED)\"\"\"\n    approval = ApprovalService.request_changes(\n        db=db,\n        approval_id=approval_id,",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "get_pending_approvals",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def get_pending_approvals(\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get pending approvals for current user\"\"\"\n    from app.db.models import ApprovalRecord\n    from app.db.enums import ApprovalStatusEnum\n    approvals = db.query(ApprovalRecord).filter(\n        ApprovalRecord.approver_id == current_user.id,\n        ApprovalRecord.status == ApprovalStatusEnum.PENDING,",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "create_public_link",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def create_public_link(\n    request: PublicLinkCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Create public link for note\n    Feature 2.9 AC 1-3: Generate link, password protection, live updates\n    \"\"\"\n    link = PublicLinkService.create_public_link(",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "access_public_link",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def access_public_link(\n    slug: str,\n    password: Optional[str] = Query(None),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Access public note (no authentication required)\n    \"\"\"\n    link = PublicLinkService.verify_access(db=db, slug=slug, password=password)\n    if not link:",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "get_backlinks",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def get_backlinks(\n    note_id: str,\n    include_unlinked: bool = Query(False),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Feature 2.11 AC 1: Get references to this note\n    \"\"\"\n    backlinks = SmartBacklinkService.get_backlinks(",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "search_collaboration",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def search_collaboration(\n    request: CollaborationSearchRequest,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Feature 2.5: Collaborative Search\n    AC 1: Full-text search across multiple entities\n    AC 2: Contextual results with snippets and deep linking\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "update_presence",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def update_presence(\n    task_id: Optional[str] = Query(None),\n    note_id: Optional[str] = Query(None),\n    status: str = Query(\"viewing\"),\n    is_typing: bool = Query(False),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Feature 2.3: Update user presence",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "get_task_presence",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def get_task_presence(\n    task_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get active users on task\"\"\"\n    users = UserPresenceService.get_active_users_on_task(db=db, task_id=task_id)\n    typing_users = [u.user_id for u in users if u.is_typing]\n    return {\n        \"task_id\": task_id,",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "get_mention_suggestions",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def get_mention_suggestions(\n    project_id: str = Query(...),\n    task_id: Optional[str] = Query(None),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Feature 2.1 AC 2: Smart mention suggestions\n    Priority: Assignee > Reporter > Recent collaborators\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "get_notifications",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def get_notifications(\n    is_read: Optional[bool] = Query(None),\n    limit: int = Query(20, ge=1, le=100),\n    offset: int = Query(0, ge=0),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get collaboration notifications for user\"\"\"\n    from app.db.models import CollaborationNotification\n    query = db.query(CollaborationNotification).filter(",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "mark_notification_as_read",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "def mark_notification_as_read(\n    notification_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Mark notification as read\"\"\"\n    from app.db.models import CollaborationNotification\n    notification = db.query(CollaborationNotification).filter(\n        CollaborationNotification.id == notification_id\n    ).first()",
+        "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.v1.endpoints.collaboration",
+        "description": "app.api.v1.endpoints.collaboration",
+        "peekOfCode": "router = APIRouter(prefix=\"/api/v1/collaboration\", tags=[\"collaboration\"])\n# ============ Comment Endpoints ============\n@router.post(\"/comments\", response_model=CommentResponse, status_code=201)\ndef create_comment(\n    request: CommentCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Create a new comment",
+        "detail": "app.api.v1.endpoints.collaboration",
         "documentation": {}
     },
     {
@@ -8253,7 +9622,7 @@
         "kind": 5,
         "importPath": "app.api.v1.router",
         "description": "app.api.v1.router",
-        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(auth.router)\napi_router.include_router(workspaces.router)\napi_router.include_router(projects.router)\napi_router.include_router(tasks.router)\napi_router.include_router(scheduling.router)\napi_router.include_router(admin.router)",
+        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(auth.router)\napi_router.include_router(workspaces.router)\napi_router.include_router(projects.router)\napi_router.include_router(tasks.router)\napi_router.include_router(scheduling.router)\napi_router.include_router(collaboration.router)\napi_router.include_router(admin.router)",
         "detail": "app.api.v1.router",
         "documentation": {}
     },
@@ -8390,6 +9759,87 @@
         "description": "app.core.security",
         "peekOfCode": "pwd_context = CryptContext(\n    schemes=[\"bcrypt\"],\n    deprecated=\"auto\",\n    bcrypt__rounds=12  # Strong hashing\n)\n# ============= Password & Validation Functions =============\ndef hash_password(password: str) -> str:\n    \"\"\"\n    Hash a password using bcrypt.\n    Args:",
         "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "Note",
+        "kind": 6,
+        "importPath": "app.db.models.collaboration",
+        "description": "app.db.models.collaboration",
+        "peekOfCode": "class Note(Base, TimestampMixin):\n    \"\"\"\n    Project and personal notes with hierarchy\n    Feature 2.6: Project Notes (Wiki)\n    Feature 2.7: Personal Notes\n    - Rich text content\n    - Nested hierarchy (parent-child)\n    - Access control (public, private, project)\n    \"\"\"\n    __tablename__ = \"notes\"",
+        "detail": "app.db.models.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteVersion",
+        "kind": 6,
+        "importPath": "app.db.models.collaboration",
+        "description": "app.db.models.collaboration",
+        "peekOfCode": "class NoteVersion(Base, TimestampMixin):\n    \"\"\"\n    Document versioning system\n    Feature 2.10: Document Versioning\n    - Auto-snapshots on save\n    - Diff tracking (added/removed content)\n    - Restore capability\n    \"\"\"\n    __tablename__ = \"note_versions\"\n    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)",
+        "detail": "app.db.models.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "SmartBacklink",
+        "kind": 6,
+        "importPath": "app.db.models.collaboration",
+        "description": "app.db.models.collaboration",
+        "peekOfCode": "class SmartBacklink(Base, TimestampMixin):\n    \"\"\"\n    Smart backlinks system\n    Feature 2.11: Smart Backlinks\n    - Track references to this note from other notes/tasks\n    - Detect unlinked mentions for suggestion\n    \"\"\"\n    __tablename__ = \"smart_backlinks\"\n    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    note_id: Mapped[uuid.UUID] = mapped_column(",
+        "detail": "app.db.models.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLink",
+        "kind": 6,
+        "importPath": "app.db.models.collaboration",
+        "description": "app.db.models.collaboration",
+        "peekOfCode": "class PublicLink(Base, TimestampMixin):\n    \"\"\"\n    Public publishing for notes\n    Feature 2.9: Public Publishing\n    - Generate public URL for read-only access\n    - Password protection (optional)\n    - Expiration dates\n    - Live updates to published content\n    \"\"\"\n    __tablename__ = \"public_links\"",
+        "detail": "app.db.models.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "Mention",
+        "kind": 6,
+        "importPath": "app.db.models.collaboration",
+        "description": "app.db.models.collaboration",
+        "peekOfCode": "class Mention(Base, TimestampMixin):\n    \"\"\"\n    Track @mentions in comments and notes\n    Feature 2.1 AC 2: Smart Mentions\n    - Trigger notifications\n    - Track mention frequency\n    \"\"\"\n    __tablename__ = \"mentions\"\n    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    mentioned_user_id: Mapped[uuid.UUID] = mapped_column(",
+        "detail": "app.db.models.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "UserPresence",
+        "kind": 6,
+        "importPath": "app.db.models.collaboration",
+        "description": "app.db.models.collaboration",
+        "peekOfCode": "class UserPresence(Base, TimestampMixin):\n    \"\"\"\n    Real-time presence tracking\n    Feature 2.3: Real-time Presence\n    - Track who is viewing/editing a task or note\n    - Show typing status\n    \"\"\"\n    __tablename__ = \"user_presence\"\n    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    user_id: Mapped[uuid.UUID] = mapped_column(",
+        "detail": "app.db.models.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalRecord",
+        "kind": 6,
+        "importPath": "app.db.models.collaboration",
+        "description": "app.db.models.collaboration",
+        "peekOfCode": "class ApprovalRecord(Base, TimestampMixin):\n    \"\"\"\n    Formal approval workflow\n    Feature 2.4: Formal Approval Workflow\n    - Decision state machine (Pending → Approved/Changes Requested)\n    - Digital signature audit trail\n    - File/Task approval with locking\n    \"\"\"\n    __tablename__ = \"approval_records\"\n    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)",
+        "detail": "app.db.models.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "SearchIndex",
+        "kind": 6,
+        "importPath": "app.db.models.collaboration",
+        "description": "app.db.models.collaboration",
+        "peekOfCode": "class SearchIndex(Base, TimestampMixin):\n    \"\"\"\n    Search index for collaboration content\n    Feature 2.5: Collaborative Search\n    - Full-text search across comments, notes, files\n    - Contextual result highlighting\n    \"\"\"\n    __tablename__ = \"search_indexes\"\n    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    # Content type",
+        "detail": "app.db.models.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CollaborationNotification",
+        "kind": 6,
+        "importPath": "app.db.models.collaboration",
+        "description": "app.db.models.collaboration",
+        "peekOfCode": "class CollaborationNotification(Base, TimestampMixin):\n    \"\"\"\n    Track collaboration notifications\n    Integration point with Module 7 (Event-Driven Notification System)\n    - Mentions\n    - Approvals\n    - Comments on tasks\n    - Note sharing\n    \"\"\"\n    __tablename__ = \"collaboration_notifications\"",
+        "detail": "app.db.models.collaboration",
         "documentation": {}
     },
     {
@@ -9459,7 +10909,43 @@
         "kind": 6,
         "importPath": "app.db.enums",
         "description": "app.db.enums",
-        "peekOfCode": "class ResourceLevelingStrategy(str, Enum):\n    \"\"\"\n    Resource leveling strategies.\n    Ref: Module 5 - Feature 2.17 - AC 1\n    \"\"\"\n    WITHIN_SLACK = \"within_slack\"    # Only move tasks with Float\n    EXTEND_PROJECT = \"extend_project\"  # Can extend project end date",
+        "peekOfCode": "class ResourceLevelingStrategy(str, Enum):\n    \"\"\"\n    Resource leveling strategies.\n    Ref: Module 5 - Feature 2.17 - AC 1\n    \"\"\"\n    WITHIN_SLACK = \"within_slack\"    # Only move tasks with Float\n    EXTEND_PROJECT = \"extend_project\"  # Can extend project end date\n# ============ Module 6: Unified Collaboration Hub ============\nclass ApprovalStatusEnum(str, Enum):\n    \"\"\"",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalStatusEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class ApprovalStatusEnum(str, Enum):\n    \"\"\"\n    Approval workflow status for files and tasks.\n    Ref: Module 6 - Feature 2.4 - AC 1 - Decision State Machine\n    \"\"\"\n    PENDING = \"pending\"              # Awaiting review\n    APPROVED = \"approved\"            # Approved and locked\n    CHANGES_REQUESTED = \"changes_requested\"  # Need modifications\n    REJECTED = \"rejected\"            # Not approved\nclass NoteAccessEnum(str, Enum):",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NoteAccessEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class NoteAccessEnum(str, Enum):\n    \"\"\"\n    Access level for project and personal notes.\n    Ref: Module 6 - Feature 2.6, 2.7\n    \"\"\"\n    PRIVATE = \"private\"              # Only owner can see (Feature 2.7)\n    PROJECT = \"project\"              # All project members (Feature 2.6)\n    WORKSPACE = \"workspace\"          # All workspace members\n    PUBLIC = \"public\"                # Anyone with public link (Feature 2.9)\nclass AttachmentStatusEnum(str, Enum):",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "AttachmentStatusEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class AttachmentStatusEnum(str, Enum):\n    \"\"\"\n    Status of file attachments.\n    Ref: Module 6 - Feature 2.2 - AC 2 - Security (Sandbox scanning)\n    \"\"\"\n    PENDING_SCAN = \"pending_scan\"    # Waiting for virus scan\n    CLEAN = \"clean\"                  # Passed scan, safe to view\n    QUARANTINED = \"quarantined\"      # Malware detected\n    PROCESSING = \"processing\"        # Preview generation in progress\n    READY = \"ready\"                  # Preview generated and ready",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLinkStatusEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class PublicLinkStatusEnum(str, Enum):\n    \"\"\"\n    Status of public publication links for notes.\n    Ref: Module 6 - Feature 2.9\n    \"\"\"\n    ACTIVE = \"active\"                # Link is accessible\n    EXPIRED = \"expired\"              # Expiration date passed\n    DISABLED = \"disabled\"            # Manually disabled\n    PASSWORD_PROTECTED = \"password_protected\"  # Requires password",
         "detail": "app.db.enums",
         "documentation": {}
     },
@@ -9713,6 +11199,402 @@
         "description": "app.schemas.auth",
         "peekOfCode": "class ValidationErrorResponse(BaseModel):\n    \"\"\"Validation error response\"\"\"\n    detail: List[dict]",
         "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MentionCreate",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class MentionCreate(BaseModel):\n    \"\"\"Create a mention\"\"\"\n    mentioned_user_id: str = Field(..., description=\"User ID to mention\")\n    context: Optional[str] = Field(None, description=\"Context: assignee, reporter, collaborator\")\nclass CommentCreate(BaseModel):\n    \"\"\"Create a new comment\"\"\"\n    task_id: str = Field(..., description=\"Task ID\")\n    parent_comment_id: Optional[str] = Field(None, description=\"Parent comment ID (for nested replies)\")\n    content: str = Field(..., min_length=1, max_length=10000, description=\"Rich text content\")\n    mentioned_user_ids: Optional[List[str]] = Field(None, description=\"List of @mentioned user IDs\")",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CommentCreate",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class CommentCreate(BaseModel):\n    \"\"\"Create a new comment\"\"\"\n    task_id: str = Field(..., description=\"Task ID\")\n    parent_comment_id: Optional[str] = Field(None, description=\"Parent comment ID (for nested replies)\")\n    content: str = Field(..., min_length=1, max_length=10000, description=\"Rich text content\")\n    mentioned_user_ids: Optional[List[str]] = Field(None, description=\"List of @mentioned user IDs\")\nclass CommentUpdate(BaseModel):\n    \"\"\"Update an existing comment\"\"\"\n    content: str = Field(..., min_length=1, max_length=10000, description=\"Updated content\")\n    reason: Optional[str] = Field(None, description=\"Reason for edit (audit trail)\")",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CommentUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class CommentUpdate(BaseModel):\n    \"\"\"Update an existing comment\"\"\"\n    content: str = Field(..., min_length=1, max_length=10000, description=\"Updated content\")\n    reason: Optional[str] = Field(None, description=\"Reason for edit (audit trail)\")\nclass CommentResponse(BaseModel):\n    \"\"\"Comment response\"\"\"\n    id: str\n    task_id: str\n    parent_comment_id: Optional[str]\n    author_id: str",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CommentResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class CommentResponse(BaseModel):\n    \"\"\"Comment response\"\"\"\n    id: str\n    task_id: str\n    parent_comment_id: Optional[str]\n    author_id: str\n    content: str\n    mentioned_user_ids: Optional[List[str]]\n    edited_at: Optional[datetime]\n    edit_count: int",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CommentThreadResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class CommentThreadResponse(CommentResponse):\n    \"\"\"Comment with nested replies\"\"\"\n    replies: List[CommentResponse] = Field(default_factory=list)\n# ============ Attachment Schemas ============\nclass AttachmentCreate(BaseModel):\n    \"\"\"Create/upload an attachment\"\"\"\n    task_id: str = Field(..., description=\"Attach to task\")\n    filename: str = Field(..., description=\"File name with extension\")\n    size: int = Field(..., gt=0, le=1073741824, description=\"File size in bytes (max 1GB)\")\n    mime_type: str = Field(..., description=\"MIME type (e.g., 'image/png')\")",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "AttachmentCreate",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class AttachmentCreate(BaseModel):\n    \"\"\"Create/upload an attachment\"\"\"\n    task_id: str = Field(..., description=\"Attach to task\")\n    filename: str = Field(..., description=\"File name with extension\")\n    size: int = Field(..., gt=0, le=1073741824, description=\"File size in bytes (max 1GB)\")\n    mime_type: str = Field(..., description=\"MIME type (e.g., 'image/png')\")\n    storage_provider: Optional[str] = Field(\"local\", description=\"Where to store: local, s3, azure\")\nclass AttachmentResponse(BaseModel):\n    \"\"\"Attachment details\"\"\"\n    id: str",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "AttachmentResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class AttachmentResponse(BaseModel):\n    \"\"\"Attachment details\"\"\"\n    id: str\n    task_id: str\n    filename: str\n    size: int\n    mime_type: str\n    current_version: int\n    status: AttachmentStatusEnum\n    preview_url: Optional[str]",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "FileVersionResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class FileVersionResponse(BaseModel):\n    \"\"\"File version details\"\"\"\n    id: str\n    file_id: str\n    version_number: int\n    storage_path: str\n    size: int\n    checksum: Optional[str]\n    created_at: datetime\n    class Config:",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "AttachmentVersionResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class AttachmentVersionResponse(BaseModel):\n    \"\"\"List of attachment versions\"\"\"\n    versions: List[FileVersionResponse]\n    latest_version: FileVersionResponse\n# ============ Note Schemas ============\nclass NoteCreate(BaseModel):\n    \"\"\"Create a new note\"\"\"\n    project_id: Optional[str] = Field(None, description=\"Project ID (for project notes)\")\n    parent_note_id: Optional[str] = Field(None, description=\"Parent note ID (for hierarchy)\")\n    title: str = Field(..., min_length=1, max_length=255, description=\"Note title\")",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteCreate",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class NoteCreate(BaseModel):\n    \"\"\"Create a new note\"\"\"\n    project_id: Optional[str] = Field(None, description=\"Project ID (for project notes)\")\n    parent_note_id: Optional[str] = Field(None, description=\"Parent note ID (for hierarchy)\")\n    title: str = Field(..., min_length=1, max_length=255, description=\"Note title\")\n    content: str = Field(..., min_length=1, description=\"Rich text content\")\n    access_level: NoteAccessEnum = Field(NoteAccessEnum.PRIVATE, description=\"Access control\")\n    is_template: bool = Field(False, description=\"Save as template?\")\n    template_name: Optional[str] = Field(None, description=\"Template name (if is_template=True)\")\n    template_category: Optional[str] = Field(None, description=\"Template category: meeting, bug_report, feature_spec\")",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class NoteUpdate(BaseModel):\n    \"\"\"Update an existing note\"\"\"\n    title: Optional[str] = Field(None, min_length=1, max_length=255)\n    content: Optional[str] = Field(None, min_length=1)\n    access_level: Optional[NoteAccessEnum] = None\n    is_pinned: Optional[bool] = None\n    order_index: Optional[int] = None\nclass NoteResponse(BaseModel):\n    \"\"\"Note details\"\"\"\n    id: str",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class NoteResponse(BaseModel):\n    \"\"\"Note details\"\"\"\n    id: str\n    project_id: Optional[str]\n    parent_note_id: Optional[str]\n    user_id: str\n    title: str\n    content: str\n    access_level: NoteAccessEnum\n    is_template: bool",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteTreeResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class NoteTreeResponse(NoteResponse):\n    \"\"\"Note with hierarchy and nested children\"\"\"\n    children: List['NoteTreeResponse'] = Field(default_factory=list)\nclass NoteConvertToTaskRequest(BaseModel):\n    \"\"\"Convert note to task\"\"\"\n    project_id: str = Field(..., description=\"Target project\")\n    task_list_id: str = Field(..., description=\"Target task list\")\n    title: Optional[str] = Field(None, description=\"Override note title as task name\")\n    description: Optional[str] = Field(None, description=\"Override note content as task description\")\n# ============ Note Version Schemas ============",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteConvertToTaskRequest",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class NoteConvertToTaskRequest(BaseModel):\n    \"\"\"Convert note to task\"\"\"\n    project_id: str = Field(..., description=\"Target project\")\n    task_list_id: str = Field(..., description=\"Target task list\")\n    title: Optional[str] = Field(None, description=\"Override note title as task name\")\n    description: Optional[str] = Field(None, description=\"Override note content as task description\")\n# ============ Note Version Schemas ============\nclass NoteVersionResponse(BaseModel):\n    \"\"\"Note version details\"\"\"\n    id: str",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteVersionResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class NoteVersionResponse(BaseModel):\n    \"\"\"Note version details\"\"\"\n    id: str\n    note_id: str\n    version_number: int\n    change_description: Optional[str]\n    title: str\n    content: str\n    added_content: Optional[str]\n    removed_content: Optional[str]",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteVersionDiffRequest",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class NoteVersionDiffRequest(BaseModel):\n    \"\"\"Request diff between versions\"\"\"\n    version_from: int = Field(..., ge=1, description=\"From version number\")\n    version_to: int = Field(..., ge=1, description=\"To version number\")\nclass NoteVersionRestoreRequest(BaseModel):\n    \"\"\"Restore to previous version\"\"\"\n    version_number: int = Field(..., ge=1, description=\"Version to restore\")\n    reason: Optional[str] = Field(None, description=\"Reason for restoration (audit)\")\n# ============ Approval Schemas ============\nclass ApprovalCreate(BaseModel):",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteVersionRestoreRequest",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class NoteVersionRestoreRequest(BaseModel):\n    \"\"\"Restore to previous version\"\"\"\n    version_number: int = Field(..., ge=1, description=\"Version to restore\")\n    reason: Optional[str] = Field(None, description=\"Reason for restoration (audit)\")\n# ============ Approval Schemas ============\nclass ApprovalCreate(BaseModel):\n    \"\"\"Create approval request\"\"\"\n    task_id: Optional[str] = Field(None, description=\"Task to approve\")\n    file_id: Optional[str] = Field(None, description=\"File to approve\")\n    approver_id: str = Field(..., description=\"Approver user ID\")",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalCreate",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class ApprovalCreate(BaseModel):\n    \"\"\"Create approval request\"\"\"\n    task_id: Optional[str] = Field(None, description=\"Task to approve\")\n    file_id: Optional[str] = Field(None, description=\"File to approve\")\n    approver_id: str = Field(..., description=\"Approver user ID\")\n    decision_notes: Optional[str] = Field(None, description=\"Instructions/context for approver\")\nclass ApprovalApprove(BaseModel):\n    \"\"\"Approve a document/task\"\"\"\n    decision_notes: Optional[str] = Field(None, description=\"Approval notes/reason\")\n    signature: Optional[str] = Field(None, description=\"Base64 encoded digital signature\")",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalApprove",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class ApprovalApprove(BaseModel):\n    \"\"\"Approve a document/task\"\"\"\n    decision_notes: Optional[str] = Field(None, description=\"Approval notes/reason\")\n    signature: Optional[str] = Field(None, description=\"Base64 encoded digital signature\")\nclass ApprovalRequestChanges(BaseModel):\n    \"\"\"Request changes on approval\"\"\"\n    change_instructions: str = Field(..., description=\"What needs to change\")\n    priority: str = Field(\"normal\", description=\"Urgency: low, normal, high, critical\")\nclass ApprovalReject(BaseModel):\n    \"\"\"Reject approval\"\"\"",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalRequestChanges",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class ApprovalRequestChanges(BaseModel):\n    \"\"\"Request changes on approval\"\"\"\n    change_instructions: str = Field(..., description=\"What needs to change\")\n    priority: str = Field(\"normal\", description=\"Urgency: low, normal, high, critical\")\nclass ApprovalReject(BaseModel):\n    \"\"\"Reject approval\"\"\"\n    rejection_reason: str = Field(..., description=\"Why rejected\")\n    allow_resubmit: bool = Field(True, description=\"Can be resubmitted?\")\nclass ApprovalRecordResponse(BaseModel):\n    \"\"\"Approval record details\"\"\"",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalReject",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class ApprovalReject(BaseModel):\n    \"\"\"Reject approval\"\"\"\n    rejection_reason: str = Field(..., description=\"Why rejected\")\n    allow_resubmit: bool = Field(True, description=\"Can be resubmitted?\")\nclass ApprovalRecordResponse(BaseModel):\n    \"\"\"Approval record details\"\"\"\n    id: str\n    task_id: Optional[str]\n    file_id: Optional[str]\n    approver_id: str",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalRecordResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class ApprovalRecordResponse(BaseModel):\n    \"\"\"Approval record details\"\"\"\n    id: str\n    task_id: Optional[str]\n    file_id: Optional[str]\n    approver_id: str\n    requestor_id: Optional[str]\n    status: ApprovalStatusEnum\n    decision_notes: Optional[str]\n    decision_timestamp: Optional[datetime]",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLinkCreate",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class PublicLinkCreate(BaseModel):\n    \"\"\"Create public link for note\"\"\"\n    note_id: str = Field(..., description=\"Note to publish\")\n    link_title: Optional[str] = Field(None, description=\"Display title for public page\")\n    is_password_protected: bool = Field(False, description=\"Require password?\")\n    password: Optional[str] = Field(None, description=\"Password (if protected)\")\n    expiration_date: Optional[datetime] = Field(None, description=\"When link expires\")\n    auto_update: bool = Field(True, description=\"Auto-update with note changes?\")\nclass PublicLinkResponse(BaseModel):\n    \"\"\"Public link details\"\"\"",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLinkResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class PublicLinkResponse(BaseModel):\n    \"\"\"Public link details\"\"\"\n    id: str\n    note_id: str\n    slug: str\n    url: str = Field(None)  # Computed: /public/{slug}\n    link_title: Optional[str]\n    is_password_protected: bool\n    status: PublicLinkStatusEnum\n    view_count: int",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLinkAccessRequest",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class PublicLinkAccessRequest(BaseModel):\n    \"\"\"Access password-protected public link\"\"\"\n    password: str = Field(..., description=\"Password to access\")\n# ============ Smart Backlink Schemas ============\nclass SmartBacklinkResponse(BaseModel):\n    \"\"\"Smart backlink reference\"\"\"\n    id: str\n    note_id: str\n    source_note_id: Optional[str]\n    source_task_id: Optional[str]",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "SmartBacklinkResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class SmartBacklinkResponse(BaseModel):\n    \"\"\"Smart backlink reference\"\"\"\n    id: str\n    note_id: str\n    source_note_id: Optional[str]\n    source_task_id: Optional[str]\n    mention_text: str\n    is_linked: bool\n    created_at: datetime\n    class Config:",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "BacklinkSuggestionResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class BacklinkSuggestionResponse(BaseModel):\n    \"\"\"Suggested unlinked mention\"\"\"\n    mention_text: str\n    suggested_link_id: str\n    link_type: str  # \"note\" or \"task\"\n    confidence: float = Field(..., ge=0, le=1, description=\"Confidence score 0-1\")\n# ============ Mention Schemas ============\nclass MentionResponse(BaseModel):\n    \"\"\"Mention details\"\"\"\n    id: str",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "MentionResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class MentionResponse(BaseModel):\n    \"\"\"Mention details\"\"\"\n    id: str\n    mentioned_user_id: str\n    mentioned_by_user_id: str\n    comment_id: Optional[str]\n    note_id: Optional[str]\n    context: Optional[str]\n    mention_priority: int\n    created_at: datetime",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "MentionSuggestion",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class MentionSuggestion(BaseModel):\n    \"\"\"Suggested user to mention (Feature 2.1 AC 2)\"\"\"\n    user_id: str\n    user_name: str\n    avatar_url: Optional[str]\n    priority: int  # 1: assignee, 2: reporter, 3: recent, 4: others\n    reason: str  # \"assignee\", \"reporter\", \"recent_collaborator\"\n# ============ User Presence Schemas ============\nclass UserPresenceUpdate(BaseModel):\n    \"\"\"Update user presence\"\"\"",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "UserPresenceUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class UserPresenceUpdate(BaseModel):\n    \"\"\"Update user presence\"\"\"\n    task_id: Optional[str] = None\n    note_id: Optional[str] = None\n    status: str = Field(\"viewing\", description=\"viewing, editing, commenting\")\n    is_typing: bool = Field(False, description=\"Is currently typing?\")\nclass UserPresenceResponse(BaseModel):\n    \"\"\"User presence status\"\"\"\n    user_id: str\n    user_name: str",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "UserPresenceResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class UserPresenceResponse(BaseModel):\n    \"\"\"User presence status\"\"\"\n    user_id: str\n    user_name: str\n    avatar_url: Optional[str]\n    task_id: Optional[str]\n    note_id: Optional[str]\n    status: str\n    is_typing: bool\n    last_activity_at: datetime",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "TaskPresenceResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class TaskPresenceResponse(BaseModel):\n    \"\"\"All active users on a task\"\"\"\n    task_id: str\n    active_users: List[UserPresenceResponse]\n    typing_users: List[str]  # User names\n# ============ Search Schemas ============\nclass CollaborationSearchRequest(BaseModel):\n    \"\"\"Search collaboration content\"\"\"\n    query: str = Field(..., min_length=1, max_length=200, description=\"Search keywords\")\n    project_id: Optional[str] = Field(None, description=\"Limit to project\")",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CollaborationSearchRequest",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class CollaborationSearchRequest(BaseModel):\n    \"\"\"Search collaboration content\"\"\"\n    query: str = Field(..., min_length=1, max_length=200, description=\"Search keywords\")\n    project_id: Optional[str] = Field(None, description=\"Limit to project\")\n    search_scope: List[str] = Field(\n        [\"comments\", \"notes\", \"attachments\", \"tasks\"],\n        description=\"What to search: comments, notes, attachments, tasks\"\n    )\n    limit: int = Field(20, ge=1, le=100)\n    offset: int = Field(0, ge=0)",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "SearchResultItem",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class SearchResultItem(BaseModel):\n    \"\"\"Individual search result\"\"\"\n    id: str\n    entity_type: str  # \"comment\", \"note\", \"attachment\", \"task\"\n    entity_id: str\n    title: Optional[str]\n    snippet: str  # Preview text with query highlighted\n    url_path: str  # Deep link\n    created_by: Optional[str]\n    created_at: datetime",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CollaborationSearchResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class CollaborationSearchResponse(BaseModel):\n    \"\"\"Search results\"\"\"\n    total_count: int\n    limit: int\n    offset: int\n    results: List[SearchResultItem]\n    query: str\n    search_time_ms: int\n# ============ Real-time Collaboration Schemas ============\nclass CollaborationEvent(BaseModel):",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CollaborationEvent",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class CollaborationEvent(BaseModel):\n    \"\"\"WebSocket event for real-time collaboration\"\"\"\n    event_type: str  # \"comment_added\", \"user_typing\", \"file_uploaded\", \"approval_changed\"\n    entity_id: str\n    entity_type: str\n    data: Dict\n    timestamp: datetime\n    user_id: str\nclass TypingIndicator(BaseModel):\n    \"\"\"Typing indicator event\"\"\"",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "TypingIndicator",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class TypingIndicator(BaseModel):\n    \"\"\"Typing indicator event\"\"\"\n    task_id: Optional[str]\n    note_id: Optional[str]\n    user_id: str\n    user_name: str\n    is_typing: bool\n# ============ Notification Schemas ============\nclass CollaborationNotificationResponse(BaseModel):\n    \"\"\"Collaboration notification\"\"\"",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CollaborationNotificationResponse",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class CollaborationNotificationResponse(BaseModel):\n    \"\"\"Collaboration notification\"\"\"\n    id: str\n    recipient_user_id: str\n    trigger_type: str  # mention, approval, reply, note_shared\n    task_id: Optional[str]\n    note_id: Optional[str]\n    comment_id: Optional[str]\n    triggered_by_user_id: str\n    title: str",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "MarkNotificationAsReadRequest",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class MarkNotificationAsReadRequest(BaseModel):\n    \"\"\"Mark notification as read\"\"\"\n    notification_id: str = Field(..., description=\"Notification ID\")\n# ============ Bulk/Batch Schemas ============\nclass BulkCommentCreateRequest(BaseModel):\n    \"\"\"Create multiple comments in batch\"\"\"\n    comments: List[CommentCreate] = Field(..., min_items=1, max_items=100)\nclass BulkAttachmentUploadRequest(BaseModel):\n    \"\"\"Upload multiple files\"\"\"\n    attachments: List[AttachmentCreate] = Field(..., min_items=1, max_items=50)",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "BulkCommentCreateRequest",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class BulkCommentCreateRequest(BaseModel):\n    \"\"\"Create multiple comments in batch\"\"\"\n    comments: List[CommentCreate] = Field(..., min_items=1, max_items=100)\nclass BulkAttachmentUploadRequest(BaseModel):\n    \"\"\"Upload multiple files\"\"\"\n    attachments: List[AttachmentCreate] = Field(..., min_items=1, max_items=50)\nclass BulkApprovalRequest(BaseModel):\n    \"\"\"Approve multiple items\"\"\"\n    approval_ids: List[str] = Field(..., min_items=1, max_items=100)\n    decision_notes: Optional[str] = Field(None)",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "BulkAttachmentUploadRequest",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class BulkAttachmentUploadRequest(BaseModel):\n    \"\"\"Upload multiple files\"\"\"\n    attachments: List[AttachmentCreate] = Field(..., min_items=1, max_items=50)\nclass BulkApprovalRequest(BaseModel):\n    \"\"\"Approve multiple items\"\"\"\n    approval_ids: List[str] = Field(..., min_items=1, max_items=100)\n    decision_notes: Optional[str] = Field(None)\n    approve: bool = Field(True, description=\"True: approve, False: reject\")\n# ============ Statistics Schemas ============\nclass CollaborationStats(BaseModel):",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "BulkApprovalRequest",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class BulkApprovalRequest(BaseModel):\n    \"\"\"Approve multiple items\"\"\"\n    approval_ids: List[str] = Field(..., min_items=1, max_items=100)\n    decision_notes: Optional[str] = Field(None)\n    approve: bool = Field(True, description=\"True: approve, False: reject\")\n# ============ Statistics Schemas ============\nclass CollaborationStats(BaseModel):\n    \"\"\"Collaboration statistics for a project\"\"\"\n    project_id: str\n    total_comments: int",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "CollaborationStats",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class CollaborationStats(BaseModel):\n    \"\"\"Collaboration statistics for a project\"\"\"\n    project_id: str\n    total_comments: int\n    total_attachments: int\n    total_notes: int\n    active_collaborators: int\n    total_approvals: int\n    approved_count: int\n    pending_approvals: int",
+        "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "UserCollaborationStats",
+        "kind": 6,
+        "importPath": "app.schemas.collaboration",
+        "description": "app.schemas.collaboration",
+        "peekOfCode": "class UserCollaborationStats(BaseModel):\n    \"\"\"User's collaboration activity\"\"\"\n    user_id: str\n    comments_created: int\n    files_uploaded: int\n    notes_created: int\n    mentions_received: int\n    approvals_given: int\n    approvals_pending: int",
+        "detail": "app.schemas.collaboration",
         "documentation": {}
     },
     {
@@ -10865,6 +12747,96 @@
         "description": "app.services.auth",
         "peekOfCode": "class AuthService:\n    \"\"\"\n    Service for authentication operations.\n    Handles registration, login, password management, and email verification.\n    \"\"\"\n    def __init__(self, db: Session, email_service: Optional[EmailService] = None):\n        self.db = db\n        self.email_service = email_service or EmailService()\n    # ============= User Registration =============\n    def register_user(",
         "detail": "app.services.auth",
+        "documentation": {}
+    },
+    {
+        "label": "CommentService",
+        "kind": 6,
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "peekOfCode": "class CommentService:\n    \"\"\"\n    Feature 2.1: Contextual Threaded Discussions\n    - Create comments with rich text\n    - Support nested replies\n    - Handle @mentions for notifications\n    \"\"\"\n    @staticmethod\n    def create_comment(\n        db: Session,",
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "AttachmentService",
+        "kind": 6,
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "peekOfCode": "class AttachmentService:\n    \"\"\"\n    Feature 2.2: Digital Asset Management (DAM)\n    - Version control (AC 1: No overwrite)\n    - Universal viewer (AC 2: Sandbox rendering)\n    \"\"\"\n    @staticmethod\n    def upload_attachment(\n        db: Session,\n        task_id: Optional[str],",
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteService",
+        "kind": 6,
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "peekOfCode": "class NoteService:\n    \"\"\"\n    Feature 2.6: Project Notes (Wiki)\n    Feature 2.7: Personal Notes\n    - Hierarchy support\n    - Access control\n    - Rich text content\n    \"\"\"\n    @staticmethod\n    def create_note(",
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NoteVersionService",
+        "kind": 6,
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "peekOfCode": "class NoteVersionService:\n    \"\"\"\n    Feature 2.10: Document Versioning\n    \"\"\"\n    @staticmethod\n    def get_versions(db: Session, note_id: str) -> List[NoteVersion]:\n        \"\"\"Get all versions of a note\"\"\"\n        versions = db.query(NoteVersion).filter(\n            NoteVersion.note_id == note_id\n        ).order_by(NoteVersion.version_number.desc()).all()",
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalService",
+        "kind": 6,
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "peekOfCode": "class ApprovalService:\n    \"\"\"\n    Feature 2.4: Formal Approval Workflow\n    - State machine transitions\n    - Digital signature audit\n    \"\"\"\n    @staticmethod\n    def create_approval_request(\n        db: Session,\n        task_id: Optional[str],",
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLinkService",
+        "kind": 6,
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "peekOfCode": "class PublicLinkService:\n    \"\"\"\n    Feature 2.9: Public Publishing\n    \"\"\"\n    @staticmethod\n    def create_public_link(\n        db: Session,\n        note_id: str,\n        created_by: str,\n        link_title: Optional[str] = None,",
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "SearchService",
+        "kind": 6,
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "peekOfCode": "class SearchService:\n    \"\"\"\n    Feature 2.5: Collaborative Search\n    - Full-text search across content\n    - Contextual results with snippets\n    \"\"\"\n    @staticmethod\n    def index_content(\n        db: Session,\n        entity_type: str,",
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "SmartBacklinkService",
+        "kind": 6,
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "peekOfCode": "class SmartBacklinkService:\n    \"\"\"\n    Feature 2.11: Smart Backlinks\n    \"\"\"\n    @staticmethod\n    def create_backlink(\n        db: Session,\n        note_id: str,\n        source_note_id: Optional[str],\n        source_task_id: Optional[str],",
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "UserPresenceService",
+        "kind": 6,
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "peekOfCode": "class UserPresenceService:\n    \"\"\"\n    Feature 2.3: Real-time Presence\n    - Track who is viewing/editing\n    - Show typing status\n    \"\"\"\n    @staticmethod\n    def update_presence(\n        db: Session,\n        user_id: str,",
+        "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "MentionService",
+        "kind": 6,
+        "importPath": "app.services.collaboration",
+        "description": "app.services.collaboration",
+        "peekOfCode": "class MentionService:\n    \"\"\"\n    Feature 2.1 AC 2: Smart Mentions\n    \"\"\"\n    @staticmethod\n    def create_mention(\n        db: Session,\n        mentioned_user_id: str,\n        mentioned_by_user_id: str,\n        comment_id: Optional[str] = None,",
+        "detail": "app.services.collaboration",
         "documentation": {}
     },
     {

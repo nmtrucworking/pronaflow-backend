@@ -286,3 +286,49 @@ class ResourceLevelingStrategy(str, Enum):
     WITHIN_SLACK = "within_slack"    # Only move tasks with Float
     EXTEND_PROJECT = "extend_project"  # Can extend project end date
 
+
+# ============ Module 6: Unified Collaboration Hub ============
+
+class ApprovalStatusEnum(str, Enum):
+    """
+    Approval workflow status for files and tasks.
+    Ref: Module 6 - Feature 2.4 - AC 1 - Decision State Machine
+    """
+    PENDING = "pending"              # Awaiting review
+    APPROVED = "approved"            # Approved and locked
+    CHANGES_REQUESTED = "changes_requested"  # Need modifications
+    REJECTED = "rejected"            # Not approved
+
+
+class NoteAccessEnum(str, Enum):
+    """
+    Access level for project and personal notes.
+    Ref: Module 6 - Feature 2.6, 2.7
+    """
+    PRIVATE = "private"              # Only owner can see (Feature 2.7)
+    PROJECT = "project"              # All project members (Feature 2.6)
+    WORKSPACE = "workspace"          # All workspace members
+    PUBLIC = "public"                # Anyone with public link (Feature 2.9)
+
+
+class AttachmentStatusEnum(str, Enum):
+    """
+    Status of file attachments.
+    Ref: Module 6 - Feature 2.2 - AC 2 - Security (Sandbox scanning)
+    """
+    PENDING_SCAN = "pending_scan"    # Waiting for virus scan
+    CLEAN = "clean"                  # Passed scan, safe to view
+    QUARANTINED = "quarantined"      # Malware detected
+    PROCESSING = "processing"        # Preview generation in progress
+    READY = "ready"                  # Preview generated and ready
+
+
+class PublicLinkStatusEnum(str, Enum):
+    """
+    Status of public publication links for notes.
+    Ref: Module 6 - Feature 2.9
+    """
+    ACTIVE = "active"                # Link is accessible
+    EXPIRED = "expired"              # Expiration date passed
+    DISABLED = "disabled"            # Manually disabled
+    PASSWORD_PROTECTED = "password_protected"  # Requires password

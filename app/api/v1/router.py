@@ -2,7 +2,7 @@
 API Router initialization for v1 endpoints.
 """
 from fastapi import APIRouter
-from app.api.v1.endpoints import auth, workspaces, admin, projects, tasks, scheduling
+from app.api.v1.endpoints import auth, workspaces, admin, projects, tasks, scheduling, collaboration
 
 api_router = APIRouter(prefix="/api")
 
@@ -12,4 +12,5 @@ api_router.include_router(workspaces.router)
 api_router.include_router(projects.router)
 api_router.include_router(tasks.router)
 api_router.include_router(scheduling.router)
+api_router.include_router(collaboration.router)
 api_router.include_router(admin.router)

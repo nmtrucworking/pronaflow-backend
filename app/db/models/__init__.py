@@ -67,7 +67,18 @@ from app.db.models.scheduling import (
     CrossProjectDependency,
     PlanningAuditLog,
 )
-
+# Module 6: Unified Collaboration Hub
+from app.db.models.collaboration import (
+    Note,
+    NoteVersion,
+    SmartBacklink,
+    PublicLink,
+    Mention,
+    UserPresence,
+    ApprovalRecord,
+    SearchIndex,
+    CollaborationNotification,
+)
 # Module 4 & 15: Tag & Categorization
 from app.db.models.tags import (
     Tag,
@@ -151,7 +162,17 @@ __all__ = [
     "PlanningAuditLog",
     # Module 4 & 15
     "Tag",
-    # Module 6
+    # Module 6: Collaboration
+    "Note",
+    "NoteVersion",
+    "SmartBacklink",
+    "PublicLink",
+    "Mention",
+    "UserPresence",
+    "ApprovalRecord",
+    "SearchIndex",
+    "CollaborationNotification",
+    # Module 6 (Events)
     "Notification",
     "NotificationTemplate",
     "NotificationPreference",
