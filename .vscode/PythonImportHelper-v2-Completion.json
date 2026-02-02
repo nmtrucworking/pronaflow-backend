@@ -72,6 +72,14 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -98,6 +106,30 @@
     },
     {
         "label": "pool",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "desc",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -370,6 +402,86 @@
     },
     {
         "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "JSON",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Index",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -1465,6 +1577,30 @@
         "documentation": {}
     },
     {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "desc",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "select",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -1630,6 +1766,14 @@
         "description": "sqlalchemy",
         "isExtraImport": true,
         "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
         "documentation": {}
     },
     {
@@ -2123,6 +2267,14 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -2914,6 +3066,38 @@
         "documentation": {}
     },
     {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -3075,6 +3259,38 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -3427,6 +3643,14 @@
         "documentation": {}
     },
     {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
         "label": "UUID",
         "importPath": "uuid",
         "description": "uuid",
@@ -3515,6 +3739,14 @@
         "documentation": {}
     },
     {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
         "label": "UUID",
         "importPath": "uuid",
         "description": "uuid",
@@ -3587,6 +3819,38 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "timedelta",
         "importPath": "datetime",
         "description": "datetime",
@@ -3612,14 +3876,6 @@
     },
     {
         "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -3827,6 +4083,14 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "date",
         "importPath": "datetime",
         "description": "datetime",
@@ -3940,6 +4204,22 @@
     },
     {
         "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -4268,6 +4548,38 @@
     },
     {
         "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -4787,6 +5099,14 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "relationship",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -4812,6 +5132,14 @@
     },
     {
         "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -5291,6 +5619,22 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
         "label": "get_db",
         "importPath": "app.db.session",
         "description": "app.db.session",
@@ -5396,6 +5740,14 @@
     },
     {
         "label": "get_current_active_user",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
         "importPath": "app.core.security",
         "description": "app.core.security",
         "isExtraImport": true,
@@ -6064,6 +6416,14 @@
         "description": "app.api.dependencies",
         "isExtraImport": true,
         "detail": "app.api.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.user",
+        "description": "app.db.models.user",
+        "isExtraImport": true,
+        "detail": "app.db.models.user",
         "documentation": {}
     },
     {
@@ -7472,6 +7832,558 @@
         "description": "app.services.collaboration",
         "isExtraImport": true,
         "detail": "app.services.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiToken",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEndpoint",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthConnection",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrationBinding",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "Plugin",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginInstallation",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ConsentGrant",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiToken",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiScope",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenScope",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiUsageLog",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEndpoint",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEvent",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookDelivery",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthApp",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthConnection",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrationBinding",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "Plugin",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginInstallation",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ConsentGrant",
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "isExtraImport": true,
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenCreate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenUpdate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenRead",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenCreateResponse",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenListResponse",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiScopeListResponse",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiUsageLogListResponse",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEndpointCreate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEndpointUpdate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEndpointRead",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEndpointListResponse",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthAppListResponse",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthConnectionCreate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthConnectionUpdate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthConnectionRead",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthConnectionListResponse",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrationBindingCreate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrationBindingRead",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrationBindingListResponse",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginCreate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginUpdate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginRead",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginListResponse",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginInstallationCreate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginInstallationUpdate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginInstallationRead",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginInstallationListResponse",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ConsentGrantCreate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ConsentGrantRead",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ConsentGrantListResponse",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrationStatusResponse",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "HealthCheckResponse",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenCreate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenUpdate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenCreateResponse",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEndpointCreate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEndpointUpdate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthConnectionCreate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthConnectionUpdate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrationBindingCreate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginCreate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginInstallationCreate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginInstallationUpdate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ConsentGrantCreate",
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "isExtraImport": true,
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenService",
+        "importPath": "app.services.integration",
+        "description": "app.services.integration",
+        "isExtraImport": true,
+        "detail": "app.services.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookService",
+        "importPath": "app.services.integration",
+        "description": "app.services.integration",
+        "isExtraImport": true,
+        "detail": "app.services.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthService",
+        "importPath": "app.services.integration",
+        "description": "app.services.integration",
+        "isExtraImport": true,
+        "detail": "app.services.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginService",
+        "importPath": "app.services.integration",
+        "description": "app.services.integration",
+        "isExtraImport": true,
+        "detail": "app.services.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ConsentService",
+        "importPath": "app.services.integration",
+        "description": "app.services.integration",
+        "isExtraImport": true,
+        "detail": "app.services.integration",
         "documentation": {}
     },
     {
@@ -10133,6 +11045,14 @@
         "documentation": {}
     },
     {
+        "label": "integration",
+        "importPath": "app.api.v1.endpoints",
+        "description": "app.api.v1.endpoints",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints",
+        "documentation": {}
+    },
+    {
         "label": "BaseSettings",
         "importPath": "pydantic_settings",
         "description": "pydantic_settings",
@@ -10234,6 +11154,14 @@
         "documentation": {}
     },
     {
+        "label": "Base",
+        "importPath": "app.db.base_class",
+        "description": "app.db.base_class",
+        "isExtraImport": true,
+        "detail": "app.db.base_class",
+        "documentation": {}
+    },
+    {
         "label": "TimestampMixin",
         "importPath": "app.db.mixins",
         "description": "app.db.mixins",
@@ -10243,6 +11171,14 @@
     },
     {
         "label": "UUIDPrimaryKeyMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "TimestampMixin",
         "importPath": "app.db.mixins",
         "description": "app.db.mixins",
         "isExtraImport": true,
@@ -10994,6 +11930,30 @@
         "documentation": {}
     },
     {
+        "label": "HttpUrl",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "BaseModel",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -11347,6 +12307,15 @@
         "importPath": "secrets",
         "description": "secrets",
         "detail": "secrets",
+        "documentation": {}
+    },
+    {
+        "label": "hmac",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hmac",
+        "description": "hmac",
+        "detail": "hmac",
         "documentation": {}
     },
     {
@@ -12057,6 +13026,24 @@
         "description": "app.alembic.versions.module11_analytics",
         "peekOfCode": "depends_on = None\ndef upgrade():\n    \"\"\"Create Module 11 tables\"\"\"\n    # sprint_metrics table\n    op.create_table(\n        'sprint_metrics',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('sprint_id', sa.String(), nullable=False),\n        sa.Column('project_id', sa.String(), nullable=False),\n        sa.Column('total_story_points', sa.Integer(), nullable=False),",
         "detail": "app.alembic.versions.module11_analytics",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.module12_integration",
+        "description": "app.alembic.versions.module12_integration",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Create Module 12 tables for integration ecosystem.\"\"\"\n    # Create api_scopes table\n    op.create_table(\n        'api_scopes',\n        sa.Column('id', sa.String(36), nullable=False),\n        sa.Column('scope_name', sa.String(100), nullable=False),\n        sa.Column('description', sa.Text, nullable=True),\n        sa.Column('resource_type', sa.String(50), nullable=False),\n        sa.Column('permission_type', sa.String(20), nullable=False),",
+        "detail": "app.alembic.versions.module12_integration",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.module12_integration",
+        "description": "app.alembic.versions.module12_integration",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Revert Module 12 tables.\"\"\"\n    # Drop tables in reverse order\n    op.drop_index('ix_consent_grants_consent_type', table_name='consent_grants')\n    op.drop_index('ix_consent_grants_user_id', table_name='consent_grants')\n    op.drop_table('consent_grants')\n    op.drop_index('ix_plugin_installations_is_enabled', table_name='plugin_installations')\n    op.drop_index('ix_plugin_installations_workspace_id', table_name='plugin_installations')\n    op.drop_table('plugin_installations')\n    op.drop_index('ix_plugins_is_public', table_name='plugins')",
+        "detail": "app.alembic.versions.module12_integration",
         "documentation": {}
     },
     {
@@ -13227,6 +14214,240 @@
         "description": "app.api.v1.endpoints.collaboration",
         "peekOfCode": "router = APIRouter(prefix=\"/api/v1/collaboration\", tags=[\"collaboration\"])\n# ============ Comment Endpoints ============\n@router.post(\"/comments\", response_model=CommentResponse, status_code=201)\ndef create_comment(\n    request: CommentCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Create a new comment",
         "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "create_api_token",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def create_api_token(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    token_data: ApiTokenCreate = None,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Create a new API token for the current user.\n    Ref: Module 12 - Feature 2.1 - AC 3\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "list_api_tokens",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def list_api_tokens(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    page: int = Query(1, ge=1),\n    page_size: int = Query(20, ge=1, le=100),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    List API tokens for the current user.\n    Ref: Module 12 - Feature 2.1",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "update_api_token",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def update_api_token(\n    token_id: str,\n    token_update: ApiTokenUpdate = None,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Update API token settings.\n    \"\"\"\n    token = db.query(ApiToken).filter(",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "revoke_api_token",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def revoke_api_token(\n    token_id: str,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Revoke an API token.\n    Ref: Module 12 - Feature 2.1 - AC 3 - Revocation\n    \"\"\"\n    token_service = ApiTokenService(db)",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "list_api_scopes",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def list_api_scopes(\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    List available API scopes.\n    Ref: Module 12 - Feature 2.1 - AC 3 - Scopes\n    \"\"\"\n    scopes = db.query(ApiScope).filter(ApiScope.is_deprecated == False).all()\n    return ApiScopeListResponse(\n        items=scopes,",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "get_api_usage_logs",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def get_api_usage_logs(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    page: int = Query(1, ge=1),\n    page_size: int = Query(100, ge=1, le=1000),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Get API usage logs for rate limiting analysis.\n    Ref: Module 12 - Feature 3.1 - Rate Limiting",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "create_webhook_endpoint",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def create_webhook_endpoint(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    webhook_data: WebhookEndpointCreate = None,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Create webhook endpoint.\n    Ref: Module 12 - Feature 2.2 - AC 1\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "list_webhook_endpoints",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def list_webhook_endpoints(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    page: int = Query(1, ge=1),\n    page_size: int = Query(20, ge=1, le=100),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    List webhook endpoints for workspace.\n    Ref: Module 12 - Feature 2.2",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "update_webhook_endpoint",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def update_webhook_endpoint(\n    endpoint_id: str,\n    endpoint_update: WebhookEndpointUpdate = None,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Update webhook endpoint configuration.\n    \"\"\"\n    endpoint = db.query(WebhookEndpoint).filter(",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "list_oauth_apps",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def list_oauth_apps(\n    page: int = Query(1, ge=1),\n    page_size: int = Query(20, ge=1, le=100),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    List available OAuth apps (native connectors).\n    Ref: Module 12 - Feature 2.3\n    \"\"\"\n    query = db.query(OAuthApp).filter(",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "create_oauth_connection",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def create_oauth_connection(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    connection_data: OAuthConnectionCreate = None,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Create OAuth connection (initiate OAuth flow).\n    Ref: Module 12 - Feature 2.3 - AC 1\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "list_oauth_connections",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def list_oauth_connections(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    page: int = Query(1, ge=1),\n    page_size: int = Query(20, ge=1, le=100),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    List OAuth connections for current user.\n    Ref: Module 12 - Feature 2.3",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "revoke_oauth_connection",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def revoke_oauth_connection(\n    connection_id: str,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Revoke OAuth connection.\n    Ref: Module 12 - Feature 3.2 - Revocation\n    \"\"\"\n    connection = db.query(OAuthConnection).filter(",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "create_integration_binding",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def create_integration_binding(\n    binding_data: IntegrationBindingCreate = None,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Create integration binding for bi-directional sync.\n    Ref: Module 12 - Feature 2.3 - AC 2\n    \"\"\"\n    oauth_service = OAuthService(db)",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "list_integration_bindings",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def list_integration_bindings(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    page: int = Query(1, ge=1),\n    page_size: int = Query(20, ge=1, le=100),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    List integration bindings.\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "list_plugins",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def list_plugins(\n    page: int = Query(1, ge=1),\n    page_size: int = Query(20, ge=1, le=100),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    List available plugins in marketplace.\n    Ref: Module 12 - Feature 2.4\n    \"\"\"\n    query = db.query(Plugin).filter(",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "get_plugin_detail",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def get_plugin_detail(\n    plugin_id: str,\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Get plugin details.\n    \"\"\"\n    plugin = db.query(Plugin).filter(Plugin.id == plugin_id).first()\n    if not plugin:\n        raise HTTPException(status_code=404, detail=\"Plugin not found\")",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "install_plugin",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def install_plugin(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    installation_data: PluginInstallationCreate = None,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Install plugin into workspace.\n    Ref: Module 12 - Feature 2.4 - Plugin Architecture\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "list_installed_plugins",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def list_installed_plugins(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    page: int = Query(1, ge=1),\n    page_size: int = Query(20, ge=1, le=100),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    List plugins installed in workspace.\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "update_plugin_installation",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def update_plugin_installation(\n    installation_id: str,\n    update_data: PluginInstallationUpdate = None,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Update plugin installation settings.\n    \"\"\"\n    installation = db.query(PluginInstallation).filter(",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "uninstall_plugin",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def uninstall_plugin(\n    installation_id: str,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Uninstall plugin from workspace.\n    \"\"\"\n    plugin_service = PluginService(db)\n    success = plugin_service.uninstall_plugin(installation_id)",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "list_consents",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def list_consents(\n    page: int = Query(1, ge=1),\n    page_size: int = Query(20, ge=1, le=100),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    List user's consent grants.\n    Ref: Module 12 - Feature 3.2 - Data Security & Consent\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "revoke_consent",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def revoke_consent(\n    consent_id: str,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Revoke user consent.\n    Ref: Module 12 - Feature 3.2 - Revocation\n    \"\"\"\n    consent = db.query(ConsentGrant).filter(",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "get_integration_status",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def get_integration_status(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Get integration ecosystem status.\n    \"\"\"\n    api_tokens_count = db.query(ApiToken).filter(\n        and_(ApiToken.workspace_id == workspace_id, ApiToken.is_active == True)",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "health_check",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "def health_check(db: Session = Depends(get_db)):\n    \"\"\"\n    Health check for integration ecosystem.\n    \"\"\"\n    return HealthCheckResponse(\n        api_available=True,\n        webhooks_processing=True,\n        oauth_status=\"healthy\",\n        plugins_loaded=db.query(Plugin).filter(Plugin.is_public == True).count(),\n        last_check_at=datetime.utcnow()",
+        "detail": "app.api.v1.endpoints.integration",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.v1.endpoints.integration",
+        "description": "app.api.v1.endpoints.integration",
+        "peekOfCode": "router = APIRouter(prefix=\"/api/v1/integration\", tags=[\"integration\"])\n# ============ API Token Endpoints ============\n@router.post(\"/tokens\", response_model=ApiTokenCreateResponse)\ndef create_api_token(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    token_data: ApiTokenCreate = None,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.integration",
         "documentation": {}
     },
     {
@@ -14465,6 +15686,123 @@
     {
         "label": "ApiToken",
         "kind": 6,
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "peekOfCode": "class ApiToken(Base, TimestampMixin):\n    \"\"\"\n    Personal Access Tokens (PAT) for API authentication.\n    Users can create multiple tokens with different scopes and expiration dates.\n    Ref: Module 12 - Feature 2.1 - AC 3 - Authentication via PAT\n    \"\"\"\n    __tablename__ = \"api_tokens\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    user_id = Column(String(36), ForeignKey(\"users.id\", ondelete=\"CASCADE\"), nullable=False)\n    workspace_id = Column(String(36), ForeignKey(\"workspaces.id\", ondelete=\"CASCADE\"), nullable=False)",
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiScope",
+        "kind": 6,
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "peekOfCode": "class ApiScope(Base):\n    \"\"\"\n    API permission scopes.\n    Defines granular permissions that can be granted to API tokens.\n    Ref: Module 12 - Feature 2.1 - AC 3 - Scopes\n    \"\"\"\n    __tablename__ = \"api_scopes\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    # Scope info\n    scope_name = Column(String(100), nullable=False, unique=True)  # e.g., \"read:tasks\", \"write:projects\"",
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenScope",
+        "kind": 6,
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "peekOfCode": "class ApiTokenScope(Base):\n    \"\"\"\n    Junction table: Maps API tokens to scopes.\n    Enables fine-grained permission control per token.\n    Ref: Module 12 - Feature 2.1 - AC 3\n    \"\"\"\n    __tablename__ = \"api_token_scopes\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    api_token_id = Column(String(36), ForeignKey(\"api_tokens.id\", ondelete=\"CASCADE\"), nullable=False)\n    api_scope_id = Column(String(36), ForeignKey(\"api_scopes.id\", ondelete=\"CASCADE\"), nullable=False)",
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiUsageLog",
+        "kind": 6,
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "peekOfCode": "class ApiUsageLog(Base, TimestampMixin):\n    \"\"\"\n    API usage tracking for rate limiting and audit logging.\n    Logs each API request for analytics and compliance.\n    Ref: Module 12 - Feature 3.1 - Rate Limiting\n    \"\"\"\n    __tablename__ = \"api_usage_logs\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    workspace_id = Column(String(36), ForeignKey(\"workspaces.id\", ondelete=\"CASCADE\"), nullable=False)\n    api_token_id = Column(String(36), ForeignKey(\"api_tokens.id\", ondelete=\"SET NULL\"), nullable=True)",
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEndpoint",
+        "kind": 6,
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "peekOfCode": "class WebhookEndpoint(Base, TimestampMixin):\n    \"\"\"\n    Webhook endpoint configuration per workspace.\n    Stores the target URL and subscription preferences.\n    Ref: Module 12 - Feature 2.2 - Outbound Webhooks\n    \"\"\"\n    __tablename__ = \"webhook_endpoints\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    workspace_id = Column(String(36), ForeignKey(\"workspaces.id\", ondelete=\"CASCADE\"), nullable=False)\n    # Webhook configuration",
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEvent",
+        "kind": 6,
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "peekOfCode": "class WebhookEvent(Base):\n    \"\"\"\n    Event types that webhook endpoints can subscribe to.\n    Predefined list of system events.\n    Ref: Module 12 - Feature 2.2 - AC 1 - Event Triggers\n    \"\"\"\n    __tablename__ = \"webhook_events\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    webhook_endpoint_id = Column(String(36), ForeignKey(\"webhook_endpoints.id\", ondelete=\"CASCADE\"), nullable=False)\n    # Event info",
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookDelivery",
+        "kind": 6,
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "peekOfCode": "class WebhookDelivery(Base, TimestampMixin):\n    \"\"\"\n    Webhook delivery history for reliability and debugging.\n    Logs every webhook attempt with request/response details.\n    Ref: Module 12 - Feature 2.2 - AC 2 - Delivery Reliability\n    \"\"\"\n    __tablename__ = \"webhook_deliveries\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    webhook_endpoint_id = Column(String(36), ForeignKey(\"webhook_endpoints.id\", ondelete=\"CASCADE\"), nullable=False)\n    # Event info",
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthApp",
+        "kind": 6,
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "peekOfCode": "class OAuthApp(Base, TimestampMixin):\n    \"\"\"\n    OAuth applications for third-party connectors.\n    Represents the connector (e.g., GitHub connector) itself.\n    Ref: Module 12 - Feature 2.3 - Native Connectors\n    \"\"\"\n    __tablename__ = \"oauth_apps\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    # App info\n    name = Column(String(255), nullable=False, unique=True)  # github, google_calendar, slack",
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthConnection",
+        "kind": 6,
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "peekOfCode": "class OAuthConnection(Base, TimestampMixin):\n    \"\"\"\n    OAuth connections between PronaFlow users and external services.\n    Stores access tokens and connection metadata.\n    Ref: Module 12 - Feature 2.3 - AC 1 - OAuth2 Authorization Flow\n    \"\"\"\n    __tablename__ = \"oauth_connections\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    user_id = Column(String(36), ForeignKey(\"users.id\", ondelete=\"CASCADE\"), nullable=False)\n    oauth_app_id = Column(String(36), ForeignKey(\"oauth_apps.id\", ondelete=\"CASCADE\"), nullable=False)",
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrationBinding",
+        "kind": 6,
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "peekOfCode": "class IntegrationBinding(Base, TimestampMixin):\n    \"\"\"\n    Data mapping configuration for integrations.\n    Maps fields between PronaFlow and external systems.\n    Ref: Module 12 - Feature 2.3 - Bi-directional Sync\n    \"\"\"\n    __tablename__ = \"integration_bindings\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    oauth_connection_id = Column(String(36), ForeignKey(\"oauth_connections.id\", ondelete=\"CASCADE\"), nullable=False)\n    # Binding info",
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "Plugin",
+        "kind": 6,
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "peekOfCode": "class Plugin(Base, TimestampMixin):\n    \"\"\"\n    Plugin definitions in the marketplace.\n    Represents a plugin that can be installed into workspaces.\n    Ref: Module 12 - Feature 2.4 - Plugin Architecture\n    \"\"\"\n    __tablename__ = \"plugins\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    # Plugin info\n    name = Column(String(255), nullable=False, unique=True)",
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginInstallation",
+        "kind": 6,
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "peekOfCode": "class PluginInstallation(Base, TimestampMixin):\n    \"\"\"\n    Plugin installations per workspace.\n    Tracks which plugins are installed in which workspaces.\n    Ref: Module 12 - Feature 2.4 - Plugin Architecture\n    \"\"\"\n    __tablename__ = \"plugin_installations\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    workspace_id = Column(String(36), ForeignKey(\"workspaces.id\", ondelete=\"CASCADE\"), nullable=False)\n    plugin_id = Column(String(36), ForeignKey(\"plugins.id\", ondelete=\"CASCADE\"), nullable=False)",
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ConsentGrant",
+        "kind": 6,
+        "importPath": "app.db.models.integration",
+        "description": "app.db.models.integration",
+        "peekOfCode": "class ConsentGrant(Base, TimestampMixin):\n    \"\"\"\n    User consent records for data sharing and privacy compliance.\n    Tracks explicit user consent for third-party data access.\n    Ref: Module 12 - Feature 3.2 - Data Security & Consent\n    \"\"\"\n    __tablename__ = \"consent_grants\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    user_id = Column(String(36), ForeignKey(\"users.id\", ondelete=\"CASCADE\"), nullable=False)\n    # Consent type",
+        "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiToken",
+        "kind": 6,
         "importPath": "app.db.models.integrations",
         "description": "app.db.models.integrations",
         "peekOfCode": "class ApiToken(Base, TimestampMixin):\n    \"\"\"\n    ApiToken Model - API authentication tokens for users/bots.\n    Manages API access tokens for programmatic access.\n    Ref: Entities/ApiToken.md\n    \"\"\"\n    __tablename__ = \"api_tokens\"\n    # Primary Key\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True),",
@@ -14513,6 +15851,60 @@
         "importPath": "app.db.models.integrations",
         "description": "app.db.models.integrations",
         "peekOfCode": "class IntegrationBinding(Base, TimestampMixin):\n    \"\"\"\n    IntegrationBinding Model - External service integrations (Slack, GitHub, etc.).\n    Manages connections to external services.\n    Ref: Entities/IntegrationBinding.md\n    \"\"\"\n    __tablename__ = \"integration_bindings\"\n    # Primary Key\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True),",
+        "detail": "app.db.models.integrations",
+        "documentation": {}
+    },
+    {
+        "label": "ApiUsageLog",
+        "kind": 6,
+        "importPath": "app.db.models.integrations",
+        "description": "app.db.models.integrations",
+        "peekOfCode": "class ApiUsageLog(Base, TimestampMixin):\n    \"\"\"\n    ApiUsageLog Model - Tracks API usage for rate limiting and analytics.\n    Records each API request for quota management and monitoring.\n    Ref: Module 12 - Feature 2.1 - Rate Limiting\n    \"\"\"\n    __tablename__ = \"api_usage_logs\"\n    # Primary Key\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True),",
+        "detail": "app.db.models.integrations",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthApp",
+        "kind": 6,
+        "importPath": "app.db.models.integrations",
+        "description": "app.db.models.integrations",
+        "peekOfCode": "class OAuthApp(Base, TimestampMixin):\n    \"\"\"\n    OAuthApp Model - OAuth provider applications.\n    Defines external services that can be integrated via OAuth (GitHub, Google, Slack, etc.).\n    Ref: Module 12 - Feature 3 - OAuth\n    \"\"\"\n    __tablename__ = \"oauth_apps\"\n    # Primary Key\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True),",
+        "detail": "app.db.models.integrations",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthConnection",
+        "kind": 6,
+        "importPath": "app.db.models.integrations",
+        "description": "app.db.models.integrations",
+        "peekOfCode": "class OAuthConnection(Base, TimestampMixin):\n    \"\"\"\n    OAuthConnection Model - User OAuth connections to external services.\n    Stores user's OAuth tokens and connection details.\n    Ref: Module 12 - Feature 3 - AC 2\n    \"\"\"\n    __tablename__ = \"oauth_connections\"\n    # Primary Key\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True),",
+        "detail": "app.db.models.integrations",
+        "documentation": {}
+    },
+    {
+        "label": "Plugin",
+        "kind": 6,
+        "importPath": "app.db.models.integrations",
+        "description": "app.db.models.integrations",
+        "peekOfCode": "class Plugin(Base, TimestampMixin):\n    \"\"\"\n    Plugin Model - Plugin marketplace entries.\n    Defines available plugins that can be installed in workspaces.\n    Ref: Module 12 - Feature 5 - Plugin Marketplace\n    \"\"\"\n    __tablename__ = \"plugins\"\n    # Primary Key\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True),",
+        "detail": "app.db.models.integrations",
+        "documentation": {}
+    },
+    {
+        "label": "PluginInstallation",
+        "kind": 6,
+        "importPath": "app.db.models.integrations",
+        "description": "app.db.models.integrations",
+        "peekOfCode": "class PluginInstallation(Base, TimestampMixin):\n    \"\"\"\n    PluginInstallation Model - Plugin installations per workspace.\n    Tracks which plugins are installed in which workspaces.\n    Ref: Module 12 - Feature 5 - AC 2\n    \"\"\"\n    __tablename__ = \"plugin_installations\"\n    # Primary Key\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True),",
+        "detail": "app.db.models.integrations",
+        "documentation": {}
+    },
+    {
+        "label": "ConsentGrant",
+        "kind": 6,
+        "importPath": "app.db.models.integrations",
+        "description": "app.db.models.integrations",
+        "peekOfCode": "class ConsentGrant(Base, TimestampMixin):\n    \"\"\"\n    ConsentGrant Model - User consent records for privacy compliance.\n    Tracks user consent for data usage, integrations, and third-party services.\n    Ref: Module 12 - Feature 6 - Governance & Compliance\n    \"\"\"\n    __tablename__ = \"consent_grants\"\n    # Primary Key\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True),",
         "detail": "app.db.models.integrations",
         "documentation": {}
     },
@@ -15813,6 +17205,60 @@
         "documentation": {}
     },
     {
+        "label": "RetryPolicyEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class RetryPolicyEnum(str, Enum):\n    \"\"\"\n    Retry policy for webhook deliveries.\n    Ref: Module 12 - Feature 2.2 - Webhook Reliability\n    \"\"\"\n    EXPONENTIAL = \"exponential\"      # Exponential backoff\n    LINEAR = \"linear\"                # Linear backoff\n    NO_RETRY = \"no_retry\"            # No retries\nclass WebhookDeliveryStatusEnum(str, Enum):\n    \"\"\"",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookDeliveryStatusEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class WebhookDeliveryStatusEnum(str, Enum):\n    \"\"\"\n    Status of webhook event delivery.\n    Ref: Module 12 - Feature 2.2 - AC 2 - Delivery Status\n    \"\"\"\n    PENDING = \"pending\"              # Awaiting delivery\n    DELIVERED = \"delivered\"          # Successfully delivered\n    FAILED = \"failed\"                # Delivery failed\n    RETRYING = \"retrying\"            # Retrying delivery\nclass OAuthStatusEnum(str, Enum):",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthStatusEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class OAuthStatusEnum(str, Enum):\n    \"\"\"\n    Status of OAuth connection.\n    Ref: Module 12 - Feature 3 - OAuth Integration\n    \"\"\"\n    ACTIVE = \"active\"                # Connection active\n    INACTIVE = \"inactive\"            # Connection inactive\n    EXPIRED = \"expired\"              # Token expired\n    REVOKED = \"revoked\"              # User revoked connection\nclass ConsentTypeEnum(str, Enum):",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ConsentTypeEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class ConsentTypeEnum(str, Enum):\n    \"\"\"\n    Types of user consent for privacy compliance.\n    Ref: Module 12 - Feature 6 - Governance & Compliance\n    \"\"\"\n    DATA_USAGE = \"data_usage\"        # Consent for data usage\n    THIRD_PARTY = \"third_party\"      # Third-party integration\n    ANALYTICS = \"analytics\"          # Analytics and tracking\n    MARKETING = \"marketing\"           # Marketing communications\nclass IntegrationStatusEnum(str, Enum):",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrationStatusEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class IntegrationStatusEnum(str, Enum):\n    \"\"\"\n    Status of external service integration.\n    Ref: Module 12 - Feature 4 - Integration Binding\n    \"\"\"\n    ACTIVE = \"active\"                # Integration is active\n    INACTIVE = \"inactive\"            # Integration is inactive\n    ERROR = \"error\"                  # Integration has errors\n    PENDING = \"pending\"              # Integration pending setup\nclass PluginStatusEnum(str, Enum):",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "PluginStatusEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class PluginStatusEnum(str, Enum):\n    \"\"\"\n    Status of plugin installation and operation.\n    Ref: Module 12 - Feature 5 - Plugin Marketplace\n    \"\"\"\n    INSTALLED = \"installed\"          # Plugin installed\n    ENABLED = \"enabled\"              # Plugin enabled\n    DISABLED = \"disabled\"            # Plugin disabled\n    ERROR = \"error\"                  # Plugin error state\n    UNINSTALLED = \"uninstalled\"      # Plugin uninstalled",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "TimestampMixin",
         "kind": 6,
         "importPath": "app.db.mixins",
@@ -16998,6 +18444,420 @@
         "description": "app.schemas.collaboration",
         "peekOfCode": "class UserCollaborationStats(BaseModel):\n    \"\"\"User's collaboration activity\"\"\"\n    user_id: str\n    comments_created: int\n    files_uploaded: int\n    notes_created: int\n    mentions_received: int\n    approvals_given: int\n    approvals_pending: int",
         "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenBase",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class ApiTokenBase(BaseModel):\n    \"\"\"Base schema for API token\"\"\"\n    name: str = Field(..., description=\"User-friendly name for the token\")\n    expires_at: Optional[datetime] = Field(None, description=\"Token expiration date (null = never expires)\")\nclass ApiTokenCreate(ApiTokenBase):\n    \"\"\"Schema for creating API token\"\"\"\n    scopes: List[str] = Field(default_factory=list, description=\"List of scope names (e.g., ['read:tasks', 'write:projects'])\")\nclass ApiTokenUpdate(BaseModel):\n    \"\"\"Schema for updating API token\"\"\"\n    name: Optional[str] = None",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenCreate",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class ApiTokenCreate(ApiTokenBase):\n    \"\"\"Schema for creating API token\"\"\"\n    scopes: List[str] = Field(default_factory=list, description=\"List of scope names (e.g., ['read:tasks', 'write:projects'])\")\nclass ApiTokenUpdate(BaseModel):\n    \"\"\"Schema for updating API token\"\"\"\n    name: Optional[str] = None\n    is_active: Optional[bool] = None\nclass ApiTokenRead(ApiTokenBase):\n    \"\"\"Schema for reading API token\"\"\"\n    id: str",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class ApiTokenUpdate(BaseModel):\n    \"\"\"Schema for updating API token\"\"\"\n    name: Optional[str] = None\n    is_active: Optional[bool] = None\nclass ApiTokenRead(ApiTokenBase):\n    \"\"\"Schema for reading API token\"\"\"\n    id: str\n    user_id: str\n    workspace_id: str\n    token_hash: str",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenRead",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class ApiTokenRead(ApiTokenBase):\n    \"\"\"Schema for reading API token\"\"\"\n    id: str\n    user_id: str\n    workspace_id: str\n    token_hash: str\n    is_active: bool\n    last_used_at: Optional[datetime]\n    revoked_at: Optional[datetime]\n    created_at: datetime",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenCreateResponse",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class ApiTokenCreateResponse(BaseModel):\n    \"\"\"Response with actual token (only shown once on creation)\"\"\"\n    id: str\n    name: str\n    token: str = Field(..., description=\"ACTUAL TOKEN (shown only once, save securely)\")\n    scopes: List[str]\n    expires_at: Optional[datetime]\n    created_at: datetime\nclass ApiTokenListResponse(BaseModel):\n    \"\"\"Paginated response for API tokens\"\"\"",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class ApiTokenListResponse(BaseModel):\n    \"\"\"Paginated response for API tokens\"\"\"\n    items: List[ApiTokenRead]\n    total: int\n    page: int\n    page_size: int\n# ============ API Scope Schemas ============\nclass ApiScopeBase(BaseModel):\n    \"\"\"Base schema for API scope\"\"\"\n    scope_name: str = Field(..., description=\"Scope identifier (e.g., 'read:tasks')\")",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiScopeBase",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class ApiScopeBase(BaseModel):\n    \"\"\"Base schema for API scope\"\"\"\n    scope_name: str = Field(..., description=\"Scope identifier (e.g., 'read:tasks')\")\n    description: Optional[str] = None\n    resource_type: str = Field(..., description=\"Resource type (project, task, comment, file, workspace)\")\n    permission_type: str = Field(..., description=\"Permission type (read, write, delete, admin)\")\nclass ApiScopeRead(ApiScopeBase):\n    \"\"\"Schema for reading API scope\"\"\"\n    id: str\n    is_default: bool",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiScopeRead",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class ApiScopeRead(ApiScopeBase):\n    \"\"\"Schema for reading API scope\"\"\"\n    id: str\n    is_default: bool\n    is_deprecated: bool\n    created_at: Optional[datetime]\n    class Config:\n        from_attributes = True\nclass ApiScopeListResponse(BaseModel):\n    \"\"\"Response for API scopes list\"\"\"",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiScopeListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class ApiScopeListResponse(BaseModel):\n    \"\"\"Response for API scopes list\"\"\"\n    items: List[ApiScopeRead]\n    total: int\n# ============ API Usage Log Schemas ============\nclass ApiUsageLogRead(BaseModel):\n    \"\"\"Schema for reading API usage log\"\"\"\n    id: str\n    workspace_id: str\n    api_token_id: Optional[str]",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiUsageLogRead",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class ApiUsageLogRead(BaseModel):\n    \"\"\"Schema for reading API usage log\"\"\"\n    id: str\n    workspace_id: str\n    api_token_id: Optional[str]\n    method: str\n    endpoint: str\n    status_code: int\n    response_time_ms: Optional[int]\n    ip_address: Optional[str]",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiUsageLogListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class ApiUsageLogListResponse(BaseModel):\n    \"\"\"Paginated response for API usage logs\"\"\"\n    items: List[ApiUsageLogRead]\n    total: int\n    page: int\n    page_size: int\n# ============ Webhook Endpoint Schemas ============\nclass WebhookEndpointBase(BaseModel):\n    \"\"\"Base schema for webhook endpoint\"\"\"\n    name: str = Field(..., description=\"Friendly name for the webhook\")",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEndpointBase",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class WebhookEndpointBase(BaseModel):\n    \"\"\"Base schema for webhook endpoint\"\"\"\n    name: str = Field(..., description=\"Friendly name for the webhook\")\n    payload_url: HttpUrl = Field(..., description=\"Target URL to send webhooks\")\n    max_retries: int = Field(default=5, description=\"Max retry attempts\")\n    timeout_seconds: int = Field(default=30, description=\"Request timeout in seconds\")\nclass WebhookEndpointCreate(WebhookEndpointBase):\n    \"\"\"Schema for creating webhook endpoint\"\"\"\n    event_types: List[str] = Field(default_factory=list, description=\"Events to subscribe to\")\nclass WebhookEndpointUpdate(BaseModel):",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEndpointCreate",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class WebhookEndpointCreate(WebhookEndpointBase):\n    \"\"\"Schema for creating webhook endpoint\"\"\"\n    event_types: List[str] = Field(default_factory=list, description=\"Events to subscribe to\")\nclass WebhookEndpointUpdate(BaseModel):\n    \"\"\"Schema for updating webhook endpoint\"\"\"\n    name: Optional[str] = None\n    payload_url: Optional[HttpUrl] = None\n    is_active: Optional[bool] = None\n    max_retries: Optional[int] = None\n    timeout_seconds: Optional[int] = None",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEndpointUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class WebhookEndpointUpdate(BaseModel):\n    \"\"\"Schema for updating webhook endpoint\"\"\"\n    name: Optional[str] = None\n    payload_url: Optional[HttpUrl] = None\n    is_active: Optional[bool] = None\n    max_retries: Optional[int] = None\n    timeout_seconds: Optional[int] = None\nclass WebhookEndpointRead(WebhookEndpointBase):\n    \"\"\"Schema for reading webhook endpoint\"\"\"\n    id: str",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEndpointRead",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class WebhookEndpointRead(WebhookEndpointBase):\n    \"\"\"Schema for reading webhook endpoint\"\"\"\n    id: str\n    workspace_id: str\n    is_active: bool\n    last_delivery_at: Optional[datetime]\n    last_delivery_status: Optional[str]\n    created_at: datetime\n    updated_at: datetime\n    class Config:",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEndpointListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class WebhookEndpointListResponse(BaseModel):\n    \"\"\"Paginated response for webhook endpoints\"\"\"\n    items: List[WebhookEndpointRead]\n    total: int\n    page: int\n    page_size: int\n# ============ Webhook Event Schemas ============\nclass WebhookEventRead(BaseModel):\n    \"\"\"Schema for reading webhook event subscription\"\"\"\n    id: str",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookEventRead",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class WebhookEventRead(BaseModel):\n    \"\"\"Schema for reading webhook event subscription\"\"\"\n    id: str\n    webhook_endpoint_id: str\n    event_type: str\n    is_subscribed: bool\n    created_at: datetime\n    class Config:\n        from_attributes = True\n# ============ Webhook Delivery Schemas ============",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookDeliveryRead",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class WebhookDeliveryRead(BaseModel):\n    \"\"\"Schema for reading webhook delivery history\"\"\"\n    id: str\n    webhook_endpoint_id: str\n    event_type: str\n    attempt_number: int\n    status: str\n    status_code: Optional[int]\n    response_time_ms: Optional[int]\n    last_error: Optional[str]",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookDeliveryListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class WebhookDeliveryListResponse(BaseModel):\n    \"\"\"Paginated response for webhook deliveries\"\"\"\n    items: List[WebhookDeliveryRead]\n    total: int\n    page: int\n    page_size: int\n# ============ OAuth App Schemas ============\nclass OAuthAppRead(BaseModel):\n    \"\"\"Schema for reading OAuth app\"\"\"\n    id: str",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthAppRead",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class OAuthAppRead(BaseModel):\n    \"\"\"Schema for reading OAuth app\"\"\"\n    id: str\n    name: str\n    display_name: str\n    description: Optional[str]\n    version: str\n    icon_url: Optional[str]\n    documentation_url: Optional[str]\n    is_enabled: bool",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthAppListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class OAuthAppListResponse(BaseModel):\n    \"\"\"Response for OAuth apps list\"\"\"\n    items: List[OAuthAppRead]\n    total: int\n    page: int\n    page_size: int\n# ============ OAuth Connection Schemas ============\nclass OAuthConnectionBase(BaseModel):\n    \"\"\"Base schema for OAuth connection\"\"\"\n    is_sync_enabled: bool = Field(default=True, description=\"Enable bi-directional sync\")",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthConnectionBase",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class OAuthConnectionBase(BaseModel):\n    \"\"\"Base schema for OAuth connection\"\"\"\n    is_sync_enabled: bool = Field(default=True, description=\"Enable bi-directional sync\")\nclass OAuthConnectionCreate(OAuthConnectionBase):\n    \"\"\"Schema for creating OAuth connection\"\"\"\n    oauth_app_id: str = Field(..., description=\"OAuth app to connect\")\n    authorization_code: str = Field(..., description=\"Code from OAuth provider\")\nclass OAuthConnectionUpdate(BaseModel):\n    \"\"\"Schema for updating OAuth connection\"\"\"\n    is_active: Optional[bool] = None",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthConnectionCreate",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class OAuthConnectionCreate(OAuthConnectionBase):\n    \"\"\"Schema for creating OAuth connection\"\"\"\n    oauth_app_id: str = Field(..., description=\"OAuth app to connect\")\n    authorization_code: str = Field(..., description=\"Code from OAuth provider\")\nclass OAuthConnectionUpdate(BaseModel):\n    \"\"\"Schema for updating OAuth connection\"\"\"\n    is_active: Optional[bool] = None\n    is_sync_enabled: Optional[bool] = None\nclass OAuthConnectionRead(OAuthConnectionBase):\n    \"\"\"Schema for reading OAuth connection\"\"\"",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthConnectionUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class OAuthConnectionUpdate(BaseModel):\n    \"\"\"Schema for updating OAuth connection\"\"\"\n    is_active: Optional[bool] = None\n    is_sync_enabled: Optional[bool] = None\nclass OAuthConnectionRead(OAuthConnectionBase):\n    \"\"\"Schema for reading OAuth connection\"\"\"\n    id: str\n    user_id: str\n    oauth_app_id: str\n    workspace_id: str",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthConnectionRead",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class OAuthConnectionRead(OAuthConnectionBase):\n    \"\"\"Schema for reading OAuth connection\"\"\"\n    id: str\n    user_id: str\n    oauth_app_id: str\n    workspace_id: str\n    is_active: bool\n    last_sync_at: Optional[datetime]\n    last_sync_status: Optional[str]\n    external_user_email: Optional[str]",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthConnectionListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class OAuthConnectionListResponse(BaseModel):\n    \"\"\"Paginated response for OAuth connections\"\"\"\n    items: List[OAuthConnectionRead]\n    total: int\n    page: int\n    page_size: int\n# ============ Integration Binding Schemas ============\nclass IntegrationBindingBase(BaseModel):\n    \"\"\"Base schema for integration binding\"\"\"\n    local_resource_type: str = Field(..., description=\"PronaFlow resource type (task, project)\")",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrationBindingBase",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class IntegrationBindingBase(BaseModel):\n    \"\"\"Base schema for integration binding\"\"\"\n    local_resource_type: str = Field(..., description=\"PronaFlow resource type (task, project)\")\n    local_resource_id: str = Field(..., description=\"PronaFlow resource ID\")\n    external_resource_type: str = Field(..., description=\"External resource type (event, issue, calendar item)\")\n    external_resource_id: str = Field(..., description=\"External resource ID\")\n    field_mappings: Dict[str, str] = Field(..., description=\"Field mapping {local_field: external_field}\")\n    sync_direction: str = Field(default=\"bi\", description=\"uni or bi\")\nclass IntegrationBindingCreate(IntegrationBindingBase):\n    \"\"\"Schema for creating integration binding\"\"\"",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrationBindingCreate",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class IntegrationBindingCreate(IntegrationBindingBase):\n    \"\"\"Schema for creating integration binding\"\"\"\n    oauth_connection_id: str = Field(..., description=\"OAuth connection to use\")\nclass IntegrationBindingRead(IntegrationBindingBase):\n    \"\"\"Schema for reading integration binding\"\"\"\n    id: str\n    oauth_connection_id: str\n    last_synced_at: Optional[datetime]\n    created_at: datetime\n    updated_at: datetime",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrationBindingRead",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class IntegrationBindingRead(IntegrationBindingBase):\n    \"\"\"Schema for reading integration binding\"\"\"\n    id: str\n    oauth_connection_id: str\n    last_synced_at: Optional[datetime]\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\nclass IntegrationBindingListResponse(BaseModel):",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrationBindingListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class IntegrationBindingListResponse(BaseModel):\n    \"\"\"Paginated response for integration bindings\"\"\"\n    items: List[IntegrationBindingRead]\n    total: int\n    page: int\n    page_size: int\n# ============ Plugin Schemas ============\nclass PluginBase(BaseModel):\n    \"\"\"Base schema for plugin\"\"\"\n    name: str = Field(..., description=\"Unique plugin name\")",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginBase",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class PluginBase(BaseModel):\n    \"\"\"Base schema for plugin\"\"\"\n    name: str = Field(..., description=\"Unique plugin name\")\n    display_name: str = Field(..., description=\"User-friendly name\")\n    description: str = Field(..., description=\"Plugin description\")\n    version: str = Field(..., description=\"Semantic version (e.g., 1.0.0)\")\nclass PluginCreate(PluginBase):\n    \"\"\"Schema for creating plugin\"\"\"\n    manifest: Dict[str, Any] = Field(..., description=\"manifest.json content\")\n    bundle_url: str = Field(..., description=\"URL to plugin JS bundle\")",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginCreate",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class PluginCreate(PluginBase):\n    \"\"\"Schema for creating plugin\"\"\"\n    manifest: Dict[str, Any] = Field(..., description=\"manifest.json content\")\n    bundle_url: str = Field(..., description=\"URL to plugin JS bundle\")\n    required_permissions: List[str] = Field(default_factory=list, description=\"Required permissions\")\n    required_scopes: List[str] = Field(default_factory=list, description=\"Required API scopes\")\n    icon_url: Optional[str] = None\n    documentation_url: Optional[str] = None\n    github_url: Optional[str] = None\nclass PluginUpdate(BaseModel):",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class PluginUpdate(BaseModel):\n    \"\"\"Schema for updating plugin\"\"\"\n    display_name: Optional[str] = None\n    description: Optional[str] = None\n    version: Optional[str] = None\n    is_public: Optional[bool] = None\n    is_deprecated: Optional[bool] = None\nclass PluginRead(PluginBase):\n    \"\"\"Schema for reading plugin\"\"\"\n    id: str",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginRead",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class PluginRead(PluginBase):\n    \"\"\"Schema for reading plugin\"\"\"\n    id: str\n    is_public: bool\n    is_verified: bool\n    is_deprecated: bool\n    icon_url: Optional[str]\n    documentation_url: Optional[str]\n    rating_avg: Optional[int]\n    install_count: int",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class PluginListResponse(BaseModel):\n    \"\"\"Response for plugins list\"\"\"\n    items: List[PluginRead]\n    total: int\n    page: int\n    page_size: int\n# ============ Plugin Installation Schemas ============\nclass PluginInstallationBase(BaseModel):\n    \"\"\"Base schema for plugin installation\"\"\"\n    plugin_id: str = Field(..., description=\"Plugin to install\")",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginInstallationBase",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class PluginInstallationBase(BaseModel):\n    \"\"\"Base schema for plugin installation\"\"\"\n    plugin_id: str = Field(..., description=\"Plugin to install\")\nclass PluginInstallationCreate(PluginInstallationBase):\n    \"\"\"Schema for creating plugin installation\"\"\"\n    configuration: Optional[Dict[str, Any]] = None\nclass PluginInstallationUpdate(BaseModel):\n    \"\"\"Schema for updating plugin installation\"\"\"\n    is_enabled: Optional[bool] = None\n    configuration: Optional[Dict[str, Any]] = None",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginInstallationCreate",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class PluginInstallationCreate(PluginInstallationBase):\n    \"\"\"Schema for creating plugin installation\"\"\"\n    configuration: Optional[Dict[str, Any]] = None\nclass PluginInstallationUpdate(BaseModel):\n    \"\"\"Schema for updating plugin installation\"\"\"\n    is_enabled: Optional[bool] = None\n    configuration: Optional[Dict[str, Any]] = None\nclass PluginInstallationRead(PluginInstallationBase):\n    \"\"\"Schema for reading plugin installation\"\"\"\n    id: str",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginInstallationUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class PluginInstallationUpdate(BaseModel):\n    \"\"\"Schema for updating plugin installation\"\"\"\n    is_enabled: Optional[bool] = None\n    configuration: Optional[Dict[str, Any]] = None\nclass PluginInstallationRead(PluginInstallationBase):\n    \"\"\"Schema for reading plugin installation\"\"\"\n    id: str\n    workspace_id: str\n    is_enabled: bool\n    configuration: Optional[Dict[str, Any]]",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginInstallationRead",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class PluginInstallationRead(PluginInstallationBase):\n    \"\"\"Schema for reading plugin installation\"\"\"\n    id: str\n    workspace_id: str\n    is_enabled: bool\n    configuration: Optional[Dict[str, Any]]\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginInstallationListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class PluginInstallationListResponse(BaseModel):\n    \"\"\"Paginated response for plugin installations\"\"\"\n    items: List[PluginInstallationRead]\n    total: int\n    page: int\n    page_size: int\n# ============ Consent Grant Schemas ============\nclass ConsentGrantBase(BaseModel):\n    \"\"\"Base schema for consent grant\"\"\"\n    consent_type: str = Field(..., description=\"oauth_connection, plugin_installation, api_token\")",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ConsentGrantBase",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class ConsentGrantBase(BaseModel):\n    \"\"\"Base schema for consent grant\"\"\"\n    consent_type: str = Field(..., description=\"oauth_connection, plugin_installation, api_token\")\n    entity_type: str = Field(..., description=\"oauth_app, plugin, integration\")\n    entity_id: str = Field(..., description=\"ID of the entity\")\n    requested_permissions: List[str] = Field(..., description=\"Requested permissions\")\n    granted_permissions: List[str] = Field(..., description=\"Actually granted permissions\")\nclass ConsentGrantCreate(ConsentGrantBase):\n    \"\"\"Schema for creating consent grant\"\"\"\n    pass",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ConsentGrantCreate",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class ConsentGrantCreate(ConsentGrantBase):\n    \"\"\"Schema for creating consent grant\"\"\"\n    pass\nclass ConsentGrantRead(ConsentGrantBase):\n    \"\"\"Schema for reading consent grant\"\"\"\n    id: str\n    user_id: str\n    is_active: bool\n    revoked_at: Optional[datetime]\n    granted_at: datetime",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ConsentGrantRead",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class ConsentGrantRead(ConsentGrantBase):\n    \"\"\"Schema for reading consent grant\"\"\"\n    id: str\n    user_id: str\n    is_active: bool\n    revoked_at: Optional[datetime]\n    granted_at: datetime\n    created_at: datetime\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ConsentGrantListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class ConsentGrantListResponse(BaseModel):\n    \"\"\"Paginated response for consent grants\"\"\"\n    items: List[ConsentGrantRead]\n    total: int\n    page: int\n    page_size: int\n# ============ Composite Response Schemas ============\nclass IntegrationStatusResponse(BaseModel):\n    \"\"\"Integration status overview\"\"\"\n    api_tokens_count: int",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrationStatusResponse",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class IntegrationStatusResponse(BaseModel):\n    \"\"\"Integration status overview\"\"\"\n    api_tokens_count: int\n    active_webhooks_count: int\n    oauth_connections_count: int\n    installed_plugins_count: int\n    api_requests_today: int\n    rate_limit_remaining: int\n    rate_limit_reset_at: datetime\nclass HealthCheckResponse(BaseModel):",
+        "detail": "app.schemas.integration",
+        "documentation": {}
+    },
+    {
+        "label": "HealthCheckResponse",
+        "kind": 6,
+        "importPath": "app.schemas.integration",
+        "description": "app.schemas.integration",
+        "peekOfCode": "class HealthCheckResponse(BaseModel):\n    \"\"\"Health check for integrations\"\"\"\n    api_available: bool\n    webhooks_processing: bool\n    oauth_status: str  # healthy, degraded, down\n    plugins_loaded: int\n    last_check_at: datetime",
+        "detail": "app.schemas.integration",
         "documentation": {}
     },
     {
@@ -19086,6 +20946,51 @@
         "description": "app.services.email",
         "peekOfCode": "logger = logging.getLogger(__name__)\nclass EmailService:\n    \"\"\"\n    Service for sending emails.\n    Currently a stub implementation - should be integrated with an email provider\n    (SendGrid, Mailgun, AWS SES, etc.)\n    \"\"\"\n    def __init__(\n        self,\n        smtp_host: Optional[str] = None,",
         "detail": "app.services.email",
+        "documentation": {}
+    },
+    {
+        "label": "ApiTokenService",
+        "kind": 6,
+        "importPath": "app.services.integration",
+        "description": "app.services.integration",
+        "peekOfCode": "class ApiTokenService:\n    \"\"\"\n    Service for API token management.\n    Handles token creation, validation, revocation, and usage tracking.\n    \"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def create_api_token(\n        self,\n        user_id: str,",
+        "detail": "app.services.integration",
+        "documentation": {}
+    },
+    {
+        "label": "WebhookService",
+        "kind": 6,
+        "importPath": "app.services.integration",
+        "description": "app.services.integration",
+        "peekOfCode": "class WebhookService:\n    \"\"\"\n    Service for webhook management.\n    Handles webhook endpoint configuration, event subscriptions, and delivery.\n    \"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def create_webhook_endpoint(\n        self,\n        workspace_id: str,",
+        "detail": "app.services.integration",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthService",
+        "kind": 6,
+        "importPath": "app.services.integration",
+        "description": "app.services.integration",
+        "peekOfCode": "class OAuthService:\n    \"\"\"\n    Service for OAuth connections and native connectors.\n    Handles OAuth flow, token storage, and bi-directional sync.\n    \"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def create_oauth_connection(\n        self,\n        user_id: str,",
+        "detail": "app.services.integration",
+        "documentation": {}
+    },
+    {
+        "label": "PluginService",
+        "kind": 6,
+        "importPath": "app.services.integration",
+        "description": "app.services.integration",
+        "peekOfCode": "class PluginService:\n    \"\"\"\n    Service for plugin management.\n    Handles plugin marketplace and workspace installations.\n    \"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def create_plugin(self, plugin_data: PluginCreate):\n        \"\"\"\n        Create new plugin.",
+        "detail": "app.services.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ConsentService",
+        "kind": 6,
+        "importPath": "app.services.integration",
+        "description": "app.services.integration",
+        "peekOfCode": "class ConsentService:\n    \"\"\"\n    Service for consent management and privacy compliance.\n    Tracks user consent for third-party data access.\n    \"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def grant_consent(\n        self,\n        user_id: str,",
+        "detail": "app.services.integration",
         "documentation": {}
     },
     {
