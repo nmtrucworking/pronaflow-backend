@@ -69,6 +69,14 @@ class Settings(BaseSettings):
     NOTIFICATION_RETRY_BACKOFF: List[int] = [1, 5, 25]  # Seconds
     NOTIFICATION_TTL_MINUTES: int = 30
     
+    # Archive & Compliance Settings (Module 8)
+    ARCHIVE_INACTIVE_DAYS: int = 180  # Days before auto-archiving
+    TRASH_BIN_RETENTION_DAYS: int = 30  # Days to keep deleted items
+    SYSTEM_LOGS_RETENTION_DAYS: int = 90  # Days to keep audit logs
+    EXPORT_LINK_EXPIRY_HOURS: int = 24  # Hours until export link expires
+    MAX_EXPORT_FILE_SIZE_MB: int = 500  # Max export file size
+    BACKGROUND_JOB_INTERVAL_HOURS: int = 24  # Scheduled job interval
+    
     class Config:
         env_file = ".env"
         case_sensitive = True

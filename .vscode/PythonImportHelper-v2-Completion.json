@@ -48,6 +48,14 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -90,6 +98,86 @@
     },
     {
         "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "JSON",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Index",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -1129,6 +1217,30 @@
         "documentation": {}
     },
     {
+        "label": "desc",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "select",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -1294,6 +1406,14 @@
         "description": "sqlalchemy",
         "isExtraImport": true,
         "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
         "documentation": {}
     },
     {
@@ -1699,6 +1819,14 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -2282,6 +2410,38 @@
         "documentation": {}
     },
     {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -2427,6 +2587,38 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -2771,7 +2963,7 @@
         "documentation": {}
     },
     {
-        "label": "UUID",
+        "label": "uuid4",
         "importPath": "uuid",
         "description": "uuid",
         "isExtraImport": true,
@@ -2812,6 +3004,22 @@
     },
     {
         "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
         "importPath": "uuid",
         "description": "uuid",
         "isExtraImport": true,
@@ -2860,6 +3068,22 @@
     },
     {
         "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -3043,6 +3267,14 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "date",
         "importPath": "datetime",
         "description": "datetime",
@@ -3076,6 +3308,22 @@
     },
     {
         "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -3252,6 +3500,38 @@
     },
     {
         "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -3811,6 +4091,22 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "Mapped",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -4267,6 +4563,22 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
         "label": "get_db",
         "importPath": "app.db.session",
         "description": "app.db.session",
@@ -4336,6 +4648,14 @@
         "description": "app.db.session",
         "isExtraImport": true,
         "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
         "documentation": {}
     },
     {
@@ -4992,6 +5312,222 @@
         "description": "app.db.repositories.workspace_repo",
         "isExtraImport": true,
         "detail": "app.db.repositories.workspace_repo",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.user",
+        "description": "app.db.models.user",
+        "isExtraImport": true,
+        "detail": "app.db.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivePolicyCreate",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivePolicyUpdate",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivePolicyRead",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DeletedItemListResponse",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "RestoreDeletedItemRequest",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataExportRequestCreate",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataExportListResponse",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataExportResponse",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLogListResponse",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLogQueryFilter",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchiveActionResponse",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "BulkArchiveResponse",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "Statistics",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivePolicyCreate",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivePolicyUpdate",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DeletedItemRead",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataExportRequestCreate",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataExportRequestRead",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLogRead",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLogQueryFilter",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "BulkArchiveResponse",
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "isExtraImport": true,
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchiveService",
+        "importPath": "app.services.archive",
+        "description": "app.services.archive",
+        "isExtraImport": true,
+        "detail": "app.services.archive",
+        "documentation": {}
+    },
+    {
+        "label": "TrashBinService",
+        "importPath": "app.services.archive",
+        "description": "app.services.archive",
+        "isExtraImport": true,
+        "detail": "app.services.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataExportService",
+        "importPath": "app.services.archive",
+        "description": "app.services.archive",
+        "isExtraImport": true,
+        "detail": "app.services.archive",
+        "documentation": {}
+    },
+    {
+        "label": "RetentionService",
+        "importPath": "app.services.archive",
+        "description": "app.services.archive",
+        "isExtraImport": true,
+        "detail": "app.services.archive",
+        "documentation": {}
+    },
+    {
+        "label": "AuditService",
+        "importPath": "app.services.archive",
+        "description": "app.services.archive",
+        "isExtraImport": true,
+        "detail": "app.services.archive",
         "documentation": {}
     },
     {
@@ -7685,6 +8221,14 @@
         "documentation": {}
     },
     {
+        "label": "archive",
+        "importPath": "app.api.v1.endpoints",
+        "description": "app.api.v1.endpoints",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints",
+        "documentation": {}
+    },
+    {
         "label": "BaseSettings",
         "importPath": "pydantic_settings",
         "description": "pydantic_settings",
@@ -7762,155 +8306,19 @@
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "Base",
+        "importPath": "app.db.base_class",
+        "description": "app.db.base_class",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "detail": "app.db.base_class",
         "documentation": {}
     },
     {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
+        "label": "TimestampMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
         "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "JSONB",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "sqlalchemy.dialects.postgresql",
-        "description": "sqlalchemy.dialects.postgresql",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.dialects.postgresql",
+        "detail": "app.db.mixins",
         "documentation": {}
     },
     {
@@ -8039,6 +8447,158 @@
         "description": "app.db.mixins",
         "isExtraImport": true,
         "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
         "documentation": {}
     },
     {
@@ -8354,6 +8914,22 @@
         "documentation": {}
     },
     {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "EmailStr",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -8546,6 +9122,88 @@
         "documentation": {}
     },
     {
+        "label": "zipfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "zipfile",
+        "description": "zipfile",
+        "detail": "zipfile",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivePolicy",
+        "importPath": "app.db.models.archive",
+        "description": "app.db.models.archive",
+        "isExtraImport": true,
+        "detail": "app.db.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DeletedItem",
+        "importPath": "app.db.models.archive",
+        "description": "app.db.models.archive",
+        "isExtraImport": true,
+        "detail": "app.db.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivedDataSnapshot",
+        "importPath": "app.db.models.archive",
+        "description": "app.db.models.archive",
+        "isExtraImport": true,
+        "detail": "app.db.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataExportRequest",
+        "importPath": "app.db.models.archive",
+        "description": "app.db.models.archive",
+        "isExtraImport": true,
+        "detail": "app.db.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataRetentionLog",
+        "importPath": "app.db.models.archive",
+        "description": "app.db.models.archive",
+        "isExtraImport": true,
+        "detail": "app.db.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLog",
+        "importPath": "app.db.models.archive",
+        "description": "app.db.models.archive",
+        "isExtraImport": true,
+        "detail": "app.db.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.db.models.project",
+        "description": "app.db.models.project",
+        "isExtraImport": true,
+        "detail": "app.db.models.project",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.db.models.task",
+        "description": "app.db.models.task",
+        "isExtraImport": true,
+        "detail": "app.db.models.task",
+        "documentation": {}
+    },
+    {
         "label": "hashlib",
         "kind": 6,
         "isExtraImport": true,
@@ -8570,15 +9228,6 @@
         "importPath": "qrcode",
         "description": "qrcode",
         "detail": "qrcode",
-        "documentation": {}
-    },
-    {
-        "label": "io",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "io",
-        "description": "io",
-        "detail": "io",
         "documentation": {}
     },
     {
@@ -9281,6 +9930,60 @@
         "documentation": {}
     },
     {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.module8_archiving",
+        "description": "app.alembic.versions.module8_archiving",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Create Module 8 tables for archiving and compliance.\"\"\"\n    # Create archive_policies table\n    op.create_table(\n        'archive_policies',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('workspace_id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('inactive_days', sa.Integer, nullable=False, server_default='180'),\n        sa.Column('is_enabled', sa.Boolean, nullable=False, server_default=sa.true()),\n        sa.Column('trash_retention_days', sa.Integer, nullable=False, server_default='30'),",
+        "detail": "app.alembic.versions.module8_archiving",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.module8_archiving",
+        "description": "app.alembic.versions.module8_archiving",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Revert Module 8 tables.\"\"\"\n    # Drop indexes and tables in reverse order\n    op.drop_index('ix_audit_logs_logged_at', table_name='audit_logs')\n    op.drop_index('ix_audit_logs_resource_type', table_name='audit_logs')\n    op.drop_index('ix_audit_logs_action', table_name='audit_logs')\n    op.drop_index('ix_audit_logs_user_id', table_name='audit_logs')\n    op.drop_index('ix_audit_logs_workspace_id', table_name='audit_logs')\n    op.drop_table('audit_logs')\n    op.drop_index('ix_data_retention_logs_executed_at', table_name='data_retention_logs')",
+        "detail": "app.alembic.versions.module8_archiving",
+        "documentation": {}
+    },
+    {
+        "label": "revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module8_archiving",
+        "description": "app.alembic.versions.module8_archiving",
+        "peekOfCode": "revision = 'module8_archiving'\ndown_revision = 'module7_notifications'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    \"\"\"Create Module 8 tables for archiving and compliance.\"\"\"\n    # Create archive_policies table\n    op.create_table(\n        'archive_policies',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),",
+        "detail": "app.alembic.versions.module8_archiving",
+        "documentation": {}
+    },
+    {
+        "label": "down_revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module8_archiving",
+        "description": "app.alembic.versions.module8_archiving",
+        "peekOfCode": "down_revision = 'module7_notifications'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    \"\"\"Create Module 8 tables for archiving and compliance.\"\"\"\n    # Create archive_policies table\n    op.create_table(\n        'archive_policies',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('workspace_id', postgresql.UUID(as_uuid=True), nullable=False),",
+        "detail": "app.alembic.versions.module8_archiving",
+        "documentation": {}
+    },
+    {
+        "label": "branch_labels",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module8_archiving",
+        "description": "app.alembic.versions.module8_archiving",
+        "peekOfCode": "branch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    \"\"\"Create Module 8 tables for archiving and compliance.\"\"\"\n    # Create archive_policies table\n    op.create_table(\n        'archive_policies',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('workspace_id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('inactive_days', sa.Integer, nullable=False, server_default='180'),",
+        "detail": "app.alembic.versions.module8_archiving",
+        "documentation": {}
+    },
+    {
+        "label": "depends_on",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module8_archiving",
+        "description": "app.alembic.versions.module8_archiving",
+        "peekOfCode": "depends_on = None\ndef upgrade() -> None:\n    \"\"\"Create Module 8 tables for archiving and compliance.\"\"\"\n    # Create archive_policies table\n    op.create_table(\n        'archive_policies',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('workspace_id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('inactive_days', sa.Integer, nullable=False, server_default='180'),\n        sa.Column('is_enabled', sa.Boolean, nullable=False, server_default=sa.true()),",
+        "detail": "app.alembic.versions.module8_archiving",
+        "documentation": {}
+    },
+    {
         "label": "run_migrations_offline",
         "kind": 2,
         "importPath": "app.alembic.env",
@@ -9377,6 +10080,132 @@
         "description": "app.api.v1.endpoints.admin",
         "peekOfCode": "router = APIRouter(prefix=\"/v1/admin\", tags=[\"admin\"])\ndef get_admin_user(current_user: User = Depends(get_current_user)) -> User:\n    \"\"\"\n    Dependency to verify user is system admin.\n    In production, check against a proper admin role or permission.\n    \"\"\"\n    # TODO: Implement proper admin role checking\n    # For now, check if user has admin flag or specific role\n    if not getattr(current_user, 'is_admin', False):\n        raise HTTPException(",
         "detail": "app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "get_archive_policy",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.archive",
+        "description": "app.api.v1.endpoints.archive",
+        "peekOfCode": "def get_archive_policy(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Get archive policy for a workspace.\n    Ref: Module 8 - Feature 2.1\n    \"\"\"\n    archive_service = ArchiveService(db)",
+        "detail": "app.api.v1.endpoints.archive",
+        "documentation": {}
+    },
+    {
+        "label": "update_archive_policy",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.archive",
+        "description": "app.api.v1.endpoints.archive",
+        "peekOfCode": "def update_archive_policy(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    policy_update: ArchivePolicyUpdate = None,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Update archive policy for a workspace.\n    Requires ADMIN role.\n    Ref: Module 8 - Feature 2.1",
+        "detail": "app.api.v1.endpoints.archive",
+        "documentation": {}
+    },
+    {
+        "label": "run_auto_archive",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.archive",
+        "description": "app.api.v1.endpoints.archive",
+        "peekOfCode": "def run_auto_archive(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Manually trigger auto-archive job.\n    Normally runs on schedule, but can be triggered manually.\n    Ref: Module 8 - Feature 2.1\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.archive",
+        "documentation": {}
+    },
+    {
+        "label": "get_trash_bin",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.archive",
+        "description": "app.api.v1.endpoints.archive",
+        "peekOfCode": "def get_trash_bin(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    entity_type: Optional[str] = Query(None, description=\"Filter by entity type\"),\n    page: int = Query(1, ge=1),\n    page_size: int = Query(20, ge=1, le=100),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Get deleted items in trash bin for a workspace.",
+        "detail": "app.api.v1.endpoints.archive",
+        "documentation": {}
+    },
+    {
+        "label": "restore_deleted_item",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.archive",
+        "description": "app.api.v1.endpoints.archive",
+        "peekOfCode": "def restore_deleted_item(\n    item_id: str,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Restore a deleted item from trash bin.\n    Ref: Module 8 - Feature 2.2 - AC 3 - Restore Capability\n    \"\"\"\n    trash_service = TrashBinService(db)",
+        "detail": "app.api.v1.endpoints.archive",
+        "documentation": {}
+    },
+    {
+        "label": "purge_trash_bin",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.archive",
+        "description": "app.api.v1.endpoints.archive",
+        "peekOfCode": "def purge_trash_bin(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Manually trigger purge of expired items in trash bin.\n    Ref: Module 8 - Feature 2.2 - AC 2 - Auto-Purge Policy\n    \"\"\"\n    trash_service = TrashBinService(db)",
+        "detail": "app.api.v1.endpoints.archive",
+        "documentation": {}
+    },
+    {
+        "label": "create_data_export",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.archive",
+        "description": "app.api.v1.endpoints.archive",
+        "peekOfCode": "def create_data_export(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    export_request: DataExportRequestCreate = None,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Request asynchronous data export for GDPR compliance.\n    Returns download token and expiration time.\n    Ref: Module 8 - Feature 2.3 - AC 1 - Async Export Processing",
+        "detail": "app.api.v1.endpoints.archive",
+        "documentation": {}
+    },
+    {
+        "label": "list_data_exports",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.archive",
+        "description": "app.api.v1.endpoints.archive",
+        "peekOfCode": "def list_data_exports(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    page: int = Query(1, ge=1),\n    page_size: int = Query(20, ge=1, le=100),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    List all export requests for a workspace.\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.archive",
+        "documentation": {}
+    },
+    {
+        "label": "get_export_status",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.archive",
+        "description": "app.api.v1.endpoints.archive",
+        "peekOfCode": "def get_export_status(\n    export_id: str,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Get status of a data export request.\n    \"\"\"\n    # TODO: Implement status retrieval\n    return {",
+        "detail": "app.api.v1.endpoints.archive",
+        "documentation": {}
+    },
+    {
+        "label": "download_export",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.archive",
+        "description": "app.api.v1.endpoints.archive",
+        "peekOfCode": "def download_export(\n    export_id: str,\n    token: str = Query(..., description=\"Download token\"),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Download exported data file.\n    Requires valid download token that hasn't expired.\n    Ref: Module 8 - Feature 2.3 - AC 1 - Async Export Processing",
+        "detail": "app.api.v1.endpoints.archive",
+        "documentation": {}
+    },
+    {
+        "label": "get_audit_logs",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.archive",
+        "description": "app.api.v1.endpoints.archive",
+        "peekOfCode": "def get_audit_logs(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    action: Optional[str] = Query(None),\n    resource_type: Optional[str] = Query(None),\n    user_id: Optional[str] = Query(None),\n    page: int = Query(1, ge=1),\n    page_size: int = Query(20, ge=1, le=100),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):",
+        "detail": "app.api.v1.endpoints.archive",
+        "documentation": {}
+    },
+    {
+        "label": "get_archive_statistics",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.archive",
+        "description": "app.api.v1.endpoints.archive",
+        "peekOfCode": "def get_archive_statistics(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Get archiving and compliance statistics for a workspace.\n    \"\"\"\n    # TODO: Implement statistics calculation\n    return Statistics(",
+        "detail": "app.api.v1.endpoints.archive",
+        "documentation": {}
+    },
+    {
+        "label": "anonymize_user_data",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.archive",
+        "description": "app.api.v1.endpoints.archive",
+        "peekOfCode": "def anonymize_user_data(\n    user_id: str,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Anonymize user data while preserving audit trail.\n    Used when user deletes their account.\n    Ref: Module 8 - Section 3.1 - Referential Integrity on Delete\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.archive",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.v1.endpoints.archive",
+        "description": "app.api.v1.endpoints.archive",
+        "peekOfCode": "router = APIRouter(prefix=\"/api/v1/archive\", tags=[\"archive\"])\n# ============ Archive Policy Endpoints ============\n@router.get(\"/policies\", response_model=ArchivePolicyRead)\ndef get_archive_policy(\n    workspace_id: str = Query(..., description=\"Workspace ID\"),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Get archive policy for a workspace.",
+        "detail": "app.api.v1.endpoints.archive",
         "documentation": {}
     },
     {
@@ -10491,7 +11320,7 @@
         "kind": 5,
         "importPath": "app.api.v1.router",
         "description": "app.api.v1.router",
-        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(auth.router)\napi_router.include_router(workspaces.router)\napi_router.include_router(projects.router)\napi_router.include_router(tasks.router)\napi_router.include_router(scheduling.router)\napi_router.include_router(collaboration.router)\napi_router.include_router(notifications.router)\napi_router.include_router(admin.router)",
+        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(auth.router)\napi_router.include_router(workspaces.router)\napi_router.include_router(projects.router)\napi_router.include_router(tasks.router)\napi_router.include_router(scheduling.router)\napi_router.include_router(collaboration.router)\napi_router.include_router(notifications.router)\napi_router.include_router(archive.router)",
         "detail": "app.api.v1.router",
         "documentation": {}
     },
@@ -10664,6 +11493,60 @@
         "description": "app.core.security",
         "peekOfCode": "pwd_context = CryptContext(\n    schemes=[\"bcrypt\"],\n    deprecated=\"auto\",\n    bcrypt__rounds=12  # Strong hashing\n)\n# ============= Password & Validation Functions =============\ndef hash_password(password: str) -> str:\n    \"\"\"\n    Hash a password using bcrypt.\n    Args:",
         "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivePolicy",
+        "kind": 6,
+        "importPath": "app.db.models.archive",
+        "description": "app.db.models.archive",
+        "peekOfCode": "class ArchivePolicy(Base, TimestampMixin):\n    \"\"\"\n    Archive policy configuration per workspace.\n    Defines rules for automatic archiving, retention periods, and compliance settings.\n    Ref: Module 8 - Feature 2.1 - Automated Archiving Strategy\n    \"\"\"\n    __tablename__ = \"archive_policies\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    workspace_id = Column(String(36), ForeignKey(\"workspaces.id\", ondelete=\"CASCADE\"), nullable=False)\n    # Archive settings",
+        "detail": "app.db.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DeletedItem",
+        "kind": 6,
+        "importPath": "app.db.models.archive",
+        "description": "app.db.models.archive",
+        "peekOfCode": "class DeletedItem(Base, TimestampMixin):\n    \"\"\"\n    Soft-deleted items in trash bin.\n    Tracks deleted projects, tasks, comments, and files with restoration capability.\n    Ref: Module 8 - Feature 2.2 - Trash Bin & Soft Delete\n    \"\"\"\n    __tablename__ = \"deleted_items\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    workspace_id = Column(String(36), ForeignKey(\"workspaces.id\", ondelete=\"CASCADE\"), nullable=False)\n    # Soft delete tracking",
+        "detail": "app.db.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivedDataSnapshot",
+        "kind": 6,
+        "importPath": "app.db.models.archive",
+        "description": "app.db.models.archive",
+        "peekOfCode": "class ArchivedDataSnapshot(Base, TimestampMixin):\n    \"\"\"\n    Snapshots of archived projects with read-only data.\n    Stores archived project state for historical reference and audit trails.\n    Ref: Module 8 - Feature 2.1 - AC 2 - State Transition & Immutability\n    \"\"\"\n    __tablename__ = \"archived_snapshots\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    workspace_id = Column(String(36), ForeignKey(\"workspaces.id\", ondelete=\"CASCADE\"), nullable=False)\n    # Archive reference",
+        "detail": "app.db.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataExportRequest",
+        "kind": 6,
+        "importPath": "app.db.models.archive",
+        "description": "app.db.models.archive",
+        "peekOfCode": "class DataExportRequest(Base, TimestampMixin):\n    \"\"\"\n    Asynchronous data export requests for GDPR compliance.\n    Tracks export status, download links, and expiration.\n    Ref: Module 8 - Feature 2.3 - Data Export & Portability (AC 1)\n    \"\"\"\n    __tablename__ = \"data_export_requests\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    workspace_id = Column(String(36), ForeignKey(\"workspaces.id\", ondelete=\"CASCADE\"), nullable=False)\n    # Request info",
+        "detail": "app.db.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataRetentionLog",
+        "kind": 6,
+        "importPath": "app.db.models.archive",
+        "description": "app.db.models.archive",
+        "peekOfCode": "class DataRetentionLog(Base, TimestampMixin):\n    \"\"\"\n    Audit log for retention policy enforcement.\n    Tracks data purge events, archival events, and retention rule applications.\n    Ref: Module 8 - Section 3.2 - Data Retention Policy\n    \"\"\"\n    __tablename__ = \"data_retention_logs\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    workspace_id = Column(String(36), ForeignKey(\"workspaces.id\", ondelete=\"CASCADE\"), nullable=False)\n    # Retention action",
+        "detail": "app.db.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLog",
+        "kind": 6,
+        "importPath": "app.db.models.archive",
+        "description": "app.db.models.archive",
+        "peekOfCode": "class AuditLog(Base, TimestampMixin):\n    \"\"\"\n    Comprehensive audit trail for compliance and forensic analysis.\n    Logs all significant system actions including data access, modifications, and deletions.\n    Ref: Module 8 - Section 3.2 - Data Retention Policy (90-day retention)\n    \"\"\"\n    __tablename__ = \"audit_logs\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    workspace_id = Column(String(36), ForeignKey(\"workspaces.id\", ondelete=\"CASCADE\"), nullable=False)\n    # Action tracking",
+        "detail": "app.db.models.archive",
         "documentation": {}
     },
     {
@@ -11900,6 +12783,33 @@
         "documentation": {}
     },
     {
+        "label": "ArchiveStatusEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class ArchiveStatusEnum(str, Enum):\n    \"\"\"\n    Archive status for projects and entities.\n    Ref: Module 8 - Feature 2.1 - Automated Archiving Strategy\n    \"\"\"\n    ACTIVE = \"active\"                # Currently active, in hot storage\n    ARCHIVED = \"archived\"            # Archived to cold storage, read-only\nclass DataRetentionTypeEnum(str, Enum):\n    \"\"\"\n    Types of data retention policies.",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "DataRetentionTypeEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class DataRetentionTypeEnum(str, Enum):\n    \"\"\"\n    Types of data retention policies.\n    Ref: Module 8 - Section 3.2 - Data Retention Policy\n    \"\"\"\n    DELETED_ITEMS = \"deleted_items\"  # Soft-deleted items (30 days)\n    SYSTEM_LOGS = \"system_logs\"      # Audit logs (90 days)\n    USER_UPLOADS = \"user_uploads\"    # User-uploaded files (depends on project lifecycle)\nclass ExportFormatEnum(str, Enum):\n    \"\"\"",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ExportFormatEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class ExportFormatEnum(str, Enum):\n    \"\"\"\n    Supported export formats for data portability.\n    Ref: Module 8 - Feature 2.3 - Data Export & Portability\n    \"\"\"\n    JSON = \"json\"                    # Hierarchical JSON format\n    CSV = \"csv\"                      # Comma-separated values for spreadsheets",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "TimestampMixin",
         "kind": 6,
         "importPath": "app.db.mixins",
@@ -11951,6 +12861,213 @@
         "description": "app.db.session",
         "peekOfCode": "SessionLocal = sessionmaker(\n    autocommit=False,\n    autoflush=False,\n    bind=engine,\n)\ndef get_db() -> Generator[Session, None, None]:\n    \"\"\"\n    Dependency function for FastAPI to get database session.\n    Usage:\n        @app.get(\"/items\")",
         "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivePolicyBase",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class ArchivePolicyBase(BaseModel):\n    \"\"\"Base schema for archive policy configuration\"\"\"\n    inactive_days: int = Field(180, ge=1, description=\"Days of inactivity before archiving\")\n    is_enabled: bool = Field(True, description=\"Whether auto-archiving is enabled\")\n    trash_retention_days: int = Field(30, ge=1, description=\"Days to keep deleted items\")\n    auto_purge_enabled: bool = Field(True, description=\"Whether auto-purge is enabled\")\n    export_link_expiry_hours: int = Field(24, ge=1, description=\"Hours until export link expires\")\n    max_export_file_size_mb: int = Field(500, ge=10, description=\"Max export file size in MB\")\n    notes: Optional[str] = Field(None, max_length=1000)\nclass ArchivePolicyCreate(ArchivePolicyBase):",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivePolicyCreate",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class ArchivePolicyCreate(ArchivePolicyBase):\n    \"\"\"Schema for creating archive policy\"\"\"\n    workspace_id: str = Field(..., description=\"Workspace ID\")\nclass ArchivePolicyUpdate(BaseModel):\n    \"\"\"Schema for updating archive policy\"\"\"\n    inactive_days: Optional[int] = Field(None, ge=1)\n    is_enabled: Optional[bool] = None\n    trash_retention_days: Optional[int] = Field(None, ge=1)\n    auto_purge_enabled: Optional[bool] = None\n    export_link_expiry_hours: Optional[int] = Field(None, ge=1)",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivePolicyUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class ArchivePolicyUpdate(BaseModel):\n    \"\"\"Schema for updating archive policy\"\"\"\n    inactive_days: Optional[int] = Field(None, ge=1)\n    is_enabled: Optional[bool] = None\n    trash_retention_days: Optional[int] = Field(None, ge=1)\n    auto_purge_enabled: Optional[bool] = None\n    export_link_expiry_hours: Optional[int] = Field(None, ge=1)\n    max_export_file_size_mb: Optional[int] = Field(None, ge=10)\n    notes: Optional[str] = Field(None, max_length=1000)\nclass ArchivePolicyRead(ArchivePolicyBase):",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivePolicyRead",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class ArchivePolicyRead(ArchivePolicyBase):\n    \"\"\"Schema for reading archive policy\"\"\"\n    id: str\n    workspace_id: str\n    created_by_user_id: Optional[str]\n    last_modified_by_user_id: Optional[str]\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DeletedItemBase",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class DeletedItemBase(BaseModel):\n    \"\"\"Base schema for deleted items\"\"\"\n    entity_type: str = Field(..., description=\"Type of deleted entity: project, task, comment, file\")\n    deletion_reason: Optional[str] = Field(None, max_length=255)\nclass DeletedItemRead(DeletedItemBase):\n    \"\"\"Schema for reading deleted items (trash bin)\"\"\"\n    id: str\n    workspace_id: str\n    entity_id: str\n    deleted_by_user_id: Optional[str]",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DeletedItemRead",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class DeletedItemRead(DeletedItemBase):\n    \"\"\"Schema for reading deleted items (trash bin)\"\"\"\n    id: str\n    workspace_id: str\n    entity_id: str\n    deleted_by_user_id: Optional[str]\n    deleted_at: datetime\n    original_data: Dict[str, Any]\n    is_restored: bool\n    restored_at: Optional[datetime]",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DeletedItemListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class DeletedItemListResponse(BaseModel):\n    \"\"\"Paginated response for deleted items list\"\"\"\n    items: List[DeletedItemRead]\n    total: int\n    page: int\n    page_size: int\n    has_more: bool\nclass RestoreDeletedItemRequest(BaseModel):\n    \"\"\"Request to restore deleted item\"\"\"\n    item_id: str = Field(..., description=\"Deleted item ID\")",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "RestoreDeletedItemRequest",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class RestoreDeletedItemRequest(BaseModel):\n    \"\"\"Request to restore deleted item\"\"\"\n    item_id: str = Field(..., description=\"Deleted item ID\")\n# ============ Archived Data Snapshot Schemas ============\nclass ArchivedSnapshotRead(BaseModel):\n    \"\"\"Schema for reading archived project snapshots\"\"\"\n    id: str\n    workspace_id: str\n    project_id: str\n    archived_at: datetime",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivedSnapshotRead",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class ArchivedSnapshotRead(BaseModel):\n    \"\"\"Schema for reading archived project snapshots\"\"\"\n    id: str\n    workspace_id: str\n    project_id: str\n    archived_at: datetime\n    archived_by_user_id: Optional[str]\n    project_data: Dict[str, Any]\n    task_count: int\n    total_time_logged: Optional[int]",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivedSnapshotListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class ArchivedSnapshotListResponse(BaseModel):\n    \"\"\"Paginated response for archived snapshots\"\"\"\n    items: List[ArchivedSnapshotRead]\n    total: int\n    page: int\n    page_size: int\n    has_more: bool\n# ============ Data Export Schemas ============\nclass DataExportRequestCreate(BaseModel):\n    \"\"\"Schema for requesting data export\"\"\"",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataExportRequestCreate",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class DataExportRequestCreate(BaseModel):\n    \"\"\"Schema for requesting data export\"\"\"\n    export_format: str = Field(\"json\", description=\"json or csv\")\n    scope: str = Field(\"all\", description=\"all, projects, or workspace\")\n    scope_id: Optional[str] = Field(None, description=\"Project ID if scope=projects\")\nclass DataExportRequestRead(BaseModel):\n    \"\"\"Schema for reading export request status\"\"\"\n    id: str\n    workspace_id: str\n    requested_by_user_id: str",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataExportRequestRead",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class DataExportRequestRead(BaseModel):\n    \"\"\"Schema for reading export request status\"\"\"\n    id: str\n    workspace_id: str\n    requested_by_user_id: str\n    export_format: str\n    scope: str\n    status: str  # pending, processing, completed, failed\n    progress_percent: int\n    error_message: Optional[str]",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataExportResponse",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class DataExportResponse(BaseModel):\n    \"\"\"Schema for download response\"\"\"\n    export_id: str\n    download_url: str\n    expires_at: datetime\n    file_size_bytes: Optional[int]\n    format: str\nclass DataExportListResponse(BaseModel):\n    \"\"\"Paginated response for export requests\"\"\"\n    items: List[DataExportRequestRead]",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataExportListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class DataExportListResponse(BaseModel):\n    \"\"\"Paginated response for export requests\"\"\"\n    items: List[DataExportRequestRead]\n    total: int\n    page: int\n    page_size: int\n    has_more: bool\n# ============ Data Retention Policy Schemas ============\nclass RetentionPolicyBase(BaseModel):\n    \"\"\"Base schema for retention policy\"\"\"",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "RetentionPolicyBase",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class RetentionPolicyBase(BaseModel):\n    \"\"\"Base schema for retention policy\"\"\"\n    data_retention_type: str = Field(..., description=\"deleted_items, system_logs, or user_uploads\")\n    retention_days: int = Field(..., ge=1, description=\"Days to retain data\")\n    auto_purge_enabled: bool = Field(True, description=\"Whether auto-purge is enabled\")\nclass RetentionPolicyRead(RetentionPolicyBase):\n    \"\"\"Schema for reading retention policy\"\"\"\n    id: str\n    workspace_id: str\n    created_at: datetime",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "RetentionPolicyRead",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class RetentionPolicyRead(RetentionPolicyBase):\n    \"\"\"Schema for reading retention policy\"\"\"\n    id: str\n    workspace_id: str\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\n# ============ Audit Log Schemas ============\nclass AuditLogBase(BaseModel):",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLogBase",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class AuditLogBase(BaseModel):\n    \"\"\"Base schema for audit logs\"\"\"\n    action: str = Field(..., description=\"CREATE, READ, UPDATE, DELETE, EXPORT, ARCHIVE\")\n    resource_type: str = Field(..., description=\"project, task, file, user, etc\")\n    resource_id: str\n    status_code: Optional[str] = Field(None, description=\"success, failure, error\")\n    error_message: Optional[str] = None\nclass AuditLogRead(AuditLogBase):\n    \"\"\"Schema for reading audit logs\"\"\"\n    id: str",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLogRead",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class AuditLogRead(AuditLogBase):\n    \"\"\"Schema for reading audit logs\"\"\"\n    id: str\n    workspace_id: str\n    user_id: Optional[str]\n    user_email: Optional[str]\n    ip_address: Optional[str]\n    user_agent: Optional[str]\n    changes: Optional[Dict[str, Any]]\n    logged_at: datetime",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLogListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class AuditLogListResponse(BaseModel):\n    \"\"\"Paginated response for audit logs\"\"\"\n    items: List[AuditLogRead]\n    total: int\n    page: int\n    page_size: int\n    has_more: bool\nclass AuditLogQueryFilter(BaseModel):\n    \"\"\"Query filters for audit log search\"\"\"\n    action: Optional[str] = None",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLogQueryFilter",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class AuditLogQueryFilter(BaseModel):\n    \"\"\"Query filters for audit log search\"\"\"\n    action: Optional[str] = None\n    resource_type: Optional[str] = None\n    user_id: Optional[str] = None\n    status_code: Optional[str] = None\n    from_date: Optional[datetime] = None\n    to_date: Optional[datetime] = None\n    page: int = Field(1, ge=1)\n    page_size: int = Field(20, ge=1, le=100)",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchiveActionResponse",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class ArchiveActionResponse(BaseModel):\n    \"\"\"Response for archive actions\"\"\"\n    success: bool\n    message: str\n    data: Optional[Dict[str, Any]] = None\nclass BulkArchiveResponse(BaseModel):\n    \"\"\"Response for bulk archiving operations\"\"\"\n    success: bool\n    total_processed: int\n    archived_count: int",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "BulkArchiveResponse",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class BulkArchiveResponse(BaseModel):\n    \"\"\"Response for bulk archiving operations\"\"\"\n    success: bool\n    total_processed: int\n    archived_count: int\n    failed_count: int\n    errors: List[Dict[str, str]] = []\nclass Statistics(BaseModel):\n    \"\"\"Archiving statistics\"\"\"\n    active_items_count: int",
+        "detail": "app.schemas.archive",
+        "documentation": {}
+    },
+    {
+        "label": "Statistics",
+        "kind": 6,
+        "importPath": "app.schemas.archive",
+        "description": "app.schemas.archive",
+        "peekOfCode": "class Statistics(BaseModel):\n    \"\"\"Archiving statistics\"\"\"\n    active_items_count: int\n    archived_items_count: int\n    trash_bin_items_count: int\n    total_storage_used_mb: float\n    oldest_archive_date: Optional[datetime]\n    upcoming_purge_count: int",
+        "detail": "app.schemas.archive",
         "documentation": {}
     },
     {
@@ -13976,6 +15093,51 @@
         "description": "app.schemas.workspace",
         "peekOfCode": "class WorkspaceContextSwitch(BaseModel):\n    \"\"\"Schema for switching workspace context\"\"\"\n    workspace_id: UUID = Field(..., description=\"Workspace ID to switch to\")",
         "detail": "app.schemas.workspace",
+        "documentation": {}
+    },
+    {
+        "label": "ArchiveService",
+        "kind": 6,
+        "importPath": "app.services.archive",
+        "description": "app.services.archive",
+        "peekOfCode": "class ArchiveService:\n    \"\"\"\n    Service for automated archiving strategy.\n    Handles project archiving based on inactivity period.\n    Ref: Module 8 - Feature 2.1 - Automated Archiving Strategy\n    \"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def get_archive_policy(self, workspace_id: str) -> Optional[ArchivePolicy]:\n        \"\"\"Get or create default archive policy for workspace.\"\"\"",
+        "detail": "app.services.archive",
+        "documentation": {}
+    },
+    {
+        "label": "TrashBinService",
+        "kind": 6,
+        "importPath": "app.services.archive",
+        "description": "app.services.archive",
+        "peekOfCode": "class TrashBinService:\n    \"\"\"\n    Service for trash bin management with soft delete.\n    Ref: Module 8 - Feature 2.2 - Trash Bin & Soft Delete\n    \"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def soft_delete(\n        self,\n        entity_type: str,",
+        "detail": "app.services.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataExportService",
+        "kind": 6,
+        "importPath": "app.services.archive",
+        "description": "app.services.archive",
+        "peekOfCode": "class DataExportService:\n    \"\"\"\n    Service for asynchronous data export for GDPR compliance.\n    Ref: Module 8 - Feature 2.3 - Data Export & Portability\n    \"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def create_export_request(\n        self,\n        workspace_id: str,",
+        "detail": "app.services.archive",
+        "documentation": {}
+    },
+    {
+        "label": "RetentionService",
+        "kind": 6,
+        "importPath": "app.services.archive",
+        "description": "app.services.archive",
+        "peekOfCode": "class RetentionService:\n    \"\"\"\n    Service for data retention policy enforcement.\n    \"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def log_retention_action(\n        self,\n        workspace_id: str,\n        action_type: str,",
+        "detail": "app.services.archive",
+        "documentation": {}
+    },
+    {
+        "label": "AuditService",
+        "kind": 6,
+        "importPath": "app.services.archive",
+        "description": "app.services.archive",
+        "peekOfCode": "class AuditService:\n    \"\"\"\n    Service for comprehensive audit logging.\n    Ref: Module 8 - Section 3.2 - Data Retention Policy (90-day retention)\n    \"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def log_action(\n        self,\n        workspace_id: str,",
+        "detail": "app.services.archive",
         "documentation": {}
     },
     {

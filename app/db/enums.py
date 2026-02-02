@@ -402,3 +402,33 @@ class TemplateLocaleEnum(str, Enum):
     ZH_CN = "zh_cn"                  # Simplified Chinese
     ZH_TW = "zh_tw"                  # Traditional Chinese
     KO = "ko"                        # Korean
+
+
+# ============ Module 8: Data Archiving and Compliance ============
+
+class ArchiveStatusEnum(str, Enum):
+    """
+    Archive status for projects and entities.
+    Ref: Module 8 - Feature 2.1 - Automated Archiving Strategy
+    """
+    ACTIVE = "active"                # Currently active, in hot storage
+    ARCHIVED = "archived"            # Archived to cold storage, read-only
+
+
+class DataRetentionTypeEnum(str, Enum):
+    """
+    Types of data retention policies.
+    Ref: Module 8 - Section 3.2 - Data Retention Policy
+    """
+    DELETED_ITEMS = "deleted_items"  # Soft-deleted items (30 days)
+    SYSTEM_LOGS = "system_logs"      # Audit logs (90 days)
+    USER_UPLOADS = "user_uploads"    # User-uploaded files (depends on project lifecycle)
+
+
+class ExportFormatEnum(str, Enum):
+    """
+    Supported export formats for data portability.
+    Ref: Module 8 - Feature 2.3 - Data Export & Portability
+    """
+    JSON = "json"                    # Hierarchical JSON format
+    CSV = "csv"                      # Comma-separated values for spreadsheets
