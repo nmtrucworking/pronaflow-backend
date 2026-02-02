@@ -332,3 +332,73 @@ class PublicLinkStatusEnum(str, Enum):
     EXPIRED = "expired"              # Expiration date passed
     DISABLED = "disabled"            # Manually disabled
     PASSWORD_PROTECTED = "password_protected"  # Requires password
+
+
+# ============ Module 7: Event-Driven Notification System ============
+
+class NotificationTypeEnum(str, Enum):
+    """
+    Notification event types.
+    Ref: Module 7 - Feature 2.1 - Intelligent Aggregation
+    """
+    TASK_ASSIGNED = "task_assigned"
+    TASK_UPDATED = "task_updated"
+    TASK_COMMENTED = "task_commented"
+    TASK_COMPLETED = "task_completed"
+    PROJECT_UPDATED = "project_updated"
+    PROJECT_STATUS_CHANGED = "project_status_changed"
+    USER_MENTIONED = "user_mentioned"
+    FILE_UPLOADED = "file_uploaded"
+    FILE_APPROVED = "file_approved"
+    APPROVAL_REQUESTED = "approval_requested"
+    APPROVAL_DECISION = "approval_decision"
+    SLA_BREACHED = "sla_breached"
+    SLA_AT_RISK = "sla_at_risk"
+    SECURITY_ALERT = "security_alert"
+    SYSTEM_ERROR = "system_error"
+
+
+class NotificationChannelEnum(str, Enum):
+    """
+    Notification delivery channels.
+    Ref: Module 7 - Feature 2.2 - Real-time Delivery & Fallback
+    """
+    IN_APP = "in_app"                # In-application notification
+    EMAIL = "email"                  # Email delivery
+    MOBILE_PUSH = "mobile_push"      # Mobile push notification
+    WEBSOCKET = "websocket"          # WebSocket for real-time toast
+
+
+class NotificationPriorityEnum(str, Enum):
+    """
+    Notification priority levels.
+    Ref: Module 7 - Business Rule 3.4 - Priority Queues & QoS
+    """
+    HIGH = "high"                    # Critical (< 1s, no debounce)
+    MEDIUM = "medium"                # Transactional (5-10s, with debounce)
+    LOW = "low"                      # Promotional (background jobs)
+
+
+class NotificationStatusEnum(str, Enum):
+    """
+    Notification delivery status.
+    Ref: Module 7 - Business Rule 3.1 - Retry Mechanism
+    """
+    PENDING = "pending"              # Queued for delivery
+    SENT = "sent"                    # Successfully delivered
+    READ = "read"                    # Read by recipient
+    FAILED = "failed"                # Delivery failed after retries
+    EXPIRED = "expired"              # TTL expired before delivery
+
+
+class TemplateLocaleEnum(str, Enum):
+    """
+    Supported notification template locales.
+    Ref: Module 7 - Feature 2.4 - AC 2 - Localization Support
+    """
+    EN = "en"                        # English
+    VI = "vi"                        # Vietnamese
+    JA = "ja"                        # Japanese
+    ZH_CN = "zh_cn"                  # Simplified Chinese
+    ZH_TW = "zh_tw"                  # Traditional Chinese
+    KO = "ko"                        # Korean

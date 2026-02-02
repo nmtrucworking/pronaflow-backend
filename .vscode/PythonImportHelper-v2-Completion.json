@@ -40,6 +40,14 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -66,6 +74,22 @@
     },
     {
         "label": "pool",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -1233,11 +1257,51 @@
         "documentation": {}
     },
     {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "text",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
         "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
         "documentation": {}
     },
     {
@@ -1319,6 +1383,14 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
         "documentation": {}
     },
     {
@@ -1658,6 +1730,14 @@
         "documentation": {}
     },
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "List",
         "importPath": "typing",
         "description": "typing",
@@ -1739,6 +1819,14 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -2266,6 +2354,38 @@
         "documentation": {}
     },
     {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -2379,6 +2499,38 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -2883,6 +3035,14 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "date",
         "importPath": "datetime",
         "description": "datetime",
@@ -2964,6 +3124,22 @@
     },
     {
         "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -3180,6 +3356,46 @@
     },
     {
         "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -3520,6 +3736,14 @@
         "description": "fastapi",
         "isExtraImport": true,
         "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
         "documentation": {}
     },
     {
@@ -4035,6 +4259,14 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "get_db",
         "importPath": "app.db.session",
         "description": "app.db.session",
@@ -4307,6 +4539,14 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
         "label": "Session",
         "importPath": "app.db.models.users",
         "description": "app.db.models.users",
@@ -4388,6 +4628,14 @@
     },
     {
         "label": "MFABackupCode",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
         "importPath": "app.db.models.users",
         "description": "app.db.models.users",
         "isExtraImport": true,
@@ -5427,6 +5675,262 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.api.deps",
+        "description": "app.api.deps",
+        "isExtraImport": true,
+        "detail": "app.api.deps",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.api.deps",
+        "description": "app.api.deps",
+        "isExtraImport": true,
+        "detail": "app.api.deps",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationService",
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "isExtraImport": true,
+        "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "AggregationService",
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "isExtraImport": true,
+        "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "RoutingService",
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "isExtraImport": true,
+        "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateService",
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "isExtraImport": true,
+        "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "RetryService",
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "isExtraImport": true,
+        "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "PreferenceService",
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "isExtraImport": true,
+        "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "WatcherService",
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "isExtraImport": true,
+        "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "EventBusService",
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "isExtraImport": true,
+        "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationListResponse",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationRead",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "MarkAsReadRequest",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationTemplateCreate",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationTemplateRead",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceRead",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceUpdate",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "WatcherCreate",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "WatcherRead",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "InteractionTrackingRequest",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationTemplateListResponse",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "WatcherListResponse",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationStatistics",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "InteractionLogListResponse",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationCreate",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationRead",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationTemplateCreate",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceCreate",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceUpdate",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "WatcherCreate",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "InteractionTrackingRequest",
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "isExtraImport": true,
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPriorityEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "ProjectStatus",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
@@ -5627,6 +6131,46 @@
         "documentation": {}
     },
     {
+        "label": "NotificationTypeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationChannelEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPriorityEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateLocaleEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "ProjectStatus",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
@@ -5803,6 +6347,46 @@
         "documentation": {}
     },
     {
+        "label": "NotificationTypeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationChannelEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPriorityEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateLocaleEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "ProjectStatus",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
@@ -5920,6 +6504,144 @@
         "description": "app.db.enums",
         "isExtraImport": true,
         "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "Notification",
+        "importPath": "app.db.models.notifications",
+        "description": "app.db.models.notifications",
+        "isExtraImport": true,
+        "detail": "app.db.models.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationTemplate",
+        "importPath": "app.db.models.notifications",
+        "description": "app.db.models.notifications",
+        "isExtraImport": true,
+        "detail": "app.db.models.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreference",
+        "importPath": "app.db.models.notifications",
+        "description": "app.db.models.notifications",
+        "isExtraImport": true,
+        "detail": "app.db.models.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "Watcher",
+        "importPath": "app.db.models.notifications",
+        "description": "app.db.models.notifications",
+        "isExtraImport": true,
+        "detail": "app.db.models.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "InteractionLog",
+        "importPath": "app.db.models.notifications",
+        "description": "app.db.models.notifications",
+        "isExtraImport": true,
+        "detail": "app.db.models.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "Notification",
+        "importPath": "app.db.models.notifications",
+        "description": "app.db.models.notifications",
+        "isExtraImport": true,
+        "detail": "app.db.models.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationTemplate",
+        "importPath": "app.db.models.notifications",
+        "description": "app.db.models.notifications",
+        "isExtraImport": true,
+        "detail": "app.db.models.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreference",
+        "importPath": "app.db.models.notifications",
+        "description": "app.db.models.notifications",
+        "isExtraImport": true,
+        "detail": "app.db.models.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "Watcher",
+        "importPath": "app.db.models.notifications",
+        "description": "app.db.models.notifications",
+        "isExtraImport": true,
+        "detail": "app.db.models.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "EventLog",
+        "importPath": "app.db.models.notifications",
+        "description": "app.db.models.notifications",
+        "isExtraImport": true,
+        "detail": "app.db.models.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationRetry",
+        "importPath": "app.db.models.notifications",
+        "description": "app.db.models.notifications",
+        "isExtraImport": true,
+        "detail": "app.db.models.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "InteractionLog",
+        "importPath": "app.db.models.notifications",
+        "description": "app.db.models.notifications",
+        "isExtraImport": true,
+        "detail": "app.db.models.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "DomainEvent",
+        "importPath": "app.db.models.notifications",
+        "description": "app.db.models.notifications",
+        "isExtraImport": true,
+        "detail": "app.db.models.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "lru_cache",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "redis",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "redis",
+        "description": "redis",
+        "detail": "redis",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
         "documentation": {}
     },
     {
@@ -6955,11 +7677,35 @@
         "documentation": {}
     },
     {
+        "label": "notifications",
+        "importPath": "app.api.v1.endpoints",
+        "description": "app.api.v1.endpoints",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints",
+        "documentation": {}
+    },
+    {
         "label": "BaseSettings",
         "importPath": "pydantic_settings",
         "description": "pydantic_settings",
         "isExtraImport": true,
         "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
         "documentation": {}
     },
     {
@@ -6978,23 +7724,6 @@
         "importPath": "csv",
         "description": "csv",
         "detail": "csv",
-        "documentation": {}
-    },
-    {
-        "label": "lru_cache",
-        "importPath": "functools",
-        "description": "functools",
-        "isExtraImport": true,
-        "detail": "functools",
-        "documentation": {}
-    },
-    {
-        "label": "logging",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "logging",
-        "description": "logging",
-        "detail": "logging",
         "documentation": {}
     },
     {
@@ -7537,6 +8266,14 @@
         "documentation": {}
     },
     {
+        "label": "Workspace",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
         "label": "WorkspaceMember",
         "importPath": "app.db.models.workspaces",
         "description": "app.db.models.workspaces",
@@ -7658,6 +8395,22 @@
     },
     {
         "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
         "importPath": "pydantic",
         "description": "pydantic",
         "isExtraImport": true,
@@ -7844,6 +8597,32 @@
         "importPath": "pyotp",
         "description": "pyotp",
         "detail": "pyotp",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "Template",
+        "importPath": "string",
+        "description": "string",
+        "isExtraImport": true,
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "aioredis",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "aioredis",
+        "description": "aioredis",
+        "detail": "aioredis",
         "documentation": {}
     },
     {
@@ -8448,6 +9227,60 @@
         "documentation": {}
     },
     {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.module7_event_driven_notifications",
+        "description": "app.alembic.versions.module7_event_driven_notifications",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Create Module 7 new tables.\n    Note: notification_templates and notification_preferences tables already exist\n    from Module 6, so we only create the 4 missing tables.\n    \"\"\"\n    # Create watchers table\n    op.create_table(\n        'watchers',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('workspace_id', postgresql.UUID(as_uuid=True), nullable=False),",
+        "detail": "app.alembic.versions.module7_event_driven_notifications",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.module7_event_driven_notifications",
+        "description": "app.alembic.versions.module7_event_driven_notifications",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Revert Module 7 tables - only drop the 4 new tables we created.\"\"\"\n    # Drop indexes first\n    op.drop_index('ix_interaction_logs_user_id', table_name='interaction_logs')\n    op.drop_index('ix_interaction_logs_notification_id', table_name='interaction_logs')\n    op.drop_table('interaction_logs')\n    op.drop_index('ix_notification_retries_status_scheduled', table_name='notification_retries')\n    op.drop_table('notification_retries')\n    op.drop_index('ix_event_logs_is_processed', table_name='event_logs')\n    op.drop_index('ix_event_logs_event_type', table_name='event_logs')",
+        "detail": "app.alembic.versions.module7_event_driven_notifications",
+        "documentation": {}
+    },
+    {
+        "label": "revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module7_event_driven_notifications",
+        "description": "app.alembic.versions.module7_event_driven_notifications",
+        "peekOfCode": "revision = 'module7_notifications'\ndown_revision = 'cd6041d7e8ce'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    \"\"\"Create Module 7 new tables.\n    Note: notification_templates and notification_preferences tables already exist\n    from Module 6, so we only create the 4 missing tables.\n    \"\"\"\n    # Create watchers table",
+        "detail": "app.alembic.versions.module7_event_driven_notifications",
+        "documentation": {}
+    },
+    {
+        "label": "down_revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module7_event_driven_notifications",
+        "description": "app.alembic.versions.module7_event_driven_notifications",
+        "peekOfCode": "down_revision = 'cd6041d7e8ce'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    \"\"\"Create Module 7 new tables.\n    Note: notification_templates and notification_preferences tables already exist\n    from Module 6, so we only create the 4 missing tables.\n    \"\"\"\n    # Create watchers table\n    op.create_table(",
+        "detail": "app.alembic.versions.module7_event_driven_notifications",
+        "documentation": {}
+    },
+    {
+        "label": "branch_labels",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module7_event_driven_notifications",
+        "description": "app.alembic.versions.module7_event_driven_notifications",
+        "peekOfCode": "branch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    \"\"\"Create Module 7 new tables.\n    Note: notification_templates and notification_preferences tables already exist\n    from Module 6, so we only create the 4 missing tables.\n    \"\"\"\n    # Create watchers table\n    op.create_table(\n        'watchers',",
+        "detail": "app.alembic.versions.module7_event_driven_notifications",
+        "documentation": {}
+    },
+    {
+        "label": "depends_on",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module7_event_driven_notifications",
+        "description": "app.alembic.versions.module7_event_driven_notifications",
+        "peekOfCode": "depends_on = None\ndef upgrade() -> None:\n    \"\"\"Create Module 7 new tables.\n    Note: notification_templates and notification_preferences tables already exist\n    from Module 6, so we only create the 4 missing tables.\n    \"\"\"\n    # Create watchers table\n    op.create_table(\n        'watchers',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),",
+        "detail": "app.alembic.versions.module7_event_driven_notifications",
+        "documentation": {}
+    },
+    {
         "label": "run_migrations_offline",
         "kind": 2,
         "importPath": "app.alembic.env",
@@ -8841,6 +9674,42 @@
         "description": "app.api.v1.endpoints.collaboration",
         "peekOfCode": "router = APIRouter(prefix=\"/api/v1/collaboration\", tags=[\"collaboration\"])\n# ============ Comment Endpoints ============\n@router.post(\"/comments\", response_model=CommentResponse, status_code=201)\ndef create_comment(\n    request: CommentCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Create a new comment",
         "detail": "app.api.v1.endpoints.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "get_redis_client",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.notifications",
+        "description": "app.api.v1.endpoints.notifications",
+        "peekOfCode": "def get_redis_client():\n    \"\"\"Get Redis client for event bus.\"\"\"\n    return redis.Redis(host='localhost', port=6379, db=0)\ndef get_services(db: Session = Depends(get_db)):\n    \"\"\"Get all notification services.\"\"\"\n    redis_client = get_redis_client()\n    event_bus = EventBusService(redis_client)\n    aggregation = AggregationService(db)\n    routing = RoutingService(db)\n    template = TemplateService(db)",
+        "detail": "app.api.v1.endpoints.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "get_services",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.notifications",
+        "description": "app.api.v1.endpoints.notifications",
+        "peekOfCode": "def get_services(db: Session = Depends(get_db)):\n    \"\"\"Get all notification services.\"\"\"\n    redis_client = get_redis_client()\n    event_bus = EventBusService(redis_client)\n    aggregation = AggregationService(db)\n    routing = RoutingService(db)\n    template = TemplateService(db)\n    retry = RetryService(db)\n    notification_service = NotificationService(\n        db=db,",
+        "detail": "app.api.v1.endpoints.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "app.api.v1.endpoints.notifications",
+        "description": "app.api.v1.endpoints.notifications",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nrouter = APIRouter(prefix=\"/api/v1/notifications\", tags=[\"notifications\"])\n# ============ Dependency Injection ============\n@lru_cache()\ndef get_redis_client():\n    \"\"\"Get Redis client for event bus.\"\"\"\n    return redis.Redis(host='localhost', port=6379, db=0)\ndef get_services(db: Session = Depends(get_db)):\n    \"\"\"Get all notification services.\"\"\"\n    redis_client = get_redis_client()",
+        "detail": "app.api.v1.endpoints.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.v1.endpoints.notifications",
+        "description": "app.api.v1.endpoints.notifications",
+        "peekOfCode": "router = APIRouter(prefix=\"/api/v1/notifications\", tags=[\"notifications\"])\n# ============ Dependency Injection ============\n@lru_cache()\ndef get_redis_client():\n    \"\"\"Get Redis client for event bus.\"\"\"\n    return redis.Redis(host='localhost', port=6379, db=0)\ndef get_services(db: Session = Depends(get_db)):\n    \"\"\"Get all notification services.\"\"\"\n    redis_client = get_redis_client()\n    event_bus = EventBusService(redis_client)",
+        "detail": "app.api.v1.endpoints.notifications",
         "documentation": {}
     },
     {
@@ -9622,7 +10491,7 @@
         "kind": 5,
         "importPath": "app.api.v1.router",
         "description": "app.api.v1.router",
-        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(auth.router)\napi_router.include_router(workspaces.router)\napi_router.include_router(projects.router)\napi_router.include_router(tasks.router)\napi_router.include_router(scheduling.router)\napi_router.include_router(collaboration.router)\napi_router.include_router(admin.router)",
+        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(auth.router)\napi_router.include_router(workspaces.router)\napi_router.include_router(projects.router)\napi_router.include_router(tasks.router)\napi_router.include_router(scheduling.router)\napi_router.include_router(collaboration.router)\napi_router.include_router(notifications.router)\napi_router.include_router(admin.router)",
         "detail": "app.api.v1.router",
         "documentation": {}
     },
@@ -9642,6 +10511,42 @@
         "description": "app.core.config",
         "peekOfCode": "settings = Settings()",
         "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "EventBusConfig",
+        "kind": 6,
+        "importPath": "app.core.event_bus",
+        "description": "app.core.event_bus",
+        "peekOfCode": "class EventBusConfig:\n    \"\"\"Configuration for event bus (Redis Pub/Sub).\"\"\"\n    _instance: Optional[redis.Redis] = None\n    @classmethod\n    def get_redis_client(cls) -> redis.Redis:\n        \"\"\"\n        Get or create Redis client singleton.\n        Returns:\n            redis.Redis: Connected Redis client\n        \"\"\"",
+        "detail": "app.core.event_bus",
+        "documentation": {}
+    },
+    {
+        "label": "EventChannels",
+        "kind": 6,
+        "importPath": "app.core.event_bus",
+        "description": "app.core.event_bus",
+        "peekOfCode": "class EventChannels:\n    \"\"\"Standard event channels for Pub/Sub.\"\"\"\n    # Main event channel\n    NOTIFICATIONS = \"notifications:events\"\n    # Priority channels\n    CRITICAL = \"notifications:critical\"\n    TRANSACTIONAL = \"notifications:transactional\"\n    PROMOTIONAL = \"notifications:promotional\"\n    # User-specific channels\n    @staticmethod",
+        "detail": "app.core.event_bus",
+        "documentation": {}
+    },
+    {
+        "label": "EventPriorityChannels",
+        "kind": 6,
+        "importPath": "app.core.event_bus",
+        "description": "app.core.event_bus",
+        "peekOfCode": "class EventPriorityChannels:\n    \"\"\"Map event types to priority channels.\"\"\"\n    CRITICAL_EVENTS = {\n        \"security_alert\",\n        \"system_error\",\n        \"sla_breached\"\n    }\n    TRANSACTIONAL_EVENTS = {\n        \"task_assigned\",\n        \"task_updated\",",
+        "detail": "app.core.event_bus",
+        "documentation": {}
+    },
+    {
+        "label": "RedisKeys",
+        "kind": 6,
+        "importPath": "app.core.event_bus",
+        "description": "app.core.event_bus",
+        "peekOfCode": "class RedisKeys:\n    \"\"\"Redis key patterns for event bus operations.\"\"\"\n    @staticmethod\n    def event_id_processed(event_id: str) -> str:\n        \"\"\"Key for tracking processed event IDs (idempotency).\"\"\"\n        return f\"event:processed:{event_id}\"\n    @staticmethod\n    def aggregation_key(entity_type: str, entity_id: str, event_type: str) -> str:\n        \"\"\"Key for debounce/aggregation tracking.\"\"\"\n        return f\"agg:{entity_type}:{entity_id}:{event_type}\"",
+        "detail": "app.core.event_bus",
         "documentation": {}
     },
     {
@@ -10945,7 +11850,52 @@
         "kind": 6,
         "importPath": "app.db.enums",
         "description": "app.db.enums",
-        "peekOfCode": "class PublicLinkStatusEnum(str, Enum):\n    \"\"\"\n    Status of public publication links for notes.\n    Ref: Module 6 - Feature 2.9\n    \"\"\"\n    ACTIVE = \"active\"                # Link is accessible\n    EXPIRED = \"expired\"              # Expiration date passed\n    DISABLED = \"disabled\"            # Manually disabled\n    PASSWORD_PROTECTED = \"password_protected\"  # Requires password",
+        "peekOfCode": "class PublicLinkStatusEnum(str, Enum):\n    \"\"\"\n    Status of public publication links for notes.\n    Ref: Module 6 - Feature 2.9\n    \"\"\"\n    ACTIVE = \"active\"                # Link is accessible\n    EXPIRED = \"expired\"              # Expiration date passed\n    DISABLED = \"disabled\"            # Manually disabled\n    PASSWORD_PROTECTED = \"password_protected\"  # Requires password\n# ============ Module 7: Event-Driven Notification System ============",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationTypeEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class NotificationTypeEnum(str, Enum):\n    \"\"\"\n    Notification event types.\n    Ref: Module 7 - Feature 2.1 - Intelligent Aggregation\n    \"\"\"\n    TASK_ASSIGNED = \"task_assigned\"\n    TASK_UPDATED = \"task_updated\"\n    TASK_COMMENTED = \"task_commented\"\n    TASK_COMPLETED = \"task_completed\"\n    PROJECT_UPDATED = \"project_updated\"",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationChannelEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class NotificationChannelEnum(str, Enum):\n    \"\"\"\n    Notification delivery channels.\n    Ref: Module 7 - Feature 2.2 - Real-time Delivery & Fallback\n    \"\"\"\n    IN_APP = \"in_app\"                # In-application notification\n    EMAIL = \"email\"                  # Email delivery\n    MOBILE_PUSH = \"mobile_push\"      # Mobile push notification\n    WEBSOCKET = \"websocket\"          # WebSocket for real-time toast\nclass NotificationPriorityEnum(str, Enum):",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPriorityEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class NotificationPriorityEnum(str, Enum):\n    \"\"\"\n    Notification priority levels.\n    Ref: Module 7 - Business Rule 3.4 - Priority Queues & QoS\n    \"\"\"\n    HIGH = \"high\"                    # Critical (< 1s, no debounce)\n    MEDIUM = \"medium\"                # Transactional (5-10s, with debounce)\n    LOW = \"low\"                      # Promotional (background jobs)\nclass NotificationStatusEnum(str, Enum):\n    \"\"\"",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationStatusEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class NotificationStatusEnum(str, Enum):\n    \"\"\"\n    Notification delivery status.\n    Ref: Module 7 - Business Rule 3.1 - Retry Mechanism\n    \"\"\"\n    PENDING = \"pending\"              # Queued for delivery\n    SENT = \"sent\"                    # Successfully delivered\n    READ = \"read\"                    # Read by recipient\n    FAILED = \"failed\"                # Delivery failed after retries\n    EXPIRED = \"expired\"              # TTL expired before delivery",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateLocaleEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class TemplateLocaleEnum(str, Enum):\n    \"\"\"\n    Supported notification template locales.\n    Ref: Module 7 - Feature 2.4 - AC 2 - Localization Support\n    \"\"\"\n    EN = \"en\"                        # English\n    VI = \"vi\"                        # Vietnamese\n    JA = \"ja\"                        # Japanese\n    ZH_CN = \"zh_cn\"                  # Simplified Chinese\n    ZH_TW = \"zh_tw\"                  # Traditional Chinese",
         "detail": "app.db.enums",
         "documentation": {}
     },
@@ -11595,6 +12545,294 @@
         "description": "app.schemas.collaboration",
         "peekOfCode": "class UserCollaborationStats(BaseModel):\n    \"\"\"User's collaboration activity\"\"\"\n    user_id: str\n    comments_created: int\n    files_uploaded: int\n    notes_created: int\n    mentions_received: int\n    approvals_given: int\n    approvals_pending: int",
         "detail": "app.schemas.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationBase",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class NotificationBase(BaseModel):\n    \"\"\"Base schema for notifications.\"\"\"\n    title: str = Field(..., min_length=1, max_length=255)\n    body: str = Field(..., min_length=1)\n    action_url: Optional[str] = None\n    event_type: NotificationTypeEnum\n    priority: NotificationPriorityEnum = NotificationPriorityEnum.MEDIUM\n    related_entity_type: Optional[str] = None\n    related_entity_id: Optional[str] = None\n    metadata: Optional[Dict[str, Any]] = None",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationCreate",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class NotificationCreate(NotificationBase):\n    \"\"\"Schema for creating a notification.\"\"\"\n    event_id: str = Field(..., description=\"Unique event ID for idempotency\")\n    recipient_id: str = Field(..., description=\"User ID of notification recipient\")\n    workspace_id: str = Field(..., description=\"Workspace context\")\n    channels_used: List[NotificationChannelEnum] = Field(\n        default=[NotificationChannelEnum.IN_APP],\n        description=\"Delivery channels\"\n    )\n    scheduled_at: Optional[datetime] = None",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationRead",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class NotificationRead(NotificationBase):\n    \"\"\"Schema for reading a notification.\"\"\"\n    id: str\n    recipient_id: str\n    workspace_id: str\n    event_id: str\n    channels_used: List[NotificationChannelEnum]\n    status: NotificationStatusEnum\n    aggregation_group_id: Optional[str] = None\n    aggregated_count: int = 1",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class NotificationListResponse(BaseModel):\n    \"\"\"Schema for notification list with pagination.\"\"\"\n    items: List[NotificationRead]\n    total: int\n    page: int\n    page_size: int\n    has_more: bool\nclass MarkAsReadRequest(BaseModel):\n    \"\"\"Schema for marking notification as read.\"\"\"\n    notification_id: str",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "MarkAsReadRequest",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class MarkAsReadRequest(BaseModel):\n    \"\"\"Schema for marking notification as read.\"\"\"\n    notification_id: str\n    read: bool = True\nclass MarkMultipleAsReadRequest(BaseModel):\n    \"\"\"Schema for marking multiple notifications as read.\"\"\"\n    notification_ids: List[str]\n    read: bool = True\n# ============ Notification Template Schemas ============\nclass TemplateVariableDefine(BaseModel):",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "MarkMultipleAsReadRequest",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class MarkMultipleAsReadRequest(BaseModel):\n    \"\"\"Schema for marking multiple notifications as read.\"\"\"\n    notification_ids: List[str]\n    read: bool = True\n# ============ Notification Template Schemas ============\nclass TemplateVariableDefine(BaseModel):\n    \"\"\"Template variable definition.\"\"\"\n    name: str = Field(..., description=\"Variable name (e.g., 'user_name')\")\n    type: str = Field(..., description=\"Variable type (string, number, date)\")\n    required: bool = True",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateVariableDefine",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class TemplateVariableDefine(BaseModel):\n    \"\"\"Template variable definition.\"\"\"\n    name: str = Field(..., description=\"Variable name (e.g., 'user_name')\")\n    type: str = Field(..., description=\"Variable type (string, number, date)\")\n    required: bool = True\n    description: Optional[str] = None\nclass NotificationTemplateBase(BaseModel):\n    \"\"\"Base schema for notification templates.\"\"\"\n    template_key: str = Field(\n        ...,",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationTemplateBase",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class NotificationTemplateBase(BaseModel):\n    \"\"\"Base schema for notification templates.\"\"\"\n    template_key: str = Field(\n        ...,\n        min_length=1,\n        max_length=100,\n        description=\"Unique template identifier (e.g., 'task_assigned')\"\n    )\n    locale: TemplateLocaleEnum = TemplateLocaleEnum.EN\n    subject: str = Field(..., description=\"Email subject template\")",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationTemplateCreate",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class NotificationTemplateCreate(NotificationTemplateBase):\n    \"\"\"Schema for creating a notification template.\"\"\"\n    workspace_id: str = Field(..., description=\"Workspace context\")\nclass NotificationTemplateRead(NotificationTemplateBase):\n    \"\"\"Schema for reading a notification template.\"\"\"\n    id: str\n    workspace_id: str\n    created_at: datetime\n    updated_at: datetime\n    class Config:",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationTemplateRead",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class NotificationTemplateRead(NotificationTemplateBase):\n    \"\"\"Schema for reading a notification template.\"\"\"\n    id: str\n    workspace_id: str\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\nclass NotificationTemplateListResponse(BaseModel):\n    \"\"\"Schema for template list with pagination.\"\"\"",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationTemplateListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class NotificationTemplateListResponse(BaseModel):\n    \"\"\"Schema for template list with pagination.\"\"\"\n    items: List[NotificationTemplateRead]\n    total: int\n    page: int\n    page_size: int\n# ============ Notification Preference Schemas ============\nclass NotificationPreferenceBase(BaseModel):\n    \"\"\"Base schema for notification preferences.\"\"\"\n    notifications_enabled: bool = True",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceBase",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class NotificationPreferenceBase(BaseModel):\n    \"\"\"Base schema for notification preferences.\"\"\"\n    notifications_enabled: bool = True\n    email_enabled: bool = True\n    push_enabled: bool = True\n    in_app_enabled: bool = True\n    enable_digest_batching: bool = True\n    digest_frequency: str = \"hourly\"  # \"realtime\", \"hourly\", \"daily\", \"weekly\"\n    unsubscribed_event_types: List[NotificationTypeEnum] = Field(default_factory=list)\n    quiet_hours_enabled: bool = False",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceCreate",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class NotificationPreferenceCreate(NotificationPreferenceBase):\n    \"\"\"Schema for creating notification preferences.\"\"\"\n    user_id: str = Field(..., description=\"User ID\")\n    workspace_id: str = Field(..., description=\"Workspace ID\")\nclass NotificationPreferenceUpdate(BaseModel):\n    \"\"\"Schema for updating notification preferences.\"\"\"\n    notifications_enabled: Optional[bool] = None\n    email_enabled: Optional[bool] = None\n    push_enabled: Optional[bool] = None\n    in_app_enabled: Optional[bool] = None",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class NotificationPreferenceUpdate(BaseModel):\n    \"\"\"Schema for updating notification preferences.\"\"\"\n    notifications_enabled: Optional[bool] = None\n    email_enabled: Optional[bool] = None\n    push_enabled: Optional[bool] = None\n    in_app_enabled: Optional[bool] = None\n    enable_digest_batching: Optional[bool] = None\n    digest_frequency: Optional[str] = None\n    unsubscribed_event_types: Optional[List[NotificationTypeEnum]] = None\n    quiet_hours_enabled: Optional[bool] = None",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceRead",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class NotificationPreferenceRead(NotificationPreferenceBase):\n    \"\"\"Schema for reading notification preferences.\"\"\"\n    id: str\n    user_id: str\n    workspace_id: str\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\n# ============ Watcher Schemas ============",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "WatcherBase",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class WatcherBase(BaseModel):\n    \"\"\"Base schema for watchers.\"\"\"\n    entity_type: str = Field(..., description=\"Entity type: 'task', 'project', etc.\")\n    entity_id: str = Field(..., description=\"Entity ID to watch\")\n    is_watching: bool = True\n    custom_channels: Optional[List[NotificationChannelEnum]] = None\n    notify_on_types: Optional[List[NotificationTypeEnum]] = None\nclass WatcherCreate(WatcherBase):\n    \"\"\"Schema for creating a watcher.\"\"\"\n    user_id: str = Field(..., description=\"User ID\")",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "WatcherCreate",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class WatcherCreate(WatcherBase):\n    \"\"\"Schema for creating a watcher.\"\"\"\n    user_id: str = Field(..., description=\"User ID\")\n    workspace_id: str = Field(..., description=\"Workspace ID\")\nclass WatcherRead(WatcherBase):\n    \"\"\"Schema for reading a watcher.\"\"\"\n    id: str\n    user_id: str\n    workspace_id: str\n    created_at: datetime",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "WatcherRead",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class WatcherRead(WatcherBase):\n    \"\"\"Schema for reading a watcher.\"\"\"\n    id: str\n    user_id: str\n    workspace_id: str\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\nclass WatcherListResponse(BaseModel):",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "WatcherListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class WatcherListResponse(BaseModel):\n    \"\"\"Schema for watcher list.\"\"\"\n    items: List[WatcherRead]\n    total: int\nclass WatchToggleRequest(BaseModel):\n    \"\"\"Schema for toggling watch status.\"\"\"\n    entity_type: str = Field(..., description=\"Entity type\")\n    entity_id: str = Field(..., description=\"Entity ID\")\n    is_watching: bool = Field(..., description=\"Watch or unwatch\")\n# ============ Interaction Tracking Schemas ============",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "WatchToggleRequest",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class WatchToggleRequest(BaseModel):\n    \"\"\"Schema for toggling watch status.\"\"\"\n    entity_type: str = Field(..., description=\"Entity type\")\n    entity_id: str = Field(..., description=\"Entity ID\")\n    is_watching: bool = Field(..., description=\"Watch or unwatch\")\n# ============ Interaction Tracking Schemas ============\nclass InteractionLogBase(BaseModel):\n    \"\"\"Base schema for interaction logs.\"\"\"\n    interaction_type: str = Field(\n        ...,",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "InteractionLogBase",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class InteractionLogBase(BaseModel):\n    \"\"\"Base schema for interaction logs.\"\"\"\n    interaction_type: str = Field(\n        ...,\n        description=\"Type of interaction: 'opened', 'clicked', 'read', 'approved', 'rejected'\"\n    )\n    action_label: Optional[str] = None\n    action_url_clicked: Optional[str] = None\n    source_channel: NotificationChannelEnum\n    user_agent: Optional[str] = None",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "InteractionTrackingRequest",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class InteractionTrackingRequest(InteractionLogBase):\n    \"\"\"Schema for tracking user interactions.\"\"\"\n    notification_id: str = Field(..., description=\"Notification ID\")\nclass InteractionLogRead(InteractionLogBase):\n    \"\"\"Schema for reading interaction logs.\"\"\"\n    id: str\n    notification_id: str\n    user_id: str\n    created_at: datetime\n    class Config:",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "InteractionLogRead",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class InteractionLogRead(InteractionLogBase):\n    \"\"\"Schema for reading interaction logs.\"\"\"\n    id: str\n    notification_id: str\n    user_id: str\n    created_at: datetime\n    class Config:\n        from_attributes = True\nclass InteractionLogListResponse(BaseModel):\n    \"\"\"Schema for interaction log list.\"\"\"",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "InteractionLogListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class InteractionLogListResponse(BaseModel):\n    \"\"\"Schema for interaction log list.\"\"\"\n    items: List[InteractionLogRead]\n    total: int\n    page: int\n    page_size: int\n# ============ Event Schemas ============\nclass EventLogBase(BaseModel):\n    \"\"\"Base schema for event logs.\"\"\"\n    event_type: NotificationTypeEnum",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "EventLogBase",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class EventLogBase(BaseModel):\n    \"\"\"Base schema for event logs.\"\"\"\n    event_type: NotificationTypeEnum\n    source_entity_type: str = Field(..., description=\"Entity type\")\n    source_entity_id: str = Field(..., description=\"Entity ID\")\n    event_payload: Dict[str, Any]\n    triggered_by_user_id: Optional[str] = None\nclass EventLogCreate(EventLogBase):\n    \"\"\"Schema for creating event logs.\"\"\"\n    event_id: str = Field(..., description=\"Unique event ID for idempotency\")",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "EventLogCreate",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class EventLogCreate(EventLogBase):\n    \"\"\"Schema for creating event logs.\"\"\"\n    event_id: str = Field(..., description=\"Unique event ID for idempotency\")\n    workspace_id: str = Field(..., description=\"Workspace ID\")\nclass EventLogRead(EventLogBase):\n    \"\"\"Schema for reading event logs.\"\"\"\n    id: str\n    event_id: str\n    workspace_id: str\n    is_processed: bool",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "EventLogRead",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class EventLogRead(EventLogBase):\n    \"\"\"Schema for reading event logs.\"\"\"\n    id: str\n    event_id: str\n    workspace_id: str\n    is_processed: bool\n    processed_at: Optional[datetime] = None\n    created_at: datetime\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "AggregationRuleBase",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class AggregationRuleBase(BaseModel):\n    \"\"\"Base schema for aggregation rules.\"\"\"\n    entity_type: str = Field(..., description=\"Entity type to aggregate (task, project, etc.)\")\n    entity_id: str = Field(..., description=\"Entity ID\")\n    event_types: List[NotificationTypeEnum] = Field(\n        default_factory=list,\n        description=\"Event types to aggregate\"\n    )\n    debounce_time_ms: int = Field(default=120000, description=\"Debounce time in milliseconds\")\n    max_aggregation_size: int = Field(default=10, description=\"Max events to aggregate\")",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "BatchingPreferenceBase",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class BatchingPreferenceBase(BaseModel):\n    \"\"\"Schema for batching preferences.\"\"\"\n    enabled: bool = True\n    frequency: str = Field(default=\"hourly\", description=\"Batching frequency\")\n    min_items: int = Field(default=2, description=\"Minimum items to trigger batch\")\n    max_items: int = Field(default=50, description=\"Maximum items per batch\")\n# ============ Statistics & Analytics Schemas ============\nclass NotificationStatistics(BaseModel):\n    \"\"\"Schema for notification statistics.\"\"\"\n    total_sent: int",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationStatistics",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class NotificationStatistics(BaseModel):\n    \"\"\"Schema for notification statistics.\"\"\"\n    total_sent: int\n    total_read: int\n    open_rate: float  # Percentage (0-100)\n    click_through_rate: float  # Percentage (0-100)\n    top_event_types: Dict[str, int]  # Event type -> count\n    top_channels: Dict[str, int]  # Channel -> count\n    period: str = \"all\"  # \"today\", \"week\", \"month\", \"all\"\nclass ChannelStatistics(BaseModel):",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "ChannelStatistics",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class ChannelStatistics(BaseModel):\n    \"\"\"Schema for channel-specific statistics.\"\"\"\n    channel: NotificationChannelEnum\n    total_sent: int\n    successful: int\n    failed: int\n    success_rate: float\n    average_delivery_time_ms: int\n# ============ System Error Response ============\nclass NotificationError(BaseModel):",
+        "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationError",
+        "kind": 6,
+        "importPath": "app.schemas.notification",
+        "description": "app.schemas.notification",
+        "peekOfCode": "class NotificationError(BaseModel):\n    \"\"\"Schema for notification errors.\"\"\"\n    error_code: str\n    message: str\n    details: Optional[Dict[str, Any]] = None\n    retry_count: Optional[int] = None\n    next_retry_at: Optional[datetime] = None",
+        "detail": "app.schemas.notification",
         "documentation": {}
     },
     {
@@ -12864,6 +14102,78 @@
         "description": "app.services.mfa",
         "peekOfCode": "class MFAService:\n    \"\"\"\n    Service for Multi-Factor Authentication (MFA) operations.\n    Implements TOTP (Time-based One-Time Password) and backup codes.\n    \"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n        self.BACKUP_CODES_COUNT = 10\n        self.BACKUP_CODE_LENGTH = 8\n    # ============= MFA Setup =============",
         "detail": "app.services.mfa",
+        "documentation": {}
+    },
+    {
+        "label": "EventBusService",
+        "kind": 6,
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "peekOfCode": "class EventBusService:\n    \"\"\"\n    Pub/Sub event bus for event-driven architecture.\n    Handles event publishing and consumption via Redis or RabbitMQ.\n    Ref: Module 7 - Business Overview - Event-Driven Architecture\n    \"\"\"\n    def __init__(self, redis_client: redis.Redis = None):\n        \"\"\"Initialize event bus with Redis or RabbitMQ.\"\"\"\n        self.redis_client = redis_client\n        self.subscribers = {}",
+        "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "AggregationService",
+        "kind": 6,
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "peekOfCode": "class AggregationService:\n    \"\"\"\n    Intelligent aggregation and debounce logic.\n    Combines related events within a time window.\n    Ref: Module 7 - Feature 2.1 - AC 1 (Debounce) & AC 2 (Batching)\n    \"\"\"\n    DEBOUNCE_WINDOW_MS = {\n        NotificationPriorityEnum.HIGH: 0,        # No debounce for high priority\n        NotificationPriorityEnum.MEDIUM: 5000,   # 5 seconds for medium\n        NotificationPriorityEnum.LOW: 30000      # 30 seconds for low",
+        "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "RoutingService",
+        "kind": 6,
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "peekOfCode": "class RoutingService:\n    \"\"\"\n    Smart routing and presence-aware channel selection.\n    Ref: Module 7 - Feature 2.2 - Real-time Delivery & Fallback\n    \"\"\"\n    def __init__(self, db: Session):\n        \"\"\"Initialize routing service.\"\"\"\n        self.db = db\n        self.online_users = set()  # Track online users via WebSocket\n    async def determine_channels(",
+        "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateService",
+        "kind": 6,
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "peekOfCode": "class TemplateService:\n    \"\"\"\n    Notification template rendering with i18n support.\n    Ref: Module 7 - Feature 2.4 - Notification Templating Engine\n    \"\"\"\n    def __init__(self, db: Session):\n        \"\"\"Initialize template service.\"\"\"\n        self.db = db\n    def render_template(\n        self,",
+        "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "RetryService",
+        "kind": 6,
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "peekOfCode": "class RetryService:\n    \"\"\"\n    Exponential backoff retry mechanism for failed deliveries.\n    Ref: Module 7 - Business Rule 3.1 - Retry Mechanism & Exponential Backoff\n    Retry strategy:\n    - Max retries: 3\n    - Backoff: 1s -> 5s -> 25s\n    \"\"\"\n    RETRY_DELAYS = [1, 5, 25]  # Seconds: 1s, 5s, 25s\n    MAX_RETRIES = 3",
+        "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationService",
+        "kind": 6,
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "peekOfCode": "class NotificationService:\n    \"\"\"\n    Core notification management service.\n    Orchestrates all notification operations.\n    \"\"\"\n    def __init__(\n        self,\n        db: Session,\n        event_bus: EventBusService,\n        aggregation: AggregationService,",
+        "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "WatcherService",
+        "kind": 6,
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "peekOfCode": "class WatcherService:\n    \"\"\"\n    Entity watcher management for granular subscriptions.\n    Ref: Module 7 - Feature 2.3 - Unsubscribe Strategy\n    \"\"\"\n    def __init__(self, db: Session):\n        \"\"\"Initialize watcher service.\"\"\"\n        self.db = db\n    async def add_watcher(\n        self,",
+        "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "PreferenceService",
+        "kind": 6,
+        "importPath": "app.services.notification",
+        "description": "app.services.notification",
+        "peekOfCode": "class PreferenceService:\n    \"\"\"\n    User notification preference management.\n    \"\"\"\n    def __init__(self, db: Session):\n        \"\"\"Initialize preference service.\"\"\"\n        self.db = db\n    async def get_or_create_preferences(\n        self,\n        user_id: str,",
+        "detail": "app.services.notification",
         "documentation": {}
     },
     {

@@ -57,6 +57,18 @@ class Settings(BaseSettings):
     # GeoIP Configuration
     GEOIP_DATABASE_PATH: Optional[str] = None
     
+    # Redis Configuration (Event Bus)
+    REDIS_HOST: str = "localhost"
+    REDIS_PORT: int = 6379
+    REDIS_DB: int = 0
+    REDIS_PASSWORD: Optional[str] = None
+    
+    # Notification Settings
+    NOTIFICATION_DEBOUNCE_MS: int = 5000
+    NOTIFICATION_MAX_RETRIES: int = 3
+    NOTIFICATION_RETRY_BACKOFF: List[int] = [1, 5, 25]  # Seconds
+    NOTIFICATION_TTL_MINUTES: int = 30
+    
     class Config:
         env_file = ".env"
         case_sensitive = True
