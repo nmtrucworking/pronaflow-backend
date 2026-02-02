@@ -432,3 +432,79 @@ class ExportFormatEnum(str, Enum):
     """
     JSON = "json"                    # Hierarchical JSON format
     CSV = "csv"                      # Comma-separated values for spreadsheets
+
+
+# ============ Module 9: User Experience Personalization ============
+
+class ThemeModeEnum(str, Enum):
+    """
+    UI theme modes for appearance customization.
+    Ref: Module 9 - Feature 2.2 - Theme & Appearance
+    """
+    LIGHT = "light"                  # Light theme (default)
+    DARK = "dark"                    # Dark theme (reduces eye strain)
+    SYSTEM = "system"                # Sync with OS settings (prefers-color-scheme)
+
+
+class FontSizeEnum(str, Enum):
+    """
+    Global font size options for typography accessibility.
+    Ref: Module 9 - Feature 2.5 - Typographic Accessibility (AC 1)
+    """
+    SMALL = "small"                  # 12px base font
+    MEDIUM = "medium"                # 14px base font (default)
+    LARGE = "large"                  # 16px base font
+    EXTRA_LARGE = "extra_large"      # 18px base font
+
+
+class FontFamilyEnum(str, Enum):
+    """
+    Font family options for readability and accessibility.
+    Ref: Module 9 - Feature 2.5 - Typographic Accessibility (AC 2)
+    """
+    SYSTEM_DEFAULT = "system_default"        # San Francisco (Mac) / Segoe UI (Win)
+    DYSLEXIC_FRIENDLY = "dyslexic_friendly"  # OpenDyslexic or similar
+    MONOSPACE = "monospace"                   # Code-like appearance for developers
+
+
+class InfoDensityModeEnum(str, Enum):
+    """
+    Information density modes for workspace layout optimization.
+    Ref: Module 9 - Feature 2.4 - Workspace Layout Optimization (AC 2)
+    """
+    COMFORTABLE = "comfortable"      # Spacious layout (12-16px padding) - default
+    COMPACT = "compact"              # Dense layout (4-8px padding) for data analysts
+
+
+class ColorBlindnessModeEnum(str, Enum):
+    """
+    Color vision deficiency support modes.
+    Ref: Module 9 - Feature 2.8 - Color Vision Deficiency Support
+    """
+    NORMAL = "normal"                # Standard color palette
+    DEUTERANOPIA = "deuteranopia"    # Red-Green color blindness (Protanopia alternative)
+    TRITANOPIA = "tritanopia"        # Blue-Yellow color blindness
+
+
+class NotificationChannelEnum(str, Enum):
+    """
+    Notification delivery channels.
+    Ref: Module 9 - Feature 2.6 - Notification Granularity (AC 1)
+    """
+    IN_APP = "in_app"                # In-app notification badge
+    EMAIL = "email"                  # Email notification
+    BROWSER_PUSH = "browser_push"    # Browser push notification
+
+
+class NotificationEventTypeEnum(str, Enum):
+    """
+    Types of events that trigger notifications.
+    Ref: Module 9 - Feature 2.6 - Notification Granularity (AC 1)
+    """
+    MENTION = "mention"              # User mentioned (@mention)
+    TASK_ASSIGNED = "task_assigned"  # Task assigned to user
+    TASK_STATUS_CHANGED = "task_status_changed"  # Task status updated
+    DEADLINE_APPROACHING = "deadline_approaching"  # Deadline reminder
+    COMMENT_ADDED = "comment_added"  # Comment on task
+    PROJECT_UPDATED = "project_updated"  # Project changes
+    COLLABORATION_REQUEST = "collaboration_request"  # Collaboration invite

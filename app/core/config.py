@@ -76,6 +76,14 @@ class Settings(BaseSettings):
     EXPORT_LINK_EXPIRY_HOURS: int = 24  # Hours until export link expires
     MAX_EXPORT_FILE_SIZE_MB: int = 500  # Max export file size
     BACKGROUND_JOB_INTERVAL_HOURS: int = 24  # Scheduled job interval
+
+    # Personalization & UX Settings (Module 9)
+    SUPPORTED_LANGUAGES: List[str] = ["en-US", "vi-VN"]  # Supported language codes
+    DEFAULT_LANGUAGE: str = "en-US"  # Default language fallback
+    DEFAULT_THEME: str = "system"  # Default theme (light, dark, system)
+    DEFAULT_FONT_SIZE: str = "medium"  # Default font size (small, medium, large, extra_large)
+    DEFAULT_INFO_DENSITY: str = "comfortable"  # Default info density (comfortable, compact)
+    WCAG_COMPLIANCE_LEVEL: str = "AA"  # WCAG accessibility level
     
     class Config:
         env_file = ".env"

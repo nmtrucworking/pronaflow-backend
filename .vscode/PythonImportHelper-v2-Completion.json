@@ -56,6 +56,14 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -410,6 +418,86 @@
     },
     {
         "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "JSON",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Index",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "PrimaryKeyConstraint",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -1441,6 +1529,14 @@
         "documentation": {}
     },
     {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
+        "documentation": {}
+    },
+    {
         "label": "fileConfig",
         "importPath": "logging.config",
         "description": "logging.config",
@@ -1503,6 +1599,14 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
         "documentation": {}
     },
     {
@@ -1859,6 +1963,14 @@
     },
     {
         "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -2546,6 +2658,38 @@
         "documentation": {}
     },
     {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -2723,6 +2867,38 @@
     },
     {
         "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -2963,54 +3139,6 @@
         "documentation": {}
     },
     {
-        "label": "uuid4",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
         "label": "UUID",
         "importPath": "uuid",
         "description": "uuid",
@@ -3051,6 +3179,78 @@
         "documentation": {}
     },
     {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -3100,6 +3300,14 @@
     },
     {
         "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -3275,6 +3483,14 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "date",
         "importPath": "datetime",
         "description": "datetime",
@@ -3388,6 +3604,22 @@
     },
     {
         "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "time",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -3668,6 +3900,46 @@
     },
     {
         "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -4099,23 +4371,7 @@
         "documentation": {}
     },
     {
-        "label": "relationship",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "Mapped",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "mapped_column",
+        "label": "Session",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -4164,6 +4420,38 @@
     },
     {
         "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -4468,6 +4756,14 @@
     },
     {
         "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -5312,6 +5608,14 @@
         "description": "app.db.repositories.workspace_repo",
         "isExtraImport": true,
         "detail": "app.db.repositories.workspace_repo",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.user",
+        "description": "app.db.models.user",
+        "isExtraImport": true,
+        "detail": "app.db.models.user",
         "documentation": {}
     },
     {
@@ -6515,6 +6819,70 @@
         "documentation": {}
     },
     {
+        "label": "ThemeModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "FontSizeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "FontFamilyEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "InfoDensityModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ColorBlindnessModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationChannelEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationEventTypeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "LanguageEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "ProjectStatus",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
@@ -6700,6 +7068,70 @@
     },
     {
         "label": "TemplateLocaleEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ThemeModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "FontSizeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "FontFamilyEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "InfoDensityModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ColorBlindnessModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationChannelEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationEventTypeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "LanguageEnum",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -6916,6 +7348,22 @@
     },
     {
         "label": "TemplateLocaleEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "LanguageEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ThemeModeEnum",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -7178,6 +7626,406 @@
         "importPath": "logging",
         "description": "logging",
         "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.api.dependencies",
+        "description": "app.api.dependencies",
+        "isExtraImport": true,
+        "detail": "app.api.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.api.dependencies",
+        "description": "app.api.dependencies",
+        "isExtraImport": true,
+        "detail": "app.api.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "UserSettingsRead",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "UserSettingsUpdate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayoutCreate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayoutRead",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayoutUpdate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayoutListResponse",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfigCreate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfigRead",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfigUpdate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfigListResponse",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceCreate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceRead",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceUpdate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceListResponse",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcutCreate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcutRead",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcutUpdate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcutListResponse",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcutCheatsheet",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "AccessibilityProfileRead",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "AccessibilityProfileCreate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "AccessibilityProfileUpdate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalizationActionResponse",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalizationSyncResponse",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalizationPreferencesResponse",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "LocalizationStringRead",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "TranslationDictionary",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "UserSettingsCreate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "UserSettingsUpdate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "UserSettingsRead",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayoutCreate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayoutUpdate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayoutRead",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfigCreate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfigUpdate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceCreate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceUpdate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcutCreate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcutUpdate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "AccessibilityProfileCreate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "AccessibilityProfileUpdate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalizationService",
+        "importPath": "app.services.personalization",
+        "description": "app.services.personalization",
+        "isExtraImport": true,
+        "detail": "app.services.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayoutService",
+        "importPath": "app.services.personalization",
+        "description": "app.services.personalization",
+        "isExtraImport": true,
+        "detail": "app.services.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfigService",
+        "importPath": "app.services.personalization",
+        "description": "app.services.personalization",
+        "isExtraImport": true,
+        "detail": "app.services.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceService",
+        "importPath": "app.services.personalization",
+        "description": "app.services.personalization",
+        "isExtraImport": true,
+        "detail": "app.services.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcutService",
+        "importPath": "app.services.personalization",
+        "description": "app.services.personalization",
+        "isExtraImport": true,
+        "detail": "app.services.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "AccessibilityProfileService",
+        "importPath": "app.services.personalization",
+        "description": "app.services.personalization",
+        "isExtraImport": true,
+        "detail": "app.services.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "LocalizationService",
+        "importPath": "app.services.personalization",
+        "description": "app.services.personalization",
+        "isExtraImport": true,
+        "detail": "app.services.personalization",
         "documentation": {}
     },
     {
@@ -8229,6 +9077,14 @@
         "documentation": {}
     },
     {
+        "label": "personalization",
+        "importPath": "app.api.v1.endpoints",
+        "description": "app.api.v1.endpoints",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints",
+        "documentation": {}
+    },
+    {
         "label": "BaseSettings",
         "importPath": "pydantic_settings",
         "description": "pydantic_settings",
@@ -8314,6 +9170,22 @@
         "documentation": {}
     },
     {
+        "label": "Base",
+        "importPath": "app.db.base_class",
+        "description": "app.db.base_class",
+        "isExtraImport": true,
+        "detail": "app.db.base_class",
+        "documentation": {}
+    },
+    {
+        "label": "TimestampMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
         "label": "TimestampMixin",
         "importPath": "app.db.mixins",
         "description": "app.db.mixins",
@@ -8483,6 +9355,14 @@
     },
     {
         "label": "JSONB",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
         "importPath": "sqlalchemy.dialects.postgresql",
         "description": "sqlalchemy.dialects.postgresql",
         "isExtraImport": true,
@@ -9010,6 +9890,30 @@
         "documentation": {}
     },
     {
+        "label": "validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "field_validator",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -9272,6 +10176,62 @@
         "importPath": "aioredis",
         "description": "aioredis",
         "detail": "aioredis",
+        "documentation": {}
+    },
+    {
+        "label": "UserSettings",
+        "importPath": "app.db.models.personalization",
+        "description": "app.db.models.personalization",
+        "isExtraImport": true,
+        "detail": "app.db.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayout",
+        "importPath": "app.db.models.personalization",
+        "description": "app.db.models.personalization",
+        "isExtraImport": true,
+        "detail": "app.db.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfig",
+        "importPath": "app.db.models.personalization",
+        "description": "app.db.models.personalization",
+        "isExtraImport": true,
+        "detail": "app.db.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreference",
+        "importPath": "app.db.models.personalization",
+        "description": "app.db.models.personalization",
+        "isExtraImport": true,
+        "detail": "app.db.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcut",
+        "importPath": "app.db.models.personalization",
+        "description": "app.db.models.personalization",
+        "isExtraImport": true,
+        "detail": "app.db.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "LocalizationString",
+        "importPath": "app.db.models.personalization",
+        "description": "app.db.models.personalization",
+        "isExtraImport": true,
+        "detail": "app.db.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "AccessibilityProfile",
+        "importPath": "app.db.models.personalization",
+        "description": "app.db.models.personalization",
+        "isExtraImport": true,
+        "detail": "app.db.models.personalization",
         "documentation": {}
     },
     {
@@ -9984,6 +10944,60 @@
         "documentation": {}
     },
     {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.module9_personalization",
+        "description": "app.alembic.versions.module9_personalization",
+        "peekOfCode": "def upgrade() -> None:\n    \"\"\"Create Module 9 tables for personalization.\"\"\"\n    # Create user_settings table\n    op.create_table(\n        'user_settings',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('user_id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('theme_mode', sa.String(50), nullable=False, server_default='system'),\n        sa.Column('font_size', sa.String(50), nullable=False, server_default='medium'),\n        sa.Column('font_family', sa.String(50), nullable=False, server_default='system_default'),",
+        "detail": "app.alembic.versions.module9_personalization",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.module9_personalization",
+        "description": "app.alembic.versions.module9_personalization",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Revert Module 9 tables.\"\"\"\n    op.drop_index('ix_accessibility_profiles_user_id', table_name='accessibility_profiles')\n    op.drop_table('accessibility_profiles')\n    op.drop_index('ix_localization_strings_namespace', table_name='localization_strings')\n    op.drop_index('ix_localization_strings_language', table_name='localization_strings')\n    op.drop_index('ix_localization_strings_key', table_name='localization_strings')\n    op.drop_table('localization_strings')\n    op.drop_index('ix_keyboard_shortcuts_action_id', table_name='keyboard_shortcuts')\n    op.drop_index('ix_keyboard_shortcuts_user_id', table_name='keyboard_shortcuts')",
+        "detail": "app.alembic.versions.module9_personalization",
+        "documentation": {}
+    },
+    {
+        "label": "revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module9_personalization",
+        "description": "app.alembic.versions.module9_personalization",
+        "peekOfCode": "revision = 'module9_personalization'\ndown_revision = 'module8_archiving'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    \"\"\"Create Module 9 tables for personalization.\"\"\"\n    # Create user_settings table\n    op.create_table(\n        'user_settings',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),",
+        "detail": "app.alembic.versions.module9_personalization",
+        "documentation": {}
+    },
+    {
+        "label": "down_revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module9_personalization",
+        "description": "app.alembic.versions.module9_personalization",
+        "peekOfCode": "down_revision = 'module8_archiving'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    \"\"\"Create Module 9 tables for personalization.\"\"\"\n    # Create user_settings table\n    op.create_table(\n        'user_settings',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('user_id', postgresql.UUID(as_uuid=True), nullable=False),",
+        "detail": "app.alembic.versions.module9_personalization",
+        "documentation": {}
+    },
+    {
+        "label": "branch_labels",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module9_personalization",
+        "description": "app.alembic.versions.module9_personalization",
+        "peekOfCode": "branch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    \"\"\"Create Module 9 tables for personalization.\"\"\"\n    # Create user_settings table\n    op.create_table(\n        'user_settings',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('user_id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('theme_mode', sa.String(50), nullable=False, server_default='system'),",
+        "detail": "app.alembic.versions.module9_personalization",
+        "documentation": {}
+    },
+    {
+        "label": "depends_on",
+        "kind": 5,
+        "importPath": "app.alembic.versions.module9_personalization",
+        "description": "app.alembic.versions.module9_personalization",
+        "peekOfCode": "depends_on = None\ndef upgrade() -> None:\n    \"\"\"Create Module 9 tables for personalization.\"\"\"\n    # Create user_settings table\n    op.create_table(\n        'user_settings',\n        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('user_id', postgresql.UUID(as_uuid=True), nullable=False),\n        sa.Column('theme_mode', sa.String(50), nullable=False, server_default='system'),\n        sa.Column('font_size', sa.String(50), nullable=False, server_default='medium'),",
+        "detail": "app.alembic.versions.module9_personalization",
+        "documentation": {}
+    },
+    {
         "label": "run_migrations_offline",
         "kind": 2,
         "importPath": "app.alembic.env",
@@ -10539,6 +11553,15 @@
         "description": "app.api.v1.endpoints.notifications",
         "peekOfCode": "router = APIRouter(prefix=\"/api/v1/notifications\", tags=[\"notifications\"])\n# ============ Dependency Injection ============\n@lru_cache()\ndef get_redis_client():\n    \"\"\"Get Redis client for event bus.\"\"\"\n    return redis.Redis(host='localhost', port=6379, db=0)\ndef get_services(db: Session = Depends(get_db)):\n    \"\"\"Get all notification services.\"\"\"\n    redis_client = get_redis_client()\n    event_bus = EventBusService(redis_client)",
         "detail": "app.api.v1.endpoints.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.v1.endpoints.personalization",
+        "description": "app.api.v1.endpoints.personalization",
+        "peekOfCode": "router = APIRouter(prefix=\"/personalization\", tags=[\"Personalization\"])\n# ============ User Settings Endpoints ============\n@router.get(\"/settings\", response_model=UserSettingsRead, summary=\"Get user personalization settings\")\nasync def get_user_settings(\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    \"\"\"\n    Get current user's personalization settings.\n    Ref: Module 9 - Features 2.1-2.8",
+        "detail": "app.api.v1.endpoints.personalization",
         "documentation": {}
     },
     {
@@ -11739,6 +12762,69 @@
         "documentation": {}
     },
     {
+        "label": "UserSettings",
+        "kind": 6,
+        "importPath": "app.db.models.personalization",
+        "description": "app.db.models.personalization",
+        "peekOfCode": "class UserSettings(Base, TimestampMixin):\n    \"\"\"\n    Central repository for user personalization preferences.\n    Stores theme, language, accessibility, and workspace layout settings.\n    Ref: Module 9 - Feature 2.1 to 2.8\n    Business Rule 3.1: Dual-Layer Persistence (Local Storage + Database)\n    \"\"\"\n    __tablename__ = \"user_settings\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    user_id = Column(UUID(as_uuid=True), ForeignKey(\"users.id\", ondelete=\"CASCADE\"), nullable=False, unique=True)",
+        "detail": "app.db.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayout",
+        "kind": 6,
+        "importPath": "app.db.models.personalization",
+        "description": "app.db.models.personalization",
+        "peekOfCode": "class DashboardLayout(Base, TimestampMixin):\n    \"\"\"\n    Stores custom dashboard layout configuration for each user and workspace.\n    Implements Feature 2.3: Customizable Dashboard (AC 2 - Persistence)\n    Ref: Module 9 - Feature 2.3 - Customizable Dashboard\n    Business Rule: layout_config must be persisted to database for sync across devices\n    \"\"\"\n    __tablename__ = \"dashboard_layouts\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    user_id = Column(UUID(as_uuid=True), ForeignKey(\"users.id\", ondelete=\"CASCADE\"), nullable=False)",
+        "detail": "app.db.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfig",
+        "kind": 6,
+        "importPath": "app.db.models.personalization",
+        "description": "app.db.models.personalization",
+        "peekOfCode": "class WidgetConfig(Base, TimestampMixin):\n    \"\"\"\n    Individual widget configuration and preferences.\n    Stores settings for specific widgets (My Tasks, Project Progress, Calendar, etc.)\n    Ref: Module 9 - Feature 2.3 - Customizable Dashboard\n    \"\"\"\n    __tablename__ = \"widget_configs\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    user_id = Column(UUID(as_uuid=True), ForeignKey(\"users.id\", ondelete=\"CASCADE\"), nullable=False)\n    # Widget identifier (e.g., \"my-tasks\", \"project-progress\", \"calendar\")",
+        "detail": "app.db.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreference",
+        "kind": 6,
+        "importPath": "app.db.models.personalization",
+        "description": "app.db.models.personalization",
+        "peekOfCode": "class NotificationPreference(Base, TimestampMixin):\n    \"\"\"\n    Stores notification routing preferences per event type.\n    Implements Feature 2.6: Notification Granularity (AC 1 - Multi-Channel Routing)\n    Allows users to configure which channels (in-app, email, browser push) receive\n    notifications for specific event types.\n    Ref: Module 9 - Feature 2.6 - Notification Granularity\n    \"\"\"\n    __tablename__ = \"notification_preferences\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)",
+        "detail": "app.db.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcut",
+        "kind": 6,
+        "importPath": "app.db.models.personalization",
+        "description": "app.db.models.personalization",
+        "peekOfCode": "class KeyboardShortcut(Base, TimestampMixin):\n    \"\"\"\n    Stores custom keyboard shortcut mappings.\n    Implements Feature 2.7: Keyboard Shortcuts & Power Usage (AC 1)\n    Allows power users to customize or override default keyboard shortcuts.\n    Ref: Module 9 - Feature 2.7 - Keyboard Shortcuts & Power Usage\n    \"\"\"\n    __tablename__ = \"keyboard_shortcuts\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    user_id = Column(UUID(as_uuid=True), ForeignKey(\"users.id\", ondelete=\"CASCADE\"), nullable=False)",
+        "detail": "app.db.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "LocalizationString",
+        "kind": 6,
+        "importPath": "app.db.models.personalization",
+        "description": "app.db.models.personalization",
+        "peekOfCode": "class LocalizationString(Base, TimestampMixin):\n    \"\"\"\n    Stores localized strings for UI labels, messages, and notifications.\n    Implements Feature 2.1: Internationalization & Localization (AC 1)\n    Supports hot-swap language switching without page reload via i18next.\n    Ref: Module 9 - Feature 2.1 - Internationalization & Localization\n    Business Rule: Fallback to English if translation unavailable\n    \"\"\"\n    __tablename__ = \"localization_strings\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)",
+        "detail": "app.db.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "AccessibilityProfile",
+        "kind": 6,
+        "importPath": "app.db.models.personalization",
+        "description": "app.db.models.personalization",
+        "peekOfCode": "class AccessibilityProfile(Base, TimestampMixin):\n    \"\"\"\n    Stores comprehensive accessibility settings grouped by category.\n    Centralizes Features 2.2, 2.5, and 2.8 accessibility configurations.\n    Ref: Module 9 - Features 2.2, 2.5, 2.8\n    Design: Allows future expansion for additional accessibility features\n    \"\"\"\n    __tablename__ = \"accessibility_profiles\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    user_id = Column(UUID(as_uuid=True), ForeignKey(\"users.id\", ondelete=\"CASCADE\"), nullable=False, unique=True)",
+        "detail": "app.db.models.personalization",
+        "documentation": {}
+    },
+    {
         "label": "Project",
         "kind": 6,
         "importPath": "app.db.models.projects",
@@ -12805,7 +13891,70 @@
         "kind": 6,
         "importPath": "app.db.enums",
         "description": "app.db.enums",
-        "peekOfCode": "class ExportFormatEnum(str, Enum):\n    \"\"\"\n    Supported export formats for data portability.\n    Ref: Module 8 - Feature 2.3 - Data Export & Portability\n    \"\"\"\n    JSON = \"json\"                    # Hierarchical JSON format\n    CSV = \"csv\"                      # Comma-separated values for spreadsheets",
+        "peekOfCode": "class ExportFormatEnum(str, Enum):\n    \"\"\"\n    Supported export formats for data portability.\n    Ref: Module 8 - Feature 2.3 - Data Export & Portability\n    \"\"\"\n    JSON = \"json\"                    # Hierarchical JSON format\n    CSV = \"csv\"                      # Comma-separated values for spreadsheets\n# ============ Module 9: User Experience Personalization ============\nclass ThemeModeEnum(str, Enum):\n    \"\"\"",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ThemeModeEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class ThemeModeEnum(str, Enum):\n    \"\"\"\n    UI theme modes for appearance customization.\n    Ref: Module 9 - Feature 2.2 - Theme & Appearance\n    \"\"\"\n    LIGHT = \"light\"                  # Light theme (default)\n    DARK = \"dark\"                    # Dark theme (reduces eye strain)\n    SYSTEM = \"system\"                # Sync with OS settings (prefers-color-scheme)\nclass FontSizeEnum(str, Enum):\n    \"\"\"",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "FontSizeEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class FontSizeEnum(str, Enum):\n    \"\"\"\n    Global font size options for typography accessibility.\n    Ref: Module 9 - Feature 2.5 - Typographic Accessibility (AC 1)\n    \"\"\"\n    SMALL = \"small\"                  # 12px base font\n    MEDIUM = \"medium\"                # 14px base font (default)\n    LARGE = \"large\"                  # 16px base font\n    EXTRA_LARGE = \"extra_large\"      # 18px base font\nclass FontFamilyEnum(str, Enum):",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "FontFamilyEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class FontFamilyEnum(str, Enum):\n    \"\"\"\n    Font family options for readability and accessibility.\n    Ref: Module 9 - Feature 2.5 - Typographic Accessibility (AC 2)\n    \"\"\"\n    SYSTEM_DEFAULT = \"system_default\"        # San Francisco (Mac) / Segoe UI (Win)\n    DYSLEXIC_FRIENDLY = \"dyslexic_friendly\"  # OpenDyslexic or similar\n    MONOSPACE = \"monospace\"                   # Code-like appearance for developers\nclass InfoDensityModeEnum(str, Enum):\n    \"\"\"",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "InfoDensityModeEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class InfoDensityModeEnum(str, Enum):\n    \"\"\"\n    Information density modes for workspace layout optimization.\n    Ref: Module 9 - Feature 2.4 - Workspace Layout Optimization (AC 2)\n    \"\"\"\n    COMFORTABLE = \"comfortable\"      # Spacious layout (12-16px padding) - default\n    COMPACT = \"compact\"              # Dense layout (4-8px padding) for data analysts\nclass ColorBlindnessModeEnum(str, Enum):\n    \"\"\"\n    Color vision deficiency support modes.",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ColorBlindnessModeEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class ColorBlindnessModeEnum(str, Enum):\n    \"\"\"\n    Color vision deficiency support modes.\n    Ref: Module 9 - Feature 2.8 - Color Vision Deficiency Support\n    \"\"\"\n    NORMAL = \"normal\"                # Standard color palette\n    DEUTERANOPIA = \"deuteranopia\"    # Red-Green color blindness (Protanopia alternative)\n    TRITANOPIA = \"tritanopia\"        # Blue-Yellow color blindness\nclass NotificationChannelEnum(str, Enum):\n    \"\"\"",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationChannelEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class NotificationChannelEnum(str, Enum):\n    \"\"\"\n    Notification delivery channels.\n    Ref: Module 9 - Feature 2.6 - Notification Granularity (AC 1)\n    \"\"\"\n    IN_APP = \"in_app\"                # In-app notification badge\n    EMAIL = \"email\"                  # Email notification\n    BROWSER_PUSH = \"browser_push\"    # Browser push notification\nclass NotificationEventTypeEnum(str, Enum):\n    \"\"\"",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationEventTypeEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class NotificationEventTypeEnum(str, Enum):\n    \"\"\"\n    Types of events that trigger notifications.\n    Ref: Module 9 - Feature 2.6 - Notification Granularity (AC 1)\n    \"\"\"\n    MENTION = \"mention\"              # User mentioned (@mention)\n    TASK_ASSIGNED = \"task_assigned\"  # Task assigned to user\n    TASK_STATUS_CHANGED = \"task_status_changed\"  # Task status updated\n    DEADLINE_APPROACHING = \"deadline_approaching\"  # Deadline reminder\n    COMMENT_ADDED = \"comment_added\"  # Comment on task",
         "detail": "app.db.enums",
         "documentation": {}
     },
@@ -13950,6 +15099,402 @@
         "description": "app.schemas.notification",
         "peekOfCode": "class NotificationError(BaseModel):\n    \"\"\"Schema for notification errors.\"\"\"\n    error_code: str\n    message: str\n    details: Optional[Dict[str, Any]] = None\n    retry_count: Optional[int] = None\n    next_retry_at: Optional[datetime] = None",
         "detail": "app.schemas.notification",
+        "documentation": {}
+    },
+    {
+        "label": "UserSettingsBase",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class UserSettingsBase(BaseModel):\n    \"\"\"Base schema with common personalization fields\"\"\"\n    theme_mode: Optional[str] = Field(default=ThemeModeEnum.SYSTEM.value, description=\"UI theme mode\")\n    font_size: Optional[str] = Field(default=FontSizeEnum.MEDIUM.value, description=\"Base font size\")\n    font_family: Optional[str] = Field(default=FontFamilyEnum.SYSTEM_DEFAULT.value, description=\"Font family\")\n    language: Optional[str] = Field(default=LanguageEnum.EN_US.value, description=\"Preferred language\")\n    info_density_mode: Optional[str] = Field(default=InfoDensityModeEnum.COMFORTABLE.value, description=\"Info density mode\")\n    sidebar_collapsed: Optional[bool] = Field(default=False, description=\"Sidebar collapsed state\")\n    color_blindness_mode: Optional[str] = Field(default=ColorBlindnessModeEnum.NORMAL.value, description=\"Color blindness support mode\")\n    dnd_enabled: Optional[bool] = Field(default=False, description=\"Do Not Disturb enabled\")",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "UserSettingsCreate",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class UserSettingsCreate(UserSettingsBase):\n    \"\"\"Schema for creating user settings\"\"\"\n    pass\nclass UserSettingsUpdate(UserSettingsBase):\n    \"\"\"Schema for updating user settings - all fields optional\"\"\"\n    pass\nclass UserSettingsRead(UserSettingsBase):\n    \"\"\"Schema for reading user settings\"\"\"\n    id: UUID\n    user_id: UUID",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "UserSettingsUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class UserSettingsUpdate(UserSettingsBase):\n    \"\"\"Schema for updating user settings - all fields optional\"\"\"\n    pass\nclass UserSettingsRead(UserSettingsBase):\n    \"\"\"Schema for reading user settings\"\"\"\n    id: UUID\n    user_id: UUID\n    keyboard_shortcuts: Optional[Dict[str, str]] = Field(default={}, description=\"Custom keyboard shortcuts\")\n    synced_to_client_at: Optional[datetime] = None\n    created_at: datetime",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "UserSettingsRead",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class UserSettingsRead(UserSettingsBase):\n    \"\"\"Schema for reading user settings\"\"\"\n    id: UUID\n    user_id: UUID\n    keyboard_shortcuts: Optional[Dict[str, str]] = Field(default={}, description=\"Custom keyboard shortcuts\")\n    synced_to_client_at: Optional[datetime] = None\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetPosition",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class WidgetPosition(BaseModel):\n    \"\"\"Individual widget position in grid layout\"\"\"\n    id: str = Field(..., description=\"Widget ID (e.g., 'my-tasks')\")\n    x: int = Field(..., ge=0, description=\"X position in grid\")\n    y: int = Field(..., ge=0, description=\"Y position in grid\")\n    w: int = Field(..., ge=1, le=12, description=\"Width in grid units\")\n    h: int = Field(..., ge=1, le=10, description=\"Height in grid units\")\n    visible: bool = Field(default=True, description=\"Widget visibility\")\nclass DashboardLayoutBase(BaseModel):\n    \"\"\"Base dashboard layout schema\"\"\"",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayoutBase",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class DashboardLayoutBase(BaseModel):\n    \"\"\"Base dashboard layout schema\"\"\"\n    name: str = Field(..., description=\"Layout name\", max_length=255)\n    layout_config: Dict[str, Any] = Field(..., description=\"Grid layout configuration\")\n    is_active: Optional[bool] = Field(default=True, description=\"Active layout flag\")\nclass DashboardLayoutCreate(DashboardLayoutBase):\n    \"\"\"Schema for creating dashboard layout\"\"\"\n    workspace_id: UUID\nclass DashboardLayoutUpdate(BaseModel):\n    \"\"\"Schema for updating dashboard layout\"\"\"",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayoutCreate",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class DashboardLayoutCreate(DashboardLayoutBase):\n    \"\"\"Schema for creating dashboard layout\"\"\"\n    workspace_id: UUID\nclass DashboardLayoutUpdate(BaseModel):\n    \"\"\"Schema for updating dashboard layout\"\"\"\n    name: Optional[str] = Field(default=None, max_length=255)\n    layout_config: Optional[Dict[str, Any]] = None\n    is_active: Optional[bool] = None\nclass DashboardLayoutRead(DashboardLayoutBase):\n    \"\"\"Schema for reading dashboard layout\"\"\"",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayoutUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class DashboardLayoutUpdate(BaseModel):\n    \"\"\"Schema for updating dashboard layout\"\"\"\n    name: Optional[str] = Field(default=None, max_length=255)\n    layout_config: Optional[Dict[str, Any]] = None\n    is_active: Optional[bool] = None\nclass DashboardLayoutRead(DashboardLayoutBase):\n    \"\"\"Schema for reading dashboard layout\"\"\"\n    id: UUID\n    user_id: UUID\n    workspace_id: UUID",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayoutRead",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class DashboardLayoutRead(DashboardLayoutBase):\n    \"\"\"Schema for reading dashboard layout\"\"\"\n    id: UUID\n    user_id: UUID\n    workspace_id: UUID\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\nclass DashboardLayoutListResponse(BaseModel):",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayoutListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class DashboardLayoutListResponse(BaseModel):\n    \"\"\"Paginated list of dashboard layouts\"\"\"\n    total: int\n    page: int\n    page_size: int\n    has_more: bool\n    items: List[DashboardLayoutRead]\n# ============ Widget Config Schemas ============\nclass WidgetConfigBase(BaseModel):\n    \"\"\"Base widget configuration schema\"\"\"",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfigBase",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class WidgetConfigBase(BaseModel):\n    \"\"\"Base widget configuration schema\"\"\"\n    widget_id: str = Field(..., description=\"Widget identifier\", max_length=100)\n    config: Optional[Dict[str, Any]] = Field(default=None, description=\"Widget settings\")\n    is_hidden: Optional[bool] = Field(default=False, description=\"Widget hidden state\")\n    width: Optional[int] = None\n    height: Optional[int] = None\nclass WidgetConfigCreate(WidgetConfigBase):\n    \"\"\"Schema for creating widget config\"\"\"\n    pass",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfigCreate",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class WidgetConfigCreate(WidgetConfigBase):\n    \"\"\"Schema for creating widget config\"\"\"\n    pass\nclass WidgetConfigUpdate(BaseModel):\n    \"\"\"Schema for updating widget config\"\"\"\n    config: Optional[Dict[str, Any]] = None\n    is_hidden: Optional[bool] = None\n    width: Optional[int] = None\n    height: Optional[int] = None\nclass WidgetConfigRead(WidgetConfigBase):",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfigUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class WidgetConfigUpdate(BaseModel):\n    \"\"\"Schema for updating widget config\"\"\"\n    config: Optional[Dict[str, Any]] = None\n    is_hidden: Optional[bool] = None\n    width: Optional[int] = None\n    height: Optional[int] = None\nclass WidgetConfigRead(WidgetConfigBase):\n    \"\"\"Schema for reading widget config\"\"\"\n    id: UUID\n    user_id: UUID",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfigRead",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class WidgetConfigRead(WidgetConfigBase):\n    \"\"\"Schema for reading widget config\"\"\"\n    id: UUID\n    user_id: UUID\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\nclass WidgetConfigListResponse(BaseModel):\n    \"\"\"List of widget configurations\"\"\"",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfigListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class WidgetConfigListResponse(BaseModel):\n    \"\"\"List of widget configurations\"\"\"\n    total: int\n    items: List[WidgetConfigRead]\n# ============ Notification Preference Schemas ============\nclass NotificationChannels(BaseModel):\n    \"\"\"Notification channel preferences\"\"\"\n    in_app: bool = Field(default=True, description=\"In-app notifications enabled\")\n    email: bool = Field(default=False, description=\"Email notifications enabled\")\n    browser_push: bool = Field(default=True, description=\"Browser push notifications enabled\")",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationChannels",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class NotificationChannels(BaseModel):\n    \"\"\"Notification channel preferences\"\"\"\n    in_app: bool = Field(default=True, description=\"In-app notifications enabled\")\n    email: bool = Field(default=False, description=\"Email notifications enabled\")\n    browser_push: bool = Field(default=True, description=\"Browser push notifications enabled\")\n    ignore_during_dnd: Optional[bool] = Field(default=True, description=\"Respect Do Not Disturb schedule\")\nclass NotificationExceptions(BaseModel):\n    \"\"\"Exception rules for notification filtering\"\"\"\n    urgent_only: Optional[bool] = Field(default=False, description=\"Only urgent notifications\")\n    allowed_senders: Optional[List[str]] = Field(default=None, description=\"List of allowed sender user IDs\")",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationExceptions",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class NotificationExceptions(BaseModel):\n    \"\"\"Exception rules for notification filtering\"\"\"\n    urgent_only: Optional[bool] = Field(default=False, description=\"Only urgent notifications\")\n    allowed_senders: Optional[List[str]] = Field(default=None, description=\"List of allowed sender user IDs\")\nclass NotificationPreferenceBase(BaseModel):\n    \"\"\"Base notification preference schema\"\"\"\n    event_type: str = Field(..., description=\"Event type (mention, task_assigned, etc.)\")\n    channels: NotificationChannels\n    is_enabled: Optional[bool] = Field(default=True, description=\"Event type enabled\")\n    exceptions: Optional[NotificationExceptions] = None",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceBase",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class NotificationPreferenceBase(BaseModel):\n    \"\"\"Base notification preference schema\"\"\"\n    event_type: str = Field(..., description=\"Event type (mention, task_assigned, etc.)\")\n    channels: NotificationChannels\n    is_enabled: Optional[bool] = Field(default=True, description=\"Event type enabled\")\n    exceptions: Optional[NotificationExceptions] = None\nclass NotificationPreferenceCreate(NotificationPreferenceBase):\n    \"\"\"Schema for creating notification preference\"\"\"\n    pass\nclass NotificationPreferenceUpdate(BaseModel):",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceCreate",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class NotificationPreferenceCreate(NotificationPreferenceBase):\n    \"\"\"Schema for creating notification preference\"\"\"\n    pass\nclass NotificationPreferenceUpdate(BaseModel):\n    \"\"\"Schema for updating notification preference\"\"\"\n    channels: Optional[NotificationChannels] = None\n    is_enabled: Optional[bool] = None\n    exceptions: Optional[NotificationExceptions] = None\nclass NotificationPreferenceRead(NotificationPreferenceBase):\n    \"\"\"Schema for reading notification preference\"\"\"",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class NotificationPreferenceUpdate(BaseModel):\n    \"\"\"Schema for updating notification preference\"\"\"\n    channels: Optional[NotificationChannels] = None\n    is_enabled: Optional[bool] = None\n    exceptions: Optional[NotificationExceptions] = None\nclass NotificationPreferenceRead(NotificationPreferenceBase):\n    \"\"\"Schema for reading notification preference\"\"\"\n    id: UUID\n    user_id: UUID\n    created_at: datetime",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceRead",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class NotificationPreferenceRead(NotificationPreferenceBase):\n    \"\"\"Schema for reading notification preference\"\"\"\n    id: UUID\n    user_id: UUID\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\nclass NotificationPreferenceListResponse(BaseModel):\n    \"\"\"List of notification preferences\"\"\"",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class NotificationPreferenceListResponse(BaseModel):\n    \"\"\"List of notification preferences\"\"\"\n    total: int\n    items: List[NotificationPreferenceRead]\n# ============ Keyboard Shortcut Schemas ============\nclass KeyboardShortcutBase(BaseModel):\n    \"\"\"Base keyboard shortcut schema\"\"\"\n    action_id: str = Field(..., description=\"Action identifier\", max_length=100)\n    key_combination: str = Field(..., description=\"Keyboard combination (e.g., Ctrl+K)\", max_length=100)\n    is_custom: Optional[bool] = Field(default=True, description=\"Custom override flag\")",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcutBase",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class KeyboardShortcutBase(BaseModel):\n    \"\"\"Base keyboard shortcut schema\"\"\"\n    action_id: str = Field(..., description=\"Action identifier\", max_length=100)\n    key_combination: str = Field(..., description=\"Keyboard combination (e.g., Ctrl+K)\", max_length=100)\n    is_custom: Optional[bool] = Field(default=True, description=\"Custom override flag\")\nclass KeyboardShortcutCreate(KeyboardShortcutBase):\n    \"\"\"Schema for creating keyboard shortcut\"\"\"\n    pass\nclass KeyboardShortcutUpdate(BaseModel):\n    \"\"\"Schema for updating keyboard shortcut\"\"\"",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcutCreate",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class KeyboardShortcutCreate(KeyboardShortcutBase):\n    \"\"\"Schema for creating keyboard shortcut\"\"\"\n    pass\nclass KeyboardShortcutUpdate(BaseModel):\n    \"\"\"Schema for updating keyboard shortcut\"\"\"\n    key_combination: Optional[str] = Field(default=None, max_length=100)\nclass KeyboardShortcutRead(KeyboardShortcutBase):\n    \"\"\"Schema for reading keyboard shortcut\"\"\"\n    id: UUID\n    user_id: UUID",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcutUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class KeyboardShortcutUpdate(BaseModel):\n    \"\"\"Schema for updating keyboard shortcut\"\"\"\n    key_combination: Optional[str] = Field(default=None, max_length=100)\nclass KeyboardShortcutRead(KeyboardShortcutBase):\n    \"\"\"Schema for reading keyboard shortcut\"\"\"\n    id: UUID\n    user_id: UUID\n    created_at: datetime\n    updated_at: datetime\n    class Config:",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcutRead",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class KeyboardShortcutRead(KeyboardShortcutBase):\n    \"\"\"Schema for reading keyboard shortcut\"\"\"\n    id: UUID\n    user_id: UUID\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\nclass KeyboardShortcutListResponse(BaseModel):\n    \"\"\"List of keyboard shortcuts\"\"\"",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcutListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class KeyboardShortcutListResponse(BaseModel):\n    \"\"\"List of keyboard shortcuts\"\"\"\n    total: int\n    items: List[KeyboardShortcutRead]\nclass KeyboardShortcutCheatsheet(BaseModel):\n    \"\"\"Keyboard shortcuts cheatsheet (Ref: AC 9.7 AC 1)\"\"\"\n    shortcuts: List[Dict[str, str]] = Field(..., description=\"List of shortcuts with descriptions\")\n    class Config:\n        json_schema_extra = {\n            \"example\": {",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcutCheatsheet",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class KeyboardShortcutCheatsheet(BaseModel):\n    \"\"\"Keyboard shortcuts cheatsheet (Ref: AC 9.7 AC 1)\"\"\"\n    shortcuts: List[Dict[str, str]] = Field(..., description=\"List of shortcuts with descriptions\")\n    class Config:\n        json_schema_extra = {\n            \"example\": {\n                \"shortcuts\": [\n                    {\"key\": \"Ctrl+K\", \"action\": \"Open Command Palette\", \"context\": \"Global\"},\n                    {\"key\": \"C\", \"action\": \"Create Task\", \"context\": \"Dashboard\"},\n                    {\"key\": \"?\", \"action\": \"Show Shortcuts\", \"context\": \"Global\"},",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "VisualAccessibilitySettings",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class VisualAccessibilitySettings(BaseModel):\n    \"\"\"Visual accessibility settings\"\"\"\n    high_contrast_enabled: Optional[bool] = Field(default=False)\n    reduce_motion_enabled: Optional[bool] = Field(default=False)\n    scale_interface: Optional[float] = Field(default=1.0, ge=0.75, le=2.0)\n    font_scaling: Optional[float] = Field(default=1.0, ge=0.75, le=2.0)\nclass AuditoryAccessibilitySettings(BaseModel):\n    \"\"\"Auditory accessibility settings\"\"\"\n    captions_enabled: Optional[bool] = Field(default=False)\n    sound_alerts_enabled: Optional[bool] = Field(default=True)",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "AuditoryAccessibilitySettings",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class AuditoryAccessibilitySettings(BaseModel):\n    \"\"\"Auditory accessibility settings\"\"\"\n    captions_enabled: Optional[bool] = Field(default=False)\n    sound_alerts_enabled: Optional[bool] = Field(default=True)\n    volume_level: Optional[float] = Field(default=0.8, ge=0.0, le=1.0)\nclass MotorAccessibilitySettings(BaseModel):\n    \"\"\"Motor accessibility settings\"\"\"\n    large_click_targets: Optional[bool] = Field(default=False)\n    sticky_keys_enabled: Optional[bool] = Field(default=False)\n    pointer_speed: Optional[float] = Field(default=1.0, ge=0.5, le=2.0)",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "MotorAccessibilitySettings",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class MotorAccessibilitySettings(BaseModel):\n    \"\"\"Motor accessibility settings\"\"\"\n    large_click_targets: Optional[bool] = Field(default=False)\n    sticky_keys_enabled: Optional[bool] = Field(default=False)\n    pointer_speed: Optional[float] = Field(default=1.0, ge=0.5, le=2.0)\nclass CognitiveAccessibilitySettings(BaseModel):\n    \"\"\"Cognitive accessibility settings\"\"\"\n    simplified_ui: Optional[bool] = Field(default=False)\n    extra_reading_time: Optional[bool] = Field(default=False)\n    focus_indicators_enhanced: Optional[bool] = Field(default=True)",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "CognitiveAccessibilitySettings",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class CognitiveAccessibilitySettings(BaseModel):\n    \"\"\"Cognitive accessibility settings\"\"\"\n    simplified_ui: Optional[bool] = Field(default=False)\n    extra_reading_time: Optional[bool] = Field(default=False)\n    focus_indicators_enhanced: Optional[bool] = Field(default=True)\nclass AccessibilityProfileBase(BaseModel):\n    \"\"\"Base accessibility profile schema\"\"\"\n    visual_settings: Optional[VisualAccessibilitySettings] = Field(default=None)\n    auditory_settings: Optional[AuditoryAccessibilitySettings] = Field(default=None)\n    motor_settings: Optional[MotorAccessibilitySettings] = Field(default=None)",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "AccessibilityProfileBase",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class AccessibilityProfileBase(BaseModel):\n    \"\"\"Base accessibility profile schema\"\"\"\n    visual_settings: Optional[VisualAccessibilitySettings] = Field(default=None)\n    auditory_settings: Optional[AuditoryAccessibilitySettings] = Field(default=None)\n    motor_settings: Optional[MotorAccessibilitySettings] = Field(default=None)\n    cognitive_settings: Optional[CognitiveAccessibilitySettings] = Field(default=None)\nclass AccessibilityProfileCreate(AccessibilityProfileBase):\n    \"\"\"Schema for creating accessibility profile\"\"\"\n    pass\nclass AccessibilityProfileUpdate(AccessibilityProfileBase):",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "AccessibilityProfileCreate",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class AccessibilityProfileCreate(AccessibilityProfileBase):\n    \"\"\"Schema for creating accessibility profile\"\"\"\n    pass\nclass AccessibilityProfileUpdate(AccessibilityProfileBase):\n    \"\"\"Schema for updating accessibility profile\"\"\"\n    pass\nclass AccessibilityProfileRead(AccessibilityProfileBase):\n    \"\"\"Schema for reading accessibility profile\"\"\"\n    id: UUID\n    user_id: UUID",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "AccessibilityProfileUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class AccessibilityProfileUpdate(AccessibilityProfileBase):\n    \"\"\"Schema for updating accessibility profile\"\"\"\n    pass\nclass AccessibilityProfileRead(AccessibilityProfileBase):\n    \"\"\"Schema for reading accessibility profile\"\"\"\n    id: UUID\n    user_id: UUID\n    last_reviewed_at: Optional[datetime] = None\n    created_at: datetime\n    updated_at: datetime",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "AccessibilityProfileRead",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class AccessibilityProfileRead(AccessibilityProfileBase):\n    \"\"\"Schema for reading accessibility profile\"\"\"\n    id: UUID\n    user_id: UUID\n    last_reviewed_at: Optional[datetime] = None\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\n# ============ Localization Schemas ============",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "LocalizationStringBase",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class LocalizationStringBase(BaseModel):\n    \"\"\"Base localization string schema\"\"\"\n    key: str = Field(..., description=\"Translation key\", max_length=255)\n    language: str = Field(..., description=\"Language code (e.g., en-US, vi-VN)\")\n    value: str = Field(..., description=\"Translated text\", max_length=2000)\n    namespace: Optional[str] = Field(default=\"common\", description=\"i18next namespace\")\nclass LocalizationStringCreate(LocalizationStringBase):\n    \"\"\"Schema for creating localization string\"\"\"\n    pass\nclass LocalizationStringRead(LocalizationStringBase):",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "LocalizationStringCreate",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class LocalizationStringCreate(LocalizationStringBase):\n    \"\"\"Schema for creating localization string\"\"\"\n    pass\nclass LocalizationStringRead(LocalizationStringBase):\n    \"\"\"Schema for reading localization string\"\"\"\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "LocalizationStringRead",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class LocalizationStringRead(LocalizationStringBase):\n    \"\"\"Schema for reading localization string\"\"\"\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\nclass LocalizationStringListResponse(BaseModel):\n    \"\"\"List of localization strings\"\"\"\n    total: int",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "LocalizationStringListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class LocalizationStringListResponse(BaseModel):\n    \"\"\"List of localization strings\"\"\"\n    total: int\n    items: List[LocalizationStringRead]\nclass TranslationDictionary(BaseModel):\n    \"\"\"Complete translation dictionary for language\"\"\"\n    language: str\n    namespace: str\n    translations: Dict[str, str] = Field(..., description=\"Key-value translation pairs\")\n# ============ Response Models ============",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "TranslationDictionary",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class TranslationDictionary(BaseModel):\n    \"\"\"Complete translation dictionary for language\"\"\"\n    language: str\n    namespace: str\n    translations: Dict[str, str] = Field(..., description=\"Key-value translation pairs\")\n# ============ Response Models ============\nclass PersonalizationActionResponse(BaseModel):\n    \"\"\"Generic response for personalization actions\"\"\"\n    success: bool\n    message: str",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalizationActionResponse",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class PersonalizationActionResponse(BaseModel):\n    \"\"\"Generic response for personalization actions\"\"\"\n    success: bool\n    message: str\n    data: Optional[Dict[str, Any]] = None\nclass PersonalizationSyncResponse(BaseModel):\n    \"\"\"Response for syncing personalization settings to client\"\"\"\n    user_settings: UserSettingsRead\n    dashboard_layouts: List[DashboardLayoutRead]\n    accessibility_profile: Optional[AccessibilityProfileRead]",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalizationSyncResponse",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class PersonalizationSyncResponse(BaseModel):\n    \"\"\"Response for syncing personalization settings to client\"\"\"\n    user_settings: UserSettingsRead\n    dashboard_layouts: List[DashboardLayoutRead]\n    accessibility_profile: Optional[AccessibilityProfileRead]\n    keyboard_shortcuts: List[KeyboardShortcutRead]\n    notification_preferences: List[NotificationPreferenceRead]\n    last_synced_at: datetime\nclass PersonalizationPreferencesResponse(BaseModel):\n    \"\"\"Summary of all user personalization preferences\"\"\"",
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalizationPreferencesResponse",
+        "kind": 6,
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "peekOfCode": "class PersonalizationPreferencesResponse(BaseModel):\n    \"\"\"Summary of all user personalization preferences\"\"\"\n    theme: UserSettingsRead\n    layout: Optional[DashboardLayoutRead]\n    accessibility: Optional[AccessibilityProfileRead]\n    notifications: Dict[str, NotificationPreferenceRead]\n    shortcuts: Dict[str, KeyboardShortcutRead]",
+        "detail": "app.schemas.personalization",
         "documentation": {}
     },
     {
@@ -15336,6 +16881,69 @@
         "description": "app.services.notification",
         "peekOfCode": "class PreferenceService:\n    \"\"\"\n    User notification preference management.\n    \"\"\"\n    def __init__(self, db: Session):\n        \"\"\"Initialize preference service.\"\"\"\n        self.db = db\n    async def get_or_create_preferences(\n        self,\n        user_id: str,",
         "detail": "app.services.notification",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalizationService",
+        "kind": 6,
+        "importPath": "app.services.personalization",
+        "description": "app.services.personalization",
+        "peekOfCode": "class PersonalizationService:\n    \"\"\"\n    Central service for managing user personalization settings.\n    Implements Features 2.1-2.8 of Module 9.\n    Ref: Module 9 - Business Rule 3.1 (Dual-Layer Persistence)\n    \"\"\"\n    @staticmethod\n    def get_or_create_user_settings(db: Session, user_id: UUID) -> UserSettings:\n        \"\"\"\n        Get user settings or create defaults.",
+        "detail": "app.services.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayoutService",
+        "kind": 6,
+        "importPath": "app.services.personalization",
+        "description": "app.services.personalization",
+        "peekOfCode": "class DashboardLayoutService:\n    \"\"\"\n    Service for managing customizable dashboard layouts.\n    Ref: Module 9 - Feature 2.3 - Customizable Dashboard\n    Business Rule 3.1: Layout configuration persisted to database for sync\n    \"\"\"\n    @staticmethod\n    def create_layout(db: Session, user_id: UUID, layout_create: DashboardLayoutCreate) -> DashboardLayout:\n        \"\"\"\n        Create new dashboard layout.",
+        "detail": "app.services.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfigService",
+        "kind": 6,
+        "importPath": "app.services.personalization",
+        "description": "app.services.personalization",
+        "peekOfCode": "class WidgetConfigService:\n    \"\"\"\n    Service for managing individual widget configurations.\n    Ref: Module 9 - Feature 2.3 - Customizable Dashboard\n    \"\"\"\n    @staticmethod\n    def get_or_create_widget_config(db: Session, user_id: UUID, widget_id: str) -> WidgetConfig:\n        \"\"\"Get widget config or create with defaults.\"\"\"\n        config = db.query(WidgetConfig).filter(\n            WidgetConfig.user_id == user_id,",
+        "detail": "app.services.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreferenceService",
+        "kind": 6,
+        "importPath": "app.services.personalization",
+        "description": "app.services.personalization",
+        "peekOfCode": "class NotificationPreferenceService:\n    \"\"\"\n    Service for managing notification routing preferences.\n    Ref: Module 9 - Feature 2.6 - Notification Granularity\n    Implements multi-channel routing matrix (in-app, email, browser push)\n    \"\"\"\n    @staticmethod\n    def get_preference(db: Session, user_id: UUID, event_type: str) -> Optional[NotificationPreference]:\n        \"\"\"Get notification preference for specific event type.\"\"\"\n        return db.query(NotificationPreference).filter(",
+        "detail": "app.services.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcutService",
+        "kind": 6,
+        "importPath": "app.services.personalization",
+        "description": "app.services.personalization",
+        "peekOfCode": "class KeyboardShortcutService:\n    \"\"\"\n    Service for managing keyboard shortcuts.\n    Ref: Module 9 - Feature 2.7 - Keyboard Shortcuts & Power Usage\n    \"\"\"\n    @staticmethod\n    def create_shortcut(db: Session, user_id: UUID, shortcut_create: KeyboardShortcutCreate) -> KeyboardShortcut:\n        \"\"\"Create custom keyboard shortcut.\"\"\"\n        # Check if action already has a custom shortcut\n        existing = db.query(KeyboardShortcut).filter(",
+        "detail": "app.services.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "AccessibilityProfileService",
+        "kind": 6,
+        "importPath": "app.services.personalization",
+        "description": "app.services.personalization",
+        "peekOfCode": "class AccessibilityProfileService:\n    \"\"\"\n    Service for managing comprehensive accessibility profiles.\n    Ref: Module 9 - Features 2.2, 2.5, 2.8 (All accessibility features)\n    \"\"\"\n    @staticmethod\n    def get_or_create_profile(db: Session, user_id: UUID) -> AccessibilityProfile:\n        \"\"\"Get accessibility profile or create with defaults.\"\"\"\n        profile = db.query(AccessibilityProfile).filter(AccessibilityProfile.user_id == user_id).first()\n        if not profile:",
+        "detail": "app.services.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "LocalizationService",
+        "kind": 6,
+        "importPath": "app.services.personalization",
+        "description": "app.services.personalization",
+        "peekOfCode": "class LocalizationService:\n    \"\"\"\n    Service for managing localization strings and translations.\n    Ref: Module 9 - Feature 2.1 - Internationalization & Localization\n    Supports hot-swap language switching via i18next\n    \"\"\"\n    @staticmethod\n    def get_translation(db: Session, key: str, language: str, namespace: str = \"common\") -> Optional[str]:\n        \"\"\"\n        Get translated string, with fallback to English.",
+        "detail": "app.services.personalization",
         "documentation": {}
     },
     {
