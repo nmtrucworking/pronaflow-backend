@@ -16,6 +16,14 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -442,6 +450,110 @@
     },
     {
         "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Numeric",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Index",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "CheckConstraint",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "UniqueConstraint",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -945,11 +1057,51 @@
         "documentation": {}
     },
     {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "text",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
         "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
         "documentation": {}
     },
     {
@@ -1063,6 +1215,14 @@
         "description": "app.core.config",
         "isExtraImport": true,
         "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.db.declarative_base",
+        "description": "app.db.declarative_base",
+        "isExtraImport": true,
+        "detail": "app.db.declarative_base",
         "documentation": {}
     },
     {
@@ -1347,6 +1507,30 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -1890,6 +2074,22 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Tuple",
         "importPath": "typing",
         "description": "typing",
@@ -1963,6 +2163,30 @@
     },
     {
         "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -2163,6 +2387,14 @@
         "documentation": {}
     },
     {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -2251,6 +2483,22 @@
         "documentation": {}
     },
     {
+        "label": "time",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -2347,30 +2595,6 @@
         "documentation": {}
     },
     {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -2395,7 +2619,47 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -2571,6 +2835,62 @@
         "documentation": {}
     },
     {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "UploadFile",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "HTTPException",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -2691,6 +3011,22 @@
         "documentation": {}
     },
     {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -2739,23 +3075,7 @@
         "documentation": {}
     },
     {
-        "label": "Mapped",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "mapped_column",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "relationship",
+        "label": "Session",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -2844,6 +3164,38 @@
     },
     {
         "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -3131,6 +3483,22 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
         "label": "get_db",
         "importPath": "app.db.session",
         "description": "app.db.session",
@@ -3204,6 +3572,14 @@
     },
     {
         "label": "get_current_active_user",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
         "importPath": "app.core.security",
         "description": "app.core.security",
         "isExtraImport": true,
@@ -3304,6 +3680,14 @@
         "description": "app.core.security",
         "isExtraImport": true,
         "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
         "documentation": {}
     },
     {
@@ -3971,6 +4355,14 @@
         "documentation": {}
     },
     {
+        "label": "TaskStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "UserStatus",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
@@ -4147,6 +4539,22 @@
         "documentation": {}
     },
     {
+        "label": "TaskStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskPriority",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "UserStatus",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
@@ -4196,6 +4604,22 @@
     },
     {
         "label": "ProjectHealthStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectRole",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -4531,11 +4955,315 @@
         "documentation": {}
     },
     {
+        "label": "ProjectService",
+        "importPath": "app.services.project",
+        "description": "app.services.project",
+        "isExtraImport": true,
+        "detail": "app.services.project",
+        "documentation": {}
+    },
+    {
         "label": "reference_loader",
         "importPath": "app.core.referencer_loader",
         "description": "app.core.referencer_loader",
         "isExtraImport": true,
         "detail": "app.core.referencer_loader",
+        "documentation": {}
+    },
+    {
+        "label": "# TaskList schemas\r\n    TaskListCreate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListUpdate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListResponse",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "# Task schemas\r\n    TaskCreate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskUpdate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatusUpdate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskResponse",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBulkUpdate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskMove",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "# Subtask schemas\r\n    SubtaskCreate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskUpdate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskResponse",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "# Dependency schemas\r\n    TaskDependencyCreate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependencyResponse",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "# Comment schemas\r\n    CommentCreate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "CommentUpdate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "CommentResponse",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "# File schemas\r\n    FileResponse",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "# Assignment schemas\r\n    TaskAssignmentAdd",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssignmentRemove",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListCreate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListUpdate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskCreate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskUpdate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatusUpdate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskCreate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskUpdate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependencyCreate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "CommentCreate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "CommentUpdate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBulkUpdate",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskMove",
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "isExtraImport": true,
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListService",
+        "importPath": "app.services.task",
+        "description": "app.services.task",
+        "isExtraImport": true,
+        "detail": "app.services.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskService",
+        "importPath": "app.services.task",
+        "description": "app.services.task",
+        "isExtraImport": true,
+        "detail": "app.services.task",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskService",
+        "importPath": "app.services.task",
+        "description": "app.services.task",
+        "isExtraImport": true,
+        "detail": "app.services.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependencyService",
+        "importPath": "app.services.task",
+        "description": "app.services.task",
+        "isExtraImport": true,
+        "detail": "app.services.task",
+        "documentation": {}
+    },
+    {
+        "label": "CommentService",
+        "importPath": "app.services.task",
+        "description": "app.services.task",
+        "isExtraImport": true,
+        "detail": "app.services.task",
         "documentation": {}
     },
     {
@@ -4564,6 +5292,14 @@
     },
     {
         "label": "projects",
+        "importPath": "app.api.v1.endpoints",
+        "description": "app.api.v1.endpoints",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints",
+        "documentation": {}
+    },
+    {
+        "label": "tasks",
         "importPath": "app.api.v1.endpoints",
         "description": "app.api.v1.endpoints",
         "isExtraImport": true,
@@ -4745,6 +5481,14 @@
         "documentation": {}
     },
     {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
         "label": "JSONB",
         "importPath": "sqlalchemy.dialects.postgresql",
         "description": "sqlalchemy.dialects.postgresql",
@@ -4857,6 +5601,14 @@
         "documentation": {}
     },
     {
+        "label": "TimestampMixin",
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "isExtraImport": true,
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
         "label": "AuditMixin",
         "importPath": "app.db.mixins",
         "description": "app.db.mixins",
@@ -4894,6 +5646,14 @@
         "description": "app.db.mixins",
         "isExtraImport": true,
         "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
         "documentation": {}
     },
     {
@@ -4978,6 +5738,62 @@
     },
     {
         "label": "Timesheet",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskList",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Subtask",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependency",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssignee",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Comment",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "File",
         "importPath": "app.db.models.tasks",
         "description": "app.db.models.tasks",
         "isExtraImport": true,
@@ -5185,6 +6001,30 @@
         "documentation": {}
     },
     {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "field_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "EmailStr",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -5302,6 +6142,14 @@
         "documentation": {}
     },
     {
+        "label": "Project",
+        "importPath": "app.db.models.projects",
+        "description": "app.db.models.projects",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects",
+        "documentation": {}
+    },
+    {
         "label": "ProjectMember",
         "importPath": "app.db.models.projects_extended",
         "description": "app.db.models.projects_extended",
@@ -5335,6 +6183,14 @@
     },
     {
         "label": "ProjectArchive",
+        "importPath": "app.db.models.projects_extended",
+        "description": "app.db.models.projects_extended",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects_extended",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMember",
         "importPath": "app.db.models.projects_extended",
         "description": "app.db.models.projects_extended",
         "isExtraImport": true,
@@ -5498,6 +6354,60 @@
         "description": "app.alembic.versions.37d437544626_initial_migration_create_all_database_",
         "peekOfCode": "depends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('api_scopes',\n    sa.Column('id', sa.UUID(), nullable=False, comment='Global unique UUID for API scope'),\n    sa.Column('scope', sa.String(length=100), nullable=False, comment=\"Scope identifier (e.g., 'tasks:read', 'tasks:write', 'projects:read')\"),\n    sa.Column('description', sa.Text(), nullable=True, comment='Scope description'),\n    sa.Column('created_at', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=False, comment='Timestamp when the record was created'),\n    sa.Column('updated_at', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=False, comment='Timestamp when the record was last updated'),\n    sa.PrimaryKeyConstraint('id', name=op.f('pk_api_scopes'))",
         "detail": "app.alembic.versions.37d437544626_initial_migration_create_all_database_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "description": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "peekOfCode": "def upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('login_attempts',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('email', sa.String(length=255), nullable=False, comment='Email attempted to login'),\n    sa.Column('ip_address', sa.String(length=45), nullable=True, comment='IP address of login attempt'),\n    sa.Column('user_agent', sa.Text(), nullable=True, comment='User agent of login attempt'),\n    sa.Column('success', sa.Boolean(), nullable=False, comment='Whether login attempt was successful'),\n    sa.Column('reason', sa.String(length=255), nullable=True, comment=\"Reason for failed attempt (e.g., 'Invalid password', 'Account locked')\"),\n    sa.Column('created_at', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=False, comment='Timestamp when the record was created'),",
+        "detail": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "description": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "peekOfCode": "def downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_index(op.f('ix_workspace_invitations_token_hash'), table_name='workspace_invitations')\n    op.create_index('ix_workspace_invitations_token_hash', 'workspace_invitations', ['token_hash'], unique=False)\n    op.drop_column('users', 'full_name')\n    op.add_column('sessions', sa.Column('is_current', sa.BOOLEAN(), autoincrement=False, nullable=False))\n    op.drop_constraint(op.f('uq_sessions_token'), 'sessions', type_='unique')\n    op.drop_index(op.f('ix_sessions_user_id'), table_name='sessions')\n    op.alter_column('sessions', 'revoked_at',\n               existing_type=postgresql.TIMESTAMP(timezone=True),",
+        "detail": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "documentation": {}
+    },
+    {
+        "label": "revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "description": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "peekOfCode": "revision = 'b65d6dfc8da8'\ndown_revision = 'module3_enhancements'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('login_attempts',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('email', sa.String(length=255), nullable=False, comment='Email attempted to login'),\n    sa.Column('ip_address', sa.String(length=45), nullable=True, comment='IP address of login attempt'),",
+        "detail": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "documentation": {}
+    },
+    {
+        "label": "down_revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "description": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "peekOfCode": "down_revision = 'module3_enhancements'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('login_attempts',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('email', sa.String(length=255), nullable=False, comment='Email attempted to login'),\n    sa.Column('ip_address', sa.String(length=45), nullable=True, comment='IP address of login attempt'),\n    sa.Column('user_agent', sa.Text(), nullable=True, comment='User agent of login attempt'),",
+        "detail": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "documentation": {}
+    },
+    {
+        "label": "branch_labels",
+        "kind": 5,
+        "importPath": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "description": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "peekOfCode": "branch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('login_attempts',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('email', sa.String(length=255), nullable=False, comment='Email attempted to login'),\n    sa.Column('ip_address', sa.String(length=45), nullable=True, comment='IP address of login attempt'),\n    sa.Column('user_agent', sa.Text(), nullable=True, comment='User agent of login attempt'),\n    sa.Column('success', sa.Boolean(), nullable=False, comment='Whether login attempt was successful'),",
+        "detail": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "documentation": {}
+    },
+    {
+        "label": "depends_on",
+        "kind": 5,
+        "importPath": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "description": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
+        "peekOfCode": "depends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('login_attempts',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('email', sa.String(length=255), nullable=False, comment='Email attempted to login'),\n    sa.Column('ip_address', sa.String(length=45), nullable=True, comment='IP address of login attempt'),\n    sa.Column('user_agent', sa.Text(), nullable=True, comment='User agent of login attempt'),\n    sa.Column('success', sa.Boolean(), nullable=False, comment='Whether login attempt was successful'),\n    sa.Column('reason', sa.String(length=255), nullable=True, comment=\"Reason for failed attempt (e.g., 'Invalid password', 'Account locked')\"),",
+        "detail": "app.alembic.versions.b65d6dfc8da8_add_module4_task_execution",
         "documentation": {}
     },
     {
@@ -5870,6 +6780,195 @@
         "documentation": {}
     },
     {
+        "label": "create_task_list",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def create_task_list(\n    task_list_data: TaskListCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Create a new task list.\n    Ref: Module 4 - Feature 2.1 - AC 1\n    \"\"\"\n    task_list = TaskListService.create_task_list(db, task_list_data, current_user.id)",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "get_task_list",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def get_task_list(\n    task_list_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get task list by ID\"\"\"\n    task_list = TaskListService.get_task_list(db, task_list_id, current_user.id)\n    if not task_list:\n        raise HTTPException(\n            status_code=status.HTTP_404_NOT_FOUND,",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "list_task_lists",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def list_task_lists(\n    project_id: uuid.UUID = Query(..., description=\"Project ID\"),\n    include_archived: bool = Query(False, description=\"Include archived task lists\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    List all task lists in a project.\n    Ref: Module 4 - Feature 2.1 - AC 1\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "update_task_list",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def update_task_list(\n    task_list_id: uuid.UUID,\n    task_list_data: TaskListUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update task list\"\"\"\n    task_list = TaskListService.update_task_list(db, task_list_id, task_list_data, current_user.id)\n    return task_list\n@router.delete(\"/lists/{task_list_id}\", status_code=status.HTTP_204_NO_CONTENT)",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "delete_task_list",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def delete_task_list(\n    task_list_id: uuid.UUID,\n    force: bool = Query(False, description=\"Force delete even with tasks\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Delete task list.\n    Ref: Module 4 - Feature 2.1 - AC 1 - Cannot delete if contains tasks (unless force=true)\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "create_task",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def create_task(\n    task_data: TaskCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Create a new task.\n    Ref: Module 4 - Feature 2.2 - AC 1 & AC 2\n    \"\"\"\n    task = TaskService.create_task(db, task_data, current_user.id)",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "get_task",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def get_task(\n    task_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Get task by ID.\n    Ref: Module 4 - Feature 2.2 - AC 1\n    \"\"\"\n    task = TaskService.get_task(db, task_id, current_user.id)",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "list_tasks",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def list_tasks(\n    project_id: Optional[uuid.UUID] = Query(None, description=\"Filter by project\"),\n    task_list_id: Optional[uuid.UUID] = Query(None, description=\"Filter by task list\"),\n    status_filter: Optional[TaskStatus] = Query(None, alias=\"status\", description=\"Filter by status\"),\n    assignee_id: Optional[uuid.UUID] = Query(None, description=\"Filter by assignee\"),\n    is_milestone: Optional[bool] = Query(None, description=\"Filter milestones\"),\n    skip: int = Query(0, ge=0, description=\"Offset\"),\n    limit: int = Query(50, ge=1, le=100, description=\"Limit\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "update_task",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def update_task(\n    task_id: uuid.UUID,\n    task_data: TaskUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Update task.\n    Ref: Module 4 - Feature 2.2 - AC 2\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "update_task_status",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def update_task_status(\n    task_id: uuid.UUID,\n    status_data: TaskStatusUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Update task status with automatic actual date tracking.\n    Ref: Module 4 - Business Rule 3.4 - Actual vs Planned\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "delete_task",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def delete_task(\n    task_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Delete task\"\"\"\n    TaskService.delete_task(db, task_id, current_user.id)\n    return None\n@router.post(\"/{task_id}/move\", response_model=TaskResponse)\ndef move_task(",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "move_task",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def move_task(\n    task_id: uuid.UUID,\n    move_data: TaskMove,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Move task to different list or project.\n    Ref: Module 4 - Feature 2.7 - AC 2\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "create_subtask",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def create_subtask(\n    task_id: uuid.UUID,\n    subtask_data: SubtaskCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Create subtask.\n    Ref: Module 4 - Feature 2.3 - AC 1\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "update_subtask",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def update_subtask(\n    subtask_id: uuid.UUID,\n    subtask_data: SubtaskUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update subtask\"\"\"\n    subtask = SubtaskService.update_subtask(db, subtask_id, subtask_data, current_user.id)\n    return subtask\n@router.delete(\"/subtasks/{subtask_id}\", status_code=status.HTTP_204_NO_CONTENT)",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "delete_subtask",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def delete_subtask(\n    subtask_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Delete subtask\"\"\"\n    SubtaskService.delete_subtask(db, subtask_id, current_user.id)\n    return None\n# ===== Task Dependency Endpoints =====\n@router.post(\"/{task_id}/dependencies\", response_model=TaskDependencyResponse, status_code=status.HTTP_201_CREATED)",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "create_task_dependency",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def create_task_dependency(\n    task_id: uuid.UUID,\n    dependency_data: TaskDependencyCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Create task dependency with cycle detection.\n    Ref: Module 4 - Feature 2.4 - AC 2\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "delete_task_dependency",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def delete_task_dependency(\n    dependency_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Delete task dependency\"\"\"\n    TaskDependencyService.delete_dependency(db, dependency_id, current_user.id)\n    return None\n# ===== Comment Endpoints =====\n@router.post(\"/{task_id}/comments\", response_model=CommentResponse, status_code=status.HTTP_201_CREATED)",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "create_comment",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def create_comment(\n    task_id: uuid.UUID,\n    comment_data: CommentCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Create comment and auto-add user as watcher.\n    Ref: Module 4 - Feature 2.10 - AC 1\n    \"\"\"",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "update_comment",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def update_comment(\n    comment_id: uuid.UUID,\n    comment_data: CommentUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update comment (only by author)\"\"\"\n    comment = CommentService.update_comment(db, comment_id, comment_data, current_user.id)\n    return comment\n@router.delete(\"/comments/{comment_id}\", status_code=status.HTTP_204_NO_CONTENT)",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "delete_comment",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "def delete_comment(\n    comment_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Delete comment (author or PM)\"\"\"\n    CommentService.delete_comment(db, comment_id, current_user.id)\n    return None",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.v1.endpoints.tasks",
+        "description": "app.api.v1.endpoints.tasks",
+        "peekOfCode": "router = APIRouter(prefix=\"/v1/tasks\", tags=[\"tasks\"])\n# ===== TaskList Endpoints =====\n@router.post(\"/lists\", response_model=TaskListResponse, status_code=status.HTTP_201_CREATED)\ndef create_task_list(\n    task_list_data: TaskListCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"\n    Create a new task list.",
+        "detail": "app.api.v1.endpoints.tasks",
+        "documentation": {}
+    },
+    {
         "label": "create_workspace",
         "kind": 2,
         "importPath": "app.api.v1.endpoints.workspaces",
@@ -6045,7 +7144,7 @@
         "kind": 5,
         "importPath": "app.api.v1.router",
         "description": "app.api.v1.router",
-        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(auth.router)\napi_router.include_router(workspaces.router)\napi_router.include_router(projects.router)\napi_router.include_router(admin.router)",
+        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(auth.router)\napi_router.include_router(workspaces.router)\napi_router.include_router(projects.router)\napi_router.include_router(tasks.router)\napi_router.include_router(admin.router)",
         "detail": "app.api.v1.router",
         "documentation": {}
     },
@@ -6398,6 +7497,132 @@
         "description": "app.db.models.reports",
         "peekOfCode": "class KPI(Base, TimestampMixin):\n    \"\"\"\n    KPI Model - Key Performance Indicators.\n    Defines and tracks KPIs for workspaces and projects.\n    Ref: Entities/KPI.md\n    \"\"\"\n    __tablename__ = \"kpis\"\n    # Primary Key\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True),",
         "detail": "app.db.models.reports",
+        "documentation": {}
+    },
+    {
+        "label": "PlanState",
+        "kind": 6,
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "peekOfCode": "class PlanState(Base, TimestampMixin):\n    \"\"\"\n    Plan state machine for planning governance and approval workflow.\n    Ref: Module 5 - Feature 2.11 - AC 1 - Plan State Machine\n    \"\"\"\n    __tablename__ = \"plan_states\"\n    id = Column(PG_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    project_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"projects.id\"), nullable=False)\n    # State: Draft -> Submitted -> Approved -> Locked\n    state = Column(String(50), nullable=False, default=\"DRAFT\")",
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBaseline",
+        "kind": 6,
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "peekOfCode": "class TaskBaseline(Base, TimestampMixin):\n    \"\"\"\n    Baseline snapshot of task schedule for variance tracking.\n    Ref: Module 5 - Feature 2.4 - AC 1 - Create Snapshot\n    \"\"\"\n    __tablename__ = \"task_baselines\"\n    id = Column(PG_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"tasks.id\"), nullable=False)\n    baseline_version = Column(Integer, nullable=False, default=1, comment=\"Baseline version number (1, 2, ...)\")\n    # Snapshot of dates",
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependencySchedule",
+        "kind": 6,
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "peekOfCode": "class TaskDependencySchedule(Base, TimestampMixin):\n    \"\"\"\n    Extended scheduling information for task dependencies.\n    Ref: Module 5 - Feature 2.2 - AC 4 - Lag & Lead Time Configuration\n    \"\"\"\n    __tablename__ = \"task_dependency_schedules\"\n    id = Column(PG_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    dependency_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"task_dependencies.id\"), nullable=False)\n    # Lag/Lead time configuration\n    lag_days = Column(Integer, nullable=False, default=0, comment=\"Positive: lag time (wait), negative: lead time (early start)\")",
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingMode",
+        "kind": 6,
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "peekOfCode": "class SchedulingMode(Base, TimestampMixin):\n    \"\"\"\n    Track whether a task is auto-scheduled or manually scheduled.\n    Ref: Module 5 - Feature 2.2 - AC 3 - Scheduling Mode\n    \"\"\"\n    __tablename__ = \"scheduling_modes\"\n    id = Column(PG_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"tasks.id\"), nullable=False, unique=True)\n    # Mode: Auto-scheduled (default) or Manually-scheduled (Pinned)\n    mode = Column(String(50), nullable=False, default=\"AUTO\", comment=\"AUTO or MANUAL\")",
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLAPolicy",
+        "kind": 6,
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "peekOfCode": "class SLAPolicy(Base, TimestampMixin):\n    \"\"\"\n    SLA policy configuration by priority level.\n    Ref: Module 5 - Feature 2.7 - AC 1 - SLA Definition\n    \"\"\"\n    __tablename__ = \"sla_policies\"\n    id = Column(PG_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    project_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"projects.id\"), nullable=False)\n    # Priority level\n    priority = Column(String(50), nullable=False, comment=\"CRITICAL, HIGH, MEDIUM, LOW\")",
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLATracker",
+        "kind": 6,
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "peekOfCode": "class SLATracker(Base, TimestampMixin):\n    \"\"\"\n    SLA tracking instance for each task.\n    Ref: Module 5 - Feature 2.7 - AC 3 - Visual Warning\n    \"\"\"\n    __tablename__ = \"sla_trackers\"\n    id = Column(PG_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"tasks.id\"), nullable=False, unique=True)\n    # SLA status: On Track, At Risk, Breached\n    status = Column(String(50), nullable=False, default=\"ON_TRACK\", comment=\"ON_TRACK, AT_RISK, BREACHED\")",
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "WorkingHoursPolicy",
+        "kind": 6,
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "peekOfCode": "class WorkingHoursPolicy(Base, TimestampMixin):\n    \"\"\"\n    Define working hours and non-working days for scheduling calculations.\n    Ref: Module 5 - Business Rule 3.2 - Non-working Days\n    \"\"\"\n    __tablename__ = \"working_hours_policies\"\n    id = Column(PG_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    workspace_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"workspaces.id\"), nullable=False)\n    # Working days: bitmask (0=Mon, 1=Tue, ..., 6=Sun)\n    working_days_mask = Column(Integer, nullable=False, default=0b0111110, comment=\"Bitmask: 0=Mon...6=Sun. Default: Mon-Fri\")",
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "HolidayCalendar",
+        "kind": 6,
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "peekOfCode": "class HolidayCalendar(Base, TimestampMixin):\n    \"\"\"\n    Holiday dates excluded from working hours.\n    Ref: Module 5 - Business Rule 3.2 - Non-working Days\n    \"\"\"\n    __tablename__ = \"holiday_calendars\"\n    id = Column(PG_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    workspace_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"workspaces.id\"), nullable=False)\n    holiday_date = Column(DateTime(timezone=True), nullable=False, comment=\"Date of holiday\")\n    name = Column(String(255), nullable=False, comment=\"Holiday name (e.g., 'Christmas', 'Tet')\")",
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalException",
+        "kind": 6,
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "peekOfCode": "class PersonalException(Base, TimestampMixin):\n    \"\"\"\n    Personal leave/vacation/sick days for team members.\n    Ref: Module 5 - Feature 2.19 - AC 1 - Personal Exception Input\n    \"\"\"\n    __tablename__ = \"personal_exceptions\"\n    id = Column(PG_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    user_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"users.id\"), nullable=False)\n    project_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"projects.id\"), nullable=False)\n    exception_date = Column(DateTime(timezone=True), nullable=False, comment=\"Date of exception\")",
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningScope",
+        "kind": 6,
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "peekOfCode": "class PlanningScope(Base, TimestampMixin):\n    \"\"\"\n    Control which tasks are included in planning scope (Gantt, CPM, auto-scheduling).\n    Ref: Module 5 - Feature 2.9 - AC 1 - Scope Flag\n    \"\"\"\n    __tablename__ = \"planning_scopes\"\n    id = Column(PG_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"tasks.id\"), nullable=False, unique=True)\n    # Include in planning scope?\n    include_in_planning = Column(Boolean, nullable=False, default=True, comment=\"Include in Gantt, CPM, auto-scheduling\")",
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceHistogram",
+        "kind": 6,
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "peekOfCode": "class ResourceHistogram(Base, TimestampMixin):\n    \"\"\"\n    Workload histogram data for resource balancing.\n    Ref: Module 5 - Feature 2.5 - AC 1 - Resource Histogram\n    \"\"\"\n    __tablename__ = \"resource_histograms\"\n    id = Column(PG_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    project_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"projects.id\"), nullable=False)\n    user_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"users.id\"), nullable=False)\n    histogram_date = Column(DateTime(timezone=True), nullable=False, comment=\"Date of histogram calculation\")",
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SimulationSession",
+        "kind": 6,
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "peekOfCode": "class SimulationSession(Base, TimestampMixin):\n    \"\"\"\n    What-If simulation mode for planning changes.\n    Ref: Module 5 - Feature 2.10 - AC 1 - Enter Simulation Mode\n    \"\"\"\n    __tablename__ = \"simulation_sessions\"\n    id = Column(PG_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    project_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"projects.id\"), nullable=False)\n    created_by = Column(PG_UUID(as_uuid=True), ForeignKey(\"users.id\"), nullable=False)\n    # Session state",
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "CrossProjectDependency",
+        "kind": 6,
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "peekOfCode": "class CrossProjectDependency(Base, TimestampMixin):\n    \"\"\"\n    Dependencies between tasks in different projects.\n    Ref: Module 5 - Feature 2.18 - AC 1 - External Predecessor Selection\n    \"\"\"\n    __tablename__ = \"cross_project_dependencies\"\n    id = Column(PG_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    source_task_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"tasks.id\"), nullable=False, comment=\"Task in source project\")\n    source_project_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"projects.id\"), nullable=False)\n    target_task_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"tasks.id\"), nullable=False, comment=\"Task in target project\")",
+        "detail": "app.db.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningAuditLog",
+        "kind": 6,
+        "importPath": "app.db.models.scheduling",
+        "description": "app.db.models.scheduling",
+        "peekOfCode": "class PlanningAuditLog(Base, TimestampMixin):\n    \"\"\"\n    Audit trail for planning changes.\n    Ref: Module 5 - Business Rule 3.7 - Planning Audit Trail\n    \"\"\"\n    __tablename__ = \"planning_audit_logs\"\n    id = Column(PG_UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    task_id = Column(PG_UUID(as_uuid=True), ForeignKey(\"tasks.id\"), nullable=False)\n    # Change details\n    change_type = Column(String(50), nullable=False, comment=\"START_DATE, END_DATE, DURATION, DEPENDENCY\")",
+        "detail": "app.db.models.scheduling",
         "documentation": {}
     },
     {
@@ -7062,7 +8287,70 @@
         "kind": 6,
         "importPath": "app.db.enums",
         "description": "app.db.enums",
-        "peekOfCode": "class ReportFormat(str, Enum):\n    \"\"\"Report export format\"\"\"\n    PDF = \"pdf\"\n    CSV = \"csv\"\n    EXCEL = \"excel\"\n    JSON = \"json\"",
+        "peekOfCode": "class ReportFormat(str, Enum):\n    \"\"\"Report export format\"\"\"\n    PDF = \"pdf\"\n    CSV = \"csv\"\n    EXCEL = \"excel\"\n    JSON = \"json\"\n# ============ Module 5: Temporal Planning and Scheduling ============\nclass PlanStateEnum(str, Enum):\n    \"\"\"\n    Plan state machine for planning governance.",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "PlanStateEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class PlanStateEnum(str, Enum):\n    \"\"\"\n    Plan state machine for planning governance.\n    Ref: Module 5 - Feature 2.11 - AC 1 - Plan State Machine\n    \"\"\"\n    DRAFT = \"draft\"          # PM is drafting, editable\n    SUBMITTED = \"submitted\"  # Submitted for approval\n    APPROVED = \"approved\"    # Approved, baseline created\n    LOCKED = \"locked\"        # Locked, no direct changes allowed\nclass SchedulingModeEnum(str, Enum):",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingModeEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class SchedulingModeEnum(str, Enum):\n    \"\"\"\n    Task scheduling mode.\n    Ref: Module 5 - Feature 2.2 - AC 3 - Scheduling Mode\n    \"\"\"\n    AUTO = \"auto\"            # Auto-scheduled (default)\n    MANUAL = \"manual\"        # Manually scheduled (Pinned)\nclass DependencyTypeEnum(str, Enum):\n    \"\"\"\n    Task dependency types.",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "DependencyTypeEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class DependencyTypeEnum(str, Enum):\n    \"\"\"\n    Task dependency types.\n    Ref: Module 5 - Feature 2.2 - AC 4 - Dependency Types\n    \"\"\"\n    FS = \"FS\"  # Finish-to-Start (default)\n    SS = \"SS\"  # Start-to-Start\n    FF = \"FF\"  # Finish-to-Finish\n    SF = \"SF\"  # Start-to-Finish\nclass SLAStatusEnum(str, Enum):",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "SLAStatusEnum",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class SLAStatusEnum(str, Enum):\n    \"\"\"\n    SLA status tracking.\n    Ref: Module 5 - Feature 2.7 - AC 3 - Visual Warning\n    \"\"\"\n    ON_TRACK = \"on_track\"    # < 75% of SLA consumed\n    AT_RISK = \"at_risk\"      # >= 75% to < 100% of SLA consumed\n    BREACHED = \"breached\"    # >= 100% of SLA consumed\nclass PersonalExceptionType(str, Enum):\n    \"\"\"",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalExceptionType",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class PersonalExceptionType(str, Enum):\n    \"\"\"\n    Type of personal calendar exceptions.\n    Ref: Module 5 - Feature 2.19 - AC 1\n    \"\"\"\n    VACATION = \"vacation\"\n    SICK_LEAVE = \"sick_leave\"\n    HALF_DAY = \"half_day\"\n    OTHER = \"other\"\nclass ZoomLevel(str, Enum):",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ZoomLevel",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class ZoomLevel(str, Enum):\n    \"\"\"\n    Gantt chart zoom levels.\n    Ref: Module 5 - Feature 2.1 - AC 1 - Timeline\n    \"\"\"\n    DAY = \"day\"\n    WEEK = \"week\"\n    MONTH = \"month\"\n    QUARTER = \"quarter\"\nclass ResourceLevelingStrategy(str, Enum):",
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceLevelingStrategy",
+        "kind": 6,
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "peekOfCode": "class ResourceLevelingStrategy(str, Enum):\n    \"\"\"\n    Resource leveling strategies.\n    Ref: Module 5 - Feature 2.17 - AC 1\n    \"\"\"\n    WITHIN_SLACK = \"within_slack\"    # Only move tasks with Float\n    EXTEND_PROJECT = \"extend_project\"  # Can extend project end date",
         "detail": "app.db.enums",
         "documentation": {}
     },
@@ -7580,6 +8868,330 @@
         "documentation": {}
     },
     {
+        "label": "TaskListBase",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskListBase(BaseModel):\n    \"\"\"Base schema for task list\"\"\"\n    name: str = Field(..., min_length=1, max_length=100, description=\"Task list name\")\nclass TaskListCreate(TaskListBase):\n    \"\"\"\n    Schema for creating a task list.\n    Ref: Module 4 - Feature 2.1 - AC 1\n    \"\"\"\n    project_id: UUID = Field(..., description=\"Project ID\")\n    position: Optional[int] = Field(default=0, description=\"Position for ordering\")",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListCreate",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskListCreate(TaskListBase):\n    \"\"\"\n    Schema for creating a task list.\n    Ref: Module 4 - Feature 2.1 - AC 1\n    \"\"\"\n    project_id: UUID = Field(..., description=\"Project ID\")\n    position: Optional[int] = Field(default=0, description=\"Position for ordering\")\nclass TaskListUpdate(BaseModel):\n    \"\"\"Schema for updating task list\"\"\"\n    name: Optional[str] = Field(None, min_length=1, max_length=100)",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskListUpdate(BaseModel):\n    \"\"\"Schema for updating task list\"\"\"\n    name: Optional[str] = Field(None, min_length=1, max_length=100)\n    position: Optional[int] = None\nclass TaskListResponse(TaskListBase):\n    \"\"\"Response schema for task list\"\"\"\n    id: UUID\n    project_id: UUID\n    position: int\n    is_archived: bool",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskListResponse(TaskListBase):\n    \"\"\"Response schema for task list\"\"\"\n    id: UUID\n    project_id: UUID\n    position: int\n    is_archived: bool\n    created_at: datetime\n    updated_at: datetime\n    task_count: Optional[int] = Field(None, description=\"Number of tasks in list\")\n    class Config:",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListDetailResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskListDetailResponse(TaskListResponse):\n    \"\"\"Detailed task list response with tasks\"\"\"\n    pass\n# ===== Task Schemas =====\nclass TaskBase(BaseModel):\n    \"\"\"Base schema for task\"\"\"\n    title: str = Field(..., min_length=1, max_length=255, description=\"Task title\")\n    description: Optional[str] = Field(None, description=\"Task description\")\n    priority: Optional[TaskPriority] = Field(default=TaskPriority.MEDIUM)\n    estimated_hours: Optional[float] = Field(None, ge=0, description=\"Estimated hours\")",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBase",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskBase(BaseModel):\n    \"\"\"Base schema for task\"\"\"\n    title: str = Field(..., min_length=1, max_length=255, description=\"Task title\")\n    description: Optional[str] = Field(None, description=\"Task description\")\n    priority: Optional[TaskPriority] = Field(default=TaskPriority.MEDIUM)\n    estimated_hours: Optional[float] = Field(None, ge=0, description=\"Estimated hours\")\n    is_milestone: Optional[bool] = Field(default=False, description=\"Whether task is a milestone\")\nclass TaskCreate(TaskBase):\n    \"\"\"\n    Schema for creating a task.",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskCreate",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskCreate(TaskBase):\n    \"\"\"\n    Schema for creating a task.\n    Ref: Module 4 - Feature 2.2 - AC 1 & AC 2\n    \"\"\"\n    project_id: UUID = Field(..., description=\"Project ID\")\n    task_list_id: UUID = Field(..., description=\"Task list ID (required)\")\n    status: Optional[TaskStatus] = Field(default=TaskStatus.TO_DO)\n    planned_start: Optional[datetime] = None\n    planned_end: Optional[datetime] = None",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskUpdate(BaseModel):\n    \"\"\"\n    Schema for updating task.\n    Ref: Module 4 - Feature 2.2 - AC 2\n    \"\"\"\n    title: Optional[str] = Field(None, min_length=1, max_length=255)\n    description: Optional[str] = None\n    status: Optional[TaskStatus] = None\n    priority: Optional[TaskPriority] = None\n    planned_start: Optional[datetime] = None",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatusUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskStatusUpdate(BaseModel):\n    \"\"\"\n    Schema for updating task status only.\n    Ref: Module 4 - Feature 2.2\n    \"\"\"\n    status: TaskStatus = Field(..., description=\"New task status\")\nclass TaskResponse(TaskBase):\n    \"\"\"Response schema for task\"\"\"\n    id: UUID\n    project_id: UUID",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskResponse(TaskBase):\n    \"\"\"Response schema for task\"\"\"\n    id: UUID\n    project_id: UUID\n    task_list_id: UUID\n    status: TaskStatus\n    created_by: UUID\n    planned_start: Optional[datetime]\n    planned_end: Optional[datetime]\n    actual_start: Optional[datetime]",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDetailResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskDetailResponse(TaskResponse):\n    \"\"\"Detailed task response with relationships\"\"\"\n    assignee_count: Optional[int] = Field(None, description=\"Number of assignees\")\n    subtask_count: Optional[int] = Field(None, description=\"Number of subtasks\")\n    subtasks_completed: Optional[int] = Field(None, description=\"Number of completed subtasks\")\n    comment_count: Optional[int] = Field(None, description=\"Number of comments\")\n    attachment_count: Optional[int] = Field(None, description=\"Number of attachments\")\n    completion_percentage: Optional[float] = Field(None, description=\"% completion based on subtasks\")\nclass TaskListResponse(BaseModel):\n    \"\"\"Paginated list of tasks\"\"\"",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskListResponse(BaseModel):\n    \"\"\"Paginated list of tasks\"\"\"\n    total: int\n    items: List[TaskResponse]\n# ===== Task Assignment Schemas =====\nclass TaskAssignmentCreate(BaseModel):\n    \"\"\"\n    Schema for assigning users to task.\n    Ref: Module 4 - Feature 2.2 - AC 2\n    \"\"\"",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssignmentCreate",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskAssignmentCreate(BaseModel):\n    \"\"\"\n    Schema for assigning users to task.\n    Ref: Module 4 - Feature 2.2 - AC 2\n    \"\"\"\n    user_id: UUID = Field(..., description=\"User ID to assign\")\n    is_primary: Optional[bool] = Field(default=False, description=\"Set as primary assignee\")\nclass TaskAssignmentAdd(BaseModel):\n    \"\"\"Schema for adding assignee to task\"\"\"\n    user_id: UUID = Field(..., description=\"User ID to add\")",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssignmentAdd",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskAssignmentAdd(BaseModel):\n    \"\"\"Schema for adding assignee to task\"\"\"\n    user_id: UUID = Field(..., description=\"User ID to add\")\n    is_primary: Optional[bool] = Field(default=False, description=\"Set as primary assignee\")\nclass TaskAssignmentRemove(BaseModel):\n    \"\"\"Schema for removing assignee from task\"\"\"\n    user_id: UUID = Field(..., description=\"User ID to remove\")\nclass TaskAssignmentResponse(BaseModel):\n    \"\"\"Response schema for task assignment\"\"\"\n    id: UUID",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssignmentRemove",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskAssignmentRemove(BaseModel):\n    \"\"\"Schema for removing assignee from task\"\"\"\n    user_id: UUID = Field(..., description=\"User ID to remove\")\nclass TaskAssignmentResponse(BaseModel):\n    \"\"\"Response schema for task assignment\"\"\"\n    id: UUID\n    task_id: UUID\n    user_id: UUID\n    is_primary: bool\n    created_at: datetime",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssignmentResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskAssignmentResponse(BaseModel):\n    \"\"\"Response schema for task assignment\"\"\"\n    id: UUID\n    task_id: UUID\n    user_id: UUID\n    is_primary: bool\n    created_at: datetime\n    class Config:\n        from_attributes = True\nclass TaskBulkAssign(BaseModel):",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBulkAssign",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskBulkAssign(BaseModel):\n    \"\"\"Schema for bulk assigning users to task\"\"\"\n    user_ids: List[UUID] = Field(..., min_length=1, description=\"List of user IDs\")\n    primary_user_id: Optional[UUID] = Field(None, description=\"Primary assignee ID\")\n# ===== Subtask Schemas =====\nclass SubtaskBase(BaseModel):\n    \"\"\"Base schema for subtask\"\"\"\n    title: str = Field(..., min_length=1, max_length=255, description=\"Subtask title\")\nclass SubtaskCreate(SubtaskBase):\n    \"\"\"",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskBase",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class SubtaskBase(BaseModel):\n    \"\"\"Base schema for subtask\"\"\"\n    title: str = Field(..., min_length=1, max_length=255, description=\"Subtask title\")\nclass SubtaskCreate(SubtaskBase):\n    \"\"\"\n    Schema for creating subtask.\n    Ref: Module 4 - Feature 2.3 - AC 1\n    \"\"\"\n    task_id: UUID = Field(..., description=\"Parent task ID\")\n    assignee_id: Optional[UUID] = Field(None, description=\"Assignee user ID\")",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskCreate",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class SubtaskCreate(SubtaskBase):\n    \"\"\"\n    Schema for creating subtask.\n    Ref: Module 4 - Feature 2.3 - AC 1\n    \"\"\"\n    task_id: UUID = Field(..., description=\"Parent task ID\")\n    assignee_id: Optional[UUID] = Field(None, description=\"Assignee user ID\")\n    position: Optional[int] = Field(default=0, description=\"Position for ordering\")\nclass SubtaskUpdate(BaseModel):\n    \"\"\"Schema for updating subtask\"\"\"",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class SubtaskUpdate(BaseModel):\n    \"\"\"Schema for updating subtask\"\"\"\n    title: Optional[str] = Field(None, min_length=1, max_length=255)\n    is_completed: Optional[bool] = None\n    assignee_id: Optional[UUID] = None\n    position: Optional[int] = None\nclass SubtaskResponse(SubtaskBase):\n    \"\"\"Response schema for subtask\"\"\"\n    id: UUID\n    task_id: UUID",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class SubtaskResponse(SubtaskBase):\n    \"\"\"Response schema for subtask\"\"\"\n    id: UUID\n    task_id: UUID\n    is_completed: bool\n    assignee_id: Optional[UUID]\n    position: int\n    created_at: datetime\n    updated_at: datetime\n    class Config:",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependencyCreate",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskDependencyCreate(BaseModel):\n    \"\"\"\n    Schema for creating task dependency.\n    Ref: Module 4 - Feature 2.4 - AC 1\n    \"\"\"\n    task_id: UUID = Field(..., description=\"Task ID (successor)\")\n    depends_on_task_id: UUID = Field(..., description=\"Predecessor task ID\")\n    dependency_type: Optional[str] = Field(default=\"FS\", description=\"Dependency type (FS, SS, FF, SF)\")\nclass TaskDependencyResponse(BaseModel):\n    \"\"\"Response schema for task dependency\"\"\"",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependencyResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskDependencyResponse(BaseModel):\n    \"\"\"Response schema for task dependency\"\"\"\n    id: UUID\n    task_id: UUID\n    depends_on_task_id: UUID\n    dependency_type: str\n    created_at: datetime\n    class Config:\n        from_attributes = True\n# ===== Comment Schemas =====",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "CommentBase",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class CommentBase(BaseModel):\n    \"\"\"Base schema for comment\"\"\"\n    content: str = Field(..., min_length=1, description=\"Comment content\")\nclass CommentCreate(CommentBase):\n    \"\"\"Schema for creating comment\"\"\"\n    task_id: UUID = Field(..., description=\"Task ID\")\nclass CommentUpdate(BaseModel):\n    \"\"\"Schema for updating comment\"\"\"\n    content: str = Field(..., min_length=1)\nclass CommentResponse(CommentBase):",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "CommentCreate",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class CommentCreate(CommentBase):\n    \"\"\"Schema for creating comment\"\"\"\n    task_id: UUID = Field(..., description=\"Task ID\")\nclass CommentUpdate(BaseModel):\n    \"\"\"Schema for updating comment\"\"\"\n    content: str = Field(..., min_length=1)\nclass CommentResponse(CommentBase):\n    \"\"\"Response schema for comment\"\"\"\n    id: UUID\n    task_id: UUID",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "CommentUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class CommentUpdate(BaseModel):\n    \"\"\"Schema for updating comment\"\"\"\n    content: str = Field(..., min_length=1)\nclass CommentResponse(CommentBase):\n    \"\"\"Response schema for comment\"\"\"\n    id: UUID\n    task_id: UUID\n    user_id: UUID\n    created_at: datetime\n    updated_at: datetime",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "CommentResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class CommentResponse(CommentBase):\n    \"\"\"Response schema for comment\"\"\"\n    id: UUID\n    task_id: UUID\n    user_id: UUID\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\n# ===== File/Attachment Schemas =====",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "FileCreate",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class FileCreate(BaseModel):\n    \"\"\"Schema for file upload\"\"\"\n    task_id: UUID = Field(..., description=\"Task ID\")\n    filename: str = Field(..., description=\"File name\")\n    file_path: str = Field(..., description=\"Storage path\")\n    file_size: int = Field(..., description=\"File size in bytes\")\n    mime_type: Optional[str] = Field(None, description=\"MIME type\")\nclass FileResponse(BaseModel):\n    \"\"\"Response schema for file\"\"\"\n    id: UUID",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "FileResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class FileResponse(BaseModel):\n    \"\"\"Response schema for file\"\"\"\n    id: UUID\n    task_id: UUID\n    filename: str\n    file_path: str\n    file_size: int\n    mime_type: Optional[str]\n    uploaded_by: UUID\n    created_at: datetime",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskWatcherAdd",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskWatcherAdd(BaseModel):\n    \"\"\"Schema for adding watcher to task\"\"\"\n    user_id: UUID = Field(..., description=\"User ID to add as watcher\")\nclass TaskWatcherResponse(BaseModel):\n    \"\"\"Response schema for task watcher\"\"\"\n    task_id: UUID\n    user_id: UUID\n# ===== Bulk Operations Schemas =====\nclass TaskBulkUpdate(BaseModel):\n    \"\"\"",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskWatcherResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskWatcherResponse(BaseModel):\n    \"\"\"Response schema for task watcher\"\"\"\n    task_id: UUID\n    user_id: UUID\n# ===== Bulk Operations Schemas =====\nclass TaskBulkUpdate(BaseModel):\n    \"\"\"\n    Schema for bulk updating tasks.\n    Ref: Module 4 - Feature 2.7 - AC 2\n    \"\"\"",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBulkUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskBulkUpdate(BaseModel):\n    \"\"\"\n    Schema for bulk updating tasks.\n    Ref: Module 4 - Feature 2.7 - AC 2\n    \"\"\"\n    task_ids: List[UUID] = Field(..., min_length=1, description=\"List of task IDs\")\n    status: Optional[TaskStatus] = None\n    priority: Optional[TaskPriority] = None\n    task_list_id: Optional[UUID] = None\n    assignee_ids: Optional[List[UUID]] = None",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBulkDelete",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskBulkDelete(BaseModel):\n    \"\"\"Schema for bulk deleting tasks\"\"\"\n    task_ids: List[UUID] = Field(..., min_length=1, description=\"List of task IDs to delete\")\n# ===== Task Move Schemas =====\nclass TaskMove(BaseModel):\n    \"\"\"\n    Schema for moving task to different list or project.\n    Ref: Module 4 - Feature 2.7 - AC 2\n    \"\"\"\n    target_task_list_id: Optional[UUID] = Field(None, description=\"Target task list ID\")",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskMove",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskMove(BaseModel):\n    \"\"\"\n    Schema for moving task to different list or project.\n    Ref: Module 4 - Feature 2.7 - AC 2\n    \"\"\"\n    target_task_list_id: Optional[UUID] = Field(None, description=\"Target task list ID\")\n    target_project_id: Optional[UUID] = Field(None, description=\"Target project ID\")\n    position: Optional[int] = Field(None, description=\"Position in target list\")\n# ===== Filter & Search Schemas =====\nclass TaskFilter(BaseModel):",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskFilter",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskFilter(BaseModel):\n    \"\"\"Schema for task filtering\"\"\"\n    project_id: Optional[UUID] = None\n    task_list_id: Optional[UUID] = None\n    status: Optional[TaskStatus] = None\n    priority: Optional[TaskPriority] = None\n    assignee_id: Optional[UUID] = None\n    is_milestone: Optional[bool] = None\n    overdue: Optional[bool] = None\n    search: Optional[str] = Field(None, description=\"Search in title and description\")",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskProgress",
+        "kind": 6,
+        "importPath": "app.schemas.task",
+        "description": "app.schemas.task",
+        "peekOfCode": "class TaskProgress(BaseModel):\n    \"\"\"Schema for task progress\"\"\"\n    total_subtasks: int\n    completed_subtasks: int\n    completion_percentage: float\n    is_overdue: bool\n    days_overdue: Optional[int]",
+        "detail": "app.schemas.task",
+        "documentation": {}
+    },
+    {
         "label": "UserBase",
         "kind": 6,
         "importPath": "app.schemas.user",
@@ -7883,6 +9495,51 @@
         "description": "app.services.session",
         "peekOfCode": "class SessionService:\n    \"\"\"\n    Service for session management operations.\n    Handles session tracking, concurrent device limits, and security alerts.\n    \"\"\"\n    def __init__(self, db: DBSession):\n        self.db = db\n        self.MAX_CONCURRENT_SESSIONS = 5\n        self.IMPOSSIBLE_TRAVEL_THRESHOLD_KMH = 900  # ~900 km/h (fastest commercial flight)\n        self.IMPOSSIBLE_TRAVEL_TIME_MINUTES = 60",
         "detail": "app.services.session",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListService",
+        "kind": 6,
+        "importPath": "app.services.task",
+        "description": "app.services.task",
+        "peekOfCode": "class TaskListService:\n    \"\"\"Service for task list CRUD operations\"\"\"\n    @staticmethod\n    def create_task_list(\n        db: Session,\n        task_list_data: TaskListCreate,\n        user_id: uuid.UUID,\n    ) -> TaskList:\n        \"\"\"\n        Create a new task list.",
+        "detail": "app.services.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskService",
+        "kind": 6,
+        "importPath": "app.services.task",
+        "description": "app.services.task",
+        "peekOfCode": "class TaskService:\n    \"\"\"Service for task CRUD and management operations\"\"\"\n    @staticmethod\n    def create_task(\n        db: Session,\n        task_data: TaskCreate,\n        user_id: uuid.UUID,\n    ) -> Task:\n        \"\"\"\n        Create a new task.",
+        "detail": "app.services.task",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskService",
+        "kind": 6,
+        "importPath": "app.services.task",
+        "description": "app.services.task",
+        "peekOfCode": "class SubtaskService:\n    \"\"\"Service for subtask management\"\"\"\n    @staticmethod\n    def create_subtask(\n        db: Session,\n        subtask_data: SubtaskCreate,\n        user_id: uuid.UUID,\n    ) -> Subtask:\n        \"\"\"\n        Create subtask.",
+        "detail": "app.services.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependencyService",
+        "kind": 6,
+        "importPath": "app.services.task",
+        "description": "app.services.task",
+        "peekOfCode": "class TaskDependencyService:\n    \"\"\"Service for task dependency management\"\"\"\n    @staticmethod\n    def create_dependency(\n        db: Session,\n        dependency_data: TaskDependencyCreate,\n        user_id: uuid.UUID,\n    ) -> TaskDependency:\n        \"\"\"\n        Create task dependency with cycle detection.",
+        "detail": "app.services.task",
+        "documentation": {}
+    },
+    {
+        "label": "CommentService",
+        "kind": 6,
+        "importPath": "app.services.task",
+        "description": "app.services.task",
+        "peekOfCode": "class CommentService:\n    \"\"\"Service for task comments\"\"\"\n    @staticmethod\n    def create_comment(\n        db: Session,\n        comment_data: CommentCreate,\n        user_id: uuid.UUID,\n    ) -> Comment:\n        \"\"\"Create comment and auto-add user as watcher\"\"\"\n        # Verify task exists and user has access",
+        "detail": "app.services.task",
         "documentation": {}
     },
     {

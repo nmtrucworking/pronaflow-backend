@@ -50,6 +50,24 @@ from app.db.models.tasks import (
     Timesheet,
 )
 
+# Module 5: Temporal Planning and Scheduling
+from app.db.models.scheduling import (
+    PlanState,
+    TaskBaseline,
+    TaskDependencySchedule,
+    SchedulingMode,
+    SLAPolicy,
+    SLATracker,
+    WorkingHoursPolicy,
+    HolidayCalendar,
+    PersonalException,
+    PlanningScope,
+    ResourceHistogram,
+    SimulationSession,
+    CrossProjectDependency,
+    PlanningAuditLog,
+)
+
 # Module 4 & 15: Tag & Categorization
 from app.db.models.tags import (
     Tag,
@@ -116,6 +134,21 @@ __all__ = [
     "FileVersion",
     "TimeEntry",
     "Timesheet",
+    # Module 5: Scheduling
+    "PlanState",
+    "TaskBaseline",
+    "TaskDependencySchedule",
+    "SchedulingMode",
+    "SLAPolicy",
+    "SLATracker",
+    "WorkingHoursPolicy",
+    "HolidayCalendar",
+    "PersonalException",
+    "PlanningScope",
+    "ResourceHistogram",
+    "SimulationSession",
+    "CrossProjectDependency",
+    "PlanningAuditLog",
     # Module 4 & 15
     "Tag",
     # Module 6

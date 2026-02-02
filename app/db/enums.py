@@ -211,3 +211,78 @@ class ReportFormat(str, Enum):
     CSV = "csv"
     EXCEL = "excel"
     JSON = "json"
+
+
+# ============ Module 5: Temporal Planning and Scheduling ============
+
+class PlanStateEnum(str, Enum):
+    """
+    Plan state machine for planning governance.
+    Ref: Module 5 - Feature 2.11 - AC 1 - Plan State Machine
+    """
+    DRAFT = "draft"          # PM is drafting, editable
+    SUBMITTED = "submitted"  # Submitted for approval
+    APPROVED = "approved"    # Approved, baseline created
+    LOCKED = "locked"        # Locked, no direct changes allowed
+
+
+class SchedulingModeEnum(str, Enum):
+    """
+    Task scheduling mode.
+    Ref: Module 5 - Feature 2.2 - AC 3 - Scheduling Mode
+    """
+    AUTO = "auto"            # Auto-scheduled (default)
+    MANUAL = "manual"        # Manually scheduled (Pinned)
+
+
+class DependencyTypeEnum(str, Enum):
+    """
+    Task dependency types.
+    Ref: Module 5 - Feature 2.2 - AC 4 - Dependency Types
+    """
+    FS = "FS"  # Finish-to-Start (default)
+    SS = "SS"  # Start-to-Start
+    FF = "FF"  # Finish-to-Finish
+    SF = "SF"  # Start-to-Finish
+
+
+class SLAStatusEnum(str, Enum):
+    """
+    SLA status tracking.
+    Ref: Module 5 - Feature 2.7 - AC 3 - Visual Warning
+    """
+    ON_TRACK = "on_track"    # < 75% of SLA consumed
+    AT_RISK = "at_risk"      # >= 75% to < 100% of SLA consumed
+    BREACHED = "breached"    # >= 100% of SLA consumed
+
+
+class PersonalExceptionType(str, Enum):
+    """
+    Type of personal calendar exceptions.
+    Ref: Module 5 - Feature 2.19 - AC 1
+    """
+    VACATION = "vacation"
+    SICK_LEAVE = "sick_leave"
+    HALF_DAY = "half_day"
+    OTHER = "other"
+
+
+class ZoomLevel(str, Enum):
+    """
+    Gantt chart zoom levels.
+    Ref: Module 5 - Feature 2.1 - AC 1 - Timeline
+    """
+    DAY = "day"
+    WEEK = "week"
+    MONTH = "month"
+    QUARTER = "quarter"
+
+
+class ResourceLevelingStrategy(str, Enum):
+    """
+    Resource leveling strategies.
+    Ref: Module 5 - Feature 2.17 - AC 1
+    """
+    WITHIN_SLACK = "within_slack"    # Only move tasks with Float
+    EXTEND_PROJECT = "extend_project"  # Can extend project end date
+
