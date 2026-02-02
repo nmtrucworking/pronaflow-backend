@@ -98,10 +98,38 @@ class AuthService:
         self.db.commit()
         self.db.refresh(user)
         
+        # Create default workspace for the user (Module 2 - AC 2)
+        self._create_default_workspace(user)
+        
         # Create email verification token
         self._create_email_verification_token(user, email)
         
         return user, None
+    
+    def _create_default_workspace(self, user: User) -> None:
+        """
+        Create a default workspace for new user.
+        
+        Module 2 - AC 2: Default Workspace (Logic tự động)
+        When user completes registration, system automatically creates a default workspace
+        named "{Username}'s Workspace" so user can start working immediately.
+        
+        Args:
+            user: The newly created user
+        """
+        from app.schemas.workspace import WorkspaceCreate
+        from app.services.workspace import WorkspaceService
+        
+        default_workspace_data = WorkspaceCreate(
+            name=f"{user.username}'s Workspace",
+            description="Your personal workspace"
+        )
+        
+        WorkspaceService.create_workspace(
+            self.db,
+            default_workspace_data,
+            user.id
+        )
     
     # ============= Email Verification =============
     

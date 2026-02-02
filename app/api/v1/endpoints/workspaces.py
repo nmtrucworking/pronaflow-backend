@@ -512,3 +512,86 @@ def get_access_logs(
         db, workspace_id, user_id, skip, limit
     )
     return logs
+
+
+# ===== Public Invitation Acceptance =====
+
+@router.post(
+    "/invitations/accept",
+    response_model=WorkspaceResponse,
+    status_code=status.HTTP_200_OK,
+    summary="Accept workspace invitation (public endpoint)",
+)
+def accept_invitation(
+    token: str = Query(..., description="Invitation token from magic link"),
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """
+    Accept a workspace invitation using a magic link token.
+    
+    **Module 2 - AC 1: Invite Flow**
+    - User clicks magic link from invitation email
+    - Token is validated (not expired, not already accepted)
+    - User is added to workspace with assigned role
+    - Invitation is marked as accepted
+    
+    **Token Validity:** 48 hours from creation
+    """
+    member = WorkspaceInvitationService.accept_invitation_by_token(
+        db, token, current_user.id
+    )
+    
+    if not member:
+        raise HTTPException(
+            status_code=400,
+            detail="Invalid or expired invitation token"
+        )
+    
+    # Get workspace details
+    workspace = WorkspaceService.get_workspace(db, member.workspace_id)
+    if not workspace:
+        raise HTTPException(status_code=404, detail="Workspace not found")
+    
+    # Log access (context switch to new workspace)
+    WorkspaceAccessLogService.log_access(db, workspace.id, current_user.id)
+    
+    return workspace
+
+
+# ===== Last Accessed Workspace =====
+
+@router.get(
+    "/me/last-accessed",
+    response_model=WorkspaceResponse,
+    summary="Get user's last accessed workspace",
+)
+def get_last_accessed_workspace(
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """
+    Get the user's last accessed workspace.
+    
+    **Module 2 - AC 2: State Persistence**
+    - When user logs in, system shows last accessed workspace
+    - Based on most recent access log entry
+    - If no access history, returns first workspace or None
+    """
+    last_workspace = WorkspaceAccessLogService.get_last_accessed_workspace(
+        db, current_user.id
+    )
+    
+    if not last_workspace:
+        # Fall back to first workspace if no access history
+        workspaces, _ = WorkspaceService.list_user_workspaces(db, current_user.id, 0, 1)
+        if workspaces:
+            last_workspace = workspaces[0]
+    
+    if not last_workspace:
+        raise HTTPException(
+            status_code=404,
+            detail="No workspace found. Please create a workspace first."
+        )
+    
+    return last_workspace

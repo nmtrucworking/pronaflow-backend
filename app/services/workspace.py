@@ -11,6 +11,7 @@ from typing import List, Optional, Tuple
 from sqlalchemy import select, and_, or_, func
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
+from fastapi import HTTPException
 
 from app.db.models.workspaces import (
     Workspace,
@@ -30,6 +31,7 @@ from app.schemas.workspace import (
     WorkspaceSettingCreate,
     WorkspaceSettingUpdate,
 )
+from app.services.workspace_validation import WorkspaceValidator
 
 
 class WorkspaceService:
@@ -54,6 +56,17 @@ class WorkspaceService:
             
         Ref: AC 1 - Khởi tạo thành công
         """
+        # Validate workspace name (Module 2 - AC 3: Validation)
+        is_valid, error = WorkspaceValidator.validate_workspace_name(workspace_data.name)
+        if not is_valid:
+            raise HTTPException(status_code=400, detail=error)
+        
+        # Validate description if provided
+        if workspace_data.description:
+            is_valid, error = WorkspaceValidator.validate_description(workspace_data.description)
+            if not is_valid:
+                raise HTTPException(status_code=400, detail=error)
+        
         workspace = Workspace(
             name=workspace_data.name,
             description=workspace_data.description,
@@ -537,6 +550,57 @@ class WorkspaceInvitationService:
         return member
 
     @staticmethod
+    def accept_invitation_by_token(
+        db: Session,
+        token: str,
+        user_id: uuid.UUID,
+    ) -> Optional[WorkspaceMember]:
+        """
+        Accept a workspace invitation using the raw token string.
+        
+        Args:
+            db: Database session
+            token: Raw invitation token from magic link
+            user_id: User UUID accepting invitation
+            
+        Returns:
+            Created WorkspaceMember or None if invitation invalid/expired
+        """
+        # Hash the token to match stored hash
+        token_hash = hash(token)  # In production, use proper hash function
+        
+        # Find invitation by token hash
+        invitation = db.scalar(
+            select(WorkspaceInvitation).where(
+                and_(
+                    WorkspaceInvitation.token_hash == token_hash,
+                    WorkspaceInvitation.accepted_at.is_(None),
+                    WorkspaceInvitation.expires_at > datetime.utcnow(),
+                )
+            )
+        )
+
+        if not invitation:
+            return None
+        
+        # Add as member with invitation role
+        member_data = WorkspaceMemberCreate(
+            user_id=user_id,
+            role=invitation.invited_role,
+        )
+
+        member = WorkspaceMemberService.add_member(
+            db, invitation.workspace_id, member_data
+        )
+
+        if member:
+            # Mark invitation as accepted
+            invitation.accepted_at = datetime.utcnow()
+            db.commit()
+
+        return member
+
+    @staticmethod
     def cancel_invitation(
         db: Session,
         invitation_id: uuid.UUID,
@@ -630,6 +694,40 @@ class WorkspaceAccessLogService:
         total = db.scalar(count_stmt)
 
         return logs, total
+
+    @staticmethod
+    def get_last_accessed_workspace(
+        db: Session,
+        user_id: uuid.UUID,
+    ) -> Optional[Workspace]:
+        """
+        Get the user's last accessed workspace.
+        
+        Module 2 - AC 2: State Persistence
+        Returns the workspace that was most recently accessed by the user.
+        
+        Args:
+            db: Database session
+            user_id: User UUID
+            
+        Returns:
+            Last accessed Workspace or None
+        """
+        # Get most recent access log
+        stmt = (
+            select(WorkspaceAccessLog)
+            .where(WorkspaceAccessLog.user_id == user_id)
+            .order_by(WorkspaceAccessLog.created_at.desc())
+            .limit(1)
+        )
+        
+        last_access = db.scalar(stmt)
+        
+        if not last_access:
+            return None
+        
+        # Get the workspace
+        return WorkspaceService.get_workspace(db, last_access.workspace_id)
 
 
 class WorkspaceSettingService:

@@ -785,6 +785,46 @@
         "documentation": {}
     },
     {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "delete",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "MetaData",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -1226,6 +1266,14 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -1626,6 +1674,30 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Any",
         "importPath": "typing",
         "description": "typing",
@@ -1818,6 +1890,14 @@
         "documentation": {}
     },
     {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Dict",
         "importPath": "typing",
         "description": "typing",
@@ -1928,6 +2008,278 @@
         "description": "uuid",
         "isExtraImport": true,
         "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
         "documentation": {}
     },
     {
@@ -2099,6 +2451,14 @@
         "documentation": {}
     },
     {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -2131,6 +2491,14 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "Mapped",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -2364,6 +2732,22 @@
     },
     {
         "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "joinedload",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -2523,6 +2907,14 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
         "label": "engine",
         "importPath": "app.db.session",
         "description": "app.db.session",
@@ -2536,6 +2928,14 @@
         "description": "app.db.session",
         "isExtraImport": true,
         "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
         "documentation": {}
     },
     {
@@ -2667,6 +3067,14 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
         "label": "Session",
         "importPath": "app.db.models.users",
         "description": "app.db.models.users",
@@ -2676,6 +3084,14 @@
     },
     {
         "label": "LoginAttempt",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
         "importPath": "app.db.models.users",
         "description": "app.db.models.users",
         "isExtraImport": true,
@@ -2763,187 +3179,19 @@
         "documentation": {}
     },
     {
-        "label": "AuthService",
-        "importPath": "app.services.auth",
-        "description": "app.services.auth",
+        "label": "WorkspaceResponse",
+        "importPath": "app.schemas.workspace",
+        "description": "app.schemas.workspace",
         "isExtraImport": true,
-        "detail": "app.services.auth",
+        "detail": "app.schemas.workspace",
         "documentation": {}
     },
     {
-        "label": "MFAService",
-        "importPath": "app.services.mfa",
-        "description": "app.services.mfa",
+        "label": "WorkspaceListResponse",
+        "importPath": "app.schemas.workspace",
+        "description": "app.schemas.workspace",
         "isExtraImport": true,
-        "detail": "app.services.mfa",
-        "documentation": {}
-    },
-    {
-        "label": "SessionService",
-        "importPath": "app.services.session",
-        "description": "app.services.session",
-        "isExtraImport": true,
-        "detail": "app.services.session",
-        "documentation": {}
-    },
-    {
-        "label": "EmailService",
-        "importPath": "app.services.email",
-        "description": "app.services.email",
-        "isExtraImport": true,
-        "detail": "app.services.email",
-        "documentation": {}
-    },
-    {
-        "label": "EmailService",
-        "importPath": "app.services.email",
-        "description": "app.services.email",
-        "isExtraImport": true,
-        "detail": "app.services.email",
-        "documentation": {}
-    },
-    {
-        "label": "UserRegisterRequest",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "UserResponse",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "LoginRequest",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "SessionResponse",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "EmailVerifyRequest",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "ResendVerificationRequest",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "MFAEnableResponse",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "MFAConfirmRequest",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "MFALoginRequest",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "MFADisableRequest",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "PasswordResetRequest",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "PasswordResetConfirmRequest",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "PasswordChangeRequest",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "SessionInfo",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "SessionListResponse",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "RevokeSessionRequest",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "BackupCodesResponse",
-        "importPath": "app.schemas.auth",
-        "description": "app.schemas.auth",
-        "isExtraImport": true,
-        "detail": "app.schemas.auth",
-        "documentation": {}
-    },
-    {
-        "label": "reference_loader",
-        "importPath": "app.core.referencer_loader",
-        "description": "app.core.referencer_loader",
-        "isExtraImport": true,
-        "detail": "app.core.referencer_loader",
+        "detail": "app.schemas.workspace",
         "documentation": {}
     },
     {
@@ -3171,6 +3419,14 @@
         "documentation": {}
     },
     {
+        "label": "WorkspaceService",
+        "importPath": "app.services.workspace",
+        "description": "app.services.workspace",
+        "isExtraImport": true,
+        "detail": "app.services.workspace",
+        "documentation": {}
+    },
+    {
         "label": "WorkspaceMemberService",
         "importPath": "app.services.workspace",
         "description": "app.services.workspace",
@@ -3243,7 +3499,215 @@
         "documentation": {}
     },
     {
+        "label": "WorkspaceRepository",
+        "importPath": "app.db.repositories.workspace_repo",
+        "description": "app.db.repositories.workspace_repo",
+        "isExtraImport": true,
+        "detail": "app.db.repositories.workspace_repo",
+        "documentation": {}
+    },
+    {
+        "label": "AuthService",
+        "importPath": "app.services.auth",
+        "description": "app.services.auth",
+        "isExtraImport": true,
+        "detail": "app.services.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFAService",
+        "importPath": "app.services.mfa",
+        "description": "app.services.mfa",
+        "isExtraImport": true,
+        "detail": "app.services.mfa",
+        "documentation": {}
+    },
+    {
+        "label": "SessionService",
+        "importPath": "app.services.session",
+        "description": "app.services.session",
+        "isExtraImport": true,
+        "detail": "app.services.session",
+        "documentation": {}
+    },
+    {
+        "label": "EmailService",
+        "importPath": "app.services.email",
+        "description": "app.services.email",
+        "isExtraImport": true,
+        "detail": "app.services.email",
+        "documentation": {}
+    },
+    {
+        "label": "EmailService",
+        "importPath": "app.services.email",
+        "description": "app.services.email",
+        "isExtraImport": true,
+        "detail": "app.services.email",
+        "documentation": {}
+    },
+    {
+        "label": "UserRegisterRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "UserResponse",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "LoginRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "SessionResponse",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "EmailVerifyRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "ResendVerificationRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFAEnableResponse",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFAConfirmRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFALoginRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFADisableRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordResetRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordResetConfirmRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordChangeRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "SessionInfo",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "SessionListResponse",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "RevokeSessionRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "BackupCodesResponse",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "reference_loader",
+        "importPath": "app.core.referencer_loader",
+        "description": "app.core.referencer_loader",
+        "isExtraImport": true,
+        "detail": "app.core.referencer_loader",
+        "documentation": {}
+    },
+    {
         "label": "auth",
+        "importPath": "app.api.v1.endpoints",
+        "description": "app.api.v1.endpoints",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints",
+        "documentation": {}
+    },
+    {
+        "label": "workspaces",
+        "importPath": "app.api.v1.endpoints",
+        "description": "app.api.v1.endpoints",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
         "importPath": "app.api.v1.endpoints",
         "description": "app.api.v1.endpoints",
         "isExtraImport": true,
@@ -3300,198 +3764,6 @@
         "importPath": "yaml",
         "description": "yaml",
         "detail": "yaml",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "date",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -3586,6 +3858,14 @@
     },
     {
         "label": "AuthProvider",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -3977,6 +4257,86 @@
         "documentation": {}
     },
     {
+        "label": "Workspace",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMember",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceInvitation",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceAccessLog",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceSetting",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "Workspace",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMember",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceInvitation",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceAccessLog",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceSetting",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
         "label": "# Module 1: Identity & Access Management IAM",
         "importPath": "app.db.models",
         "description": "app.db.models",
@@ -4190,43 +4550,11 @@
         "documentation": {}
     },
     {
-        "label": "Workspace",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "label": "WorkspaceValidator",
+        "importPath": "app.services.workspace_validation",
+        "description": "app.services.workspace_validation",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceMember",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceInvitation",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceAccessLog",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceSetting",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.services.workspace_validation",
         "documentation": {}
     },
     {
@@ -4374,6 +4702,69 @@
         "description": "app.alembic.env",
         "peekOfCode": "target_metadata = Base.metadata\ndef run_migrations_offline() -> None:\n    \"\"\"\n    Run migrations in 'offline' mode.\n    This configures the context with just a URL and not an Engine,\n    though an Engine is acceptable here as well. By skipping the Engine\n    creation we don't even need a DBAPI to be available.\n    Calls to context.execute() here emit the given string to the script output.\n    \"\"\"\n    url = config.get_main_option(\"sqlalchemy.url\")",
         "detail": "app.alembic.env",
+        "documentation": {}
+    },
+    {
+        "label": "get_admin_user",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.admin",
+        "description": "app.api.v1.endpoints.admin",
+        "peekOfCode": "def get_admin_user(current_user: User = Depends(get_current_user)) -> User:\n    \"\"\"\n    Dependency to verify user is system admin.\n    In production, check against a proper admin role or permission.\n    \"\"\"\n    # TODO: Implement proper admin role checking\n    # For now, check if user has admin flag or specific role\n    if not getattr(current_user, 'is_admin', False):\n        raise HTTPException(\n            status_code=403,",
+        "detail": "app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "list_deleted_workspaces",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.admin",
+        "description": "app.api.v1.endpoints.admin",
+        "peekOfCode": "def list_deleted_workspaces(\n    skip: int = Query(0, ge=0),\n    limit: int = Query(50, ge=1, le=100),\n    older_than_days: int = Query(None, ge=1, description=\"Filter workspaces deleted more than X days ago\"),\n    current_user: User = Depends(get_admin_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    List all soft-deleted workspaces.\n    **Module 2 - AC 2: System Admin Governance**",
+        "detail": "app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "restore_workspace",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.admin",
+        "description": "app.api.v1.endpoints.admin",
+        "peekOfCode": "def restore_workspace(\n    workspace_id: UUID,\n    current_user: User = Depends(get_admin_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Restore a soft-deleted workspace.\n    **Module 2 - AC 2: Restore Capability**\n    - Admin can search workspace by ID or Name\n    - Restore button reinstates access for owner and members",
+        "detail": "app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "hard_delete_workspace",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.admin",
+        "description": "app.api.v1.endpoints.admin",
+        "peekOfCode": "def hard_delete_workspace(\n    workspace_id: UUID,\n    confirm: bool = Query(..., description=\"Confirmation flag to prevent accidental deletion\"),\n    current_user: User = Depends(get_admin_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Permanently delete a workspace from database.\n    **Module 2 - AC 1: Auto-Purge Policy**\n    - Manual trigger for hard deletion",
+        "detail": "app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "cleanup_old_workspaces",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.admin",
+        "description": "app.api.v1.endpoints.admin",
+        "peekOfCode": "def cleanup_old_workspaces(\n    days: int = Query(30, ge=1, description=\"Delete workspaces older than X days\"),\n    dry_run: bool = Query(True, description=\"If true, only return count without deleting\"),\n    current_user: User = Depends(get_admin_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Cleanup (hard delete) workspaces that have been soft-deleted for more than X days.\n    **Module 2 - AC 1: Auto-Purge Policy**\n    - Implements the 30-day auto-purge policy",
+        "detail": "app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "list_user_workspaces_admin",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.admin",
+        "description": "app.api.v1.endpoints.admin",
+        "peekOfCode": "def list_user_workspaces_admin(\n    user_id: UUID,\n    skip: int = Query(0, ge=0),\n    limit: int = Query(50, ge=1, le=100),\n    include_inactive: bool = Query(False, description=\"Include inactive memberships\"),\n    current_user: User = Depends(get_admin_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    List all workspaces for a specific user (admin view).",
+        "detail": "app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.v1.endpoints.admin",
+        "description": "app.api.v1.endpoints.admin",
+        "peekOfCode": "router = APIRouter(prefix=\"/v1/admin\", tags=[\"admin\"])\ndef get_admin_user(current_user: User = Depends(get_current_user)) -> User:\n    \"\"\"\n    Dependency to verify user is system admin.\n    In production, check against a proper admin role or permission.\n    \"\"\"\n    # TODO: Implement proper admin role checking\n    # For now, check if user has admin flag or specific role\n    if not getattr(current_user, 'is_admin', False):\n        raise HTTPException(",
+        "detail": "app.api.v1.endpoints.admin",
         "documentation": {}
     },
     {
@@ -4557,6 +4948,24 @@
         "documentation": {}
     },
     {
+        "label": "accept_invitation",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.workspaces",
+        "description": "app.api.v1.endpoints.workspaces",
+        "peekOfCode": "def accept_invitation(\n    token: str = Query(..., description=\"Invitation token from magic link\"),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Accept a workspace invitation using a magic link token.\n    **Module 2 - AC 1: Invite Flow**\n    - User clicks magic link from invitation email\n    - Token is validated (not expired, not already accepted)",
+        "detail": "app.api.v1.endpoints.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "get_last_accessed_workspace",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.workspaces",
+        "description": "app.api.v1.endpoints.workspaces",
+        "peekOfCode": "def get_last_accessed_workspace(\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db),\n):\n    \"\"\"\n    Get the user's last accessed workspace.\n    **Module 2 - AC 2: State Persistence**\n    - When user logs in, system shows last accessed workspace\n    - Based on most recent access log entry\n    - If no access history, returns first workspace or None",
+        "detail": "app.api.v1.endpoints.workspaces",
+        "documentation": {}
+    },
+    {
         "label": "router",
         "kind": 5,
         "importPath": "app.api.v1.endpoints.workspaces",
@@ -4570,7 +4979,7 @@
         "kind": 5,
         "importPath": "app.api.v1.router",
         "description": "app.api.v1.router",
-        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(auth.router)",
+        "peekOfCode": "api_router = APIRouter(prefix=\"/api\")\n# Include endpoint routers\napi_router.include_router(auth.router)\napi_router.include_router(workspaces.router)\napi_router.include_router(admin.router)",
         "detail": "app.api.v1.router",
         "documentation": {}
     },
@@ -5328,6 +5737,51 @@
         "description": "app.db.repositories.user_repo",
         "peekOfCode": "class UserRepository(BaseRepository[User]):\n    \"\"\"Repository for User model with specialized queries.\"\"\"\n    def __init__(self, session: Session):\n        super().__init__(session, User)\n    def get_by_email(self, email: str) -> Optional[User]:\n        \"\"\"Get user by email address.\"\"\"\n        return self.session.execute(\n            select(User).where(User.email == email)\n        ).scalar_one_or_none()\n    def get_by_username(self, username: str) -> Optional[User]:",
         "detail": "app.db.repositories.user_repo",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRepository",
+        "kind": 6,
+        "importPath": "app.db.repositories.workspace_repo",
+        "description": "app.db.repositories.workspace_repo",
+        "peekOfCode": "class WorkspaceRepository:\n    \"\"\"Repository for Workspace operations\"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    # ===== Workspace CRUD =====\n    def create(self, workspace: Workspace) -> Workspace:\n        \"\"\"Create a new workspace\"\"\"\n        self.db.add(workspace)\n        self.db.flush()\n        return workspace",
+        "detail": "app.db.repositories.workspace_repo",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMemberRepository",
+        "kind": 6,
+        "importPath": "app.db.repositories.workspace_repo",
+        "description": "app.db.repositories.workspace_repo",
+        "peekOfCode": "class WorkspaceMemberRepository:\n    \"\"\"Repository for WorkspaceMember operations\"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def create(self, member: WorkspaceMember) -> WorkspaceMember:\n        \"\"\"Add a member to workspace\"\"\"\n        self.db.add(member)\n        self.db.flush()\n        return member\n    def get_by_workspace_and_user(",
+        "detail": "app.db.repositories.workspace_repo",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceInvitationRepository",
+        "kind": 6,
+        "importPath": "app.db.repositories.workspace_repo",
+        "description": "app.db.repositories.workspace_repo",
+        "peekOfCode": "class WorkspaceInvitationRepository:\n    \"\"\"Repository for WorkspaceInvitation operations\"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def create(self, invitation: WorkspaceInvitation) -> WorkspaceInvitation:\n        \"\"\"Create invitation\"\"\"\n        self.db.add(invitation)\n        self.db.flush()\n        return invitation\n    def get_by_id(self, invitation_id: uuid.UUID) -> Optional[WorkspaceInvitation]:",
+        "detail": "app.db.repositories.workspace_repo",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceAccessLogRepository",
+        "kind": 6,
+        "importPath": "app.db.repositories.workspace_repo",
+        "description": "app.db.repositories.workspace_repo",
+        "peekOfCode": "class WorkspaceAccessLogRepository:\n    \"\"\"Repository for WorkspaceAccessLog operations\"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def create(self, access_log: WorkspaceAccessLog) -> WorkspaceAccessLog:\n        \"\"\"Create access log\"\"\"\n        self.db.add(access_log)\n        self.db.flush()\n        return access_log\n    def get_last_accessed(self, user_id: uuid.UUID) -> Optional[WorkspaceAccessLog]:",
+        "detail": "app.db.repositories.workspace_repo",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceSettingRepository",
+        "kind": 6,
+        "importPath": "app.db.repositories.workspace_repo",
+        "description": "app.db.repositories.workspace_repo",
+        "peekOfCode": "class WorkspaceSettingRepository:\n    \"\"\"Repository for WorkspaceSetting operations\"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def create(self, setting: WorkspaceSetting) -> WorkspaceSetting:\n        \"\"\"Create workspace setting\"\"\"\n        self.db.add(setting)\n        self.db.flush()\n        return setting\n    def get_by_workspace(self, workspace_id: uuid.UUID) -> Optional[WorkspaceSetting]:",
+        "detail": "app.db.repositories.workspace_repo",
         "documentation": {}
     },
     {
@@ -6201,6 +6655,42 @@
         "description": "app.services.workspace_examples",
         "peekOfCode": "def example_complete_workflow(db: Session, owner_user_id: uuid.UUID):\n    \"\"\"Complete workflow: Create workspace, add members, configure settings.\"\"\"\n    print(\"\\n\" + \"=\"*60)\n    print(\"COMPLETE WORKFLOW EXAMPLE: Setting up new team\")\n    print(\"=\"*60)\n    # Step 1: Create workspace\n    print(\"\\n[1/5] Creating workspace...\")\n    workspace_data = WorkspaceCreate(\n        name=\"Design Team 2024\",\n        description=\"Design team workspace for 2024 projects\"",
         "detail": "app.services.workspace_examples",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceValidator",
+        "kind": 6,
+        "importPath": "app.services.workspace_validation",
+        "description": "app.services.workspace_validation",
+        "peekOfCode": "class WorkspaceValidator:\n    \"\"\"Validation service for workspace-related inputs\"\"\"\n    @staticmethod\n    def validate_workspace_name(name: str) -> Tuple[bool, str]:\n        \"\"\"\n        Validate workspace name.\n        Module 2 - AC 3: Validation\n        When user enters name with only special characters or profane words,\n        system displays error: \"WS_001: Tên Không gian làm việc không hợp lệ\"\n        Args:",
+        "detail": "app.services.workspace_validation",
+        "documentation": {}
+    },
+    {
+        "label": "validate_workspace_name",
+        "kind": 2,
+        "importPath": "app.services.workspace_validation",
+        "description": "app.services.workspace_validation",
+        "peekOfCode": "def validate_workspace_name(name: str) -> Tuple[bool, str]:\n    \"\"\"Convenience function for workspace name validation\"\"\"\n    return WorkspaceValidator.validate_workspace_name(name)\ndef validate_workspace_description(description: str) -> Tuple[bool, str]:\n    \"\"\"Convenience function for workspace description validation\"\"\"\n    return WorkspaceValidator.validate_description(description)",
+        "detail": "app.services.workspace_validation",
+        "documentation": {}
+    },
+    {
+        "label": "validate_workspace_description",
+        "kind": 2,
+        "importPath": "app.services.workspace_validation",
+        "description": "app.services.workspace_validation",
+        "peekOfCode": "def validate_workspace_description(description: str) -> Tuple[bool, str]:\n    \"\"\"Convenience function for workspace description validation\"\"\"\n    return WorkspaceValidator.validate_description(description)",
+        "detail": "app.services.workspace_validation",
+        "documentation": {}
+    },
+    {
+        "label": "PROFANITY_WORDS",
+        "kind": 5,
+        "importPath": "app.services.workspace_validation",
+        "description": "app.services.workspace_validation",
+        "peekOfCode": "PROFANITY_WORDS = {\n    'spam', 'scam', 'hack', 'abuse', 'offensive',\n    # Add more words as needed\n}\nclass WorkspaceValidator:\n    \"\"\"Validation service for workspace-related inputs\"\"\"\n    @staticmethod\n    def validate_workspace_name(name: str) -> Tuple[bool, str]:\n        \"\"\"\n        Validate workspace name.",
+        "detail": "app.services.workspace_validation",
         "documentation": {}
     },
     {
