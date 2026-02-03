@@ -16,11 +16,12 @@ from sqlalchemy.orm import Session
 from sqlalchemy import and_, or_, desc
 
 from app.db.models.integration import (
-    ApiToken, ApiScope, ApiTokenScope, ApiUsageLog,
+    ApiToken, ApiScope, ApiTokenScope,
     WebhookEndpoint, WebhookEvent, WebhookDelivery,
     OAuthApp, OAuthConnection, IntegrationBinding,
     Plugin, PluginInstallation, ConsentGrant
 )
+from app.db.models.integrations import ApiUsageLog
 from app.schemas.integration import (
     ApiTokenCreate, ApiTokenUpdate, ApiTokenCreateResponse,
     WebhookEndpointCreate, WebhookEndpointUpdate,

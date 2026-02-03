@@ -2401,6 +2401,14 @@
         "documentation": {}
     },
     {
+        "label": "text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "postgresql",
         "importPath": "sqlalchemy.dialects",
         "description": "sqlalchemy.dialects",
@@ -2562,11 +2570,35 @@
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "app.core.config",
-        "description": "app.core.config",
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
         "isExtraImport": true,
-        "detail": "app.core.config",
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
         "documentation": {}
     },
     {
@@ -2639,6 +2671,38 @@
         "description": "app.core.config",
         "isExtraImport": true,
         "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.db.declarative_base",
+        "description": "app.db.declarative_base",
+        "isExtraImport": true,
+        "detail": "app.db.declarative_base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.db.declarative_base",
+        "description": "app.db.declarative_base",
+        "isExtraImport": true,
+        "detail": "app.db.declarative_base",
         "documentation": {}
     },
     {
@@ -2970,6 +3034,14 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
         "label": "List",
         "importPath": "typing",
         "description": "typing",
@@ -3235,6 +3307,14 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -5211,6 +5291,38 @@
     },
     {
         "label": "Generator",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Set",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -8675,6 +8787,14 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
         "label": "SessionLocal",
         "importPath": "app.db.session",
         "description": "app.db.session",
@@ -8716,6 +8836,14 @@
     },
     {
         "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
         "importPath": "app.db.session",
         "description": "app.db.session",
         "isExtraImport": true,
@@ -8804,6 +8932,14 @@
     },
     {
         "label": "get_current_user_with_session",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
         "importPath": "app.core.security",
         "description": "app.core.security",
         "isExtraImport": true,
@@ -13267,14 +13403,6 @@
         "documentation": {}
     },
     {
-        "label": "ApiUsageLog",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
-        "isExtraImport": true,
-        "detail": "app.db.models.integration",
-        "documentation": {}
-    },
-    {
         "label": "WebhookEndpoint",
         "importPath": "app.db.models.integration",
         "description": "app.db.models.integration",
@@ -13344,6 +13472,22 @@
         "description": "app.db.models.integration",
         "isExtraImport": true,
         "detail": "app.db.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "ApiUsageLog",
+        "importPath": "app.db.models.integrations",
+        "description": "app.db.models.integrations",
+        "isExtraImport": true,
+        "detail": "app.db.models.integrations",
+        "documentation": {}
+    },
+    {
+        "label": "ApiUsageLog",
+        "importPath": "app.db.models.integrations",
+        "description": "app.db.models.integrations",
+        "isExtraImport": true,
+        "detail": "app.db.models.integrations",
         "documentation": {}
     },
     {
@@ -16253,54 +16397,6 @@
         "documentation": {}
     },
     {
-        "label": "get_db",
-        "importPath": "app.core.dependencies",
-        "description": "app.core.dependencies",
-        "isExtraImport": true,
-        "detail": "app.core.dependencies",
-        "documentation": {}
-    },
-    {
-        "label": "get_current_user",
-        "importPath": "app.core.dependencies",
-        "description": "app.core.dependencies",
-        "isExtraImport": true,
-        "detail": "app.core.dependencies",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "importPath": "app.core.dependencies",
-        "description": "app.core.dependencies",
-        "isExtraImport": true,
-        "detail": "app.core.dependencies",
-        "documentation": {}
-    },
-    {
-        "label": "get_current_user",
-        "importPath": "app.core.dependencies",
-        "description": "app.core.dependencies",
-        "isExtraImport": true,
-        "detail": "app.core.dependencies",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "importPath": "app.core.dependencies",
-        "description": "app.core.dependencies",
-        "isExtraImport": true,
-        "detail": "app.core.dependencies",
-        "documentation": {}
-    },
-    {
-        "label": "get_current_user",
-        "importPath": "app.core.dependencies",
-        "description": "app.core.dependencies",
-        "isExtraImport": true,
-        "detail": "app.core.dependencies",
-        "documentation": {}
-    },
-    {
         "label": "ProjectCreate",
         "importPath": "app.schemas.project_schemas",
         "description": "app.schemas.project_schemas",
@@ -16498,6 +16594,38 @@
         "description": "app.utils.exceptions",
         "isExtraImport": true,
         "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.core.dependencies",
+        "description": "app.core.dependencies",
+        "isExtraImport": true,
+        "detail": "app.core.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.core.dependencies",
+        "description": "app.core.dependencies",
+        "isExtraImport": true,
+        "detail": "app.core.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.core.dependencies",
+        "description": "app.core.dependencies",
+        "isExtraImport": true,
+        "detail": "app.core.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.core.dependencies",
+        "description": "app.core.dependencies",
+        "isExtraImport": true,
+        "detail": "app.core.dependencies",
         "documentation": {}
     },
     {
@@ -16846,19 +16974,507 @@
         "documentation": {}
     },
     {
-        "label": "logger",
-        "importPath": "loguru",
-        "description": "loguru",
+        "label": "SettingsConfigDict",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
         "isExtraImport": true,
-        "detail": "loguru",
+        "detail": "pydantic_settings",
         "documentation": {}
     },
     {
-        "label": "logger",
-        "importPath": "loguru",
-        "description": "loguru",
+        "label": "field_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
         "isExtraImport": true,
-        "detail": "loguru",
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigDict",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "root_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigDict",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "HttpUrl",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigDict",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "field_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "field_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "field_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigDict",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
         "documentation": {}
     },
     {
@@ -16868,6 +17484,22 @@
         "importPath": "json",
         "description": "json",
         "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "loguru",
+        "description": "loguru",
+        "isExtraImport": true,
+        "detail": "loguru",
         "documentation": {}
     },
     {
@@ -17972,494 +18604,6 @@
         "documentation": {}
     },
     {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "EmailStr",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "validator",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "ConfigDict",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "validator",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "root_validator",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "EmailStr",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "validator",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "EmailStr",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "ConfigDict",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "HttpUrl",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "ConfigDict",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "validator",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "field_validator",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "field_validator",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "EmailStr",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "validator",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "field_validator",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "EmailStr",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "ConfigDict",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "EmailStr",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "EmailStr",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Field",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
         "label": "SprintMetric",
         "importPath": "app.db.models.analytics",
         "description": "app.db.models.analytics",
@@ -19300,6 +19444,14 @@
         "documentation": {}
     },
     {
+        "label": "Base",
+        "importPath": "app.db.base",
+        "description": "app.db.base",
+        "isExtraImport": true,
+        "detail": "app.db.base",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -19325,11 +19477,43 @@
         "documentation": {}
     },
     {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
         "label": "defaultdict",
         "importPath": "collections",
         "description": "collections",
         "isExtraImport": true,
         "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "app.db",
+        "description": "app.db",
+        "isExtraImport": true,
+        "detail": "app.db",
         "documentation": {}
     },
     {
@@ -23613,7 +23797,7 @@
         "kind": 6,
         "importPath": "app.core.config",
         "description": "app.core.config",
-        "peekOfCode": "class Settings(BaseSettings):\n    \"\"\"Application settings from environment variables.\"\"\"\n    # Database\n    DATABASE_URL: str = \"postgresql+psycopg2://user:password@localhost:5432/pronaflow\"\n    # Application\n    APP_NAME: str = \"PronaFlow\"\n    APP_VERSION: str = \"1.0.0\"\n    DEBUG: bool = False\n    # Security\n    SECRET_KEY: str = \"your-secret-key-change-in-production\"",
+        "peekOfCode": "class Settings(BaseSettings):\n    \"\"\"Application settings from environment variables.\"\"\"\n    model_config = SettingsConfigDict(\n        env_file=\".env\",\n        case_sensitive=True,\n        extra=\"ignore\"\n    )\n    # Server Configuration\n    HOST: str = \"0.0.0.0\"\n    PORT: int = 8000",
         "detail": "app.core.config",
         "documentation": {}
     },
@@ -24244,15 +24428,6 @@
         "importPath": "app.db.models.integration",
         "description": "app.db.models.integration",
         "peekOfCode": "class ApiTokenScope(Base):\n    \"\"\"\n    Junction table: Maps API tokens to scopes.\n    Enables fine-grained permission control per token.\n    Ref: Module 12 - Feature 2.1 - AC 3\n    \"\"\"\n    __tablename__ = \"api_token_scopes\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    api_token_id = Column(String(36), ForeignKey(\"api_tokens.id\", ondelete=\"CASCADE\"), nullable=False)\n    api_scope_id = Column(String(36), ForeignKey(\"api_scopes.id\", ondelete=\"CASCADE\"), nullable=False)",
-        "detail": "app.db.models.integration",
-        "documentation": {}
-    },
-    {
-        "label": "ApiUsageLog",
-        "kind": 6,
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
-        "peekOfCode": "class ApiUsageLog(Base, TimestampMixin):\n    \"\"\"\n    API usage tracking for rate limiting and audit logging.\n    Logs each API request for analytics and compliance.\n    Ref: Module 12 - Feature 3.1 - Rate Limiting\n    \"\"\"\n    __tablename__ = \"api_usage_logs\"\n    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))\n    workspace_id = Column(String(36), ForeignKey(\"workspaces.id\", ondelete=\"CASCADE\"), nullable=False)\n    api_token_id = Column(String(36), ForeignKey(\"api_tokens.id\", ondelete=\"SET NULL\"), nullable=True)",
         "detail": "app.db.models.integration",
         "documentation": {}
     },
@@ -33083,6 +33258,177 @@
         "description": "tests.conftest",
         "peekOfCode": "TEST_DATABASE_URL = \"sqlite:///:memory:\"\n@pytest.fixture(scope=\"session\")\ndef event_loop() -> Generator:\n    \"\"\"Create an instance of the default event loop for the test session.\"\"\"\n    loop = asyncio.get_event_loop_policy().new_event_loop()\n    yield loop\n    loop.close()\n@pytest.fixture(scope=\"function\")\ndef engine():\n    \"\"\"Create a test database engine with in-memory SQLite.\"\"\"",
         "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "EntityField",
+        "kind": 6,
+        "importPath": "analyze_entities",
+        "description": "analyze_entities",
+        "peekOfCode": "class EntityField:\n    name: str\n    field_type: str\n    key_type: str = \"\"  # PK, FK, etc\n    constraints: str = \"\"\n    note: str = \"\"\n@dataclass\nclass Entity:\n    name: str\n    module: str = \"\"",
+        "detail": "analyze_entities",
+        "documentation": {}
+    },
+    {
+        "label": "Entity",
+        "kind": 6,
+        "importPath": "analyze_entities",
+        "description": "analyze_entities",
+        "peekOfCode": "class Entity:\n    name: str\n    module: str = \"\"\n    fields: List[EntityField] = field(default_factory=list)\n    description: str = \"\"\n    mvp_category: str = \"unknown\"  # must-have, advanced, admin, etc\n    is_implemented: bool = False\n    implementation_file: str = \"\"\n    @property\n    def field_summary(self) -> str:",
+        "detail": "analyze_entities",
+        "documentation": {}
+    },
+    {
+        "label": "read_entity_md",
+        "kind": 2,
+        "importPath": "analyze_entities",
+        "description": "analyze_entities",
+        "peekOfCode": "def read_entity_md(filepath: str) -> Tuple[str, str, List[EntityField]]:\n    \"\"\"Parse entity markdown file\"\"\"\n    try:\n        with open(filepath, 'r', encoding='utf-8') as f:\n            content = f.read()\n        # Extract module\n        module_match = re.search(r'#\\s*(?:Module|Phân hệ)\\s+(\\d+[^#\\n]*)', content)\n        module = module_match.group(1).strip() if module_match else \"unknown\"\n        # Extract description\n        desc_match = re.search(r'>(.+?)(?=#|$)', content)",
+        "detail": "analyze_entities",
+        "documentation": {}
+    },
+    {
+        "label": "detect_implemented_entities",
+        "kind": 2,
+        "importPath": "analyze_entities",
+        "description": "analyze_entities",
+        "peekOfCode": "def detect_implemented_entities(models_dir: str) -> Dict[str, str]:\n    \"\"\"Scan models directory to find implemented entities\"\"\"\n    implemented = {}\n    model_files = {\n        'module_1.py': ['User', 'Role', 'Permission', 'MFAConfig', 'MFABackupCode', 'AuthProvider', 'AuditLog', 'Session'],\n        'workspaces.py': ['Workspace', 'WorkspaceMember', 'WorkspaceInvitation', 'WorkspaceAccessLog', 'WorkspaceSetting'],\n        'projects.py': ['Project'],\n        'projects_extended.py': ['ProjectMember', 'ProjectTemplate', 'ProjectBaseline', 'ProjectChangeRequest', 'ProjectArchive'],\n        'tasks.py': ['TaskList', 'Task', 'Subtask', 'TaskDependency', 'Comment', 'File', 'FileVersion', 'TimeEntry'],\n        'tags.py': ['Tag'],",
+        "detail": "analyze_entities",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_all_entities",
+        "kind": 2,
+        "importPath": "analyze_entities",
+        "description": "analyze_entities",
+        "peekOfCode": "def analyze_all_entities(entities_dir: str, models_dir: str) -> Dict[str, Entity]:\n    \"\"\"Analyze all 154 entities\"\"\"\n    entities = {}\n    implemented = detect_implemented_entities(models_dir)\n    # Read all entity markdown files\n    md_files = sorted(Path(entities_dir).glob('*.md'))\n    for md_file in md_files:\n        entity_name = md_file.stem\n        module, description, fields = read_entity_md(str(md_file))\n        # Classify by MVP priority",
+        "detail": "analyze_entities",
+        "documentation": {}
+    },
+    {
+        "label": "generate_report",
+        "kind": 2,
+        "importPath": "analyze_entities",
+        "description": "analyze_entities",
+        "peekOfCode": "def generate_report(entities: Dict[str, Entity]) -> str:\n    \"\"\"Generate comprehensive analysis report\"\"\"\n    # Group by MVP category\n    categories = defaultdict(list)\n    for entity in entities.values():\n        categories[entity.mvp_category].append(entity)\n    # Sort within each category\n    for cat in categories:\n        categories[cat].sort(key=lambda e: e.name)\n    report = []",
+        "detail": "analyze_entities",
+        "documentation": {}
+    },
+    {
+        "label": "MVP_MUST_HAVE",
+        "kind": 5,
+        "importPath": "analyze_entities",
+        "description": "analyze_entities",
+        "peekOfCode": "MVP_MUST_HAVE = {\n    # Core functionality - absolutely needed for MVP\n    \"User\", \"Role\", \"Permission\", \n    \"Workspace\", \"WorkspaceMember\", \n    \"Project\", \"ProjectMember\",\n    \"Task\", \"TaskList\", \"Subtask\",\n    \"Comment\", \"File\", \"FileVersion\",\n    \"Tag\", \"TaskTagMap\", \"ProjectTagMap\",\n    \"Notification\", \"NotificationPreference\",\n    \"TimeEntry\", \"Timesheet\",",
+        "detail": "analyze_entities",
+        "documentation": {}
+    },
+    {
+        "label": "MVP_ADVANCED",
+        "kind": 5,
+        "importPath": "analyze_entities",
+        "description": "analyze_entities",
+        "peekOfCode": "MVP_ADVANCED = {\n    # Features nice to have but not critical\n    \"UserSettings\", \"UIViewPreference\", \"KeyboardShortcut\",\n    \"ProjectTemplate\", \"TaskTemplate\", \"NoteTemplate\",\n    \"TaskDependency\", \"TaskAssignee\", \"TaskWatcher\",\n    \"UserRole\", \"RolePermission\",\n    \"MFAConfig\", \"MFABackupCode\",\n    \"OnboardingChecklist\", \"UserOnboardingStatus\",\n    \"ProductTour\", \"FeatureBeacon\",\n    \"Note\", \"NoteVersion\", \"PublicNoteLink\",",
+        "detail": "analyze_entities",
+        "documentation": {}
+    },
+    {
+        "label": "MVP_ADMIN",
+        "kind": 5,
+        "importPath": "analyze_entities",
+        "description": "analyze_entities",
+        "peekOfCode": "MVP_ADMIN = {\n    # Admin/Operations only\n    \"AdminUser\", \"AdminRole\", \"AdminPermission\",\n    \"AdminAuditLog\", \"AdminUserRole\", \"AdminRolePermission\",\n    \"AdminPermission\", \"AdminUser\", \"AdminRole\",\n    \"SecurityIncident\", \"SystemConfig\",\n}\nMVP_ADVANCED_EXTENDED = {\n    # Advanced features - future phases\n    \"Article\", \"ArticleVersion\", \"ArticleTranslation\",",
+        "detail": "analyze_entities",
+        "documentation": {}
+    },
+    {
+        "label": "MVP_ADVANCED_EXTENDED",
+        "kind": 5,
+        "importPath": "analyze_entities",
+        "description": "analyze_entities",
+        "peekOfCode": "MVP_ADVANCED_EXTENDED = {\n    # Advanced features - future phases\n    \"Article\", \"ArticleVersion\", \"ArticleTranslation\",\n    \"Category\", \"SearchIndex\",\n    \"Mention\", \"ConsentGrant\",\n    \"MLModel\", \"ModelVersion\", \"ModelMetric\",\n    \"InferenceRequest\", \"InferenceResult\",\n}\n# ============= FILE READING =============\ndef read_entity_md(filepath: str) -> Tuple[str, str, List[EntityField]]:",
+        "detail": "analyze_entities",
+        "documentation": {}
+    },
+    {
+        "label": "docs_path",
+        "kind": 5,
+        "importPath": "check_completeness",
+        "description": "check_completeness",
+        "peekOfCode": "docs_path = Path(r\"e:\\Workspace\\project\\pronaflow\\backend\\docs\\docs - PronaFlow React&FastAPI\\02-Architeture\\Entities\")\nentities_from_docs = set()\nfor md_file in docs_path.glob(\"*.md\"):\n    # Get entity name from filename\n    entity_name = md_file.stem\n    if entity_name != \"files\":  # Skip the index file\n        entities_from_docs.add(entity_name)\nprint(f\"Total entities in docs: {len(entities_from_docs)}\")\n# Get all models from current implementation\nfrom app.db.declarative_base import Base",
+        "detail": "check_completeness",
+        "documentation": {}
+    },
+    {
+        "label": "entities_from_docs",
+        "kind": 5,
+        "importPath": "check_completeness",
+        "description": "check_completeness",
+        "peekOfCode": "entities_from_docs = set()\nfor md_file in docs_path.glob(\"*.md\"):\n    # Get entity name from filename\n    entity_name = md_file.stem\n    if entity_name != \"files\":  # Skip the index file\n        entities_from_docs.add(entity_name)\nprint(f\"Total entities in docs: {len(entities_from_docs)}\")\n# Get all models from current implementation\nfrom app.db.declarative_base import Base\nfrom app.db import models",
+        "detail": "check_completeness",
+        "documentation": {}
+    },
+    {
+        "label": "models_implemented",
+        "kind": 5,
+        "importPath": "check_completeness",
+        "description": "check_completeness",
+        "peekOfCode": "models_implemented = set()\nfor table_name in Base.metadata.tables.keys():\n    # Convert table name to potential model names\n    # e.g., \"users\" -> \"User\", \"workspace_members\" -> \"WorkspaceMember\"\n    parts = table_name.split('_')\n    model_name = ''.join([p.capitalize() for p in parts])\n    models_implemented.add(model_name)\nprint(f\"Total models implemented: {len(models_implemented)}\")\nprint()\n# Find missing entities",
+        "detail": "check_completeness",
+        "documentation": {}
+    },
+    {
+        "label": "missing",
+        "kind": 5,
+        "importPath": "check_completeness",
+        "description": "check_completeness",
+        "peekOfCode": "missing = entities_from_docs - models_implemented\nif missing:\n    print(f\"MISSING ENTITIES ({len(missing)}):\")\n    for entity in sorted(missing):\n        print(f\"  - {entity}\")\nelse:\n    print(\"✓ All entities from docs are implemented!\")\n# Find extra models\nextra = models_implemented - entities_from_docs\nif extra:",
+        "detail": "check_completeness",
+        "documentation": {}
+    },
+    {
+        "label": "extra",
+        "kind": 5,
+        "importPath": "check_completeness",
+        "description": "check_completeness",
+        "peekOfCode": "extra = models_implemented - entities_from_docs\nif extra:\n    print()\n    print(f\"EXTRA MODELS NOT IN DOCS ({len(extra)}):\")\n    for model in sorted(extra):\n        print(f\"  - {model}\")",
+        "detail": "check_completeness",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "check_mvp_completeness",
+        "description": "check_mvp_completeness",
+        "peekOfCode": "def main():\n    print(\"=\" * 70)\n    print(\"PRONAFLOW DATABASE COMPLETENESS CHECK\")\n    print(\"=\" * 70)\n    # Get all registered tables\n    tables = Base.metadata.tables\n    table_count = len(tables)\n    print(f\"\\n[OK] Total Tables Registered: {table_count}\")\n    # Critical MVP entities that were missing\n    critical_mvp = {",
+        "detail": "check_mvp_completeness",
+        "documentation": {}
+    },
+    {
+        "label": "print_summary",
+        "kind": 2,
+        "importPath": "display_summary",
+        "description": "display_summary",
+        "peekOfCode": "def print_summary():\n    summary = \"\"\"\n╔════════════════════════════════════════════════════════════════════════════╗\n║                  PRONAFLOW ENTITY ANALYSIS SUMMARY                         ║\n║                     January 30, 2026                                       ║\n╚════════════════════════════════════════════════════════════════════════════╝\n📊 OVERALL STATUS\n═══════════════════════════════════════════════════════════════════════════\nTotal Entities:         154 🔵\n├─ Implemented:         40 ✓  (26.0%)",
+        "detail": "display_summary",
+        "documentation": {}
+    },
+    {
+        "label": "init_db",
+        "kind": 2,
+        "importPath": "init_db",
+        "description": "init_db",
+        "peekOfCode": "def init_db() -> None:\n    \"\"\"\n    Initialize the database by creating all tables.\n    This uses SQLAlchemy's create_all() method based on the models.\n    \"\"\"\n    print(\"=\" * 60)\n    print(\"PronaFlow Database Initialization\")\n    print(\"=\" * 60)\n    print(f\"Database URL: {settings.DATABASE_URL}\")\n    print()",
+        "detail": "init_db",
+        "documentation": {}
+    },
+    {
+        "label": "drop_all_tables",
+        "kind": 2,
+        "importPath": "init_db",
+        "description": "init_db",
+        "peekOfCode": "def drop_all_tables() -> None:\n    \"\"\"\n    Drop all tables from the database.\n    USE WITH CAUTION - This will delete all data!\n    \"\"\"\n    print(\"=\" * 60)\n    print(\"WARNING: Dropping all database tables!\")\n    print(\"=\" * 60)\n    confirmation = input(\"Type 'YES' to confirm: \")\n    if confirmation != \"YES\":",
+        "detail": "init_db",
         "documentation": {}
     }
 ]

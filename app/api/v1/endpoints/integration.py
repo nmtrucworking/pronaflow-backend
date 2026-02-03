@@ -15,6 +15,7 @@ from app.core.security import get_current_user
 from app.db.session import get_db
 from app.db.models.users import User
 from app.db.models.integration import ApiToken, WebhookEndpoint, OAuthConnection, IntegrationBinding, Plugin, PluginInstallation, ConsentGrant
+from app.db.models.integrations import ApiUsageLog
 from app.schemas.integration import (
     ApiTokenCreate, ApiTokenUpdate, ApiTokenRead, ApiTokenCreateResponse, ApiTokenListResponse,
     ApiScopeListResponse,

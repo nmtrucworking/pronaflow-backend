@@ -1,13 +1,26 @@
 """
 Configuration settings for PronaFlow backend.
 """
-from pydantic_settings import BaseSettings
-from typing import Optional, List
+from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic import field_validator
+from typing import Optional, List, Union
+import json
 
 
 class Settings(BaseSettings):
     """Application settings from environment variables."""
     
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        case_sensitive=True,
+        extra="ignore"
+    )
+    
+    # Server Configuration
+    HOST: str = "0.0.0.0"
+    PORT: int = 8000
+    API_V1_STR: str = "/api/v1"
+
     # Database
     DATABASE_URL: str = "postgresql+psycopg2://user:password@localhost:5432/pronaflow"
     
@@ -36,10 +49,22 @@ class Settings(BaseSettings):
     LOGIN_LOCKOUT_MINUTES: int = 15
     
     # CORS
-    ALLOWED_ORIGINS: List[str] = [
+    ALLOWED_ORIGINS: Union[List[str], str] = [
         "http://localhost:3000",
         "http://localhost:5173",
+        "http://127.0.0.1:3000",
+        "http://127.0.0.1:5173",
     ]
+    
+    @field_validator("ALLOWED_ORIGINS", mode="before")
+    @classmethod
+    def parse_cors(cls, v):
+        if isinstance(v, str):
+            try:
+                return json.loads(v)
+            except json.JSONDecodeError:
+                return [i.strip() for i in v.split(",")]
+        return v
     
     # Email Configuration (SMTP)
     SMTP_HOST: Optional[str] = None
@@ -75,7 +100,7 @@ class Settings(BaseSettings):
     # Notification Settings
     NOTIFICATION_DEBOUNCE_MS: int = 5000
     NOTIFICATION_MAX_RETRIES: int = 3
-    NOTIFICATION_RETRY_BACKOFF: List[int] = [1, 5, 25]  # Seconds
+    NOTIFICATION_RETRY_BACKOFF: Union[List[int], str] = [1, 5, 25]  # Seconds
     NOTIFICATION_TTL_MINUTES: int = 30
     
     # Archive & Compliance Settings (Module 8)
@@ -87,12 +112,22 @@ class Settings(BaseSettings):
     BACKGROUND_JOB_INTERVAL_HOURS: int = 24  # Scheduled job interval
 
     # Personalization & UX Settings (Module 9)
-    SUPPORTED_LANGUAGES: List[str] = ["en-US", "vi-VN"]  # Supported language codes
+    SUPPORTED_LANGUAGES: Union[List[str], str] = ["en-US", "vi-VN"]  # Supported language codes
     DEFAULT_LANGUAGE: str = "en-US"  # Default language fallback
     DEFAULT_THEME: str = "system"  # Default theme (light, dark, system)
     DEFAULT_FONT_SIZE: str = "medium"  # Default font size (small, medium, large, extra_large)
     DEFAULT_INFO_DENSITY: str = "comfortable"  # Default info density (comfortable, compact)
     WCAG_COMPLIANCE_LEVEL: str = "AA"  # WCAG accessibility level
+    
+    @field_validator("NOTIFICATION_RETRY_BACKOFF", "SUPPORTED_LANGUAGES", mode="before")
+    @classmethod
+    def parse_list_fields(cls, v):
+        if isinstance(v, str):
+            try:
+                return json.loads(v)
+            except json.JSONDecodeError:
+                return [i.strip() for i in v.split(",")]
+        return v
 
     # Analytics & Reporting Settings (Module 11)
     REPORT_DATA_FRESHNESS_MINUTES: int = 1  # Real-time <1 min for operational reports
@@ -135,10 +170,6 @@ class Settings(BaseSettings):
     # Consent & Governance Settings (Module 12 - Feature 6: Governance)
     CONSENT_POLICY_VERSION: int = 1  # Current consent policy version
     CONSENT_AUDIT_LOG_RETENTION_DAYS: int = 2555  # 7 years for GDPR compliance
-    
-    class Config:
-        env_file = ".env"
-        case_sensitive = True
 
 
 settings = Settings()

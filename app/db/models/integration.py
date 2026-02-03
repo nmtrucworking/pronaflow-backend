@@ -107,50 +107,6 @@ class ApiTokenScope(Base):
     )
 
 
-class ApiUsageLog(Base, TimestampMixin):
-    """
-    API usage tracking for rate limiting and audit logging.
-    Logs each API request for analytics and compliance.
-    
-    Ref: Module 12 - Feature 3.1 - Rate Limiting
-    """
-    __tablename__ = "api_usage_logs"
-    
-    id = Column(String(36), primary_key=True, default=lambda: str(uuid4()))
-    workspace_id = Column(String(36), ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
-    api_token_id = Column(String(36), ForeignKey("api_tokens.id", ondelete="SET NULL"), nullable=True)
-    
-    # Request info
-    method = Column(String(20), nullable=False)  # GET, POST, PATCH, DELETE
-    endpoint = Column(String(500), nullable=False)  # /api/v1/projects, /api/v1/tasks
-    
-    # Response info
-    status_code = Column(Integer, nullable=False)
-    response_time_ms = Column(Integer, nullable=True)  # Response time in milliseconds
-    
-    # Rate limit tracking
-    request_count_in_minute = Column(Integer, nullable=False, default=1)
-    
-    # Details
-    ip_address = Column(String(45), nullable=True)
-    user_agent = Column(String(500), nullable=True)
-    error_message = Column(Text, nullable=True)
-    
-    # Timestamps
-    logged_at = Column(DateTime, nullable=False, default=datetime.utcnow)
-    
-    # Foreign keys
-    workspace = relationship("Workspace", foreign_keys=[workspace_id])
-    api_token = relationship("ApiToken", foreign_keys=[api_token_id])
-    
-    __table_args__ = (
-        Index("ix_api_usage_logs_workspace_id", "workspace_id"),
-        Index("ix_api_usage_logs_api_token_id", "api_token_id"),
-        Index("ix_api_usage_logs_logged_at", "logged_at"),
-        Index("ix_api_usage_logs_status_code", "status_code"),
-    )
-
-
 class WebhookEndpoint(Base, TimestampMixin):
     """
     Webhook endpoint configuration per workspace.
