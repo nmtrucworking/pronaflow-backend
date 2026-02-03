@@ -1,5 +1,6 @@
 # PronaFlow Backend Documentation Index
-
+## 🚨 Important Reports
+- **[Missing Content Analysis](MISSING_CONTENT_ANALYSIS.md)** - Detailed analysis of what's missing in the project
 ## Quick Navigation
 
 ### 🚀 Getting Started

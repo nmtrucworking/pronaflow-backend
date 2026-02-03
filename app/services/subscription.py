@@ -11,9 +11,16 @@ from uuid import UUID, uuid4
 from sqlalchemy import select, and_, or_, func, desc
 from sqlalchemy.orm import Session, joinedload
 from fastapi import HTTPException, status
-import stripe
-from reportlab.lib.pagesizes import LETTER
-from reportlab.pdfgen import canvas
+try:
+    import stripe
+except ImportError:  # pragma: no cover - optional dependency
+    stripe = None
+try:
+    from reportlab.lib.pagesizes import LETTER
+    from reportlab.pdfgen import canvas
+except ImportError:  # pragma: no cover - optional dependency
+    LETTER = None
+    canvas = None
 
 from app.db.models.subscriptions import (
     Plan,
@@ -301,6 +308,11 @@ class SubscriptionService:
         payment_method_id: str,
         description: str,
     ) -> BillingTransaction:
+        if stripe is None:
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="Stripe SDK is not installed"
+            )
         if not settings.STRIPE_SECRET_KEY:
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
@@ -710,6 +722,11 @@ class FreelancerInvoiceService:
     
     def generate_pdf(self, invoice_id: UUID) -> str:
         """Generate PDF for invoice (Module 13 - Feature 13.3 - AC 2)"""
+        if canvas is None or LETTER is None:
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="ReportLab is not installed"
+            )
         invoice = self.get_invoice(invoice_id)
         if not invoice:
             raise HTTPException(

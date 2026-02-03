@@ -1881,6 +1881,166 @@
         "documentation": {}
     },
     {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "or_",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -2482,11 +2642,11 @@
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "app.core.config",
-        "description": "app.core.config",
+        "label": "Base",
+        "importPath": "app.db.declarative_base",
+        "description": "app.db.declarative_base",
         "isExtraImport": true,
-        "detail": "app.core.config",
+        "detail": "app.db.declarative_base",
         "documentation": {}
     },
     {
@@ -3019,6 +3179,14 @@
     },
     {
         "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -3642,6 +3810,238 @@
         "documentation": {}
     },
     {
+        "label": "Generic",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypeVar",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Type",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -4002,6 +4402,22 @@
         "documentation": {}
     },
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Dict",
         "importPath": "typing",
         "description": "typing",
@@ -4011,6 +4427,38 @@
     },
     {
         "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -4427,6 +4875,22 @@
     },
     {
         "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -4562,6 +5026,22 @@
         "documentation": {}
     },
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "List",
         "importPath": "typing",
         "description": "typing",
@@ -4602,7 +5082,87 @@
         "documentation": {}
     },
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypeVar",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Generic",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -4771,6 +5331,30 @@
         "documentation": {}
     },
     {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
         "label": "uuid4",
         "importPath": "uuid",
         "description": "uuid",
@@ -5076,6 +5660,14 @@
     },
     {
         "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -5363,6 +5955,78 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "date",
         "importPath": "datetime",
         "description": "datetime",
@@ -5476,6 +6140,46 @@
     },
     {
         "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -5691,6 +6395,14 @@
         "documentation": {}
     },
     {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -5771,6 +6483,46 @@
         "documentation": {}
     },
     {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -5788,22 +6540,6 @@
     },
     {
         "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -6259,6 +6995,14 @@
         "documentation": {}
     },
     {
+        "label": "Path",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "status",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -6507,6 +7251,126 @@
         "documentation": {}
     },
     {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "Depends",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -6556,6 +7420,22 @@
     },
     {
         "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -6688,6 +7568,30 @@
         "description": "fastapi",
         "isExtraImport": true,
         "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
         "documentation": {}
     },
     {
@@ -7403,6 +8307,62 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "joinedload",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -7491,7 +8451,31 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "joinedload",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -7675,6 +8659,22 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
         "label": "SessionLocal",
         "importPath": "app.db.session",
         "description": "app.db.session",
@@ -7720,6 +8720,14 @@
         "description": "app.db.session",
         "isExtraImport": true,
         "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
         "documentation": {}
     },
     {
@@ -7796,6 +8804,14 @@
     },
     {
         "label": "get_current_user_with_session",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
         "importPath": "app.core.security",
         "description": "app.core.security",
         "isExtraImport": true,
@@ -8011,6 +9027,62 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
         "label": "Session",
         "importPath": "app.db.models.users",
         "description": "app.db.models.users",
@@ -8028,6 +9100,38 @@
     },
     {
         "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "Role",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "Permission",
         "importPath": "app.db.models.users",
         "description": "app.db.models.users",
         "isExtraImport": true,
@@ -8148,6 +9252,14 @@
     },
     {
         "label": "Permission",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
         "importPath": "app.db.models.users",
         "description": "app.db.models.users",
         "isExtraImport": true,
@@ -9192,70 +10304,6 @@
         "description": "app.schemas.admin",
         "isExtraImport": true,
         "detail": "app.schemas.admin",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "importPath": "app.api.dependencies",
-        "description": "app.api.dependencies",
-        "isExtraImport": true,
-        "detail": "app.api.dependencies",
-        "documentation": {}
-    },
-    {
-        "label": "get_current_user",
-        "importPath": "app.api.dependencies",
-        "description": "app.api.dependencies",
-        "isExtraImport": true,
-        "detail": "app.api.dependencies",
-        "documentation": {}
-    },
-    {
-        "label": "get_current_user",
-        "importPath": "app.api.dependencies",
-        "description": "app.api.dependencies",
-        "isExtraImport": true,
-        "detail": "app.api.dependencies",
-        "documentation": {}
-    },
-    {
-        "label": "get_db",
-        "importPath": "app.api.dependencies",
-        "description": "app.api.dependencies",
-        "isExtraImport": true,
-        "detail": "app.api.dependencies",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "app.db.models.user",
-        "description": "app.db.models.user",
-        "isExtraImport": true,
-        "detail": "app.db.models.user",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "app.db.models.user",
-        "description": "app.db.models.user",
-        "isExtraImport": true,
-        "detail": "app.db.models.user",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "app.db.models.user",
-        "description": "app.db.models.user",
-        "isExtraImport": true,
-        "detail": "app.db.models.user",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "app.db.models.user",
-        "description": "app.db.models.user",
-        "isExtraImport": true,
-        "detail": "app.db.models.user",
         "documentation": {}
     },
     {
@@ -10547,6 +11595,54 @@
         "documentation": {}
     },
     {
+        "label": "Workspace",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMember",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceInvitation",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceSetting",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "Workspace",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMember",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
         "label": "WorkspaceMember",
         "importPath": "app.db.models.workspaces",
         "description": "app.db.models.workspaces",
@@ -10611,6 +11707,38 @@
         "documentation": {}
     },
     {
+        "label": "WorkspaceMember",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "Workspace",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "Workspace",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMember",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
         "label": "WorkspaceRole",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
@@ -10636,6 +11764,22 @@
     },
     {
         "label": "TaskStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskPriority",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -10795,7 +11939,7 @@
         "documentation": {}
     },
     {
-        "label": "LanguageEnum",
+        "label": "TemplateLocaleEnum",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -10923,6 +12067,54 @@
         "documentation": {}
     },
     {
+        "label": "ProjectStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectVisibility",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskPriority",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "UserStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "AnalyticsTypeEnum",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
@@ -11115,7 +12307,7 @@
         "documentation": {}
     },
     {
-        "label": "LanguageEnum",
+        "label": "TemplateLocaleEnum",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -11180,6 +12372,38 @@
     },
     {
         "label": "ProjectHealthStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectVisibility",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectGovernanceMode",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectPriority",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -11252,6 +12476,30 @@
     },
     {
         "label": "TaskPriority",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskPriority",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -11379,7 +12627,7 @@
         "documentation": {}
     },
     {
-        "label": "LanguageEnum",
+        "label": "TemplateLocaleEnum",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -11443,6 +12691,22 @@
         "documentation": {}
     },
     {
+        "label": "ProjectStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "PlanStateEnum",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
@@ -11499,6 +12763,22 @@
         "documentation": {}
     },
     {
+        "label": "TaskStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskPriority",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "WorkspaceRole",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
@@ -11508,6 +12788,54 @@
     },
     {
         "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "UserStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskPriority",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
         "isExtraImport": true,
@@ -12667,7 +13995,7 @@
         "documentation": {}
     },
     {
-        "label": "Watcher",
+        "label": "EventConsumer",
         "importPath": "app.db.models.notifications",
         "description": "app.db.models.notifications",
         "isExtraImport": true,
@@ -12675,7 +14003,15 @@
         "documentation": {}
     },
     {
-        "label": "InteractionLog",
+        "label": "DomainEvent",
+        "importPath": "app.db.models.notifications",
+        "description": "app.db.models.notifications",
+        "isExtraImport": true,
+        "detail": "app.db.models.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "Notification",
         "importPath": "app.db.models.notifications",
         "description": "app.db.models.notifications",
         "isExtraImport": true,
@@ -12707,31 +14043,7 @@
         "documentation": {}
     },
     {
-        "label": "Watcher",
-        "importPath": "app.db.models.notifications",
-        "description": "app.db.models.notifications",
-        "isExtraImport": true,
-        "detail": "app.db.models.notifications",
-        "documentation": {}
-    },
-    {
-        "label": "EventLog",
-        "importPath": "app.db.models.notifications",
-        "description": "app.db.models.notifications",
-        "isExtraImport": true,
-        "detail": "app.db.models.notifications",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationRetry",
-        "importPath": "app.db.models.notifications",
-        "description": "app.db.models.notifications",
-        "isExtraImport": true,
-        "detail": "app.db.models.notifications",
-        "documentation": {}
-    },
-    {
-        "label": "InteractionLog",
+        "label": "EventConsumer",
         "importPath": "app.db.models.notifications",
         "description": "app.db.models.notifications",
         "isExtraImport": true,
@@ -14941,6 +16253,478 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.core.dependencies",
+        "description": "app.core.dependencies",
+        "isExtraImport": true,
+        "detail": "app.core.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.core.dependencies",
+        "description": "app.core.dependencies",
+        "isExtraImport": true,
+        "detail": "app.core.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.core.dependencies",
+        "description": "app.core.dependencies",
+        "isExtraImport": true,
+        "detail": "app.core.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.core.dependencies",
+        "description": "app.core.dependencies",
+        "isExtraImport": true,
+        "detail": "app.core.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.core.dependencies",
+        "description": "app.core.dependencies",
+        "isExtraImport": true,
+        "detail": "app.core.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.core.dependencies",
+        "description": "app.core.dependencies",
+        "isExtraImport": true,
+        "detail": "app.core.dependencies",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectCreate",
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectUpdate",
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectResponse",
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectDetailResponse",
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectListResponse",
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectStatsResponse",
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectSearchResponse",
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectService",
+        "importPath": "app.services.project_service",
+        "description": "app.services.project_service",
+        "isExtraImport": true,
+        "detail": "app.services.project_service",
+        "documentation": {}
+    },
+    {
+        "label": "PronaFlowException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "PronaFlowException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "PronaFlowException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "PronaFlowException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "NotFoundException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "ForbiddenException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "ConflictException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "DuplicateException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "NotFoundException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "ForbiddenException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "ConflictException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "InvalidStateException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "NotFoundException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "ForbiddenException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "ConflictException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "DuplicateException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationException",
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "isExtraImport": true,
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "TaskCreate",
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskUpdate",
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskResponse",
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDetailResponse",
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListResponse",
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListCreate",
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListUpdate",
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListItemResponse",
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskCreate",
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskUpdate",
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskResponse",
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssigneeCreate",
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssigneeResponse",
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "BulkTaskStatusUpdate",
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "BulkTaskAssign",
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskService",
+        "importPath": "app.services.task_service",
+        "description": "app.services.task_service",
+        "isExtraImport": true,
+        "detail": "app.services.task_service",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListService",
+        "importPath": "app.services.task_service",
+        "description": "app.services.task_service",
+        "isExtraImport": true,
+        "detail": "app.services.task_service",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceCreate",
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceUpdate",
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceResponse",
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceDetailResponse",
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceListResponse",
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMemberResponse",
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceInvitationCreate",
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceInvitationResponse",
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceSettingsUpdate",
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceService",
+        "importPath": "app.services.workspace_service",
+        "description": "app.services.workspace_service",
+        "isExtraImport": true,
+        "detail": "app.services.workspace_service",
+        "documentation": {}
+    },
+    {
+        "label": "PaginationParams",
+        "importPath": "app.utils.pagination",
+        "description": "app.utils.pagination",
+        "isExtraImport": true,
+        "detail": "app.utils.pagination",
+        "documentation": {}
+    },
+    {
         "label": "jwt",
         "kind": 6,
         "isExtraImport": true,
@@ -15739,6 +17523,54 @@
         "documentation": {}
     },
     {
+        "label": "TaskList",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Subtask",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssignee",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
         "label": "Task",
         "importPath": "app.db.models.tasks",
         "description": "app.db.models.tasks",
@@ -15835,6 +17667,30 @@
         "documentation": {}
     },
     {
+        "label": "TaskList",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssignee",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
         "label": "Task",
         "importPath": "app.db.models.tasks",
         "description": "app.db.models.tasks",
@@ -15844,6 +17700,30 @@
     },
     {
         "label": "TaskList",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskList",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssignee",
         "importPath": "app.db.models.tasks",
         "description": "app.db.models.tasks",
         "isExtraImport": true,
@@ -15896,6 +17776,199 @@
         "description": "sqlalchemy.sql",
         "isExtraImport": true,
         "detail": "sqlalchemy.sql",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "BaseHTTPMiddleware",
+        "importPath": "starlette.middleware.base",
+        "description": "starlette.middleware.base",
+        "isExtraImport": true,
+        "detail": "starlette.middleware.base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseHTTPMiddleware",
+        "importPath": "starlette.middleware.base",
+        "description": "starlette.middleware.base",
+        "isExtraImport": true,
+        "detail": "starlette.middleware.base",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "starlette.exceptions",
+        "description": "starlette.exceptions",
+        "isExtraImport": true,
+        "detail": "starlette.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "starlette.responses",
+        "description": "starlette.responses",
+        "isExtraImport": true,
+        "detail": "starlette.responses",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
+        "label": "BaseRepository",
+        "importPath": "app.repositories.base",
+        "description": "app.repositories.base",
+        "isExtraImport": true,
+        "detail": "app.repositories.base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseRepository",
+        "importPath": "app.repositories.base",
+        "description": "app.repositories.base",
+        "isExtraImport": true,
+        "detail": "app.repositories.base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseRepository",
+        "importPath": "app.repositories.base",
+        "description": "app.repositories.base",
+        "isExtraImport": true,
+        "detail": "app.repositories.base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseRepository",
+        "importPath": "app.repositories.base",
+        "description": "app.repositories.base",
+        "isExtraImport": true,
+        "detail": "app.repositories.base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseRepository",
+        "importPath": "app.repositories.base",
+        "description": "app.repositories.base",
+        "isExtraImport": true,
+        "detail": "app.repositories.base",
+        "documentation": {}
+    },
+    {
+        "label": "BaseRepository",
+        "importPath": "app.repositories.base",
+        "description": "app.repositories.base",
+        "isExtraImport": true,
+        "detail": "app.repositories.base",
+        "documentation": {}
+    },
+    {
+        "label": "Comment",
+        "importPath": "app.db.models.collaboration",
+        "description": "app.db.models.collaboration",
+        "isExtraImport": true,
+        "detail": "app.db.models.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.db.models.projects",
+        "description": "app.db.models.projects",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.db.models.projects",
+        "description": "app.db.models.projects",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.db.models.projects",
+        "description": "app.db.models.projects",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.db.models.projects",
+        "description": "app.db.models.projects",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.db.models.projects",
+        "description": "app.db.models.projects",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.db.models.projects",
+        "description": "app.db.models.projects",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.db.models.projects",
+        "description": "app.db.models.projects",
+        "isExtraImport": true,
+        "detail": "app.db.models.projects",
         "documentation": {}
     },
     {
@@ -16195,6 +18268,22 @@
         "documentation": {}
     },
     {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "field_validator",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -16267,6 +18356,22 @@
         "documentation": {}
     },
     {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "EmailStr",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -16308,6 +18413,46 @@
     },
     {
         "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
         "importPath": "pydantic",
         "description": "pydantic",
         "isExtraImport": true,
@@ -16403,30 +18548,6 @@
         "documentation": {}
     },
     {
-        "label": "Task",
-        "importPath": "app.db.models.task",
-        "description": "app.db.models.task",
-        "isExtraImport": true,
-        "detail": "app.db.models.task",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.db.models.task",
-        "description": "app.db.models.task",
-        "isExtraImport": true,
-        "detail": "app.db.models.task",
-        "documentation": {}
-    },
-    {
-        "label": "Sprint",
-        "importPath": "app.db.models.sprint",
-        "description": "app.db.models.sprint",
-        "isExtraImport": true,
-        "detail": "app.db.models.sprint",
-        "documentation": {}
-    },
-    {
         "label": "zipfile",
         "kind": 6,
         "isExtraImport": true,
@@ -16490,14 +18611,6 @@
         "description": "app.db.models.archive",
         "isExtraImport": true,
         "detail": "app.db.models.archive",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.db.models.project",
-        "description": "app.db.models.project",
-        "isExtraImport": true,
-        "detail": "app.db.models.project",
         "documentation": {}
     },
     {
@@ -16811,54 +18924,6 @@
         "documentation": {}
     },
     {
-        "label": "IntegrityError",
-        "importPath": "sqlalchemy.exc",
-        "description": "sqlalchemy.exc",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.exc",
-        "documentation": {}
-    },
-    {
-        "label": "IntegrityError",
-        "importPath": "sqlalchemy.exc",
-        "description": "sqlalchemy.exc",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.exc",
-        "documentation": {}
-    },
-    {
-        "label": "IntegrityError",
-        "importPath": "sqlalchemy.exc",
-        "description": "sqlalchemy.exc",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.exc",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.db.models.projects",
-        "description": "app.db.models.projects",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.db.models.projects",
-        "description": "app.db.models.projects",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.db.models.projects",
-        "description": "app.db.models.projects",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects",
-        "documentation": {}
-    },
-    {
         "label": "ProjectMember",
         "importPath": "app.db.models.projects_extended",
         "description": "app.db.models.projects_extended",
@@ -16912,6 +18977,38 @@
         "description": "app.db.models.projects_extended",
         "isExtraImport": true,
         "detail": "app.db.models.projects_extended",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectRepository",
+        "importPath": "app.repositories.project_repository",
+        "description": "app.repositories.project_repository",
+        "isExtraImport": true,
+        "detail": "app.repositories.project_repository",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectRepository",
+        "importPath": "app.repositories.project_repository",
+        "description": "app.repositories.project_repository",
+        "isExtraImport": true,
+        "detail": "app.repositories.project_repository",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRepository",
+        "importPath": "app.repositories.workspace_repository",
+        "description": "app.repositories.workspace_repository",
+        "isExtraImport": true,
+        "detail": "app.repositories.workspace_repository",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRepository",
+        "importPath": "app.repositories.workspace_repository",
+        "description": "app.repositories.workspace_repository",
+        "isExtraImport": true,
+        "detail": "app.repositories.workspace_repository",
         "documentation": {}
     },
     {
@@ -17067,28 +19164,11 @@
         "documentation": {}
     },
     {
-        "label": "stripe",
-        "kind": 6,
+        "label": "ceil",
+        "importPath": "math",
+        "description": "math",
         "isExtraImport": true,
-        "importPath": "stripe",
-        "description": "stripe",
-        "detail": "stripe",
-        "documentation": {}
-    },
-    {
-        "label": "LETTER",
-        "importPath": "reportlab.lib.pagesizes",
-        "description": "reportlab.lib.pagesizes",
-        "isExtraImport": true,
-        "detail": "reportlab.lib.pagesizes",
-        "documentation": {}
-    },
-    {
-        "label": "canvas",
-        "importPath": "reportlab.pdfgen",
-        "description": "reportlab.pdfgen",
-        "isExtraImport": true,
-        "detail": "reportlab.pdfgen",
+        "detail": "math",
         "documentation": {}
     },
     {
@@ -17156,11 +19236,35 @@
         "documentation": {}
     },
     {
+        "label": "TaskRepository",
+        "importPath": "app.repositories.task_repository",
+        "description": "app.repositories.task_repository",
+        "isExtraImport": true,
+        "detail": "app.repositories.task_repository",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListRepository",
+        "importPath": "app.repositories.task_repository",
+        "description": "app.repositories.task_repository",
+        "isExtraImport": true,
+        "detail": "app.repositories.task_repository",
+        "documentation": {}
+    },
+    {
         "label": "WorkspaceValidator",
         "importPath": "app.services.workspace_validation",
         "description": "app.services.workspace_validation",
         "isExtraImport": true,
         "detail": "app.services.workspace_validation",
+        "documentation": {}
+    },
+    {
+        "label": "UserRepository",
+        "importPath": "app.repositories.user_repository",
+        "description": "app.repositories.user_repository",
+        "isExtraImport": true,
+        "detail": "app.repositories.user_repository",
         "documentation": {}
     },
     {
@@ -17291,6 +19395,14 @@
         "description": "app.main",
         "isExtraImport": true,
         "detail": "app.main",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "app.utils.helpers",
+        "description": "app.utils.helpers",
+        "isExtraImport": true,
+        "detail": "app.utils.helpers",
         "documentation": {}
     },
     {
@@ -21038,6 +23150,384 @@
         "documentation": {}
     },
     {
+        "label": "create_project",
+        "kind": 2,
+        "importPath": "app.api.project_routes",
+        "description": "app.api.project_routes",
+        "peekOfCode": "def create_project(\n    data: ProjectCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create a new project.\"\"\"\n    try:\n        service = ProjectService(db)\n        project = service.create_project(\n            workspace_id=data.workspace_id,",
+        "detail": "app.api.project_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_project",
+        "kind": 2,
+        "importPath": "app.api.project_routes",
+        "description": "app.api.project_routes",
+        "peekOfCode": "def get_project(\n    project_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get project details.\"\"\"\n    try:\n        service = ProjectService(db)\n        project = service.get_project(project_id, current_user.id)\n        return project",
+        "detail": "app.api.project_routes",
+        "documentation": {}
+    },
+    {
+        "label": "update_project",
+        "kind": 2,
+        "importPath": "app.api.project_routes",
+        "description": "app.api.project_routes",
+        "peekOfCode": "def update_project(\n    project_id: UUID,\n    data: ProjectUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update project.\"\"\"\n    try:\n        service = ProjectService(db)\n        project = service.update_project(",
+        "detail": "app.api.project_routes",
+        "documentation": {}
+    },
+    {
+        "label": "delete_project",
+        "kind": 2,
+        "importPath": "app.api.project_routes",
+        "description": "app.api.project_routes",
+        "peekOfCode": "def delete_project(\n    project_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Delete project.\"\"\"\n    try:\n        service = ProjectService(db)\n        service.delete_project(project_id, current_user.id)\n    except PronaFlowException as e:",
+        "detail": "app.api.project_routes",
+        "documentation": {}
+    },
+    {
+        "label": "list_workspace_projects",
+        "kind": 2,
+        "importPath": "app.api.project_routes",
+        "description": "app.api.project_routes",
+        "peekOfCode": "def list_workspace_projects(\n    workspace_id: UUID,\n    page: int = Query(1, ge=1, description=\"Page number\"),\n    page_size: int = Query(20, ge=1, le=100, description=\"Results per page\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"List workspace projects.\"\"\"\n    try:\n        service = ProjectService(db)",
+        "detail": "app.api.project_routes",
+        "documentation": {}
+    },
+    {
+        "label": "list_user_projects",
+        "kind": 2,
+        "importPath": "app.api.project_routes",
+        "description": "app.api.project_routes",
+        "peekOfCode": "def list_user_projects(\n    page: int = Query(1, ge=1, description=\"Page number\"),\n    page_size: int = Query(20, ge=1, le=100, description=\"Results per page\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"List user projects.\"\"\"\n    try:\n        service = ProjectService(db)\n        skip = (page - 1) * page_size",
+        "detail": "app.api.project_routes",
+        "documentation": {}
+    },
+    {
+        "label": "search_projects",
+        "kind": 2,
+        "importPath": "app.api.project_routes",
+        "description": "app.api.project_routes",
+        "peekOfCode": "def search_projects(\n    workspace_id: UUID,\n    query: str = Query(..., min_length=1, description=\"Search query\"),\n    page: int = Query(1, ge=1, description=\"Page number\"),\n    page_size: int = Query(20, ge=1, le=100, description=\"Results per page\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Search projects.\"\"\"\n    try:",
+        "detail": "app.api.project_routes",
+        "documentation": {}
+    },
+    {
+        "label": "update_status",
+        "kind": 2,
+        "importPath": "app.api.project_routes",
+        "description": "app.api.project_routes",
+        "peekOfCode": "def update_status(\n    project_id: UUID,\n    data: dict,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update project status.\"\"\"\n    try:\n        service = ProjectService(db)\n        project = service.update_status(",
+        "detail": "app.api.project_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_stats",
+        "kind": 2,
+        "importPath": "app.api.project_routes",
+        "description": "app.api.project_routes",
+        "peekOfCode": "def get_stats(\n    project_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get project statistics.\"\"\"\n    try:\n        service = ProjectService(db)\n        stats = service.get_stats(project_id, current_user.id)\n        return stats",
+        "detail": "app.api.project_routes",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.project_routes",
+        "description": "app.api.project_routes",
+        "peekOfCode": "router = APIRouter(prefix=\"/api/v1/projects\", tags=[\"projects\"])\n# ==================== PROJECT CRUD ====================\n@router.post(\n    \"\",\n    response_model=ProjectResponse,\n    status_code=status.HTTP_201_CREATED,\n    summary=\"Create project\",\n    description=\"Create a new project in workspace.\"\n)\ndef create_project(",
+        "detail": "app.api.project_routes",
+        "documentation": {}
+    },
+    {
+        "label": "create_task_list",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def create_task_list(\n    data: TaskListCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create a new task list.\"\"\"\n    try:\n        service = TaskListService(db)\n        task_list = service.create_task_list(\n            project_id=data.project_id,",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "update_task_list",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def update_task_list(\n    task_list_id: UUID,\n    data: TaskListUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update task list.\"\"\"\n    try:\n        service = TaskListService(db)\n        # Implementation: get task_list, check access, update",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "delete_task_list",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def delete_task_list(\n    task_list_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Delete task list.\"\"\"\n    try:\n        service = TaskListService(db)\n        service.delete_task_list(task_list_id, current_user.id)\n    except PronaFlowException as e:",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "create_task",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def create_task(\n    data: TaskCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create a new task.\"\"\"\n    try:\n        service = TaskService(db)\n        task = service.create_task(\n            project_id=data.project_id,",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_task",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def get_task(\n    task_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get task details.\"\"\"\n    try:\n        service = TaskService(db)\n        task = service.get_task(task_id, current_user.id)\n        return task",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "update_task",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def update_task(\n    task_id: UUID,\n    data: TaskUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update task.\"\"\"\n    try:\n        service = TaskService(db)\n        task = service.update_task(",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "delete_task",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def delete_task(\n    task_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Delete task.\"\"\"\n    try:\n        service = TaskService(db)\n        service.delete_task(task_id, current_user.id)\n    except PronaFlowException as e:",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "list_task_list_tasks",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def list_task_list_tasks(\n    task_list_id: UUID,\n    page: int = Query(1, ge=1, description=\"Page number\"),\n    page_size: int = Query(50, ge=1, le=100, description=\"Results per page\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get tasks in task list.\"\"\"\n    try:\n        service = TaskService(db)",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "list_project_tasks",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def list_project_tasks(\n    project_id: UUID,\n    page: int = Query(1, ge=1, description=\"Page number\"),\n    page_size: int = Query(50, ge=1, le=100, description=\"Results per page\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get project tasks.\"\"\"\n    try:\n        service = TaskService(db)",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_assigned_tasks",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def get_assigned_tasks(\n    page: int = Query(1, ge=1, description=\"Page number\"),\n    page_size: int = Query(50, ge=1, le=100, description=\"Results per page\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get user assigned tasks.\"\"\"\n    try:\n        service = TaskService(db)\n        skip = (page - 1) * page_size",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "search_tasks",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def search_tasks(\n    project_id: UUID,\n    query: str = Query(..., min_length=1, description=\"Search query\"),\n    page: int = Query(1, ge=1, description=\"Page number\"),\n    page_size: int = Query(20, ge=1, le=100, description=\"Results per page\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Search tasks.\"\"\"\n    try:",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "update_status",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def update_status(\n    task_id: UUID,\n    data: dict,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update task status.\"\"\"\n    try:\n        service = TaskService(db)\n        task = service.update_status(",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_overdue_tasks",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def get_overdue_tasks(\n    project_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get overdue tasks.\"\"\"\n    try:\n        service = TaskService(db)\n        tasks = service.get_overdue_tasks(project_id, current_user.id)\n        return TaskListResponse(",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "assign_task",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def assign_task(\n    task_id: UUID,\n    data: TaskAssigneeCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Assign task to user.\"\"\"\n    try:\n        service = TaskService(db)\n        assignee = service.assign_task(",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_assignees",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def get_assignees(\n    task_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get task assignees.\"\"\"\n    try:\n        service = TaskService(db)\n        assignees = service.get_assignees(task_id, current_user.id)\n        return assignees",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "unassign_task",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def unassign_task(\n    task_id: UUID,\n    assignee_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Unassign task.\"\"\"\n    try:\n        service = TaskService(db)\n        service.unassign_task(task_id, current_user.id, assignee_id)",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "bulk_update_status",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def bulk_update_status(\n    data: BulkTaskStatusUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Bulk update task status.\"\"\"\n    try:\n        service = TaskService(db)\n        # Implementation: update status for each task in data.task_ids\n        # Placeholder for now",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "bulk_assign_tasks",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def bulk_assign_tasks(\n    data: BulkTaskAssign,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Bulk assign tasks.\"\"\"\n    try:\n        service = TaskService(db)\n        # Implementation: assign each task in data.task_ids to data.user_id\n        # Placeholder for now",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_project_stats",
+        "kind": 2,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "def get_project_stats(\n    project_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get project task statistics.\"\"\"\n    try:\n        service = TaskService(db)\n        stats = service.get_project_stats(project_id, current_user.id)\n        return stats",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.task_routes",
+        "description": "app.api.task_routes",
+        "peekOfCode": "router = APIRouter(prefix=\"/api/v1/tasks\", tags=[\"tasks\"])\n# ==================== TASK LIST MANAGEMENT ====================\n@router.post(\n    \"/lists\",\n    response_model=TaskListItemResponse,\n    status_code=status.HTTP_201_CREATED,\n    summary=\"Create task list\",\n    description=\"Create a new task list in project.\"\n)\ndef create_task_list(",
+        "detail": "app.api.task_routes",
+        "documentation": {}
+    },
+    {
+        "label": "create_workspace",
+        "kind": 2,
+        "importPath": "app.api.workspace_routes",
+        "description": "app.api.workspace_routes",
+        "peekOfCode": "def create_workspace(\n    data: WorkspaceCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create a new workspace.\"\"\"\n    try:\n        service = WorkspaceService(db)\n        workspace = service.create_workspace(\n            user_id=current_user.id,",
+        "detail": "app.api.workspace_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_workspace",
+        "kind": 2,
+        "importPath": "app.api.workspace_routes",
+        "description": "app.api.workspace_routes",
+        "peekOfCode": "def get_workspace(\n    workspace_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get workspace details.\"\"\"\n    try:\n        service = WorkspaceService(db)\n        workspace = service.get_workspace(workspace_id, current_user.id)\n        return workspace",
+        "detail": "app.api.workspace_routes",
+        "documentation": {}
+    },
+    {
+        "label": "update_workspace",
+        "kind": 2,
+        "importPath": "app.api.workspace_routes",
+        "description": "app.api.workspace_routes",
+        "peekOfCode": "def update_workspace(\n    workspace_id: UUID,\n    data: WorkspaceUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update workspace.\"\"\"\n    try:\n        service = WorkspaceService(db)\n        workspace = service.update_workspace(",
+        "detail": "app.api.workspace_routes",
+        "documentation": {}
+    },
+    {
+        "label": "delete_workspace",
+        "kind": 2,
+        "importPath": "app.api.workspace_routes",
+        "description": "app.api.workspace_routes",
+        "peekOfCode": "def delete_workspace(\n    workspace_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Delete workspace.\"\"\"\n    try:\n        service = WorkspaceService(db)\n        service.delete_workspace(workspace_id, current_user.id)\n    except PronaFlowException as e:",
+        "detail": "app.api.workspace_routes",
+        "documentation": {}
+    },
+    {
+        "label": "list_workspaces",
+        "kind": 2,
+        "importPath": "app.api.workspace_routes",
+        "description": "app.api.workspace_routes",
+        "peekOfCode": "def list_workspaces(\n    page: int = Query(1, ge=1, description=\"Page number\"),\n    page_size: int = Query(20, ge=1, le=100, description=\"Results per page\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"List user workspaces.\"\"\"\n    try:\n        service = WorkspaceService(db)\n        skip = (page - 1) * page_size",
+        "detail": "app.api.workspace_routes",
+        "documentation": {}
+    },
+    {
+        "label": "search_workspaces",
+        "kind": 2,
+        "importPath": "app.api.workspace_routes",
+        "description": "app.api.workspace_routes",
+        "peekOfCode": "def search_workspaces(\n    query: str = Query(..., min_length=1, description=\"Search query\"),\n    page: int = Query(1, ge=1, description=\"Page number\"),\n    page_size: int = Query(20, ge=1, le=100, description=\"Results per page\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Search workspaces.\"\"\"\n    try:\n        service = WorkspaceService(db)",
+        "detail": "app.api.workspace_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_members",
+        "kind": 2,
+        "importPath": "app.api.workspace_routes",
+        "description": "app.api.workspace_routes",
+        "peekOfCode": "def get_members(\n    workspace_id: UUID,\n    page: int = Query(1, ge=1, description=\"Page number\"),\n    page_size: int = Query(20, ge=1, le=100, description=\"Results per page\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get workspace members.\"\"\"\n    try:\n        service = WorkspaceService(db)",
+        "detail": "app.api.workspace_routes",
+        "documentation": {}
+    },
+    {
+        "label": "add_member",
+        "kind": 2,
+        "importPath": "app.api.workspace_routes",
+        "description": "app.api.workspace_routes",
+        "peekOfCode": "def add_member(\n    workspace_id: UUID,\n    data: dict,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Add member to workspace.\"\"\"\n    try:\n        service = WorkspaceService(db)\n        member = service.add_member(",
+        "detail": "app.api.workspace_routes",
+        "documentation": {}
+    },
+    {
+        "label": "remove_member",
+        "kind": 2,
+        "importPath": "app.api.workspace_routes",
+        "description": "app.api.workspace_routes",
+        "peekOfCode": "def remove_member(\n    workspace_id: UUID,\n    member_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Remove member from workspace.\"\"\"\n    try:\n        service = WorkspaceService(db)\n        service.remove_member(workspace_id, current_user.id, member_id)",
+        "detail": "app.api.workspace_routes",
+        "documentation": {}
+    },
+    {
+        "label": "update_member_role",
+        "kind": 2,
+        "importPath": "app.api.workspace_routes",
+        "description": "app.api.workspace_routes",
+        "peekOfCode": "def update_member_role(\n    workspace_id: UUID,\n    member_id: UUID,\n    data: dict,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update member role.\"\"\"\n    try:\n        service = WorkspaceService(db)",
+        "detail": "app.api.workspace_routes",
+        "documentation": {}
+    },
+    {
+        "label": "get_stats",
+        "kind": 2,
+        "importPath": "app.api.workspace_routes",
+        "description": "app.api.workspace_routes",
+        "peekOfCode": "def get_stats(\n    workspace_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get workspace statistics.\"\"\"\n    try:\n        service = WorkspaceService(db)\n        stats = service.get_stats(workspace_id, current_user.id)\n        return stats",
+        "detail": "app.api.workspace_routes",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.api.workspace_routes",
+        "description": "app.api.workspace_routes",
+        "peekOfCode": "router = APIRouter(prefix=\"/api/v1/workspaces\", tags=[\"workspaces\"])\n# ==================== WORKSPACE CRUD ====================\n@router.post(\n    \"\",\n    response_model=WorkspaceResponse,\n    status_code=status.HTTP_201_CREATED,\n    summary=\"Create workspace\",\n    description=\"Create a new workspace. Current user becomes the owner.\"\n)\ndef create_workspace(",
+        "detail": "app.api.workspace_routes",
+        "documentation": {}
+    },
+    {
         "label": "create_admin_access_token",
         "kind": 2,
         "importPath": "app.core.admin_security",
@@ -23558,6 +26048,15 @@
         "documentation": {}
     },
     {
+        "label": "UUIDPrimaryKeyMixin",
+        "kind": 6,
+        "importPath": "app.db.mixins",
+        "description": "app.db.mixins",
+        "peekOfCode": "class UUIDPrimaryKeyMixin:\n    \"\"\"\n    Mixin that provides a UUID primary key column named `id`.\n    \"\"\"\n    id: Mapped[uuid.UUID] = mapped_column(\n        UUID(as_uuid=True),\n        primary_key=True,\n        default=uuid.uuid4,\n        index=True,\n        comment=\"Primary key UUID\"",
+        "detail": "app.db.mixins",
+        "documentation": {}
+    },
+    {
         "label": "TimestampMixin",
         "kind": 6,
         "importPath": "app.db.mixins",
@@ -23609,6 +26108,132 @@
         "description": "app.db.session",
         "peekOfCode": "SessionLocal = sessionmaker(\n    autocommit=False,\n    autoflush=False,\n    bind=engine,\n)\ndef get_db() -> Generator[Session, None, None]:\n    \"\"\"\n    Dependency function for FastAPI to get database session.\n    Usage:\n        @app.get(\"/items\")",
         "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "ErrorHandlerMiddleware",
+        "kind": 6,
+        "importPath": "app.middleware.error_handler",
+        "description": "app.middleware.error_handler",
+        "peekOfCode": "class ErrorHandlerMiddleware(BaseHTTPMiddleware):\n    \"\"\"Middleware for global error handling.\"\"\"\n    async def dispatch(self, request: Request, call_next):\n        \"\"\"\n        Handle errors and return consistent error responses.\n        Args:\n            request: HTTP request\n            call_next: Next middleware/route\n        Returns:\n            HTTP response",
+        "detail": "app.middleware.error_handler",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "app.middleware.error_handler",
+        "description": "app.middleware.error_handler",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass ErrorHandlerMiddleware(BaseHTTPMiddleware):\n    \"\"\"Middleware for global error handling.\"\"\"\n    async def dispatch(self, request: Request, call_next):\n        \"\"\"\n        Handle errors and return consistent error responses.\n        Args:\n            request: HTTP request\n            call_next: Next middleware/route\n        Returns:",
+        "detail": "app.middleware.error_handler",
+        "documentation": {}
+    },
+    {
+        "label": "LoggingMiddleware",
+        "kind": 6,
+        "importPath": "app.middleware.logging",
+        "description": "app.middleware.logging",
+        "peekOfCode": "class LoggingMiddleware(BaseHTTPMiddleware):\n    \"\"\"Middleware to log all HTTP requests and responses.\"\"\"\n    async def dispatch(self, request: Request, call_next) -> Response:\n        \"\"\"\n        Process request and log details.\n        Args:\n            request: HTTP request\n            call_next: Next middleware/route\n        Returns:\n            HTTP response",
+        "detail": "app.middleware.logging",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "app.middleware.logging",
+        "description": "app.middleware.logging",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass LoggingMiddleware(BaseHTTPMiddleware):\n    \"\"\"Middleware to log all HTTP requests and responses.\"\"\"\n    async def dispatch(self, request: Request, call_next) -> Response:\n        \"\"\"\n        Process request and log details.\n        Args:\n            request: HTTP request\n            call_next: Next middleware/route\n        Returns:",
+        "detail": "app.middleware.logging",
+        "documentation": {}
+    },
+    {
+        "label": "BaseRepository",
+        "kind": 6,
+        "importPath": "app.repositories.base",
+        "description": "app.repositories.base",
+        "peekOfCode": "class BaseRepository(Generic[ModelType]):\n    \"\"\"\n    Base repository with generic CRUD operations.\n    Example:\n        class UserRepository(BaseRepository[User]):\n            def __init__(self, db: Session):\n                super().__init__(User, db)\n    \"\"\"\n    def __init__(self, model: Type[ModelType], db: Session):\n        \"\"\"",
+        "detail": "app.repositories.base",
+        "documentation": {}
+    },
+    {
+        "label": "ModelType",
+        "kind": 5,
+        "importPath": "app.repositories.base",
+        "description": "app.repositories.base",
+        "peekOfCode": "ModelType = TypeVar(\"ModelType\", bound=Base)\nclass BaseRepository(Generic[ModelType]):\n    \"\"\"\n    Base repository with generic CRUD operations.\n    Example:\n        class UserRepository(BaseRepository[User]):\n            def __init__(self, db: Session):\n                super().__init__(User, db)\n    \"\"\"\n    def __init__(self, model: Type[ModelType], db: Session):",
+        "detail": "app.repositories.base",
+        "documentation": {}
+    },
+    {
+        "label": "CommentRepository",
+        "kind": 6,
+        "importPath": "app.repositories.comment_repository",
+        "description": "app.repositories.comment_repository",
+        "peekOfCode": "class CommentRepository(BaseRepository[Comment]):\n    \"\"\"Repository for Comment model with threaded discussion support.\"\"\"\n    def __init__(self, db: Session):\n        super().__init__(Comment, db)\n    # ==================== COMMENT QUERIES ====================\n    def get_task_comments(\n        self,\n        task_id: uuid.UUID,\n        skip: int = 0,\n        limit: int = 100",
+        "detail": "app.repositories.comment_repository",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationRepository",
+        "kind": 6,
+        "importPath": "app.repositories.notification_repository",
+        "description": "app.repositories.notification_repository",
+        "peekOfCode": "class NotificationRepository(BaseRepository[Notification]):\n    \"\"\"Repository for Notification model.\"\"\"\n    def __init__(self, db: Session):\n        super().__init__(Notification, db)\n    # ==================== USER NOTIFICATIONS ====================\n    def get_user_notifications(\n        self,\n        user_id: uuid.UUID,\n        skip: int = 0,\n        limit: int = 50,",
+        "detail": "app.repositories.notification_repository",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectRepository",
+        "kind": 6,
+        "importPath": "app.repositories.project_repository",
+        "description": "app.repositories.project_repository",
+        "peekOfCode": "class ProjectRepository(BaseRepository[Project]):\n    \"\"\"Repository for Project model with advanced querying.\"\"\"\n    def __init__(self, db: Session):\n        super().__init__(Project, db)\n    # ==================== PROJECT QUERIES ====================\n    def get_by_name(self, workspace_id: uuid.UUID, name: str) -> Optional[Project]:\n        \"\"\"\n        Get project by name within workspace.\n        Args:\n            workspace_id: Workspace ID",
+        "detail": "app.repositories.project_repository",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListRepository",
+        "kind": 6,
+        "importPath": "app.repositories.task_repository",
+        "description": "app.repositories.task_repository",
+        "peekOfCode": "class TaskListRepository(BaseRepository[TaskList]):\n    \"\"\"Repository for TaskList model.\"\"\"\n    def __init__(self, db: Session):\n        super().__init__(TaskList, db)\n    def get_project_task_lists(\n        self,\n        project_id: uuid.UUID,\n        skip: int = 0,\n        limit: int = 100\n    ) -> List[TaskList]:",
+        "detail": "app.repositories.task_repository",
+        "documentation": {}
+    },
+    {
+        "label": "TaskRepository",
+        "kind": 6,
+        "importPath": "app.repositories.task_repository",
+        "description": "app.repositories.task_repository",
+        "peekOfCode": "class TaskRepository(BaseRepository[Task]):\n    \"\"\"Repository for Task model with advanced querying.\"\"\"\n    def __init__(self, db: Session):\n        super().__init__(Task, db)\n    # ==================== TASK QUERIES ====================\n    def get_project_tasks(\n        self,\n        project_id: uuid.UUID,\n        skip: int = 0,\n        limit: int = 100",
+        "detail": "app.repositories.task_repository",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskRepository",
+        "kind": 6,
+        "importPath": "app.repositories.task_repository",
+        "description": "app.repositories.task_repository",
+        "peekOfCode": "class SubtaskRepository(BaseRepository[Subtask]):\n    \"\"\"Repository for Subtask model.\"\"\"\n    def __init__(self, db: Session):\n        super().__init__(Subtask, db)\n    def get_task_subtasks(\n        self,\n        task_id: uuid.UUID,\n        skip: int = 0,\n        limit: int = 100\n    ) -> List[Subtask]:",
+        "detail": "app.repositories.task_repository",
+        "documentation": {}
+    },
+    {
+        "label": "UserRepository",
+        "kind": 6,
+        "importPath": "app.repositories.user_repository",
+        "description": "app.repositories.user_repository",
+        "peekOfCode": "class UserRepository(BaseRepository[User]):\n    \"\"\"Repository for User model with specialized queries.\"\"\"\n    def __init__(self, db: Session):\n        super().__init__(User, db)\n    # ==================== AUTHENTICATION ====================\n    def get_by_email(self, email: str) -> Optional[User]:\n        \"\"\"\n        Get user by email address.\n        Args:\n            email: User's email address",
+        "detail": "app.repositories.user_repository",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRepository",
+        "kind": 6,
+        "importPath": "app.repositories.workspace_repository",
+        "description": "app.repositories.workspace_repository",
+        "peekOfCode": "class WorkspaceRepository(BaseRepository[Workspace]):\n    \"\"\"Repository for Workspace model with multi-tenancy support.\"\"\"\n    def __init__(self, db: Session):\n        super().__init__(Workspace, db)\n    # ==================== WORKSPACE QUERIES ====================\n    def get_by_name(self, name: str) -> Optional[Workspace]:\n        \"\"\"\n        Get workspace by name.\n        Args:\n            name: Workspace name",
+        "detail": "app.repositories.workspace_repository",
         "documentation": {}
     },
     {
@@ -26433,7 +29058,7 @@
         "kind": 6,
         "importPath": "app.schemas.personalization",
         "description": "app.schemas.personalization",
-        "peekOfCode": "class UserSettingsBase(BaseModel):\n    \"\"\"Base schema with common personalization fields\"\"\"\n    theme_mode: Optional[str] = Field(default=ThemeModeEnum.SYSTEM.value, description=\"UI theme mode\")\n    font_size: Optional[str] = Field(default=FontSizeEnum.MEDIUM.value, description=\"Base font size\")\n    font_family: Optional[str] = Field(default=FontFamilyEnum.SYSTEM_DEFAULT.value, description=\"Font family\")\n    language: Optional[str] = Field(default=LanguageEnum.EN_US.value, description=\"Preferred language\")\n    info_density_mode: Optional[str] = Field(default=InfoDensityModeEnum.COMFORTABLE.value, description=\"Info density mode\")\n    sidebar_collapsed: Optional[bool] = Field(default=False, description=\"Sidebar collapsed state\")\n    color_blindness_mode: Optional[str] = Field(default=ColorBlindnessModeEnum.NORMAL.value, description=\"Color blindness support mode\")\n    dnd_enabled: Optional[bool] = Field(default=False, description=\"Do Not Disturb enabled\")",
+        "peekOfCode": "class UserSettingsBase(BaseModel):\n    \"\"\"Base schema with common personalization fields\"\"\"\n    theme_mode: Optional[str] = Field(default=ThemeModeEnum.SYSTEM.value, description=\"UI theme mode\")\n    font_size: Optional[str] = Field(default=FontSizeEnum.MEDIUM.value, description=\"Base font size\")\n    font_family: Optional[str] = Field(default=FontFamilyEnum.SYSTEM_DEFAULT.value, description=\"Font family\")\n    language: Optional[str] = Field(default=TemplateLocaleEnum.EN.value, description=\"Preferred language\")\n    info_density_mode: Optional[str] = Field(default=InfoDensityModeEnum.COMFORTABLE.value, description=\"Info density mode\")\n    sidebar_collapsed: Optional[bool] = Field(default=False, description=\"Sidebar collapsed state\")\n    color_blindness_mode: Optional[str] = Field(default=ColorBlindnessModeEnum.NORMAL.value, description=\"Color blindness support mode\")\n    dnd_enabled: Optional[bool] = Field(default=False, description=\"Do Not Disturb enabled\")",
         "detail": "app.schemas.personalization",
         "documentation": {}
     },
@@ -27083,6 +29708,96 @@
         "description": "app.schemas.project",
         "peekOfCode": "class ProjectMetricsResponse(BaseModel):\n    \"\"\"Response schema for project metrics\"\"\"\n    project_id: UUID\n    total_tasks: int\n    completed_tasks: int\n    overdue_tasks: int\n    completion_percentage: float\n    health_status: ProjectHealthStatus\n    schedule_health: Optional[str]\n    resource_health: Optional[str]",
         "detail": "app.schemas.project",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectBase",
+        "kind": 6,
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "peekOfCode": "class ProjectBase(BaseModel):\n    \"\"\"Base project schema with common fields.\"\"\"\n    name: str = Field(..., min_length=1, max_length=100, description=\"Project name\")\n    description: Optional[str] = Field(None, max_length=2000, description=\"Project description\")\n    visibility: ProjectVisibility = Field(default=ProjectVisibility.PRIVATE)\n    governance_mode: ProjectGovernanceMode = Field(default=ProjectGovernanceMode.SIMPLE)\nclass ProjectCreate(ProjectBase):\n    \"\"\"Schema for creating a project.\"\"\"\n    workspace_id: uuid.UUID = Field(..., description=\"Workspace ID\")\nclass ProjectUpdate(BaseModel):",
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectCreate",
+        "kind": 6,
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "peekOfCode": "class ProjectCreate(ProjectBase):\n    \"\"\"Schema for creating a project.\"\"\"\n    workspace_id: uuid.UUID = Field(..., description=\"Workspace ID\")\nclass ProjectUpdate(BaseModel):\n    \"\"\"Schema for updating a project.\"\"\"\n    name: Optional[str] = Field(None, min_length=1, max_length=100)\n    description: Optional[str] = Field(None, max_length=2000)\n    status: Optional[ProjectStatus] = None\n    visibility: Optional[ProjectVisibility] = None\n    governance_mode: Optional[ProjectGovernanceMode] = None",
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "peekOfCode": "class ProjectUpdate(BaseModel):\n    \"\"\"Schema for updating a project.\"\"\"\n    name: Optional[str] = Field(None, min_length=1, max_length=100)\n    description: Optional[str] = Field(None, max_length=2000)\n    status: Optional[ProjectStatus] = None\n    visibility: Optional[ProjectVisibility] = None\n    governance_mode: Optional[ProjectGovernanceMode] = None\nclass ProjectResponse(ProjectBase):\n    \"\"\"Schema for project response.\"\"\"\n    id: uuid.UUID",
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "peekOfCode": "class ProjectResponse(ProjectBase):\n    \"\"\"Schema for project response.\"\"\"\n    id: uuid.UUID\n    workspace_id: uuid.UUID\n    owner_id: uuid.UUID\n    status: ProjectStatus\n    start_date: Optional[date]\n    end_date: Optional[date]\n    created_at: datetime\n    updated_at: datetime",
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectDetailResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "peekOfCode": "class ProjectDetailResponse(ProjectResponse):\n    \"\"\"Detailed project response with statistics.\"\"\"\n    task_count: int = Field(description=\"Total number of tasks\")\n    completed_task_count: int = Field(description=\"Number of completed tasks\")\n    member_count: int = Field(description=\"Number of project members\")\n    class Config:\n        from_attributes = True\n# ==================== PROJECT MEMBER SCHEMAS ====================\nclass ProjectMemberResponse(BaseModel):\n    \"\"\"Schema for project member.\"\"\"",
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMemberResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "peekOfCode": "class ProjectMemberResponse(BaseModel):\n    \"\"\"Schema for project member.\"\"\"\n    id: uuid.UUID\n    user_id: uuid.UUID\n    user_email: str\n    user_name: str\n    role: str\n    joined_at: datetime\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMemberListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "peekOfCode": "class ProjectMemberListResponse(BaseModel):\n    \"\"\"Paginated project member list.\"\"\"\n    items: List[ProjectMemberResponse]\n    total: int\n    skip: int\n    limit: int\n# ==================== PROJECT STATISTICS SCHEMAS ====================\nclass ProjectStatsResponse(BaseModel):\n    \"\"\"Schema for project statistics.\"\"\"\n    total_tasks: int",
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectStatsResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "peekOfCode": "class ProjectStatsResponse(BaseModel):\n    \"\"\"Schema for project statistics.\"\"\"\n    total_tasks: int\n    todo: int\n    in_progress: int\n    in_review: int\n    done: int\n    completion_percentage: float\n    overdue_count: int\n    total_members: int",
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "peekOfCode": "class ProjectListResponse(BaseModel):\n    \"\"\"Paginated project list response.\"\"\"\n    items: List[ProjectResponse]\n    total: int\n    skip: int\n    limit: int\n    page: int\n    total_pages: int\n    has_next: bool\n    has_previous: bool",
+        "detail": "app.schemas.project_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectSearchResponse",
+        "kind": 6,
+        "importPath": "app.schemas.project_schemas",
+        "description": "app.schemas.project_schemas",
+        "peekOfCode": "class ProjectSearchResponse(BaseModel):\n    \"\"\"Project search results.\"\"\"\n    items: List[ProjectResponse]\n    query: str\n    total: int\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.project_schemas",
         "documentation": {}
     },
     {
@@ -28022,6 +30737,186 @@
         "documentation": {}
     },
     {
+        "label": "TaskBase",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class TaskBase(BaseModel):\n    \"\"\"Base task schema with common fields.\"\"\"\n    title: str = Field(..., min_length=1, max_length=500, description=\"Task title\")\n    description: Optional[str] = Field(None, max_length=5000, description=\"Task description\")\n    priority: TaskPriority = Field(default=TaskPriority.MEDIUM)\n    status: TaskStatus = Field(default=TaskStatus.TODO)\nclass TaskCreate(TaskBase):\n    \"\"\"Schema for creating a task.\"\"\"\n    project_id: uuid.UUID = Field(..., description=\"Project ID\")\n    task_list_id: uuid.UUID = Field(..., description=\"Task list ID\")",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskCreate",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class TaskCreate(TaskBase):\n    \"\"\"Schema for creating a task.\"\"\"\n    project_id: uuid.UUID = Field(..., description=\"Project ID\")\n    task_list_id: uuid.UUID = Field(..., description=\"Task list ID\")\n    due_date: Optional[date] = None\n    estimated_hours: Optional[float] = Field(None, ge=0)\nclass TaskUpdate(BaseModel):\n    \"\"\"Schema for updating a task.\"\"\"\n    title: Optional[str] = Field(None, min_length=1, max_length=500)\n    description: Optional[str] = Field(None, max_length=5000)",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class TaskUpdate(BaseModel):\n    \"\"\"Schema for updating a task.\"\"\"\n    title: Optional[str] = Field(None, min_length=1, max_length=500)\n    description: Optional[str] = Field(None, max_length=5000)\n    status: Optional[TaskStatus] = None\n    priority: Optional[TaskPriority] = None\n    due_date: Optional[date] = None\n    estimated_hours: Optional[float] = Field(None, ge=0)\nclass TaskResponse(TaskBase):\n    \"\"\"Schema for task response.\"\"\"",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class TaskResponse(TaskBase):\n    \"\"\"Schema for task response.\"\"\"\n    id: uuid.UUID\n    project_id: uuid.UUID\n    task_list_id: uuid.UUID\n    created_by: uuid.UUID\n    due_date: Optional[date]\n    estimated_hours: Optional[float]\n    completed_at: Optional[datetime]\n    created_at: datetime",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDetailResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class TaskDetailResponse(TaskResponse):\n    \"\"\"Detailed task response with relationships.\"\"\"\n    assignees: List['TaskAssigneeResponse'] = Field(default_factory=list)\n    subtask_count: int = 0\n    comment_count: int = 0\n    class Config:\n        from_attributes = True\n# ==================== TASK ASSIGNEE SCHEMAS ====================\nclass TaskAssigneeResponse(BaseModel):\n    \"\"\"Schema for task assignee.\"\"\"",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssigneeResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class TaskAssigneeResponse(BaseModel):\n    \"\"\"Schema for task assignee.\"\"\"\n    id: uuid.UUID\n    user_id: uuid.UUID\n    user_email: str\n    user_name: str\n    is_primary: bool\n    assigned_at: datetime\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssigneeCreate",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class TaskAssigneeCreate(BaseModel):\n    \"\"\"Schema for assigning a user to task.\"\"\"\n    user_id: uuid.UUID = Field(..., description=\"User ID to assign\")\n    is_primary: bool = Field(default=False)\n# ==================== SUBTASK SCHEMAS ====================\nclass SubtaskCreate(BaseModel):\n    \"\"\"Schema for creating a subtask.\"\"\"\n    title: str = Field(..., min_length=1, max_length=500)\n    description: Optional[str] = Field(None, max_length=2000)\nclass SubtaskUpdate(BaseModel):",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskCreate",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class SubtaskCreate(BaseModel):\n    \"\"\"Schema for creating a subtask.\"\"\"\n    title: str = Field(..., min_length=1, max_length=500)\n    description: Optional[str] = Field(None, max_length=2000)\nclass SubtaskUpdate(BaseModel):\n    \"\"\"Schema for updating a subtask.\"\"\"\n    title: Optional[str] = Field(None, min_length=1, max_length=500)\n    description: Optional[str] = Field(None, max_length=2000)\n    is_completed: Optional[bool] = None\nclass SubtaskResponse(BaseModel):",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class SubtaskUpdate(BaseModel):\n    \"\"\"Schema for updating a subtask.\"\"\"\n    title: Optional[str] = Field(None, min_length=1, max_length=500)\n    description: Optional[str] = Field(None, max_length=2000)\n    is_completed: Optional[bool] = None\nclass SubtaskResponse(BaseModel):\n    \"\"\"Schema for subtask response.\"\"\"\n    id: uuid.UUID\n    task_id: uuid.UUID\n    title: str",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class SubtaskResponse(BaseModel):\n    \"\"\"Schema for subtask response.\"\"\"\n    id: uuid.UUID\n    task_id: uuid.UUID\n    title: str\n    description: Optional[str]\n    is_completed: bool\n    order: int\n    created_at: datetime\n    updated_at: datetime",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListCreate",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class TaskListCreate(BaseModel):\n    \"\"\"Schema for creating a task list.\"\"\"\n    name: str = Field(..., min_length=1, max_length=100)\n    description: Optional[str] = Field(None, max_length=1000)\nclass TaskListUpdate(BaseModel):\n    \"\"\"Schema for updating a task list.\"\"\"\n    name: Optional[str] = Field(None, min_length=1, max_length=100)\n    description: Optional[str] = Field(None, max_length=1000)\n    order: Optional[int] = None\nclass TaskListResponse(BaseModel):",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class TaskListUpdate(BaseModel):\n    \"\"\"Schema for updating a task list.\"\"\"\n    name: Optional[str] = Field(None, min_length=1, max_length=100)\n    description: Optional[str] = Field(None, max_length=1000)\n    order: Optional[int] = None\nclass TaskListResponse(BaseModel):\n    \"\"\"Schema for task list response.\"\"\"\n    id: uuid.UUID\n    project_id: uuid.UUID\n    name: str",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class TaskListResponse(BaseModel):\n    \"\"\"Schema for task list response.\"\"\"\n    id: uuid.UUID\n    project_id: uuid.UUID\n    name: str\n    description: Optional[str]\n    order: int\n    task_count: int = 0\n    created_at: datetime\n    updated_at: datetime",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListResponse_Paginated",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class TaskListResponse_Paginated(BaseModel):\n    \"\"\"Paginated task list response.\"\"\"\n    items: List[TaskResponse]\n    total: int\n    skip: int\n    limit: int\n    page: int\n    total_pages: int\n    has_next: bool\n    has_previous: bool",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "SubtaskListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class SubtaskListResponse(BaseModel):\n    \"\"\"Paginated subtask list.\"\"\"\n    items: List[SubtaskResponse]\n    total: int\n    skip: int\n    limit: int\nclass TaskListListResponse(BaseModel):\n    \"\"\"List of task lists in project.\"\"\"\n    items: List[TaskListResponse]\n    total: int",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class TaskListListResponse(BaseModel):\n    \"\"\"List of task lists in project.\"\"\"\n    items: List[TaskListResponse]\n    total: int\n# ==================== TASK STATISTICS SCHEMAS ====================\nclass TaskStatsResponse(BaseModel):\n    \"\"\"Schema for task statistics.\"\"\"\n    total_tasks: int\n    todo: int\n    in_progress: int",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatsResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class TaskStatsResponse(BaseModel):\n    \"\"\"Schema for task statistics.\"\"\"\n    total_tasks: int\n    todo: int\n    in_progress: int\n    in_review: int\n    done: int\n    completion_percentage: float\n    overdue_count: int\n    assigned_to_me: int",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskSearchResponse",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class TaskSearchResponse(BaseModel):\n    \"\"\"Task search results.\"\"\"\n    items: List[TaskResponse]\n    query: str\n    total: int\n# ==================== BULK OPERATION SCHEMAS ====================\nclass BulkTaskStatusUpdate(BaseModel):\n    \"\"\"Schema for bulk status update.\"\"\"\n    task_ids: List[uuid.UUID]\n    status: TaskStatus",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "BulkTaskStatusUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class BulkTaskStatusUpdate(BaseModel):\n    \"\"\"Schema for bulk status update.\"\"\"\n    task_ids: List[uuid.UUID]\n    status: TaskStatus\nclass BulkTaskAssign(BaseModel):\n    \"\"\"Schema for bulk assignment.\"\"\"\n    task_ids: List[uuid.UUID]\n    user_id: uuid.UUID",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "BulkTaskAssign",
+        "kind": 6,
+        "importPath": "app.schemas.task_schemas",
+        "description": "app.schemas.task_schemas",
+        "peekOfCode": "class BulkTaskAssign(BaseModel):\n    \"\"\"Schema for bulk assignment.\"\"\"\n    task_ids: List[uuid.UUID]\n    user_id: uuid.UUID",
+        "detail": "app.schemas.task_schemas",
+        "documentation": {}
+    },
+    {
         "label": "UserBase",
         "kind": 6,
         "importPath": "app.schemas.user",
@@ -28244,6 +31139,159 @@
         "description": "app.schemas.workspace",
         "peekOfCode": "class WorkspaceContextSwitch(BaseModel):\n    \"\"\"Schema for switching workspace context\"\"\"\n    workspace_id: UUID = Field(..., description=\"Workspace ID to switch to\")",
         "detail": "app.schemas.workspace",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceBase",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceBase(BaseModel):\n    \"\"\"Base workspace schema with common fields.\"\"\"\n    name: str = Field(..., min_length=1, max_length=100, description=\"Workspace name\")\n    description: Optional[str] = Field(None, max_length=1000, description=\"Workspace description\")\nclass WorkspaceCreate(WorkspaceBase):\n    \"\"\"Schema for creating a workspace.\"\"\"\n    pass\nclass WorkspaceUpdate(BaseModel):\n    \"\"\"Schema for updating a workspace.\"\"\"\n    name: Optional[str] = Field(None, min_length=1, max_length=100)",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceCreate",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceCreate(WorkspaceBase):\n    \"\"\"Schema for creating a workspace.\"\"\"\n    pass\nclass WorkspaceUpdate(BaseModel):\n    \"\"\"Schema for updating a workspace.\"\"\"\n    name: Optional[str] = Field(None, min_length=1, max_length=100)\n    description: Optional[str] = Field(None, max_length=1000)\nclass WorkspaceResponse(WorkspaceBase):\n    \"\"\"Schema for workspace response.\"\"\"\n    id: uuid.UUID",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceUpdate(BaseModel):\n    \"\"\"Schema for updating a workspace.\"\"\"\n    name: Optional[str] = Field(None, min_length=1, max_length=100)\n    description: Optional[str] = Field(None, max_length=1000)\nclass WorkspaceResponse(WorkspaceBase):\n    \"\"\"Schema for workspace response.\"\"\"\n    id: uuid.UUID\n    owner_id: uuid.UUID\n    status: str\n    created_at: datetime",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceResponse",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceResponse(WorkspaceBase):\n    \"\"\"Schema for workspace response.\"\"\"\n    id: uuid.UUID\n    owner_id: uuid.UUID\n    status: str\n    created_at: datetime\n    updated_at: datetime\n    class Config:\n        from_attributes = True\nclass WorkspaceDetailResponse(WorkspaceResponse):",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceDetailResponse",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceDetailResponse(WorkspaceResponse):\n    \"\"\"Detailed workspace response with members count.\"\"\"\n    member_count: int = Field(description=\"Number of workspace members\")\n    class Config:\n        from_attributes = True\n# ==================== WORKSPACE MEMBER SCHEMAS ====================\nclass WorkspaceMemberBase(BaseModel):\n    \"\"\"Base workspace member schema.\"\"\"\n    user_id: uuid.UUID = Field(..., description=\"User ID\")\n    role: WorkspaceRole = Field(default=WorkspaceRole.MEMBER, description=\"Member role\")",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMemberBase",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceMemberBase(BaseModel):\n    \"\"\"Base workspace member schema.\"\"\"\n    user_id: uuid.UUID = Field(..., description=\"User ID\")\n    role: WorkspaceRole = Field(default=WorkspaceRole.MEMBER, description=\"Member role\")\nclass WorkspaceMemberCreate(WorkspaceMemberBase):\n    \"\"\"Schema for adding a member to workspace.\"\"\"\n    pass\nclass WorkspaceMemberUpdate(BaseModel):\n    \"\"\"Schema for updating member role.\"\"\"\n    role: WorkspaceRole = Field(..., description=\"New role\")",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMemberCreate",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceMemberCreate(WorkspaceMemberBase):\n    \"\"\"Schema for adding a member to workspace.\"\"\"\n    pass\nclass WorkspaceMemberUpdate(BaseModel):\n    \"\"\"Schema for updating member role.\"\"\"\n    role: WorkspaceRole = Field(..., description=\"New role\")\nclass WorkspaceMemberResponse(WorkspaceMemberBase):\n    \"\"\"Schema for workspace member response.\"\"\"\n    id: uuid.UUID\n    workspace_id: uuid.UUID",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMemberUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceMemberUpdate(BaseModel):\n    \"\"\"Schema for updating member role.\"\"\"\n    role: WorkspaceRole = Field(..., description=\"New role\")\nclass WorkspaceMemberResponse(WorkspaceMemberBase):\n    \"\"\"Schema for workspace member response.\"\"\"\n    id: uuid.UUID\n    workspace_id: uuid.UUID\n    created_at: datetime\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMemberResponse",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceMemberResponse(WorkspaceMemberBase):\n    \"\"\"Schema for workspace member response.\"\"\"\n    id: uuid.UUID\n    workspace_id: uuid.UUID\n    created_at: datetime\n    class Config:\n        from_attributes = True\nclass WorkspaceMemberDetailResponse(WorkspaceMemberResponse):\n    \"\"\"Detailed member response with user info.\"\"\"\n    user_email: str",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMemberDetailResponse",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceMemberDetailResponse(WorkspaceMemberResponse):\n    \"\"\"Detailed member response with user info.\"\"\"\n    user_email: str\n    user_name: str\n    class Config:\n        from_attributes = True\n# ==================== WORKSPACE INVITATION SCHEMAS ====================\nclass WorkspaceInvitationCreate(BaseModel):\n    \"\"\"Schema for creating workspace invitation.\"\"\"\n    email: EmailStr = Field(..., description=\"Email to invite\")",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceInvitationCreate",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceInvitationCreate(BaseModel):\n    \"\"\"Schema for creating workspace invitation.\"\"\"\n    email: EmailStr = Field(..., description=\"Email to invite\")\n    role: WorkspaceRole = Field(default=WorkspaceRole.MEMBER)\nclass WorkspaceInvitationResponse(BaseModel):\n    \"\"\"Schema for invitation response.\"\"\"\n    id: uuid.UUID\n    workspace_id: uuid.UUID\n    email: str\n    role: WorkspaceRole",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceInvitationResponse",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceInvitationResponse(BaseModel):\n    \"\"\"Schema for invitation response.\"\"\"\n    id: uuid.UUID\n    workspace_id: uuid.UUID\n    email: str\n    role: WorkspaceRole\n    status: str\n    created_at: datetime\n    expires_at: datetime\n    class Config:",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceSettingsBase",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceSettingsBase(BaseModel):\n    \"\"\"Base workspace settings schema.\"\"\"\n    enable_public_access: bool = Field(default=False)\n    allow_guest_access: bool = Field(default=False)\n    auto_archive_inactive_days: Optional[int] = Field(None, ge=7, le=365)\nclass WorkspaceSettingsUpdate(WorkspaceSettingsBase):\n    \"\"\"Schema for updating workspace settings.\"\"\"\n    pass\nclass WorkspaceSettingsResponse(WorkspaceSettingsBase):\n    \"\"\"Schema for settings response.\"\"\"",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceSettingsUpdate",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceSettingsUpdate(WorkspaceSettingsBase):\n    \"\"\"Schema for updating workspace settings.\"\"\"\n    pass\nclass WorkspaceSettingsResponse(WorkspaceSettingsBase):\n    \"\"\"Schema for settings response.\"\"\"\n    id: uuid.UUID\n    workspace_id: uuid.UUID\n    updated_at: datetime\n    class Config:\n        from_attributes = True",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceSettingsResponse",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceSettingsResponse(WorkspaceSettingsBase):\n    \"\"\"Schema for settings response.\"\"\"\n    id: uuid.UUID\n    workspace_id: uuid.UUID\n    updated_at: datetime\n    class Config:\n        from_attributes = True\n# ==================== LIST/PAGINATION SCHEMAS ====================\nclass WorkspaceListResponse(BaseModel):\n    \"\"\"Paginated workspace list response.\"\"\"",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceListResponse(BaseModel):\n    \"\"\"Paginated workspace list response.\"\"\"\n    items: List[WorkspaceResponse]\n    total: int\n    skip: int\n    limit: int\n    page: int\n    total_pages: int\n    has_next: bool\n    has_previous: bool",
+        "detail": "app.schemas.workspace_schemas",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMemberListResponse",
+        "kind": 6,
+        "importPath": "app.schemas.workspace_schemas",
+        "description": "app.schemas.workspace_schemas",
+        "peekOfCode": "class WorkspaceMemberListResponse(BaseModel):\n    \"\"\"Paginated member list response.\"\"\"\n    items: List[WorkspaceMemberDetailResponse]\n    total: int\n    skip: int\n    limit: int\n    page: int\n    total_pages: int\n    has_next: bool\n    has_previous: bool",
+        "detail": "app.schemas.workspace_schemas",
         "documentation": {}
     },
     {
@@ -28976,6 +32024,15 @@
         "documentation": {}
     },
     {
+        "label": "ProjectService",
+        "kind": 6,
+        "importPath": "app.services.project_service",
+        "description": "app.services.project_service",
+        "peekOfCode": "class ProjectService:\n    \"\"\"Service for project operations.\"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n        self.project_repo = ProjectRepository(db)\n        self.workspace_repo = WorkspaceRepository(db)\n    # ==================== PROJECT MANAGEMENT ====================\n    def create_project(\n        self,\n        workspace_id: uuid.UUID,",
+        "detail": "app.services.project_service",
+        "documentation": {}
+    },
+    {
         "label": "RecurrencePattern",
         "kind": 6,
         "importPath": "app.services.recurring_task_service",
@@ -29192,6 +32249,24 @@
         "documentation": {}
     },
     {
+        "label": "TaskListService",
+        "kind": 6,
+        "importPath": "app.services.task_service",
+        "description": "app.services.task_service",
+        "peekOfCode": "class TaskListService:\n    \"\"\"Service for task list operations.\"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n        self.task_list_repo = TaskListRepository(db)\n        self.project_repo = ProjectRepository(db)\n    def create_task_list(\n        self,\n        project_id: uuid.UUID,\n        user_id: uuid.UUID,",
+        "detail": "app.services.task_service",
+        "documentation": {}
+    },
+    {
+        "label": "TaskService",
+        "kind": 6,
+        "importPath": "app.services.task_service",
+        "description": "app.services.task_service",
+        "peekOfCode": "class TaskService:\n    \"\"\"Service for task operations.\"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n        self.task_repo = TaskRepository(db)\n        self.project_repo = ProjectRepository(db)\n    # ==================== TASK MANAGEMENT ====================\n    def create_task(\n        self,\n        project_id: uuid.UUID,",
+        "detail": "app.services.task_service",
+        "documentation": {}
+    },
+    {
         "label": "TaskTemplateService",
         "kind": 6,
         "importPath": "app.services.task_template_service",
@@ -29381,6 +32456,15 @@
         "documentation": {}
     },
     {
+        "label": "WorkspaceService",
+        "kind": 6,
+        "importPath": "app.services.workspace_service",
+        "description": "app.services.workspace_service",
+        "peekOfCode": "class WorkspaceService:\n    \"\"\"Service for workspace operations.\"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n        self.workspace_repo = WorkspaceRepository(db)\n        self.user_repo = UserRepository(db)\n    # ==================== WORKSPACE MANAGEMENT ====================\n    def create_workspace(\n        self,\n        name: str,",
+        "detail": "app.services.workspace_service",
+        "documentation": {}
+    },
+    {
         "label": "WorkspaceValidator",
         "kind": 6,
         "importPath": "app.services.workspace_validation",
@@ -29414,6 +32498,204 @@
         "description": "app.services.workspace_validation",
         "peekOfCode": "PROFANITY_WORDS = {\n    'spam', 'scam', 'hack', 'abuse', 'offensive',\n    # Add more words as needed\n}\nclass WorkspaceValidator:\n    \"\"\"Validation service for workspace-related inputs\"\"\"\n    @staticmethod\n    def validate_workspace_name(name: str) -> Tuple[bool, str]:\n        \"\"\"\n        Validate workspace name.",
         "detail": "app.services.workspace_validation",
+        "documentation": {}
+    },
+    {
+        "label": "PronaFlowException",
+        "kind": 6,
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "peekOfCode": "class PronaFlowException(Exception):\n    \"\"\"Base exception for PronaFlow application.\"\"\"\n    def __init__(self, message: str, status_code: int = 500, code: str = \"INTERNAL_ERROR\"):\n        self.message = message\n        self.status_code = status_code\n        self.code = code\n        super().__init__(self.message)\nclass ValidationException(PronaFlowException):\n    \"\"\"Raised when input validation fails.\"\"\"\n    def __init__(self, message: str, code: str = \"VALIDATION_ERROR\"):",
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "ValidationException",
+        "kind": 6,
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "peekOfCode": "class ValidationException(PronaFlowException):\n    \"\"\"Raised when input validation fails.\"\"\"\n    def __init__(self, message: str, code: str = \"VALIDATION_ERROR\"):\n        super().__init__(message, status_code=422, code=code)\nclass NotFoundException(PronaFlowException):\n    \"\"\"Raised when requested resource is not found.\"\"\"\n    def __init__(self, message: str, code: str = \"NOT_FOUND\"):\n        super().__init__(message, status_code=404, code=code)\nclass UnauthorizedException(PronaFlowException):\n    \"\"\"Raised when user is not authenticated.\"\"\"",
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "NotFoundException",
+        "kind": 6,
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "peekOfCode": "class NotFoundException(PronaFlowException):\n    \"\"\"Raised when requested resource is not found.\"\"\"\n    def __init__(self, message: str, code: str = \"NOT_FOUND\"):\n        super().__init__(message, status_code=404, code=code)\nclass UnauthorizedException(PronaFlowException):\n    \"\"\"Raised when user is not authenticated.\"\"\"\n    def __init__(self, message: str = \"Not authenticated\", code: str = \"UNAUTHORIZED\"):\n        super().__init__(message, status_code=401, code=code)\nclass ForbiddenException(PronaFlowException):\n    \"\"\"Raised when user doesn't have permission.\"\"\"",
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "UnauthorizedException",
+        "kind": 6,
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "peekOfCode": "class UnauthorizedException(PronaFlowException):\n    \"\"\"Raised when user is not authenticated.\"\"\"\n    def __init__(self, message: str = \"Not authenticated\", code: str = \"UNAUTHORIZED\"):\n        super().__init__(message, status_code=401, code=code)\nclass ForbiddenException(PronaFlowException):\n    \"\"\"Raised when user doesn't have permission.\"\"\"\n    def __init__(self, message: str = \"Access forbidden\", code: str = \"FORBIDDEN\"):\n        super().__init__(message, status_code=403, code=code)\nclass ConflictException(PronaFlowException):\n    \"\"\"Raised when request conflicts with existing data.\"\"\"",
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "ForbiddenException",
+        "kind": 6,
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "peekOfCode": "class ForbiddenException(PronaFlowException):\n    \"\"\"Raised when user doesn't have permission.\"\"\"\n    def __init__(self, message: str = \"Access forbidden\", code: str = \"FORBIDDEN\"):\n        super().__init__(message, status_code=403, code=code)\nclass ConflictException(PronaFlowException):\n    \"\"\"Raised when request conflicts with existing data.\"\"\"\n    def __init__(self, message: str, code: str = \"CONFLICT\"):\n        super().__init__(message, status_code=409, code=code)\nclass DuplicateException(ConflictException):\n    \"\"\"Raised when trying to create duplicate record.\"\"\"",
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "ConflictException",
+        "kind": 6,
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "peekOfCode": "class ConflictException(PronaFlowException):\n    \"\"\"Raised when request conflicts with existing data.\"\"\"\n    def __init__(self, message: str, code: str = \"CONFLICT\"):\n        super().__init__(message, status_code=409, code=code)\nclass DuplicateException(ConflictException):\n    \"\"\"Raised when trying to create duplicate record.\"\"\"\n    def __init__(self, message: str, code: str = \"DUPLICATE_RECORD\"):\n        super().__init__(message, code=code)\nclass InvalidStateException(PronaFlowException):\n    \"\"\"Raised when operation invalid for current state.\"\"\"",
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "DuplicateException",
+        "kind": 6,
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "peekOfCode": "class DuplicateException(ConflictException):\n    \"\"\"Raised when trying to create duplicate record.\"\"\"\n    def __init__(self, message: str, code: str = \"DUPLICATE_RECORD\"):\n        super().__init__(message, code=code)\nclass InvalidStateException(PronaFlowException):\n    \"\"\"Raised when operation invalid for current state.\"\"\"\n    def __init__(self, message: str, code: str = \"INVALID_STATE\"):\n        super().__init__(message, status_code=400, code=code)\nclass RateLimitException(PronaFlowException):\n    \"\"\"Raised when rate limit is exceeded.\"\"\"",
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "InvalidStateException",
+        "kind": 6,
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "peekOfCode": "class InvalidStateException(PronaFlowException):\n    \"\"\"Raised when operation invalid for current state.\"\"\"\n    def __init__(self, message: str, code: str = \"INVALID_STATE\"):\n        super().__init__(message, status_code=400, code=code)\nclass RateLimitException(PronaFlowException):\n    \"\"\"Raised when rate limit is exceeded.\"\"\"\n    def __init__(self, message: str = \"Rate limit exceeded\", code: str = \"RATE_LIMIT_EXCEEDED\"):\n        super().__init__(message, status_code=429, code=code)\nclass ServiceUnavailableException(PronaFlowException):\n    \"\"\"Raised when external service is unavailable.\"\"\"",
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "RateLimitException",
+        "kind": 6,
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "peekOfCode": "class RateLimitException(PronaFlowException):\n    \"\"\"Raised when rate limit is exceeded.\"\"\"\n    def __init__(self, message: str = \"Rate limit exceeded\", code: str = \"RATE_LIMIT_EXCEEDED\"):\n        super().__init__(message, status_code=429, code=code)\nclass ServiceUnavailableException(PronaFlowException):\n    \"\"\"Raised when external service is unavailable.\"\"\"\n    def __init__(self, message: str, code: str = \"SERVICE_UNAVAILABLE\"):\n        super().__init__(message, status_code=503, code=code)",
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceUnavailableException",
+        "kind": 6,
+        "importPath": "app.utils.exceptions",
+        "description": "app.utils.exceptions",
+        "peekOfCode": "class ServiceUnavailableException(PronaFlowException):\n    \"\"\"Raised when external service is unavailable.\"\"\"\n    def __init__(self, message: str, code: str = \"SERVICE_UNAVAILABLE\"):\n        super().__init__(message, status_code=503, code=code)",
+        "detail": "app.utils.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "PaginationParams",
+        "kind": 6,
+        "importPath": "app.utils.pagination",
+        "description": "app.utils.pagination",
+        "peekOfCode": "class PaginationParams(BaseModel):\n    \"\"\"Pagination request parameters.\"\"\"\n    skip: int = Field(default=0, ge=0, description=\"Number of items to skip\")\n    limit: int = Field(default=20, ge=1, le=100, description=\"Maximum items per page\")\n    @property\n    def page(self) -> int:\n        \"\"\"Calculate page number (1-based).\"\"\"\n        return (self.skip // self.limit) + 1 if self.skip > 0 else 1\n    @property\n    def offset(self) -> int:",
+        "detail": "app.utils.pagination",
+        "documentation": {}
+    },
+    {
+        "label": "PaginatedResponse",
+        "kind": 6,
+        "importPath": "app.utils.pagination",
+        "description": "app.utils.pagination",
+        "peekOfCode": "class PaginatedResponse(BaseModel, Generic[T]):\n    \"\"\"Generic paginated response model.\"\"\"\n    items: List[T]\n    total: int\n    skip: int\n    limit: int\n    @property\n    def page(self) -> int:\n        \"\"\"Calculate current page number.\"\"\"\n        return (self.skip // self.limit) + 1 if self.skip > 0 else 1",
+        "detail": "app.utils.pagination",
+        "documentation": {}
+    },
+    {
+        "label": "Paginator",
+        "kind": 6,
+        "importPath": "app.utils.pagination",
+        "description": "app.utils.pagination",
+        "peekOfCode": "class Paginator:\n    \"\"\"Helper class for pagination.\"\"\"\n    @staticmethod\n    def paginate(\n        items: List[T],\n        total: int,\n        skip: int = 0,\n        limit: int = 20\n    ) -> Dict[str, Any]:\n        \"\"\"",
+        "detail": "app.utils.pagination",
+        "documentation": {}
+    },
+    {
+        "label": "T",
+        "kind": 5,
+        "importPath": "app.utils.pagination",
+        "description": "app.utils.pagination",
+        "peekOfCode": "T = TypeVar('T')\nclass PaginationParams(BaseModel):\n    \"\"\"Pagination request parameters.\"\"\"\n    skip: int = Field(default=0, ge=0, description=\"Number of items to skip\")\n    limit: int = Field(default=20, ge=1, le=100, description=\"Maximum items per page\")\n    @property\n    def page(self) -> int:\n        \"\"\"Calculate page number (1-based).\"\"\"\n        return (self.skip // self.limit) + 1 if self.skip > 0 else 1\n    @property",
+        "detail": "app.utils.pagination",
+        "documentation": {}
+    },
+    {
+        "label": "EmailValidator",
+        "kind": 6,
+        "importPath": "app.utils.validators",
+        "description": "app.utils.validators",
+        "peekOfCode": "class EmailValidator:\n    \"\"\"Email validation utilities.\"\"\"\n    EMAIL_PATTERN = re.compile(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$')\n    @staticmethod\n    def validate(email: str) -> str:\n        \"\"\"\n        Validate email address.\n        Args:\n            email: Email to validate\n        Returns:",
+        "detail": "app.utils.validators",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordValidator",
+        "kind": 6,
+        "importPath": "app.utils.validators",
+        "description": "app.utils.validators",
+        "peekOfCode": "class PasswordValidator:\n    \"\"\"Password validation utilities.\"\"\"\n    @staticmethod\n    def validate_strength(password: str) -> None:\n        \"\"\"\n        Validate password strength.\n        Requirements:\n        - Minimum 8 characters\n        - At least 1 uppercase letter\n        - At least 1 lowercase letter",
+        "detail": "app.utils.validators",
+        "documentation": {}
+    },
+    {
+        "label": "UsernameValidator",
+        "kind": 6,
+        "importPath": "app.utils.validators",
+        "description": "app.utils.validators",
+        "peekOfCode": "class UsernameValidator:\n    \"\"\"Username validation utilities.\"\"\"\n    USERNAME_PATTERN = re.compile(r'^[a-zA-Z0-9_-]{3,30}$')\n    @staticmethod\n    def validate(username: str) -> str:\n        \"\"\"\n        Validate username.\n        Requirements:\n        - 3-30 characters\n        - Alphanumeric, underscore, or hyphen only",
+        "detail": "app.utils.validators",
+        "documentation": {}
+    },
+    {
+        "label": "NameValidator",
+        "kind": 6,
+        "importPath": "app.utils.validators",
+        "description": "app.utils.validators",
+        "peekOfCode": "class NameValidator:\n    \"\"\"Name validation utilities.\"\"\"\n    @staticmethod\n    def validate(name: str, field_name: str = \"Name\") -> str:\n        \"\"\"\n        Validate name field.\n        Args:\n            name: Name to validate\n            field_name: Field display name for error messages\n        Returns:",
+        "detail": "app.utils.validators",
+        "documentation": {}
+    },
+    {
+        "label": "URLValidator",
+        "kind": 6,
+        "importPath": "app.utils.validators",
+        "description": "app.utils.validators",
+        "peekOfCode": "class URLValidator:\n    \"\"\"URL validation utilities.\"\"\"\n    URL_PATTERN = re.compile(\n        r'^https?://'  # http:// or https://\n        r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\\.)+[A-Z]{2,6}\\.?|'  # domain\n        r'localhost|'  # localhost\n        r'\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})'  # or IP\n        r'(?::\\d+)?'  # optional port\n        r'(?:/?|[/?]\\S+)$', re.IGNORECASE)\n    @staticmethod",
+        "detail": "app.utils.validators",
+        "documentation": {}
+    },
+    {
+        "label": "SlugValidator",
+        "kind": 6,
+        "importPath": "app.utils.validators",
+        "description": "app.utils.validators",
+        "peekOfCode": "class SlugValidator:\n    \"\"\"Slug validation utilities.\"\"\"\n    SLUG_PATTERN = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')\n    @staticmethod\n    def validate(slug: str) -> str:\n        \"\"\"\n        Validate URL slug.\n        Requirements:\n        - Lowercase letters, numbers, and hyphens only\n        - Must start and end with alphanumeric",
+        "detail": "app.utils.validators",
+        "documentation": {}
+    },
+    {
+        "label": "ListValidator",
+        "kind": 6,
+        "importPath": "app.utils.validators",
+        "description": "app.utils.validators",
+        "peekOfCode": "class ListValidator:\n    \"\"\"List/array validation utilities.\"\"\"\n    @staticmethod\n    def validate_string_list(items: List[str], min_items: int = 1, max_items: int = 100) -> List[str]:\n        \"\"\"\n        Validate list of strings.\n        Args:\n            items: List to validate\n            min_items: Minimum number of items\n            max_items: Maximum number of items",
+        "detail": "app.utils.validators",
+        "documentation": {}
+    },
+    {
+        "label": "NumberValidator",
+        "kind": 6,
+        "importPath": "app.utils.validators",
+        "description": "app.utils.validators",
+        "peekOfCode": "class NumberValidator:\n    \"\"\"Number validation utilities.\"\"\"\n    @staticmethod\n    def validate_positive(value: int | float, field_name: str = \"Value\") -> int | float:\n        \"\"\"\n        Validate positive number.\n        Args:\n            value: Number to validate\n            field_name: Field display name\n        Returns:",
+        "detail": "app.utils.validators",
         "documentation": {}
     },
     {
@@ -29687,11 +32969,11 @@
         "documentation": {}
     },
     {
-        "label": "db_session",
+        "label": "db",
         "kind": 2,
         "importPath": "tests.conftest",
         "description": "tests.conftest",
-        "peekOfCode": "def db_session(engine) -> Generator[Session, None, None]:\n    \"\"\"Create a fresh database session for each test.\"\"\"\n    TestingSessionLocal = sessionmaker(\n        autocommit=False,\n        autoflush=False,\n        bind=engine\n    )\n    session = TestingSessionLocal()\n    try:\n        yield session",
+        "peekOfCode": "def db(engine) -> Generator[Session, None, None]:\n    \"\"\"Create a fresh database session for each test.\"\"\"\n    TestingSessionLocal = sessionmaker(\n        autocommit=False,\n        autoflush=False,\n        bind=engine\n    )\n    session = TestingSessionLocal()\n    try:\n        yield session",
         "detail": "tests.conftest",
         "documentation": {}
     },
@@ -29700,7 +32982,88 @@
         "kind": 2,
         "importPath": "tests.conftest",
         "description": "tests.conftest",
-        "peekOfCode": "def client(db_session) -> Generator[TestClient, None, None]:\n    \"\"\"Create a test client with database session override.\"\"\"\n    def override_get_db():\n        try:\n            yield db_session\n        finally:\n            pass\n    app.dependency_overrides[get_db] = override_get_db\n    with TestClient(app) as test_client:\n        yield test_client",
+        "peekOfCode": "def client(db) -> Generator[TestClient, None, None]:\n    \"\"\"Create a test client with database session override.\"\"\"\n    def override_get_db():\n        try:\n            yield db\n        finally:\n            pass\n    app.dependency_overrides[get_db] = override_get_db\n    with TestClient(app) as test_client:\n        yield test_client",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "test_user",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def test_user(db: Session) -> User:\n    \"\"\"Create test user.\"\"\"\n    user = User(\n        id=uuid.uuid4(),\n        email=\"test@example.com\",\n        username=\"testuser\",\n        password_hash=hash_password(\"Password123!\"),\n        full_name=\"Test User\",\n        status=UserStatus.ACTIVE,\n        email_verified_at=datetime.utcnow(),",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "admin_user",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def admin_user(db: Session) -> User:\n    \"\"\"Create admin test user.\"\"\"\n    user = User(\n        id=uuid.uuid4(),\n        email=\"admin@example.com\",\n        username=\"adminuser\",\n        password_hash=hash_password(\"AdminPass123!\"),\n        full_name=\"Admin User\",\n        status=UserStatus.ACTIVE,\n        email_verified_at=datetime.utcnow(),",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "another_user",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def another_user(db: Session) -> User:\n    \"\"\"Create another test user.\"\"\"\n    user = User(\n        id=uuid.uuid4(),\n        email=\"other@example.com\",\n        username=\"otheruser\",\n        password_hash=hash_password(\"Other123!\"),\n        full_name=\"Other User\",\n        status=UserStatus.ACTIVE,\n        email_verified_at=datetime.utcnow(),",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "test_workspace",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def test_workspace(db: Session, test_user) -> Workspace:\n    \"\"\"Create test workspace.\"\"\"\n    workspace = Workspace(\n        id=uuid.uuid4(),\n        name=\"Test Workspace\",\n        description=\"A test workspace\",\n        owner_id=test_user.id,\n        status=\"ACTIVE\",\n    )\n    db.add(workspace)",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "test_workspace_member",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def test_workspace_member(db: Session, test_workspace, another_user) -> WorkspaceMember:\n    \"\"\"Add member to test workspace.\"\"\"\n    member = WorkspaceMember(\n        id=uuid.uuid4(),\n        workspace_id=test_workspace.id,\n        user_id=another_user.id,\n        role=WorkspaceRole.MEMBER,\n    )\n    db.add(member)\n    db.commit()",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "test_project",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def test_project(db: Session, test_workspace, test_user) -> Project:\n    \"\"\"Create test project.\"\"\"\n    project = Project(\n        id=uuid.uuid4(),\n        workspace_id=test_workspace.id,\n        owner_id=test_user.id,\n        name=\"Test Project\",\n        description=\"A test project\",\n        status=ProjectStatus.NOT_STARTED,\n    )",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "test_task_list",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def test_task_list(db: Session, test_project) -> TaskList:\n    \"\"\"Create test task list.\"\"\"\n    task_list = TaskList(\n        id=uuid.uuid4(),\n        project_id=test_project.id,\n        name=\"Test List\",\n        order=0,\n    )\n    db.add(task_list)\n    db.commit()",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "test_task",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def test_task(db: Session, test_project, test_task_list, test_user) -> Task:\n    \"\"\"Create test task.\"\"\"\n    task = Task(\n        id=uuid.uuid4(),\n        project_id=test_project.id,\n        task_list_id=test_task_list.id,\n        title=\"Test Task\",\n        description=\"A test task\",\n        status=TaskStatus.TODO,\n        priority=TaskPriority.MEDIUM,",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "test_task_assignee",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def test_task_assignee(db: Session, test_task, test_user) -> TaskAssignee:\n    \"\"\"Assign test task to user.\"\"\"\n    assignee = TaskAssignee(\n        id=uuid.uuid4(),\n        task_id=test_task.id,\n        user_id=test_user.id,\n        is_primary=True,\n    )\n    db.add(assignee)\n    db.commit()",
         "detail": "tests.conftest",
         "documentation": {}
     },
@@ -29709,34 +33072,7 @@
         "kind": 2,
         "importPath": "tests.conftest",
         "description": "tests.conftest",
-        "peekOfCode": "def sample_user_data():\n    \"\"\"Sample user data for testing.\"\"\"\n    return {\n        \"email\": \"test@example.com\",\n        \"full_name\": \"Test User\",\n        \"password\": \"SecurePassword123!\",\n        \"is_active\": True,\n        \"is_verified\": False\n    }\n@pytest.fixture",
-        "detail": "tests.conftest",
-        "documentation": {}
-    },
-    {
-        "label": "sample_workspace_data",
-        "kind": 2,
-        "importPath": "tests.conftest",
-        "description": "tests.conftest",
-        "peekOfCode": "def sample_workspace_data():\n    \"\"\"Sample workspace data for testing.\"\"\"\n    return {\n        \"name\": \"Test Workspace\",\n        \"slug\": \"test-workspace\",\n        \"description\": \"A test workspace\",\n        \"is_active\": True\n    }\n@pytest.fixture\ndef sample_project_data():",
-        "detail": "tests.conftest",
-        "documentation": {}
-    },
-    {
-        "label": "sample_project_data",
-        "kind": 2,
-        "importPath": "tests.conftest",
-        "description": "tests.conftest",
-        "peekOfCode": "def sample_project_data():\n    \"\"\"Sample project data for testing.\"\"\"\n    return {\n        \"name\": \"Test Project\",\n        \"key\": \"TEST\",\n        \"description\": \"A test project\",\n        \"status\": \"NOT_STARTED\",\n        \"governance_mode\": \"SIMPLE\"\n    }\n@pytest.fixture",
-        "detail": "tests.conftest",
-        "documentation": {}
-    },
-    {
-        "label": "sample_task_data",
-        "kind": 2,
-        "importPath": "tests.conftest",
-        "description": "tests.conftest",
-        "peekOfCode": "def sample_task_data():\n    \"\"\"Sample task data for testing.\"\"\"\n    return {\n        \"title\": \"Test Task\",\n        \"description\": \"A test task\",\n        \"status\": \"TODO\",\n        \"priority\": \"MEDIUM\"\n    }",
+        "peekOfCode": "def sample_user_data():\n    \"\"\"Sample user data for testing.\"\"\"\n    return {\n        \"title\": \"Test Task\",\n        \"description\": \"A test task\",\n        \"status\": \"TODO\",\n        \"priority\": \"MEDIUM\"\n    }",
         "detail": "tests.conftest",
         "documentation": {}
     },

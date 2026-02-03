@@ -29,7 +29,7 @@ from loguru import logger
 
 from app.db.models.notifications import (
     Notification, NotificationTemplate, NotificationPreference,
-    Watcher, EventLog, NotificationRetry, InteractionLog, DomainEvent
+    EventConsumer, DomainEvent
 )
 from app.db.models.users import User
 from app.db.models.workspaces import Workspace

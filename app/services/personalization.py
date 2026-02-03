@@ -42,7 +42,7 @@ from app.schemas.personalization import (
     AccessibilityProfileCreate,
     AccessibilityProfileUpdate,
 )
-from app.db.enums import LanguageEnum, ThemeModeEnum
+from app.db.enums import TemplateLocaleEnum, ThemeModeEnum
 from app.core.config import settings
 
 
@@ -68,7 +68,7 @@ class PersonalizationService:
             settings_obj = UserSettings(
                 user_id=user_id,
                 theme_mode=ThemeModeEnum.SYSTEM.value,
-                language=LanguageEnum.EN_US.value,
+                language=TemplateLocaleEnum.EN.value,
             )
             db.add(settings_obj)
             db.commit()
@@ -516,10 +516,10 @@ class LocalizationService:
             return localization.value
         
         # Fallback to English (en-US) if not found
-        if language != LanguageEnum.EN_US.value:
+        if language != TemplateLocaleEnum.EN.value:
             localization = db.query(LocalizationString).filter(
                 LocalizationString.key == key,
-                LocalizationString.language == LanguageEnum.EN_US.value,
+            LocalizationString.language == TemplateLocaleEnum.EN.value,
                 LocalizationString.namespace == namespace
             ).first()
             

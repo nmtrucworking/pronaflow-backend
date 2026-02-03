@@ -1,0 +1,165 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  db:
+    image: postgres:14-alpine
+    container_name: pronaflow_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: pronaflow_user
+      POSTGRES_PASSWORD: pronaflow_password
+      POSTGRES_DB: pronaflow_db
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pronaflow_user -d pronaflow_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - pronaflow_network
+
+  # Redis for Caching & Sessions
+  redis:
+    image: redis:7-alpine
+    container_name: pronaflow_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - pronaflow_network
+
+  # Backend API Service
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pronaflow_backend
+    restart: unless-stopped
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - .:/app
+      - ./uploads:/app/uploads
+      - ./logs:/app/logs
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://pronaflow_user:pronaflow_password@db:5432/pronaflow_db
+      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY=dev-secret-key-change-in-production
+      - DEBUG=True
+      - ENVIRONMENT=development
+      - ALLOWED_ORIGINS=http://localhost:3000,http://localhost:5173
+      - SMTP_HOST=${SMTP_HOST:-smtp.gmail.com}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+      - LOG_LEVEL=DEBUG
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - pronaflow_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # pgAdmin (Optional - Database Management UI)
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pronaflow_pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@pronaflow.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - db
+    networks:
+      - pronaflow_network
+    profiles:
+      - tools
+
+  # Redis Commander (Optional - Redis Management UI)
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: pronaflow_redis_commander
+    restart: unless-stopped
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    ports:
+      - "8081:8081"
+    depends_on:
+      - redis
+    networks:
+      - pronaflow_network
+    profiles:
+      - tools
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+  pgadmin_data:
+    driver: local
+
+networks:
+  pronaflow_network:
+    driver: bridge
+
+# Usage:
+# 
+# Start all services:
+#   docker-compose up -d
+#
+# Start with management tools (pgAdmin, Redis Commander):
+#   docker-compose --profile tools up -d
+#
+# View logs:
+#   docker-compose logs -f backend
+#
+# Stop all services:
+#   docker-compose down
+#
+# Stop and remove volumes (WARNING: deletes data):
+#   docker-compose down -v
+#
+# Rebuild backend:
+#   docker-compose up -d --build backend
+#
+# Run database migrations:
+#   docker-compose exec backend alembic upgrade head
+#
+# Create new migration:
+#   docker-compose exec backend alembic revision --autogenerate -m "description"
+#
+# Access PostgreSQL:
+#   docker-compose exec db psql -U pronaflow_user -d pronaflow_db
+#
+# Access Redis CLI:
+#   docker-compose exec redis redis-cli
+#
+# Access backend shell:
+#   docker-compose exec backend bash

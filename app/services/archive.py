@@ -19,8 +19,8 @@ from app.db.models.archive import (
     ArchivePolicy, DeletedItem, ArchivedDataSnapshot, 
     DataExportRequest, DataRetentionLog, AuditLog
 )
-from app.db.models.project import Project
-from app.db.models.task import Task
+from app.db.models.projects import Project
+from app.db.models.tasks import Task
 from app.schemas.archive import (
     ArchivePolicyCreate, ArchivePolicyUpdate, DeletedItemRead,
     DataExportRequestCreate, DataExportRequestRead, AuditLogRead,

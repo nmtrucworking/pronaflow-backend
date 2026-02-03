@@ -3,6 +3,7 @@
 ## 🚀 Quick Setup (5 minutes)
 
 ### 1. Prerequisites
+
 ```bash
 # Ensure you have:
 - Python 3.10+
@@ -11,6 +12,7 @@
 ```
 
 ### 2. Install Dependencies
+
 ```bash
 cd e:\Workspace\project\pronaflow\backend
 
@@ -22,6 +24,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Configure Environment
+
 ```bash
 # Copy example environment file
 copy .env.example .env
@@ -32,6 +35,7 @@ copy .env.example .env
 ```
 
 ### 4. Setup Database
+
 ```bash
 # Create database (if not exists)
 createdb pronaflow
@@ -44,6 +48,7 @@ alembic upgrade head
 ```
 
 ### 5. Run Application
+
 ```bash
 # Development mode (auto-reload)
 uvicorn app.main:app --reload
@@ -53,12 +58,14 @@ python -m app.main
 ```
 
 ### 6. Access API
-- **API Docs**: http://localhost:8000/docs
-- **Health Check**: http://localhost:8000/health
+
+- **API Docs**: [http://localhost:8000/docs](http://localhost:8000/docs)
+- **Health Check**: [http://localhost:8000/health](http://localhost:8000/health)
 
 ## 🧪 Test the API
 
 ### Register a User
+
 ```bash
 curl -X POST "http://localhost:8000/api/v1/auth/register" \
   -H "Content-Type: application/json" \
@@ -71,6 +78,7 @@ curl -X POST "http://localhost:8000/api/v1/auth/register" \
 ```
 
 ### Login
+
 ```bash
 curl -X POST "http://localhost:8000/api/v1/auth/login" \
   -H "Content-Type: application/json" \
@@ -81,6 +89,7 @@ curl -X POST "http://localhost:8000/api/v1/auth/login" \
 ```
 
 ### Get Current User
+
 ```bash
 curl -X GET "http://localhost:8000/api/v1/auth/me" \
   -H "Authorization: Bearer YOUR_TOKEN_HERE"
@@ -104,6 +113,7 @@ DEBUG=True
 ## 🔍 Troubleshooting
 
 ### Database Connection Error
+
 ```bash
 # Check PostgreSQL is running
 pg_ctl status
@@ -116,12 +126,14 @@ createdb pronaflow
 ```
 
 ### Import Errors
+
 ```bash
 # Reinstall dependencies
 pip install -r requirements.txt --force-reinstall
 ```
 
 ### Port Already in Use
+
 ```bash
 # Use different port
 uvicorn app.main:app --reload --port 8001
@@ -130,7 +142,7 @@ uvicorn app.main:app --reload --port 8001
 ## 📚 Next Steps
 
 1. **Read Documentation**: [MODULE_1_IMPLEMENTATION.md](MODULE_1_IMPLEMENTATION.md)
-2. **Test Endpoints**: Use Swagger UI at http://localhost:8000/docs
+2. **Test Endpoints**: Use Swagger UI at [http://localhost:8000/docs](http://localhost:8000/docs)
 3. **Configure Email**: Setup SMTP for production emails
 4. **Enable HTTPS**: Configure SSL for production
 
@@ -145,7 +157,8 @@ uvicorn app.main:app --reload --port 8001
 
 ## 📖 API Documentation
 
-Visit http://localhost:8000/docs for:
+Visit [http://localhost:8000/docs](http://localhost:8000/docs) for:
+
 - Interactive API testing
 - Request/response schemas
 - Authentication flows

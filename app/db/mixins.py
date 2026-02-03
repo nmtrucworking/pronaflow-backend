@@ -12,6 +12,19 @@ from sqlalchemy.sql import func
 from sqlalchemy.dialects.postgresql import UUID
 
 
+class UUIDPrimaryKeyMixin:
+    """
+    Mixin that provides a UUID primary key column named `id`.
+    """
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        primary_key=True,
+        default=uuid.uuid4,
+        index=True,
+        comment="Primary key UUID"
+    )
+
+
 class TimestampMixin:
     """
     Mixin that automatically tracks record creation and modification timestamps.

@@ -19,8 +19,9 @@ from datetime import datetime, date
 from fastapi import APIRouter, Depends, HTTPException, Query, BackgroundTasks
 from sqlalchemy.orm import Session
 
-from app.api.dependencies import get_db, get_current_user
-from app.db.models.user import User
+from app.core.security import get_current_user
+from app.db.session import get_db
+from app.db.models.users import User
 from app.schemas.analytics import (
     SprintMetricCreate, SprintMetricRead, SprintMetricUpdate,
     VelocityMetricCreate, VelocityMetricRead,

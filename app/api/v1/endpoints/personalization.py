@@ -12,13 +12,14 @@ RESTful API routes for managing personalization preferences:
 Ref: Module 9 - User Experience Personalization
 """
 
-from fastapi import APIRouter, Depends, HTTPException, Query, status
+from fastapi import APIRouter, Depends, HTTPException, Query, Path, status
 from sqlalchemy.orm import Session
 from uuid import UUID
 from typing import List
 
-from app.api.dependencies import get_current_user, get_db
-from app.db.models.user import User
+from app.core.security import get_current_user
+from app.db.session import get_db
+from app.db.models.users import User
 from app.schemas.personalization import (
     UserSettingsRead,
     UserSettingsUpdate,
@@ -388,8 +389,8 @@ async def update_accessibility_profile(
 
 @router.get("/localization/{language}/{namespace}", response_model=TranslationDictionary, summary="Get translations for namespace")
 async def get_translation_namespace(
-    language: str = Query(..., description="Language code (e.g., en-US, vi-VN)"),
-    namespace: str = Query("common", description="i18next namespace"),
+    language: str = Path(..., description="Language code (e.g., en-US, vi-VN)"),
+    namespace: str = Path(..., description="i18next namespace"),
     db: Session = Depends(get_db)
 ):
     """

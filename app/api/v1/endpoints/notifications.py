@@ -40,7 +40,7 @@ from app.db.enums import NotificationPriorityEnum
 from sqlalchemy import select, and_
 from app.db.models.notifications import (
     Notification, NotificationTemplate, NotificationPreference,
-    Watcher, InteractionLog
+    EventConsumer, DomainEvent
 )
 from functools import lru_cache
 import redis

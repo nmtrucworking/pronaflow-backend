@@ -325,7 +325,7 @@ class TimeEntryCreate(BaseModel):
             raise ValueError("Cannot log time for future dates (except leave requests)")
         return v
 
-    @root_validator
+    @root_validator(skip_on_failure=True)
     def validate_daily_limits(cls, values):
         """
         Business Rule: Validate daily time logging limits

@@ -32,7 +32,7 @@ from app.db.enums import (
     ColorBlindnessModeEnum,
     NotificationChannelEnum,
     NotificationEventTypeEnum,
-    LanguageEnum,
+    TemplateLocaleEnum,
 )
 from app.db.mixins import TimestampMixin
 
@@ -58,7 +58,7 @@ class UserSettings(Base, TimestampMixin):
     font_family = Column(String(50), nullable=False, default=FontFamilyEnum.SYSTEM_DEFAULT.value)
 
     # Feature 2.1: Internationalization & Localization (AC 1)
-    language = Column(String(10), nullable=False, default=LanguageEnum.EN_US.value)
+    language = Column(String(10), nullable=False, default=TemplateLocaleEnum.EN.value)
     
     # Feature 2.4: Workspace Layout Optimization (AC 2)
     info_density_mode = Column(String(50), nullable=False, default=InfoDensityModeEnum.COMFORTABLE.value)

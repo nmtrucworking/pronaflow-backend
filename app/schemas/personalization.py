@@ -20,7 +20,7 @@ from app.db.enums import (
     ColorBlindnessModeEnum,
     NotificationChannelEnum,
     NotificationEventTypeEnum,
-    LanguageEnum,
+    TemplateLocaleEnum,
 )
 
 
@@ -31,7 +31,7 @@ class UserSettingsBase(BaseModel):
     theme_mode: Optional[str] = Field(default=ThemeModeEnum.SYSTEM.value, description="UI theme mode")
     font_size: Optional[str] = Field(default=FontSizeEnum.MEDIUM.value, description="Base font size")
     font_family: Optional[str] = Field(default=FontFamilyEnum.SYSTEM_DEFAULT.value, description="Font family")
-    language: Optional[str] = Field(default=LanguageEnum.EN_US.value, description="Preferred language")
+    language: Optional[str] = Field(default=TemplateLocaleEnum.EN.value, description="Preferred language")
     info_density_mode: Optional[str] = Field(default=InfoDensityModeEnum.COMFORTABLE.value, description="Info density mode")
     sidebar_collapsed: Optional[bool] = Field(default=False, description="Sidebar collapsed state")
     color_blindness_mode: Optional[str] = Field(default=ColorBlindnessModeEnum.NORMAL.value, description="Color blindness support mode")

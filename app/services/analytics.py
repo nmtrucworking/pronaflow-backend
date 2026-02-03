@@ -26,8 +26,7 @@ from app.db.models.analytics import (
     Timesheet, CustomReport, ReportSchedule, MetricSnapshot, KPI,
     TimesheetApproval, ReportPermission
 )
-from app.db.models.task import Task
-from app.db.models.sprint import Sprint
+from app.db.models.tasks import Task
 from app.schemas.analytics import (
     SprintMetricCreate, SprintMetricUpdate, SprintMetricRead,
     VelocityMetricCreate, VelocityMetricRead,
