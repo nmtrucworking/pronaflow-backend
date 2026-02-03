@@ -47,6 +47,15 @@ class Settings(BaseSettings):
     SMTP_USER: Optional[str] = None
     SMTP_PASSWORD: Optional[str] = None
     EMAIL_FROM: str = "noreply@pronaflow.com"
+
+    # Billing (Module 13 - Stripe)
+    STRIPE_SECRET_KEY: Optional[str] = None
+    STRIPE_WEBHOOK_SECRET: Optional[str] = None
+    STRIPE_CURRENCY: str = "usd"
+
+    # Invoice Storage
+    INVOICE_STORAGE_DIR: str = "storage/invoices"
+    INVOICE_BASE_URL: str = "/storage/invoices"
     
     # OAuth2 Providers
     GOOGLE_CLIENT_ID: Optional[str] = None

@@ -13,6 +13,12 @@ from alembic import op
 import sqlalchemy as sa
 from sqlalchemy.dialects import postgresql
 
+# revision identifiers, used by Alembic
+revision = 'module12_integration'
+down_revision = 'module11_analytics'
+branch_labels = None
+depends_on = None
+
 
 def upgrade() -> None:
     """Create Module 12 tables for integration ecosystem."""

@@ -7,7 +7,7 @@ import uuid
 from typing import Optional, List, TYPE_CHECKING
 from datetime import datetime
 
-from sqlalchemy import String, DateTime, ForeignKey, Index, Table, Column, Boolean, Text, Integer, Enum as SQLEnum
+from sqlalchemy import String, DateTime, ForeignKey, Index, Table, Column, Boolean, Text, Integer, Enum as SQLEnum, UniqueConstraint
 from sqlalchemy.dialects.postgresql import UUID, JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -89,7 +89,6 @@ class ApiToken(Base, TimestampMixin):
 
     # Relationships
     user: Mapped["User"] = relationship(foreign_keys=[user_id])
-    scopes: Mapped[List["ApiScope"]] = relationship(secondary="api_token_scopes", back_populates="tokens")
 
     # Indexes
     __table_args__ = (
@@ -129,17 +128,44 @@ class ApiScope(Base, TimestampMixin):
         comment="Scope description"
     )
 
-    # Relationships
-    tokens: Mapped[List["ApiToken"]] = relationship(secondary="api_token_scopes", back_populates="scopes")
 
+class ApiTokenScope(Base):
+    """
+    ApiTokenScope Model - Junction table for API tokens and scopes.
+    Maps API tokens to their assigned scopes for permission control.
+    Ref: Module 12 - Feature 2.1 - AC 3
+    """
+    __tablename__ = "api_token_scopes"
 
-# Association table for many-to-many relationship between ApiToken and ApiScope
-api_token_scopes = Table(
-    'api_token_scopes',
-    Base.metadata,
-    Column('token_id', UUID(as_uuid=True), ForeignKey('api_tokens.id'), primary_key=True),
-    Column('scope_id', UUID(as_uuid=True), ForeignKey('api_scopes.id'), primary_key=True),
-)
+    # Primary Key
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        primary_key=True,
+        default=uuid.uuid4,
+        comment="Global unique UUID for token-scope mapping"
+    )
+
+    # Foreign Keys
+    token_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("api_tokens.id", ondelete="CASCADE"),
+        nullable=False,
+        comment="API token reference"
+    )
+
+    scope_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey("api_scopes.id", ondelete="CASCADE"),
+        nullable=False,
+        comment="API scope reference"
+    )
+
+    # Indexes and Constraints
+    __table_args__ = (
+        UniqueConstraint('token_id', 'scope_id', name='uq_token_scope'),
+        Index("ix_api_token_scopes_token_id", "token_id"),
+        Index("ix_api_token_scopes_scope_id", "scope_id"),
+    )
 
 
 class WebhookEndpoint(Base, TimestampMixin):

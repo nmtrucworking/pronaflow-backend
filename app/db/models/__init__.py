@@ -118,6 +118,117 @@ from app.db.models.integrations import (
     ConsentGrant,
 )
 
+# Module 13: Subscription & Billing Management
+from app.db.models.subscriptions import (
+    Plan,
+    WorkspaceSubscription,
+    SubscriptionUsage,
+    BillingTransaction,
+    Invoice,
+    InvoiceLineItem,
+    Client,
+    FreelancerInvoice,
+)
+
+# Module 14: System Administration
+from app.db.models.admin import (
+    AdminUser,
+    AdminRole,
+    AdminPermission,
+    AdminRolePermission,
+    AdminUserRole,
+    SystemConfig,
+    FeatureFlag,
+    AdminAuditLog,
+    SecurityIncident,
+    ChangeRequest,
+    AccessReview,
+)
+
+# Module 15: Help Center & Knowledge Base
+from app.db.models.help_center import (
+    Article,
+    ArticleVersion,
+    ArticleTranslation,
+    Category,
+    RouteMapping,
+    ArticleFeedback,
+    FailedSearch,
+    ArticleVisibility,
+    ArticleSearchIndex,
+)
+
+# Module 16: User Onboarding & Adoption
+from app.db.models.onboarding import (
+    OnboardingSurvey,
+    SurveyQuestion,
+    SurveyResponse,
+    PersonaProfile,
+    OnboardingFlow,
+    FlowStep,
+    UserOnboardingStatus,
+    ProductTour,
+    TourStep,
+    OnboardingChecklist,
+    OnboardingChecklistItem,
+    UserChecklistProgress,
+    FeatureBeacon,
+    UserBeaconState,
+    OnboardingReward,
+)
+
+# Module 13: Subscription & Billing Management
+from app.db.models.subscriptions import (
+    Plan,
+    WorkspaceSubscription,
+    SubscriptionUsage,
+    BillingTransaction,
+    Invoice,
+    InvoiceLineItem,
+    Client,
+    FreelancerInvoice,
+)
+
+# Module 14: System Administration
+from app.db.models.admin import (
+    AdminUser,
+    AdminRole,
+    AdminPermission,
+    AdminRolePermission,
+    AdminUserRole,
+    SystemConfig,
+    FeatureFlag,
+    AdminAuditLog,
+    SecurityIncident,
+    ChangeRequest,
+    AccessReview,
+)
+
+# Module 15: Help Center & Knowledge Base
+from app.db.models.help_center import (
+    Article,
+    ArticleVersion,
+    ArticleTranslation,
+    Category,
+    RouteMapping,
+    ArticleFeedback,
+    FailedSearch,
+    ArticleVisibility,
+    ArticleSearchIndex,
+)
+
+# Module 13: Subscription & Billing Management
+from app.db.models.subscriptions import (
+    Plan,
+    WorkspaceSubscription,
+    SubscriptionUsage,
+    BillingTransaction,
+    Invoice,
+    InvoiceLineItem,
+    Client,
+    FreelancerInvoice,
+)
+
 __all__ = [
     # Module 1
     "User",
@@ -204,4 +315,51 @@ __all__ = [
     "Plugin",
     "PluginInstallation",
     "ConsentGrant",
+    # Module 13
+    "Plan",
+    "WorkspaceSubscription",
+    "SubscriptionUsage",
+    "BillingTransaction",
+    "Invoice",
+    "InvoiceLineItem",
+    "Client",
+    "FreelancerInvoice",
+    # Module 14
+    "AdminUser",
+    "AdminRole",
+    "AdminPermission",
+    "AdminRolePermission",
+    "AdminUserRole",
+    "SystemConfig",
+    "FeatureFlag",
+    "AdminAuditLog",
+    "SecurityIncident",
+    "ChangeRequest",
+    "AccessReview",
+    # Module 15
+    "Article",
+    "ArticleVersion",
+    "ArticleTranslation",
+    "Category",
+    "RouteMapping",
+    "ArticleFeedback",
+    "FailedSearch",
+    "ArticleVisibility",
+    "ArticleSearchIndex",
+    # Module 16
+    "OnboardingSurvey",
+    "SurveyQuestion",
+    "SurveyResponse",
+    "PersonaProfile",
+    "OnboardingFlow",
+    "FlowStep",
+    "UserOnboardingStatus",
+    "ProductTour",
+    "TourStep",
+    "OnboardingChecklist",
+    "OnboardingChecklistItem",
+    "UserChecklistProgress",
+    "FeatureBeacon",
+    "UserBeaconState",
+    "OnboardingReward",
 ]

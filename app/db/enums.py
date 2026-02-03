@@ -143,6 +143,32 @@ class TagEntityType(str, Enum):
     ALL = "all"
 
 
+# ============ Module 15: Help Center & Knowledge Base ============
+
+class ArticleStatus(str, Enum):
+    """Article lifecycle status"""
+    DRAFT = "draft"
+    PUBLISHED = "published"
+    ARCHIVED = "archived"
+
+
+class ArticleVisibilityScope(str, Enum):
+    """Article visibility scope"""
+    PUBLIC = "public"
+    INTERNAL = "internal"
+    ROLE_BASED = "role_based"
+
+
+# ============ Module 16: User Onboarding & Adoption ============
+
+class OnboardingStatus(str, Enum):
+    """User onboarding status"""
+    NOT_STARTED = "not_started"
+    IN_PROGRESS = "in_progress"
+    COMPLETED = "completed"
+    SKIPPED = "skipped"
+
+
 # ============ Module 5: Task & Work Item Management ============
 
 class TaskStatus(str, Enum):

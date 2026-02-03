@@ -1,5 +1,5 @@
-# PronaFlow API Documentation - Version 1.0
-**Modules: 1-6 | Last Updated: February 2, 2026**
+# PronaFlow API Documentation - Version 1.3
+**Modules: 1-16 | Last Updated: February 3, 2026**
 
 ---
 
@@ -12,8 +12,12 @@
 6. [Module 4: Task Execution & Orchestration](#module-4-task-execution--orchestration)
 7. [Module 5: Temporal Planning & Scheduling](#module-5-temporal-planning--scheduling)
 8. [Module 6: Unified Collaboration Hub](#module-6-unified-collaboration-hub)
-9. [Common Response Formats](#common-response-formats)
-10. [Error Handling](#error-handling)
+9. [Module 13: Subscription & Billing Management](#module-13-subscription--billing-management)
+10. [Module 14: System Administration](#module-14-system-administration)
+11. [Module 15: Help Center & Knowledge Base](#module-15-help-center--knowledge-base)
+12. [Module 16: User Onboarding & Adoption](#module-16-user-onboarding--adoption)
+13. [Common Response Formats](#common-response-formats)
+14. [Error Handling](#error-handling)
 
 ---
 
@@ -2742,6 +2746,172 @@ GET /api/v1/collaboration/search
 ---
 
 ## Error Handling
+
+---
+
+## Module 13: Subscription & Billing Management
+
+**Base Path:** `/api/subscription`
+
+### Plans
+- `GET /api/subscription/plans`
+- `POST /api/subscription/plans`
+- `GET /api/subscription/plans/{plan_id}`
+- `PATCH /api/subscription/plans/{plan_id}`
+
+### Workspace Subscriptions
+- `GET /api/subscription/workspaces/{workspace_id}/subscription`
+- `POST /api/subscription/workspaces/{workspace_id}/subscription`
+- `POST /api/subscription/workspaces/{workspace_id}/subscription/upgrade`
+- `POST /api/subscription/workspaces/{workspace_id}/subscription/cancel`
+
+### Usage
+- `GET /api/subscription/workspaces/{workspace_id}/usage`
+- `GET /api/subscription/workspaces/{workspace_id}/usage/summary`
+
+### Clients (Freelancer)
+- `GET /api/subscription/workspaces/{workspace_id}/clients`
+- `POST /api/subscription/workspaces/{workspace_id}/clients`
+- `GET /api/subscription/clients/{client_id}`
+- `PATCH /api/subscription/clients/{client_id}`
+- `DELETE /api/subscription/clients/{client_id}`
+
+### Freelancer Invoices
+- `GET /api/subscription/workspaces/{workspace_id}/invoices`
+- `POST /api/subscription/workspaces/{workspace_id}/invoices`
+- `GET /api/subscription/invoices/{invoice_id}`
+- `PATCH /api/subscription/invoices/{invoice_id}/status`
+- `POST /api/subscription/invoices/{invoice_id}/generate-pdf`
+
+---
+
+## Module 14: System Administration
+
+**Base Path:** `/api/admin-system`
+
+### Admin Users & Roles
+- `POST /api/admin-system/users`
+- `GET /api/admin-system/users`
+- `GET /api/admin-system/users/{admin_user_id}`
+- `PATCH /api/admin-system/users/{admin_user_id}`
+- `POST /api/admin-system/users/{admin_user_id}/lock`
+- `POST /api/admin-system/users/{admin_user_id}/unlock`
+
+- `POST /api/admin-system/roles`
+- `GET /api/admin-system/roles`
+- `GET /api/admin-system/roles/{role_id}`
+- `PATCH /api/admin-system/roles/{role_id}`
+- `GET /api/admin-system/roles/{role_id}/permissions`
+- `POST /api/admin-system/roles/{role_id}/permissions`
+
+- `POST /api/admin-system/permissions`
+- `GET /api/admin-system/permissions`
+- `PATCH /api/admin-system/permissions/{permission_id}`
+
+### Role Assignments
+- `POST /api/admin-system/users/{admin_user_id}/roles`
+- `POST /api/admin-system/role-assignments/{assignment_id}/approve`
+- `DELETE /api/admin-system/role-assignments/{assignment_id}`
+- `GET /api/admin-system/users/{admin_user_id}/roles`
+
+### System Config & Feature Flags
+- `POST /api/admin-system/config`
+- `GET /api/admin-system/config`
+- `GET /api/admin-system/config/{key}`
+- `PATCH /api/admin-system/config/{key}`
+
+- `POST /api/admin-system/feature-flags`
+- `GET /api/admin-system/feature-flags`
+- `GET /api/admin-system/feature-flags/{key}`
+- `PATCH /api/admin-system/feature-flags/{key}`
+- `GET /api/admin-system/feature-flags/{key}/check/{user_id}`
+
+### Audit, Security, Change, Review
+- `POST /api/admin-system/audit-logs`
+- `GET /api/admin-system/audit-logs`
+- `POST /api/admin-system/security-incidents`
+- `GET /api/admin-system/security-incidents`
+- `GET /api/admin-system/security-incidents/{incident_id}`
+- `PATCH /api/admin-system/security-incidents/{incident_id}`
+
+- `POST /api/admin-system/change-requests`
+- `GET /api/admin-system/change-requests`
+- `GET /api/admin-system/change-requests/{change_id}`
+- `PATCH /api/admin-system/change-requests/{change_id}`
+- `POST /api/admin-system/change-requests/{change_id}/approve`
+
+- `POST /api/admin-system/access-reviews`
+- `GET /api/admin-system/access-reviews`
+- `GET /api/admin-system/access-reviews/{review_id}`
+- `POST /api/admin-system/access-reviews/{review_id}/complete`
+
+- `GET /api/admin-system/stats`
+
+---
+
+## Module 15: Help Center & Knowledge Base
+
+**Base Path:** `/api/help-center`
+
+### Categories & Articles
+- `POST /api/help-center/categories`
+- `GET /api/help-center/categories`
+- `PATCH /api/help-center/categories/{category_id}`
+
+- `POST /api/help-center/articles`
+- `GET /api/help-center/articles`
+- `GET /api/help-center/articles/{article_id}`
+- `PATCH /api/help-center/articles/{article_id}`
+
+### Versioning & Localization
+- `POST /api/help-center/articles/{article_id}/versions`
+- `POST /api/help-center/versions/{version_id}/translations`
+- `GET /api/help-center/articles/{article_id}/reader`
+
+### Contextual Help & Visibility
+- `POST /api/help-center/route-mappings`
+- `GET /api/help-center/route-mappings`
+- `GET /api/help-center/contextual`
+- `POST /api/help-center/articles/{article_id}/visibility`
+
+### Feedback & Search
+- `POST /api/help-center/articles/{article_id}/feedback`
+- `GET /api/help-center/search`
+- `POST /api/help-center/search/failed`
+
+---
+
+## Module 16: User Onboarding & Adoption
+
+**Base Path:** `/api/onboarding`
+
+### Survey & Persona
+- `POST /api/onboarding/surveys`
+- `GET /api/onboarding/surveys`
+- `POST /api/onboarding/surveys/{survey_id}/questions`
+- `POST /api/onboarding/responses`
+- `POST /api/onboarding/persona`
+
+### Flow & Status
+- `POST /api/onboarding/flows`
+- `POST /api/onboarding/flows/{flow_id}/steps`
+- `GET /api/onboarding/status`
+- `PATCH /api/onboarding/status`
+
+### Tours
+- `POST /api/onboarding/tours`
+- `POST /api/onboarding/tours/{tour_id}/steps`
+
+### Checklist & Rewards
+- `POST /api/onboarding/checklists`
+- `POST /api/onboarding/checklists/{checklist_id}/items`
+- `PATCH /api/onboarding/checklist-progress`
+- `POST /api/onboarding/rewards`
+
+### Feature Beacons
+- `POST /api/onboarding/beacons`
+- `GET /api/onboarding/beacons`
+- `POST /api/onboarding/beacons/{beacon_id}/dismiss`
 
 ### HTTP Status Codes
 | Code | Meaning | Typical Cause |

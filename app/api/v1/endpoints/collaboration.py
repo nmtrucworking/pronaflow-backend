@@ -16,7 +16,7 @@ from fastapi import APIRouter, Depends, HTTPException, status, Query, File, Uplo
 from sqlalchemy.orm import Session
 
 from app.core.security import get_current_user
-from app.db.base import get_db
+from app.db.session import get_db
 from app.db.models import User, Task, Project
 from app.schemas.collaboration import (
     CommentCreate, CommentUpdate, CommentResponse, CommentThreadResponse,

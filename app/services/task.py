@@ -266,7 +266,6 @@ class TaskService:
             planned_start=task_data.planned_start,
             planned_end=task_data.planned_end,
             estimated_hours=task_data.estimated_hours,
-            created_by=user_id,
         )
 
         db.add(task)

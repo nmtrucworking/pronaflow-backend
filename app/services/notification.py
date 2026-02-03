@@ -21,7 +21,7 @@ from datetime import datetime, timedelta
 from typing import Optional, List, Dict, Any
 from string import Template
 import redis
-import aioredis
+from redis import asyncio as aioredis
 
 from sqlalchemy.orm import Session
 from sqlalchemy import select, and_, or_, func

@@ -82,6 +82,7 @@ class Workspace(Base, TimestampMixin, SoftDeleteMixin):
     invitations: Mapped[List["WorkspaceInvitation"]] = relationship(back_populates="workspace", cascade="all, delete-orphan")
     access_logs: Mapped[List["WorkspaceAccessLog"]] = relationship(back_populates="workspace", cascade="all, delete-orphan")
     settings: Mapped[Optional["WorkspaceSetting"]] = relationship(back_populates="workspace", cascade="all, delete-orphan", uselist=False)
+    subscription: Mapped[Optional["WorkspaceSubscription"]] = relationship(back_populates="workspace", uselist=False)
 
     # Indexes
     __table_args__ = (
