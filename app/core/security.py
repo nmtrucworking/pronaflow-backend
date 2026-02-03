@@ -5,7 +5,7 @@ Implements JWT token generation/verification, password hashing, and validation.
 from typing import Optional, Tuple
 from uuid import UUID
 from datetime import datetime, timedelta
-from fastapi import Depends, HTTPException, status
+from fastapi import Depends, HTTPException, status, Header
 from sqlalchemy.orm import Session
 from passlib.context import CryptContext
 import jwt
@@ -274,14 +274,14 @@ def record_login_attempt(
 # ============= Current User Dependency =============
 
 async def get_current_user(
-    token: Optional[str] = None,
+    authorization: Optional[str] = Header(None),
     db: Session = Depends(get_db),
 ) -> User:
     """
-    Get the current authenticated user from JWT token.
+    Get the current authenticated user from JWT token in Authorization header.
     
     Args:
-        token: JWT token from Authorization header
+        authorization: Authorization header (format: "Bearer <token>")
         db: Database session
         
     Returns:
@@ -290,6 +290,25 @@ async def get_current_user(
     Raises:
         HTTPException: If token is invalid or user not found
     """
+    # Extract token from Authorization header
+    if not authorization:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Not authenticated",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    
+    try:
+        scheme, token = authorization.split()
+        if scheme.lower() != "bearer":
+            raise ValueError("Invalid authentication scheme")
+    except (ValueError, AttributeError):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid authorization header format",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    
     if not token:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
@@ -346,19 +365,31 @@ async def get_current_user(
 
 
 async def get_current_user_with_session(
-    token: Optional[str] = None,
+    authorization: Optional[str] = Header(None),
     db: Session = Depends(get_db),
 ) -> Tuple[User, UUID]:
     """
-    Get the current authenticated user and session ID from JWT token.
+    Get the current authenticated user and session ID from JWT token in Authorization header.
 
     Returns:
         Tuple of (User, session_id)
     """
-    if not token:
+    # Extract token from Authorization header
+    if not authorization:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Not authenticated",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    
+    try:
+        scheme, token = authorization.split()
+        if scheme.lower() != "bearer":
+            raise ValueError("Invalid authentication scheme")
+    except (ValueError, AttributeError):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid authorization header format",
             headers={"WWW-Authenticate": "Bearer"},
         )
 
