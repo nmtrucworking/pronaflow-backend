@@ -345,6 +345,67 @@ async def get_current_user(
     return user
 
 
+async def get_current_user_with_session(
+    token: Optional[str] = None,
+    db: Session = Depends(get_db),
+) -> Tuple[User, UUID]:
+    """
+    Get the current authenticated user and session ID from JWT token.
+
+    Returns:
+        Tuple of (User, session_id)
+    """
+    if not token:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Not authenticated",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+
+    is_valid, payload, error_msg = verify_token(token)
+
+    if not is_valid:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=error_msg or "Invalid token",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+
+    user_id = payload.get("sub")
+    session_id = payload.get("session_id")
+
+    # Verify session still exists and is not revoked
+    session = db.query(SessionModel).filter(
+        SessionModel.id == session_id,
+        SessionModel.revoked_at == None
+    ).first()
+
+    if not session:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Session has been revoked",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+
+    # Get user
+    user = db.query(User).filter(User.id == user_id).first()
+
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="User not found",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+
+    if user.status != UserStatus.ACTIVE:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="User account is not active"
+        )
+
+    return user, UUID(session_id)
+
+
 async def get_current_active_user(
     current_user: User = Depends(get_current_user),
 ) -> User:

@@ -149,45 +149,51 @@ def upgrade() -> None:
     op.create_index('ix_data_retention_logs_action_type', 'data_retention_logs', ['action_type'])
     op.create_index('ix_data_retention_logs_executed_at', 'data_retention_logs', ['executed_at'])
     
-    # Create audit_logs table
-    op.create_table(
-        'audit_logs',
-        sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),
-        sa.Column('workspace_id', postgresql.UUID(as_uuid=True), nullable=False),
-        sa.Column('action', sa.String(100), nullable=False),
-        sa.Column('resource_type', sa.String(50), nullable=False),
-        sa.Column('resource_id', postgresql.UUID(as_uuid=True), nullable=False),
-        sa.Column('user_id', postgresql.UUID(as_uuid=True), nullable=True),
-        sa.Column('user_email', sa.String(255), nullable=True),
-        sa.Column('ip_address', sa.String(45), nullable=True),
-        sa.Column('user_agent', sa.String(500), nullable=True),
-        sa.Column('changes', postgresql.JSON, nullable=True),
-        sa.Column('status_code', sa.String(20), nullable=True),
-        sa.Column('error_message', sa.Text, nullable=True),
-        sa.Column('logged_at', sa.DateTime, nullable=False, server_default=sa.func.now()),
-        sa.Column('created_at', sa.DateTime, nullable=False, server_default=sa.func.now()),
-        sa.Column('updated_at', sa.DateTime, nullable=False, server_default=sa.func.now()),
-        sa.ForeignKeyConstraint(['workspace_id'], ['workspaces.id'], ondelete='CASCADE'),
-        sa.ForeignKeyConstraint(['user_id'], ['users.id'], ondelete='SET NULL'),
-        sa.PrimaryKeyConstraint('id')
-    )
-    op.create_index('ix_audit_logs_workspace_id', 'audit_logs', ['workspace_id'])
-    op.create_index('ix_audit_logs_user_id', 'audit_logs', ['user_id'])
-    op.create_index('ix_audit_logs_action', 'audit_logs', ['action'])
-    op.create_index('ix_audit_logs_resource_type', 'audit_logs', ['resource_type'])
-    op.create_index('ix_audit_logs_logged_at', 'audit_logs', ['logged_at'])
+    # Create audit_logs table (skip if already exists)
+    bind = op.get_bind()
+    inspector = sa.inspect(bind)
+    if not inspector.has_table('audit_logs'):
+        op.create_table(
+            'audit_logs',
+            sa.Column('id', postgresql.UUID(as_uuid=True), nullable=False),
+            sa.Column('workspace_id', postgresql.UUID(as_uuid=True), nullable=False),
+            sa.Column('action', sa.String(100), nullable=False),
+            sa.Column('resource_type', sa.String(50), nullable=False),
+            sa.Column('resource_id', postgresql.UUID(as_uuid=True), nullable=False),
+            sa.Column('user_id', postgresql.UUID(as_uuid=True), nullable=True),
+            sa.Column('user_email', sa.String(255), nullable=True),
+            sa.Column('ip_address', sa.String(45), nullable=True),
+            sa.Column('user_agent', sa.String(500), nullable=True),
+            sa.Column('changes', postgresql.JSON, nullable=True),
+            sa.Column('status_code', sa.String(20), nullable=True),
+            sa.Column('error_message', sa.Text, nullable=True),
+            sa.Column('logged_at', sa.DateTime, nullable=False, server_default=sa.func.now()),
+            sa.Column('created_at', sa.DateTime, nullable=False, server_default=sa.func.now()),
+            sa.Column('updated_at', sa.DateTime, nullable=False, server_default=sa.func.now()),
+            sa.ForeignKeyConstraint(['workspace_id'], ['workspaces.id'], ondelete='CASCADE'),
+            sa.ForeignKeyConstraint(['user_id'], ['users.id'], ondelete='SET NULL'),
+            sa.PrimaryKeyConstraint('id')
+        )
+        op.create_index('ix_audit_logs_workspace_id', 'audit_logs', ['workspace_id'])
+        op.create_index('ix_audit_logs_user_id', 'audit_logs', ['user_id'])
+        op.create_index('ix_audit_logs_action', 'audit_logs', ['action'])
+        op.create_index('ix_audit_logs_resource_type', 'audit_logs', ['resource_type'])
+        op.create_index('ix_audit_logs_logged_at', 'audit_logs', ['logged_at'])
 
 
 def downgrade() -> None:
     """Revert Module 8 tables."""
     
     # Drop indexes and tables in reverse order
-    op.drop_index('ix_audit_logs_logged_at', table_name='audit_logs')
-    op.drop_index('ix_audit_logs_resource_type', table_name='audit_logs')
-    op.drop_index('ix_audit_logs_action', table_name='audit_logs')
-    op.drop_index('ix_audit_logs_user_id', table_name='audit_logs')
-    op.drop_index('ix_audit_logs_workspace_id', table_name='audit_logs')
-    op.drop_table('audit_logs')
+    bind = op.get_bind()
+    inspector = sa.inspect(bind)
+    if inspector.has_table('audit_logs'):
+        op.drop_index('ix_audit_logs_logged_at', table_name='audit_logs')
+        op.drop_index('ix_audit_logs_resource_type', table_name='audit_logs')
+        op.drop_index('ix_audit_logs_action', table_name='audit_logs')
+        op.drop_index('ix_audit_logs_user_id', table_name='audit_logs')
+        op.drop_index('ix_audit_logs_workspace_id', table_name='audit_logs')
+        op.drop_table('audit_logs')
     
     op.drop_index('ix_data_retention_logs_executed_at', table_name='data_retention_logs')
     op.drop_index('ix_data_retention_logs_action_type', table_name='data_retention_logs')

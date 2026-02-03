@@ -169,12 +169,14 @@ from app.db.models.onboarding import (
     UserOnboardingStatus,
     ProductTour,
     TourStep,
+    UserTourSession,
     OnboardingChecklist,
     OnboardingChecklistItem,
     UserChecklistProgress,
     FeatureBeacon,
     UserBeaconState,
     OnboardingReward,
+    OnboardingRewardGrant,
 )
 
 # Module 13: Subscription & Billing Management
@@ -356,10 +358,12 @@ __all__ = [
     "UserOnboardingStatus",
     "ProductTour",
     "TourStep",
+    "UserTourSession",
     "OnboardingChecklist",
     "OnboardingChecklistItem",
     "UserChecklistProgress",
     "FeatureBeacon",
     "UserBeaconState",
     "OnboardingReward",
+    "OnboardingRewardGrant",
 ]

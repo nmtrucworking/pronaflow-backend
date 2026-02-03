@@ -5,6 +5,12 @@ _**Last updated:** Jan 11, 2026_
 
 ---
 
+> ⚠️ **LƯU Ý QUAN TRỌNG**: Module 10 - Intelligent Decision Support System sẽ được triển khai trong **PronaFlow Version 2.0**
+> 
+> Phiên bản hiện tại (v1.x) không bao gồm các tính năng AI/ML Decision Support.
+
+---
+
 > Vai trò: Decision Support - Không tự ý ra quyết định.
 > Triết lý: Explainable • Privacy-Preserving • Workspace-Isolated
 

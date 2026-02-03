@@ -96,6 +96,30 @@
         "documentation": {}
     },
     {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
+        "label": "op",
+        "importPath": "alembic",
+        "description": "alembic",
+        "isExtraImport": true,
+        "detail": "alembic",
+        "documentation": {}
+    },
+    {
         "label": "context",
         "importPath": "alembic",
         "description": "alembic",
@@ -1937,6 +1961,14 @@
         "documentation": {}
     },
     {
+        "label": "JSON",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "and_",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -2178,6 +2210,22 @@
     },
     {
         "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "event",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -2190,6 +2238,30 @@
         "description": "sqlalchemy",
         "isExtraImport": true,
         "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
+        "documentation": {}
+    },
+    {
+        "label": "postgresql",
+        "importPath": "sqlalchemy.dialects",
+        "description": "sqlalchemy.dialects",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects",
         "documentation": {}
     },
     {
@@ -2410,11 +2482,11 @@
         "documentation": {}
     },
     {
-        "label": "Base",
-        "importPath": "app.db.declarative_base",
-        "description": "app.db.declarative_base",
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
         "isExtraImport": true,
-        "detail": "app.db.declarative_base",
+        "detail": "app.core.config",
         "documentation": {}
     },
     {
@@ -2551,142 +2623,190 @@
         "description": "app.db.declarative_base",
         "isExtraImport": true,
         "detail": "app.db.declarative_base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.db.declarative_base",
+        "description": "app.db.declarative_base",
+        "isExtraImport": true,
+        "detail": "app.db.declarative_base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.db.declarative_base",
+        "description": "app.db.declarative_base",
+        "isExtraImport": true,
+        "detail": "app.db.declarative_base",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
         "isExtraImport": true,
-        "detail": "app.db.base",
+        "detail": "app.db.models",
         "documentation": {}
     },
     {
-        "label": "Role",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
+        "label": "Task",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
         "isExtraImport": true,
-        "detail": "app.db.base",
-        "documentation": {}
-    },
-    {
-        "label": "Permission",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
-        "isExtraImport": true,
-        "detail": "app.db.base",
-        "documentation": {}
-    },
-    {
-        "label": "MFAConfig",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
-        "isExtraImport": true,
-        "detail": "app.db.base",
-        "documentation": {}
-    },
-    {
-        "label": "MFABackupCode",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
-        "isExtraImport": true,
-        "detail": "app.db.base",
-        "documentation": {}
-    },
-    {
-        "label": "AuthProvider",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
-        "isExtraImport": true,
-        "detail": "app.db.base",
-        "documentation": {}
-    },
-    {
-        "label": "AuditLog",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
-        "isExtraImport": true,
-        "detail": "app.db.base",
-        "documentation": {}
-    },
-    {
-        "label": "Session",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
-        "isExtraImport": true,
-        "detail": "app.db.base",
-        "documentation": {}
-    },
-    {
-        "label": "Workspace",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
-        "isExtraImport": true,
-        "detail": "app.db.base",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceMember",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
-        "isExtraImport": true,
-        "detail": "app.db.base",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceInvitation",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
-        "isExtraImport": true,
-        "detail": "app.db.base",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceAccessLog",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
-        "isExtraImport": true,
-        "detail": "app.db.base",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceSetting",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
-        "isExtraImport": true,
-        "detail": "app.db.base",
+        "detail": "app.db.models",
         "documentation": {}
     },
     {
         "label": "Project",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
         "isExtraImport": true,
-        "detail": "app.db.base",
+        "detail": "app.db.models",
         "documentation": {}
     },
     {
-        "label": "Tag",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
+        "label": "# Module 1: Identity & Access Management IAM",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
         "isExtraImport": true,
-        "detail": "app.db.base",
+        "detail": "app.db.models",
         "documentation": {}
     },
     {
-        "label": "Base",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
+        "label": "Comment",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
         "isExtraImport": true,
-        "detail": "app.db.base",
+        "detail": "app.db.models",
         "documentation": {}
     },
     {
-        "label": "Base",
-        "importPath": "app.db.base",
-        "description": "app.db.base",
+        "label": "File",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
         "isExtraImport": true,
-        "detail": "app.db.base",
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "FileVersion",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Note",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "NoteVersion",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "SmartBacklink",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLink",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Mention",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserPresence",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalRecord",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "SearchIndex",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "CollaborationNotification",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.db.models",
+        "description": "app.db.models",
+        "isExtraImport": true,
+        "detail": "app.db.models",
         "documentation": {}
     },
     {
@@ -2938,6 +3058,14 @@
         "documentation": {}
     },
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "List",
         "importPath": "typing",
         "description": "typing",
@@ -2979,6 +3107,30 @@
     },
     {
         "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -4050,6 +4202,38 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Optional",
         "importPath": "typing",
         "description": "typing",
@@ -4243,6 +4427,22 @@
     },
     {
         "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -4378,6 +4578,22 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Tuple",
         "importPath": "typing",
         "description": "typing",
@@ -4387,6 +4603,22 @@
     },
     {
         "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncGenerator",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Generator",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -4531,142 +4763,6 @@
         "documentation": {}
     },
     {
-        "label": "uuid4",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "uuid4",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "uuid4",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "UUID",
-        "importPath": "uuid",
-        "description": "uuid",
-        "isExtraImport": true,
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
         "label": "UUID",
         "importPath": "uuid",
         "description": "uuid",
@@ -4691,7 +4787,7 @@
         "documentation": {}
     },
     {
-        "label": "UUID",
+        "label": "uuid4",
         "importPath": "uuid",
         "description": "uuid",
         "isExtraImport": true,
@@ -4740,6 +4836,190 @@
     },
     {
         "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
         "importPath": "uuid",
         "description": "uuid",
         "isExtraImport": true,
@@ -4796,6 +5076,22 @@
     },
     {
         "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -5427,6 +5723,22 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "date",
         "importPath": "datetime",
         "description": "datetime",
@@ -5468,6 +5780,30 @@
     },
     {
         "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -5764,6 +6100,14 @@
     },
     {
         "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "BackgroundTasks",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -6491,6 +6835,14 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "Mapped",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -7043,6 +7395,102 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "joinedload",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "joinedload",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -7091,55 +7539,7 @@
         "documentation": {}
     },
     {
-        "label": "Session",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "Session",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "Session",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "Session",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "joinedload",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "Session",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
-        "label": "Session",
+        "label": "sessionmaker",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -7268,6 +7668,14 @@
     },
     {
         "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
         "importPath": "app.db.session",
         "description": "app.db.session",
         "isExtraImport": true,
@@ -7291,7 +7699,23 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
         "label": "engine",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
         "importPath": "app.db.session",
         "description": "app.db.session",
         "isExtraImport": true,
@@ -7364,6 +7788,14 @@
     },
     {
         "label": "get_current_user",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user_with_session",
         "importPath": "app.core.security",
         "description": "app.core.security",
         "isExtraImport": true,
@@ -7699,6 +8131,30 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "Role",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "Permission",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
         "label": "WorkspaceResponse",
         "importPath": "app.schemas.workspace",
         "description": "app.schemas.workspace",
@@ -8027,6 +8483,14 @@
         "documentation": {}
     },
     {
+        "label": "WorkspaceRepository",
+        "importPath": "app.db.repositories.workspace_repo",
+        "description": "app.db.repositories.workspace_repo",
+        "isExtraImport": true,
+        "detail": "app.db.repositories.workspace_repo",
+        "documentation": {}
+    },
+    {
         "label": "get_current_admin_user",
         "importPath": "app.core.admin_security",
         "description": "app.core.admin_security",
@@ -8060,6 +8524,14 @@
     },
     {
         "label": "AdminUser",
+        "importPath": "app.db.models.admin",
+        "description": "app.db.models.admin",
+        "isExtraImport": true,
+        "detail": "app.db.models.admin",
+        "documentation": {}
+    },
+    {
+        "label": "FeatureFlag",
         "importPath": "app.db.models.admin",
         "description": "app.db.models.admin",
         "isExtraImport": true,
@@ -8148,6 +8620,30 @@
     },
     {
         "label": "AccessReview",
+        "importPath": "app.db.models.admin",
+        "description": "app.db.models.admin",
+        "isExtraImport": true,
+        "detail": "app.db.models.admin",
+        "documentation": {}
+    },
+    {
+        "label": "FeatureFlag",
+        "importPath": "app.db.models.admin",
+        "description": "app.db.models.admin",
+        "isExtraImport": true,
+        "detail": "app.db.models.admin",
+        "documentation": {}
+    },
+    {
+        "label": "FeatureFlag",
+        "importPath": "app.db.models.admin",
+        "description": "app.db.models.admin",
+        "isExtraImport": true,
+        "detail": "app.db.models.admin",
+        "documentation": {}
+    },
+    {
+        "label": "FeatureFlag",
         "importPath": "app.db.models.admin",
         "description": "app.db.models.admin",
         "isExtraImport": true,
@@ -9643,166 +10139,6 @@
         "documentation": {}
     },
     {
-        "label": "User",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "# Module 1: Identity & Access Management IAM",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "Comment",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "File",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "FileVersion",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "Note",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "NoteVersion",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "SmartBacklink",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "PublicLink",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "Mention",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "UserPresence",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "ApprovalRecord",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "SearchIndex",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "CollaborationNotification",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "app.db.models",
-        "description": "app.db.models",
-        "isExtraImport": true,
-        "detail": "app.db.models",
-        "documentation": {}
-    },
-    {
         "label": "CommentCreate",
         "importPath": "app.schemas.collaboration",
         "description": "app.schemas.collaboration",
@@ -10147,6 +10483,1038 @@
         "documentation": {}
     },
     {
+        "label": "WorkspaceMember",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "Workspace",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMember",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceInvitation",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceAccessLog",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceSetting",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "Workspace",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMember",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMember",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "Workspace",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "Workspace",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMember",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceInvitation",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceAccessLog",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceSetting",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "Workspace",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPriorityEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "UserStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "AnalyticsTypeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ReportFormatEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "BillableStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ReportScheduleFrequencyEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NoteAccessEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLinkStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleVisibilityScope",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "OnboardingStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ThemeModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "FontSizeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "FontFamilyEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "InfoDensityModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ColorBlindnessModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationChannelEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationEventTypeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "LanguageEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectGovernanceMode",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectVisibility",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectPriority",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestType",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TagEntityType",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskPriority",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "AttachmentStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "UserStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "AuthProvider",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "AnalyticsTypeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ReportFormatEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "BillableStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ReportScheduleFrequencyEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NoteAccessEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "AttachmentStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLinkStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleVisibilityScope",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationTypeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationChannelEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPriorityEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateLocaleEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "OnboardingStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ThemeModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "FontSizeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "FontFamilyEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "InfoDensityModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ColorBlindnessModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationChannelEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationEventTypeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "LanguageEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectGovernanceMode",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectVisibility",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectPriority",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestType",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectHealthStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "PlanStateEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "DependencyTypeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "SLAStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalExceptionType",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ZoomLevel",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceLevelingStrategy",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskPriority",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "BillableStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "UserStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ApprovalStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NoteAccessEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "AttachmentStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "PublicLinkStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleVisibilityScope",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationTypeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationChannelEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPriorityEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateLocaleEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "OnboardingStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "LanguageEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ThemeModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectGovernanceMode",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ChangeRequestStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectHealthStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "PlanStateEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingModeEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "SLAStatusEnum",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "TaskStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "CategoryService",
         "importPath": "app.services.help_center",
         "description": "app.services.help_center",
@@ -10200,6 +11568,22 @@
         "description": "app.services.help_center",
         "isExtraImport": true,
         "detail": "app.services.help_center",
+        "documentation": {}
+    },
+    {
+        "label": "IndexingTask",
+        "importPath": "app.core.background_tasks",
+        "description": "app.core.background_tasks",
+        "isExtraImport": true,
+        "detail": "app.core.background_tasks",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationTask",
+        "importPath": "app.core.background_tasks",
+        "description": "app.core.background_tasks",
+        "isExtraImport": true,
+        "detail": "app.core.background_tasks",
         "documentation": {}
     },
     {
@@ -11259,894 +12643,6 @@
         "documentation": {}
     },
     {
-        "label": "NotificationPriorityEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TaskStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "UserStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "AnalyticsTypeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ReportFormatEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TimesheetStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "BillableStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ReportScheduleFrequencyEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ApprovalStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "NoteAccessEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "PublicLinkStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ArticleStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ArticleVisibilityScope",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "OnboardingStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ThemeModeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "FontSizeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "FontFamilyEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "InfoDensityModeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ColorBlindnessModeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationChannelEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationEventTypeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "LanguageEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectGovernanceMode",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectVisibility",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectPriority",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ChangeRequestStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ChangeRequestType",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TagEntityType",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TaskPriority",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TaskStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "AttachmentStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ApprovalStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "UserStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "AuthProvider",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceRole",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceRole",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "AnalyticsTypeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ReportFormatEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TimesheetStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "BillableStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ReportScheduleFrequencyEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ApprovalStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "NoteAccessEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "AttachmentStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "PublicLinkStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ArticleStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ArticleVisibilityScope",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationTypeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationChannelEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationPriorityEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TemplateLocaleEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "OnboardingStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ThemeModeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "FontSizeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "FontFamilyEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "InfoDensityModeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ColorBlindnessModeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationChannelEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationEventTypeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "LanguageEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectGovernanceMode",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectVisibility",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectRole",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectPriority",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ChangeRequestStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ChangeRequestType",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectHealthStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "PlanStateEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "SchedulingModeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "DependencyTypeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "SLAStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "PersonalExceptionType",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ZoomLevel",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ResourceLevelingStrategy",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TaskStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TaskPriority",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TimesheetStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "BillableStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "UserStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ApprovalStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "NoteAccessEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "AttachmentStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "PublicLinkStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ArticleStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationTypeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationChannelEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationPriorityEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TemplateLocaleEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "OnboardingStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "LanguageEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ThemeModeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectRole",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectGovernanceMode",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceRole",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ChangeRequestStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectHealthStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "PlanStateEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "SchedulingModeEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "SLAStatusEnum",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectRole",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TaskStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "TaskStatus",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectRole",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceRole",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceRole",
-        "importPath": "app.db.enums",
-        "description": "app.db.enums",
-        "isExtraImport": true,
-        "detail": "app.db.enums",
-        "documentation": {}
-    },
-    {
         "label": "Notification",
         "importPath": "app.db.models.notifications",
         "description": "app.db.models.notifications",
@@ -12478,6 +12974,14 @@
     },
     {
         "label": "TourStepCreate",
+        "importPath": "app.schemas.onboarding",
+        "description": "app.schemas.onboarding",
+        "isExtraImport": true,
+        "detail": "app.schemas.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "TourSessionResponse",
         "importPath": "app.schemas.onboarding",
         "description": "app.schemas.onboarding",
         "isExtraImport": true,
@@ -12901,6 +13405,14 @@
         "documentation": {}
     },
     {
+        "label": "UserSettingsUpdate",
+        "importPath": "app.schemas.personalization",
+        "description": "app.schemas.personalization",
+        "isExtraImport": true,
+        "detail": "app.schemas.personalization",
+        "documentation": {}
+    },
+    {
         "label": "UserSettingsCreate",
         "importPath": "app.schemas.personalization",
         "description": "app.schemas.personalization",
@@ -13062,6 +13574,14 @@
     },
     {
         "label": "LocalizationService",
+        "importPath": "app.services.personalization",
+        "description": "app.services.personalization",
+        "isExtraImport": true,
+        "detail": "app.services.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalizationService",
         "importPath": "app.services.personalization",
         "description": "app.services.personalization",
         "isExtraImport": true,
@@ -13789,6 +14309,14 @@
         "documentation": {}
     },
     {
+        "label": "SubscriptionService",
+        "importPath": "app.services.subscription",
+        "description": "app.services.subscription",
+        "isExtraImport": true,
+        "detail": "app.services.subscription",
+        "documentation": {}
+    },
+    {
         "label": "PlanResponse",
         "importPath": "app.schemas.subscription",
         "description": "app.schemas.subscription",
@@ -14422,6 +14950,110 @@
         "documentation": {}
     },
     {
+        "label": "ArticleSearchIndex",
+        "importPath": "app.db.models.help_center",
+        "description": "app.db.models.help_center",
+        "isExtraImport": true,
+        "detail": "app.db.models.help_center",
+        "documentation": {}
+    },
+    {
+        "label": "Article",
+        "importPath": "app.db.models.help_center",
+        "description": "app.db.models.help_center",
+        "isExtraImport": true,
+        "detail": "app.db.models.help_center",
+        "documentation": {}
+    },
+    {
+        "label": "Article",
+        "importPath": "app.db.models.help_center",
+        "description": "app.db.models.help_center",
+        "isExtraImport": true,
+        "detail": "app.db.models.help_center",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleVersion",
+        "importPath": "app.db.models.help_center",
+        "description": "app.db.models.help_center",
+        "isExtraImport": true,
+        "detail": "app.db.models.help_center",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleTranslation",
+        "importPath": "app.db.models.help_center",
+        "description": "app.db.models.help_center",
+        "isExtraImport": true,
+        "detail": "app.db.models.help_center",
+        "documentation": {}
+    },
+    {
+        "label": "Category",
+        "importPath": "app.db.models.help_center",
+        "description": "app.db.models.help_center",
+        "isExtraImport": true,
+        "detail": "app.db.models.help_center",
+        "documentation": {}
+    },
+    {
+        "label": "RouteMapping",
+        "importPath": "app.db.models.help_center",
+        "description": "app.db.models.help_center",
+        "isExtraImport": true,
+        "detail": "app.db.models.help_center",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleFeedback",
+        "importPath": "app.db.models.help_center",
+        "description": "app.db.models.help_center",
+        "isExtraImport": true,
+        "detail": "app.db.models.help_center",
+        "documentation": {}
+    },
+    {
+        "label": "FailedSearch",
+        "importPath": "app.db.models.help_center",
+        "description": "app.db.models.help_center",
+        "isExtraImport": true,
+        "detail": "app.db.models.help_center",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleVisibility",
+        "importPath": "app.db.models.help_center",
+        "description": "app.db.models.help_center",
+        "isExtraImport": true,
+        "detail": "app.db.models.help_center",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleSearchIndex",
+        "importPath": "app.db.models.help_center",
+        "description": "app.db.models.help_center",
+        "isExtraImport": true,
+        "detail": "app.db.models.help_center",
+        "documentation": {}
+    },
+    {
+        "label": "vector_search_service",
+        "importPath": "app.core.vector_search",
+        "description": "app.core.vector_search",
+        "isExtraImport": true,
+        "detail": "app.core.vector_search",
+        "documentation": {}
+    },
+    {
+        "label": "vector_search_service",
+        "importPath": "app.core.vector_search",
+        "description": "app.core.vector_search",
+        "isExtraImport": true,
+        "detail": "app.core.vector_search",
+        "documentation": {}
+    },
+    {
         "label": "BaseSettings",
         "importPath": "pydantic_settings",
         "description": "pydantic_settings",
@@ -14495,6 +15127,15 @@
         "importPath": "re",
         "description": "re",
         "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
         "documentation": {}
     },
     {
@@ -15098,6 +15739,22 @@
         "documentation": {}
     },
     {
+        "label": "Task",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
         "label": "TaskDependency",
         "importPath": "app.db.models.tasks",
         "description": "app.db.models.tasks",
@@ -15170,11 +15827,27 @@
         "documentation": {}
     },
     {
-        "label": "BaseRepository",
-        "importPath": "app.db.repositories.base",
-        "description": "app.db.repositories.base",
+        "label": "Task",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
         "isExtraImport": true,
-        "detail": "app.db.repositories.base",
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskList",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
         "documentation": {}
     },
     {
@@ -15186,107 +15859,19 @@
         "documentation": {}
     },
     {
-        "label": "Workspace",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "label": "BaseRepository",
+        "importPath": "app.db.repositories.base",
+        "description": "app.db.repositories.base",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.db.repositories.base",
         "documentation": {}
     },
     {
-        "label": "WorkspaceMember",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceInvitation",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceAccessLog",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceSetting",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "Workspace",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceMember",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "Workspace",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "Workspace",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceMember",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceInvitation",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceAccessLog",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceSetting",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "enum",
         "documentation": {}
     },
     {
@@ -15916,15 +16501,6 @@
         "documentation": {}
     },
     {
-        "label": "hashlib",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "hashlib",
-        "description": "hashlib",
-        "detail": "hashlib",
-        "documentation": {}
-    },
-    {
         "label": "secrets",
         "kind": 6,
         "isExtraImport": true,
@@ -15934,83 +16510,51 @@
         "documentation": {}
     },
     {
+        "label": "TaskRepository",
+        "importPath": "app.db.repositories.task_repo",
+        "description": "app.db.repositories.task_repo",
+        "isExtraImport": true,
+        "detail": "app.db.repositories.task_repo",
+        "documentation": {}
+    },
+    {
+        "label": "TaskRepository",
+        "importPath": "app.db.repositories.task_repo",
+        "description": "app.db.repositories.task_repo",
+        "isExtraImport": true,
+        "detail": "app.db.repositories.task_repo",
+        "documentation": {}
+    },
+    {
+        "label": "TaskRepository",
+        "importPath": "app.db.repositories.task_repo",
+        "description": "app.db.repositories.task_repo",
+        "isExtraImport": true,
+        "detail": "app.db.repositories.task_repo",
+        "documentation": {}
+    },
+    {
+        "label": "TaskRepository",
+        "importPath": "app.db.repositories.task_repo",
+        "description": "app.db.repositories.task_repo",
+        "isExtraImport": true,
+        "detail": "app.db.repositories.task_repo",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListRepository",
+        "importPath": "app.db.repositories.task_repo",
+        "description": "app.db.repositories.task_repo",
+        "isExtraImport": true,
+        "detail": "app.db.repositories.task_repo",
+        "documentation": {}
+    },
+    {
         "label": "fnmatch",
         "importPath": "fnmatch",
         "description": "fnmatch",
         "isExtraImport": true,
         "detail": "fnmatch",
-        "documentation": {}
-    },
-    {
-        "label": "Article",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
-        "isExtraImport": true,
-        "detail": "app.db.models.help_center",
-        "documentation": {}
-    },
-    {
-        "label": "ArticleVersion",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
-        "isExtraImport": true,
-        "detail": "app.db.models.help_center",
-        "documentation": {}
-    },
-    {
-        "label": "ArticleTranslation",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
-        "isExtraImport": true,
-        "detail": "app.db.models.help_center",
-        "documentation": {}
-    },
-    {
-        "label": "Category",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
-        "isExtraImport": true,
-        "detail": "app.db.models.help_center",
-        "documentation": {}
-    },
-    {
-        "label": "RouteMapping",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
-        "isExtraImport": true,
-        "detail": "app.db.models.help_center",
-        "documentation": {}
-    },
-    {
-        "label": "ArticleFeedback",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
-        "isExtraImport": true,
-        "detail": "app.db.models.help_center",
-        "documentation": {}
-    },
-    {
-        "label": "FailedSearch",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
-        "isExtraImport": true,
-        "detail": "app.db.models.help_center",
-        "documentation": {}
-    },
-    {
-        "label": "ArticleVisibility",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
-        "isExtraImport": true,
-        "detail": "app.db.models.help_center",
-        "documentation": {}
-    },
-    {
-        "label": "ArticleSearchIndex",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
-        "isExtraImport": true,
-        "detail": "app.db.models.help_center",
         "documentation": {}
     },
     {
@@ -16147,6 +16691,14 @@
         "documentation": {}
     },
     {
+        "label": "UserTourSession",
+        "importPath": "app.db.models.onboarding",
+        "description": "app.db.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.db.models.onboarding",
+        "documentation": {}
+    },
+    {
         "label": "OnboardingChecklist",
         "importPath": "app.db.models.onboarding",
         "description": "app.db.models.onboarding",
@@ -16188,6 +16740,14 @@
     },
     {
         "label": "OnboardingReward",
+        "importPath": "app.db.models.onboarding",
+        "description": "app.db.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.db.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "OnboardingRewardGrant",
         "importPath": "app.db.models.onboarding",
         "description": "app.db.models.onboarding",
         "isExtraImport": true,
@@ -16248,6 +16808,14 @@
         "description": "app.db.models.personalization",
         "isExtraImport": true,
         "detail": "app.db.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "IntegrityError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
         "documentation": {}
     },
     {
@@ -16612,6 +17180,79 @@
         "documentation": {}
     },
     {
+        "label": "Base",
+        "importPath": "app.db.base",
+        "description": "app.db.base",
+        "isExtraImport": true,
+        "detail": "app.db.base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.db.base",
+        "description": "app.db.base",
+        "isExtraImport": true,
+        "detail": "app.db.base",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "TestClient",
+        "importPath": "fastapi.testclient",
+        "description": "fastapi.testclient",
+        "isExtraImport": true,
+        "detail": "fastapi.testclient",
+        "documentation": {}
+    },
+    {
+        "label": "TestClient",
+        "importPath": "fastapi.testclient",
+        "description": "fastapi.testclient",
+        "isExtraImport": true,
+        "detail": "fastapi.testclient",
+        "documentation": {}
+    },
+    {
+        "label": "UserRepository",
+        "importPath": "app.db.repositories.user_repo",
+        "description": "app.db.repositories.user_repo",
+        "isExtraImport": true,
+        "detail": "app.db.repositories.user_repo",
+        "documentation": {}
+    },
+    {
+        "label": "StaticPool",
+        "importPath": "sqlalchemy.pool",
+        "description": "sqlalchemy.pool",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.pool",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncClient",
+        "importPath": "httpx",
+        "description": "httpx",
+        "isExtraImport": true,
+        "detail": "httpx",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app.main",
+        "description": "app.main",
+        "isExtraImport": true,
+        "detail": "app.main",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -16650,6 +17291,60 @@
         "description": "app.db",
         "isExtraImport": true,
         "detail": "app.db",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "description": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "peekOfCode": "def upgrade() -> None:\n    # Module 16 onboarding additions only\n    op.create_table(\n        \"user_tour_sessions\",\n        sa.Column(\"id\", sa.UUID(), nullable=False),\n        sa.Column(\"user_id\", sa.UUID(), nullable=False),\n        sa.Column(\"session_id\", sa.UUID(), nullable=False),\n        sa.Column(\"tour_id\", sa.UUID(), nullable=False),\n        sa.Column(\"started_at\", sa.DateTime(timezone=True), nullable=False),\n        sa.Column(\"completed_at\", sa.DateTime(timezone=True), nullable=True),",
+        "detail": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "description": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "peekOfCode": "def downgrade() -> None:\n    # Module 16 onboarding rollback only\n    op.drop_index(\"ix_onboarding_reward_grants_user\", table_name=\"onboarding_reward_grants\")\n    op.drop_index(\"ix_onboarding_reward_grants_reward\", table_name=\"onboarding_reward_grants\")\n    op.drop_index(\"ix_onboarding_reward_grants_checklist\", table_name=\"onboarding_reward_grants\")\n    op.drop_table(\"onboarding_reward_grants\")\n    op.drop_index(\"ix_user_tour_sessions_user\", table_name=\"user_tour_sessions\")\n    op.drop_index(\"ix_user_tour_sessions_tour\", table_name=\"user_tour_sessions\")\n    op.drop_index(\"ix_user_tour_sessions_session\", table_name=\"user_tour_sessions\")\n    op.drop_table(\"user_tour_sessions\")",
+        "detail": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "documentation": {}
+    },
+    {
+        "label": "revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "description": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "peekOfCode": "revision = \"2cc8dd3c96ed\"\ndown_revision = \"fa5fa299a28a\"\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # Module 16 onboarding additions only\n    op.create_table(\n        \"user_tour_sessions\",\n        sa.Column(\"id\", sa.UUID(), nullable=False),\n        sa.Column(\"user_id\", sa.UUID(), nullable=False),",
+        "detail": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "documentation": {}
+    },
+    {
+        "label": "down_revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "description": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "peekOfCode": "down_revision = \"fa5fa299a28a\"\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # Module 16 onboarding additions only\n    op.create_table(\n        \"user_tour_sessions\",\n        sa.Column(\"id\", sa.UUID(), nullable=False),\n        sa.Column(\"user_id\", sa.UUID(), nullable=False),\n        sa.Column(\"session_id\", sa.UUID(), nullable=False),",
+        "detail": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "documentation": {}
+    },
+    {
+        "label": "branch_labels",
+        "kind": 5,
+        "importPath": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "description": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "peekOfCode": "branch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # Module 16 onboarding additions only\n    op.create_table(\n        \"user_tour_sessions\",\n        sa.Column(\"id\", sa.UUID(), nullable=False),\n        sa.Column(\"user_id\", sa.UUID(), nullable=False),\n        sa.Column(\"session_id\", sa.UUID(), nullable=False),\n        sa.Column(\"tour_id\", sa.UUID(), nullable=False),",
+        "detail": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "documentation": {}
+    },
+    {
+        "label": "depends_on",
+        "kind": 5,
+        "importPath": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "description": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
+        "peekOfCode": "depends_on = None\ndef upgrade() -> None:\n    # Module 16 onboarding additions only\n    op.create_table(\n        \"user_tour_sessions\",\n        sa.Column(\"id\", sa.UUID(), nullable=False),\n        sa.Column(\"user_id\", sa.UUID(), nullable=False),\n        sa.Column(\"session_id\", sa.UUID(), nullable=False),\n        sa.Column(\"tour_id\", sa.UUID(), nullable=False),\n        sa.Column(\"started_at\", sa.DateTime(timezone=True), nullable=False),",
+        "detail": "app.alembic.versions.2cc8dd3c96ed_module16_onboarding_sessions_rewards",
         "documentation": {}
     },
     {
@@ -16704,6 +17399,60 @@
         "description": "app.alembic.versions.37d437544626_initial_migration_create_all_database_",
         "peekOfCode": "depends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('api_scopes',\n    sa.Column('id', sa.UUID(), nullable=False, comment='Global unique UUID for API scope'),\n    sa.Column('scope', sa.String(length=100), nullable=False, comment=\"Scope identifier (e.g., 'tasks:read', 'tasks:write', 'projects:read')\"),\n    sa.Column('description', sa.Text(), nullable=True, comment='Scope description'),\n    sa.Column('created_at', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=False, comment='Timestamp when the record was created'),\n    sa.Column('updated_at', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=False, comment='Timestamp when the record was last updated'),\n    sa.PrimaryKeyConstraint('id', name=op.f('pk_api_scopes'))",
         "detail": "app.alembic.versions.37d437544626_initial_migration_create_all_database_",
+        "documentation": {}
+    },
+    {
+        "label": "upgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "description": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "peekOfCode": "def upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('categories',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('name', sa.String(length=100), nullable=False),\n    sa.Column('slug', sa.String(length=120), nullable=False),\n    sa.Column('parent_id', sa.UUID(), nullable=True),\n    sa.Column('display_order', sa.Integer(), nullable=False),\n    sa.Column('description', sa.Text(), nullable=True),\n    sa.Column('is_active', sa.Boolean(), nullable=False),",
+        "detail": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "documentation": {}
+    },
+    {
+        "label": "downgrade",
+        "kind": 2,
+        "importPath": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "description": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "peekOfCode": "def downgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.drop_index(op.f('ix_workspace_invitations_token_hash'), table_name='workspace_invitations')\n    op.create_index(op.f('ix_workspace_invitations_token_hash'), 'workspace_invitations', ['token_hash'], unique=False)\n    op.drop_column('users', 'full_name')\n    op.add_column('sessions', sa.Column('is_current', sa.BOOLEAN(), autoincrement=False, nullable=False))\n    op.drop_constraint(op.f('uq_sessions_token'), 'sessions', type_='unique')\n    op.drop_index(op.f('ix_sessions_user_id'), table_name='sessions')\n    op.alter_column('sessions', 'revoked_at',\n               existing_type=postgresql.TIMESTAMP(timezone=True),",
+        "detail": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "documentation": {}
+    },
+    {
+        "label": "revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "description": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "peekOfCode": "revision = '38137451d0df'\ndown_revision = '2cc8dd3c96ed'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('categories',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('name', sa.String(length=100), nullable=False),\n    sa.Column('slug', sa.String(length=120), nullable=False),",
+        "detail": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "documentation": {}
+    },
+    {
+        "label": "down_revision",
+        "kind": 5,
+        "importPath": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "description": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "peekOfCode": "down_revision = '2cc8dd3c96ed'\nbranch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('categories',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('name', sa.String(length=100), nullable=False),\n    sa.Column('slug', sa.String(length=120), nullable=False),\n    sa.Column('parent_id', sa.UUID(), nullable=True),",
+        "detail": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "documentation": {}
+    },
+    {
+        "label": "branch_labels",
+        "kind": 5,
+        "importPath": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "description": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "peekOfCode": "branch_labels = None\ndepends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('categories',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('name', sa.String(length=100), nullable=False),\n    sa.Column('slug', sa.String(length=120), nullable=False),\n    sa.Column('parent_id', sa.UUID(), nullable=True),\n    sa.Column('display_order', sa.Integer(), nullable=False),",
+        "detail": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "documentation": {}
+    },
+    {
+        "label": "depends_on",
+        "kind": 5,
+        "importPath": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "description": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
+        "peekOfCode": "depends_on = None\ndef upgrade() -> None:\n    # ### commands auto generated by Alembic - please adjust! ###\n    op.create_table('categories',\n    sa.Column('id', sa.UUID(), nullable=False),\n    sa.Column('name', sa.String(length=100), nullable=False),\n    sa.Column('slug', sa.String(length=120), nullable=False),\n    sa.Column('parent_id', sa.UUID(), nullable=True),\n    sa.Column('display_order', sa.Integer(), nullable=False),\n    sa.Column('description', sa.Text(), nullable=True),",
+        "detail": "app.alembic.versions.38137451d0df_initial_migration_all_55_tables",
         "documentation": {}
     },
     {
@@ -17224,7 +17973,7 @@
         "kind": 2,
         "importPath": "app.alembic.versions.module8_archiving",
         "description": "app.alembic.versions.module8_archiving",
-        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Revert Module 8 tables.\"\"\"\n    # Drop indexes and tables in reverse order\n    op.drop_index('ix_audit_logs_logged_at', table_name='audit_logs')\n    op.drop_index('ix_audit_logs_resource_type', table_name='audit_logs')\n    op.drop_index('ix_audit_logs_action', table_name='audit_logs')\n    op.drop_index('ix_audit_logs_user_id', table_name='audit_logs')\n    op.drop_index('ix_audit_logs_workspace_id', table_name='audit_logs')\n    op.drop_table('audit_logs')\n    op.drop_index('ix_data_retention_logs_executed_at', table_name='data_retention_logs')",
+        "peekOfCode": "def downgrade() -> None:\n    \"\"\"Revert Module 8 tables.\"\"\"\n    # Drop indexes and tables in reverse order\n    bind = op.get_bind()\n    inspector = sa.inspect(bind)\n    if inspector.has_table('audit_logs'):\n        op.drop_index('ix_audit_logs_logged_at', table_name='audit_logs')\n        op.drop_index('ix_audit_logs_resource_type', table_name='audit_logs')\n        op.drop_index('ix_audit_logs_action', table_name='audit_logs')\n        op.drop_index('ix_audit_logs_user_id', table_name='audit_logs')",
         "detail": "app.alembic.versions.module8_archiving",
         "documentation": {}
     },
@@ -18727,7 +19476,7 @@
         "kind": 2,
         "importPath": "app.api.v1.endpoints.help_center",
         "description": "app.api.v1.endpoints.help_center",
-        "peekOfCode": "def list_articles(\n    status: Optional[str] = Query(None),\n    category_id: Optional[UUID] = Query(None),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    service = ArticleService(db)\n    return service.list_articles(status, category_id)\n@router.get(\"/articles/{article_id}\", response_model=ArticleResponse)\ndef get_article(",
+        "peekOfCode": "def list_articles(\n    status: Optional[str] = Query(None),\n    category_id: Optional[UUID] = Query(None),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"List articles with visibility filtering based on user context\"\"\"\n    service = ArticleService(db)\n    # Get user roles from workspace memberships\n    user_roles = (",
         "detail": "app.api.v1.endpoints.help_center",
         "documentation": {}
     },
@@ -18736,7 +19485,7 @@
         "kind": 2,
         "importPath": "app.api.v1.endpoints.help_center",
         "description": "app.api.v1.endpoints.help_center",
-        "peekOfCode": "def get_article(\n    article_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    service = ArticleService(db)\n    article = service.get_article(article_id)\n    if not article:\n        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=\"Article not found\")\n    return article",
+        "peekOfCode": "def get_article(\n    article_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get article with visibility rule enforcement\"\"\"\n    service = ArticleService(db)\n    # Get user roles\n    user_roles = (\n        db.query(WorkspaceMember.role)",
         "detail": "app.api.v1.endpoints.help_center",
         "documentation": {}
     },
@@ -18745,7 +19494,7 @@
         "kind": 2,
         "importPath": "app.api.v1.endpoints.help_center",
         "description": "app.api.v1.endpoints.help_center",
-        "peekOfCode": "def update_article(\n    article_id: UUID,\n    data: ArticleUpdate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    service = ArticleService(db)\n    return service.update_article(article_id, data)\n@router.post(\"/articles/{article_id}/versions\", response_model=ArticleVersionResponse, status_code=status.HTTP_201_CREATED)\ndef create_article_version(",
+        "peekOfCode": "def update_article(\n    article_id: UUID,\n    data: ArticleUpdate,\n    auto_publish: bool = Query(False, description=\"Trigger auto-publish if feature flag enabled\"),\n    background_tasks: BackgroundTasks = None,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update article with feature flag support for auto-publish and notifications\"\"\"\n    service = ArticleService(db)",
         "detail": "app.api.v1.endpoints.help_center",
         "documentation": {}
     },
@@ -18754,7 +19503,7 @@
         "kind": 2,
         "importPath": "app.api.v1.endpoints.help_center",
         "description": "app.api.v1.endpoints.help_center",
-        "peekOfCode": "def create_article_version(\n    article_id: UUID,\n    data: ArticleVersionCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    service = ArticleService(db)\n    data.article_id = article_id\n    version = service.add_version(data, current_user.id)\n    # Update search index with basic keywords/snippet",
+        "peekOfCode": "def create_article_version(\n    article_id: UUID,\n    data: ArticleVersionCreate,\n    background_tasks: BackgroundTasks,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Create new article version with background indexing (<= 5 min SLA)\"\"\"\n    service = ArticleService(db)\n    data.article_id = article_id",
         "detail": "app.api.v1.endpoints.help_center",
         "documentation": {}
     },
@@ -18826,7 +19575,7 @@
         "kind": 2,
         "importPath": "app.api.v1.endpoints.help_center",
         "description": "app.api.v1.endpoints.help_center",
-        "peekOfCode": "def search_articles(\n    query: str = Query(..., min_length=1),\n    locale: Optional[str] = Query(None),\n    limit: int = Query(10, ge=1, le=50),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    service = SearchService(db)\n    results = service.search(SearchQuery(query=query, locale=locale, limit=limit))\n    formatted = [",
+        "peekOfCode": "def search_articles(\n    query: str = Query(..., min_length=1),\n    locale: Optional[str] = Query(None),\n    limit: int = Query(10, ge=1, le=50),\n    use_semantic: bool = Query(True, description=\"Use semantic vector search if available\"),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Search articles with semantic vector search + keyword fallback\"\"\"\n    service = SearchService(db)",
         "detail": "app.api.v1.endpoints.help_center",
         "documentation": {}
     },
@@ -19213,7 +19962,25 @@
         "kind": 2,
         "importPath": "app.api.v1.endpoints.onboarding",
         "description": "app.api.v1.endpoints.onboarding",
-        "peekOfCode": "def create_tour_step(\n    tour_id: UUID,\n    data: TourStepCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    service = TourService(db)\n    data.tour_id = tour_id\n    return service.create_tour_step(data)\n# ======= Checklist Endpoints =======",
+        "peekOfCode": "def create_tour_step(\n    tour_id: UUID,\n    data: TourStepCreate,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    service = TourService(db)\n    data.tour_id = tour_id\n    return service.create_tour_step(data)\n@router.post(\"/tours/{tour_id}/start\", response_model=TourSessionResponse)",
+        "detail": "app.api.v1.endpoints.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "start_tour",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.onboarding",
+        "description": "app.api.v1.endpoints.onboarding",
+        "peekOfCode": "def start_tour(\n    tour_id: UUID,\n    db: Session = Depends(get_db),\n    current_user_session: tuple = Depends(get_current_user_with_session),\n):\n    user, session_id = current_user_session\n    service = TourService(db)\n    try:\n        return service.start_tour(user.id, session_id, tour_id)\n    except ValueError as exc:",
+        "detail": "app.api.v1.endpoints.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "skip_tour",
+        "kind": 2,
+        "importPath": "app.api.v1.endpoints.onboarding",
+        "description": "app.api.v1.endpoints.onboarding",
+        "peekOfCode": "def skip_tour(\n    tour_id: UUID,\n    db: Session = Depends(get_db),\n    current_user_session: tuple = Depends(get_current_user_with_session),\n):\n    user, session_id = current_user_session\n    service = TourService(db)\n    try:\n        return service.skip_tour(user.id, session_id, tour_id)\n    except PermissionError as exc:",
         "detail": "app.api.v1.endpoints.onboarding",
         "documentation": {}
     },
@@ -20307,6 +21074,51 @@
         "documentation": {}
     },
     {
+        "label": "IndexingTask",
+        "kind": 6,
+        "importPath": "app.core.background_tasks",
+        "description": "app.core.background_tasks",
+        "peekOfCode": "class IndexingTask:\n    \"\"\"Article indexing background task with SLA tracking\"\"\"\n    SLA_MINUTES = 5  # Maximum 5 minutes for indexing\n    @staticmethod\n    def index_article(\n        article_id: UUID,\n        title: str,\n        content: str,\n        db: Session\n    ) -> bool:",
+        "detail": "app.core.background_tasks",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationTask",
+        "kind": 6,
+        "importPath": "app.core.background_tasks",
+        "description": "app.core.background_tasks",
+        "peekOfCode": "class NotificationTask:\n    \"\"\"Article notification background task\"\"\"\n    @staticmethod\n    def notify_article_published(\n        article_id: UUID,\n        article_title: str,\n        db: Session\n    ) -> bool:\n        \"\"\"\n        Send notification when article is published.",
+        "detail": "app.core.background_tasks",
+        "documentation": {}
+    },
+    {
+        "label": "queue_article_indexing",
+        "kind": 2,
+        "importPath": "app.core.background_tasks",
+        "description": "app.core.background_tasks",
+        "peekOfCode": "def queue_article_indexing(article_id: UUID, title: str, content: str):\n    \"\"\"\n    Queue article for background indexing.\n    Production: Use Celery, RQ, or ARQ for distributed task queue\n    Development: Inline execution with FastAPI BackgroundTasks\n    \"\"\"\n    db = SessionLocal()\n    try:\n        IndexingTask.index_article(article_id, title, content, db)\n    finally:",
+        "detail": "app.core.background_tasks",
+        "documentation": {}
+    },
+    {
+        "label": "queue_article_notification",
+        "kind": 2,
+        "importPath": "app.core.background_tasks",
+        "description": "app.core.background_tasks",
+        "peekOfCode": "def queue_article_notification(article_id: UUID, title: str):\n    \"\"\"Queue article publication notification\"\"\"\n    db = SessionLocal()\n    try:\n        NotificationTask.notify_article_published(article_id, title, db)\n    finally:\n        db.close()",
+        "detail": "app.core.background_tasks",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "app.core.background_tasks",
+        "description": "app.core.background_tasks",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass IndexingTask:\n    \"\"\"Article indexing background task with SLA tracking\"\"\"\n    SLA_MINUTES = 5  # Maximum 5 minutes for indexing\n    @staticmethod\n    def index_article(\n        article_id: UUID,\n        title: str,\n        content: str,\n        db: Session",
+        "detail": "app.core.background_tasks",
+        "documentation": {}
+    },
+    {
         "label": "Settings",
         "kind": 6,
         "importPath": "app.core.config",
@@ -20475,6 +21287,24 @@
         "description": "app.core.security",
         "peekOfCode": "pwd_context = CryptContext(\n    schemes=[\"bcrypt\"],\n    deprecated=\"auto\",\n    bcrypt__rounds=12  # Strong hashing\n)\n# ============= Password & Validation Functions =============\ndef hash_password(password: str) -> str:\n    \"\"\"\n    Hash a password using bcrypt.\n    Args:",
         "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "VectorSearchService",
+        "kind": 6,
+        "importPath": "app.core.vector_search",
+        "description": "app.core.vector_search",
+        "peekOfCode": "class VectorSearchService:\n    \"\"\"\n    Semantic search using embeddings.\n    Production Integration Points:\n    - OpenAI Embeddings API (text-embedding-3-small)\n    - PostgreSQL pgvector extension\n    - Pinecone/Weaviate vector database\n    Current Implementation: Mock service with keyword-based fallback\n    \"\"\"\n    def __init__(self):",
+        "detail": "app.core.vector_search",
+        "documentation": {}
+    },
+    {
+        "label": "vector_search_service",
+        "kind": 5,
+        "importPath": "app.core.vector_search",
+        "description": "app.core.vector_search",
+        "peekOfCode": "vector_search_service = VectorSearchService()",
+        "detail": "app.core.vector_search",
         "documentation": {}
     },
     {
@@ -21261,6 +22091,15 @@
         "documentation": {}
     },
     {
+        "label": "UserTourSession",
+        "kind": 6,
+        "importPath": "app.db.models.onboarding",
+        "description": "app.db.models.onboarding",
+        "peekOfCode": "class UserTourSession(Base, TimestampMixin):\n    \"\"\"\n    Track tour sessions per user session to enforce frequency cap (1 tour/session).\n    \"\"\"\n    __tablename__ = \"user_tour_sessions\"\n    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey(\"users.id\", ondelete=\"CASCADE\"))\n    session_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)\n    tour_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey(\"product_tours.id\", ondelete=\"CASCADE\"))\n    started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow, nullable=False)",
+        "detail": "app.db.models.onboarding",
+        "documentation": {}
+    },
+    {
         "label": "OnboardingChecklist",
         "kind": 6,
         "importPath": "app.db.models.onboarding",
@@ -21293,6 +22132,15 @@
         "importPath": "app.db.models.onboarding",
         "description": "app.db.models.onboarding",
         "peekOfCode": "class OnboardingReward(Base, TimestampMixin):\n    \"\"\"Reward granted after checklist completion\"\"\"\n    __tablename__ = \"onboarding_rewards\"\n    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    checklist_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey(\"onboarding_checklists.id\", ondelete=\"CASCADE\"), unique=True)\n    reward_type: Mapped[str] = mapped_column(String(100), nullable=False)  # trial_extension, badge, credit\n    reward_value: Mapped[Optional[dict]] = mapped_column(JSONB)\n    description: Mapped[Optional[str]] = mapped_column(Text)\n    is_active: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)\n    checklist = relationship(\"OnboardingChecklist\", back_populates=\"reward\")",
+        "detail": "app.db.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "OnboardingRewardGrant",
+        "kind": 6,
+        "importPath": "app.db.models.onboarding",
+        "description": "app.db.models.onboarding",
+        "peekOfCode": "class OnboardingRewardGrant(Base, TimestampMixin):\n    \"\"\"\n    Record reward grants to prevent duplicate awarding.\n    \"\"\"\n    __tablename__ = \"onboarding_reward_grants\"\n    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    reward_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey(\"onboarding_rewards.id\", ondelete=\"CASCADE\"))\n    checklist_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey(\"onboarding_checklists.id\", ondelete=\"CASCADE\"))\n    user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey(\"users.id\", ondelete=\"CASCADE\"))\n    granted_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow, nullable=False)",
         "detail": "app.db.models.onboarding",
         "documentation": {}
     },
@@ -25432,7 +26280,7 @@
         "kind": 6,
         "importPath": "app.schemas.onboarding",
         "description": "app.schemas.onboarding",
-        "peekOfCode": "class TourStepCreate(TourStepBase):\n    pass\nclass TourStepResponse(TourStepBase):\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    model_config = ConfigDict(from_attributes=True)\n# ======= Checklist Schemas =======\nclass OnboardingChecklistBase(BaseModel):\n    name: str = Field(..., min_length=1, max_length=255)",
+        "peekOfCode": "class TourStepCreate(TourStepBase):\n    pass\nclass TourStepResponse(TourStepBase):\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    model_config = ConfigDict(from_attributes=True)\nclass TourSessionResponse(BaseModel):\n    id: UUID\n    user_id: UUID",
         "detail": "app.schemas.onboarding",
         "documentation": {}
     },
@@ -25441,7 +26289,16 @@
         "kind": 6,
         "importPath": "app.schemas.onboarding",
         "description": "app.schemas.onboarding",
-        "peekOfCode": "class TourStepResponse(TourStepBase):\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    model_config = ConfigDict(from_attributes=True)\n# ======= Checklist Schemas =======\nclass OnboardingChecklistBase(BaseModel):\n    name: str = Field(..., min_length=1, max_length=255)\n    description: Optional[str] = None\n    is_active: bool = True",
+        "peekOfCode": "class TourStepResponse(TourStepBase):\n    id: UUID\n    created_at: datetime\n    updated_at: datetime\n    model_config = ConfigDict(from_attributes=True)\nclass TourSessionResponse(BaseModel):\n    id: UUID\n    user_id: UUID\n    session_id: UUID\n    tour_id: UUID",
+        "detail": "app.schemas.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "TourSessionResponse",
+        "kind": 6,
+        "importPath": "app.schemas.onboarding",
+        "description": "app.schemas.onboarding",
+        "peekOfCode": "class TourSessionResponse(BaseModel):\n    id: UUID\n    user_id: UUID\n    session_id: UUID\n    tour_id: UUID\n    started_at: datetime\n    completed_at: Optional[datetime]\n    skipped_at: Optional[datetime]\n    created_at: datetime\n    updated_at: datetime",
         "detail": "app.schemas.onboarding",
         "documentation": {}
     },
@@ -27732,6 +28589,24 @@
         "documentation": {}
     },
     {
+        "label": "FieldType",
+        "kind": 6,
+        "importPath": "app.services.custom_fields_service",
+        "description": "app.services.custom_fields_service",
+        "peekOfCode": "class FieldType:\n    \"\"\"Custom field types.\"\"\"\n    TEXT = \"TEXT\"\n    NUMBER = \"NUMBER\"\n    DATE = \"DATE\"\n    BOOLEAN = \"BOOLEAN\"\n    SELECT = \"SELECT\"\n    MULTISELECT = \"MULTISELECT\"\n    URL = \"URL\"\n    EMAIL = \"EMAIL\"",
+        "detail": "app.services.custom_fields_service",
+        "documentation": {}
+    },
+    {
+        "label": "CustomFieldsService",
+        "kind": 6,
+        "importPath": "app.services.custom_fields_service",
+        "description": "app.services.custom_fields_service",
+        "peekOfCode": "class CustomFieldsService:\n    \"\"\"Service for managing custom fields on entities.\"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n        self.task_repo = TaskRepository(db)\n    def define_custom_field(\n        self,\n        workspace_id: UUID,\n        field_name: str,\n        field_type: str,",
+        "detail": "app.services.custom_fields_service",
+        "documentation": {}
+    },
+    {
         "label": "EmailService",
         "kind": 6,
         "importPath": "app.services.email",
@@ -27808,7 +28683,16 @@
         "kind": 6,
         "importPath": "app.services.help_center",
         "description": "app.services.help_center",
-        "peekOfCode": "class SearchService:\n    \"\"\"Search for articles using keyword + semantic index (placeholder)\"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def search(self, query: SearchQuery) -> List[ArticleSearchIndex]:\n        q = f\"%{query.query.lower()}%\"\n        return (\n            self.db.query(ArticleSearchIndex)\n            .join(Article)\n            .filter(Article.status == ArticleStatus.PUBLISHED)",
+        "peekOfCode": "class SearchService:\n    \"\"\"Search for articles using keyword + semantic vector search\"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def search(\n        self,\n        query: SearchQuery,\n        use_semantic: bool = True,\n        user_id: Optional[UUID] = None,\n        user_roles: Optional[List[str]] = None",
+        "detail": "app.services.help_center",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "app.services.help_center",
+        "description": "app.services.help_center",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass CategoryService:\n    \"\"\"Manage article categories\"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n    def create_category(self, data: CategoryCreate) -> Category:\n        category = Category(**data.model_dump())\n        self.db.add(category)\n        self.db.commit()\n        self.db.refresh(category)",
         "detail": "app.services.help_center",
         "documentation": {}
     },
@@ -28092,6 +28976,24 @@
         "documentation": {}
     },
     {
+        "label": "RecurrencePattern",
+        "kind": 6,
+        "importPath": "app.services.recurring_task_service",
+        "description": "app.services.recurring_task_service",
+        "peekOfCode": "class RecurrencePattern(str, Enum):\n    \"\"\"Recurrence patterns for tasks.\"\"\"\n    DAILY = \"DAILY\"\n    WEEKLY = \"WEEKLY\"\n    MONTHLY = \"MONTHLY\"\n    YEARLY = \"YEARLY\"\n    CUSTOM = \"CUSTOM\"\nclass RecurringTaskService:\n    \"\"\"Service for managing recurring tasks.\"\"\"\n    def __init__(self, db: Session):",
+        "detail": "app.services.recurring_task_service",
+        "documentation": {}
+    },
+    {
+        "label": "RecurringTaskService",
+        "kind": 6,
+        "importPath": "app.services.recurring_task_service",
+        "description": "app.services.recurring_task_service",
+        "peekOfCode": "class RecurringTaskService:\n    \"\"\"Service for managing recurring tasks.\"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n        self.task_repo = TaskRepository(db)\n    def create_recurring_task(\n        self,\n        title: str,\n        project_id: UUID,\n        created_by: UUID,",
+        "detail": "app.services.recurring_task_service",
+        "documentation": {}
+    },
+    {
         "label": "PlanStateService",
         "kind": 6,
         "importPath": "app.services.scheduling",
@@ -28287,6 +29189,15 @@
         "description": "app.services.task",
         "peekOfCode": "class CommentService:\n    \"\"\"Service for task comments\"\"\"\n    @staticmethod\n    def create_comment(\n        db: Session,\n        comment_data: CommentCreate,\n        user_id: uuid.UUID,\n    ) -> Comment:\n        \"\"\"Create comment and auto-add user as watcher\"\"\"\n        # Verify task exists and user has access",
         "detail": "app.services.task",
+        "documentation": {}
+    },
+    {
+        "label": "TaskTemplateService",
+        "kind": 6,
+        "importPath": "app.services.task_template_service",
+        "description": "app.services.task_template_service",
+        "peekOfCode": "class TaskTemplateService:\n    \"\"\"Service for managing task templates.\"\"\"\n    def __init__(self, db: Session):\n        self.db = db\n        self.task_repo = TaskRepository(db)\n    def create_template(\n        self,\n        title: str,\n        description: Optional[str],\n        workspace_id: UUID,",
+        "detail": "app.services.task_template_service",
         "documentation": {}
     },
     {
@@ -28515,6 +29426,150 @@
         "documentation": {}
     },
     {
+        "label": "TestAuthenticationAPI",
+        "kind": 6,
+        "importPath": "tests.test_api.test_auth_api",
+        "description": "tests.test_api.test_auth_api",
+        "peekOfCode": "class TestAuthenticationAPI:\n    \"\"\"Test suite for authentication endpoints.\"\"\"\n    def test_register_user(self, client: TestClient):\n        \"\"\"Test user registration endpoint.\"\"\"\n        response = client.post(\n            \"/api/auth/register\",\n            json={\n                \"email\": \"newuser@example.com\",\n                \"full_name\": \"New User\",\n                \"password\": \"SecurePassword123!\"",
+        "detail": "tests.test_api.test_auth_api",
+        "documentation": {}
+    },
+    {
+        "label": "TestWorkspaceAPI",
+        "kind": 6,
+        "importPath": "tests.test_api.test_auth_api",
+        "description": "tests.test_api.test_auth_api",
+        "peekOfCode": "class TestWorkspaceAPI:\n    \"\"\"Test suite for workspace endpoints.\"\"\"\n    @pytest.fixture\n    def auth_headers(self, client: TestClient):\n        \"\"\"Create authenticated user and return headers.\"\"\"\n        client.post(\n            \"/api/auth/register\",\n            json={\n                \"email\": \"workspace@example.com\",\n                \"full_name\": \"Workspace User\",",
+        "detail": "tests.test_api.test_auth_api",
+        "documentation": {}
+    },
+    {
+        "label": "TestTaskRepository",
+        "kind": 6,
+        "importPath": "tests.test_repositories.test_task_repo",
+        "description": "tests.test_repositories.test_task_repo",
+        "peekOfCode": "class TestTaskRepository:\n    \"\"\"Test suite for TaskRepository.\"\"\"\n    @pytest.fixture\n    def setup_dependencies(self, db_session):\n        \"\"\"Setup user, workspace, and project for tasks.\"\"\"\n        from app.db.repositories.user_repo import UserRepository\n        from app.db.repositories.workspace_repo import WorkspaceRepository\n        from app.db.repositories.project_repo import ProjectRepository\n        # Create user\n        user_repo = UserRepository(db_session)",
+        "detail": "tests.test_repositories.test_task_repo",
+        "documentation": {}
+    },
+    {
+        "label": "TestTaskListRepository",
+        "kind": 6,
+        "importPath": "tests.test_repositories.test_task_repo",
+        "description": "tests.test_repositories.test_task_repo",
+        "peekOfCode": "class TestTaskListRepository:\n    \"\"\"Test suite for TaskListRepository.\"\"\"\n    @pytest.fixture\n    def setup_project(self, db_session):\n        \"\"\"Setup project for task lists.\"\"\"\n        from app.db.repositories.user_repo import UserRepository\n        from app.db.repositories.workspace_repo import WorkspaceRepository\n        from app.db.repositories.project_repo import ProjectRepository\n        user_repo = UserRepository(db_session)\n        user = user_repo.create(",
+        "detail": "tests.test_repositories.test_task_repo",
+        "documentation": {}
+    },
+    {
+        "label": "TestUserRepository",
+        "kind": 6,
+        "importPath": "tests.test_repositories.test_user_repo",
+        "description": "tests.test_repositories.test_user_repo",
+        "peekOfCode": "class TestUserRepository:\n    \"\"\"Test suite for UserRepository.\"\"\"\n    def test_create_user(self, db_session):\n        \"\"\"Test creating a new user.\"\"\"\n        repo = UserRepository(db_session)\n        user_data = {\n            \"email\": \"newuser@example.com\",\n            \"full_name\": \"New User\",\n            \"password_hash\": \"hashed_password\",\n            \"is_active\": True",
+        "detail": "tests.test_repositories.test_user_repo",
+        "documentation": {}
+    },
+    {
+        "label": "TestRoleRepository",
+        "kind": 6,
+        "importPath": "tests.test_repositories.test_user_repo",
+        "description": "tests.test_repositories.test_user_repo",
+        "peekOfCode": "class TestRoleRepository:\n    \"\"\"Test suite for Role operations.\"\"\"\n    def test_create_role(self, db_session):\n        \"\"\"Test creating a role.\"\"\"\n        from app.db.repositories.user_repo import RoleRepository\n        repo = RoleRepository(db_session)\n        role = repo.create(\n            name=\"admin\",\n            description=\"Administrator role\"\n        )",
+        "detail": "tests.test_repositories.test_user_repo",
+        "documentation": {}
+    },
+    {
+        "label": "TestWorkspaceRepository",
+        "kind": 6,
+        "importPath": "tests.test_repositories.test_workspace_repo",
+        "description": "tests.test_repositories.test_workspace_repo",
+        "peekOfCode": "class TestWorkspaceRepository:\n    \"\"\"Test suite for WorkspaceRepository.\"\"\"\n    def test_create_workspace(self, db_session, sample_user_data):\n        \"\"\"Test creating a new workspace.\"\"\"\n        from app.db.repositories.user_repo import UserRepository\n        # Create owner user first\n        user_repo = UserRepository(db_session)\n        owner = user_repo.create(**sample_user_data)\n        db_session.commit()\n        # Create workspace",
+        "detail": "tests.test_repositories.test_workspace_repo",
+        "documentation": {}
+    },
+    {
+        "label": "event_loop",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def event_loop() -> Generator:\n    \"\"\"Create an instance of the default event loop for the test session.\"\"\"\n    loop = asyncio.get_event_loop_policy().new_event_loop()\n    yield loop\n    loop.close()\n@pytest.fixture(scope=\"function\")\ndef engine():\n    \"\"\"Create a test database engine with in-memory SQLite.\"\"\"\n    test_engine = create_engine(\n        TEST_DATABASE_URL,",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def engine():\n    \"\"\"Create a test database engine with in-memory SQLite.\"\"\"\n    test_engine = create_engine(\n        TEST_DATABASE_URL,\n        connect_args={\"check_same_thread\": False},\n        poolclass=StaticPool,\n    )\n    # Enable foreign key constraints for SQLite\n    @event.listens_for(test_engine, \"connect\")\n    def set_sqlite_pragma(dbapi_conn, connection_record):",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "db_session",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def db_session(engine) -> Generator[Session, None, None]:\n    \"\"\"Create a fresh database session for each test.\"\"\"\n    TestingSessionLocal = sessionmaker(\n        autocommit=False,\n        autoflush=False,\n        bind=engine\n    )\n    session = TestingSessionLocal()\n    try:\n        yield session",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def client(db_session) -> Generator[TestClient, None, None]:\n    \"\"\"Create a test client with database session override.\"\"\"\n    def override_get_db():\n        try:\n            yield db_session\n        finally:\n            pass\n    app.dependency_overrides[get_db] = override_get_db\n    with TestClient(app) as test_client:\n        yield test_client",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "sample_user_data",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def sample_user_data():\n    \"\"\"Sample user data for testing.\"\"\"\n    return {\n        \"email\": \"test@example.com\",\n        \"full_name\": \"Test User\",\n        \"password\": \"SecurePassword123!\",\n        \"is_active\": True,\n        \"is_verified\": False\n    }\n@pytest.fixture",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "sample_workspace_data",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def sample_workspace_data():\n    \"\"\"Sample workspace data for testing.\"\"\"\n    return {\n        \"name\": \"Test Workspace\",\n        \"slug\": \"test-workspace\",\n        \"description\": \"A test workspace\",\n        \"is_active\": True\n    }\n@pytest.fixture\ndef sample_project_data():",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "sample_project_data",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def sample_project_data():\n    \"\"\"Sample project data for testing.\"\"\"\n    return {\n        \"name\": \"Test Project\",\n        \"key\": \"TEST\",\n        \"description\": \"A test project\",\n        \"status\": \"NOT_STARTED\",\n        \"governance_mode\": \"SIMPLE\"\n    }\n@pytest.fixture",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "sample_task_data",
+        "kind": 2,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "def sample_task_data():\n    \"\"\"Sample task data for testing.\"\"\"\n    return {\n        \"title\": \"Test Task\",\n        \"description\": \"A test task\",\n        \"status\": \"TODO\",\n        \"priority\": \"MEDIUM\"\n    }",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "TEST_DATABASE_URL",
+        "kind": 5,
+        "importPath": "tests.conftest",
+        "description": "tests.conftest",
+        "peekOfCode": "TEST_DATABASE_URL = \"sqlite:///:memory:\"\n@pytest.fixture(scope=\"session\")\ndef event_loop() -> Generator:\n    \"\"\"Create an instance of the default event loop for the test session.\"\"\"\n    loop = asyncio.get_event_loop_policy().new_event_loop()\n    yield loop\n    loop.close()\n@pytest.fixture(scope=\"function\")\ndef engine():\n    \"\"\"Create a test database engine with in-memory SQLite.\"\"\"",
+        "detail": "tests.conftest",
+        "documentation": {}
+    },
+    {
         "label": "EntityField",
         "kind": 6,
         "importPath": "analyze_entities",
@@ -28683,6 +29738,15 @@
         "description": "init_db",
         "peekOfCode": "def drop_all_tables() -> None:\n    \"\"\"\n    Drop all tables from the database.\n    USE WITH CAUTION - This will delete all data!\n    \"\"\"\n    print(\"=\" * 60)\n    print(\"WARNING: Dropping all database tables!\")\n    print(\"=\" * 60)\n    confirmation = input(\"Type 'YES' to confirm: \")\n    if confirmation != \"YES\":",
         "detail": "init_db",
+        "documentation": {}
+    },
+    {
+        "label": "seed_help_center_feature_flags",
+        "kind": 2,
+        "importPath": "seed_help_center_flags",
+        "description": "seed_help_center_flags",
+        "peekOfCode": "def seed_help_center_feature_flags():\n    \"\"\"Create feature flags for Help Center functionality\"\"\"\n    db: Session = SessionLocal()\n    try:\n        # Check if flags already exist\n        existing_flags = db.query(FeatureFlag).filter(\n            FeatureFlag.key.in_([\n                \"help_center_auto_publish\",\n                \"help_center_notifications\",\n                \"help_center_semantic_search\"",
+        "detail": "seed_help_center_flags",
         "documentation": {}
     }
 ]

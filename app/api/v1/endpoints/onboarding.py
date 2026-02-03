@@ -8,7 +8,7 @@ from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.orm import Session
 
 from app.db.session import get_db
-from app.core.security import get_current_user
+from app.core.security import get_current_user, get_current_user_with_session
 from app.db.models.users import User
 from app.services.onboarding import (
     SurveyService,
@@ -28,6 +28,7 @@ from app.schemas.onboarding import (
     UserOnboardingStatusResponse, UserOnboardingStatusUpdate,
     ProductTourResponse, ProductTourCreate,
     TourStepResponse, TourStepCreate,
+    TourSessionResponse,
     OnboardingChecklistResponse, OnboardingChecklistCreate,
     OnboardingChecklistItemResponse, OnboardingChecklistItemCreate,
     UserChecklistProgressResponse, UserChecklistProgressUpdate,
@@ -163,6 +164,36 @@ def create_tour_step(
     service = TourService(db)
     data.tour_id = tour_id
     return service.create_tour_step(data)
+
+
+@router.post("/tours/{tour_id}/start", response_model=TourSessionResponse)
+def start_tour(
+    tour_id: UUID,
+    db: Session = Depends(get_db),
+    current_user_session: tuple = Depends(get_current_user_with_session),
+):
+    user, session_id = current_user_session
+    service = TourService(db)
+    try:
+        return service.start_tour(user.id, session_id, tour_id)
+    except ValueError as exc:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(exc))
+
+
+@router.post("/tours/{tour_id}/skip", response_model=TourSessionResponse)
+def skip_tour(
+    tour_id: UUID,
+    db: Session = Depends(get_db),
+    current_user_session: tuple = Depends(get_current_user_with_session),
+):
+    user, session_id = current_user_session
+    service = TourService(db)
+    try:
+        return service.skip_tour(user.id, session_id, tour_id)
+    except PermissionError as exc:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail=str(exc))
+    except ValueError as exc:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(exc))
 
 
 # ======= Checklist Endpoints =======

@@ -17,13 +17,17 @@ from app.db.models.onboarding import (
     UserOnboardingStatus,
     ProductTour,
     TourStep,
+    UserTourSession,
     OnboardingChecklist,
     OnboardingChecklistItem,
     UserChecklistProgress,
     FeatureBeacon,
     UserBeaconState,
     OnboardingReward,
+    OnboardingRewardGrant,
 )
+from app.db.models.workspaces import WorkspaceMember
+from app.db.models.admin import FeatureFlag
 from app.schemas.onboarding import (
     OnboardingSurveyCreate,
     SurveyQuestionCreate,
@@ -40,6 +44,9 @@ from app.schemas.onboarding import (
     OnboardingRewardCreate,
     FeatureBeaconCreate,
 )
+from app.services.personalization import PersonalizationService
+from app.schemas.personalization import UserSettingsUpdate
+from app.services.subscription import SubscriptionService
 from app.db.enums import OnboardingStatus
 
 
@@ -89,7 +96,42 @@ class PersonaService:
             self.db.add(persona)
         self.db.commit()
         self.db.refresh(persona)
+        self._apply_persona_preferences(user_id, data.preferences or {})
         return persona
+
+    def _apply_persona_preferences(self, user_id: UUID, preferences: dict) -> None:
+        """
+        Map persona preferences to UI settings and feature toggles.
+
+        Expected preferences schema:
+        {
+            "ui_settings": {"theme_mode": "dark", "language": "vi-VN", ...},
+            "feature_toggles": {"new_dashboard": true, "ai_assistant": false}
+        }
+        """
+        ui_settings = preferences.get("ui_settings", {})
+        feature_toggles = preferences.get("feature_toggles", {})
+
+        if ui_settings:
+            allowed_fields = set(UserSettingsUpdate.model_fields.keys())
+            filtered_settings = {k: v for k, v in ui_settings.items() if k in allowed_fields}
+            if filtered_settings:
+                settings_update = UserSettingsUpdate(**filtered_settings)
+                PersonalizationService.update_user_settings(self.db, user_id, settings_update)
+
+        if feature_toggles:
+            for key, enabled in feature_toggles.items():
+                flag = self.db.query(FeatureFlag).filter(FeatureFlag.key == key).first()
+                if not flag:
+                    continue
+                target_users = flag.target_users or []
+                user_id_str = str(user_id)
+                if enabled and user_id_str not in target_users:
+                    target_users.append(user_id_str)
+                if not enabled and user_id_str in target_users:
+                    target_users.remove(user_id_str)
+                flag.target_users = target_users
+            self.db.commit()
 
 
 class FlowService:
@@ -152,6 +194,57 @@ class TourService:
         self.db.refresh(step)
         return step
 
+    def start_tour(self, user_id: UUID, session_id: UUID, tour_id: UUID) -> UserTourSession:
+        tour = self.db.query(ProductTour).filter(ProductTour.id == tour_id, ProductTour.is_active == True).first()
+        if not tour:
+            raise ValueError("Tour not found or inactive")
+
+        existing_session = self.db.query(UserTourSession).filter(
+            UserTourSession.session_id == session_id,
+            UserTourSession.user_id == user_id,
+        ).first()
+
+        if existing_session:
+            raise ValueError("Only one tour is allowed per session")
+
+        session = UserTourSession(
+            user_id=user_id,
+            session_id=session_id,
+            tour_id=tour_id,
+        )
+        self.db.add(session)
+        self.db.commit()
+        self.db.refresh(session)
+        return session
+
+    def skip_tour(self, user_id: UUID, session_id: UUID, tour_id: UUID) -> UserTourSession:
+        tour = self.db.query(ProductTour).filter(ProductTour.id == tour_id).first()
+        if not tour:
+            raise ValueError("Tour not found")
+        if not tour.is_skippable:
+            raise PermissionError("Tour is not skippable")
+
+        session = self.db.query(UserTourSession).filter(
+            UserTourSession.user_id == user_id,
+            UserTourSession.session_id == session_id,
+            UserTourSession.tour_id == tour_id,
+            UserTourSession.completed_at == None,
+            UserTourSession.skipped_at == None,
+        ).first()
+
+        if not session:
+            session = UserTourSession(
+                user_id=user_id,
+                session_id=session_id,
+                tour_id=tour_id,
+            )
+            self.db.add(session)
+
+        session.skipped_at = datetime.utcnow()
+        self.db.commit()
+        self.db.refresh(session)
+        return session
+
 
 class ChecklistService:
     def __init__(self, db: Session):
@@ -190,6 +283,8 @@ class ChecklistService:
             self.db.add(progress)
         self.db.commit()
         self.db.refresh(progress)
+
+        self._grant_reward_if_eligible(user_id, data.item_id)
         return progress
 
     def create_reward(self, data: OnboardingRewardCreate) -> OnboardingReward:
@@ -198,6 +293,81 @@ class ChecklistService:
         self.db.commit()
         self.db.refresh(reward)
         return reward
+
+    def _grant_reward_if_eligible(self, user_id: UUID, item_id: UUID) -> None:
+        item = self.db.query(OnboardingChecklistItem).filter(OnboardingChecklistItem.id == item_id).first()
+        if not item:
+            return
+
+        checklist = self.db.query(OnboardingChecklist).filter(OnboardingChecklist.id == item.checklist_id).first()
+        if not checklist:
+            return
+
+        # Check all required items completed
+        required_items = self.db.query(OnboardingChecklistItem).filter(
+            OnboardingChecklistItem.checklist_id == checklist.id,
+            OnboardingChecklistItem.is_required == True
+        ).all()
+
+        if not required_items:
+            return
+
+        required_item_ids = [i.id for i in required_items]
+        completed_count = self.db.query(UserChecklistProgress).filter(
+            UserChecklistProgress.user_id == user_id,
+            UserChecklistProgress.item_id.in_(required_item_ids),
+            UserChecklistProgress.is_completed == True
+        ).count()
+
+        if completed_count < len(required_item_ids):
+            return
+
+        reward = self.db.query(OnboardingReward).filter(
+            OnboardingReward.checklist_id == checklist.id,
+            OnboardingReward.is_active == True
+        ).first()
+
+        if not reward:
+            return
+
+        existing_grant = self.db.query(OnboardingRewardGrant).filter(
+            OnboardingRewardGrant.user_id == user_id,
+            OnboardingRewardGrant.reward_id == reward.id
+        ).first()
+
+        if existing_grant:
+            return
+
+        applied = True
+
+        # Apply reward to Module 13 (trial extension)
+        if reward.reward_type == "trial_extension":
+            reward_value = reward.reward_value or {}
+            trial_days = int(reward_value.get("days", 7))
+            workspace_id = reward_value.get("workspace_id")
+
+            if not workspace_id:
+                membership = self.db.query(WorkspaceMember).filter(
+                    WorkspaceMember.user_id == user_id,
+                    WorkspaceMember.is_active == True
+                ).first()
+                workspace_id = membership.workspace_id if membership else None
+
+            if workspace_id:
+                subscription_service = SubscriptionService(self.db)
+                applied = subscription_service.extend_trial(workspace_id, trial_days) is not None
+            else:
+                applied = False
+
+        if applied:
+            grant = OnboardingRewardGrant(
+                reward_id=reward.id,
+                checklist_id=checklist.id,
+                user_id=user_id,
+                metadata_={"reward_type": reward.reward_type, "reward_value": reward.reward_value},
+            )
+            self.db.add(grant)
+            self.db.commit()
 
 
 class FeatureBeaconService:

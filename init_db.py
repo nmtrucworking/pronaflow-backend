@@ -76,7 +76,10 @@ def drop_all_tables() -> None:
     
     try:
         print("Dropping all tables...")
-        Base.metadata.drop_all(bind=engine)
+        with engine.begin() as conn:
+            conn.execute(text("DROP SCHEMA public CASCADE;"))
+            conn.execute(text("CREATE SCHEMA public;"))
+            conn.execute(text("GRANT ALL ON SCHEMA public TO public;"))
         print("✓ All tables dropped successfully!")
     except Exception as e:
         print(f"✗ Error dropping tables: {e}")

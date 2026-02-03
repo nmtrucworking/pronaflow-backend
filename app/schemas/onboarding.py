@@ -196,6 +196,20 @@ class TourStepResponse(TourStepBase):
     model_config = ConfigDict(from_attributes=True)
 
 
+class TourSessionResponse(BaseModel):
+    id: UUID
+    user_id: UUID
+    session_id: UUID
+    tour_id: UUID
+    started_at: datetime
+    completed_at: Optional[datetime]
+    skipped_at: Optional[datetime]
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+
 # ======= Checklist Schemas =======
 
 class OnboardingChecklistBase(BaseModel):

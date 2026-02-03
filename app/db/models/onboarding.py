@@ -193,6 +193,30 @@ class TourStep(Base, TimestampMixin):
     )
 
 
+class UserTourSession(Base, TimestampMixin):
+    """
+    Track tour sessions per user session to enforce frequency cap (1 tour/session).
+    """
+    __tablename__ = "user_tour_sessions"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"))
+    session_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False)
+    tour_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("product_tours.id", ondelete="CASCADE"))
+
+    started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow, nullable=False)
+    completed_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))
+    skipped_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))
+
+    tour = relationship("ProductTour")
+
+    __table_args__ = (
+        Index("ix_user_tour_sessions_user", "user_id"),
+        Index("ix_user_tour_sessions_session", "session_id"),
+        Index("ix_user_tour_sessions_tour", "tour_id"),
+    )
+
+
 # ======= Checklist & Reward =======
 
 class OnboardingChecklist(Base, TimestampMixin):
@@ -263,6 +287,27 @@ class OnboardingReward(Base, TimestampMixin):
     is_active: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
 
     checklist = relationship("OnboardingChecklist", back_populates="reward")
+
+
+class OnboardingRewardGrant(Base, TimestampMixin):
+    """
+    Record reward grants to prevent duplicate awarding.
+    """
+    __tablename__ = "onboarding_reward_grants"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    reward_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("onboarding_rewards.id", ondelete="CASCADE"))
+    checklist_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("onboarding_checklists.id", ondelete="CASCADE"))
+    user_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"))
+
+    granted_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow, nullable=False)
+    metadata_: Mapped[Optional[dict]] = mapped_column("metadata", JSONB)
+
+    __table_args__ = (
+        Index("ix_onboarding_reward_grants_user", "user_id"),
+        Index("ix_onboarding_reward_grants_reward", "reward_id"),
+        Index("ix_onboarding_reward_grants_checklist", "checklist_id"),
+    )
 
 
 # ======= Feature Discovery (Beacon) =======

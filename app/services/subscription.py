@@ -197,6 +197,23 @@ class SubscriptionService:
                 WorkspaceSubscription.status.in_(['active', 'trial', 'grace_period'])
             )
         ).options(joinedload(WorkspaceSubscription.plan)).first()
+
+    def extend_trial(self, workspace_id: UUID, additional_days: int) -> Optional[WorkspaceSubscription]:
+        """
+        Extend trial period for a workspace (Module 16 reward integration).
+        """
+        if additional_days <= 0:
+            return None
+
+        subscription = self.get_workspace_subscription(workspace_id)
+        if not subscription or not subscription.is_trial or not subscription.trial_end_date:
+            return None
+
+        subscription.trial_end_date = subscription.trial_end_date + timedelta(days=additional_days)
+        subscription.next_billing_date = subscription.trial_end_date
+        self.db.commit()
+        self.db.refresh(subscription)
+        return subscription
     
     def upgrade_subscription(
         self,

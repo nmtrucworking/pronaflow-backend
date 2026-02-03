@@ -4,6 +4,15 @@ Project**: PronaFlow
 _Last updated: Dec 31, 2025_
 
 ---
+
+> ⚠️ **THÔNG BÁO QUAN TRỌNG**
+> 
+> **Module 10 - Intelligent Decision Support System sẽ được triển khai trong PronaFlow Version 2.0**
+> 
+> Phiên bản hiện tại (v1.x) tập trung vào các module cốt lõi của hệ thống quản trị dự án. Các tính năng AI/ML Decision Support sẽ được phát triển trong lộ trình phát triển tiếp theo.
+
+---
+
 # 1. Business Overview
 
 Trong các hệ thống quản trị dự án truyền thống, việc ra quyết định (ví dụ: gán việc cho ai, ước lượng thời gian bao lâu) thường dựa hoàn toàn vào trực giác (Intuition-based) hoặc kinh nghiệm chủ quan của người quản lý. Điều này dễ dẫn đến các sai số như "Lạc quan quá mức" (Optimism Bias) hoặc phân bổ nguồn lực không đồng đều.

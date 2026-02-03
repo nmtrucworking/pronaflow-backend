@@ -16,11 +16,8 @@ from app.core.config import settings
 from app.db.declarative_base import Base
 
 # Import all models to ensure they are registered with Base.metadata
-from app.db.base import (
-    User, Role, Permission, MFAConfig, MFABackupCode, AuthProvider, AuditLog, Session,
-    Workspace, WorkspaceMember, WorkspaceInvitation, WorkspaceAccessLog, WorkspaceSetting,
-    Project, Tag,
-)
+# This imports all 55 tables across all modules
+from app.db.models import *  # noqa: F401, F403
 
 # This is the Alembic Config object
 config = context.config

@@ -4,12 +4,14 @@ API endpoints for Help Center & Knowledge Base (Module 15)
 from typing import List, Optional
 from uuid import UUID
 
-from fastapi import APIRouter, Depends, HTTPException, status, Query
+from fastapi import APIRouter, Depends, HTTPException, status, Query, BackgroundTasks
 from sqlalchemy.orm import Session
 
 from app.db.session import get_db
 from app.core.security import get_current_user
 from app.db.models.users import User
+from app.db.models.workspaces import WorkspaceMember
+from app.db.enums import WorkspaceRole
 from app.services.help_center import (
     CategoryService,
     ArticleService,
@@ -19,6 +21,7 @@ from app.services.help_center import (
     FailedSearchService,
     SearchService,
 )
+from app.core.background_tasks import IndexingTask, NotificationTask
 from app.schemas.help_center import (
     CategoryResponse, CategoryCreate, CategoryUpdate,
     ArticleResponse, ArticleCreate, ArticleUpdate,
@@ -90,8 +93,24 @@ def list_articles(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    """List articles with visibility filtering based on user context"""
     service = ArticleService(db)
-    return service.list_articles(status, category_id)
+    
+    # Get user roles from workspace memberships
+    user_roles = (
+        db.query(WorkspaceMember.role)
+        .filter(WorkspaceMember.user_id == current_user.id)
+        .distinct()
+        .all()
+    )
+    role_names = [role[0].value if isinstance(role[0], WorkspaceRole) else role[0] for role in user_roles]
+    
+    return service.list_articles(
+        status=status,
+        category_id=category_id,
+        user_id=current_user.id,
+        user_roles=role_names
+    )
 
 
 @router.get("/articles/{article_id}", response_model=ArticleResponse)
@@ -100,10 +119,29 @@ def get_article(
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    """Get article with visibility rule enforcement"""
     service = ArticleService(db)
-    article = service.get_article(article_id)
+    
+    # Get user roles
+    user_roles = (
+        db.query(WorkspaceMember.role)
+        .filter(WorkspaceMember.user_id == current_user.id)
+        .distinct()
+        .all()
+    )
+    role_names = [role[0].value if isinstance(role[0], WorkspaceRole) else role[0] for role in user_roles]
+    
+    article = service.get_article(
+        article_id,
+        user_id=current_user.id,
+        user_roles=role_names
+    )
+    
     if not article:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Article not found")
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Article not found or access denied"
+        )
     return article
 
 
@@ -111,29 +149,48 @@ def get_article(
 def update_article(
     article_id: UUID,
     data: ArticleUpdate,
+    auto_publish: bool = Query(False, description="Trigger auto-publish if feature flag enabled"),
+    background_tasks: BackgroundTasks = None,
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    """Update article with feature flag support for auto-publish and notifications"""
     service = ArticleService(db)
-    return service.update_article(article_id, data)
+    article = service.update_article(article_id, data, auto_publish=auto_publish)
+    
+    # Queue notification if article was published
+    if article.status.value == "published" and background_tasks:
+        background_tasks.add_task(
+            NotificationTask.notify_article_published,
+            article.id,
+            article.title,
+            db
+        )
+    
+    return article
 
 
 @router.post("/articles/{article_id}/versions", response_model=ArticleVersionResponse, status_code=status.HTTP_201_CREATED)
 def create_article_version(
     article_id: UUID,
     data: ArticleVersionCreate,
+    background_tasks: BackgroundTasks,
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    """Create new article version with background indexing (<= 5 min SLA)"""
     service = ArticleService(db)
     data.article_id = article_id
     version = service.add_version(data, current_user.id)
 
-    # Update search index with basic keywords/snippet
-    search_service = SearchService(db)
-    snippet = (data.content_raw[:200] + "...") if len(data.content_raw) > 200 else data.content_raw
-    keywords = f"{data.title} {snippet}"
-    search_service.update_index(article_id, keywords, snippet)
+    # Queue background indexing task with SLA tracking
+    background_tasks.add_task(
+        IndexingTask.index_article,
+        article_id=article_id,
+        title=data.title,
+        content=data.content_raw,
+        db=db
+    )
 
     return version
 
@@ -242,11 +299,28 @@ def search_articles(
     query: str = Query(..., min_length=1),
     locale: Optional[str] = Query(None),
     limit: int = Query(10, ge=1, le=50),
+    use_semantic: bool = Query(True, description="Use semantic vector search if available"),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    """Search articles with semantic vector search + keyword fallback"""
     service = SearchService(db)
-    results = service.search(SearchQuery(query=query, locale=locale, limit=limit))
+    
+    # Get user roles for visibility filtering
+    user_roles = (
+        db.query(WorkspaceMember.role)
+        .filter(WorkspaceMember.user_id == current_user.id)
+        .distinct()
+        .all()
+    )
+    role_names = [role[0].value if isinstance(role[0], WorkspaceRole) else role[0] for role in user_roles]
+    
+    results = service.search(
+        SearchQuery(query=query, locale=locale, limit=limit),
+        use_semantic=use_semantic,
+        user_id=current_user.id,
+        user_roles=role_names
+    )
 
     formatted = [
         SearchResult(

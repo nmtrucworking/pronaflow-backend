@@ -80,6 +80,9 @@ Xem chi tiết tại: [[8 - Data Archiving and Compliance]]
 - Adaptive UI: Cho phép người dùng tuy biến Theme, Layout và Dashboard cá nhân hóa để phù hợp với thói quan làm việc (Ergonomics).
 Xem chi tiết tại: [[9 - User Experience Personalization]]
 # 10. Intelligent Decision Support System - IDSS
+
+> ⚠️ **TRIỂN KHAI TRONG VERSION 2.0** - Module này sẽ được phát triển trong PronaFlow phiên bản 2.0
+
 Đây là phân hệ nâng cao, tận dụng nền tảng Data Science để chuyển đổi dữ liệu thô thành tri thức quản trị.
 - Predictive Analytics: Sử dụng các mô hình hồi quy (Regression Models) để dự báo ngày hoàn thành dự án dựa trên vận tốc làm việc lịch sử.
 - Prescriptive Analytics: Ứng dụng thuật toán gợi ý để đề xuất phân công nhân sự tối ưu dựa trên kỹ năng (Skill-set) và tải công việc.
