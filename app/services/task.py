@@ -11,7 +11,7 @@ from sqlalchemy import select, and_, or_, func
 from sqlalchemy.orm import Session
 from fastapi import HTTPException, status
 
-from app.db.models.tasks import (
+from app.models.tasks import (
     TaskList,
     Task,
     Subtask,
@@ -20,8 +20,8 @@ from app.db.models.tasks import (
     Comment,
     File,
 )
-from app.db.models.projects import Project
-from app.db.models.projects_extended import ProjectMember
+from app.models.projects import Project
+from app.models.projects_extended import ProjectMember
 from app.db.enums import TaskStatus, ProjectRole
 from app.schemas.task import (
     TaskListCreate,

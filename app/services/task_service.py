@@ -8,7 +8,7 @@ from datetime import date
 
 from app.repositories.task_repository import TaskRepository, TaskListRepository
 from app.repositories.project_repository import ProjectRepository
-from app.db.models.tasks import Task, TaskList, TaskAssignee
+from app.models.tasks import Task, TaskList, TaskAssignee
 from app.db.enums import TaskStatus, TaskPriority
 from app.utils.exceptions import (
     NotFoundException,

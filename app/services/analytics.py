@@ -21,12 +21,12 @@ from uuid import UUID
 from sqlalchemy.orm import Session
 from sqlalchemy import and_, or_, desc
 
-from app.db.models.analytics import (
+from app.models.analytics import (
     SprintMetric, VelocityMetric, ResourceAllocation, TimeEntry,
     Timesheet, CustomReport, ReportSchedule, MetricSnapshot, KPI,
     TimesheetApproval, ReportPermission
 )
-from app.db.models.tasks import Task
+from app.models.tasks import Task
 from app.schemas.analytics import (
     SprintMetricCreate, SprintMetricUpdate, SprintMetricRead,
     VelocityMetricCreate, VelocityMetricRead,

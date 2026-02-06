@@ -13,7 +13,7 @@ from app.core.security import (
     validate_email, validate_username, create_access_token,
     record_login_attempt, check_brute_force
 )
-from app.db.models.users import (
+from app.models.users import (
     User, Session as SessionModel, PasswordResetToken,
     EmailVerificationToken
 )

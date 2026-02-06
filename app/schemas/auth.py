@@ -234,3 +234,35 @@ class ErrorResponse(BaseModel):
 class ValidationErrorResponse(BaseModel):
     """Validation error response"""
     detail: List[dict]
+
+
+# ============= OAuth =============
+
+class OAuthLoginRequest(BaseModel):
+    """OAuth login/callback request"""
+    provider: str = Field(..., description="OAuth provider (google, github)")
+    code: str = Field(..., description="Authorization code from OAuth provider")
+    redirect_uri: Optional[str] = Field(None, description="Redirect URI used in OAuth flow")
+    
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "provider": "google",
+                "code": "4/0AX4XfWh...",
+                "redirect_uri": "http://localhost:3000/auth/callback"
+            }
+        }
+
+
+class OAuthUrlResponse(BaseModel):
+    """OAuth authorization URL response"""
+    auth_url: str = Field(..., description="OAuth authorization URL")
+    state: str = Field(..., description="State parameter for CSRF protection")
+    
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "auth_url": "https://accounts.google.com/o/oauth2/v2/auth?...",
+                "state": "random_state_string"
+            }
+        }

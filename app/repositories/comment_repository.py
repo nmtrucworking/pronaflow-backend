@@ -9,7 +9,7 @@ from datetime import datetime
 import uuid
 
 from app.repositories.base import BaseRepository
-from app.db.models.collaboration import Comment
+from app.models.collaboration import Comment
 
 
 class CommentRepository(BaseRepository[Comment]):
@@ -254,7 +254,7 @@ class CommentRepository(BaseRepository[Comment]):
         Returns:
             List of task IDs ordered by latest comment
         """
-        from app.db.models.tasks import Task
+        from app.models.tasks import Task
         
         return (
             self.db.query(Comment.task_id)

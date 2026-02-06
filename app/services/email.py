@@ -6,6 +6,8 @@ from typing import Optional, List
 from datetime import datetime
 import logging
 
+from app.core.config import settings
+
 logger = logging.getLogger(__name__)
 
 
@@ -113,6 +115,45 @@ class EmailService:
         If you did not make this change, please contact support immediately.
         """
         
+        return self._send_email(to_email, subject, body)
+
+    def send_workspace_invitation(
+        self,
+        to_email: str,
+        invitation_token: str,
+        workspace_name: str,
+        inviter_name: Optional[str] = None,
+    ) -> bool:
+        """
+        Send workspace invitation email with magic link.
+
+        Args:
+            to_email: Recipient email
+            invitation_token: Raw invitation token
+            workspace_name: Workspace name
+            inviter_name: Optional inviter name
+
+        Returns:
+            True if sent successfully
+        """
+        inviter_label = inviter_name or "A teammate"
+        invite_link = (
+            f"{settings.FRONTEND_BASE_URL}{settings.WORKSPACE_INVITE_PATH}"
+            f"?token={invitation_token}"
+        )
+
+        subject = f"You're invited to join {workspace_name} on PronaFlow"
+        body = f"""
+        {inviter_label} invited you to join the workspace "{workspace_name}" on PronaFlow.
+
+        Accept your invitation here:
+        {invite_link}
+
+        This link will expire in 48 hours.
+
+        If you were not expecting this invitation, you can ignore this email.
+        """
+
         return self._send_email(to_email, subject, body)
     
     def send_mfa_enabled_notification(self, to_email: str) -> bool:

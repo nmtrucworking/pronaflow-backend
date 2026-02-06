@@ -169,7 +169,7 @@ def example_send_invitation(
         invited_role=WorkspaceRole.MEMBER
     )
     
-    invitation = WorkspaceInvitationService.create_invitation(
+    invitation, token = WorkspaceInvitationService.create_invitation(
         db=db,
         workspace_id=workspace_id,
         invited_by=inviter_user_id,
@@ -183,6 +183,7 @@ def example_send_invitation(
     print(f"   Token Hash: {invitation.token_hash}")
     print(f"   Expires: {invitation.expires_at}")
     print(f"   Status: Pending (not accepted)")
+    print(f"   Raw Token: {token}")
     
     # TODO: Send actual email with magic link containing the token
     # email_service.send_invitation_email(

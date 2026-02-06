@@ -12,7 +12,7 @@ from sqlalchemy.orm import Session
 
 from app.core.config import settings
 from app.db.session import get_db
-from app.db.models.admin import AdminUser
+from app.models.admin import AdminUser
 from app.services.admin import AdminRoleAssignmentService
 
 

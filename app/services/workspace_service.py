@@ -8,7 +8,7 @@ from datetime import datetime
 
 from app.repositories.workspace_repository import WorkspaceRepository
 from app.repositories.user_repository import UserRepository
-from app.db.models.workspaces import Workspace, WorkspaceMember
+from app.models.workspaces import Workspace, WorkspaceMember
 from app.db.enums import WorkspaceRole
 from app.utils.exceptions import (
     NotFoundException,

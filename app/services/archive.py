@@ -15,12 +15,12 @@ from typing import List, Optional, Dict, Any
 from sqlalchemy.orm import Session
 from sqlalchemy import and_, or_, desc
 
-from app.db.models.archive import (
+from app.models.archive import (
     ArchivePolicy, DeletedItem, ArchivedDataSnapshot, 
     DataExportRequest, DataRetentionLog, AuditLog
 )
-from app.db.models.projects import Project
-from app.db.models.tasks import Task
+from app.models.projects import Project
+from app.models.tasks import Task
 from app.schemas.archive import (
     ArchivePolicyCreate, ArchivePolicyUpdate, DeletedItemRead,
     DataExportRequestCreate, DataExportRequestRead, AuditLogRead,

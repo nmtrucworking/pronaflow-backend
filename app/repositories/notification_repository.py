@@ -9,7 +9,7 @@ from datetime import datetime
 import uuid
 
 from app.repositories.base import BaseRepository
-from app.db.models.notifications import Notification
+from app.models.notifications import Notification
 
 
 class NotificationRepository(BaseRepository[Notification]):

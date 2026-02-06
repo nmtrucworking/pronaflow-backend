@@ -27,12 +27,12 @@ from sqlalchemy.orm import Session
 from sqlalchemy import select, and_, or_, func
 from loguru import logger
 
-from app.db.models.notifications import (
+from app.models.notifications import (
     Notification, NotificationTemplate, NotificationPreference,
     EventConsumer, DomainEvent
 )
-from app.db.models.users import User
-from app.db.models.workspaces import Workspace
+from app.models.users import User
+from app.models.workspaces import Workspace
 from app.db.enums import (
     NotificationTypeEnum, NotificationChannelEnum,
     NotificationPriorityEnum, NotificationStatusEnum,

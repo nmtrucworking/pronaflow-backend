@@ -17,7 +17,7 @@ from typing import List, Dict, Any, Optional
 from uuid import UUID
 from datetime import datetime, time
 
-from app.db.models.personalization import (
+from app.models.personalization import (
     UserSettings,
     DashboardLayout,
     WidgetConfig,

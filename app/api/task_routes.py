@@ -7,7 +7,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.orm import Session
 
 from app.core.dependencies import get_db, get_current_user
-from app.db.models.users import User
+from app.models.users import User
 from app.db.enums import TaskStatus, TaskPriority
 from app.schemas.task_schemas import (
     TaskCreate,

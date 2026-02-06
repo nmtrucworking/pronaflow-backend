@@ -2482,11 +2482,11 @@
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "app.core.config",
-        "description": "app.core.config",
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
         "isExtraImport": true,
-        "detail": "app.core.config",
+        "detail": "pathlib",
         "documentation": {}
     },
     {
@@ -2562,11 +2562,35 @@
         "documentation": {}
     },
     {
-        "label": "Base",
-        "importPath": "app.db.declarative_base",
-        "description": "app.db.declarative_base",
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
         "isExtraImport": true,
-        "detail": "app.db.declarative_base",
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
         "documentation": {}
     },
     {
@@ -2707,6 +2731,30 @@
     },
     {
         "label": "Base",
+        "importPath": "app.db.declarative_base",
+        "description": "app.db.declarative_base",
+        "isExtraImport": true,
+        "detail": "app.db.declarative_base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.db.declarative_base",
+        "description": "app.db.declarative_base",
+        "isExtraImport": true,
+        "detail": "app.db.declarative_base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.db.declarative_base",
+        "description": "app.db.declarative_base",
+        "isExtraImport": true,
+        "detail": "app.db.declarative_base",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
         "importPath": "app.db.declarative_base",
         "description": "app.db.declarative_base",
         "isExtraImport": true,
@@ -5018,6 +5066,22 @@
         "documentation": {}
     },
     {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "AsyncGenerator",
         "importPath": "typing",
         "description": "typing",
@@ -6347,6 +6411,46 @@
         "documentation": {}
     },
     {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -7379,6 +7483,14 @@
         "documentation": {}
     },
     {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "Session",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -8299,6 +8411,14 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "sessionmaker",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -8459,6 +8579,14 @@
         "documentation": {}
     },
     {
+        "label": "SessionLocal",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
         "label": "get_db",
         "importPath": "app.db.session",
         "description": "app.db.session",
@@ -8484,6 +8612,14 @@
     },
     {
         "label": "SessionLocal",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
         "importPath": "app.db.session",
         "description": "app.db.session",
         "isExtraImport": true,
@@ -8723,315 +8859,315 @@
         "documentation": {}
     },
     {
-        "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "label": "hash_password",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.core.security",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
+        "isExtraImport": true,
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "Session",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "LoginAttempt",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
+        "isExtraImport": true,
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "Role",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "Permission",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "Session",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "PasswordResetToken",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "EmailVerificationToken",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "MFAConfig",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "MFABackupCode",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "Session",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
-        "documentation": {}
-    },
-    {
-        "label": "Role",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
-        "isExtraImport": true,
-        "detail": "app.db.models.users",
-        "documentation": {}
-    },
-    {
-        "label": "Permission",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
-        "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
         "label": "User",
-        "importPath": "app.db.models.users",
-        "description": "app.db.models.users",
+        "importPath": "app.models.users",
+        "description": "app.models.users",
         "isExtraImport": true,
-        "detail": "app.db.models.users",
+        "detail": "app.models.users",
         "documentation": {}
     },
     {
@@ -9323,6 +9459,14 @@
         "documentation": {}
     },
     {
+        "label": "WorkspaceService",
+        "importPath": "app.services.workspace",
+        "description": "app.services.workspace",
+        "isExtraImport": true,
+        "detail": "app.services.workspace",
+        "documentation": {}
+    },
+    {
         "label": "WorkspaceMemberService",
         "importPath": "app.services.workspace",
         "description": "app.services.workspace",
@@ -9412,138 +9556,138 @@
     },
     {
         "label": "AdminUser",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
         "label": "AdminUser",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
         "label": "FeatureFlag",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
+        "isExtraImport": true,
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
         "label": "AdminUser",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
         "label": "AdminRole",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
         "label": "AdminPermission",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
         "label": "AdminRolePermission",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
         "label": "AdminUserRole",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
         "label": "SystemConfig",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
         "label": "FeatureFlag",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
         "label": "AdminAuditLog",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
         "label": "SecurityIncident",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
         "label": "ChangeRequest",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
         "label": "AccessReview",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
         "label": "FeatureFlag",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
         "label": "FeatureFlag",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
+        "importPath": "app.models.admin",
+        "description": "app.models.admin",
         "isExtraImport": true,
-        "detail": "app.db.models.admin",
-        "documentation": {}
-    },
-    {
-        "label": "FeatureFlag",
-        "importPath": "app.db.models.admin",
-        "description": "app.db.models.admin",
-        "isExtraImport": true,
-        "detail": "app.db.models.admin",
+        "detail": "app.models.admin",
         "documentation": {}
     },
     {
@@ -10803,6 +10947,30 @@
         "documentation": {}
     },
     {
+        "label": "AuthService",
+        "importPath": "app.services.auth",
+        "description": "app.services.auth",
+        "isExtraImport": true,
+        "detail": "app.services.auth",
+        "documentation": {}
+    },
+    {
+        "label": "AuthService",
+        "importPath": "app.services.auth",
+        "description": "app.services.auth",
+        "isExtraImport": true,
+        "detail": "app.services.auth",
+        "documentation": {}
+    },
+    {
+        "label": "MFAService",
+        "importPath": "app.services.mfa",
+        "description": "app.services.mfa",
+        "isExtraImport": true,
+        "detail": "app.services.mfa",
+        "documentation": {}
+    },
+    {
         "label": "MFAService",
         "importPath": "app.services.mfa",
         "description": "app.services.mfa",
@@ -10816,6 +10984,22 @@
         "description": "app.services.session",
         "isExtraImport": true,
         "detail": "app.services.session",
+        "documentation": {}
+    },
+    {
+        "label": "SessionService",
+        "importPath": "app.services.session",
+        "description": "app.services.session",
+        "isExtraImport": true,
+        "detail": "app.services.session",
+        "documentation": {}
+    },
+    {
+        "label": "EmailService",
+        "importPath": "app.services.email",
+        "description": "app.services.email",
+        "isExtraImport": true,
+        "detail": "app.services.email",
         "documentation": {}
     },
     {
@@ -11316,170 +11500,194 @@
     },
     {
         "label": "WorkspaceMember",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "Workspace",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "WorkspaceMember",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "Workspace",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "WorkspaceMember",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "WorkspaceInvitation",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "WorkspaceSetting",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "Workspace",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "WorkspaceMember",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "WorkspaceMember",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "Workspace",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "Workspace",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "WorkspaceMember",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "WorkspaceInvitation",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "WorkspaceAccessLog",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "WorkspaceSetting",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "Workspace",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "WorkspaceMember",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "Workspace",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
-        "documentation": {}
-    },
-    {
-        "label": "Workspace",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
-        "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
         "label": "WorkspaceMember",
-        "importPath": "app.db.models.workspaces",
-        "description": "app.db.models.workspaces",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
         "isExtraImport": true,
-        "detail": "app.db.models.workspaces",
+        "detail": "app.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceSetting",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "Workspace",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceMember",
+        "importPath": "app.models.workspaces",
+        "description": "app.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.models.workspaces",
         "documentation": {}
     },
     {
@@ -12539,6 +12747,22 @@
         "documentation": {}
     },
     {
+        "label": "WorkspaceRole",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
+        "label": "UserStatus",
+        "importPath": "app.db.enums",
+        "description": "app.db.enums",
+        "isExtraImport": true,
+        "detail": "app.db.enums",
+        "documentation": {}
+    },
+    {
         "label": "UserStatus",
         "importPath": "app.db.enums",
         "description": "app.db.enums",
@@ -12924,170 +13148,186 @@
     },
     {
         "label": "ApiToken",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "WebhookEndpoint",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "OAuthConnection",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "IntegrationBinding",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "Plugin",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "PluginInstallation",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "ConsentGrant",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
+        "isExtraImport": true,
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "ApiToken",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "ApiScope",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "ApiTokenScope",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "WebhookEndpoint",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "WebhookEvent",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "WebhookDelivery",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "OAuthApp",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "OAuthConnection",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "IntegrationBinding",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "Plugin",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "PluginInstallation",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "ConsentGrant",
-        "importPath": "app.db.models.integration",
-        "description": "app.db.models.integration",
+        "importPath": "app.models.integration",
+        "description": "app.models.integration",
         "isExtraImport": true,
-        "detail": "app.db.models.integration",
+        "detail": "app.models.integration",
         "documentation": {}
     },
     {
         "label": "ApiUsageLog",
-        "importPath": "app.db.models.integrations",
-        "description": "app.db.models.integrations",
+        "importPath": "app.models.integrations",
+        "description": "app.models.integrations",
         "isExtraImport": true,
-        "detail": "app.db.models.integrations",
+        "detail": "app.models.integrations",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.integrations",
+        "description": "app.models.integrations",
+        "isExtraImport": true,
+        "detail": "app.models.integrations",
         "documentation": {}
     },
     {
         "label": "ApiUsageLog",
-        "importPath": "app.db.models.integrations",
-        "description": "app.db.models.integrations",
+        "importPath": "app.models.integrations",
+        "description": "app.models.integrations",
         "isExtraImport": true,
-        "detail": "app.db.models.integrations",
+        "detail": "app.models.integrations",
         "documentation": {}
     },
     {
@@ -13716,90 +13956,98 @@
     },
     {
         "label": "Notification",
-        "importPath": "app.db.models.notifications",
-        "description": "app.db.models.notifications",
+        "importPath": "app.models.notifications",
+        "description": "app.models.notifications",
         "isExtraImport": true,
-        "detail": "app.db.models.notifications",
+        "detail": "app.models.notifications",
         "documentation": {}
     },
     {
         "label": "NotificationTemplate",
-        "importPath": "app.db.models.notifications",
-        "description": "app.db.models.notifications",
+        "importPath": "app.models.notifications",
+        "description": "app.models.notifications",
         "isExtraImport": true,
-        "detail": "app.db.models.notifications",
+        "detail": "app.models.notifications",
         "documentation": {}
     },
     {
         "label": "NotificationPreference",
-        "importPath": "app.db.models.notifications",
-        "description": "app.db.models.notifications",
+        "importPath": "app.models.notifications",
+        "description": "app.models.notifications",
         "isExtraImport": true,
-        "detail": "app.db.models.notifications",
+        "detail": "app.models.notifications",
         "documentation": {}
     },
     {
         "label": "EventConsumer",
-        "importPath": "app.db.models.notifications",
-        "description": "app.db.models.notifications",
+        "importPath": "app.models.notifications",
+        "description": "app.models.notifications",
         "isExtraImport": true,
-        "detail": "app.db.models.notifications",
+        "detail": "app.models.notifications",
         "documentation": {}
     },
     {
         "label": "DomainEvent",
-        "importPath": "app.db.models.notifications",
-        "description": "app.db.models.notifications",
+        "importPath": "app.models.notifications",
+        "description": "app.models.notifications",
         "isExtraImport": true,
-        "detail": "app.db.models.notifications",
+        "detail": "app.models.notifications",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.notifications",
+        "description": "app.models.notifications",
+        "isExtraImport": true,
+        "detail": "app.models.notifications",
         "documentation": {}
     },
     {
         "label": "Notification",
-        "importPath": "app.db.models.notifications",
-        "description": "app.db.models.notifications",
+        "importPath": "app.models.notifications",
+        "description": "app.models.notifications",
         "isExtraImport": true,
-        "detail": "app.db.models.notifications",
+        "detail": "app.models.notifications",
         "documentation": {}
     },
     {
         "label": "Notification",
-        "importPath": "app.db.models.notifications",
-        "description": "app.db.models.notifications",
+        "importPath": "app.models.notifications",
+        "description": "app.models.notifications",
         "isExtraImport": true,
-        "detail": "app.db.models.notifications",
+        "detail": "app.models.notifications",
         "documentation": {}
     },
     {
         "label": "NotificationTemplate",
-        "importPath": "app.db.models.notifications",
-        "description": "app.db.models.notifications",
+        "importPath": "app.models.notifications",
+        "description": "app.models.notifications",
         "isExtraImport": true,
-        "detail": "app.db.models.notifications",
+        "detail": "app.models.notifications",
         "documentation": {}
     },
     {
         "label": "NotificationPreference",
-        "importPath": "app.db.models.notifications",
-        "description": "app.db.models.notifications",
+        "importPath": "app.models.notifications",
+        "description": "app.models.notifications",
         "isExtraImport": true,
-        "detail": "app.db.models.notifications",
+        "detail": "app.models.notifications",
         "documentation": {}
     },
     {
         "label": "EventConsumer",
-        "importPath": "app.db.models.notifications",
-        "description": "app.db.models.notifications",
+        "importPath": "app.models.notifications",
+        "description": "app.models.notifications",
         "isExtraImport": true,
-        "detail": "app.db.models.notifications",
+        "detail": "app.models.notifications",
         "documentation": {}
     },
     {
         "label": "DomainEvent",
-        "importPath": "app.db.models.notifications",
-        "description": "app.db.models.notifications",
+        "importPath": "app.models.notifications",
+        "description": "app.models.notifications",
         "isExtraImport": true,
-        "detail": "app.db.models.notifications",
+        "detail": "app.models.notifications",
         "documentation": {}
     },
     {
@@ -16463,90 +16711,98 @@
     },
     {
         "label": "ArticleSearchIndex",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
+        "importPath": "app.models.help_center",
+        "description": "app.models.help_center",
         "isExtraImport": true,
-        "detail": "app.db.models.help_center",
+        "detail": "app.models.help_center",
         "documentation": {}
     },
     {
         "label": "Article",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
+        "importPath": "app.models.help_center",
+        "description": "app.models.help_center",
         "isExtraImport": true,
-        "detail": "app.db.models.help_center",
+        "detail": "app.models.help_center",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.help_center",
+        "description": "app.models.help_center",
+        "isExtraImport": true,
+        "detail": "app.models.help_center",
         "documentation": {}
     },
     {
         "label": "Article",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
+        "importPath": "app.models.help_center",
+        "description": "app.models.help_center",
         "isExtraImport": true,
-        "detail": "app.db.models.help_center",
+        "detail": "app.models.help_center",
         "documentation": {}
     },
     {
         "label": "ArticleVersion",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
+        "importPath": "app.models.help_center",
+        "description": "app.models.help_center",
         "isExtraImport": true,
-        "detail": "app.db.models.help_center",
+        "detail": "app.models.help_center",
         "documentation": {}
     },
     {
         "label": "ArticleTranslation",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
+        "importPath": "app.models.help_center",
+        "description": "app.models.help_center",
         "isExtraImport": true,
-        "detail": "app.db.models.help_center",
+        "detail": "app.models.help_center",
         "documentation": {}
     },
     {
         "label": "Category",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
+        "importPath": "app.models.help_center",
+        "description": "app.models.help_center",
         "isExtraImport": true,
-        "detail": "app.db.models.help_center",
+        "detail": "app.models.help_center",
         "documentation": {}
     },
     {
         "label": "RouteMapping",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
+        "importPath": "app.models.help_center",
+        "description": "app.models.help_center",
         "isExtraImport": true,
-        "detail": "app.db.models.help_center",
+        "detail": "app.models.help_center",
         "documentation": {}
     },
     {
         "label": "ArticleFeedback",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
+        "importPath": "app.models.help_center",
+        "description": "app.models.help_center",
         "isExtraImport": true,
-        "detail": "app.db.models.help_center",
+        "detail": "app.models.help_center",
         "documentation": {}
     },
     {
         "label": "FailedSearch",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
+        "importPath": "app.models.help_center",
+        "description": "app.models.help_center",
         "isExtraImport": true,
-        "detail": "app.db.models.help_center",
+        "detail": "app.models.help_center",
         "documentation": {}
     },
     {
         "label": "ArticleVisibility",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
+        "importPath": "app.models.help_center",
+        "description": "app.models.help_center",
         "isExtraImport": true,
-        "detail": "app.db.models.help_center",
+        "detail": "app.models.help_center",
         "documentation": {}
     },
     {
         "label": "ArticleSearchIndex",
-        "importPath": "app.db.models.help_center",
-        "description": "app.db.models.help_center",
+        "importPath": "app.models.help_center",
+        "description": "app.models.help_center",
         "isExtraImport": true,
-        "detail": "app.db.models.help_center",
+        "detail": "app.models.help_center",
         "documentation": {}
     },
     {
@@ -17121,6 +17377,15 @@
         "documentation": {}
     },
     {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
         "label": "CryptContext",
         "importPath": "passlib.context",
         "description": "passlib.context",
@@ -17424,6 +17689,934 @@
         "description": "sqlalchemy.sql",
         "isExtraImport": true,
         "detail": "sqlalchemy.sql",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.projects",
+        "description": "app.models.projects",
+        "isExtraImport": true,
+        "detail": "app.models.projects",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.models.projects",
+        "description": "app.models.projects",
+        "isExtraImport": true,
+        "detail": "app.models.projects",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.models.projects",
+        "description": "app.models.projects",
+        "isExtraImport": true,
+        "detail": "app.models.projects",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.models.projects",
+        "description": "app.models.projects",
+        "isExtraImport": true,
+        "detail": "app.models.projects",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.models.projects",
+        "description": "app.models.projects",
+        "isExtraImport": true,
+        "detail": "app.models.projects",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.models.projects",
+        "description": "app.models.projects",
+        "isExtraImport": true,
+        "detail": "app.models.projects",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.models.projects",
+        "description": "app.models.projects",
+        "isExtraImport": true,
+        "detail": "app.models.projects",
+        "documentation": {}
+    },
+    {
+        "label": "Project",
+        "importPath": "app.models.projects",
+        "description": "app.models.projects",
+        "isExtraImport": true,
+        "detail": "app.models.projects",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskList",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Subtask",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssignee",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependency",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TimeEntry",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskList",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Subtask",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependency",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssignee",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Comment",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskList",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssignee",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskList",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskAssignee",
+        "importPath": "app.models.tasks",
+        "description": "app.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.tags",
+        "description": "app.models.tags",
+        "isExtraImport": true,
+        "detail": "app.models.tags",
+        "documentation": {}
+    },
+    {
+        "label": "Tag",
+        "importPath": "app.models.tags",
+        "description": "app.models.tags",
+        "isExtraImport": true,
+        "detail": "app.models.tags",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.collaboration",
+        "description": "app.models.collaboration",
+        "isExtraImport": true,
+        "detail": "app.models.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "Comment",
+        "importPath": "app.models.collaboration",
+        "description": "app.models.collaboration",
+        "isExtraImport": true,
+        "detail": "app.models.collaboration",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.analytics",
+        "description": "app.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "SprintMetric",
+        "importPath": "app.models.analytics",
+        "description": "app.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "VelocityMetric",
+        "importPath": "app.models.analytics",
+        "description": "app.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceAllocation",
+        "importPath": "app.models.analytics",
+        "description": "app.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimeEntry",
+        "importPath": "app.models.analytics",
+        "description": "app.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "Timesheet",
+        "importPath": "app.models.analytics",
+        "description": "app.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "CustomReport",
+        "importPath": "app.models.analytics",
+        "description": "app.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportSchedule",
+        "importPath": "app.models.analytics",
+        "description": "app.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "MetricSnapshot",
+        "importPath": "app.models.analytics",
+        "description": "app.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "KPI",
+        "importPath": "app.models.analytics",
+        "description": "app.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "TimesheetApproval",
+        "importPath": "app.models.analytics",
+        "description": "app.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "ReportPermission",
+        "importPath": "app.models.analytics",
+        "description": "app.models.analytics",
+        "isExtraImport": true,
+        "detail": "app.models.analytics",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.archive",
+        "description": "app.models.archive",
+        "isExtraImport": true,
+        "detail": "app.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivePolicy",
+        "importPath": "app.models.archive",
+        "description": "app.models.archive",
+        "isExtraImport": true,
+        "detail": "app.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DeletedItem",
+        "importPath": "app.models.archive",
+        "description": "app.models.archive",
+        "isExtraImport": true,
+        "detail": "app.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "ArchivedDataSnapshot",
+        "importPath": "app.models.archive",
+        "description": "app.models.archive",
+        "isExtraImport": true,
+        "detail": "app.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataExportRequest",
+        "importPath": "app.models.archive",
+        "description": "app.models.archive",
+        "isExtraImport": true,
+        "detail": "app.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "DataRetentionLog",
+        "importPath": "app.models.archive",
+        "description": "app.models.archive",
+        "isExtraImport": true,
+        "detail": "app.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLog",
+        "importPath": "app.models.archive",
+        "description": "app.models.archive",
+        "isExtraImport": true,
+        "detail": "app.models.archive",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.scheduling",
+        "description": "app.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanState",
+        "importPath": "app.models.scheduling",
+        "description": "app.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskBaseline",
+        "importPath": "app.models.scheduling",
+        "description": "app.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "TaskDependencySchedule",
+        "importPath": "app.models.scheduling",
+        "description": "app.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SchedulingMode",
+        "importPath": "app.models.scheduling",
+        "description": "app.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLAPolicy",
+        "importPath": "app.models.scheduling",
+        "description": "app.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SLATracker",
+        "importPath": "app.models.scheduling",
+        "description": "app.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "WorkingHoursPolicy",
+        "importPath": "app.models.scheduling",
+        "description": "app.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "HolidayCalendar",
+        "importPath": "app.models.scheduling",
+        "description": "app.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PersonalException",
+        "importPath": "app.models.scheduling",
+        "description": "app.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningScope",
+        "importPath": "app.models.scheduling",
+        "description": "app.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "ResourceHistogram",
+        "importPath": "app.models.scheduling",
+        "description": "app.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "SimulationSession",
+        "importPath": "app.models.scheduling",
+        "description": "app.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "CrossProjectDependency",
+        "importPath": "app.models.scheduling",
+        "description": "app.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "PlanningAuditLog",
+        "importPath": "app.models.scheduling",
+        "description": "app.models.scheduling",
+        "isExtraImport": true,
+        "detail": "app.models.scheduling",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.subscriptions",
+        "description": "app.models.subscriptions",
+        "isExtraImport": true,
+        "detail": "app.models.subscriptions",
+        "documentation": {}
+    },
+    {
+        "label": "Plan",
+        "importPath": "app.models.subscriptions",
+        "description": "app.models.subscriptions",
+        "isExtraImport": true,
+        "detail": "app.models.subscriptions",
+        "documentation": {}
+    },
+    {
+        "label": "WorkspaceSubscription",
+        "importPath": "app.models.subscriptions",
+        "description": "app.models.subscriptions",
+        "isExtraImport": true,
+        "detail": "app.models.subscriptions",
+        "documentation": {}
+    },
+    {
+        "label": "SubscriptionUsage",
+        "importPath": "app.models.subscriptions",
+        "description": "app.models.subscriptions",
+        "isExtraImport": true,
+        "detail": "app.models.subscriptions",
+        "documentation": {}
+    },
+    {
+        "label": "BillingTransaction",
+        "importPath": "app.models.subscriptions",
+        "description": "app.models.subscriptions",
+        "isExtraImport": true,
+        "detail": "app.models.subscriptions",
+        "documentation": {}
+    },
+    {
+        "label": "Invoice",
+        "importPath": "app.models.subscriptions",
+        "description": "app.models.subscriptions",
+        "isExtraImport": true,
+        "detail": "app.models.subscriptions",
+        "documentation": {}
+    },
+    {
+        "label": "InvoiceLineItem",
+        "importPath": "app.models.subscriptions",
+        "description": "app.models.subscriptions",
+        "isExtraImport": true,
+        "detail": "app.models.subscriptions",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "app.models.subscriptions",
+        "description": "app.models.subscriptions",
+        "isExtraImport": true,
+        "detail": "app.models.subscriptions",
+        "documentation": {}
+    },
+    {
+        "label": "FreelancerInvoice",
+        "importPath": "app.models.subscriptions",
+        "description": "app.models.subscriptions",
+        "isExtraImport": true,
+        "detail": "app.models.subscriptions",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.personalization",
+        "description": "app.models.personalization",
+        "isExtraImport": true,
+        "detail": "app.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "UserSettings",
+        "importPath": "app.models.personalization",
+        "description": "app.models.personalization",
+        "isExtraImport": true,
+        "detail": "app.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardLayout",
+        "importPath": "app.models.personalization",
+        "description": "app.models.personalization",
+        "isExtraImport": true,
+        "detail": "app.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "WidgetConfig",
+        "importPath": "app.models.personalization",
+        "description": "app.models.personalization",
+        "isExtraImport": true,
+        "detail": "app.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "NotificationPreference",
+        "importPath": "app.models.personalization",
+        "description": "app.models.personalization",
+        "isExtraImport": true,
+        "detail": "app.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "KeyboardShortcut",
+        "importPath": "app.models.personalization",
+        "description": "app.models.personalization",
+        "isExtraImport": true,
+        "detail": "app.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "LocalizationString",
+        "importPath": "app.models.personalization",
+        "description": "app.models.personalization",
+        "isExtraImport": true,
+        "detail": "app.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "AccessibilityProfile",
+        "importPath": "app.models.personalization",
+        "description": "app.models.personalization",
+        "isExtraImport": true,
+        "detail": "app.models.personalization",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "OnboardingSurvey",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "SurveyQuestion",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "SurveyResponse",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "PersonaProfile",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "OnboardingFlow",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "FlowStep",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "UserOnboardingStatus",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "ProductTour",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "TourStep",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "UserTourSession",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "OnboardingChecklist",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "OnboardingChecklistItem",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "UserChecklistProgress",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "FeatureBeacon",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "UserBeaconState",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "OnboardingReward",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "OnboardingRewardGrant",
+        "importPath": "app.models.onboarding",
+        "description": "app.models.onboarding",
+        "isExtraImport": true,
+        "detail": "app.models.onboarding",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.reports",
+        "description": "app.models.reports",
+        "isExtraImport": true,
+        "detail": "app.models.reports",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "app.models.projects_extended",
+        "description": "app.models.projects_extended",
+        "isExtraImport": true,
+        "detail": "app.models.projects_extended",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMember",
+        "importPath": "app.models.projects_extended",
+        "description": "app.models.projects_extended",
+        "isExtraImport": true,
+        "detail": "app.models.projects_extended",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectTemplate",
+        "importPath": "app.models.projects_extended",
+        "description": "app.models.projects_extended",
+        "isExtraImport": true,
+        "detail": "app.models.projects_extended",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectBaseline",
+        "importPath": "app.models.projects_extended",
+        "description": "app.models.projects_extended",
+        "isExtraImport": true,
+        "detail": "app.models.projects_extended",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectChangeRequest",
+        "importPath": "app.models.projects_extended",
+        "description": "app.models.projects_extended",
+        "isExtraImport": true,
+        "detail": "app.models.projects_extended",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectArchive",
+        "importPath": "app.models.projects_extended",
+        "description": "app.models.projects_extended",
+        "isExtraImport": true,
+        "detail": "app.models.projects_extended",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMember",
+        "importPath": "app.models.projects_extended",
+        "description": "app.models.projects_extended",
+        "isExtraImport": true,
+        "detail": "app.models.projects_extended",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectMember",
+        "importPath": "app.models.projects_extended",
+        "description": "app.models.projects_extended",
+        "isExtraImport": true,
+        "detail": "app.models.projects_extended",
         "documentation": {}
     },
     {
@@ -17836,374 +19029,6 @@
         "documentation": {}
     },
     {
-        "label": "Comment",
-        "importPath": "app.db.models.collaboration",
-        "description": "app.db.models.collaboration",
-        "isExtraImport": true,
-        "detail": "app.db.models.collaboration",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.db.models.projects",
-        "description": "app.db.models.projects",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.db.models.projects",
-        "description": "app.db.models.projects",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.db.models.projects",
-        "description": "app.db.models.projects",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.db.models.projects",
-        "description": "app.db.models.projects",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.db.models.projects",
-        "description": "app.db.models.projects",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.db.models.projects",
-        "description": "app.db.models.projects",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects",
-        "documentation": {}
-    },
-    {
-        "label": "Project",
-        "importPath": "app.db.models.projects",
-        "description": "app.db.models.projects",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "TaskList",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "Subtask",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "TaskAssignee",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "TaskDependency",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "TimeEntry",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "TaskList",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "Subtask",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "TaskDependency",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "TaskAssignee",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "Comment",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "File",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "TaskList",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "TaskAssignee",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "TaskList",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "Task",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "TaskList",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "TaskAssignee",
-        "importPath": "app.db.models.tasks",
-        "description": "app.db.models.tasks",
-        "isExtraImport": true,
-        "detail": "app.db.models.tasks",
-        "documentation": {}
-    },
-    {
-        "label": "SprintMetric",
-        "importPath": "app.db.models.analytics",
-        "description": "app.db.models.analytics",
-        "isExtraImport": true,
-        "detail": "app.db.models.analytics",
-        "documentation": {}
-    },
-    {
-        "label": "VelocityMetric",
-        "importPath": "app.db.models.analytics",
-        "description": "app.db.models.analytics",
-        "isExtraImport": true,
-        "detail": "app.db.models.analytics",
-        "documentation": {}
-    },
-    {
-        "label": "ResourceAllocation",
-        "importPath": "app.db.models.analytics",
-        "description": "app.db.models.analytics",
-        "isExtraImport": true,
-        "detail": "app.db.models.analytics",
-        "documentation": {}
-    },
-    {
-        "label": "TimeEntry",
-        "importPath": "app.db.models.analytics",
-        "description": "app.db.models.analytics",
-        "isExtraImport": true,
-        "detail": "app.db.models.analytics",
-        "documentation": {}
-    },
-    {
-        "label": "Timesheet",
-        "importPath": "app.db.models.analytics",
-        "description": "app.db.models.analytics",
-        "isExtraImport": true,
-        "detail": "app.db.models.analytics",
-        "documentation": {}
-    },
-    {
-        "label": "CustomReport",
-        "importPath": "app.db.models.analytics",
-        "description": "app.db.models.analytics",
-        "isExtraImport": true,
-        "detail": "app.db.models.analytics",
-        "documentation": {}
-    },
-    {
-        "label": "ReportSchedule",
-        "importPath": "app.db.models.analytics",
-        "description": "app.db.models.analytics",
-        "isExtraImport": true,
-        "detail": "app.db.models.analytics",
-        "documentation": {}
-    },
-    {
-        "label": "MetricSnapshot",
-        "importPath": "app.db.models.analytics",
-        "description": "app.db.models.analytics",
-        "isExtraImport": true,
-        "detail": "app.db.models.analytics",
-        "documentation": {}
-    },
-    {
-        "label": "KPI",
-        "importPath": "app.db.models.analytics",
-        "description": "app.db.models.analytics",
-        "isExtraImport": true,
-        "detail": "app.db.models.analytics",
-        "documentation": {}
-    },
-    {
-        "label": "TimesheetApproval",
-        "importPath": "app.db.models.analytics",
-        "description": "app.db.models.analytics",
-        "isExtraImport": true,
-        "detail": "app.db.models.analytics",
-        "documentation": {}
-    },
-    {
-        "label": "ReportPermission",
-        "importPath": "app.db.models.analytics",
-        "description": "app.db.models.analytics",
-        "isExtraImport": true,
-        "detail": "app.db.models.analytics",
-        "documentation": {}
-    },
-    {
         "label": "zipfile",
         "kind": 6,
         "isExtraImport": true,
@@ -18219,54 +19044,6 @@
         "importPath": "io",
         "description": "io",
         "detail": "io",
-        "documentation": {}
-    },
-    {
-        "label": "ArchivePolicy",
-        "importPath": "app.db.models.archive",
-        "description": "app.db.models.archive",
-        "isExtraImport": true,
-        "detail": "app.db.models.archive",
-        "documentation": {}
-    },
-    {
-        "label": "DeletedItem",
-        "importPath": "app.db.models.archive",
-        "description": "app.db.models.archive",
-        "isExtraImport": true,
-        "detail": "app.db.models.archive",
-        "documentation": {}
-    },
-    {
-        "label": "ArchivedDataSnapshot",
-        "importPath": "app.db.models.archive",
-        "description": "app.db.models.archive",
-        "isExtraImport": true,
-        "detail": "app.db.models.archive",
-        "documentation": {}
-    },
-    {
-        "label": "DataExportRequest",
-        "importPath": "app.db.models.archive",
-        "description": "app.db.models.archive",
-        "isExtraImport": true,
-        "detail": "app.db.models.archive",
-        "documentation": {}
-    },
-    {
-        "label": "DataRetentionLog",
-        "importPath": "app.db.models.archive",
-        "description": "app.db.models.archive",
-        "isExtraImport": true,
-        "detail": "app.db.models.archive",
-        "documentation": {}
-    },
-    {
-        "label": "AuditLog",
-        "importPath": "app.db.models.archive",
-        "description": "app.db.models.archive",
-        "isExtraImport": true,
-        "detail": "app.db.models.archive",
         "documentation": {}
     },
     {
@@ -18343,14 +19120,6 @@
         "documentation": {}
     },
     {
-        "label": "Tag",
-        "importPath": "app.db.models.tags",
-        "description": "app.db.models.tags",
-        "isExtraImport": true,
-        "detail": "app.db.models.tags",
-        "documentation": {}
-    },
-    {
         "label": "hmac",
         "kind": 6,
         "isExtraImport": true,
@@ -18387,15 +19156,6 @@
         "documentation": {}
     },
     {
-        "label": "asyncio",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "asyncio",
-        "description": "asyncio",
-        "detail": "asyncio",
-        "documentation": {}
-    },
-    {
         "label": "Template",
         "importPath": "string",
         "description": "string",
@@ -18404,254 +19164,6 @@
         "documentation": {}
     },
     {
-        "label": "OnboardingSurvey",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "SurveyQuestion",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "SurveyResponse",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "PersonaProfile",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "OnboardingFlow",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "FlowStep",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "UserOnboardingStatus",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "ProductTour",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "TourStep",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "UserTourSession",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "OnboardingChecklist",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "OnboardingChecklistItem",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "UserChecklistProgress",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "FeatureBeacon",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "UserBeaconState",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "OnboardingReward",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "OnboardingRewardGrant",
-        "importPath": "app.db.models.onboarding",
-        "description": "app.db.models.onboarding",
-        "isExtraImport": true,
-        "detail": "app.db.models.onboarding",
-        "documentation": {}
-    },
-    {
-        "label": "UserSettings",
-        "importPath": "app.db.models.personalization",
-        "description": "app.db.models.personalization",
-        "isExtraImport": true,
-        "detail": "app.db.models.personalization",
-        "documentation": {}
-    },
-    {
-        "label": "DashboardLayout",
-        "importPath": "app.db.models.personalization",
-        "description": "app.db.models.personalization",
-        "isExtraImport": true,
-        "detail": "app.db.models.personalization",
-        "documentation": {}
-    },
-    {
-        "label": "WidgetConfig",
-        "importPath": "app.db.models.personalization",
-        "description": "app.db.models.personalization",
-        "isExtraImport": true,
-        "detail": "app.db.models.personalization",
-        "documentation": {}
-    },
-    {
-        "label": "NotificationPreference",
-        "importPath": "app.db.models.personalization",
-        "description": "app.db.models.personalization",
-        "isExtraImport": true,
-        "detail": "app.db.models.personalization",
-        "documentation": {}
-    },
-    {
-        "label": "KeyboardShortcut",
-        "importPath": "app.db.models.personalization",
-        "description": "app.db.models.personalization",
-        "isExtraImport": true,
-        "detail": "app.db.models.personalization",
-        "documentation": {}
-    },
-    {
-        "label": "LocalizationString",
-        "importPath": "app.db.models.personalization",
-        "description": "app.db.models.personalization",
-        "isExtraImport": true,
-        "detail": "app.db.models.personalization",
-        "documentation": {}
-    },
-    {
-        "label": "AccessibilityProfile",
-        "importPath": "app.db.models.personalization",
-        "description": "app.db.models.personalization",
-        "isExtraImport": true,
-        "detail": "app.db.models.personalization",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectMember",
-        "importPath": "app.db.models.projects_extended",
-        "description": "app.db.models.projects_extended",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects_extended",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectTemplate",
-        "importPath": "app.db.models.projects_extended",
-        "description": "app.db.models.projects_extended",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects_extended",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectBaseline",
-        "importPath": "app.db.models.projects_extended",
-        "description": "app.db.models.projects_extended",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects_extended",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectChangeRequest",
-        "importPath": "app.db.models.projects_extended",
-        "description": "app.db.models.projects_extended",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects_extended",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectArchive",
-        "importPath": "app.db.models.projects_extended",
-        "description": "app.db.models.projects_extended",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects_extended",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectMember",
-        "importPath": "app.db.models.projects_extended",
-        "description": "app.db.models.projects_extended",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects_extended",
-        "documentation": {}
-    },
-    {
-        "label": "ProjectMember",
-        "importPath": "app.db.models.projects_extended",
-        "description": "app.db.models.projects_extended",
-        "isExtraImport": true,
-        "detail": "app.db.models.projects_extended",
-        "documentation": {}
-    },
-    {
         "label": "ProjectRepository",
         "importPath": "app.repositories.project_repository",
         "description": "app.repositories.project_repository",
@@ -18665,118 +19177,6 @@
         "description": "app.repositories.project_repository",
         "isExtraImport": true,
         "detail": "app.repositories.project_repository",
-        "documentation": {}
-    },
-    {
-        "label": "PlanState",
-        "importPath": "app.db.models.scheduling",
-        "description": "app.db.models.scheduling",
-        "isExtraImport": true,
-        "detail": "app.db.models.scheduling",
-        "documentation": {}
-    },
-    {
-        "label": "TaskBaseline",
-        "importPath": "app.db.models.scheduling",
-        "description": "app.db.models.scheduling",
-        "isExtraImport": true,
-        "detail": "app.db.models.scheduling",
-        "documentation": {}
-    },
-    {
-        "label": "TaskDependencySchedule",
-        "importPath": "app.db.models.scheduling",
-        "description": "app.db.models.scheduling",
-        "isExtraImport": true,
-        "detail": "app.db.models.scheduling",
-        "documentation": {}
-    },
-    {
-        "label": "SchedulingMode",
-        "importPath": "app.db.models.scheduling",
-        "description": "app.db.models.scheduling",
-        "isExtraImport": true,
-        "detail": "app.db.models.scheduling",
-        "documentation": {}
-    },
-    {
-        "label": "SLAPolicy",
-        "importPath": "app.db.models.scheduling",
-        "description": "app.db.models.scheduling",
-        "isExtraImport": true,
-        "detail": "app.db.models.scheduling",
-        "documentation": {}
-    },
-    {
-        "label": "SLATracker",
-        "importPath": "app.db.models.scheduling",
-        "description": "app.db.models.scheduling",
-        "isExtraImport": true,
-        "detail": "app.db.models.scheduling",
-        "documentation": {}
-    },
-    {
-        "label": "WorkingHoursPolicy",
-        "importPath": "app.db.models.scheduling",
-        "description": "app.db.models.scheduling",
-        "isExtraImport": true,
-        "detail": "app.db.models.scheduling",
-        "documentation": {}
-    },
-    {
-        "label": "HolidayCalendar",
-        "importPath": "app.db.models.scheduling",
-        "description": "app.db.models.scheduling",
-        "isExtraImport": true,
-        "detail": "app.db.models.scheduling",
-        "documentation": {}
-    },
-    {
-        "label": "PersonalException",
-        "importPath": "app.db.models.scheduling",
-        "description": "app.db.models.scheduling",
-        "isExtraImport": true,
-        "detail": "app.db.models.scheduling",
-        "documentation": {}
-    },
-    {
-        "label": "PlanningScope",
-        "importPath": "app.db.models.scheduling",
-        "description": "app.db.models.scheduling",
-        "isExtraImport": true,
-        "detail": "app.db.models.scheduling",
-        "documentation": {}
-    },
-    {
-        "label": "ResourceHistogram",
-        "importPath": "app.db.models.scheduling",
-        "description": "app.db.models.scheduling",
-        "isExtraImport": true,
-        "detail": "app.db.models.scheduling",
-        "documentation": {}
-    },
-    {
-        "label": "SimulationSession",
-        "importPath": "app.db.models.scheduling",
-        "description": "app.db.models.scheduling",
-        "isExtraImport": true,
-        "detail": "app.db.models.scheduling",
-        "documentation": {}
-    },
-    {
-        "label": "CrossProjectDependency",
-        "importPath": "app.db.models.scheduling",
-        "description": "app.db.models.scheduling",
-        "isExtraImport": true,
-        "detail": "app.db.models.scheduling",
-        "documentation": {}
-    },
-    {
-        "label": "PlanningAuditLog",
-        "importPath": "app.db.models.scheduling",
-        "description": "app.db.models.scheduling",
-        "isExtraImport": true,
-        "detail": "app.db.models.scheduling",
         "documentation": {}
     },
     {
@@ -18828,70 +19228,6 @@
         "documentation": {}
     },
     {
-        "label": "Plan",
-        "importPath": "app.db.models.subscriptions",
-        "description": "app.db.models.subscriptions",
-        "isExtraImport": true,
-        "detail": "app.db.models.subscriptions",
-        "documentation": {}
-    },
-    {
-        "label": "WorkspaceSubscription",
-        "importPath": "app.db.models.subscriptions",
-        "description": "app.db.models.subscriptions",
-        "isExtraImport": true,
-        "detail": "app.db.models.subscriptions",
-        "documentation": {}
-    },
-    {
-        "label": "SubscriptionUsage",
-        "importPath": "app.db.models.subscriptions",
-        "description": "app.db.models.subscriptions",
-        "isExtraImport": true,
-        "detail": "app.db.models.subscriptions",
-        "documentation": {}
-    },
-    {
-        "label": "BillingTransaction",
-        "importPath": "app.db.models.subscriptions",
-        "description": "app.db.models.subscriptions",
-        "isExtraImport": true,
-        "detail": "app.db.models.subscriptions",
-        "documentation": {}
-    },
-    {
-        "label": "Invoice",
-        "importPath": "app.db.models.subscriptions",
-        "description": "app.db.models.subscriptions",
-        "isExtraImport": true,
-        "detail": "app.db.models.subscriptions",
-        "documentation": {}
-    },
-    {
-        "label": "InvoiceLineItem",
-        "importPath": "app.db.models.subscriptions",
-        "description": "app.db.models.subscriptions",
-        "isExtraImport": true,
-        "detail": "app.db.models.subscriptions",
-        "documentation": {}
-    },
-    {
-        "label": "Client",
-        "importPath": "app.db.models.subscriptions",
-        "description": "app.db.models.subscriptions",
-        "isExtraImport": true,
-        "detail": "app.db.models.subscriptions",
-        "documentation": {}
-    },
-    {
-        "label": "FreelancerInvoice",
-        "importPath": "app.db.models.subscriptions",
-        "description": "app.db.models.subscriptions",
-        "isExtraImport": true,
-        "detail": "app.db.models.subscriptions",
-        "documentation": {}
-    },
-    {
         "label": "WorkspaceValidator",
         "importPath": "app.services.workspace_validation",
         "description": "app.services.workspace_validation",
@@ -18924,6 +19260,14 @@
         "documentation": {}
     },
     {
+        "label": "run_workspace_purge_job",
+        "importPath": "app.core.scheduled_jobs",
+        "description": "app.core.scheduled_jobs",
+        "isExtraImport": true,
+        "detail": "app.core.scheduled_jobs",
+        "documentation": {}
+    },
+    {
         "label": "api_router",
         "importPath": "app.api.v1.router",
         "description": "app.api.v1.router",
@@ -18945,6 +19289,22 @@
         "description": "app.db.base",
         "isExtraImport": true,
         "detail": "app.db.base",
+        "documentation": {}
+    },
+    {
+        "label": "ErrorHandlerMiddleware",
+        "importPath": "app.middleware.error_handler",
+        "description": "app.middleware.error_handler",
+        "isExtraImport": true,
+        "detail": "app.middleware.error_handler",
+        "documentation": {}
+    },
+    {
+        "label": "LoggingMiddleware",
+        "importPath": "app.middleware.logging",
+        "description": "app.middleware.logging",
+        "isExtraImport": true,
+        "detail": "app.middleware.logging",
         "documentation": {}
     },
     {
@@ -18989,6 +19349,103 @@
         "documentation": {}
     },
     {
+        "label": "FeatureFlag",
+        "importPath": "app.db.models.admin",
+        "description": "app.db.models.admin",
+        "isExtraImport": true,
+        "detail": "app.db.models.admin",
+        "documentation": {}
+    },
+    {
+        "label": "Role",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "Permission",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "role_permissions",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "Role",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "Permission",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "MFAConfig",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "MFABackupCode",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "app.db.models.users",
+        "description": "app.db.models.users",
+        "isExtraImport": true,
+        "detail": "app.db.models.users",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
         "label": "pytest",
         "kind": 6,
         "isExtraImport": true,
@@ -19014,6 +19471,86 @@
         "documentation": {}
     },
     {
+        "label": "Task",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "TaskList",
+        "importPath": "app.db.models.tasks",
+        "description": "app.db.models.tasks",
+        "isExtraImport": true,
+        "detail": "app.db.models.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Workspace",
+        "importPath": "app.db.models.workspaces",
+        "description": "app.db.models.workspaces",
+        "isExtraImport": true,
+        "detail": "app.db.models.workspaces",
+        "documentation": {}
+    },
+    {
+        "label": "MagicMock",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "Mock",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "patch",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "Mock",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "MagicMock",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "Mock",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "MagicMock",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
         "label": "StaticPool",
         "importPath": "sqlalchemy.pool",
         "description": "sqlalchemy.pool",
@@ -19035,14 +19572,6 @@
         "description": "app.main",
         "isExtraImport": true,
         "detail": "app.main",
-        "documentation": {}
-    },
-    {
-        "label": "hash_password",
-        "importPath": "app.utils.helpers",
-        "description": "app.utils.helpers",
-        "isExtraImport": true,
-        "detail": "app.utils.helpers",
         "documentation": {}
     },
     {
@@ -20319,7 +20848,7 @@
         "kind": 2,
         "importPath": "app.api.v1.endpoints.admin_system",
         "description": "app.api.v1.endpoints.admin_system",
-        "peekOfCode": "def get_admin_stats(\n    db: Session = Depends(get_db),\n    current_admin: AdminUser = Depends(require_admin_roles(\"super_admin\", \"system_admin\")),\n):\n    \"\"\"Get admin system statistics\"\"\"\n    from app.db.models.admin import AdminUser, AdminRole, AdminPermission, ChangeRequest, SecurityIncident, AccessReview\n    total_admin_users = db.query(AdminUser).count()\n    active_admin_users = db.query(AdminUser).filter(AdminUser.is_active == True).count()\n    total_roles = db.query(AdminRole).count()\n    total_permissions = db.query(AdminPermission).count()",
+        "peekOfCode": "def get_admin_stats(\n    db: Session = Depends(get_db),\n    current_admin: AdminUser = Depends(require_admin_roles(\"super_admin\", \"system_admin\")),\n):\n    \"\"\"Get admin system statistics\"\"\"\n    from app.models.admin import AdminUser, AdminRole, AdminPermission, ChangeRequest, SecurityIncident, AccessReview\n    total_admin_users = db.query(AdminUser).count()\n    active_admin_users = db.query(AdminUser).filter(AdminUser.is_active == True).count()\n    total_roles = db.query(AdminRole).count()\n    total_permissions = db.query(AdminPermission).count()",
         "detail": "app.api.v1.endpoints.admin_system",
         "documentation": {}
     },
@@ -20661,7 +21190,7 @@
         "kind": 2,
         "importPath": "app.api.v1.endpoints.analytics",
         "description": "app.api.v1.endpoints.analytics",
-        "peekOfCode": "def get_project_kpis(\n    project_id: str,\n    status: Optional[str] = Query(None),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get all KPIs for project\"\"\"\n    from sqlalchemy import and_\n    from app.db.models.analytics import KPI\n    query = db.query(KPI).filter(KPI.project_id == project_id)",
+        "peekOfCode": "def get_project_kpis(\n    project_id: str,\n    status: Optional[str] = Query(None),\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get all KPIs for project\"\"\"\n    from sqlalchemy import and_\n    from app.models.analytics import KPI\n    query = db.query(KPI).filter(KPI.project_id == project_id)",
         "detail": "app.api.v1.endpoints.analytics",
         "documentation": {}
     },
@@ -20670,7 +21199,7 @@
         "kind": 2,
         "importPath": "app.api.v1.endpoints.analytics",
         "description": "app.api.v1.endpoints.analytics",
-        "peekOfCode": "def update_kpi_value(\n    kpi_id: UUID,\n    actual_value: float,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update KPI actual value\"\"\"\n    from app.db.models.analytics import KPI\n    kpi = db.query(KPI).get(kpi_id)\n    if not kpi:",
+        "peekOfCode": "def update_kpi_value(\n    kpi_id: UUID,\n    actual_value: float,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Update KPI actual value\"\"\"\n    from app.models.analytics import KPI\n    kpi = db.query(KPI).get(kpi_id)\n    if not kpi:",
         "detail": "app.api.v1.endpoints.analytics",
         "documentation": {}
     },
@@ -20688,7 +21217,7 @@
         "kind": 2,
         "importPath": "app.api.v1.endpoints.analytics",
         "description": "app.api.v1.endpoints.analytics",
-        "peekOfCode": "def get_timesheet_approval(\n    approval_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get timesheet approval details\"\"\"\n    from app.db.models.analytics import TimesheetApproval\n    approval = db.query(TimesheetApproval).get(approval_id)\n    if not approval:\n        raise HTTPException(status_code=404, detail=\"Approval not found\")",
+        "peekOfCode": "def get_timesheet_approval(\n    approval_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get timesheet approval details\"\"\"\n    from app.models.analytics import TimesheetApproval\n    approval = db.query(TimesheetApproval).get(approval_id)\n    if not approval:\n        raise HTTPException(status_code=404, detail=\"Approval not found\")",
         "detail": "app.api.v1.endpoints.analytics",
         "documentation": {}
     },
@@ -20724,7 +21253,7 @@
         "kind": 2,
         "importPath": "app.api.v1.endpoints.analytics",
         "description": "app.api.v1.endpoints.analytics",
-        "peekOfCode": "def get_report_permission(\n    permission_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get report permission details\"\"\"\n    from app.db.models.analytics import ReportPermission\n    permission = db.query(ReportPermission).get(permission_id)\n    if not permission:\n        raise HTTPException(status_code=404, detail=\"Permission not found\")",
+        "peekOfCode": "def get_report_permission(\n    permission_id: UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get report permission details\"\"\"\n    from app.models.analytics import ReportPermission\n    permission = db.query(ReportPermission).get(permission_id)\n    if not permission:\n        raise HTTPException(status_code=404, detail=\"Permission not found\")",
         "detail": "app.api.v1.endpoints.analytics",
         "documentation": {}
     },
@@ -20733,7 +21262,7 @@
         "kind": 2,
         "importPath": "app.api.v1.endpoints.analytics",
         "description": "app.api.v1.endpoints.analytics",
-        "peekOfCode": "def get_report_permissions(\n    report_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get all permissions for report\"\"\"\n    from app.db.models.analytics import ReportPermission\n    permissions = db.query(ReportPermission).filter(\n        ReportPermission.report_id == report_id\n    ).all()",
+        "peekOfCode": "def get_report_permissions(\n    report_id: str,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get all permissions for report\"\"\"\n    from app.models.analytics import ReportPermission\n    permissions = db.query(ReportPermission).filter(\n        ReportPermission.report_id == report_id\n    ).all()",
         "detail": "app.api.v1.endpoints.analytics",
         "documentation": {}
     },
@@ -22101,7 +22630,7 @@
         "kind": 2,
         "importPath": "app.api.v1.endpoints.scheduling",
         "description": "app.api.v1.endpoints.scheduling",
-        "peekOfCode": "def get_sla_tracker(\n    task_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get SLA tracker for task\"\"\"\n    from sqlalchemy import select\n    from app.db.models.scheduling import SLATracker\n    tracker = db.scalar(select(SLATracker).where(SLATracker.task_id == task_id))\n    if not tracker:",
+        "peekOfCode": "def get_sla_tracker(\n    task_id: uuid.UUID,\n    db: Session = Depends(get_db),\n    current_user: User = Depends(get_current_user),\n):\n    \"\"\"Get SLA tracker for task\"\"\"\n    from sqlalchemy import select\n    from app.models.scheduling import SLATracker\n    tracker = db.scalar(select(SLATracker).where(SLATracker.task_id == task_id))\n    if not tracker:",
         "detail": "app.api.v1.endpoints.scheduling",
         "documentation": {}
     },
@@ -23327,6 +23856,15 @@
         "description": "app.core.referencer_loader",
         "peekOfCode": "reference_loader = ReferenceDataLoader()",
         "detail": "app.core.referencer_loader",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "app.core.scheduled_jobs",
+        "description": "app.core.scheduled_jobs",
+        "peekOfCode": "logger = logging.getLogger(__name__)\ndef _run_workspace_purge_once() -> None:\n    db = SessionLocal()\n    try:\n        purged_count = WorkspaceService.purge_soft_deleted_workspaces(db)\n        logger.info(\"Workspace purge completed. purged=%s\", purged_count)\n    except Exception:\n        logger.exception(\"Workspace purge failed\")\n        db.rollback()\n    finally:",
+        "detail": "app.core.scheduled_jobs",
         "documentation": {}
     },
     {
@@ -26862,7 +27400,25 @@
         "kind": 6,
         "importPath": "app.schemas.auth",
         "description": "app.schemas.auth",
-        "peekOfCode": "class ValidationErrorResponse(BaseModel):\n    \"\"\"Validation error response\"\"\"\n    detail: List[dict]",
+        "peekOfCode": "class ValidationErrorResponse(BaseModel):\n    \"\"\"Validation error response\"\"\"\n    detail: List[dict]\n# ============= OAuth =============\nclass OAuthLoginRequest(BaseModel):\n    \"\"\"OAuth login/callback request\"\"\"\n    provider: str = Field(..., description=\"OAuth provider (google, github)\")\n    code: str = Field(..., description=\"Authorization code from OAuth provider\")\n    redirect_uri: Optional[str] = Field(None, description=\"Redirect URI used in OAuth flow\")\n    class Config:",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthLoginRequest",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class OAuthLoginRequest(BaseModel):\n    \"\"\"OAuth login/callback request\"\"\"\n    provider: str = Field(..., description=\"OAuth provider (google, github)\")\n    code: str = Field(..., description=\"Authorization code from OAuth provider\")\n    redirect_uri: Optional[str] = Field(None, description=\"Redirect URI used in OAuth flow\")\n    class Config:\n        json_schema_extra = {\n            \"example\": {\n                \"provider\": \"google\",\n                \"code\": \"4/0AX4XfWh...\",",
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "OAuthUrlResponse",
+        "kind": 6,
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "peekOfCode": "class OAuthUrlResponse(BaseModel):\n    \"\"\"OAuth authorization URL response\"\"\"\n    auth_url: str = Field(..., description=\"OAuth authorization URL\")\n    state: str = Field(..., description=\"State parameter for CSRF protection\")\n    class Config:\n        json_schema_extra = {\n            \"example\": {\n                \"auth_url\": \"https://accounts.google.com/o/oauth2/v2/auth?...\",\n                \"state\": \"random_state_string\"\n            }",
         "detail": "app.schemas.auth",
         "documentation": {}
     },
@@ -31785,7 +32341,7 @@
         "kind": 6,
         "importPath": "app.services.workspace",
         "description": "app.services.workspace",
-        "peekOfCode": "class WorkspaceInvitationService:\n    \"\"\"Service for workspace invitation management\"\"\"\n    @staticmethod\n    def create_invitation(\n        db: Session,\n        workspace_id: uuid.UUID,\n        invited_by: uuid.UUID,\n        invitation_data: WorkspaceInvitationCreate,\n        expires_in_hours: int = 48,\n    ) -> WorkspaceInvitation:",
+        "peekOfCode": "class WorkspaceInvitationService:\n    \"\"\"Service for workspace invitation management\"\"\"\n    @staticmethod\n    def _hash_invitation_token(token: str) -> str:\n        \"\"\"\n        Hash invitation token using a stable algorithm.\n        \"\"\"\n        salted = f\"{token}:{settings.SECRET_KEY}\".encode(\"utf-8\")\n        return hashlib.sha256(salted).hexdigest()\n    @staticmethod",
         "detail": "app.services.workspace",
         "documentation": {}
     },
@@ -32190,7 +32746,7 @@
         "kind": 5,
         "importPath": "app.main",
         "description": "app.main",
-        "peekOfCode": "app = FastAPI(\n    title=settings.APP_NAME,\n    version=settings.APP_VERSION,\n    description=\"PronaFlow Project Management Platform - Backend API\",\n    debug=settings.DEBUG\n)\n# CORS middleware\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=settings.ALLOWED_ORIGINS,",
+        "peekOfCode": "app = FastAPI(\n    title=settings.APP_NAME,\n    version=settings.APP_VERSION,\n    description=\"PronaFlow Project Management Platform - Backend API\",\n    debug=settings.DEBUG\n)\n# Add middleware (order matters - last added is executed first)\n# 1. Error handler (outermost - catches all errors)\napp.add_middleware(ErrorHandlerMiddleware)\n# 2. Logging middleware",
         "detail": "app.main",
         "documentation": {}
     },
@@ -32375,6 +32931,33 @@
         "documentation": {}
     },
     {
+        "label": "seed_roles_and_permissions",
+        "kind": 2,
+        "importPath": "scripts.seed_roles_permissions",
+        "description": "scripts.seed_roles_permissions",
+        "peekOfCode": "def seed_roles_and_permissions():\n    \"\"\"Seed initial roles and permissions\"\"\"\n    print(\"🌱 Seeding Roles and Permissions...\\n\")\n    # Create tables if they don't exist\n    Base.metadata.create_all(bind=engine)\n    # Get database session\n    db = next(get_db())\n    try:\n        # Define roles\n        roles_data = [",
+        "detail": "scripts.seed_roles_permissions",
+        "documentation": {}
+    },
+    {
+        "label": "AuthFlowTester",
+        "kind": 6,
+        "importPath": "scripts.test_auth_flow",
+        "description": "scripts.test_auth_flow",
+        "peekOfCode": "class AuthFlowTester:\n    \"\"\"Test authentication flow end-to-end\"\"\"\n    def __init__(self, base_url: str = \"http://localhost:8000\"):\n        self.base_url = base_url\n        self.api_base = f\"{base_url}/api/v1/auth\"\n        self.session = requests.Session()\n        self.test_user = {\n            \"email\": f\"test_{int(time.time())}@example.com\",\n            \"username\": f\"testuser_{int(time.time())}\",\n            \"password\": \"SecureTestPass123!@#\",",
+        "detail": "scripts.test_auth_flow",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "scripts.test_auth_flow",
+        "description": "scripts.test_auth_flow",
+        "peekOfCode": "def main():\n    \"\"\"Main test runner\"\"\"\n    import sys\n    # Check if server is running\n    print(\"🔍 Checking server status...\")\n    try:\n        response = requests.get(\"http://localhost:8000/health\", timeout=5)\n        if response.status_code == 200:\n            print(\"   ✅ Server is running\\n\")\n        else:",
+        "detail": "scripts.test_auth_flow",
+        "documentation": {}
+    },
+    {
         "label": "TestAuthenticationAPI",
         "kind": 6,
         "importPath": "tests.test_api.test_auth_api",
@@ -32435,6 +33018,150 @@
         "description": "tests.test_repositories.test_workspace_repo",
         "peekOfCode": "class TestWorkspaceRepository:\n    \"\"\"Test suite for WorkspaceRepository.\"\"\"\n    def test_create_workspace(self, db_session, sample_user_data):\n        \"\"\"Test creating a new workspace.\"\"\"\n        from app.repositories.user_repository import UserRepository\n        # Create owner user first\n        user_repo = UserRepository(db_session)\n        owner = user_repo.create(**sample_user_data)\n        db_session.commit()\n        # Create workspace",
         "detail": "tests.test_repositories.test_workspace_repo",
+        "documentation": {}
+    },
+    {
+        "label": "mock_email_service",
+        "kind": 2,
+        "importPath": "tests.test_services.test_auth_default_workspace",
+        "description": "tests.test_services.test_auth_default_workspace",
+        "peekOfCode": "def mock_email_service():\n    return MagicMock()\ndef test_register_user_creates_default_workspace(db, mock_email_service):\n    auth_service = AuthService(db, mock_email_service)\n    user, error = auth_service.register_user(\n        email=\"newuser@example.com\",\n        username=\"newuser\",\n        password=\"SecurePass123!@#\",\n    )\n    assert error is None",
+        "detail": "tests.test_services.test_auth_default_workspace",
+        "documentation": {}
+    },
+    {
+        "label": "test_register_user_creates_default_workspace",
+        "kind": 2,
+        "importPath": "tests.test_services.test_auth_default_workspace",
+        "description": "tests.test_services.test_auth_default_workspace",
+        "peekOfCode": "def test_register_user_creates_default_workspace(db, mock_email_service):\n    auth_service = AuthService(db, mock_email_service)\n    user, error = auth_service.register_user(\n        email=\"newuser@example.com\",\n        username=\"newuser\",\n        password=\"SecurePass123!@#\",\n    )\n    assert error is None\n    assert user is not None\n    workspace = (",
+        "detail": "tests.test_services.test_auth_default_workspace",
+        "documentation": {}
+    },
+    {
+        "label": "TestAuthService",
+        "kind": 6,
+        "importPath": "tests.test_services.test_auth_service",
+        "description": "tests.test_services.test_auth_service",
+        "peekOfCode": "class TestAuthService:\n    \"\"\"Test suite for AuthService\"\"\"\n    def test_register_user_success(self, db_session, mock_email_service):\n        \"\"\"Test successful user registration\"\"\"\n        auth_service = AuthService(db_session, mock_email_service)\n        user, error = auth_service.register_user(\n            email=\"test@example.com\",\n            username=\"testuser\",\n            password=\"SecurePass123!@#\"\n        )",
+        "detail": "tests.test_services.test_auth_service",
+        "documentation": {}
+    },
+    {
+        "label": "db_session",
+        "kind": 2,
+        "importPath": "tests.test_services.test_auth_service",
+        "description": "tests.test_services.test_auth_service",
+        "peekOfCode": "def db_session():\n    \"\"\"Mock database session\"\"\"\n    from unittest.mock import MagicMock\n    session = MagicMock()\n    return session\n@pytest.fixture\ndef mock_email_service():\n    \"\"\"Mock email service\"\"\"\n    from unittest.mock import MagicMock\n    service = MagicMock()",
+        "detail": "tests.test_services.test_auth_service",
+        "documentation": {}
+    },
+    {
+        "label": "mock_email_service",
+        "kind": 2,
+        "importPath": "tests.test_services.test_auth_service",
+        "description": "tests.test_services.test_auth_service",
+        "peekOfCode": "def mock_email_service():\n    \"\"\"Mock email service\"\"\"\n    from unittest.mock import MagicMock\n    service = MagicMock()\n    return service",
+        "detail": "tests.test_services.test_auth_service",
+        "documentation": {}
+    },
+    {
+        "label": "TestMFAService",
+        "kind": 6,
+        "importPath": "tests.test_services.test_mfa_service",
+        "description": "tests.test_services.test_mfa_service",
+        "peekOfCode": "class TestMFAService:\n    \"\"\"Test suite for MFAService\"\"\"\n    def test_enable_mfa_success(self, db_session, sample_user):\n        \"\"\"Test successful MFA enablement\"\"\"\n        mfa_service = MFAService(db_session)\n        secret, qr_code, backup_codes = mfa_service.enable_mfa(sample_user.id)\n        assert secret is not None\n        assert len(secret) == 32  # Base32 secret\n        assert qr_code is not None\n        assert qr_code.startswith(\"data:image/png;base64,\")",
+        "detail": "tests.test_services.test_mfa_service",
+        "documentation": {}
+    },
+    {
+        "label": "db_session",
+        "kind": 2,
+        "importPath": "tests.test_services.test_mfa_service",
+        "description": "tests.test_services.test_mfa_service",
+        "peekOfCode": "def db_session():\n    \"\"\"Mock database session\"\"\"\n    session = MagicMock()\n    return session\n@pytest.fixture\ndef sample_user():\n    \"\"\"Sample user for testing\"\"\"\n    user = Mock()\n    user.id = \"user-uuid-123\"\n    user.email = \"test@example.com\"",
+        "detail": "tests.test_services.test_mfa_service",
+        "documentation": {}
+    },
+    {
+        "label": "sample_user",
+        "kind": 2,
+        "importPath": "tests.test_services.test_mfa_service",
+        "description": "tests.test_services.test_mfa_service",
+        "peekOfCode": "def sample_user():\n    \"\"\"Sample user for testing\"\"\"\n    user = Mock()\n    user.id = \"user-uuid-123\"\n    user.email = \"test@example.com\"\n    return user\n@pytest.fixture\ndef sample_user_with_mfa(sample_user):\n    \"\"\"Sample user with MFA enabled\"\"\"\n    sample_user.mfa_enabled = True",
+        "detail": "tests.test_services.test_mfa_service",
+        "documentation": {}
+    },
+    {
+        "label": "sample_user_with_mfa",
+        "kind": 2,
+        "importPath": "tests.test_services.test_mfa_service",
+        "description": "tests.test_services.test_mfa_service",
+        "peekOfCode": "def sample_user_with_mfa(sample_user):\n    \"\"\"Sample user with MFA enabled\"\"\"\n    sample_user.mfa_enabled = True\n    return sample_user\n@pytest.fixture\ndef mfa_config():\n    \"\"\"Sample MFA config\"\"\"\n    config = Mock()\n    config.secret_key = pyotp.random_base32()\n    config.enabled = False",
+        "detail": "tests.test_services.test_mfa_service",
+        "documentation": {}
+    },
+    {
+        "label": "mfa_config",
+        "kind": 2,
+        "importPath": "tests.test_services.test_mfa_service",
+        "description": "tests.test_services.test_mfa_service",
+        "peekOfCode": "def mfa_config():\n    \"\"\"Sample MFA config\"\"\"\n    config = Mock()\n    config.secret_key = pyotp.random_base32()\n    config.enabled = False\n    return config\n@pytest.fixture\ndef backup_code():\n    \"\"\"Sample unused backup code\"\"\"\n    code = Mock()",
+        "detail": "tests.test_services.test_mfa_service",
+        "documentation": {}
+    },
+    {
+        "label": "backup_code",
+        "kind": 2,
+        "importPath": "tests.test_services.test_mfa_service",
+        "description": "tests.test_services.test_mfa_service",
+        "peekOfCode": "def backup_code():\n    \"\"\"Sample unused backup code\"\"\"\n    code = Mock()\n    code.code_hash = \"hashed_code\"\n    code.used_at = None\n    return code\n@pytest.fixture\ndef used_backup_code():\n    \"\"\"Sample used backup code\"\"\"\n    code = Mock()",
+        "detail": "tests.test_services.test_mfa_service",
+        "documentation": {}
+    },
+    {
+        "label": "used_backup_code",
+        "kind": 2,
+        "importPath": "tests.test_services.test_mfa_service",
+        "description": "tests.test_services.test_mfa_service",
+        "peekOfCode": "def used_backup_code():\n    \"\"\"Sample used backup code\"\"\"\n    code = Mock()\n    code.code_hash = \"hashed_code\"\n    code.used_at = datetime.utcnow()\n    return code",
+        "detail": "tests.test_services.test_mfa_service",
+        "documentation": {}
+    },
+    {
+        "label": "TestSessionService",
+        "kind": 6,
+        "importPath": "tests.test_services.test_session_service",
+        "description": "tests.test_services.test_session_service",
+        "peekOfCode": "class TestSessionService:\n    \"\"\"Test suite for SessionService\"\"\"\n    def test_get_user_sessions(self, db_session, sample_user_sessions):\n        \"\"\"Test listing user sessions\"\"\"\n        session_service = SessionService(db_session)\n        sessions = session_service.get_user_sessions(\"user-uuid-123\")\n        assert len(sessions) > 0\n        assert all(\"session_id\" in s for s in sessions)\n        assert all(\"device_info\" in s for s in sessions)\n    def test_revoke_session_success(self, db_session, sample_session):",
+        "detail": "tests.test_services.test_session_service",
+        "documentation": {}
+    },
+    {
+        "label": "db_session",
+        "kind": 2,
+        "importPath": "tests.test_services.test_session_service",
+        "description": "tests.test_services.test_session_service",
+        "peekOfCode": "def db_session():\n    \"\"\"Mock database session\"\"\"\n    session = MagicMock()\n    return session\n@pytest.fixture\ndef sample_session():\n    \"\"\"Sample session for testing\"\"\"\n    session = Mock()\n    session.id = \"session-uuid-123\"\n    session.user_id = \"user-uuid-123\"",
+        "detail": "tests.test_services.test_session_service",
+        "documentation": {}
+    },
+    {
+        "label": "sample_session",
+        "kind": 2,
+        "importPath": "tests.test_services.test_session_service",
+        "description": "tests.test_services.test_session_service",
+        "peekOfCode": "def sample_session():\n    \"\"\"Sample session for testing\"\"\"\n    session = Mock()\n    session.id = \"session-uuid-123\"\n    session.user_id = \"user-uuid-123\"\n    session.device_info = \"Chrome on Windows 10\"\n    session.ip_address = \"192.168.1.1\"\n    session.revoked_at = None\n    session.last_active_at = datetime.utcnow()\n    return session",
+        "detail": "tests.test_services.test_session_service",
+        "documentation": {}
+    },
+    {
+        "label": "sample_user_sessions",
+        "kind": 2,
+        "importPath": "tests.test_services.test_session_service",
+        "description": "tests.test_services.test_session_service",
+        "peekOfCode": "def sample_user_sessions():\n    \"\"\"Sample list of user sessions\"\"\"\n    sessions = []\n    for i in range(3):\n        session = Mock()\n        session.id = f\"session-{i}\"\n        session.user_id = \"user-uuid-123\"\n        session.device_info = f\"Device {i}\"\n        session.revoked_at = None\n        session.last_active_at = datetime.utcnow() - timedelta(hours=i)",
+        "detail": "tests.test_services.test_session_service",
         "documentation": {}
     },
     {

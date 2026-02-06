@@ -21,7 +21,7 @@ from sqlalchemy.orm import Session
 
 from app.core.security import get_current_user
 from app.db.session import get_db
-from app.db.models.users import User
+from app.models.users import User
 from app.schemas.analytics import (
     SprintMetricCreate, SprintMetricRead, SprintMetricUpdate,
     VelocityMetricCreate, VelocityMetricRead,
@@ -562,7 +562,7 @@ def get_project_kpis(
 ):
     """Get all KPIs for project"""
     from sqlalchemy import and_
-    from app.db.models.analytics import KPI
+    from app.models.analytics import KPI
     
     query = db.query(KPI).filter(KPI.project_id == project_id)
     if status:
@@ -584,7 +584,7 @@ def update_kpi_value(
     current_user: User = Depends(get_current_user),
 ):
     """Update KPI actual value"""
-    from app.db.models.analytics import KPI
+    from app.models.analytics import KPI
     
     kpi = db.query(KPI).get(kpi_id)
     if not kpi:
@@ -620,7 +620,7 @@ def get_timesheet_approval(
     current_user: User = Depends(get_current_user),
 ):
     """Get timesheet approval details"""
-    from app.db.models.analytics import TimesheetApproval
+    from app.models.analytics import TimesheetApproval
     
     approval = db.query(TimesheetApproval).get(approval_id)
     if not approval:
@@ -690,7 +690,7 @@ def get_report_permission(
     current_user: User = Depends(get_current_user),
 ):
     """Get report permission details"""
-    from app.db.models.analytics import ReportPermission
+    from app.models.analytics import ReportPermission
     
     permission = db.query(ReportPermission).get(permission_id)
     if not permission:
@@ -706,7 +706,7 @@ def get_report_permissions(
     current_user: User = Depends(get_current_user),
 ):
     """Get all permissions for report"""
-    from app.db.models.analytics import ReportPermission
+    from app.models.analytics import ReportPermission
     
     permissions = db.query(ReportPermission).filter(
         ReportPermission.report_id == report_id

@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 import uuid
 
 from app.repositories.base import BaseRepository
-from app.db.models.tasks import Task, TaskList, Subtask, TaskAssignee
+from app.models.tasks import Task, TaskList, Subtask, TaskAssignee
 from app.db.enums import TaskStatus, TaskPriority
 
 

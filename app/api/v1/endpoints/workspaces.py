@@ -11,7 +11,7 @@ from sqlalchemy.orm import Session
 
 from app.db.session import get_db
 from app.core.security import get_current_user
-from app.db.models.users import User
+from app.models.users import User
 from app.schemas.workspace import (
     WorkspaceCreate,
     WorkspaceUpdate,
@@ -36,6 +36,7 @@ from app.services.workspace import (
     WorkspaceAccessLogService,
     WorkspaceSettingService,
 )
+from app.services.email import EmailService
 
 router = APIRouter(prefix="/v1/workspaces", tags=["workspaces"])
 
@@ -322,12 +323,17 @@ def send_invitation(
     if not current_member or current_member.role not in ["owner", "admin"]:
         raise HTTPException(status_code=403, detail="Insufficient permissions")
 
-    invitation = WorkspaceInvitationService.create_invitation(
+    invitation, token = WorkspaceInvitationService.create_invitation(
         db, workspace_id, current_user.id, invitation_data
     )
 
-    # TODO: Send invitation email with magic link
-    # email_service.send_invitation(invitation.email, invitation.token, workspace.name)
+    email_service = EmailService()
+    email_service.send_workspace_invitation(
+        to_email=invitation.email,
+        invitation_token=token,
+        workspace_name=workspace.name,
+        inviter_name=current_user.full_name or current_user.username,
+    )
 
     return invitation
 

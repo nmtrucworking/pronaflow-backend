@@ -110,6 +110,8 @@ class Settings(BaseSettings):
     EXPORT_LINK_EXPIRY_HOURS: int = 24  # Hours until export link expires
     MAX_EXPORT_FILE_SIZE_MB: int = 500  # Max export file size
     BACKGROUND_JOB_INTERVAL_HOURS: int = 24  # Scheduled job interval
+    WORKSPACE_SOFT_DELETE_RETENTION_DAYS: int = 30  # Days before hard delete
+    ENABLE_WORKSPACE_PURGE_JOB: bool = True  # Enable workspace auto-purge job
 
     # Personalization & UX Settings (Module 9)
     SUPPORTED_LANGUAGES: Union[List[str], str] = ["en-US", "vi-VN"]  # Supported language codes
@@ -140,6 +142,10 @@ class Settings(BaseSettings):
     # API Integration Settings (Module 12 - Feature 2.1: API Access)
     API_TOKEN_EXPIRY_DAYS: int = 365  # Default token expiration
     API_TOKEN_HASH_ALGORITHM: str = "sha256"  # Token hashing algorithm
+
+    # Frontend URLs
+    FRONTEND_BASE_URL: str = "https://pronaflow.com"
+    WORKSPACE_INVITE_PATH: str = "/invitations/accept"
     
     # Rate Limiting Settings (Module 12 - Feature 2.1: Rate Limiting)
     RATE_LIMIT_TIER_FREE_REQ_PER_MIN: int = 60  # Free tier: 60 req/min

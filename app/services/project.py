@@ -12,16 +12,16 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
 from fastapi import HTTPException, status
 
-from app.db.models.projects import Project
-from app.db.models.projects_extended import (
+from app.models.projects import Project
+from app.models.projects_extended import (
     ProjectMember,
     ProjectTemplate,
     ProjectBaseline,
     ProjectChangeRequest,
     ProjectArchive,
 )
-from app.db.models.users import User
-from app.db.models.workspaces import WorkspaceMember
+from app.models.users import User
+from app.models.workspaces import WorkspaceMember
 from app.db.enums import (
     ProjectStatus,
     ProjectRole,

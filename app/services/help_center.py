@@ -10,7 +10,7 @@ import logging
 from sqlalchemy import and_, or_, func
 from sqlalchemy.orm import Session, joinedload
 
-from app.db.models.help_center import (
+from app.models.help_center import (
     Article,
     ArticleVersion,
     ArticleTranslation,
@@ -21,8 +21,8 @@ from app.db.models.help_center import (
     ArticleVisibility,
     ArticleSearchIndex,
 )
-from app.db.models.tags import Tag
-from app.db.models.admin import FeatureFlag
+from app.models.tags import Tag
+from app.models.admin import FeatureFlag
 from app.db.enums import ArticleStatus, ArticleVisibilityScope
 from app.schemas.help_center import (
     CategoryCreate,

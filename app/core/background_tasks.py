@@ -10,8 +10,8 @@ import logging
 from sqlalchemy.orm import Session
 
 from app.db.session import SessionLocal
-from app.db.models.help_center import ArticleSearchIndex, Article
-from app.db.models.admin import FeatureFlag
+from app.models.help_center import ArticleSearchIndex, Article
+from app.models.admin import FeatureFlag
 from app.core.vector_search import vector_search_service
 
 logger = logging.getLogger(__name__)

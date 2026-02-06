@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 from sqlalchemy.orm import Session
 from enum import Enum
 
-from app.db.models.tasks import Task
+from app.models.tasks import Task
 from app.repositories.task_repository import TaskRepository
 
 

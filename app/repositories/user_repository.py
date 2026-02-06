@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 import uuid
 
 from app.repositories.base import BaseRepository
-from app.db.models.users import User, Role, Permission
+from app.models.users import User, Role, Permission
 from app.db.enums import UserStatus
 
 

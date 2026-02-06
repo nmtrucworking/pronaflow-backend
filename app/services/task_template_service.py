@@ -6,7 +6,7 @@ from uuid import UUID
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
 
-from app.db.models.tasks import Task
+from app.models.tasks import Task
 from app.repositories.task_repository import TaskRepository
 
 

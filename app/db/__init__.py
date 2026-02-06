@@ -8,7 +8,7 @@ from app.db.declarative_base import Base
 from app.db.session import SessionLocal, engine, get_db
 
 # All ORM models (automatically registered with Base.metadata)
-from app.db.models import (
+from app.models import (
     User,
     Role,
     Permission,

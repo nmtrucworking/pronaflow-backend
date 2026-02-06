@@ -7,7 +7,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.orm import Session
 
 from app.core.dependencies import get_db, get_current_user
-from app.db.models.users import User
+from app.models.users import User
 from app.schemas.workspace_schemas import (
     WorkspaceCreate,
     WorkspaceUpdate,

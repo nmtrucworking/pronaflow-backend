@@ -9,8 +9,8 @@ from datetime import datetime
 import uuid
 
 from app.repositories.base import BaseRepository
-from app.db.models.workspaces import Workspace, WorkspaceMember, WorkspaceInvitation, WorkspaceSetting
-from app.db.models.users import User
+from app.models.workspaces import Workspace, WorkspaceMember, WorkspaceInvitation, WorkspaceSetting
+from app.models.users import User
 from app.db.enums import WorkspaceRole
 
 

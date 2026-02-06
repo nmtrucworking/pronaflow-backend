@@ -22,7 +22,7 @@ from sqlalchemy.orm import Session
 
 from app.db.session import get_db
 from app.core.security import get_current_user
-from app.db.models.users import User
+from app.models.users import User
 from app.services.notification import (
     NotificationService, AggregationService, RoutingService,
     TemplateService, RetryService, PreferenceService, WatcherService,
@@ -38,7 +38,7 @@ from app.schemas.notification import (
 )
 from app.db.enums import NotificationPriorityEnum
 from sqlalchemy import select, and_
-from app.db.models.notifications import (
+from app.models.notifications import (
     Notification, NotificationTemplate, NotificationPreference,
     EventConsumer, DomainEvent
 )
@@ -109,7 +109,7 @@ async def list_notifications(
     services = get_services(db)
     
     # Check workspace membership
-    from app.db.models.workspaces import WorkspaceMember
+    from app.models.workspaces import WorkspaceMember
     membership = db.execute(
         select(WorkspaceMember).where(
             and_(
@@ -334,7 +334,7 @@ async def create_template(
     services = get_services(db)
     
     # Check admin permission
-    from app.db.models.workspaces import WorkspaceMember
+    from app.models.workspaces import WorkspaceMember
     from app.db.enums import WorkspaceRole
     
     membership = db.execute(

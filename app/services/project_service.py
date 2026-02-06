@@ -8,7 +8,7 @@ from datetime import date
 
 from app.repositories.project_repository import ProjectRepository
 from app.repositories.workspace_repository import WorkspaceRepository
-from app.db.models.projects import Project
+from app.models.projects import Project
 from app.db.enums import ProjectStatus, WorkspaceRole
 from app.utils.exceptions import (
     NotFoundException,

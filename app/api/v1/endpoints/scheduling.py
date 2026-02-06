@@ -11,7 +11,7 @@ from sqlalchemy.orm import Session
 
 from app.core.security import get_current_user
 from app.db.session import get_db
-from app.db.models.users import User
+from app.models.users import User
 from app.schemas.scheduling import (
     PlanStateResponse,
     TaskBaselineCreate,
@@ -177,7 +177,7 @@ def get_sla_tracker(
 ):
     """Get SLA tracker for task"""
     from sqlalchemy import select
-    from app.db.models.scheduling import SLATracker
+    from app.models.scheduling import SLATracker
     
     tracker = db.scalar(select(SLATracker).where(SLATracker.task_id == task_id))
     if not tracker:

@@ -15,12 +15,12 @@ from datetime import datetime
 from app.main import app
 from app.db.declarative_base import Base
 from app.db.session import get_db
-from app.db.models.users import User
-from app.db.models.workspaces import Workspace, WorkspaceMember
-from app.db.models.projects import Project
-from app.db.models.tasks import Task, TaskList, TaskAssignee
+from app.models.users import User
+from app.models.workspaces import Workspace, WorkspaceMember
+from app.models.projects import Project
+from app.models.tasks import Task, TaskList, TaskAssignee
 from app.db.enums import UserStatus, WorkspaceRole, ProjectStatus, TaskStatus, TaskPriority
-from app.utils.helpers import hash_password
+from app.core.security import hash_password
 
 
 # Test database URL (in-memory SQLite for fast tests)

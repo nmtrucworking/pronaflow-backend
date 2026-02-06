@@ -13,7 +13,7 @@ from app.core.admin_security import (
     require_admin_roles,
     create_admin_access_token,
 )
-from app.db.models.admin import AdminUser
+from app.models.admin import AdminUser
 from app.services.admin import (
     AdminUserService,
     AdminRoleService,
@@ -724,7 +724,7 @@ def get_admin_stats(
     current_admin: AdminUser = Depends(require_admin_roles("super_admin", "system_admin")),
 ):
     """Get admin system statistics"""
-    from app.db.models.admin import AdminUser, AdminRole, AdminPermission, ChangeRequest, SecurityIncident, AccessReview
+    from app.models.admin import AdminUser, AdminRole, AdminPermission, ChangeRequest, SecurityIncident, AccessReview
     
     total_admin_users = db.query(AdminUser).count()
     active_admin_users = db.query(AdminUser).filter(AdminUser.is_active == True).count()

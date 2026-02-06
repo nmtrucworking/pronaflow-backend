@@ -10,7 +10,7 @@ from math import radians, cos, sin, asin, sqrt
 from sqlalchemy.orm import Session as DBSession
 from fastapi import HTTPException
 
-from app.db.models.users import Session as SessionModel
+from app.models.users import Session as SessionModel
 
 
 class SessionService:

@@ -7,7 +7,7 @@ from uuid import UUID
 
 from sqlalchemy.orm import Session
 
-from app.db.models.onboarding import (
+from app.models.onboarding import (
     OnboardingSurvey,
     SurveyQuestion,
     SurveyResponse,
@@ -26,8 +26,8 @@ from app.db.models.onboarding import (
     OnboardingReward,
     OnboardingRewardGrant,
 )
-from app.db.models.workspaces import WorkspaceMember
-from app.db.models.admin import FeatureFlag
+from app.models.workspaces import WorkspaceMember
+from app.models.admin import FeatureFlag
 from app.schemas.onboarding import (
     OnboardingSurveyCreate,
     SurveyQuestionCreate,

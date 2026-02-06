@@ -5,6 +5,7 @@ Ref: docs/docs - PronaFlow React&FastAPI/01-Requirements/Functional-Modules/2 - 
 """
 import uuid
 import secrets
+import hashlib
 from datetime import datetime, timedelta
 from typing import List, Optional, Tuple
 
@@ -13,15 +14,16 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
 from fastapi import HTTPException
 
-from app.db.models.workspaces import (
+from app.models.workspaces import (
     Workspace,
     WorkspaceMember,
     WorkspaceInvitation,
     WorkspaceAccessLog,
     WorkspaceSetting,
 )
-from app.db.models.users import User
+from app.models.users import User
 from app.db.enums import WorkspaceRole
+from app.core.config import settings
 from app.schemas.workspace import (
     WorkspaceCreate,
     WorkspaceUpdate,
@@ -220,6 +222,41 @@ class WorkspaceService:
         db.commit()
         return True
 
+    @staticmethod
+    def purge_soft_deleted_workspaces(
+        db: Session,
+        retention_days: Optional[int] = None,
+    ) -> int:
+        """
+        Hard delete soft-deleted workspaces past retention.
+
+        Args:
+            db: Database session
+            retention_days: Optional override for retention window
+
+        Returns:
+            Number of workspaces deleted
+        """
+        days = retention_days or settings.WORKSPACE_SOFT_DELETE_RETENTION_DAYS
+        cutoff = datetime.now(datetime.UTC) - timedelta(days=days)
+
+        stmt = select(Workspace).where(
+            and_(
+                Workspace.is_deleted == True,
+                Workspace.deleted_at.is_not(None),
+                Workspace.deleted_at < cutoff,
+            )
+        )
+        workspaces = db.scalars(stmt).all()
+
+        for workspace in workspaces:
+            db.delete(workspace)
+
+        if workspaces:
+            db.commit()
+
+        return len(workspaces)
+
 
 class WorkspaceMemberService:
     """Service for workspace member management"""
@@ -398,13 +435,21 @@ class WorkspaceInvitationService:
     """Service for workspace invitation management"""
 
     @staticmethod
+    def _hash_invitation_token(token: str) -> str:
+        """
+        Hash invitation token using a stable algorithm.
+        """
+        salted = f"{token}:{settings.SECRET_KEY}".encode("utf-8")
+        return hashlib.sha256(salted).hexdigest()
+
+    @staticmethod
     def create_invitation(
         db: Session,
         workspace_id: uuid.UUID,
         invited_by: uuid.UUID,
         invitation_data: WorkspaceInvitationCreate,
         expires_in_hours: int = 48,
-    ) -> WorkspaceInvitation:
+    ) -> Tuple[WorkspaceInvitation, str]:
         """
         Create a workspace invitation.
         
@@ -422,7 +467,7 @@ class WorkspaceInvitationService:
         """
         # Generate secure token
         token = secrets.token_urlsafe(32)
-        token_hash = hash(token)  # In production, use proper hash function
+        token_hash = WorkspaceInvitationService._hash_invitation_token(token)
 
         invitation = WorkspaceInvitation(
             workspace_id=workspace_id,
@@ -437,7 +482,7 @@ class WorkspaceInvitationService:
         db.commit()
         db.refresh(invitation)
 
-        return invitation
+        return invitation, token
 
     @staticmethod
     def get_invitation(
@@ -567,7 +612,7 @@ class WorkspaceInvitationService:
             Created WorkspaceMember or None if invitation invalid/expired
         """
         # Hash the token to match stored hash
-        token_hash = hash(token)  # In production, use proper hash function
+        token_hash = WorkspaceInvitationService._hash_invitation_token(token)
         
         # Find invitation by token hash
         invitation = db.scalar(

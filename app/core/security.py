@@ -13,7 +13,7 @@ import re
 
 from app.core.config import settings
 from app.db.session import get_db
-from app.db.models.users import User, Session as SessionModel, LoginAttempt
+from app.models.users import User, Session as SessionModel, LoginAttempt
 from app.db.enums import UserStatus
 
 
@@ -273,8 +273,41 @@ def record_login_attempt(
 
 # ============= Current User Dependency =============
 
+def _maybe_log_workspace_access(
+    db: Session,
+    user_id: UUID,
+    workspace_id: Optional[UUID],
+) -> None:
+    """
+    Log access when workspace context is provided.
+    """
+    if not workspace_id:
+        return
+
+    from app.services.workspace import (
+        WorkspaceService,
+        WorkspaceMemberService,
+        WorkspaceAccessLogService,
+    )
+
+    workspace = WorkspaceService.get_workspace(db, workspace_id)
+    if not workspace:
+        return
+
+    member = WorkspaceMemberService.get_member(db, workspace_id, user_id)
+    if not member or not member.is_active:
+        return
+
+    last_access = WorkspaceAccessLogService.get_last_accessed_workspace(db, user_id)
+    if last_access and last_access.id == workspace_id:
+        return
+
+    WorkspaceAccessLogService.log_access(db, workspace_id, user_id)
+
+
 async def get_current_user(
     authorization: Optional[str] = Header(None),
+    x_workspace_id: Optional[UUID] = Header(None, alias="X-Workspace-Id"),
     db: Session = Depends(get_db),
 ) -> User:
     """
@@ -360,12 +393,15 @@ async def get_current_user(
     # Update session activity
     session.last_active_at = datetime.utcnow()
     db.commit()
+
+    _maybe_log_workspace_access(db, user.id, x_workspace_id)
     
     return user
 
 
 async def get_current_user_with_session(
     authorization: Optional[str] = Header(None),
+    x_workspace_id: Optional[UUID] = Header(None, alias="X-Workspace-Id"),
     db: Session = Depends(get_db),
 ) -> Tuple[User, UUID]:
     """
@@ -433,6 +469,8 @@ async def get_current_user_with_session(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="User account is not active"
         )
+
+    _maybe_log_workspace_access(db, user.id, x_workspace_id)
 
     return user, UUID(session_id)
 

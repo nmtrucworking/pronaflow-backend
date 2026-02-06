@@ -22,7 +22,7 @@ except ImportError:  # pragma: no cover - optional dependency
     LETTER = None
     canvas = None
 
-from app.db.models.subscriptions import (
+from app.models.subscriptions import (
     Plan,
     WorkspaceSubscription,
     SubscriptionUsage,
@@ -32,8 +32,8 @@ from app.db.models.subscriptions import (
     Client,
     FreelancerInvoice,
 )
-from app.db.models.tasks import TimeEntry
-from app.db.models.workspaces import Workspace
+from app.models.tasks import TimeEntry
+from app.models.workspaces import Workspace
 from app.core.config import settings
 from app.schemas.subscription import (
     PlanCreate,

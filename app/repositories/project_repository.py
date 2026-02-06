@@ -9,8 +9,8 @@ from datetime import datetime
 import uuid
 
 from app.repositories.base import BaseRepository
-from app.db.models.projects import Project
-from app.db.models.workspaces import Workspace, WorkspaceMember
+from app.models.projects import Project
+from app.models.workspaces import Workspace, WorkspaceMember
 from app.db.enums import ProjectStatus, ProjectVisibility
 
 

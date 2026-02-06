@@ -14,7 +14,7 @@ from sqlalchemy import or_, and_
 from sqlalchemy.orm import Session
 from passlib.context import CryptContext
 
-from app.db.models.admin import (
+from app.models.admin import (
     AdminUser, AdminRole, AdminPermission, AdminRolePermission,
     AdminUserRole, SystemConfig, FeatureFlag, AdminAuditLog,
     SecurityIncident, ChangeRequest, AccessReview

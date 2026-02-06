@@ -11,7 +11,7 @@ from sqlalchemy import select, and_, or_, func
 from sqlalchemy.orm import Session
 from fastapi import HTTPException, status
 
-from app.db.models.scheduling import (
+from app.models.scheduling import (
     PlanState,
     TaskBaseline,
     TaskDependencySchedule,
@@ -27,9 +27,9 @@ from app.db.models.scheduling import (
     CrossProjectDependency,
     PlanningAuditLog,
 )
-from app.db.models.tasks import Task, TaskDependency
-from app.db.models.projects import Project
-from app.db.models.projects_extended import ProjectMember
+from app.models.tasks import Task, TaskDependency
+from app.models.projects import Project
+from app.models.projects_extended import ProjectMember
 from app.db.enums import (
     PlanStateEnum,
     SchedulingModeEnum,

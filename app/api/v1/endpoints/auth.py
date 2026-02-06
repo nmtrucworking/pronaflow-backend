@@ -9,7 +9,7 @@ from sqlalchemy.orm import Session
 
 from app.db.session import get_db
 from app.core.security import get_current_user, get_current_active_user
-from app.db.models.users import User
+from app.models.users import User
 from app.services.auth import AuthService
 from app.services.mfa import MFAService
 from app.services.session import SessionService
@@ -550,3 +550,84 @@ async def get_current_user_profile(
         Current user object
     """
     return current_user
+
+
+# ============= OAuth Social Login =============
+
+@router.get(
+    "/oauth/{provider}/authorize",
+    summary="Get OAuth Authorization URL",
+    description="Get OAuth authorization URL for social login"
+)
+async def oauth_authorize(
+    provider: str,
+    redirect_uri: Optional[str] = None
+):
+    """
+    Get OAuth authorization URL for provider (google, github).
+    
+    Args:
+        provider: OAuth provider name (google, github)
+        redirect_uri: Optional custom redirect URI
+        
+    Returns:
+        Authorization URL and state for CSRF protection
+    """
+    if provider not in ["google", "github"]:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Unsupported OAuth provider: {provider}"
+        )
+    
+    # TODO: Implement OAuth URL generation
+    # This requires OAuth app configuration in environment
+    raise HTTPException(
+        status_code=501,
+        detail="OAuth social login is not yet configured. Please set up OAuth credentials in environment variables."
+    )
+
+
+@router.post(
+    "/oauth/{provider}/callback",
+    response_model=SessionResponse,
+    summary="OAuth Callback",
+    description="Handle OAuth callback and create session"
+)
+async def oauth_callback(
+    provider: str,
+    code: str,
+    state: Optional[str] = None,
+    redirect_uri: Optional[str] = None,
+    http_request: Request = None,
+    db: Session = Depends(get_db)
+):
+    """
+    Handle OAuth callback from provider.
+    
+    Creates new user if doesn't exist, or links to existing account.
+    
+    Args:
+        provider: OAuth provider name
+        code: Authorization code from OAuth provider
+        state: State parameter for CSRF validation
+        redirect_uri: Redirect URI used in OAuth flow
+        
+    Returns:
+        Session with JWT token
+    """
+    if provider not in ["google", "github"]:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Unsupported OAuth provider: {provider}"
+        )
+    
+    # TODO: Implement OAuth callback handling
+    # 1. Exchange code for access token
+    # 2. Get user info from provider
+    # 3. Create or link user account
+    # 4. Create session
+    
+    raise HTTPException(
+        status_code=501,
+        detail="OAuth social login is not yet configured. Please set up OAuth credentials in environment variables."
+    )

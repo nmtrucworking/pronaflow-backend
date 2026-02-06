@@ -14,7 +14,7 @@ import pyotp
 from sqlalchemy.orm import Session
 from fastapi import HTTPException
 
-from app.db.models.users import User, MFAConfig, MFABackupCode
+from app.models.users import User, MFAConfig, MFABackupCode
 from app.core.security import hash_password, verify_password
 
 
