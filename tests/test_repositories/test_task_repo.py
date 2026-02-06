@@ -3,7 +3,7 @@ Unit tests for Task Repository (Module 4)
 """
 import pytest
 from datetime import datetime, timedelta
-from app.db.repositories.task_repo import TaskRepository, TaskListRepository
+from app.repositories.task_repository import TaskRepository, TaskListRepository
 from app.db.models.tasks import Task, TaskList
 
 
@@ -14,9 +14,9 @@ class TestTaskRepository:
     @pytest.fixture
     def setup_dependencies(self, db_session):
         """Setup user, workspace, and project for tasks."""
-        from app.db.repositories.user_repo import UserRepository
-        from app.db.repositories.workspace_repo import WorkspaceRepository
-        from app.db.repositories.project_repo import ProjectRepository
+        from app.repositories.user_repository import UserRepository
+        from app.repositories.workspace_repository import WorkspaceRepository
+        from app.repositories.project_repository import ProjectRepository
         
         # Create user
         user_repo = UserRepository(db_session)
@@ -161,9 +161,9 @@ class TestTaskListRepository:
     @pytest.fixture
     def setup_project(self, db_session):
         """Setup project for task lists."""
-        from app.db.repositories.user_repo import UserRepository
-        from app.db.repositories.workspace_repo import WorkspaceRepository
-        from app.db.repositories.project_repo import ProjectRepository
+        from app.repositories.user_repository import UserRepository
+        from app.repositories.workspace_repository import WorkspaceRepository
+        from app.repositories.project_repository import ProjectRepository
         
         user_repo = UserRepository(db_session)
         user = user_repo.create(

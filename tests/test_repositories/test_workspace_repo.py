@@ -3,7 +3,7 @@ Unit tests for Workspace Repository (Module 2)
 """
 import pytest
 from uuid import uuid4
-from app.db.repositories.workspace_repo import WorkspaceRepository
+from app.repositories.workspace_repository import WorkspaceRepository
 from app.db.models.workspaces import Workspace
 
 
@@ -13,7 +13,7 @@ class TestWorkspaceRepository:
     
     def test_create_workspace(self, db_session, sample_user_data):
         """Test creating a new workspace."""
-        from app.db.repositories.user_repo import UserRepository
+        from app.repositories.user_repository import UserRepository
         
         # Create owner user first
         user_repo = UserRepository(db_session)
@@ -36,7 +36,7 @@ class TestWorkspaceRepository:
     
     def test_get_by_slug(self, db_session, sample_user_data):
         """Test retrieving workspace by slug."""
-        from app.db.repositories.user_repo import UserRepository
+        from app.repositories.user_repository import UserRepository
         
         user_repo = UserRepository(db_session)
         owner = user_repo.create(**sample_user_data)
@@ -59,7 +59,7 @@ class TestWorkspaceRepository:
     
     def test_get_user_workspaces(self, db_session, sample_user_data):
         """Test retrieving all workspaces for a user."""
-        from app.db.repositories.user_repo import UserRepository
+        from app.repositories.user_repository import UserRepository
         
         user_repo = UserRepository(db_session)
         owner = user_repo.create(**sample_user_data)
@@ -83,7 +83,7 @@ class TestWorkspaceRepository:
     
     def test_update_workspace(self, db_session, sample_user_data):
         """Test updating workspace information."""
-        from app.db.repositories.user_repo import UserRepository
+        from app.repositories.user_repository import UserRepository
         
         user_repo = UserRepository(db_session)
         owner = user_repo.create(**sample_user_data)
@@ -110,7 +110,7 @@ class TestWorkspaceRepository:
     
     def test_soft_delete_workspace(self, db_session, sample_user_data):
         """Test soft deleting a workspace."""
-        from app.db.repositories.user_repo import UserRepository
+        from app.repositories.user_repository import UserRepository
         
         user_repo = UserRepository(db_session)
         owner = user_repo.create(**sample_user_data)

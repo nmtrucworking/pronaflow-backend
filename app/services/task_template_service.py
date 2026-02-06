@@ -7,7 +7,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
 
 from app.db.models.tasks import Task
-from app.db.repositories.task_repo import TaskRepository
+from app.repositories.task_repository import TaskRepository
 
 
 class TaskTemplateService:

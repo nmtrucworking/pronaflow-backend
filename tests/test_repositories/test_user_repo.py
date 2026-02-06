@@ -3,7 +3,7 @@ Unit tests for User Repository (Module 1 - IAM)
 """
 import pytest
 from uuid import uuid4
-from app.db.repositories.user_repo import UserRepository
+from app.repositories.user_repository import UserRepository
 from app.db.models.users import User, Role, Permission
 
 
@@ -143,7 +143,7 @@ class TestRoleRepository:
     
     def test_create_role(self, db_session):
         """Test creating a role."""
-        from app.db.repositories.user_repo import RoleRepository
+        from app.repositories.user_repository import RoleRepository
         
         repo = RoleRepository(db_session)
         
@@ -158,7 +158,7 @@ class TestRoleRepository:
     
     def test_get_role_by_name(self, db_session):
         """Test retrieving role by name."""
-        from app.db.repositories.user_repo import RoleRepository
+        from app.repositories.user_repository import RoleRepository
         
         repo = RoleRepository(db_session)
         

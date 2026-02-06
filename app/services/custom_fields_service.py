@@ -7,7 +7,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import JSON
 
 from app.db.models.tasks import Task
-from app.db.repositories.task_repo import TaskRepository
+from app.repositories.task_repository import TaskRepository
 
 
 class FieldType:

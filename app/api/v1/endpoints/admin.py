@@ -18,7 +18,7 @@ from app.schemas.workspace import (
     WorkspaceListResponse,
 )
 from app.services.workspace import WorkspaceService
-from app.db.repositories.workspace_repo import WorkspaceRepository
+from app.repositories.workspace_repository import WorkspaceRepository
 
 
 router = APIRouter(prefix="/v1/admin", tags=["admin"])
