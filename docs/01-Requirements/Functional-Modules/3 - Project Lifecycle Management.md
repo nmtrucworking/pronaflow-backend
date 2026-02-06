@@ -1,7 +1,7 @@
 **Project**: PronaFlow 
-**Version**: 1.1 
+**Version**: 1.2 
 **State**: Ready for Review 
-_**Last updated:** Jan 04, 2026_
+_**Last updated:** Feb 07, 2026_
 
 ---
 # 1. Business Overview
@@ -36,8 +36,8 @@ Là một Thành viên Workspace, Tôi muốn tạo một dự án mới, Để 
 ### User Story 2.2
 Là một Project Manager, Tôi muốn thay đổi trạng thái của dự án theo quy trình chuẩn, Để báo cáo chính xác giai đoạn thực hiện trên Dashboard.
 ### Acceptance Criteria (#AC)
-#### AC 1 - 5 Global Statuses
-Hệ thống quy định cứng (Hard-coded) 5 trạng thái:
+#### AC 1 - 6 Global Statuses
+Hệ thống quy định cứng (Hard-coded) 6 trạng thái:
 
 | **ID** | **Status Code** | **Display Name (VN)** | **Color Hex** | **Ý nghĩa Nghiệp vụ**                            |
 | ------ | --------------- | --------------------- | ------------- | ------------------------------------------------ |
@@ -210,31 +210,6 @@ Là một PMO hoặc Quản lý Chất lượng (QA), Tôi muốn kiểm soát c
 - **Rule:** Một khi đã có Baseline Active (v1.0 trở lên):
     - Mọi hành động thay đổi ngày tháng (Reschedule) trên Gantt Chart đều kích hoạt một popup **"Change Context"**.
     - **Input bắt buộc:** Người dùng phải chọn _Reason Code_ (ví dụ: "Scope Creep", "Resource unavailable", "Estimation Error") và nhập chú thích trước khi hệ thống cho phép Lưu.
-## 2.14. Feature: What-if Simulation & Scenario Planning (Mô phỏng & Lập kế hoạch Kịch bản)
-### User Story 3.14
-Là một Project Manager, Tôi muốn tạo các kịch bản mô phỏng (ví dụ: "Nếu team Backend nghỉ 3 ngày", "Nếu thêm 2 nhân sự") và xem trước tác động của chúng mà không làm ảnh hưởng đến dữ liệu dự án thực tế, Để tôi có thể ra quyết định chính xác nhất.
-### Acceptance Criteria ( #AC)
-#### AC 1 - Simulation Sandbox (Hộp cát mô phỏng)
-- **Action:** Tại màn hình dự án, user chọn "Enter Simulation Mode".
-- **System Behavior:**
-    - Hệ thống tạo một bản sao tạm thời (Temporary Snapshot) của dự án hiện tại trong bộ nhớ (hoặc bảng tạm).
-    - Giao diện chuyển sang tông màu khác (ví dụ: Viền vàng/Watermark "SIMULATION") để phân biệt với dữ liệu thật.
-    - Tại đây, PM được phép thoải mái thay đổi Date, Dependency, Resource.
-#### AC 2 - Scenario Management (Quản lý Kịch bản)
-- Cho phép lưu các phiên bản mô phỏng thành các Kịch bản có tên (Named Scenarios).
-    - _Ví dụ:_ Scenario A: "Optimistic Plan" (Kế hoạch lạc quan).
-    - _Ví dụ:_ Scenario B: "Worst Case" (Trường hợp xấu nhất).
-- Các kịch bản này chỉ hiển thị với PM và không ảnh hưởng đến Task list của thành viên (Integration with Module 4).
-#### AC 3 - Impact Preview (Xem trước tác động - Integration with Module 5)
-- Trước khi quyết định áp dụng, hệ thống hiển thị bảng so sánh **Diff** giữa _Simulation_ và _Live Project_:
-    - **Delta Date:** Dự án sẽ xong sớm/trễ bao nhiêu ngày?
-    - **Delta Cost:** Chi phí thay đổi thế nào?
-    - **Risk:** Có bao nhiêu Task mới bị rơi vào đường găng (Critical Path)?
-#### AC 4 - Promote to Execution (Áp dụng vào thực tế)
-- **Action:** User chọn "Apply Scenario to Live Project".
-- **Validation:**
-    - Nếu dự án đang ở chế độ Strict Governance: Hệ thống tự động chuyển Kịch bản này thành một **Change Request (PCR)** (liên kết Feature 2.11) để chờ duyệt.
-    - Nếu dự án bình thường: Cập nhật dữ liệu thật và tạo **Baseline** mới (nếu cấu hình yêu cầu).
 ## 2.15. Feature: Planning Scope Governance (Quản trị Phạm vi Hoạch định)
 ### User Story 3.15
 Là một Project Manager, Tôi muốn định nghĩa rõ ràng những đầu việc nào tham gia vào tính toán kế hoạch (Planning) và những đầu việc nào chỉ mang tính chất theo dõi thực thi (Tracking), Để biểu đồ Gantt và đường găng (Critical Path) không bị nhiễu bởi các công việc vụn vặt.
@@ -401,11 +376,6 @@ Là một Project Manager, Tôi muốn lựa chọn mức độ nghiêm ngặt c
 - **Tuyệt đối không** cho phép sửa đổi hoặc xóa bỏ các Baseline cũ. Chỉ cho phép tạo phiên bản mới đè lên làm "Current Baseline" để so sánh.
 ## 3.9. Quy tắc Đồng bộ Trạng thái (Baseline-Status Sync)
 - Khi Dự án quay lại trạng thái **Not-Started** (Reset dự án), hệ thống có quyền (tùy chọn) lưu trữ Baseline hiện tại vào Archive và reset về trạng thái chưa có Baseline để lập kế hoạch lại từ đầu.
-## 3.10. Quy tắc Cô lập Dữ liệu Mô phỏng (Simulation Isolation Rule)
-- **Notifications:** Tuyệt đối **KHÔNG** gửi email hay thông báo (Notification) cho thành viên khi PM đang thao tác trong chế độ Simulation.
-- **Audit Logs:** Các thao tác trong Simulation không ghi vào Audit Log chính của dự án, chỉ ghi log vào lịch sử phiên làm việc của PM.
-## 3.11. Quy tắc Tự hủy (Ephemeral Data Rule)
-- Các Kịch bản mô phỏng (Scenarios) chưa được lưu (Unsaved) sẽ tự động bị hủy khi phiên làm việc kết thúc hoặc sau 24 giờ để giải phóng tài nguyên hệ thống.
 ## 3.12. Quy tắc Tách biệt Hoạch định & Thực thi (Planning-Execution Decoupling Rule)
 - **Planning Items (Mục hoạch định):** Là xương sống của dự án. Thay đổi ngày tháng của các mục này sẽ kích hoạt tính toán lại toàn bộ lịch trình (Cascade Update) và ảnh hưởng đến Baseline.
 - **Tracking Items (Mục theo dõi):** Là "thịt" đắp vào xương sống. Chúng có thể trễ hạn, kéo dài thời gian thực tế (Actual Duration) nhưng không được phép làm thay đổi ngày kế hoạch (Planned Date) của các Planning Items cha, trừ khi có can thiệp thủ công.
@@ -569,25 +539,28 @@ erDiagram
     PROJECT {
         string key PK
         string title
-        enum status "NotStarted, InProgress..."
-        enum priority "High, Med, Low"
-        enum governance_mode "Simple, Strict"
+        enum status "HOLD=0, NOT_STARTED=1, IN_PROGRESS=2, IN_REVIEW=3, DONE=4, CANCELLED=5"
+        enum priority "CRITICAL, HIGH, MEDIUM, LOW"
+        enum governance_mode "SIMPLE, STRICT"
+        enum visibility "PUBLIC, PRIVATE"
+        string category
+        string portfolio_tag
         json objectives
         json health_score
     }
 
     PROJECT_BASELINE {
         int id PK
-        string version "v1.0, v1.1"
+        string version "v1.0, v1.1, v2.0"
         datetime created_at
         json snapshot_data
     }
 
     CHANGE_REQUEST {
         int id PK
-        enum type "Scope, Schedule, Cost"
+        enum type "SCOPE, SCHEDULE, COST, RESOURCE"
         string justification
-        enum status "Pending, Approved"
+        enum status "DRAFT, SUBMITTED, APPROVED, REJECTED"
     }
 ```
 
