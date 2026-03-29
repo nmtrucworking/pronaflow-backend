@@ -4,12 +4,18 @@ Authentication API Endpoints for Module 1: Identity and Access Management (IAM)
 from typing import Optional, Tuple
 from datetime import datetime
 from uuid import UUID
-from fastapi import APIRouter, Depends, HTTPException, status, Request, Header
+from fastapi import APIRouter, Depends, HTTPException, status, Request
 
 from sqlalchemy.orm import Session
 
 from app.db.session import get_db
-from app.core.security import get_current_active_user, get_current_user_with_session
+from app.core.security import (
+    get_current_active_user,
+    get_current_user_with_session,
+    verify_token,
+    create_access_token,
+    create_refresh_token,
+)
 from app.core.config import settings
 from app.models.users import User, Session as SessionModel
 from app.services.auth import AuthService
@@ -18,14 +24,34 @@ from app.services.session import SessionService
 from app.services.email import EmailService
 from app.schemas.auth import (
     UserRegisterRequest, UserResponse, LoginRequest, SessionResponse,
+    FrontendUserResponse,
     EmailVerifyRequest, ResendVerificationRequest,
     MFAEnableResponse, MFAConfirmRequest, MFALoginRequest, MFADisableRequest,
+    RefreshTokenRequest, RefreshTokenResponse,
     PasswordResetRequest, PasswordResetConfirmRequest, PasswordChangeRequest,
     SessionInfo, SessionListResponse, RevokeSessionRequest,
     BackupCodesResponse
 )
 
 router = APIRouter(prefix="/api/v1/auth", tags=["Authentication"])
+
+
+def _serialize_frontend_user(user: User, db: Session) -> dict:
+    """Build frontend-compatible user payload."""
+    mfa_enabled = MFAService(db).is_mfa_enabled(user.id)
+    roles = [role.role_name for role in user.roles] if user.roles else []
+
+    return {
+        "user_id": str(user.id),
+        "email": user.email,
+        "username": user.username,
+        "full_name": user.full_name,
+        "status": getattr(user.status, "value", str(user.status)),
+        "email_verified_at": user.email_verified_at,
+        "mfa_enabled": mfa_enabled,
+        "roles": roles,
+        "created_at": user.created_at,
+    }
 
 
 # ============= User Registration =============
@@ -109,8 +135,14 @@ async def resend_verification(
     auth_service = AuthService(db, EmailService())
     
     try:
-        auth_service.resend_verification_email(request.user_id)
-        return {"message": "Verification email sent"}
+        if request.user_id:
+            auth_service.resend_verification_email(request.user_id)
+            return {"message": "Verification email sent"}
+
+        user = db.query(User).filter(User.email == request.email).first()
+        if user:
+            auth_service.resend_verification_email(user.id)
+        return {"message": "If account exists, verification email has been sent"}
     except HTTPException as e:
         raise e
 
@@ -158,19 +190,21 @@ async def login(
     # Get user object
     user = db.query(User).filter(User.id == UUID(session_data["user_id"])).first()
     
-    # Check if MFA is enabled
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    # Frontend contract: success with mfa_required flag instead of 403.
     mfa_service = MFAService(db)
-    if mfa_service.is_mfa_enabled(UUID(session_data["user_id"])):
-        # Return MFA required response instead
-        raise HTTPException(
-            status_code=status.HTTP_403_FORBIDDEN,
-            detail="MFA verification required",
-            headers={"X-Session-ID": session_data["session_id"]}
-        )
-    
+    mfa_required = mfa_service.is_mfa_enabled(UUID(session_data["user_id"]))
+
     return {
         **session_data,
-        "user": UserResponse.from_orm(user)
+        "token": "" if mfa_required else session_data["token"],
+        "access_token": "" if mfa_required else session_data["access_token"],
+        "refresh_token": "" if mfa_required else session_data["refresh_token"],
+        "token_type": "bearer",
+        "mfa_required": mfa_required,
+        "user": _serialize_frontend_user(user, db),
     }
 
 
@@ -250,28 +284,33 @@ async def verify_mfa(
     """
     mfa_service = MFAService(db)
 
-    try:
-        session_uuid = UUID(request.session_id)
-    except ValueError:
-        raise HTTPException(status_code=400, detail="Invalid session ID format")
+    session: Optional[SessionModel] = None
+    user: Optional[User] = None
 
-    session = db.query(SessionModel).filter(
-        SessionModel.id == session_uuid,
-        SessionModel.revoked_at == None
-    ).first()
+    if request.session_id:
+        try:
+            session_uuid = UUID(request.session_id)
+        except ValueError:
+            raise HTTPException(status_code=400, detail="Invalid session ID format")
 
-    if not session:
-        raise HTTPException(status_code=404, detail="Session not found or revoked")
+        session = db.query(SessionModel).filter(
+            SessionModel.id == session_uuid,
+            SessionModel.revoked_at == None
+        ).first()
+        if not session:
+            raise HTTPException(status_code=404, detail="Session not found or revoked")
 
-    user = db.query(User).filter(User.id == session.user_id).first()
-    if not user:
-        raise HTTPException(status_code=404, detail="User not found")
-    
-    if not request.otp_code and not request.backup_code:
-        raise HTTPException(
-            status_code=400,
-            detail="Either OTP code or backup code is required"
-        )
+        user = db.query(User).filter(User.id == session.user_id).first()
+    else:
+        user = db.query(User).filter(User.email == request.email).first()
+        if user:
+            session = db.query(SessionModel).filter(
+                SessionModel.user_id == user.id,
+                SessionModel.revoked_at == None
+            ).order_by(SessionModel.created_at.desc()).first()
+
+    if not session or not user:
+        raise HTTPException(status_code=404, detail="Pending MFA session not found")
     
     # Verify OTP or backup code
     try:
@@ -282,15 +321,69 @@ async def verify_mfa(
     except HTTPException as e:
         raise e
 
+    access_token = create_access_token(user.id, session.id)
+    refresh_token = create_refresh_token(user.id, session.id)
+    session.token = access_token
     session.last_active_at = datetime.utcnow()
     db.commit()
 
     return {
         "user_id": str(user.id),
         "session_id": str(session.id),
-        "token": session.token,
+        "token": access_token,
+        "access_token": access_token,
+        "refresh_token": refresh_token,
+        "token_type": "bearer",
+        "mfa_required": False,
         "expires_in": settings.ACCESS_TOKEN_EXPIRE_MINUTES * 60,
-        "user": UserResponse.from_orm(user),
+        "user": _serialize_frontend_user(user, db),
+    }
+
+
+@router.post(
+    "/refresh",
+    response_model=RefreshTokenResponse,
+    summary="Refresh Access Token",
+    description="Refresh access token using refresh token"
+)
+async def refresh_access_token(
+    request: RefreshTokenRequest,
+    db: Session = Depends(get_db)
+):
+    """
+    Refresh access token for an active session.
+    """
+    is_valid, payload, error_msg = verify_token(request.refresh_token)
+    if not is_valid:
+        raise HTTPException(status_code=401, detail=error_msg or "Invalid refresh token")
+
+    if payload.get("token_type") not in (None, "refresh"):
+        raise HTTPException(status_code=401, detail="Invalid token type")
+
+    user_id = payload.get("sub")
+    session_id = payload.get("session_id")
+
+    session = db.query(SessionModel).filter(
+        SessionModel.id == session_id,
+        SessionModel.revoked_at == None
+    ).first()
+    if not session:
+        raise HTTPException(status_code=401, detail="Session has been revoked")
+
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=401, detail="User not found")
+
+    access_token = create_access_token(user.id, session.id)
+    refresh_token = create_refresh_token(user.id, session.id)
+    session.token = access_token
+    session.last_active_at = datetime.utcnow()
+    db.commit()
+
+    return {
+        "access_token": access_token,
+        "refresh_token": refresh_token,
+        "token_type": "bearer",
     }
 
 
@@ -559,12 +652,13 @@ async def change_password(
 
 @router.get(
     "/me",
-    response_model=UserResponse,
+    response_model=FrontendUserResponse,
     summary="Get Current User",
     description="Get current authenticated user profile"
 )
 async def get_current_user_profile(
-    current_user: User = Depends(get_current_active_user)
+    current_user: User = Depends(get_current_active_user),
+    db: Session = Depends(get_db)
 ):
     """
     Get current user profile.
@@ -572,7 +666,7 @@ async def get_current_user_profile(
     Returns:
         Current user object
     """
-    return current_user
+    return _serialize_frontend_user(current_user, db)
 
 
 # ============= OAuth Social Login =============

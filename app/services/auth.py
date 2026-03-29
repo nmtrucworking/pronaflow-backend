@@ -12,7 +12,7 @@ from fastapi import HTTPException, status
 from app.core.config import settings
 from app.core.security import (
     hash_password, verify_password, validate_password_strength,
-    validate_email, validate_username, create_access_token,
+    validate_email, validate_username, create_access_token, create_refresh_token,
     record_login_attempt, check_brute_force
 )
 from app.models.users import (
@@ -391,8 +391,7 @@ class AuthService:
             oldest_session.revoked_at = datetime.utcnow()
             self.db.commit()
         
-        # Create JWT token
-        from app.core.security import create_access_token
+        # Create JWT tokens
         
         # Create session record first to get session_id
         session = SessionModel(
@@ -407,8 +406,9 @@ class AuthService:
         self.db.flush()  # Get the ID without committing
         
         # Create token with session ID
-        token = create_access_token(user.id, session.id)
-        session.token = token
+        access_token = create_access_token(user.id, session.id)
+        refresh_token = create_refresh_token(user.id, session.id)
+        session.token = access_token
         
         self.db.commit()
         self.db.refresh(session)
@@ -416,7 +416,11 @@ class AuthService:
         return {
             "user_id": str(user.id),
             "session_id": str(session.id),
-            "token": token,
+            "token": access_token,
+            "access_token": access_token,
+            "refresh_token": refresh_token,
+            "token_type": "bearer",
+            "mfa_required": False,
             "expires_in": 30 * 60  # 30 minutes in seconds
         }
     

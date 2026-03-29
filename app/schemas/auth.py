@@ -3,7 +3,7 @@ Pydantic schemas for Authentication API endpoints.
 Includes request/response models for auth flows.
 """
 from typing import Optional, List
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, EmailStr, Field, model_validator
 from datetime import datetime
 from uuid import UUID
 
@@ -42,6 +42,19 @@ class UserResponse(BaseModel):
         from_attributes = True
 
 
+class FrontendUserResponse(BaseModel):
+    """Frontend-compatible user response."""
+    user_id: str
+    email: str
+    username: str
+    full_name: Optional[str]
+    status: str
+    email_verified_at: Optional[datetime]
+    mfa_enabled: bool
+    roles: List[str]
+    created_at: datetime
+
+
 # ============= Email Verification =============
 
 class EmailVerifyRequest(BaseModel):
@@ -60,7 +73,14 @@ class EmailVerifyRequest(BaseModel):
 
 class ResendVerificationRequest(BaseModel):
     """Resend email verification request"""
-    user_id: UUID = Field(..., description="User ID")
+    user_id: Optional[UUID] = Field(None, description="User ID")
+    email: Optional[EmailStr] = Field(None, description="User email")
+
+    @model_validator(mode="after")
+    def validate_identity(self):
+        if not self.user_id and not self.email:
+            raise ValueError("Either user_id or email is required")
+        return self
 
 
 # ============= Login =============
@@ -85,7 +105,11 @@ class SessionResponse(BaseModel):
     session_id: str
     token: str
     expires_in: int  # seconds
-    user: UserResponse
+    user: FrontendUserResponse
+    access_token: Optional[str] = None
+    refresh_token: Optional[str] = None
+    token_type: str = "bearer"
+    mfa_required: bool = False
     
     class Config:
         from_attributes = True
@@ -142,9 +166,35 @@ class MFAConfirmRequest(BaseModel):
 
 class MFALoginRequest(BaseModel):
     """MFA login request"""
-    session_id: str = Field(..., description="Session ID from login attempt")
+    session_id: Optional[str] = Field(None, description="Session ID from login attempt")
+    email: Optional[EmailStr] = Field(None, description="Email from login step")
     otp_code: Optional[str] = Field(None, pattern=r'^\d{6}$', description="6-digit OTP code")
+    totp_code: Optional[str] = Field(None, pattern=r'^\d{6}$', description="Frontend alias for OTP code")
     backup_code: Optional[str] = Field(None, description="Backup code (if OTP unavailable)")
+
+    @model_validator(mode="after")
+    def normalize_and_validate(self):
+        if not self.otp_code and self.totp_code:
+            self.otp_code = self.totp_code
+
+        if not self.session_id and not self.email:
+            raise ValueError("Either session_id or email is required")
+
+        if not self.otp_code and not self.backup_code:
+            raise ValueError("Either otp_code/totp_code or backup_code is required")
+        return self
+
+
+class RefreshTokenRequest(BaseModel):
+    """Refresh token request."""
+    refresh_token: str = Field(..., description="Refresh token")
+
+
+class RefreshTokenResponse(BaseModel):
+    """Refresh token response."""
+    access_token: str
+    refresh_token: str
+    token_type: str = "bearer"
 
 
 class MFADisableRequest(BaseModel):

@@ -158,6 +158,7 @@ def create_access_token(
     to_encode = {
         "sub": str(user_id),
         "session_id": str(session_id),
+        "token_type": "access",
         "exp": expire,
         "iat": datetime.utcnow()
     }
@@ -169,6 +170,42 @@ def create_access_token(
     )
     
     return encoded_jwt
+
+
+def create_refresh_token(
+    user_id: UUID,
+    session_id: UUID,
+    expires_delta: Optional[timedelta] = None
+) -> str:
+    """
+    Create a JWT refresh token.
+
+    Args:
+        user_id: User ID to encode in token
+        session_id: Session ID to encode in token
+        expires_delta: Custom token expiration time
+
+    Returns:
+        JWT refresh token string
+    """
+    if expires_delta is None:
+        expires_delta = timedelta(days=settings.REFRESH_TOKEN_EXPIRE_DAYS)
+
+    expire = datetime.utcnow() + expires_delta
+
+    to_encode = {
+        "sub": str(user_id),
+        "session_id": str(session_id),
+        "token_type": "refresh",
+        "exp": expire,
+        "iat": datetime.utcnow()
+    }
+
+    return jwt.encode(
+        to_encode,
+        settings.SECRET_KEY,
+        algorithm=settings.ALGORITHM
+    )
 
 
 def verify_token(token: str) -> Tuple[bool, Optional[dict], Optional[str]]:
