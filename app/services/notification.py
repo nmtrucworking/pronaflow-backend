@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 """
 Service layer for Module 7: Event-Driven Notification System.
 

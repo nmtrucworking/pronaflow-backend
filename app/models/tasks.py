@@ -272,10 +272,14 @@ class Task(Base, AuditMixin):
     comments: Mapped[List["Comment"]] = relationship(back_populates="task", cascade="all, delete-orphan")
     dependencies: Mapped[List["TaskDependency"]] = relationship(back_populates="task", foreign_keys="TaskDependency.task_id", cascade="all, delete-orphan")
     dependent_tasks: Mapped[List["TaskDependency"]] = relationship(back_populates="depends_on_task", foreign_keys="TaskDependency.depends_on_task_id")
-    checklist_items: Mapped[List["ChecklistItem"]] = relationship(back_populates="task", cascade="all, delete-orphan")
     files: Mapped[List["File"]] = relationship(back_populates="task", cascade="all, delete-orphan")
     approvals: Mapped[List["ApprovalRecord"]] = relationship(back_populates="task", cascade="all, delete-orphan")
     time_entries: Mapped[List["TimeEntry"]] = relationship(back_populates="task", cascade="all, delete-orphan")
+
+    @property
+    def checklist_items(self) -> List["Subtask"]:
+        """Backward-compatible alias for legacy checklist_items usage."""
+        return self.subtasks
 
     # Indexes
     __table_args__ = (
