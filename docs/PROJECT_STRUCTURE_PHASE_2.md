@@ -1,5 +1,8 @@
 # Project Structure - After Phase 2
 
+> Note: This document is a historical Phase 2 snapshot.
+> For the current canonical project structure, use `docs/STRUCTURE.md`.
+
 ```
 pronaflow/backend/
 ├── app/

@@ -207,6 +207,7 @@ def check_brute_force(
     email: str,
     db: Session,
     max_attempts: int = 5,
+    attempt_window_minutes: int = 10,
     lockout_minutes: int = 15
 ) -> Tuple[bool, Optional[str]]:
     """
@@ -221,17 +222,25 @@ def check_brute_force(
     Returns:
         Tuple of (is_locked, error_message)
     """
-    # Check failed attempts in the last lockout period
-    lockout_threshold = datetime.utcnow() - timedelta(minutes=lockout_minutes)
-    
-    failed_attempts = db.query(LoginAttempt).filter(
+    now = datetime.utcnow()
+
+    # Check failed attempts in the configured attempt window.
+    attempt_window_threshold = now - timedelta(minutes=attempt_window_minutes)
+
+    recent_failures = db.query(LoginAttempt).filter(
         LoginAttempt.email == email,
         LoginAttempt.success == False,
-        LoginAttempt.created_at >= lockout_threshold
-    ).count()
-    
-    if failed_attempts >= max_attempts:
-        return True, f"Account temporarily locked. Try again after {lockout_minutes} minutes."
+        LoginAttempt.created_at >= attempt_window_threshold
+    ).order_by(LoginAttempt.created_at.desc()).all()
+
+    if len(recent_failures) >= max_attempts:
+        latest_failure_at = recent_failures[0].created_at
+        lockout_expires_at = latest_failure_at + timedelta(minutes=lockout_minutes)
+        remaining_seconds = int((lockout_expires_at - now).total_seconds())
+
+        if remaining_seconds > 0:
+            remaining_minutes = max(1, remaining_seconds // 60)
+            return True, f"Account temporarily locked. Try again after {remaining_minutes} minute(s)."
     
     return False, None
 

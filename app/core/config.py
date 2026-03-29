@@ -46,6 +46,7 @@ class Settings(BaseSettings):
     
     # Brute-Force Protection
     MAX_LOGIN_ATTEMPTS: int = 5
+    LOGIN_ATTEMPT_WINDOW_MINUTES: int = 10
     LOGIN_LOCKOUT_MINUTES: int = 15
     
     # CORS

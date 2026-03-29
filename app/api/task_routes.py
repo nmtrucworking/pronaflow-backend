@@ -1,5 +1,6 @@
-"""
-Task API Routes - Module 4
+"""Deprecated legacy task routes.
+
+Canonical endpoints live in `app.api.v1.endpoints.tasks`.
 """
 from uuid import UUID
 from datetime import date

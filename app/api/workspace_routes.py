@@ -1,5 +1,6 @@
-"""
-Workspace API Routes - Module 2
+"""Deprecated legacy workspace routes.
+
+Canonical endpoints live in `app.api.v1.endpoints.workspaces`.
 """
 from typing import Optional
 from uuid import UUID

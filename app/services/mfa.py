@@ -86,8 +86,8 @@ class MFAService:
         # Generate backup codes
         backup_codes = self._generate_backup_codes(mfa_config.id)
         
-        # Don't commit yet - user must confirm with valid OTP first
-        self.db.flush()
+        # Persist pending MFA setup and backup codes.
+        self.db.commit()
         
         return secret, qr_code_url, backup_codes
     
@@ -132,17 +132,10 @@ class MFAService:
         # Enable MFA
         mfa_config.enabled = True
         
-        # Get backup codes
-        backup_codes = self.db.query(MFABackupCode).filter(
-            MFABackupCode.mfa_id == mfa_config.id,
-            MFABackupCode.used_at == None
-        ).all()
-        
-        backup_codes_list = [code.code_hash for code in backup_codes]
-        
         self.db.commit()
-        
-        return True, backup_codes_list
+
+        # Backup codes are shown only once during setup generation.
+        return True, []
     
     def disable_mfa(self, user_id: UUID, password: str) -> bool:
         """
@@ -259,27 +252,32 @@ class MFAService:
                 detail="MFA is not enabled for this user"
             )
         
-        # Find and verify backup code
-        backup_code = self.db.query(MFABackupCode).filter(
+        # Find all unused backup codes and verify against each hash.
+        backup_codes = self.db.query(MFABackupCode).filter(
             MFABackupCode.mfa_id == mfa_config.id,
             MFABackupCode.used_at == None
-        ).first()
+        ).all()
         
-        if not backup_code:
+        if not backup_codes:
             raise HTTPException(
                 status_code=400,
                 detail="No valid backup codes available"
             )
-        
-        # Verify code (need to compare with hashed version)
-        if not verify_password(code, backup_code.code_hash):
+
+        matched_code = None
+        for backup_code in backup_codes:
+            if verify_password(code, backup_code.code_hash):
+                matched_code = backup_code
+                break
+
+        if not matched_code:
             raise HTTPException(
                 status_code=400,
                 detail="Invalid backup code"
             )
         
         # Mark backup code as used
-        backup_code.used_at = datetime.utcnow()
+        matched_code.used_at = datetime.utcnow()
         self.db.commit()
         
         return True

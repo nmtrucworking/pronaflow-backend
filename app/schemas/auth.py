@@ -67,7 +67,7 @@ class ResendVerificationRequest(BaseModel):
 
 class LoginRequest(BaseModel):
     """Login request"""
-    email: EmailStr = Field(..., description="User email")
+    email: str = Field(..., min_length=3, max_length=255, description="User email or username")
     password: str = Field(..., description="User password")
     
     class Config:

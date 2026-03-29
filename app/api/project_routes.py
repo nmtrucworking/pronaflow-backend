@@ -1,5 +1,6 @@
-"""
-Project API Routes - Module 3
+"""Deprecated legacy project routes.
+
+Canonical endpoints live in `app.api.v1.endpoints.projects`.
 """
 from uuid import UUID
 from fastapi import APIRouter, Depends, HTTPException, Query, status

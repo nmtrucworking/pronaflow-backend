@@ -6,8 +6,10 @@ from typing import Optional, Tuple
 from uuid import UUID
 from datetime import datetime, timedelta
 from sqlalchemy.orm import Session
+from sqlalchemy import or_
 from fastapi import HTTPException, status
 
+from app.core.config import settings
 from app.core.security import (
     hash_password, verify_password, validate_password_strength,
     validate_email, validate_username, create_access_token,
@@ -261,7 +263,7 @@ class AuthService:
     
     def login(
         self,
-        email: str,
+        identifier: str,
         password: str,
         ip_address: Optional[str] = None,
         user_agent: Optional[str] = None
@@ -270,7 +272,7 @@ class AuthService:
         Authenticate user and create session.
         
         Args:
-            email: User email
+            identifier: User email or username
             password: User password
             ip_address: Client IP address
             user_agent: Client user agent
@@ -279,21 +281,34 @@ class AuthService:
             Tuple of (session_data, error_message)
             session_data = {user_id, session_id, token, expires_in}
         """
-        # Check brute-force
-        is_locked, error_msg = check_brute_force(email, self.db)
+        user = self.db.query(User).filter(
+            or_(User.email == identifier, User.username == identifier)
+        ).first()
+        attempt_key = user.email if user else identifier
+
+        # Check brute-force using canonical email when user exists.
+        is_locked, error_msg = check_brute_force(
+            attempt_key,
+            self.db,
+            max_attempts=settings.MAX_LOGIN_ATTEMPTS,
+            attempt_window_minutes=settings.LOGIN_ATTEMPT_WINDOW_MINUTES,
+            lockout_minutes=settings.LOGIN_LOCKOUT_MINUTES,
+        )
         if is_locked:
             record_login_attempt(
-                email, ip_address, user_agent, False,
+                attempt_key, ip_address, user_agent, False,
                 "Account locked due to too many failed attempts", self.db
             )
+            if user and user.email:
+                self.email_service.send_brute_force_alert(
+                    user.email,
+                    ip_address or "unknown"
+                )
             raise HTTPException(status_code=429, detail=error_msg)
-        
-        # Find user by email
-        user = self.db.query(User).filter(User.email == email).first()
         
         if not user:
             record_login_attempt(
-                email, ip_address, user_agent, False,
+                attempt_key, ip_address, user_agent, False,
                 "User not found", self.db
             )
             raise HTTPException(
@@ -304,7 +319,7 @@ class AuthService:
         # Check password
         if not verify_password(password, user.password_hash):
             record_login_attempt(
-                email, ip_address, user_agent, False,
+                attempt_key, ip_address, user_agent, False,
                 "Invalid password", self.db
             )
             raise HTTPException(
@@ -315,7 +330,7 @@ class AuthService:
         # Check user status
         if user.status != UserStatus.ACTIVE:
             record_login_attempt(
-                email, ip_address, user_agent, False,
+                attempt_key, ip_address, user_agent, False,
                 f"User status: {user.status}", self.db
             )
             raise HTTPException(
@@ -326,7 +341,7 @@ class AuthService:
         # Check email verified
         if not user.email_verified_at:
             record_login_attempt(
-                email, ip_address, user_agent, False,
+                attempt_key, ip_address, user_agent, False,
                 "Email not verified", self.db
             )
             raise HTTPException(
@@ -341,7 +356,7 @@ class AuthService:
         
         # Record successful login
         record_login_attempt(
-            email, ip_address, user_agent, True, None, self.db
+            attempt_key, ip_address, user_agent, True, None, self.db
         )
         
         return session_data, None
@@ -510,6 +525,23 @@ class AuthService:
             self.email_service.send_password_reset(user.email, raw_token)
         
         return raw_token
+
+    def request_password_reset(self, email: str) -> bool:
+        """
+        Request password reset by email without leaking account existence.
+
+        Args:
+            email: User email
+
+        Returns:
+            True always
+        """
+        user = self.db.query(User).filter(User.email == email).first()
+        if not user:
+            return True
+
+        self.create_password_reset_token(user.id)
+        return True
     
     def reset_password(
         self,

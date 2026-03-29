@@ -1,15 +1,17 @@
 """
 Authentication API Endpoints for Module 1: Identity and Access Management (IAM)
 """
-from typing import Optional
+from typing import Optional, Tuple
+from datetime import datetime
 from uuid import UUID
 from fastapi import APIRouter, Depends, HTTPException, status, Request, Header
 
 from sqlalchemy.orm import Session
 
 from app.db.session import get_db
-from app.core.security import get_current_user, get_current_active_user
-from app.models.users import User
+from app.core.security import get_current_active_user, get_current_user_with_session
+from app.core.config import settings
+from app.models.users import User, Session as SessionModel
 from app.services.auth import AuthService
 from app.services.mfa import MFAService
 from app.services.session import SessionService
@@ -144,7 +146,7 @@ async def login(
     auth_service = AuthService(db, EmailService())
     
     session_data, error = auth_service.login(
-        email=request.email,
+        identifier=request.email,
         password=request.password,
         ip_address=client_ip,
         user_agent=user_agent
@@ -230,6 +232,7 @@ async def confirm_mfa(
 
 @router.post(
     "/mfa/verify",
+    response_model=SessionResponse,
     summary="Verify MFA Code",
     description="Verify TOTP or backup code during login"
 )
@@ -246,6 +249,23 @@ async def verify_mfa(
         Session with JWT token
     """
     mfa_service = MFAService(db)
+
+    try:
+        session_uuid = UUID(request.session_id)
+    except ValueError:
+        raise HTTPException(status_code=400, detail="Invalid session ID format")
+
+    session = db.query(SessionModel).filter(
+        SessionModel.id == session_uuid,
+        SessionModel.revoked_at == None
+    ).first()
+
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found or revoked")
+
+    user = db.query(User).filter(User.id == session.user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
     
     if not request.otp_code and not request.backup_code:
         raise HTTPException(
@@ -256,13 +276,22 @@ async def verify_mfa(
     # Verify OTP or backup code
     try:
         if request.otp_code:
-            mfa_service.verify_otp(UUID(request.session_id), request.otp_code)
+            mfa_service.verify_otp(user.id, request.otp_code)
         elif request.backup_code:
-            mfa_service.verify_backup_code(UUID(request.session_id), request.backup_code)
+            mfa_service.verify_backup_code(user.id, request.backup_code)
     except HTTPException as e:
         raise e
-    
-    return {"message": "MFA verification successful"}
+
+    session.last_active_at = datetime.utcnow()
+    db.commit()
+
+    return {
+        "user_id": str(user.id),
+        "session_id": str(session.id),
+        "token": session.token,
+        "expires_in": settings.ACCESS_TOKEN_EXPIRE_MINUTES * 60,
+        "user": UserResponse.from_orm(user),
+    }
 
 
 @router.post(
@@ -348,7 +377,7 @@ async def regenerate_backup_codes(
     description="Get all active sessions for current user"
 )
 async def list_sessions(
-    current_user: User = Depends(get_current_active_user),
+    current_user_session: Tuple[User, UUID] = Depends(get_current_user_with_session),
     db: Session = Depends(get_db)
 ):
     """
@@ -357,8 +386,9 @@ async def list_sessions(
     Returns:
         List of sessions with device info
     """
+    current_user, current_session_id = current_user_session
     session_service = SessionService(db)
-    sessions = session_service.get_user_sessions(current_user.id)
+    sessions = session_service.get_user_sessions(current_user.id, current_session_id)
     
     return {
         "sessions": sessions,
@@ -397,8 +427,7 @@ async def revoke_session(
     description="Logout from all devices except current"
 )
 async def revoke_all_sessions(
-    current_user: User = Depends(get_current_active_user),
-    request: Request = None,
+    current_user_session: Tuple[User, UUID] = Depends(get_current_user_with_session),
     db: Session = Depends(get_db)
 ):
     """
@@ -407,14 +436,9 @@ async def revoke_all_sessions(
     Returns:
         Number of sessions revoked
     """
+    current_user, current_session_id = current_user_session
     session_service = SessionService(db)
-    
-    # Get current session ID from token (optional)
-    current_session_id = None
-    if request and request.headers.get("Authorization"):
-        # Extract from token if needed
-        pass
-    
+
     count = session_service.revoke_all_sessions(current_user.id, current_session_id)
     
     return {
@@ -431,8 +455,7 @@ async def revoke_all_sessions(
     description="Logout current session"
 )
 async def logout(
-    current_user: User = Depends(get_current_active_user),
-    request: Request = None,
+    current_user_session: Tuple[User, UUID] = Depends(get_current_user_with_session),
     db: Session = Depends(get_db)
 ):
     """
@@ -441,11 +464,11 @@ async def logout(
     Returns:
         Success message
     """
+    _, current_session_id = current_user_session
     auth_service = AuthService(db, EmailService())
-    
-    # Get session ID from token (would need to decode JWT)
-    # For now, just return success message
-    
+
+    auth_service.logout(current_session_id)
+
     return {"message": "Logged out successfully"}
 
 
@@ -469,10 +492,10 @@ async def request_password_reset(
         Success message
     """
     auth_service = AuthService(db, EmailService())
-    
+
     try:
-        auth_service.create_password_reset_token(None)
-    except:
+        auth_service.request_password_reset(request.email)
+    except Exception:
         # Don't reveal if email exists or not
         pass
     

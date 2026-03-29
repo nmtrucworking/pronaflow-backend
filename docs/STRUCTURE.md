@@ -9,16 +9,18 @@
 - **config/** - Configuration files
 - **scripts/** - Utility scripts (setup, maintenance)
 - **logs/** - Application logs
-- **data/** - Local data files and exports
-- **migrations/** - Database migration files
+- **htmlcov/** - Coverage HTML reports
+- **alembic.ini** - Alembic configuration at project root
 
 ### app/ Structure
 - **api/** - API endpoints and routers
-  - v1/ - API v1 endpoints organized by module
-  - v2/ - Future API versions
+  - v1/ - Canonical API v1 router and module endpoints
+  - v1/endpoints/ - Module-based endpoint implementations
+  - legacy/ - Legacy route registry (not mounted by default)
 - **core/** - Core functionality (config, security, auth)
 - **models/** - Database models organized by module
 - **db/** - Database session and initialization
+- **alembic/** - Alembic environment and migration versions
 - **schemas/** - Pydantic schemas for validation
 - **services/** - Business logic services by module
 - **repositories/** - Data access layer
@@ -30,6 +32,7 @@ Organized by module and cross-cutting concerns:
 
 ```
 docs/
+├── README.md                            # Docs overview and policy
 ├── modules/
 │   ├── module_01_iam/                    # Identity & Access Management
 │   ├── module_02_workspace/              # Workspace Management
@@ -75,11 +78,13 @@ docs/
 │   ├── developing.md                     # Development guidelines
 │   ├── testing.md                        # Testing strategies
 │   └── debugging.md                      # Debugging tips
+├── CANONICAL_MAP.md                      # Official documentation map
+├── LEGACY_INDEX.md                       # Legacy report/checklist index
 └── draft/                                # Work-in-progress docs
 ```
 
 ## Key Files
-- `main.py` - FastAPI application entry point
+- `app/main.py` - FastAPI application entry point
 - `requirements.txt` - Python dependencies
 - `pytest.ini` - Pytest configuration
 - `alembic.ini` - Alembic migration configuration

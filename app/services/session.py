@@ -27,12 +27,13 @@ class SessionService:
     
     # ============= Session Listing =============
     
-    def get_user_sessions(self, user_id: UUID) -> List[dict]:
+    def get_user_sessions(self, user_id: UUID, current_session_id: Optional[UUID] = None) -> List[dict]:
         """
         Get all active sessions for a user.
         
         Args:
             user_id: User ID
+            current_session_id: Session ID extracted from current JWT token
             
         Returns:
             List of session information dicts
@@ -42,14 +43,15 @@ class SessionService:
             SessionModel.revoked_at == None
         ).order_by(SessionModel.last_active_at.desc()).all()
         
-        return [self._session_to_dict(session) for session in sessions]
+        return [self._session_to_dict(session, current_session_id) for session in sessions]
     
-    def _session_to_dict(self, session: SessionModel) -> dict:
+    def _session_to_dict(self, session: SessionModel, current_session_id: Optional[UUID] = None) -> dict:
         """
         Convert session object to dictionary.
         
         Args:
             session: Session object
+            current_session_id: Session ID extracted from current JWT token
             
         Returns:
             Session information dict
@@ -61,7 +63,7 @@ class SessionService:
             "geo_location": session.geo_location or "Unknown",
             "last_active_at": session.last_active_at.isoformat(),
             "created_at": session.created_at.isoformat(),
-            "is_current": session.token is not None  # Current session has active token
+            "is_current": current_session_id is not None and session.id == current_session_id
         }
     
     # ============= Session Revocation =============

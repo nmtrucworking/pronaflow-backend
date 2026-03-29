@@ -125,17 +125,22 @@ python init_db.py
 backend/
 ├── app/
 │   ├── api/              # API endpoints
+│   │   ├── v1/endpoints/ # Module-based endpoints
+│   │   └── legacy/       # Legacy routes (migration only)
+│   ├── models/           # SQLAlchemy models
 │   ├── core/             # Core configuration
-│   ├── db/
-│   │   ├── models/       # SQLAlchemy models
-│   │   ├── repositories/ # Data access layer
-│   │   └── alembic/      # Database migrations
+│   ├── db/               # DB base/session/enums
+│   ├── repositories/     # Data access layer
 │   ├── schemas/          # Pydantic schemas
 │   ├── services/         # Business logic layer
+│   ├── middleware/       # Request middleware
+│   ├── utils/            # Shared helpers
+│   ├── alembic/          # Alembic env + versions
 │   └── main.py           # FastAPI application
 ├── tests/
 │   ├── test_api/         # API integration tests
-│   └── test_repositories/# Repository unit tests
+│   ├── test_repositories/# Repository unit tests
+│   └── test_services/    # Service unit tests
 ├── docs/                 # Documentation
 ├── alembic.ini           # Alembic configuration
 ├── pytest.ini            # Pytest configuration
@@ -151,7 +156,7 @@ backend/
 git checkout -b feature/your-feature
 
 # 2. Implement code
-# - Tạo/update models in app/db/models/
+# - Tạo/update models in app/models/
 # - Tạo/update schemas in app/schemas/
 # - Tạo/update services in app/services/
 # - Tạo/update API endpoints in app/api/
