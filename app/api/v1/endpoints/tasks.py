@@ -285,6 +285,16 @@ def create_subtask(
     return subtask
 
 
+@router.get("/{task_id}/subtasks", response_model=List[SubtaskResponse])
+def list_subtasks(
+    task_id: uuid.UUID,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """List subtasks by task ID"""
+    return SubtaskService.list_subtasks(db, task_id, current_user.id)
+
+
 @router.patch("/subtasks/{subtask_id}", response_model=SubtaskResponse)
 def update_subtask(
     subtask_id: uuid.UUID,
@@ -328,6 +338,16 @@ def create_task_dependency(
     return dependency
 
 
+@router.get("/{task_id}/dependencies", response_model=List[TaskDependencyResponse])
+def list_task_dependencies(
+    task_id: uuid.UUID,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """List dependency links for a task"""
+    return TaskDependencyService.list_dependencies(db, task_id, current_user.id)
+
+
 @router.delete("/dependencies/{dependency_id}", status_code=status.HTTP_204_NO_CONTENT)
 def delete_task_dependency(
     dependency_id: uuid.UUID,
@@ -357,6 +377,16 @@ def create_comment(
     comment_data.task_id = task_id
     comment = CommentService.create_comment(db, comment_data, current_user.id)
     return comment
+
+
+@router.get("/{task_id}/comments", response_model=List[CommentResponse])
+def list_comments(
+    task_id: uuid.UUID,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """List comments by task ID"""
+    return CommentService.list_comments(db, task_id, current_user.id)
 
 
 @router.patch("/comments/{comment_id}", response_model=CommentResponse)

@@ -614,6 +614,28 @@ class SubtaskService:
         return subtask
 
     @staticmethod
+    def list_subtasks(
+        db: Session,
+        task_id: uuid.UUID,
+        user_id: uuid.UUID,
+    ) -> List[Subtask]:
+        """List subtasks for a task"""
+        task = TaskService.get_task(db, task_id, user_id)
+        if not task:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail="Task not found"
+            )
+
+        subtasks = db.scalars(
+            select(Subtask)
+            .where(Subtask.task_id == task_id)
+            .order_by(Subtask.position.asc(), Subtask.created_at.asc())
+        ).all()
+
+        return list(subtasks)
+
+    @staticmethod
     def update_subtask(
         db: Session,
         subtask_id: uuid.UUID,
@@ -641,6 +663,9 @@ class SubtaskService:
 
         # Update fields
         update_data = subtask_data.model_dump(exclude_unset=True)
+        if "is_completed" in update_data:
+            update_data["is_done"] = update_data.pop("is_completed")
+
         for field, value in update_data.items():
             setattr(subtask, field, value)
 
@@ -712,16 +737,46 @@ class TaskDependencyService:
             )
 
         # Create dependency
+        dependency_type = dependency_data.dependency_type or "FS"
+        dependency_type_map = {
+            "FS": "BLOCKS",
+            "SS": "RELATED_TO",
+            "FF": "RELATED_TO",
+            "SF": "RELATED_TO",
+        }
+
         dependency = TaskDependency(
             task_id=dependency_data.task_id,
             depends_on_task_id=dependency_data.depends_on_task_id,
-            dependency_type=dependency_data.dependency_type,
+            dependency_type=dependency_type_map.get(dependency_type.upper(), dependency_type),
         )
 
         db.add(dependency)
         db.commit()
         db.refresh(dependency)
         return dependency
+
+    @staticmethod
+    def list_dependencies(
+        db: Session,
+        task_id: uuid.UUID,
+        user_id: uuid.UUID,
+    ) -> List[TaskDependency]:
+        """List dependency links for a task"""
+        task = TaskService.get_task(db, task_id, user_id)
+        if not task:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail="Task not found"
+            )
+
+        dependencies = db.scalars(
+            select(TaskDependency)
+            .where(TaskDependency.task_id == task_id)
+            .order_by(TaskDependency.created_at.desc())
+        ).all()
+
+        return list(dependencies)
 
     @staticmethod
     def _would_create_cycle(
@@ -806,7 +861,7 @@ class CommentService:
 
         comment = Comment(
             task_id=comment_data.task_id,
-            user_id=user_id,
+            author_id=user_id,
             content=comment_data.content,
         )
 
@@ -817,6 +872,28 @@ class CommentService:
         db.commit()
         db.refresh(comment)
         return comment
+
+    @staticmethod
+    def list_comments(
+        db: Session,
+        task_id: uuid.UUID,
+        user_id: uuid.UUID,
+    ) -> List[Comment]:
+        """List comments for a task"""
+        task = TaskService.get_task(db, task_id, user_id)
+        if not task:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail="Task not found"
+            )
+
+        comments = db.scalars(
+            select(Comment)
+            .where(Comment.task_id == task_id)
+            .order_by(Comment.created_at.asc())
+        ).all()
+
+        return list(comments)
 
     @staticmethod
     def update_comment(
@@ -837,7 +914,7 @@ class CommentService:
             )
 
         # Only author can edit
-        if comment.user_id != user_id:
+        if comment.author_id != user_id:
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN,
                 detail="Only comment author can edit"
@@ -876,7 +953,7 @@ class CommentService:
             )
 
         # Author or PM can delete
-        if comment.user_id != user_id:
+        if comment.author_id != user_id:
             if not TaskService._can_delete_task(db, task, user_id):
                 raise HTTPException(
                     status_code=status.HTTP_403_FORBIDDEN,

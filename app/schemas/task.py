@@ -32,6 +32,7 @@ class TaskListUpdate(BaseModel):
     """Schema for updating task list"""
     name: Optional[str] = Field(None, min_length=1, max_length=100)
     position: Optional[int] = None
+    is_archived: Optional[bool] = None
 
 
 class TaskListResponse(TaskListBase):
@@ -221,7 +222,7 @@ class SubtaskResponse(SubtaskBase):
     """Response schema for subtask"""
     id: UUID
     task_id: UUID
-    is_completed: bool
+    is_done: bool
     assignee_id: Optional[UUID]
     position: int
     created_at: datetime
@@ -276,7 +277,7 @@ class CommentResponse(CommentBase):
     """Response schema for comment"""
     id: UUID
     task_id: UUID
-    user_id: UUID
+    author_id: UUID
     created_at: datetime
     updated_at: datetime
 
