@@ -4,6 +4,7 @@ Implements Functional Module 5: Temporal Planning and Scheduling.
 Ref: docs/01-Requirements/Functional-Modules/5 - Temporal Planning and Scheduling.md
 """
 import uuid
+from datetime import datetime
 from typing import Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Query, status
@@ -351,8 +352,9 @@ def analyze_critical_path(
     return CriticalPathAnalysisResponse(
         total_float_hours=0.0,  # TODO: Calculate
         critical_task_ids=list(critical_tasks),
-        project_end_date=None,  # TODO: Calculate
-        updated_at=None,  # TODO: Set
+        # Return safe placeholders until CPM/date calculations are implemented.
+        project_end_date=datetime.utcnow(),
+        updated_at=datetime.utcnow(),
     )
 
 
