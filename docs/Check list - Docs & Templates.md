@@ -1,6 +1,7 @@
-# Moved To Canonical Shared Docs
+# Moved To Backend Technical Docs
 
-This shared document has been migrated to the canonical shared docs folder.
+This document was moved to the backend technical-docs compatibility folder.
 
-- Canonical source: docs/technical-docs/Check list - Docs & Templates.md
+- New location: [technical-docs/Check list - Docs & Templates.md](technical-docs/Check%20list%20-%20Docs%20&%20Templates.md)
+- Canonical shared docs: [../../../docs/technical-docs/](../../../docs/technical-docs/)
 - Migration date: 2026-03-31

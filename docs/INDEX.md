@@ -5,6 +5,7 @@ Tài liệu được chuẩn hóa theo mô hình điều hướng mới.
 ## Primary Entry Points
 
 - [README.md](README.md) - overview và policy tài liệu
+- [technical-docs/INDEX.md](technical-docs/INDEX.md) - backend entrypoint to canonical shared docs
 - [CANONICAL_MAP.md](CANONICAL_MAP.md) - bản đồ tài liệu chuẩn
 - [LEGACY_INDEX.md](LEGACY_INDEX.md) - chỉ mục tài liệu lịch sử
 - [STRUCTURE.md](STRUCTURE.md) - cấu trúc codebase backend hiện hành
