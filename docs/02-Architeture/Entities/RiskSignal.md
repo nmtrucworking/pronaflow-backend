@@ -1,5 +1,5 @@
-> Cảnh bảo rủi ro dự án
-> Kích hoạt sang Module 7 - [[7 - Even-Driven Notification System]]
+﻿> Cáº£nh báº£o rá»§i ro dá»± Ă¡n
+> KĂ­ch hoáº¡t sang Module 7 - [[7 - Event-Driven Notification System]]
 
 # Module 10
 |Field|Type|
@@ -10,3 +10,4 @@
 |severity|enum|
 |detected_at|timestamp|
 |is_acknowledged|boolean|
+
