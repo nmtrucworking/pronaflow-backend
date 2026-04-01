@@ -4,9 +4,11 @@ Provides REST API for workspace CRUD, member management, and invitations.
 Ref: docs/docs - PronaFlow React&FastAPI/01-Requirements/Functional-Modules/2 - Multi-tenancy Workspace Governance.md
 """
 from typing import List
+from typing import Optional
 from uuid import UUID
+import json
 
-from fastapi import APIRouter, HTTPException, Depends, Query, status, UploadFile, File
+from fastapi import APIRouter, HTTPException, Depends, Query, status, UploadFile, File, Request
 from sqlalchemy.orm import Session
 import os
 import uuid
@@ -14,7 +16,9 @@ from pathlib import Path
 
 from app.db.session import get_db
 from app.core.security import get_current_user
+from app.core.rate_limiter import get_rate_limiter
 from app.models.users import User
+from app.db.enums import WorkspaceRole
 from app.schemas.workspace import (
     WorkspaceCreate,
     WorkspaceUpdate,
@@ -33,6 +37,7 @@ from app.schemas.workspace import (
     WorkspaceSettingUpdate,
     WorkspaceContextSwitch,
     WorkspaceOwnershipTransfer,
+    WorkspaceAuditLogResponse,
 )
 from app.services.workspace import (
     WorkspaceService,
@@ -40,6 +45,7 @@ from app.services.workspace import (
     WorkspaceInvitationService,
     WorkspaceAccessLogService,
     WorkspaceSettingService,
+    WorkspaceAuditService,
 )
 from app.services.email import EmailService
 
@@ -59,6 +65,23 @@ def _send_workspace_invitation_email(
         workspace_name=workspace_name,
         inviter_name=inviter_name,
     )
+
+
+def _request_context(request: Request) -> tuple[Optional[str], Optional[str]]:
+    return request.client.host if request.client else None, request.headers.get("user-agent")
+
+
+def _enforce_invite_rate_limit(workspace_id: UUID, current_user: User, request: Request) -> None:
+    limiter = get_rate_limiter()
+    ip = request.client.host if request.client else "unknown"
+    user_key = f"invite:user:{current_user.id}:{workspace_id}"
+    ip_key = f"invite:ip:{ip}:{workspace_id}"
+
+    if limiter.is_rate_limited(user_key, max_requests=10, window_seconds=60):
+        raise HTTPException(status_code=429, detail="Too many invitation requests. Please retry shortly.")
+
+    if limiter.is_rate_limited(ip_key, max_requests=25, window_seconds=60):
+        raise HTTPException(status_code=429, detail="Invite rate limit reached for this IP.")
 
 
 # ===== Workspace CRUD Operations =====
@@ -175,6 +198,7 @@ def update_workspace(
 )
 def delete_workspace(
     workspace_id: UUID,
+    request: Request,
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
@@ -191,6 +215,18 @@ def delete_workspace(
         raise HTTPException(status_code=403, detail="Only owner can delete workspace")
 
     WorkspaceService.delete_workspace(db, workspace_id)
+    ip_address, user_agent = _request_context(request)
+    WorkspaceAuditService.log_action(
+        db,
+        workspace_id=workspace_id,
+        action="delete_workspace",
+        resource_type="workspace",
+        resource_id=str(workspace_id),
+        actor_id=current_user.id,
+        details=json.dumps({"mode": "soft_delete"}),
+        ip_address=ip_address,
+        user_agent=user_agent,
+    )
 
 
 # ===== Workspace Member Operations =====
@@ -264,6 +300,7 @@ def update_member(
     workspace_id: UUID,
     user_id: UUID,
     update_data: WorkspaceMemberUpdate,
+    request: Request,
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
@@ -290,6 +327,19 @@ def update_member(
     if not member:
         raise HTTPException(status_code=404, detail="Member not found")
 
+    ip_address, user_agent = _request_context(request)
+    WorkspaceAuditService.log_action(
+        db,
+        workspace_id=workspace_id,
+        action="update_member",
+        resource_type="member",
+        resource_id=str(user_id),
+        actor_id=current_user.id,
+        details=json.dumps(update_data.dict(exclude_unset=True), default=str),
+        ip_address=ip_address,
+        user_agent=user_agent,
+    )
+
     return member
 
 
@@ -301,6 +351,7 @@ def update_member(
 def remove_member(
     workspace_id: UUID,
     user_id: UUID,
+    request: Request,
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
@@ -321,6 +372,18 @@ def remove_member(
     if not success:
         raise HTTPException(status_code=404, detail="Member not found")
 
+    ip_address, user_agent = _request_context(request)
+    WorkspaceAuditService.log_action(
+        db,
+        workspace_id=workspace_id,
+        action="remove_member",
+        resource_type="member",
+        resource_id=str(user_id),
+        actor_id=current_user.id,
+        ip_address=ip_address,
+        user_agent=user_agent,
+    )
+
 
 # ===== Workspace Invitation Operations =====
 
@@ -333,6 +396,7 @@ def remove_member(
 def send_invitation(
     workspace_id: UUID,
     invitation_data: WorkspaceInvitationCreate,
+    request: Request,
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
@@ -349,6 +413,8 @@ def send_invitation(
     if not current_member or current_member.role not in ["owner", "admin"]:
         raise HTTPException(status_code=403, detail="Insufficient permissions")
 
+    _enforce_invite_rate_limit(workspace_id, current_user, request)
+
     invitation, token = WorkspaceInvitationService.create_invitation(
         db, workspace_id, current_user.id, invitation_data
     )
@@ -360,6 +426,19 @@ def send_invitation(
         token,
         workspace.name,
         current_user.full_name or current_user.username,
+    )
+
+    ip_address, user_agent = _request_context(request)
+    WorkspaceAuditService.log_action(
+        db,
+        workspace_id=workspace_id,
+        action="send_invitation",
+        resource_type="invitation",
+        resource_id=str(invitation.id),
+        actor_id=current_user.id,
+        details=json.dumps({"email": invitation_data.email, "role": invitation_data.invited_role}, default=str),
+        ip_address=ip_address,
+        user_agent=user_agent,
     )
 
     return invitation
@@ -374,6 +453,7 @@ def send_invitation(
 def send_bulk_invitations(
     workspace_id: UUID,
     invitation_data: WorkspaceInvitationBulkCreate,
+    request: Request,
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
@@ -388,6 +468,11 @@ def send_bulk_invitations(
     current_member = WorkspaceMemberService.get_member(db, workspace_id, current_user.id)
     if not current_member or current_member.role not in ["owner", "admin"]:
         raise HTTPException(status_code=403, detail="Insufficient permissions")
+
+    if len(invitation_data.emails) > 50:
+        raise HTTPException(status_code=400, detail="Bulk invite limit is 50 emails per request")
+
+    _enforce_invite_rate_limit(workspace_id, current_user, request)
 
     email_service = EmailService()
     invitations = []
@@ -410,6 +495,18 @@ def send_bulk_invitations(
         )
         invitations.append(invitation)
 
+    ip_address, user_agent = _request_context(request)
+    WorkspaceAuditService.log_action(
+        db,
+        workspace_id=workspace_id,
+        action="send_bulk_invitations",
+        resource_type="invitation",
+        actor_id=current_user.id,
+        details=json.dumps({"count": len(invitations), "role": invitation_data.invited_role}, default=str),
+        ip_address=ip_address,
+        user_agent=user_agent,
+    )
+
     return invitations
 
 
@@ -421,6 +518,7 @@ def send_bulk_invitations(
 def transfer_ownership(
     workspace_id: UUID,
     transfer_data: WorkspaceOwnershipTransfer,
+    request: Request,
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
@@ -440,6 +538,18 @@ def transfer_ownership(
     )
     if not member:
         raise HTTPException(status_code=404, detail="Member not found")
+
+    ip_address, user_agent = _request_context(request)
+    WorkspaceAuditService.log_action(
+        db,
+        workspace_id=workspace_id,
+        action="transfer_ownership",
+        resource_type="member",
+        resource_id=str(transfer_data.new_owner_id),
+        actor_id=current_user.id,
+        ip_address=ip_address,
+        user_agent=user_agent,
+    )
 
     return member
 
@@ -482,6 +592,7 @@ def list_invitations(
 def cancel_invitation(
     workspace_id: UUID,
     invitation_id: UUID,
+    request: Request,
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ):
@@ -500,6 +611,18 @@ def cancel_invitation(
     success = WorkspaceInvitationService.cancel_invitation(db, invitation_id)
     if not success:
         raise HTTPException(status_code=404, detail="Invitation not found or already accepted")
+
+    ip_address, user_agent = _request_context(request)
+    WorkspaceAuditService.log_action(
+        db,
+        workspace_id=workspace_id,
+        action="cancel_invitation",
+        resource_type="invitation",
+        resource_id=str(invitation_id),
+        actor_id=current_user.id,
+        ip_address=ip_address,
+        user_agent=user_agent,
+    )
 
 
 # ===== Workspace Settings Operations =====
@@ -816,3 +939,32 @@ async def get_workspace_logo(
     
     from fastapi.responses import FileResponse
     return FileResponse(file_path, media_type="image/*")
+
+
+# ===== Audit Logs Endpoints =====
+
+@router.get("/{workspace_id}/audit-logs", response_model=dict)
+def get_workspace_audit_logs(
+    workspace_id: UUID,
+    action: Optional[str] = Query(None, description="Filter by action type"),
+    limit: int = Query(100, ge=1, le=500),
+    offset: int = Query(0, ge=0),
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """Get audit logs for a workspace (Admin/Owner only)."""
+    member = WorkspaceMemberService.get_member(db, workspace_id, current_user.id)
+    if not member:
+        raise HTTPException(status_code=403, detail="Access denied")
+
+    if member.role not in [WorkspaceRole.OWNER, WorkspaceRole.ADMIN]:
+        raise HTTPException(status_code=403, detail="Only admins can view audit logs")
+
+    total, logs = WorkspaceAuditService.get_workspace_audit_logs(
+        db, workspace_id, action_filter=action, limit=limit, offset=offset
+    )
+
+    return {
+        "total": total,
+        "items": [WorkspaceAuditLogResponse.model_validate(log) for log in logs],
+    }

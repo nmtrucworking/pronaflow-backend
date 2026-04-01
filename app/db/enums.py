@@ -30,12 +30,12 @@ class WorkspaceRole(str, Enum):
     """
     Roles within a workspace.
     Defines permission levels for workspace members.
+    Per Module 2 specification: Owner, Admin, Member, Viewer only.
     """
     OWNER = "owner"
     ADMIN = "admin"
     MEMBER = "member"
     VIEWER = "viewer"
-    GUEST = "guest"
 
 
 # ============ Module 3: Project Lifecycle Management ============

@@ -18,6 +18,7 @@ from app.schemas.workspace import (
     WorkspaceListResponse,
 )
 from app.services.workspace import WorkspaceService
+from app.services.workspace import WorkspaceAuditService
 from app.repositories.workspace_repository import WorkspaceRepository
 
 
@@ -114,6 +115,15 @@ def restore_workspace(
     restored = workspace_repo.restore(workspace)
     db.commit()
     db.refresh(restored)
+
+    WorkspaceAuditService.log_action(
+        db,
+        workspace_id=restored.id,
+        action="admin_restore_workspace",
+        resource_type="workspace",
+        resource_id=str(restored.id),
+        actor_id=current_user.id,
+    )
     
     return restored
 
@@ -158,6 +168,16 @@ def hard_delete_workspace(
         )
     
     # Hard delete
+    WorkspaceAuditService.log_action(
+        db,
+        workspace_id=workspace.id,
+        action="admin_hard_delete_workspace",
+        resource_type="workspace",
+        resource_id=str(workspace.id),
+        actor_id=current_user.id,
+        details=f"workspace_name={workspace.name}",
+    )
+
     success = workspace_repo.hard_delete(workspace_id)
     
     if not success:
@@ -206,6 +226,15 @@ def cleanup_old_workspaces(
     # Hard delete all old workspaces
     deleted_count = 0
     for workspace in workspaces:
+        WorkspaceAuditService.log_action(
+            db,
+            workspace_id=workspace.id,
+            action="admin_cleanup_hard_delete_workspace",
+            resource_type="workspace",
+            resource_id=str(workspace.id),
+            actor_id=current_user.id,
+            details=f"retention_days={days}",
+        )
         success = workspace_repo.hard_delete(workspace.id)
         if success:
             deleted_count += 1

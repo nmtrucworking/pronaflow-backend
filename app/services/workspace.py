@@ -12,6 +12,7 @@ from typing import List, Optional, Tuple
 from sqlalchemy import select, and_, or_, func
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
+from sqlalchemy.exc import SQLAlchemyError
 from fastapi import HTTPException
 
 from app.models.workspaces import (
@@ -20,6 +21,7 @@ from app.models.workspaces import (
     WorkspaceInvitation,
     WorkspaceAccessLog,
     WorkspaceSetting,
+    WorkspaceAuditLog,
 )
 from app.models.users import User
 from app.db.enums import WorkspaceRole
@@ -913,3 +915,65 @@ class WorkspaceSettingService:
         db.commit()
         db.refresh(settings)
         return settings
+
+
+class WorkspaceAuditService:
+    """Service for workspace audit logging"""
+
+    @staticmethod
+    def log_action(
+        db: Session,
+        workspace_id: uuid.UUID,
+        action: str,
+        resource_type: str,
+        resource_id: Optional[str] = None,
+        actor_id: Optional[uuid.UUID] = None,
+        details: Optional[str] = None,
+        ip_address: Optional[str] = None,
+        user_agent: Optional[str] = None,
+    ) -> Optional[WorkspaceAuditLog]:
+        audit_log = WorkspaceAuditLog(
+            workspace_id=workspace_id,
+            action=action,
+            resource_type=resource_type,
+            resource_id=resource_id,
+            actor_id=actor_id,
+            details=details,
+            ip_address=ip_address,
+            user_agent=user_agent,
+        )
+        try:
+            db.add(audit_log)
+            db.commit()
+            db.refresh(audit_log)
+            return audit_log
+        except SQLAlchemyError:
+            db.rollback()
+            return None
+
+    @staticmethod
+    def get_workspace_audit_logs(
+        db: Session,
+        workspace_id: uuid.UUID,
+        action_filter: Optional[str] = None,
+        limit: int = 100,
+        offset: int = 0,
+    ) -> Tuple[int, List[WorkspaceAuditLog]]:
+        query = select(WorkspaceAuditLog).where(
+            WorkspaceAuditLog.workspace_id == workspace_id
+        )
+
+        if action_filter:
+            query = query.where(WorkspaceAuditLog.action == action_filter)
+
+        total = db.scalar(
+            select(func.count(WorkspaceAuditLog.id)).where(
+                WorkspaceAuditLog.workspace_id == workspace_id
+            )
+        ) or 0
+
+        logs = db.execute(
+            query.order_by(WorkspaceAuditLog.created_at.desc()).limit(limit).offset(offset)
+        ).scalars().all()
+
+        return total, logs

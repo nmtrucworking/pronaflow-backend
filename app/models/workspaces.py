@@ -81,6 +81,7 @@ class Workspace(Base, TimestampMixin, SoftDeleteMixin):
     members: Mapped[List["WorkspaceMember"]] = relationship(back_populates="workspace", cascade="all, delete-orphan")
     invitations: Mapped[List["WorkspaceInvitation"]] = relationship(back_populates="workspace", cascade="all, delete-orphan")
     access_logs: Mapped[List["WorkspaceAccessLog"]] = relationship(back_populates="workspace", cascade="all, delete-orphan")
+    audit_logs: Mapped[List["WorkspaceAuditLog"]] = relationship(back_populates="workspace", cascade="all, delete-orphan")
     settings: Mapped[Optional["WorkspaceSetting"]] = relationship(back_populates="workspace", cascade="all, delete-orphan", uselist=False)
     subscription: Mapped[Optional["WorkspaceSubscription"]] = relationship(back_populates="workspace", uselist=False)
 
@@ -329,3 +330,81 @@ class WorkspaceSetting(Base, TimestampMixin):
 
     # Relationship
     workspace: Mapped["Workspace"] = relationship(back_populates="settings")
+
+
+class WorkspaceAuditLog(Base, TimestampMixin):
+    """
+    WorkspaceAuditLog Model - P2 Admin Audit & Compliance.
+    Logs all administrative and sensitive workspace operations.
+    """
+    __tablename__ = "workspace_audit_logs"
+
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        primary_key=True,
+        default=uuid.uuid4,
+        comment="Unique audit log ID"
+    )
+
+    workspace_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey('workspaces.id', ondelete='CASCADE'),
+        nullable=False,
+        index=True,
+        comment="Reference to workspace"
+    )
+
+    actor_id: Mapped[Optional[uuid.UUID]] = mapped_column(
+        UUID(as_uuid=True),
+        ForeignKey('users.id', ondelete='SET NULL'),
+        nullable=True,
+        index=True,
+        comment="User who triggered the action (nullable for system actions)"
+    )
+
+    action: Mapped[str] = mapped_column(
+        String(100),
+        nullable=False,
+        index=True,
+        comment="Action type (e.g., invite_member, remove_member, transfer_ownership)"
+    )
+
+    resource_type: Mapped[str] = mapped_column(
+        String(50),
+        nullable=False,
+        comment="Resource affected (e.g., member, workspace, invitation)"
+    )
+
+    resource_id: Mapped[Optional[str]] = mapped_column(
+        String(255),
+        nullable=True,
+        comment="ID of the affected resource"
+    )
+
+    details: Mapped[Optional[str]] = mapped_column(
+        Text,
+        nullable=True,
+        comment="JSON details of the change"
+    )
+
+    ip_address: Mapped[Optional[str]] = mapped_column(
+        String(50),
+        nullable=True,
+        comment="IP address of the actor"
+    )
+
+    user_agent: Mapped[Optional[str]] = mapped_column(
+        String(255),
+        nullable=True,
+        comment="User agent string"
+    )
+
+    workspace: Mapped["Workspace"] = relationship(back_populates="audit_logs", foreign_keys=[workspace_id])
+    actor: Mapped[Optional["User"]] = relationship(foreign_keys=[actor_id])
+
+    __table_args__ = (
+        Index('ix_workspace_audit_logs_workspace_id', 'workspace_id'),
+        Index('ix_workspace_audit_logs_action', 'action'),
+        Index('ix_workspace_audit_logs_created_at', 'created_at'),
+        Index('ix_workspace_audit_logs_actor_id', 'actor_id'),
+    )

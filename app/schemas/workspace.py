@@ -16,7 +16,6 @@ class WorkspaceRoleEnum(str, Enum):
     ADMIN = "admin"
     MEMBER = "member"
     VIEWER = "viewer"
-    GUEST = "guest"
 
 
 # ===== Base Schemas =====
@@ -37,6 +36,7 @@ class WorkspaceUpdate(BaseModel):
     name: Optional[str] = Field(None, min_length=1, max_length=50, description="Workspace name")
     description: Optional[str] = Field(None, description="Workspace description")
     status: Optional[str] = Field(None, description="Workspace status")
+    logo_url: Optional[str] = Field(None, description="Workspace logo URL")
 
 
 class WorkspaceResponse(WorkspaceBase):
@@ -186,3 +186,38 @@ class WorkspaceContextSwitch(BaseModel):
 class WorkspaceOwnershipTransfer(BaseModel):
     """Schema for transferring workspace ownership"""
     new_owner_id: UUID = Field(..., description="User ID of the new owner")
+
+
+# ===== Audit Logging Schemas =====
+
+class WorkspaceAuditLogCreate(BaseModel):
+    """Schema for creating an audit log entry"""
+    action: str = Field(..., max_length=100, description="Action type (e.g., invite_member, remove_member)")
+    resource_type: str = Field(..., max_length=50, description="Resource affected (e.g., member, workspace)")
+    resource_id: Optional[str] = Field(None, max_length=255, description="ID of affected resource")
+    details: Optional[str] = Field(None, description="JSON details of the change")
+    ip_address: Optional[str] = Field(None, max_length=50, description="Actor IP address")
+    user_agent: Optional[str] = Field(None, max_length=255, description="User agent string")
+
+
+class WorkspaceAuditLogResponse(BaseModel):
+    """Response schema for audit log entry"""
+    id: UUID
+    workspace_id: UUID
+    actor_id: Optional[UUID]
+    action: str
+    resource_type: str
+    resource_id: Optional[str]
+    details: Optional[str]
+    ip_address: Optional[str]
+    user_agent: Optional[str]
+    created_at: datetime
+
+    class Config:
+        from_attributes = True
+
+
+class WorkspaceAuditLogList(BaseModel):
+    """Response schema for audit log list"""
+    total: int
+    items: List[WorkspaceAuditLogResponse]
