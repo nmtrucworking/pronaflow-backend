@@ -4,13 +4,15 @@ Handles business logic for Functional Module 5: Temporal Planning and Scheduling
 Ref: docs/01-Requirements/Functional-Modules/5 - Temporal Planning and Scheduling.md
 """
 import uuid
+from collections import defaultdict, deque
 from datetime import datetime, timedelta
 from typing import List, Optional, Tuple, Set
 
 from sqlalchemy import select, and_, or_, func
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, selectinload
 from fastapi import HTTPException, status
 
+from app.repositories.project_repository import ProjectRepository
 from app.models.scheduling import (
     PlanState,
     TaskBaseline,
@@ -642,21 +644,7 @@ class CriticalPathService:
         Calculate critical path for project using CPM.
         Ref: Module 5 - Algorithm 4.1 - Critical Path Method
         """
-        # TODO: Implement forward and backward pass algorithms
-        # Get all tasks in project
-        tasks = db.scalars(
-            select(Task).where(Task.project_id == project_id)
-        ).all()
-
-        # Forward pass: calculate ES and EF
-        # Backward pass: calculate LS and LF
-        # Calculate float = LS - ES
-        # Critical tasks have float = 0
-
-        critical_task_ids = set()
-        # TODO: Implement CPM calculation
-
-        return critical_task_ids
+        return GanttChartService.calculate_critical_path(db, project_id)
 
 
 class PlanningAuditService:
@@ -689,3 +677,270 @@ class PlanningAuditService:
         db.commit()
         db.refresh(log)
         return log
+
+
+class GanttChartService:
+    """Service for building Gantt chart payloads."""
+
+    @staticmethod
+    def _task_bounds(task: Task) -> tuple[datetime, datetime]:
+        start = task.planned_start or task.actual_start or task.created_at or datetime.utcnow()
+        end = task.planned_end or task.actual_end
+
+        if end is None:
+            if task.estimated_hours and task.estimated_hours > 0:
+                end = start + timedelta(hours=float(task.estimated_hours))
+            else:
+                end = start + timedelta(days=1)
+
+        if end < start:
+            end = start + timedelta(days=1)
+
+        return start, end
+
+    @staticmethod
+    def _task_progress(task: Task) -> int:
+        if task.status == TaskStatus.DONE:
+            return 100
+        if task.status == TaskStatus.IN_PROGRESS:
+            return 60
+        if task.status == TaskStatus.IN_REVIEW:
+            return 85
+        return 0
+
+    @staticmethod
+    def _task_assignees(task: Task) -> list[dict[str, str | None]]:
+        assignees: list[dict[str, str | None]] = []
+        for assignee in task.assignees or []:
+            assignees.append(
+                {
+                    "id": str(assignee.id),
+                    "name": assignee.full_name or assignee.username or assignee.email,
+                    "avatar": getattr(assignee, "avatar_url", None),
+                }
+            )
+        return assignees
+
+    @staticmethod
+    def _dependency_edge(dependency: TaskDependency) -> dict:
+        source_id = dependency.depends_on_task_id if dependency.dependency_type == "BLOCKS" else dependency.task_id
+        target_id = dependency.task_id if dependency.dependency_type == "BLOCKS" else dependency.depends_on_task_id
+        schedule = getattr(dependency, "schedule_config", None)
+
+        return {
+            "id": str(dependency.id),
+            "source": str(source_id),
+            "target": str(target_id),
+            "type": "FS" if dependency.dependency_type in {"BLOCKS", "BLOCKED_BY"} else "RELATED",
+            "dependency_type": dependency.dependency_type,
+            "lag_days": getattr(schedule, "lag_days", 0),
+            "is_pinned": bool(getattr(schedule, "is_pinned", False)),
+            "is_broken": False,
+            "created_at": dependency.created_at,
+            "updated_at": dependency.updated_at,
+        }
+
+    @staticmethod
+    def _task_payload(task: Task, include_critical: bool, critical_ids: Set[uuid.UUID], include_in_planning: bool) -> dict:
+        start, end = GanttChartService._task_bounds(task)
+
+        return {
+            "id": str(task.id),
+            "task_id": str(task.id),
+            "title": task.title,
+            "name": task.title,
+            "status": task.status.value if hasattr(task.status, "value") else str(task.status),
+            "priority": task.priority.value if hasattr(task.priority, "value") else str(task.priority),
+            "planned_start": start,
+            "planned_end": end,
+            "start_date": start,
+            "end_date": end,
+            "created_at": task.created_at,
+            "updated_at": task.updated_at,
+            "is_milestone": bool(task.is_milestone),
+            "include_in_planning": include_in_planning,
+            "progress": GanttChartService._task_progress(task),
+            "assignees": GanttChartService._task_assignees(task),
+            "source": "scheduling-api",
+            "isPersisted": True,
+            "is_critical_path": include_critical and task.id in critical_ids,
+        }
+
+    @staticmethod
+    def calculate_critical_path(db: Session, project_id: uuid.UUID) -> Set[uuid.UUID]:
+        tasks = db.scalars(
+            select(Task)
+            .where(Task.project_id == project_id)
+            .options(selectinload(Task.dependencies))
+        ).all()
+
+        if not tasks:
+            return set()
+
+        task_ids = {task.id for task in tasks}
+        durations: dict[uuid.UUID, float] = {}
+        adjacency: dict[uuid.UUID, list[uuid.UUID]] = defaultdict(list)
+        indegree: dict[uuid.UUID, int] = {task.id: 0 for task in tasks}
+
+        for task in tasks:
+            start, end = GanttChartService._task_bounds(task)
+            durations[task.id] = max((end - start).total_seconds() / 3600.0, 1.0)
+
+        dependency_rows = db.scalars(
+            select(TaskDependency).where(TaskDependency.task_id.in_(task_ids))
+        ).all()
+
+        for dependency in dependency_rows:
+            if dependency.dependency_type == "BLOCKS":
+                source_id = dependency.depends_on_task_id
+                target_id = dependency.task_id
+            elif dependency.dependency_type == "BLOCKED_BY":
+                source_id = dependency.task_id
+                target_id = dependency.depends_on_task_id
+            else:
+                continue
+
+            if source_id not in task_ids or target_id not in task_ids:
+                continue
+
+            adjacency[source_id].append(target_id)
+            indegree[target_id] = indegree.get(target_id, 0) + 1
+
+        distance: dict[uuid.UUID, float] = {task_id: durations[task_id] for task_id in task_ids}
+        predecessor: dict[uuid.UUID, uuid.UUID] = {}
+        queue = deque([task_id for task_id, degree in indegree.items() if degree == 0])
+
+        while queue:
+            current_id = queue.popleft()
+            for next_id in adjacency.get(current_id, []):
+                candidate_distance = distance[current_id] + durations[next_id]
+                if candidate_distance > distance.get(next_id, 0):
+                    distance[next_id] = candidate_distance
+                    predecessor[next_id] = current_id
+                indegree[next_id] -= 1
+                if indegree[next_id] == 0:
+                    queue.append(next_id)
+
+        if not distance:
+            return set()
+
+        end_task_id = max(distance, key=distance.get)
+        critical_ids: Set[uuid.UUID] = {end_task_id}
+
+        while end_task_id in predecessor:
+            end_task_id = predecessor[end_task_id]
+            critical_ids.add(end_task_id)
+
+        return critical_ids
+
+    @staticmethod
+    def build_gantt_chart(db: Session, project_id: uuid.UUID, user_id: uuid.UUID, filter_data) -> dict:
+        project_repo = ProjectRepository(db)
+        if not project_repo.can_access(project_id, user_id):
+            raise HTTPException(
+                status_code=status.HTTP_403_FORBIDDEN,
+                detail="You don't have access to this project",
+            )
+
+        tasks = db.scalars(
+            select(Task)
+            .where(Task.project_id == project_id)
+            .options(selectinload(Task.assignees))
+        ).all()
+
+        if not tasks:
+            return {
+                "tasks": [],
+                "dependencies": [],
+                "milestones": [],
+                "baselines": [],
+                "critical_task_ids": [],
+                "total_float_hours": 0.0,
+            }
+
+        task_ids = [task.id for task in tasks]
+        critical_ids = GanttChartService.calculate_critical_path(db, project_id) if filter_data.show_critical_path else set()
+
+        scopes = db.scalars(
+            select(PlanningScope).where(PlanningScope.task_id.in_(task_ids))
+        ).all()
+        scope_map = {scope.task_id: scope.include_in_planning for scope in scopes}
+
+        dependencies = db.scalars(
+            select(TaskDependency)
+            .where(TaskDependency.task_id.in_(task_ids))
+            .options(selectinload(TaskDependency.schedule_config))
+        ).all()
+
+        baselines = db.scalars(
+            select(TaskBaseline)
+            .where(TaskBaseline.task_id.in_(task_ids))
+            .order_by(TaskBaseline.task_id, TaskBaseline.baseline_version.desc())
+        ).all()
+        baseline_map: dict[uuid.UUID, TaskBaseline] = {}
+        for baseline in baselines:
+            baseline_map.setdefault(baseline.task_id, baseline)
+
+        chart_tasks = []
+        milestones = []
+        start_filter = filter_data.start_date
+        end_filter = filter_data.end_date
+
+        for task in tasks:
+            start, end = GanttChartService._task_bounds(task)
+            if start_filter and end < start_filter:
+                continue
+            if end_filter and start > end_filter:
+                continue
+
+            include_in_planning = scope_map.get(task.id, True)
+            chart_tasks.append(
+                GanttChartService._task_payload(
+                    task,
+                    filter_data.show_critical_path,
+                    critical_ids,
+                    include_in_planning,
+                )
+            )
+
+            if task.is_milestone and filter_data.include_milestones:
+                milestones.append(
+                    {
+                        "id": str(task.id),
+                        "task_id": str(task.id),
+                        "title": task.title,
+                        "date": end,
+                        "status": task.status.value if hasattr(task.status, "value") else str(task.status),
+                        "priority": task.priority.value if hasattr(task.priority, "value") else str(task.priority),
+                    }
+                )
+
+        baseline_items = []
+        if filter_data.show_baseline:
+            for task in tasks:
+                baseline = baseline_map.get(task.id)
+                if not baseline:
+                    continue
+                baseline_items.append(
+                    {
+                        "id": str(baseline.id),
+                        "task_id": str(baseline.task_id),
+                        "baseline_version": baseline.baseline_version,
+                        "baseline_start": baseline.baseline_start,
+                        "baseline_end": baseline.baseline_end,
+                        "baseline_duration_hours": baseline.baseline_duration_hours,
+                        "actual_start": baseline.actual_start,
+                        "actual_end": baseline.actual_end,
+                        "actual_duration_hours": baseline.actual_duration_hours,
+                        "schedule_variance_days": baseline.schedule_variance_days,
+                    }
+                )
+
+        return {
+            "tasks": chart_tasks,
+            "dependencies": [GanttChartService._dependency_edge(dep) for dep in dependencies],
+            "milestones": milestones,
+            "baselines": baseline_items,
+            "critical_task_ids": [str(task_id) for task_id in critical_ids],
+            "total_float_hours": 0.0,
+        }

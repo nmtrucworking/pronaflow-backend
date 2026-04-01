@@ -42,6 +42,7 @@ from app.schemas.scheduling import (
 )
 from app.services.scheduling import (
     PlanStateService,
+    GanttChartService,
     TaskBaselineService,
     SchedulingModeService,
     SLAPolicyService,
@@ -326,13 +327,7 @@ def get_gantt_chart(
     Get Gantt chart data for project.
     Ref: Module 5 - Feature 2.1
     """
-    # TODO: Implement Gantt chart data fetching
-    return {
-        "tasks": [],
-        "dependencies": [],
-        "milestones": [],
-        "baselines": [],
-    }
+    return GanttChartService.build_gantt_chart(db, filter.project_id, current_user.id, filter)
 
 
 # ===== Critical Path Endpoints =====
