@@ -97,6 +97,12 @@ class WorkspaceInvitationCreate(WorkspaceInvitationBase):
     pass
 
 
+class WorkspaceInvitationBulkCreate(BaseModel):
+    """Schema for creating multiple workspace invitations at once"""
+    emails: List[EmailStr] = Field(..., min_length=1, description="Email addresses to invite")
+    invited_role: WorkspaceRoleEnum = Field(default=WorkspaceRoleEnum.MEMBER, description="Role to assign")
+
+
 class WorkspaceInvitationAccept(BaseModel):
     """Schema for accepting workspace invitation"""
     token: str = Field(..., description="Invitation token")
@@ -175,3 +181,8 @@ class WorkspaceListResponse(BaseModel):
 class WorkspaceContextSwitch(BaseModel):
     """Schema for switching workspace context"""
     workspace_id: UUID = Field(..., description="Workspace ID to switch to")
+
+
+class WorkspaceOwnershipTransfer(BaseModel):
+    """Schema for transferring workspace ownership"""
+    new_owner_id: UUID = Field(..., description="User ID of the new owner")

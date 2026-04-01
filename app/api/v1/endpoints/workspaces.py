@@ -6,8 +6,11 @@ Ref: docs/docs - PronaFlow React&FastAPI/01-Requirements/Functional-Modules/2 - 
 from typing import List
 from uuid import UUID
 
-from fastapi import APIRouter, HTTPException, Depends, Query, status
+from fastapi import APIRouter, HTTPException, Depends, Query, status, UploadFile, File
 from sqlalchemy.orm import Session
+import os
+import uuid
+from pathlib import Path
 
 from app.db.session import get_db
 from app.core.security import get_current_user
@@ -22,12 +25,14 @@ from app.schemas.workspace import (
     WorkspaceMemberCreate,
     WorkspaceMemberUpdate,
     WorkspaceInvitationCreate,
+    WorkspaceInvitationBulkCreate,
     WorkspaceInvitationResponse,
     WorkspaceInvitationAccept,
     WorkspaceAccessLogResponse,
     WorkspaceSettingResponse,
     WorkspaceSettingUpdate,
     WorkspaceContextSwitch,
+    WorkspaceOwnershipTransfer,
 )
 from app.services.workspace import (
     WorkspaceService,
@@ -39,6 +44,21 @@ from app.services.workspace import (
 from app.services.email import EmailService
 
 router = APIRouter(prefix="/v1/workspaces", tags=["workspaces"])
+
+
+def _send_workspace_invitation_email(
+    email_service: EmailService,
+    invitation,
+    token: str,
+    workspace_name: str,
+    inviter_name: str,
+) -> None:
+    email_service.send_workspace_invitation(
+        to_email=invitation.email,
+        invitation_token=token,
+        workspace_name=workspace_name,
+        inviter_name=inviter_name,
+    )
 
 
 # ===== Workspace CRUD Operations =====
@@ -260,7 +280,13 @@ def update_member(
     if not current_member or current_member.role not in ["owner", "admin"]:
         raise HTTPException(status_code=403, detail="Insufficient permissions")
 
-    member = WorkspaceMemberService.update_member(db, workspace_id, user_id, update_data)
+    member = WorkspaceMemberService.update_member(
+        db,
+        workspace_id,
+        user_id,
+        update_data,
+        current_user.id,
+    )
     if not member:
         raise HTTPException(status_code=404, detail="Member not found")
 
@@ -291,7 +317,7 @@ def remove_member(
     if not current_member or current_member.role not in ["owner", "admin"]:
         raise HTTPException(status_code=403, detail="Insufficient permissions")
 
-    success = WorkspaceMemberService.remove_member(db, workspace_id, user_id)
+    success = WorkspaceMemberService.remove_member(db, workspace_id, user_id, current_user.id)
     if not success:
         raise HTTPException(status_code=404, detail="Member not found")
 
@@ -328,14 +354,94 @@ def send_invitation(
     )
 
     email_service = EmailService()
-    email_service.send_workspace_invitation(
-        to_email=invitation.email,
-        invitation_token=token,
-        workspace_name=workspace.name,
-        inviter_name=current_user.full_name or current_user.username,
+    _send_workspace_invitation_email(
+        email_service,
+        invitation,
+        token,
+        workspace.name,
+        current_user.full_name or current_user.username,
     )
 
     return invitation
+
+
+@router.post(
+    "/{workspace_id}/invitations/bulk",
+    response_model=List[WorkspaceInvitationResponse],
+    status_code=status.HTTP_201_CREATED,
+    summary="Send multiple workspace invitations",
+)
+def send_bulk_invitations(
+    workspace_id: UUID,
+    invitation_data: WorkspaceInvitationBulkCreate,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """
+    Send workspace invitations to multiple email addresses.
+    Invitation expires after 48 hours.
+    """
+    workspace = WorkspaceService.get_workspace(db, workspace_id)
+    if not workspace:
+        raise HTTPException(status_code=404, detail="Workspace not found")
+
+    current_member = WorkspaceMemberService.get_member(db, workspace_id, current_user.id)
+    if not current_member or current_member.role not in ["owner", "admin"]:
+        raise HTTPException(status_code=403, detail="Insufficient permissions")
+
+    email_service = EmailService()
+    invitations = []
+    unique_emails = list(dict.fromkeys(invitation_data.emails))
+
+    for email in unique_emails:
+        single_invitation = WorkspaceInvitationCreate(email=email, invited_role=invitation_data.invited_role)
+        invitation, token = WorkspaceInvitationService.create_invitation(
+            db,
+            workspace_id,
+            current_user.id,
+            single_invitation,
+        )
+        _send_workspace_invitation_email(
+            email_service,
+            invitation,
+            token,
+            workspace.name,
+            current_user.full_name or current_user.username,
+        )
+        invitations.append(invitation)
+
+    return invitations
+
+
+@router.post(
+    "/{workspace_id}/ownership/transfer",
+    response_model=WorkspaceMemberResponse,
+    summary="Transfer workspace ownership",
+)
+def transfer_ownership(
+    workspace_id: UUID,
+    transfer_data: WorkspaceOwnershipTransfer,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """
+    Transfer workspace ownership to another active member.
+    Only the current owner can perform this action.
+    """
+    workspace = WorkspaceService.get_workspace(db, workspace_id)
+    if not workspace:
+        raise HTTPException(status_code=404, detail="Workspace not found")
+
+    member = WorkspaceMemberService.transfer_ownership(
+        db,
+        workspace_id,
+        current_user.id,
+        transfer_data.new_owner_id,
+    )
+    if not member:
+        raise HTTPException(status_code=404, detail="Member not found")
+
+    return member
 
 
 @router.get(
@@ -601,3 +707,112 @@ def get_last_accessed_workspace(
         )
     
     return last_workspace
+
+# ===== Workspace Branding =====
+
+@router.put(
+    "/{workspace_id}/upload-logo",
+    response_model=WorkspaceResponse,
+    summary="Upload workspace logo",
+)
+async def upload_workspace_logo(
+    workspace_id: UUID,
+    file: UploadFile = File(...),
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """
+    Upload workspace logo.
+    **Module 2 - Feature 2.4: Workspace Branding**
+    - Admin/Owner can upload logo file
+    - File saved to storage
+    - Logo URL returned and stored in workspace settings
+    """
+    # Check workspace exists and user is owner/admin
+    workspace = WorkspaceService.get_workspace(db, workspace_id)
+    if not workspace:
+        raise HTTPException(status_code=404, detail="Workspace not found")
+    
+    member = WorkspaceMemberService.get_member(db, workspace_id, current_user.id)
+    if not member or member.role not in ["owner", "admin"]:
+        raise HTTPException(status_code=403, detail="Insufficient permissions")
+    
+    # Validate file
+    if not file.filename:
+        raise HTTPException(status_code=400, detail="No file uploaded")
+    
+    allowed_extensions = {".jpg", ".jpeg", ".png", ".gif", ".webp"}
+    file_ext = Path(file.filename).suffix.lower()
+    if file_ext not in allowed_extensions:
+        raise HTTPException(
+            status_code=400,
+            detail=f"File type not allowed. Allowed: {', '.join(allowed_extensions)}"
+        )
+    
+    if file.size and file.size > 5 * 1024 * 1024:  # 5MB limit
+        raise HTTPException(status_code=400, detail="File size exceeds 5MB limit")
+    
+    # Create upload directory if not exists
+    upload_dir = Path("storage/workspace-logos")
+    upload_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Generate unique filename
+    file_id = uuid.uuid4()
+    filename = f"{file_id}{file_ext}"
+    file_path = upload_dir / filename
+    
+    try:
+        # Save file
+        with open(file_path, "wb") as f:
+            contents = await file.read()
+            f.write(contents)
+        
+        # Update workspace logo_url
+        logo_url = f"/api/v1/workspaces/{workspace_id}/logo/{filename}"
+        update_data = WorkspaceUpdate(logo_url=logo_url)
+        updated_workspace = WorkspaceService.update_workspace(
+            db, workspace_id, update_data
+        )
+        
+        return updated_workspace
+    
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to upload file: {str(e)}"
+        )
+
+
+@router.get(
+    "/{workspace_id}/logo/{filename}",
+    summary="Get workspace logo",
+)
+async def get_workspace_logo(
+    workspace_id: UUID,
+    filename: str,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """
+    Serve workspace logo file.
+    """
+    # Check user has access to workspace
+    workspace = WorkspaceService.get_workspace(db, workspace_id)
+    if not workspace:
+        raise HTTPException(status_code=404, detail="Workspace not found")
+    
+    member = WorkspaceMemberService.get_member(db, workspace_id, current_user.id)
+    if not member:
+        raise HTTPException(status_code=403, detail="Access denied")
+    
+    # Validate filename (prevent path traversal)
+    if ".." in filename or "/" in filename or "\\" in filename:
+        raise HTTPException(status_code=400, detail="Invalid filename")
+    
+    # Serve file
+    file_path = Path("storage/workspace-logos") / filename
+    if not file_path.exists():
+        raise HTTPException(status_code=404, detail="Logo not found")
+    
+    from fastapi.responses import FileResponse
+    return FileResponse(file_path, media_type="image/*")

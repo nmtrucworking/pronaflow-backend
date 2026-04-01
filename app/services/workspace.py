@@ -91,7 +91,7 @@ class WorkspaceService:
         # Create default settings
         default_settings = WorkspaceSetting(
             workspace_id=workspace.id,
-            timezone="UTC",
+            timezone="Asia/Ho_Chi_Minh",
             work_days="Mon,Tue,Wed,Thu,Fri",
             work_hours='{"start": "09:00", "end": "18:00"}',
         )
@@ -262,6 +262,18 @@ class WorkspaceMemberService:
     """Service for workspace member management"""
 
     @staticmethod
+    def _count_active_owners(db: Session, workspace_id: uuid.UUID) -> int:
+        return db.scalar(
+            select(func.count(WorkspaceMember.id)).where(
+                and_(
+                    WorkspaceMember.workspace_id == workspace_id,
+                    WorkspaceMember.is_active == True,
+                    WorkspaceMember.role == WorkspaceRole.OWNER,
+                )
+            )
+        ) or 0
+
+    @staticmethod
     def add_member(
         db: Session,
         workspace_id: uuid.UUID,
@@ -378,6 +390,7 @@ class WorkspaceMemberService:
         workspace_id: uuid.UUID,
         user_id: uuid.UUID,
         update_data: WorkspaceMemberUpdate,
+        current_user_id: Optional[uuid.UUID] = None,
     ) -> Optional[WorkspaceMember]:
         """
         Update member role or status.
@@ -395,6 +408,22 @@ class WorkspaceMemberService:
         if not member:
             return None
 
+        if update_data.role == WorkspaceRole.OWNER:
+            if current_user_id is None:
+                raise HTTPException(status_code=403, detail="Only the current owner can transfer ownership")
+            return WorkspaceMemberService.transfer_ownership(
+                db,
+                workspace_id,
+                current_user_id,
+                user_id,
+            )
+
+        if member.role == WorkspaceRole.OWNER and update_data.role and update_data.role != WorkspaceRole.OWNER:
+            raise HTTPException(
+                status_code=400,
+                detail="Transfer ownership before changing the current owner role",
+            )
+
         update_dict = update_data.dict(exclude_unset=True)
         for key, value in update_dict.items():
             if hasattr(member, key):
@@ -409,6 +438,7 @@ class WorkspaceMemberService:
         db: Session,
         workspace_id: uuid.UUID,
         user_id: uuid.UUID,
+        current_user_id: Optional[uuid.UUID] = None,
     ) -> bool:
         """
         Remove a member from workspace (soft removal).
@@ -425,10 +455,61 @@ class WorkspaceMemberService:
         if not member:
             return False
 
+        if member.role == WorkspaceRole.OWNER:
+            active_owner_count = WorkspaceMemberService._count_active_owners(db, workspace_id)
+            if active_owner_count <= 1:
+                raise HTTPException(
+                    status_code=400,
+                    detail="The last owner must transfer ownership before leaving the workspace",
+                )
+
+            if current_user_id is not None and current_user_id != user_id:
+                actor_member = WorkspaceMemberService.get_member(db, workspace_id, current_user_id)
+                if not actor_member or actor_member.role != WorkspaceRole.OWNER:
+                    raise HTTPException(
+                        status_code=403,
+                        detail="Only the owner can remove another owner",
+                    )
+
         member.is_active = False
         member.left_at = datetime.utcnow()
         db.commit()
         return True
+
+    @staticmethod
+    def transfer_ownership(
+        db: Session,
+        workspace_id: uuid.UUID,
+        current_owner_id: uuid.UUID,
+        new_owner_id: uuid.UUID,
+    ) -> Optional[WorkspaceMember]:
+        """Transfer workspace ownership to another active member."""
+        workspace = WorkspaceService.get_workspace(db, workspace_id)
+        if not workspace:
+            return None
+
+        if workspace.owner_id != current_owner_id:
+            raise HTTPException(status_code=403, detail="Only the current owner can transfer ownership")
+
+        if current_owner_id == new_owner_id:
+            raise HTTPException(status_code=400, detail="New owner must be a different member")
+
+        current_owner_member = WorkspaceMemberService.get_member(db, workspace_id, current_owner_id)
+        new_owner_member = WorkspaceMemberService.get_member(db, workspace_id, new_owner_id)
+
+        if not current_owner_member or not current_owner_member.is_active:
+            raise HTTPException(status_code=400, detail="Current owner membership not found")
+
+        if not new_owner_member or not new_owner_member.is_active:
+            raise HTTPException(status_code=400, detail="New owner must be an active member of the workspace")
+
+        current_owner_member.role = WorkspaceRole.ADMIN
+        new_owner_member.role = WorkspaceRole.OWNER
+        workspace.owner_id = new_owner_id
+
+        db.commit()
+        db.refresh(new_owner_member)
+        return new_owner_member
 
 
 class WorkspaceInvitationService:
@@ -465,6 +546,13 @@ class WorkspaceInvitationService:
             
         Ref: AC 2 - Member Invitation & Management
         """
+        allowed_roles = {WorkspaceRole.ADMIN, WorkspaceRole.MEMBER, WorkspaceRole.VIEWER}
+        if invitation_data.invited_role not in allowed_roles:
+            raise HTTPException(
+                status_code=400,
+                detail="Invitations can only assign admin, member, or viewer roles",
+            )
+
         # Generate secure token
         token = secrets.token_urlsafe(32)
         token_hash = WorkspaceInvitationService._hash_invitation_token(token)
