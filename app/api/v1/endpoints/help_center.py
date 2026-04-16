@@ -21,6 +21,8 @@ from app.services.help_center import (
     FailedSearchService,
     SearchService,
 )
+# Create additional router with /help prefix as alias/shortcut
+help_router = APIRouter(prefix="/help", tags=["Help Center & Knowledge Base"])
 from app.core.background_tasks import IndexingTask, NotificationTask
 from app.schemas.help_center import (
     CategoryResponse, CategoryCreate, CategoryUpdate,
@@ -343,3 +345,84 @@ def record_failed_search(
 ):
     service = FailedSearchService(db)
     return service.record_failed_search(data, current_user.id)
+
+
+
+    # ======= Help Shortcut Endpoints (using /help prefix) =======
+
+    @help_router.get("", response_model=dict)
+    def help_home(
+        db: Session = Depends(get_db),
+        current_user: User = Depends(get_current_user),
+    ):
+        """
+        Help Center Home - Returns quick access links and popular articles
+        Shortcut endpoint for /help instead of /help-center
+        """
+        service = CategoryService(db)
+        service_article = ArticleService(db)
+    
+        # Get all categories
+        categories = service.list_categories(is_active=True)
+    
+        # Get most recent/popular articles
+        popular_articles = service_article.list_articles(
+            status="published",
+            category_id=None,
+            user_id=current_user.id,
+            user_roles=[]
+        )
+    
+        return {
+            "message": "Welcome to PronaFlow Help Center",
+            "categories": categories,
+            "recent_articles": popular_articles[:5],
+            "quick_links": {
+                "categories": "/api/v1/help-center/categories",
+                "articles": "/api/v1/help-center/articles",
+                "search": "/api/v1/help-center/search",
+            }
+        }
+
+
+    @help_router.get("/search", response_model=SearchResponse)
+    def help_search(
+        query: str = Query(..., min_length=1),
+        locale: Optional[str] = Query(None),
+        limit: int = Query(10, ge=1, le=50),
+        db: Session = Depends(get_db),
+        current_user: User = Depends(get_current_user),
+    ):
+        """
+        Quick search endpoint via /help/search
+        Same functionality as /help-center/search
+        """
+        service = SearchService(db)
+    
+        # Get user roles for visibility filtering
+        user_roles = (
+            db.query(WorkspaceMember.role)
+            .filter(WorkspaceMember.user_id == current_user.id)
+            .distinct()
+            .all()
+        )
+        role_names = [role[0].value if isinstance(role[0], WorkspaceRole) else role[0] for role in user_roles]
+    
+        results = service.search(
+            SearchQuery(query=query, locale=locale, limit=limit),
+            use_semantic=True,
+            user_id=current_user.id,
+            user_roles=role_names
+        )
+
+        formatted = [
+            SearchResult(
+                article_id=item.article_id,
+                title=item.article.title if item.article else "",
+                snippet=item.snippet,
+                score=1.0,
+            )
+            for item in results
+        ]
+
+        return SearchResponse(query=query, results=formatted)
