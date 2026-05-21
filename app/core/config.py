@@ -5,13 +5,17 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import field_validator
 from typing import Optional, List, Union
 import json
+from pathlib import Path
+
+
+BASE_DIR = Path(__file__).resolve().parents[2]
 
 
 class Settings(BaseSettings):
     """Application settings from environment variables."""
     
     model_config = SettingsConfigDict(
-        env_file=".env",
+        env_file=str(BASE_DIR / ".env"),
         case_sensitive=True,
         extra="ignore"
     )

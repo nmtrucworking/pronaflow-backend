@@ -22,6 +22,7 @@ pycache/
 *$py.class
 venv/
 .venv/
+.venv/broken
 env/
 dist/
 build/
