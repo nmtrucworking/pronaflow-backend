@@ -19,6 +19,27 @@ class Settings(BaseSettings):
         case_sensitive=True,
         extra="ignore"
     )
+
+    @classmethod
+    def settings_customise_sources(
+        cls,
+        settings_cls,
+        init_settings,
+        env_settings,
+        dotenv_settings,
+        file_secret_settings,
+    ):
+        def dotenv_without_empty_values():
+            data = dotenv_settings()
+            if "DATABASE_URL" in data and isinstance(data["DATABASE_URL"], str) and not data["DATABASE_URL"].strip():
+                data["DATABASE_URL"] = "postgresql+psycopg2://pronaflow_user:pronaflow_password@localhost:5432/pronaflow_db"
+            return {
+                key: value
+                for key, value in data.items()
+                if not (isinstance(value, str) and not value.strip())
+            }
+
+        return init_settings, dotenv_without_empty_values, env_settings, file_secret_settings
     
     # Server Configuration
     HOST: str = "0.0.0.0"
@@ -26,7 +47,7 @@ class Settings(BaseSettings):
     API_V1_STR: str = "/api/v1"
 
     # Database
-    DATABASE_URL: str = "postgresql+psycopg2://user:password@localhost:5432/pronaflow"
+    DATABASE_URL: str = "postgresql+psycopg2://pronaflow_user:pronaflow_password@localhost:5432/pronaflow_db"
     
     # Application
     APP_NAME: str = "PronaFlow"
