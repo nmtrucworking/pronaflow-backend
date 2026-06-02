@@ -5,6 +5,8 @@ import asyncio
 import pytest
 from typing import AsyncGenerator, Generator
 from sqlalchemy import create_engine, event
+from sqlalchemy.dialects.postgresql import JSONB
+from sqlalchemy.ext.compiler import compiles
 from sqlalchemy.orm import Session, sessionmaker
 from sqlalchemy.pool import StaticPool
 from fastapi.testclient import TestClient
@@ -21,6 +23,26 @@ from app.models.projects import Project
 from app.models.tasks import Task, TaskList, TaskAssignee
 from app.db.enums import UserStatus, WorkspaceRole, ProjectStatus, TaskStatus, TaskPriority
 from app.core.security import hash_password
+
+
+@compiles(JSONB, "sqlite")
+def compile_jsonb_sqlite(type_, compiler, **kw):
+    return "JSON"
+
+
+def dedupe_metadata_indexes() -> None:
+    """Remove duplicate index objects that share the same name in test metadata."""
+    for table in Base.metadata.tables.values():
+        seen = set()
+        duplicates = []
+        for index in table.indexes:
+            if index.name in seen:
+                duplicates.append(index)
+            else:
+                seen.add(index.name)
+
+        for index in duplicates:
+            table.indexes.discard(index)
 
 
 # Test database URL (in-memory SQLite for fast tests)
@@ -52,6 +74,7 @@ def engine():
         cursor.close()
     
     # Create all tables
+    dedupe_metadata_indexes()
     Base.metadata.create_all(bind=test_engine)
     
     yield test_engine
@@ -76,6 +99,12 @@ def db(engine) -> Generator[Session, None, None]:
     finally:
         session.rollback()
         session.close()
+
+
+@pytest.fixture(scope="function")
+def db_session(db: Session) -> Session:
+    """Backward-compatible alias for repository tests."""
+    return db
 
 
 @pytest.fixture(scope="function")
