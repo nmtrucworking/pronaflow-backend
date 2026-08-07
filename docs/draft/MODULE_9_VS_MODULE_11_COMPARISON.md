@@ -319,7 +319,7 @@ TOTAL:                 5.5 hours
 3. **Automated ERD Generation**
    - Generate from SQLAlchemy models
    - Commit to git
-   - Validate in CI/CD
+   - Validate with the local release checks
 
 4. **Code-Docs Checklist**
    ```
@@ -336,7 +336,7 @@ TOTAL:                 5.5 hours
 5. **Continuous Validation**
    - Script to compare counts
    - Alert on mismatches
-   - Part of CI/CD pipeline
+   - Part of the local release checklist
 
 ---
 

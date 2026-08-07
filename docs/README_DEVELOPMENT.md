@@ -370,10 +370,10 @@ pytest --cache-clear
 ## ✅ Next Steps
 
 1. ✅ **Migrations created** - Ready to deploy
-2. ✅ **Tests infrastructure** - Can run in CI/CD
+2. ✅ **Tests infrastructure** - Can run locally before release
 3. ✅ **Core services implemented** - Business logic ready
 4. ⏳ **Expand test coverage** - Target 80%+
-5. ⏳ **Setup CI/CD** - GitHub Actions
+5. ⏳ **Document release validation** - Local checks
 6. ⏳ **Deploy to staging** - Test environment
 
 ---

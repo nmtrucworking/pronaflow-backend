@@ -58,7 +58,6 @@ ai-serving/app/ml_engine/artifacts/.joblib
 
 # *.sqlite
 # *.db
-# infrastructure/data/ # Dữ liệu DB nếu mount volume docker
 
 # Loại trừ dữ liệu người dùng tải lên
 # storage/uploads/*
